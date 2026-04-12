@@ -210,7 +210,7 @@ export function WodSectionEditor({
                 </>
               ) : (
                 <>
-                  <span className="w-10 text-sm font-bold text-primary">{mov.reps}</span>
+                  <span className="shrink-0 whitespace-nowrap text-sm font-bold text-primary">{mov.reps}</span>
                   <span className="flex-1 text-xs text-on-surface">{mov.name || "—"}</span>
                   {mov.weight && <span className="text-xs text-outline">{mov.weight}</span>}
                   {mov.note && <span className="text-[9px] italic text-outline">{mov.note}</span>}

@@ -1,4 +1,3 @@
-import Anthropic from "@anthropic-ai/sdk";
 import type {
   WodFormat,
   WodScoreType,
@@ -70,7 +69,7 @@ Return a JSON object matching this exact schema:
 
 Rules:
 - Detect classType from content: percentage-based Olympic/strength work = BARBELL, WODs/AMRAPs/EMOMs = CROSSFIT
-- For barbell sections with percentages (e.g. "3@70%, 2@80%"), populate percentageSets array
+- For barbell sections with percentages (e.g. "3@70%, 2@80%, 1@90%"), you MUST populate the percentageSets array on the exercise. Example: "Deadlift 3@70%, 3@75%, 2@80%, 2@85%, 1@90%" becomes: {"name": "Deadlift", "percentageSets": [{"reps": "3", "percentage": 70}, {"reps": "3", "percentage": 75}, {"reps": "2", "percentage": 80}, {"reps": "2", "percentage": 85}, {"reps": "1", "percentage": 90}]}. Do NOT put percentage text in the "reps" field — always use percentageSets for percentage-based work
 - For WOD sections, populate BOTH wodMovements (structured) AND wodDescription (raw text)
 - Non-WOD sections: populate exercises array, leave wod* fields null
 - Normalise movement abbreviations: C2B→Chest-to-Bar Pull-up, T2B→Toes-to-Bar, HSPU→Handstand Push-up, DU→Double-Under, MU→Muscle-Up, PC→Power Clean, S2OH→Shoulder-to-Overhead, Cal Row→Calorie Row, KB→Kettlebell
@@ -88,6 +87,7 @@ export async function parseWorkoutWithAI(text: string, movementNames: string[]):
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error("ANTHROPIC_API_KEY not configured");
 
+  const { default: Anthropic } = await import("@anthropic-ai/sdk");
   const client = new Anthropic({ apiKey });
 
   const movementHint = movementNames.length > 0
@@ -111,6 +111,8 @@ export async function parseWorkoutWithAI(text: string, movementNames: string[]):
 
   for (const section of parsed.sections) {
     section.sortOrder = parsed.sections.indexOf(section);
+    section.exercises = section.exercises ?? [];
+    section.wodMovements = section.wodMovements ?? [];
     if (section.wodFormat && !section.wodScoreType) {
       section.wodScoreType = FORMAT_SCORE_DEFAULTS[section.wodFormat] ?? "TIME";
     }

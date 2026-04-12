@@ -1,8 +1,17 @@
 import { SignUp } from "@clerk/nextjs";
+import Link from "next/link";
 
 export default function SignUpPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center p-4">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-8 p-4">
+      <Link href="/" className="flex flex-col items-center gap-2">
+        <span className="material-symbols-outlined text-4xl text-primary-container">
+          fitness_center
+        </span>
+        <h1 className="font-headline text-xl font-black uppercase tracking-widest">
+          THE YARD PECKHAM
+        </h1>
+      </Link>
       <SignUp />
     </div>
   );

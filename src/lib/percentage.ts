@@ -6,6 +6,13 @@ export function calculateWeight(
   return Math.round(raw * 2) / 2;
 }
 
+export function estimateOneRepMax(weight: number, reps: number): number {
+  if (reps <= 0) return 0;
+  if (reps === 1) return weight;
+  const raw = weight * (1 + reps / 30);
+  return Math.round(raw * 2) / 2;
+}
+
 export function formatWeight(weight: number, unit: string = "kg"): string {
   const display = weight % 1 === 0 ? weight.toString() : weight.toFixed(1);
   return `${display}${unit}`;
@@ -30,6 +37,23 @@ const LIFT_ALIASES: Record<string, string[]> = {
     "power clean",
     "hang clean",
   ],
+  "bench press": [
+    "bench press",
+    "swiss bar bench press",
+    "swiss bench press",
+    "dumbbell bench press",
+    "flat bench press",
+  ],
+  "deadlift": [
+    "deadlift",
+    "sumo deadlift",
+    "hybrid deadlift",
+    "sumo or hybrid deadlift",
+    "3 sumo or hybrid deadlift",
+    "conventional deadlift",
+  ],
+  "back squat": ["back squat"],
+  "front squat": ["front squat"],
 };
 
 export function normalizeLiftName(name: string): string {

@@ -12,10 +12,10 @@ export default async function Home() {
         <span className="material-symbols-outlined text-6xl text-primary-container">
           fitness_center
         </span>
-        <h1 className="font-headline text-5xl font-black uppercase tracking-tighter md:text-7xl">
-          BARBELL
+        <h1 className="font-headline text-5xl font-black uppercase tracking-widest md:text-6xl">
+          THE YARD
           <br />
-          TRACKER
+          PECKHAM
         </h1>
         <div className="h-[2px] w-16 bg-primary-container" />
         <p className="max-w-sm font-label text-sm tracking-wide text-on-surface-variant">

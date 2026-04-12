@@ -3,7 +3,7 @@ import { drizzle } from "drizzle-orm/neon-http";
 import * as dotenv from "dotenv";
 import { workouts, workoutSections } from "./schema";
 import { sql } from "drizzle-orm";
-import type { SectionExercise } from "./schema";
+import type { SectionExercise, WorkoutSectionType } from "./schema";
 
 dotenv.config({ path: ".env.local" });
 
@@ -11,7 +11,7 @@ const neonSql = neon(process.env.DATABASE_URL!);
 const db = drizzle(neonSql);
 
 interface SectionData {
-  type: string;
+  type: WorkoutSectionType;
   sets?: string;
   liftName?: string;
   exercises: SectionExercise[];

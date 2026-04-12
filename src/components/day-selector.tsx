@@ -19,13 +19,13 @@ export function DaySelector({ days, selectedDay }: DaySelectorProps) {
   }
 
   return (
-    <section className="flex gap-2 overflow-x-auto whitespace-nowrap">
+    <section className="flex gap-1">
       {days.map((day) => (
         <button
           key={day.date}
           onClick={() => selectDay(day.date)}
           className={cn(
-            "squishy px-6 py-3 font-headline text-xs font-bold uppercase tracking-widest transition-colors",
+            "squishy min-w-0 flex-1 py-3 text-center font-headline text-[10px] font-bold uppercase tracking-wider transition-colors sm:text-xs sm:tracking-widest",
             day.date === selectedDay
               ? "bg-primary-container text-on-primary-fixed"
               : "bg-surface-container-high text-on-surface-variant hover:bg-surface-variant"

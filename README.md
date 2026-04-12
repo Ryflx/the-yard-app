@@ -1,4 +1,4 @@
-# Barbell Tracker
+# THE YARD PECKHAM
 
 Track barbell workouts, log weights, and get automatic percentage-based suggestions for Olympic lifts.
 

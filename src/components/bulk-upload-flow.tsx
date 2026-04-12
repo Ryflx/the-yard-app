@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { read, utils } from "xlsx";
 import { parseWorkoutText, addWorkout } from "@/app/actions";
 import type { ParsedWorkout } from "@/lib/workout-parser";
 import { ParsedWorkoutEditor } from "./parsed-workout-editor";
@@ -14,6 +13,52 @@ interface UploadedWorkout {
   parsed: ParsedWorkout | null;
   error: string | null;
   saved: boolean;
+}
+
+function parseCSV(text: string): string[][] {
+  const rows: string[][] = [];
+  let current = "";
+  let inQuotes = false;
+  let row: string[] = [];
+
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQuotes) {
+      if (ch === '"' && text[i + 1] === '"') {
+        current += '"';
+        i++;
+      } else if (ch === '"') {
+        inQuotes = false;
+      } else {
+        current += ch;
+      }
+    } else if (ch === '"') {
+      inQuotes = true;
+    } else if (ch === ",") {
+      row.push(current.trim());
+      current = "";
+    } else if (ch === "\n" || (ch === "\r" && text[i + 1] === "\n")) {
+      row.push(current.trim());
+      rows.push(row);
+      row = [];
+      current = "";
+      if (ch === "\r") i++;
+    } else {
+      current += ch;
+    }
+  }
+  if (current || row.length > 0) {
+    row.push(current.trim());
+    rows.push(row);
+  }
+  return rows;
+}
+
+function parseDateString(value: string): string {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
+  const d = new Date(value);
+  if (!isNaN(d.getTime())) return d.toISOString().split("T")[0];
+  return new Date().toISOString().split("T")[0];
 }
 
 export function BulkUploadFlow() {
@@ -29,28 +74,23 @@ export function BulkUploadFlow() {
     const file = e.target.files?.[0];
     if (!file) return;
 
-    const buffer = await file.arrayBuffer();
-    const workbook = read(buffer);
-    const sheet = workbook.Sheets[workbook.SheetNames[0]];
-    const data: string[][] = utils.sheet_to_json(sheet, { header: 1 });
+    const text = await file.text();
+    const data = parseCSV(text);
 
-    if (data.length === 0) { toast.error("Empty spreadsheet"); return; }
+    if (data.length === 0) { toast.error("Empty file"); return; }
 
-    // Detect layout: columns = workouts, rows = sections
-    // First row = dates or headers
     const headerRow = data[0];
     const extracted: UploadedWorkout[] = [];
 
     for (let col = 0; col < headerRow.length; col++) {
-      const dateStr = headerRow[col]?.toString().trim();
+      const dateStr = headerRow[col]?.trim();
       if (!dateStr) continue;
 
-      // Try to parse as date
-      const parsedDate = parseSpreadsheetDate(dateStr);
+      const parsedDate = parseDateString(dateStr);
 
       const cellTexts: string[] = [];
       for (let row = 1; row < data.length; row++) {
-        const cell = data[row]?.[col]?.toString().trim();
+        const cell = data[row]?.[col]?.trim();
         if (cell) cellTexts.push(cell);
       }
 
@@ -70,7 +110,6 @@ export function BulkUploadFlow() {
     setWorkouts(extracted);
     toast.success(`Found ${extracted.length} workouts`);
 
-    // Parse all sequentially
     setParsing(true);
     for (let i = 0; i < extracted.length; i++) {
       try {
@@ -130,17 +169,16 @@ export function BulkUploadFlow() {
 
   return (
     <div className="flex flex-col gap-4">
-      {/* File input */}
       {workouts.length === 0 && (
         <div className="flex flex-col items-center gap-4 py-12">
           <div className="text-center">
             <p className="font-headline text-lg font-bold text-on-surface">UPLOAD WORKOUTS</p>
-            <p className="mt-1 text-xs text-outline">Upload a .xlsx or .csv file with workouts in columns</p>
+            <p className="mt-1 text-xs text-outline">Upload a .csv file with workouts in columns</p>
           </div>
           <input
             ref={fileRef}
             type="file"
-            accept=".xlsx,.xls,.csv"
+            accept=".csv"
             onChange={handleFile}
             className="hidden"
           />
@@ -148,12 +186,11 @@ export function BulkUploadFlow() {
             onClick={() => fileRef.current?.click()}
             className="squishy bg-primary px-8 py-3 font-headline text-[11px] font-bold uppercase tracking-widest text-on-primary"
           >
-            CHOOSE FILE
+            CHOOSE CSV
           </button>
         </div>
       )}
 
-      {/* Progress */}
       {parsing && (
         <div>
           <div className="mb-1 text-xs text-outline">Parsing workouts... {Math.round(progress)}%</div>
@@ -163,7 +200,6 @@ export function BulkUploadFlow() {
         </div>
       )}
 
-      {/* Workout list */}
       {workouts.length > 0 && (
         <>
           {workouts.map((w, i) => (
@@ -206,7 +242,6 @@ export function BulkUploadFlow() {
             </div>
           ))}
 
-          {/* Save all */}
           {!parsing && workouts.some((w) => w.parsed && !w.saved) && (
             <button
               onClick={handleSaveAll}
@@ -220,23 +255,4 @@ export function BulkUploadFlow() {
       )}
     </div>
   );
-}
-
-function parseSpreadsheetDate(value: string): string {
-  // Try ISO format first
-  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
-
-  // Try common date formats
-  const d = new Date(value);
-  if (!isNaN(d.getTime())) return d.toISOString().split("T")[0];
-
-  // Excel serial date number
-  const serial = parseFloat(value);
-  if (!isNaN(serial) && serial > 40000 && serial < 60000) {
-    const excelEpoch = new Date(1899, 11, 30);
-    const date = new Date(excelEpoch.getTime() + serial * 86400000);
-    return date.toISOString().split("T")[0];
-  }
-
-  return new Date().toISOString().split("T")[0];
 }

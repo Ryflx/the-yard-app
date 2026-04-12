@@ -76,44 +76,60 @@ export function SectionEditor({ type, exercises, sets, liftName, onChange }: Sec
         )}
 
         {exercises.map((ex, i) => (
-          <div key={i} className="flex items-center gap-2 border-b border-surface-container-highest px-4 py-2">
-            {editing === i ? (
-              <>
-                <input
-                  className="w-12 bg-surface-container-high px-2 py-1 text-center text-xs font-bold text-primary outline-none"
-                  value={ex.reps ?? ""}
-                  onChange={(e) => updateExercise(i, { ...ex, reps: e.target.value })}
-                  placeholder="reps"
-                  autoFocus
-                />
-                <input
-                  className="flex-1 bg-surface-container-high px-2 py-1 text-xs text-on-surface outline-none"
-                  value={ex.name}
-                  onChange={(e) => updateExercise(i, { ...ex, name: e.target.value })}
-                  placeholder="Exercise name"
-                />
-                <input
-                  className="w-20 bg-surface-container-high px-2 py-1 text-right text-xs text-outline outline-none"
-                  value={ex.weight ?? ""}
-                  onChange={(e) => updateExercise(i, { ...ex, weight: e.target.value })}
-                  placeholder="weight"
-                />
-                <button onClick={() => setEditing(null)} className="text-xs text-primary">
-                  done
-                </button>
-              </>
+          <div key={i} className="border-b border-surface-container-highest px-4 py-2">
+            {ex.percentageSets && ex.percentageSets.length > 0 ? (
+              <div className="flex flex-col gap-1">
+                {!liftName && <span className="text-xs font-bold text-on-surface">{ex.name}</span>}
+                {ex.percentageSets.map((ps, j) => (
+                  <div key={j} className="flex items-center gap-2">
+                    <span className="w-8 text-sm font-bold text-primary">{ps.reps}</span>
+                    <span className="text-xs text-outline">@ {ps.percentage}%</span>
+                  </div>
+                ))}
+              </div>
             ) : (
-              <>
-                <span className="w-8 text-sm font-bold text-primary">{ex.reps}</span>
-                <span className="flex-1 text-xs text-on-surface">{ex.name || "—"}</span>
-                {ex.weight && <span className="text-xs text-outline">{ex.weight}</span>}
-                <button onClick={() => setEditing(i)} className="text-xs text-outline hover:text-primary">
-                  <span className="material-symbols-outlined text-sm">edit</span>
-                </button>
-                <button onClick={() => removeExercise(i)} className="text-xs text-outline hover:text-error">
-                  <span className="material-symbols-outlined text-sm">close</span>
-                </button>
-              </>
+              <div className="flex items-center gap-2">
+                {editing === i ? (
+                  <>
+                    <input
+                      className="w-12 bg-surface-container-high px-2 py-1 text-center text-xs font-bold text-primary outline-none"
+                      value={ex.reps ?? ""}
+                      onChange={(e) => updateExercise(i, { ...ex, reps: e.target.value })}
+                      placeholder="reps"
+                      autoFocus
+                    />
+                    <input
+                      className="flex-1 bg-surface-container-high px-2 py-1 text-xs text-on-surface outline-none"
+                      value={ex.name}
+                      onChange={(e) => updateExercise(i, { ...ex, name: e.target.value })}
+                      placeholder="Exercise name"
+                    />
+                    <input
+                      className="w-20 bg-surface-container-high px-2 py-1 text-right text-xs text-outline outline-none"
+                      value={ex.weight ?? ""}
+                      onChange={(e) => updateExercise(i, { ...ex, weight: e.target.value })}
+                      placeholder="weight"
+                    />
+                    <button onClick={() => setEditing(null)} className="text-xs text-primary">
+                      done
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    {ex.reps && <span className="shrink-0 text-sm font-bold text-primary">{ex.reps}</span>}
+                    {!(liftName && ex.name.toLowerCase() === liftName.toLowerCase()) && (
+                      <span className="flex-1 text-xs text-on-surface">{ex.name || "—"}</span>
+                    )}
+                    {ex.weight && <span className="text-xs text-outline">{ex.weight}</span>}
+                    <button onClick={() => setEditing(i)} className="text-xs text-outline hover:text-primary">
+                      <span className="material-symbols-outlined text-sm">edit</span>
+                    </button>
+                    <button onClick={() => removeExercise(i)} className="text-xs text-outline hover:text-error">
+                      <span className="material-symbols-outlined text-sm">close</span>
+                    </button>
+                  </>
+                )}
+              </div>
             )}
           </div>
         ))}

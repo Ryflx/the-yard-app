@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Toaster } from "@/components/ui/sonner";
+import { ServiceWorkerRegister } from "@/components/sw-register";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -17,9 +18,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Barbell Tracker",
+  title: "THE YARD PECKHAM",
   description:
-    "Track your barbell workouts, log weights, and get percentage-based suggestions",
+    "The Yard Peckham — Track your workouts, log weights, and get percentage-based suggestions",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "The Yard",
+  },
+  icons: {
+    icon: "/icon-192.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export const viewport: Viewport = {
@@ -81,6 +92,7 @@ export default function RootLayout({
         </head>
         <body className="min-h-full flex flex-col bg-background text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-fixed">
           {children}
+          <ServiceWorkerRegister />
           <Toaster
             toastOptions={{
               style: {
