@@ -8,11 +8,15 @@ import {
   timestamp,
   jsonb,
   uniqueIndex,
+  boolean,
 } from "drizzle-orm/pg-core";
+
+export type ClassType = "BARBELL" | "CROSSFIT" | "ENGINES" | "OTHER";
 
 export const workouts = pgTable("workouts", {
   id: serial("id").primaryKey(),
-  date: date("date").notNull().unique(),
+  date: date("date").notNull(),
+  classType: text("class_type").notNull().default("BARBELL").$type<ClassType>(),
   title: text("title").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
@@ -25,7 +29,16 @@ export type WorkoutSectionType =
   | "STRENGTH 2"
   | "STRENGTH 3"
   | "ACCESSORY"
-  | "COOL DOWN";
+  | "COOL DOWN"
+  | "STRENGTH"
+  | "SKILL"
+  | "HEAVY DAY"
+  | "LOADING UP"
+  | "WOD"
+  | "ON RAMP";
+
+export type WodScoreType = "TIME" | "ROUNDS_REPS" | "LOAD" | "CALS" | "DISTANCE" | "INTERVAL";
+export type RxLevel = "SCALED" | "RX" | "RX_PLUS";
 
 export interface PercentageSet {
   reps: string;
@@ -47,6 +60,10 @@ export const workoutSections = pgTable("workout_sections", {
   liftName: text("lift_name"),
   sets: text("sets"),
   exercises: jsonb("exercises").$type<SectionExercise[]>().notNull(),
+  wodScoreType: text("wod_score_type").$type<WodScoreType>(),
+  timeCap: integer("time_cap_seconds"),
+  wodName: text("wod_name"),
+  rxWeights: text("rx_weights"),
 });
 
 export const userMaxes = pgTable(
@@ -61,6 +78,63 @@ export const userMaxes = pgTable(
   },
   (table) => [uniqueIndex("user_lift_idx").on(table.userId, table.liftName)]
 );
+
+export type UserRole = "member" | "admin";
+
+export const userProfiles = pgTable("user_profiles", {
+  id: serial("id").primaryKey(),
+  userId: text("user_id").notNull().unique(),
+  displayName: text("display_name"),
+  role: text("role").notNull().default("member").$type<UserRole>(),
+  bodyweightKg: real("bodyweight_kg"),
+  sex: text("sex").$type<"male" | "female">(),
+  leaderboardOptIn: boolean("leaderboard_opt_in").notNull().default(false),
+  onboardingComplete: boolean("onboarding_complete").notNull().default(false),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export const userGoals = pgTable("user_goals", {
+  id: serial("id").primaryKey(),
+  userId: text("user_id").notNull(),
+  liftName: text("lift_name").notNull(),
+  targetWeight: real("target_weight").notNull(),
+  targetDate: date("target_date"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  completedAt: timestamp("completed_at"),
+});
+
+export type MovementCategory =
+  | "OLYMPIC"
+  | "STRENGTH"
+  | "ACCESSORY"
+  | "WARM UP"
+  | "CONDITIONING"
+  | "GYMNASTICS";
+
+export const movements = pgTable("movements", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull().unique(),
+  category: text("category").notNull().$type<MovementCategory>(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const wodResults = pgTable("wod_results", {
+  id: serial("id").primaryKey(),
+  userId: text("user_id").notNull(),
+  workoutId: integer("workout_id")
+    .references(() => workouts.id, { onDelete: "cascade" })
+    .notNull(),
+  sectionId: integer("section_id")
+    .references(() => workoutSections.id, { onDelete: "cascade" })
+    .notNull(),
+  scoreType: text("score_type").notNull().$type<WodScoreType>(),
+  scoreValue: text("score_value").notNull(),
+  rxLevel: text("rx_level").notNull().default("SCALED").$type<RxLevel>(),
+  public: boolean("public").notNull().default(true),
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
 
 export const userLiftLogs = pgTable("user_lift_logs", {
   id: serial("id").primaryKey(),
