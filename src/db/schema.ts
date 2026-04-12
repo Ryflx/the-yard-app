@@ -38,6 +38,25 @@ export type WorkoutSectionType =
   | "ON RAMP";
 
 export type WodScoreType = "TIME" | "ROUNDS_REPS" | "LOAD" | "CALS" | "DISTANCE" | "INTERVAL";
+
+export type WodFormat =
+  | "FOR_TIME"
+  | "ROUNDS_FOR_TIME"
+  | "AMRAP"
+  | "EMOM"
+  | "DEATH_BY"
+  | "INTERVAL"
+  | "TABATA"
+  | "MAX_LOAD";
+
+export interface WodMovement {
+  name: string;
+  reps: string;
+  weight: string | null;
+  unit: string | null;
+  note: string | null;
+}
+
 export type RxLevel = "SCALED" | "RX" | "RX_PLUS";
 
 export interface PercentageSet {
@@ -47,6 +66,8 @@ export interface PercentageSet {
 
 export interface SectionExercise {
   name: string;
+  reps?: string;
+  weight?: string;
   percentageSets?: PercentageSet[];
 }
 
@@ -64,6 +85,11 @@ export const workoutSections = pgTable("workout_sections", {
   timeCap: integer("time_cap_seconds"),
   wodName: text("wod_name"),
   rxWeights: text("rx_weights"),
+  wodFormat: text("wod_format").$type<WodFormat>(),
+  wodRounds: integer("wod_rounds"),
+  wodInterval: integer("wod_interval"),
+  wodDescription: text("wod_description"),
+  wodMovements: jsonb("wod_movements").$type<WodMovement[]>(),
 });
 
 export const userMaxes = pgTable(
