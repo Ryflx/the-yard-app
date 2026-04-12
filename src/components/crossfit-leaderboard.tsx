@@ -12,13 +12,7 @@ type Rankings = Awaited<ReturnType<typeof getCrossfitLeaderboardData>>["rankings
 type CurrentUser = Awaited<ReturnType<typeof getCrossfitLeaderboardData>>["currentUser"];
 type BenchmarkWod = Awaited<ReturnType<typeof getCrossfitLeaderboardData>>["benchmarkWods"][0];
 
-const TIER_COLORS: Record<string, string> = {
-  DRAGON: "#ff4444",
-  BEAST: "#cafd00",
-  WARRIOR: "#f3ffca",
-  HUNTER: "#adaaaa",
-  ROOKIE: "#777575",
-};
+const TIER_COLORS = Object.fromEntries(TIERS.map((t) => [t.name, t.color]));
 
 export function CrossfitLeaderboard() {
   const [rxLevel, setRxLevel] = useState<RxLevel>("RX");

@@ -1298,18 +1298,44 @@ export async function getCrossfitLeaderboardData(rxLevel: RxLevel) {
     .sort((a, b) => b.compositeScore - a.compositeScore);
 
   let currentUser = null;
+  let myBests: Map<string, UserWodBest> | null = null;
+  let mySex: "male" | "female" | null = null;
+
   if (userId) {
-    const myWods = userBests.get(userId);
-    if (myWods) {
-      const sex = optedInUsers.find((u) => u.userId === userId)?.sex as "male" | "female" | null;
+    // Query the current user's profile directly (works even if not opted-in)
+    const [myProfile] = await db.select().from(userProfiles).where(eq(userProfiles.userId, userId));
+    mySex = (myProfile?.sex as "male" | "female" | null) ?? null;
+
+    // Use opted-in data if available, otherwise query the user's own results
+    myBests = userBests.get(userId) ?? null;
+    if (!myBests) {
+      const myResults = await db
+        .select()
+        .from(wodResults)
+        .where(and(eq(wodResults.userId, userId), eq(wodResults.rxLevel, rxLevel)));
+      myBests = new Map();
+      for (const r of myResults) {
+        const section = sectionMap.get(r.sectionId);
+        if (!section?.wodName) continue;
+        const wodLower = section.wodName.toLowerCase();
+        if (!benchmarkNames.has(wodLower)) continue;
+        const st = section.wodScoreType as WodScoreType;
+        const existing = myBests.get(wodLower);
+        if (!existing || isBetterScore(r.scoreValue, existing.scoreValue, st)) {
+          myBests.set(wodLower, { wodName: section.wodName, scoreValue: r.scoreValue, scoreType: st });
+        }
+      }
+    }
+
+    if (myBests.size > 0) {
       const tierResults: { wodName: string; tierName: string }[] = [];
       const tierCounts: Record<string, number> = {};
 
-      for (const [, best] of myWods) {
-        if (!sex) continue;
+      for (const [, best] of myBests) {
+        if (!mySex) continue;
         const st = best.scoreType === "INTERVAL" ? "TIME" : best.scoreType;
         if (st !== "TIME" && st !== "ROUNDS_REPS") continue;
-        const result = assessWodScore(best.wodName, best.scoreValue, st as "TIME" | "ROUNDS_REPS", sex);
+        const result = assessWodScore(best.wodName, best.scoreValue, st as "TIME" | "ROUNDS_REPS", mySex);
         if (result) {
           tierResults.push({ wodName: best.wodName, tierName: result.tier.name });
           tierCounts[result.tier.name] = (tierCounts[result.tier.name] || 0) + 1;
@@ -1321,18 +1347,14 @@ export async function getCrossfitLeaderboardData(rxLevel: RxLevel) {
     }
   }
 
-  const userBenchmarks = userId ? userBests.get(userId) : null;
   const benchmarkWodCards = benchmarkWods.map((w) => {
-    const userBest = userBenchmarks?.get(w.name.toLowerCase());
+    const userBest = myBests?.get(w.name.toLowerCase());
     let userBestTier: string | null = null;
-    if (userBest) {
-      const sex = optedInUsers.find((u) => u.userId === userId)?.sex as "male" | "female" | null;
-      if (sex) {
-        const st = userBest.scoreType === "INTERVAL" ? "TIME" : userBest.scoreType;
-        if (st === "TIME" || st === "ROUNDS_REPS") {
-          const result = assessWodScore(w.name, userBest.scoreValue, st as "TIME" | "ROUNDS_REPS", sex);
-          userBestTier = result?.tier.name ?? null;
-        }
+    if (userBest && mySex) {
+      const st = userBest.scoreType === "INTERVAL" ? "TIME" : userBest.scoreType;
+      if (st === "TIME" || st === "ROUNDS_REPS") {
+        const result = assessWodScore(w.name, userBest.scoreValue, st as "TIME" | "ROUNDS_REPS", mySex);
+        userBestTier = result?.tier.name ?? null;
       }
     }
     return {
@@ -1432,8 +1454,9 @@ export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
         isBetterScore(a.scoreValue, b.scoreValue, scoreType) ? a : b
       );
 
-      const profile = optedInUsers.find((u) => u.userId === userId);
-      const sex = (profile?.sex as "male" | "female" | null) ?? null;
+      // Query user profile directly so tier data works even when not opted-in
+      const [myProfile] = await db.select().from(userProfiles).where(eq(userProfiles.userId, userId));
+      const sex = (myProfile?.sex as "male" | "female" | null) ?? null;
       let tier: string | null = null;
       let percentile: string | null = null;
       let distToNext: string | null = null;

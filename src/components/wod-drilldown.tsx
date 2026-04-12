@@ -8,13 +8,7 @@ import { RxLevelTabs } from "./rx-level-tabs";
 
 type DrilldownData = NonNullable<Awaited<ReturnType<typeof getWodDrilldown>>>;
 
-const TIER_COLORS: Record<string, string> = {
-  DRAGON: "#ff4444",
-  BEAST: "#cafd00",
-  WARRIOR: "#f3ffca",
-  HUNTER: "#adaaaa",
-  ROOKIE: "#777575",
-};
+const TIER_COLORS = Object.fromEntries(TIERS.map((t) => [t.name, t.color]));
 
 export function WodDrilldownClient({
   wodName,
@@ -28,7 +22,6 @@ export function WodDrilldownClient({
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (rxLevel === "RX") return;
     setLoading(true);
     getWodDrilldown(wodName, rxLevel).then((result) => {
       if (result) setData(result);

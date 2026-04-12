@@ -107,7 +107,9 @@ export function distanceToNextTier(
 
   if (scoreType === "ROUNDS_REPS") {
     const current = parseRoundsReps(scoreValue).total;
-    const diff = target - current;
+    // Bracket values are whole rounds — scale to match rounds*1000+reps format
+    const targetScaled = target * 1000;
+    const diff = targetScaled - current;
     if (diff <= 0) return null;
     const rounds = Math.floor(diff / 1000);
     const reps = diff % 1000;
