@@ -44,6 +44,7 @@ export function WodScoreEntry({
     return assessWodScore(wodName, existingScore.scoreValue, st, userSex);
   });
 
+  const [expanded, setExpanded] = useState(false);
   const [minutes, setMinutes] = useState("");
   const [seconds, setSeconds] = useState("");
   const [rounds, setRounds] = useState("");
@@ -150,6 +151,18 @@ export function WodScoreEntry({
           wodName={wodName}
         />
       </div>
+    );
+  }
+
+  if (!expanded) {
+    return (
+      <button
+        onClick={() => setExpanded(true)}
+        className="squishy flex w-full items-center justify-center gap-2 bg-surface-container-high px-5 py-3 font-headline text-[11px] font-bold uppercase tracking-widest text-primary"
+      >
+        <span className="material-symbols-outlined text-base">add_circle</span>
+        LOG SCORE
+      </button>
     );
   }
 
