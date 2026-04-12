@@ -12,7 +12,7 @@ import {
   movements,
   wodResults,
 } from "@/db/schema";
-import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, WodScoreType } from "@/db/schema";
+import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, WodScoreType, WodFormat, WodMovement } from "@/db/schema";
 import { eq, and, gte, lte, lt, desc, isNotNull, isNull, or, count, sql, asc, inArray } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { normalizeLiftName, estimateOneRepMax } from "@/lib/percentage";
@@ -658,6 +658,11 @@ export async function addWorkout(data: {
     timeCap?: number;
     wodName?: string;
     rxWeights?: string;
+    wodFormat?: WodFormat;
+    wodRounds?: number;
+    wodInterval?: number;
+    wodDescription?: string;
+    wodMovements?: WodMovement[];
   }[];
 }) {
   const [workout] = await db
@@ -678,10 +683,16 @@ export async function addWorkout(data: {
       timeCap: section.timeCap ?? null,
       wodName: section.wodName ?? null,
       rxWeights: section.rxWeights ?? null,
+      wodFormat: section.wodFormat ?? null,
+      wodRounds: section.wodRounds ?? null,
+      wodInterval: section.wodInterval ?? null,
+      wodDescription: section.wodDescription ?? null,
+      wodMovements: section.wodMovements ?? null,
     });
   }
 
   revalidatePath("/schedule");
+  revalidatePath("/admin/workouts");
   return workout;
 }
 
@@ -700,6 +711,11 @@ export async function updateWorkout(
       timeCap?: number;
       wodName?: string;
       rxWeights?: string;
+      wodFormat?: WodFormat;
+      wodRounds?: number;
+      wodInterval?: number;
+      wodDescription?: string;
+      wodMovements?: WodMovement[];
     }[];
   }
 ) {
@@ -723,6 +739,11 @@ export async function updateWorkout(
       timeCap: section.timeCap ?? null,
       wodName: section.wodName ?? null,
       rxWeights: section.rxWeights ?? null,
+      wodFormat: section.wodFormat ?? null,
+      wodRounds: section.wodRounds ?? null,
+      wodInterval: section.wodInterval ?? null,
+      wodDescription: section.wodDescription ?? null,
+      wodMovements: section.wodMovements ?? null,
     });
   }
 
