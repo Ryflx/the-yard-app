@@ -19,6 +19,7 @@ import { normalizeLiftName, estimateOneRepMax } from "@/lib/percentage";
 import { type RxLevel } from "@/db/schema";
 import { compareWodScores, isBetterScore, computeCompositeScore, distanceToNextTier } from "@/lib/wod-scoring";
 import { assessWodScore, getAllBenchmarkWods, findBenchmarkWod } from "@/lib/benchmark-wods";
+import { parseWorkoutWithAI, type ParsedWorkout } from "@/lib/workout-parser";
 
 export async function getWorkoutsForWeek(weekStart: string, weekEnd: string, classType?: ClassType) {
   const conditions = [gte(workouts.date, weekStart), lte(workouts.date, weekEnd)];
@@ -1494,4 +1495,12 @@ export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
     entries,
     currentUserId: userId,
   };
+}
+
+export async function parseWorkoutText(input: {
+  text: string;
+}): Promise<ParsedWorkout> {
+  const allMovements = await db.select({ name: movements.name }).from(movements);
+  const movementNames = allMovements.map((m) => m.name);
+  return parseWorkoutWithAI(input.text, movementNames);
 }
