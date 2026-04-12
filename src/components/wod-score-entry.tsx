@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { logWodResult } from "@/app/actions";
 import type { WodScoreType, RxLevel } from "@/db/schema";
 import { assessWodScore, type WodTierResult } from "@/lib/benchmark-wods";
@@ -45,6 +45,22 @@ export function WodScoreEntry({
   });
 
   const [expanded, setExpanded] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!expanded) return;
+    function handleClick(e: MouseEvent | TouchEvent) {
+      if (formRef.current && !formRef.current.contains(e.target as Node)) {
+        setExpanded(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    document.addEventListener("touchstart", handleClick);
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+      document.removeEventListener("touchstart", handleClick);
+    };
+  }, [expanded]);
   const [minutes, setMinutes] = useState("");
   const [seconds, setSeconds] = useState("");
   const [rounds, setRounds] = useState("");
@@ -167,7 +183,7 @@ export function WodScoreEntry({
   }
 
   return (
-    <div className="flex flex-col gap-3 bg-surface-container-high px-5 py-4">
+    <div ref={formRef} className="flex flex-col gap-3 bg-surface-container-high px-5 py-4">
       <span className="font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
         LOG YOUR SCORE
       </span>
