@@ -261,7 +261,6 @@ export async function logLift(data: {
     }
   }
 
-  revalidatePath("/schedule");
   revalidatePath("/progress");
 
   return { isPR, previousBest };
@@ -642,6 +641,31 @@ export async function getLastLoggedWeights(
     }
   }
 
+  return result;
+}
+
+export async function getLoggedSetsForDate(
+  date: string,
+  exerciseNames: string[]
+): Promise<Record<string, number>> {
+  const { userId } = await auth();
+  if (!userId || exerciseNames.length === 0) return {};
+
+  const result: Record<string, number> = {};
+  for (const name of exerciseNames) {
+    const normalized = normalizeLiftName(name);
+    const [row] = await db
+      .select({ total: count() })
+      .from(userLiftLogs)
+      .where(
+        and(
+          eq(userLiftLogs.userId, userId),
+          eq(userLiftLogs.liftName, normalized),
+          eq(userLiftLogs.date, date)
+        )
+      );
+    if (row && row.total > 0) result[name] = row.total;
+  }
   return result;
 }
 

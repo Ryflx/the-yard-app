@@ -79,13 +79,66 @@ export function SectionEditor({ type, exercises, sets, liftName, onChange }: Sec
           <div key={i} className="border-b border-surface-container-highest px-4 py-2">
             {ex.percentageSets && ex.percentageSets.length > 0 ? (
               <div className="flex flex-col gap-1">
-                {!liftName && <span className="text-xs font-bold text-on-surface">{ex.name}</span>}
-                {ex.percentageSets.map((ps, j) => (
-                  <div key={j} className="flex items-center gap-2">
-                    <span className="w-8 text-sm font-bold text-primary">{ps.reps}</span>
-                    <span className="text-xs text-outline">@ {ps.percentage}%</span>
+                <div className="flex items-center justify-between">
+                  {!liftName && (
+                    editing === i ? (
+                      <input
+                        className="bg-surface-container-high px-2 py-1 text-xs font-bold text-on-surface outline-none"
+                        value={ex.name}
+                        onChange={(e) => updateExercise(i, { ...ex, name: e.target.value })}
+                        autoFocus
+                      />
+                    ) : (
+                      <span className="text-xs font-bold text-on-surface">{ex.name}</span>
+                    )
+                  )}
+                  <div className="flex items-center gap-1">
+                    {editing === i ? (
+                      <button onClick={() => setEditing(null)} className="text-xs text-primary">done</button>
+                    ) : (
+                      <button onClick={() => setEditing(i)} className="text-xs text-outline hover:text-primary">
+                        <span className="material-symbols-outlined text-sm">edit</span>
+                      </button>
+                    )}
+                    <button onClick={() => removeExercise(i)} className="text-xs text-outline hover:text-error">
+                      <span className="material-symbols-outlined text-sm">close</span>
+                    </button>
                   </div>
-                ))}
+                </div>
+                {editing === i ? (
+                  ex.percentageSets.map((ps, j) => (
+                    <div key={j} className="flex items-center gap-2">
+                      <input
+                        className="w-8 bg-surface-container-high px-1 py-0.5 text-center text-sm font-bold text-primary outline-none"
+                        value={ps.reps}
+                        onChange={(e) => {
+                          const next = [...(ex.percentageSets ?? [])];
+                          next[j] = { ...ps, reps: e.target.value };
+                          updateExercise(i, { ...ex, percentageSets: next });
+                        }}
+                      />
+                      <span className="text-xs text-outline">@</span>
+                      <input
+                        className="w-12 bg-surface-container-high px-1 py-0.5 text-center text-xs text-outline outline-none"
+                        value={ps.percentage}
+                        type="number"
+                        onChange={(e) => {
+                          const next = [...(ex.percentageSets ?? [])];
+                          next[j] = { ...ps, percentage: parseInt(e.target.value) || 0 };
+                          updateExercise(i, { ...ex, percentageSets: next });
+                        }}
+                      />
+                      <span className="text-xs text-outline">%</span>
+                    </div>
+                  ))
+                ) : (
+                  ex.percentageSets.map((ps, j) => (
+                    <div key={j} className="flex items-center gap-2">
+                      <span className="w-8 text-sm font-bold text-primary">{ps.reps}</span>
+                      <span className="text-xs text-outline">@ {ps.percentage}%</span>
+                    </div>
+                  ))
+                )}
               </div>
             ) : (
               <div className="flex items-center gap-2">

@@ -43,6 +43,14 @@ export function ParsedWorkoutEditor({
     setSections(sections.filter((_, i) => i !== index));
   }
 
+  function moveSection(index: number, direction: -1 | 1) {
+    const target = index + direction;
+    if (target < 0 || target >= sections.length) return;
+    const next = [...sections];
+    [next[index], next[target]] = [next[target], next[index]];
+    setSections(next);
+  }
+
   function addSection() {
     setSections([
       ...sections,
@@ -148,15 +156,24 @@ export function ParsedWorkoutEditor({
       </div>
 
       {/* Sections */}
-      {sections.map((section, i) =>
-        section.type === "WOD" ? (
-          <div key={i} className="relative">
-            <button
-              onClick={() => removeSection(i)}
-              className="absolute right-0 top-0 z-10 p-1 text-outline hover:text-error"
-            >
+      {sections.map((section, i) => (
+        <div key={i} className="relative">
+          <div className="absolute right-0 top-0 z-10 flex items-center gap-0.5">
+            {i > 0 && (
+              <button onClick={() => moveSection(i, -1)} className="p-1 text-outline hover:text-primary">
+                <span className="material-symbols-outlined text-sm">arrow_upward</span>
+              </button>
+            )}
+            {i < sections.length - 1 && (
+              <button onClick={() => moveSection(i, 1)} className="p-1 text-outline hover:text-primary">
+                <span className="material-symbols-outlined text-sm">arrow_downward</span>
+              </button>
+            )}
+            <button onClick={() => removeSection(i)} className="p-1 text-outline hover:text-error">
               <span className="material-symbols-outlined text-sm">close</span>
             </button>
+          </div>
+          {section.type === "WOD" ? (
             <WodSectionEditor
               wodFormat={section.wodFormat}
               wodScoreType={section.wodScoreType}
@@ -169,15 +186,7 @@ export function ParsedWorkoutEditor({
               wodDescription={section.wodDescription}
               onChange={(data) => updateSection(i, data)}
             />
-          </div>
-        ) : (
-          <div key={i} className="relative">
-            <button
-              onClick={() => removeSection(i)}
-              className="absolute right-0 top-0 z-10 p-1 text-outline hover:text-error"
-            >
-              <span className="material-symbols-outlined text-sm">close</span>
-            </button>
+          ) : (
             <SectionEditor
               type={section.type}
               exercises={section.exercises}
@@ -185,9 +194,9 @@ export function ParsedWorkoutEditor({
               liftName={section.liftName}
               onChange={(data) => updateSection(i, { exercises: data.exercises, sets: data.sets, liftName: data.liftName })}
             />
-          </div>
-        )
-      )}
+          )}
+        </div>
+      ))}
 
       <button
         onClick={addSection}

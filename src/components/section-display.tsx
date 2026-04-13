@@ -25,14 +25,40 @@ interface SectionDisplayProps {
   date: string;
   workoutId: number;
   previousWeights?: Record<string, PreviousWeight>;
+  loggedSetsToday?: Record<string, number>;
 }
 
-export function SectionDisplay({ section, userMax, date, workoutId, previousWeights }: SectionDisplayProps) {
+function parseSetsAndReps(sets: string | null): { setCount?: number; repsPerSet?: number } {
+  if (!sets) return {};
+  // "3-3-3-3-3" → 5 sets of 3
+  const dashMatch = sets.match(/^(\d+)(?:\s*-\s*\d+)+$/);
+  if (dashMatch) {
+    const parts = sets.split(/\s*-\s*/);
+    return { setCount: parts.length, repsPerSet: parseInt(parts[0]) };
+  }
+  // "5 sets" or "5x3"
+  const setsMatch = sets.match(/(\d+)\s*(?:sets?|x)\s*(\d+)?/i);
+  if (setsMatch) {
+    return {
+      setCount: parseInt(setsMatch[1]),
+      repsPerSet: setsMatch[2] ? parseInt(setsMatch[2]) : undefined,
+    };
+  }
+  return {};
+}
+
+function parseDefaultReps(name: string): number | undefined {
+  const match = name.match(/^(\d+)\s+/);
+  return match ? parseInt(match[1]) : undefined;
+}
+
+export function SectionDisplay({ section, userMax, date, workoutId, previousWeights, loggedSetsToday }: SectionDisplayProps) {
   const isOlympic = section.type === "OLYMPIC LIFT";
   const isLoggable =
     isOlympic ||
     section.type.startsWith("STRENGTH") ||
     section.type === "ACCESSORY";
+  const { setCount: expectedSets, repsPerSet: sectionReps } = parseSetsAndReps(section.sets);
 
   return (
     <div className="flex flex-col gap-3">
@@ -64,53 +90,66 @@ export function SectionDisplay({ section, userMax, date, workoutId, previousWeig
           <div key={i}>
             {exercise.percentageSets ? (
               <div className="flex flex-col gap-px">
-                {exercise.percentageSets.map((ps, j) => {
-                  const repsNum = parseInt(ps.reps) || 1;
-                  const computedWeight = userMax
-                    ? calculateWeight(userMax.maxWeight, ps.percentage)
-                    : null;
+                {exercise.percentageSets.flatMap((ps, j) => {
+                  const multiMatch = ps.reps.match(/^(\d+)\s*x\s*(\d+)$/i);
+                  const setCount = multiMatch ? parseInt(multiMatch[1]) : 1;
+                  const repsPerSet = multiMatch ? parseInt(multiMatch[2]) : (parseInt(ps.reps) || 1);
+                  const repsLabel = multiMatch ? multiMatch[2] : ps.reps;
 
-                  if (computedWeight != null && section.liftName) {
-                    return (
-                      <PercentageRow
-                        key={j}
-                        repsLabel={ps.reps}
-                        percentage={ps.percentage}
-                        computedWeight={computedWeight}
-                        unit={userMax!.unit}
-                        date={date}
-                        workoutId={workoutId}
-                        liftName={section.liftName}
-                        reps={repsNum}
-                        sectionType={section.type}
-                      />
-                    );
-                  }
+                  return Array.from({ length: setCount }, (_, s) => {
+                    const key = `${j}-${s}`;
+                    const computedWeight = userMax
+                      ? calculateWeight(userMax.maxWeight, ps.percentage)
+                      : null;
 
-                  return (
-                    <div
-                      key={j}
-                      className="flex items-center justify-between bg-surface-container p-3"
-                    >
-                      <span className="font-headline font-bold">
-                        {ps.reps}
-                        <span className="mx-1 text-on-surface-variant">@</span>
-                        {ps.percentage}%
-                      </span>
-                      {section.liftName ? (
-                        <LogExerciseInline
+                    if (computedWeight != null && section.liftName) {
+                      return (
+                        <PercentageRow
+                          key={key}
+                          repsLabel={repsLabel}
+                          percentage={ps.percentage}
+                          computedWeight={computedWeight}
+                          unit={userMax!.unit}
                           date={date}
                           workoutId={workoutId}
-                          exerciseName={section.liftName}
+                          liftName={section.liftName}
+                          reps={repsPerSet}
                           sectionType={section.type}
+                          setLabel={setCount > 1 ? `Set ${s + 1}/${setCount}` : undefined}
                         />
-                      ) : (
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-outline">
-                          —
+                      );
+                    }
+
+                    return (
+                      <div
+                        key={key}
+                        className="flex items-center justify-between bg-surface-container p-3"
+                      >
+                        <span className="font-headline font-bold">
+                          {repsLabel}
+                          <span className="mx-1 text-on-surface-variant">@</span>
+                          {ps.percentage}%
+                          {setCount > 1 && (
+                            <span className="ml-2 text-[10px] font-normal text-on-surface-variant">
+                              Set {s + 1}/{setCount}
+                            </span>
+                          )}
                         </span>
-                      )}
-                    </div>
-                  );
+                        {section.liftName ? (
+                          <LogExerciseInline
+                            date={date}
+                            workoutId={workoutId}
+                            exerciseName={section.liftName}
+                            sectionType={section.type}
+                          />
+                        ) : (
+                          <span className="text-[10px] font-bold uppercase tracking-widest text-outline">
+                            —
+                          </span>
+                        )}
+                      </div>
+                    );
+                  });
                 })}
               </div>
             ) : (
@@ -148,7 +187,10 @@ export function SectionDisplay({ section, userMax, date, workoutId, previousWeig
                       exerciseName={exercise.name}
                       lastWeight={previousWeights?.[exercise.name]?.weight}
                       lastReps={previousWeights?.[exercise.name]?.reps ?? undefined}
+                      defaultReps={parseDefaultReps(exercise.name) ?? sectionReps}
                       sectionType={section.type}
+                      expectedSets={expectedSets}
+                      initialLoggedCount={loggedSetsToday?.[exercise.name] ?? 0}
                     />
                   )}
                 </div>

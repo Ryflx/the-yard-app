@@ -14,6 +14,7 @@ interface PercentageRowProps {
   liftName: string;
   reps: number;
   sectionType: string;
+  setLabel?: string;
 }
 
 export function PercentageRow({
@@ -26,6 +27,7 @@ export function PercentageRow({
   liftName,
   reps,
   sectionType,
+  setLabel,
 }: PercentageRowProps) {
   const [plateOpen, setPlateOpen] = useState(false);
 
@@ -41,6 +43,11 @@ export function PercentageRow({
           <span className="shrink-0 font-headline text-lg font-bold text-primary-container">
             {computedWeight}{unit}
           </span>
+          {setLabel && (
+            <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+              {setLabel}
+            </span>
+          )}
         </div>
         <div className="flex shrink-0 items-center gap-1">
           <PlateToggle open={plateOpen} onToggle={() => setPlateOpen(!plateOpen)} />

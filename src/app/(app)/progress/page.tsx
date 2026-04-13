@@ -13,6 +13,7 @@ import { LiftCharts } from "@/components/lift-chart";
 import { GoalsSection } from "@/components/goals-section";
 import { format, parseISO } from "date-fns";
 import { normalizeLiftName } from "@/lib/percentage";
+import { RecentPerformance } from "@/components/recent-performance";
 import { assessStrength, assessGeneralStrength, type Sex } from "@/lib/strength-standards";
 import Link from "next/link";
 
@@ -207,7 +208,7 @@ export default async function ProgressPage() {
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-col gap-px">
             {allLiftNames.map((name) => {
               const existing = maxesByName.get(name);
               return (
@@ -228,63 +229,7 @@ export default async function ProgressPage() {
       <LiftCharts data={chartData} />
 
       {/* Recent Performance */}
-      <section>
-        <div className="mb-6 flex items-baseline justify-between">
-          <h3 className="font-headline text-2xl font-black uppercase tracking-tighter">
-            RECENT PERFORMANCE
-          </h3>
-          {history.length > 0 && (
-            <span className="cursor-pointer font-label text-[10px] font-bold uppercase tracking-[0.2em] text-primary hover:underline">
-              ALL HISTORY
-            </span>
-          )}
-        </div>
-
-        {history.length === 0 ? (
-          <div className="bg-surface-container-high p-12 text-center">
-            <p className="font-headline text-xl font-bold uppercase tracking-tight text-on-surface-variant">
-              NO LIFTS LOGGED YET
-            </p>
-            <p className="mt-2 font-label text-xs tracking-widest text-outline">
-              LOG YOUR FIRST SET FROM A WORKOUT
-            </p>
-          </div>
-        ) : (
-          <div className="space-y-px">
-            {history.map((log) => (
-              <div
-                key={log.id}
-                className="flex items-center justify-between bg-surface-container p-4 transition-colors hover:bg-surface-container-high"
-              >
-                <div className="flex items-center gap-6">
-                  <div className="flex h-12 w-12 flex-col items-center justify-center bg-surface-variant">
-                    <span className="text-[10px] font-black leading-none">
-                      {format(parseISO(log.date), "MMM").toUpperCase()}
-                    </span>
-                    <span className="text-lg font-black leading-none">
-                      {format(parseISO(log.date), "d")}
-                    </span>
-                  </div>
-                  <div>
-                    <p className="font-headline text-sm font-bold uppercase tracking-tight">
-                      {log.liftName}
-                    </p>
-                    <p className="text-[10px] font-medium uppercase tracking-widest text-on-surface-variant">
-                      {log.reps && `${log.reps} reps`}
-                      {log.sets && ` · ${log.sets} sets`}
-                    </p>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <p className="font-headline text-xl font-bold text-on-surface">
-                    {log.weight} {log.unit}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </section>
+      <RecentPerformance history={history} />
     </div>
   );
 }

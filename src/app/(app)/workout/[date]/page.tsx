@@ -8,6 +8,7 @@ import {
   getExerciseHistory,
   getWodResult,
   getUserProfile,
+  getLoggedSetsForDate,
 } from "@/app/actions";
 import { SectionDisplay } from "@/components/section-display";
 import { Barbell1RMSection } from "@/components/barbell-1rm-section";
@@ -73,11 +74,12 @@ async function BarbellDetail({
     ...strengthExerciseNames,
   ];
 
-  const [userMax, estimated1RM, previousWeights, exerciseHistory] = await Promise.all([
+  const [userMax, estimated1RM, previousWeights, exerciseHistory, loggedSetsToday] = await Promise.all([
     liftName ? getUserMaxForLift(liftName) : null,
     liftName ? getEstimated1RM(liftName) : null,
     getLastLoggedWeights(strengthExerciseNames),
     getExerciseHistory(allLoggableNames, 10),
+    getLoggedSetsForDate(date, allLoggableNames),
   ]);
 
   const STALE_THRESHOLD_MS = 4 * 7 * 24 * 60 * 60 * 1000;
@@ -151,6 +153,7 @@ async function BarbellDetail({
             date={date}
             workoutId={workout.id}
             previousWeights={previousWeights}
+            loggedSetsToday={loggedSetsToday}
           />
         ))}
       </div>
@@ -184,7 +187,10 @@ async function CrossFitDetail({
   const strengthNames = strengthSections.flatMap((s) =>
     s.exercises.map((e) => (e as { name: string }).name)
   );
-  const previousWeights = strengthNames.length > 0 ? await getLastLoggedWeights(strengthNames) : {};
+  const [previousWeights, loggedSetsToday] = await Promise.all([
+    strengthNames.length > 0 ? getLastLoggedWeights(strengthNames) : {} as Record<string, { weight: number; reps: number | null; unit: string; prevWeight: number | null; prevReps: number | null }>,
+    strengthNames.length > 0 ? getLoggedSetsForDate(date, strengthNames) : {} as Record<string, number>,
+  ]);
 
   return (
     <div className="flex flex-col gap-8">
@@ -264,35 +270,60 @@ async function CrossFitDetail({
                         </span>
                       ))}
                     </div>
-                    <LogExerciseInline
-                      date={date}
-                      workoutId={workout.id}
-                      exerciseName={section.exercises.map((e) => e.name).join(" + ")}
-                      lastWeight={previousWeights[section.exercises.map((e) => e.name).join(" + ")]?.weight}
-                      lastReps={previousWeights[section.exercises.map((e) => e.name).join(" + ")]?.reps ?? undefined}
-                      sectionType={section.type}
-                    />
+                    {(() => {
+                      const combinedName = section.exercises.map((e) => e.name).join(" + ");
+                      const dashMatch = section.sets?.match(/^(\d+)(?:\s*-\s*\d+)+$/);
+                      const setsMatch = section.sets?.match(/(\d+)\s*(?:sets?|x)\s*(\d+)?/i);
+                      const expectedSets = dashMatch ? section.sets!.split(/\s*-\s*/).length : setsMatch ? parseInt(setsMatch[1]) : undefined;
+                      const sectionReps = dashMatch ? parseInt(dashMatch[1]) : setsMatch?.[2] ? parseInt(setsMatch[2]) : undefined;
+                      const repsMatch = section.exercises[0]?.name.match(/^(\d+)\s+/);
+                      const defaultReps = repsMatch ? parseInt(repsMatch[1]) : sectionReps;
+                      return (
+                        <LogExerciseInline
+                          date={date}
+                          workoutId={workout.id}
+                          exerciseName={combinedName}
+                          lastWeight={previousWeights[combinedName]?.weight}
+                          lastReps={previousWeights[combinedName]?.reps ?? undefined}
+                          sectionType={section.type}
+                          expectedSets={expectedSets}
+                          defaultReps={defaultReps}
+                          initialLoggedCount={loggedSetsToday[combinedName] ?? 0}
+                        />
+                      );
+                    })()}
                   </div>
                 </div>
               ) : (
                 <div className="flex flex-col gap-1">
-                  {section.exercises.map((exercise, i) => (
-                    <div key={i} className="flex items-center justify-between py-1">
-                      <span className="font-bold text-on-surface">
-                        {exercise.name}
-                      </span>
-                      {isStrength && (
-                        <LogExerciseInline
-                          date={date}
-                          workoutId={workout.id}
-                          exerciseName={exercise.name}
-                          lastWeight={previousWeights[exercise.name]?.weight}
-                          lastReps={previousWeights[exercise.name]?.reps ?? undefined}
-                          sectionType={section.type}
-                        />
-                      )}
-                    </div>
-                  ))}
+                  {section.exercises.map((exercise, i) => {
+                    const dashMatch = section.sets?.match(/^(\d+)(?:\s*-\s*\d+)+$/);
+                    const setsMatch = section.sets?.match(/(\d+)\s*(?:sets?|x)\s*(\d+)?/i);
+                    const expectedSets = dashMatch ? section.sets!.split(/\s*-\s*/).length : setsMatch ? parseInt(setsMatch[1]) : undefined;
+                    const sectionReps = dashMatch ? parseInt(dashMatch[1]) : setsMatch?.[2] ? parseInt(setsMatch[2]) : undefined;
+                    const repsMatch = exercise.name.match(/^(\d+)\s+/);
+                    const defaultReps = repsMatch ? parseInt(repsMatch[1]) : sectionReps;
+                    return (
+                      <div key={i} className="flex items-center justify-between py-1">
+                        <span className="font-bold text-on-surface">
+                          {exercise.name}
+                        </span>
+                        {isStrength && (
+                          <LogExerciseInline
+                            date={date}
+                            workoutId={workout.id}
+                            exerciseName={exercise.name}
+                            lastWeight={previousWeights[exercise.name]?.weight}
+                            lastReps={previousWeights[exercise.name]?.reps ?? undefined}
+                            sectionType={section.type}
+                            expectedSets={expectedSets}
+                            defaultReps={defaultReps}
+                            initialLoggedCount={loggedSetsToday[exercise.name] ?? 0}
+                          />
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               )}
 

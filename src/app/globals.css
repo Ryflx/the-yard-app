@@ -142,3 +142,26 @@
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
+
+/* Force Clerk inputs to match dark theme */
+.cl-formFieldInput,
+.cl-input,
+.cl-formFieldInput__emailAddress,
+.cl-formFieldInput__password,
+.cl-formFieldInput__identifier,
+[data-clerk] input,
+[class*="cl-formField"] input,
+[class*="cl-internal"] input,
+input[name="identifier"],
+input[name="emailAddress"],
+input[name="password"] {
+  background-color: #0e0e0e !important;
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  border-color: #494847 !important;
+}
+[class*="cl-internal"] input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0 30px #0e0e0e inset !important;
+}
