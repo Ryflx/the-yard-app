@@ -15,6 +15,7 @@ import { format, parseISO } from "date-fns";
 import { normalizeLiftName } from "@/lib/percentage";
 import { RecentPerformance } from "@/components/recent-performance";
 import { assessStrength, assessGeneralStrength, type Sex } from "@/lib/strength-standards";
+import { ALL_CATALOG_LIFTS } from "@/lib/lift-catalog";
 import Link from "next/link";
 
 export default async function ProgressPage() {
@@ -36,8 +37,9 @@ export default async function ProgressPage() {
     new Set([
       ...programmedLifts,
       ...maxes.map((m) => normalizeLiftName(m.liftName)),
+      ...ALL_CATALOG_LIFTS.map((l) => normalizeLiftName(l)),
     ])
-  );
+  ).sort();
 
   const profileComplete = profile?.bodyweightKg != null && profile?.sex != null;
 

@@ -90,6 +90,19 @@ async function BarbellDetail({
     estimated1RM &&
     (!userMax || (isStale && estimated1RM.estimatedMax > userMax.maxWeight));
 
+  // Effective 1RM used for percentage-based computations: use the higher of stored max
+  // and estimated 1RM so percentages reflect current actual strength, not a stale value.
+  const effectiveMax = (() => {
+    if (userMax && estimated1RM) {
+      return estimated1RM.estimatedMax > userMax.maxWeight
+        ? { maxWeight: estimated1RM.estimatedMax, unit: userMax.unit }
+        : userMax;
+    }
+    if (userMax) return userMax;
+    if (estimated1RM) return { maxWeight: estimated1RM.estimatedMax, unit: "kg" };
+    return null;
+  })();
+
   return (
     <div className="flex flex-col gap-8">
       <Link
@@ -135,12 +148,12 @@ async function BarbellDetail({
         />
       )}
 
-      {userMax && olympicSection?.exercises?.[0]?.percentageSets && (() => {
+      {effectiveMax && olympicSection?.exercises?.[0]?.percentageSets && (() => {
         const pSets = olympicSection.exercises[0].percentageSets!;
         const maxPct = Math.max(...pSets.map((ps) => ps.percentage));
-        const workingWeight = calculateWeight(userMax.maxWeight, maxPct);
+        const workingWeight = calculateWeight(effectiveMax.maxWeight, maxPct);
         return (
-          <WarmupCalculator workingWeight={workingWeight} unit={userMax.unit} />
+          <WarmupCalculator workingWeight={workingWeight} unit={effectiveMax.unit} />
         );
       })()}
 
@@ -149,7 +162,7 @@ async function BarbellDetail({
           <SectionDisplay
             key={i}
             section={section}
-            userMax={section.type === "OLYMPIC LIFT" ? userMax : undefined}
+            userMax={section.type === "OLYMPIC LIFT" ? effectiveMax : undefined}
             date={date}
             workoutId={workout.id}
             previousWeights={previousWeights}

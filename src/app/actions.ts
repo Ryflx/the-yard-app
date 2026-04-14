@@ -196,6 +196,21 @@ export async function setUserMax(liftName: string, weight: number) {
   revalidatePath("/progress");
 }
 
+export async function deleteUserMax(liftName: string) {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  const normalized = normalizeLiftName(liftName);
+
+  await db
+    .delete(userMaxes)
+    .where(and(eq(userMaxes.userId, userId), eq(userMaxes.liftName, normalized)));
+
+  revalidatePath("/schedule");
+  revalidatePath("/progress");
+  revalidatePath("/profile");
+}
+
 export async function logLift(data: {
   workoutId?: number;
   date: string;
@@ -667,6 +682,59 @@ export async function getLoggedSetsForDate(
     if (row && row.total > 0) result[name] = row.total;
   }
   return result;
+}
+
+export async function getLoggedSetsDetailForDate(
+  date: string,
+  exerciseName: string
+): Promise<{ id: number; weight: number; reps: number | null }[]> {
+  const { userId } = await auth();
+  if (!userId) return [];
+
+  const normalized = normalizeLiftName(exerciseName);
+  const rows = await db
+    .select({
+      id: userLiftLogs.id,
+      weight: userLiftLogs.weight,
+      reps: userLiftLogs.reps,
+    })
+    .from(userLiftLogs)
+    .where(
+      and(
+        eq(userLiftLogs.userId, userId),
+        eq(userLiftLogs.liftName, normalized),
+        eq(userLiftLogs.date, date)
+      )
+    )
+    .orderBy(asc(userLiftLogs.id));
+  return rows;
+}
+
+export async function deleteLoggedSet(logId: number): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  await db
+    .delete(userLiftLogs)
+    .where(and(eq(userLiftLogs.id, logId), eq(userLiftLogs.userId, userId)));
+
+  revalidatePath("/progress");
+}
+
+export async function updateLoggedSet(
+  logId: number,
+  weight: number
+): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+  if (isNaN(weight) || weight <= 0) throw new Error("Invalid weight");
+
+  await db
+    .update(userLiftLogs)
+    .set({ weight })
+    .where(and(eq(userLiftLogs.id, logId), eq(userLiftLogs.userId, userId)));
+
+  revalidatePath("/progress");
 }
 
 export async function addWorkout(data: {

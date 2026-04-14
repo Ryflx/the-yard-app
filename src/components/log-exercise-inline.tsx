@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { logLift } from "@/app/actions";
+import { useState, useCallback } from "react";
+import { logLift, getLoggedSetsDetailForDate, deleteLoggedSet, updateLoggedSet } from "@/app/actions";
 import { toast } from "sonner";
 import { useRestTimer } from "@/components/rest-timer";
 import { usePRCelebration } from "@/components/pr-celebration";
@@ -9,6 +9,12 @@ import { usePRCelebration } from "@/components/pr-celebration";
 interface LoggedSet {
   weight: number;
   reps?: number;
+}
+
+interface ServerSet {
+  id: number;
+  weight: number;
+  reps: number | null;
 }
 
 type InputMode = "weight" | "cals";
@@ -52,13 +58,19 @@ export function LogExerciseInline({
   const { celebrate } = usePRCelebration();
   const mode = inputModeProp ?? detectInputMode(exerciseName);
   const effectiveReps = defaultReps ?? lastReps;
+  const isBarbellSection = sectionType === "OLYMPIC LIFT" || sectionType.startsWith("STRENGTH ") || sectionType === "ACCESSORY";
   const [expanded, setExpanded] = useState(false);
   const [singleOpen, setSingleOpen] = useState(false);
   const [weight, setWeight] = useState(lastWeight?.toString() ?? "");
   const [loading, setLoading] = useState(false);
   const [loggedSets, setLoggedSets] = useState<LoggedSet[]>([]);
+  const [serverSets, setServerSets] = useState<ServerSet[]>([]);
+  const [deletingId, setDeletingId] = useState<number | null>(null);
+  const [editingServerId, setEditingServerId] = useState<number | null>(null);
+  const [editServerWeight, setEditServerWeight] = useState("");
+  const [savingEditId, setSavingEditId] = useState<number | null>(null);
 
-  const totalLogged = initialLoggedCount + loggedSets.length;
+  const totalLogged = serverSets.length > 0 ? serverSets.length : initialLoggedCount + loggedSets.length;
   const allSetsLogged = expectedSets ? totalLogged >= expectedSets : false;
   const hasMultiSets = expectedSets && expectedSets > 1;
 
@@ -70,6 +82,18 @@ export function LogExerciseInline({
     Array.from({ length: expectedSets ?? 0 }, (_, i) => i < initialLoggedCount)
   );
   const [loadingSetIdx, setLoadingSetIdx] = useState<number | null>(null);
+
+  const fetchServerSets = useCallback(async () => {
+    const sets = await getLoggedSetsDetailForDate(date, exerciseName);
+    setServerSets(sets);
+    // Sync local state with server
+    const newLogged = Array.from({ length: expectedSets ?? 0 }, (_, i) => i < sets.length);
+    setSetLogged(newLogged);
+    const newWeights = Array.from({ length: expectedSets ?? 0 }, (_, i) =>
+      sets[i] ? sets[i].weight.toString() : (lastWeight?.toString() ?? "")
+    );
+    setSetWeights(newWeights);
+  }, [date, exerciseName, expectedSets, lastWeight]);
 
   async function handleLogSingle() {
     const w = parseFloat(weight);
@@ -93,7 +117,7 @@ export function LogExerciseInline({
       } else {
         toast.success(mode === "cals" ? `${w} cals logged` : `${w}kg logged`);
       }
-      startTimer(sectionType);
+      if (isBarbellSection) startTimer(sectionType);
     } catch {
       toast.error("Failed to log");
     } finally {
@@ -114,18 +138,14 @@ export function LogExerciseInline({
         weight: w,
         reps: effectiveReps ?? undefined,
       });
-      setSetLogged((prev) => {
-        const next = [...prev];
-        next[index] = true;
-        return next;
-      });
       setLoggedSets((prev) => [...prev, { weight: w, reps: effectiveReps }]);
+      await fetchServerSets();
       if (result.isPR) {
         celebrate({ liftName: exerciseName, weight: w, unit: "kg", previousBest: result.previousBest });
       } else {
         toast.success(`Set ${index + 1} — ${w}kg logged`);
       }
-      startTimer(sectionType);
+      if (isBarbellSection) startTimer(sectionType);
     } catch {
       toast.error("Failed to log");
     } finally {
@@ -133,66 +153,162 @@ export function LogExerciseInline({
     }
   }
 
+  async function handleDeleteSet(logId: number) {
+    setDeletingId(logId);
+    try {
+      await deleteLoggedSet(logId);
+      await fetchServerSets();
+      toast.success("Set removed");
+    } catch {
+      toast.error("Failed to delete");
+    } finally {
+      setDeletingId(null);
+    }
+  }
+
+  async function handleSaveEdit(logId: number) {
+    const w = parseFloat(editServerWeight);
+    if (isNaN(w) || w <= 0) return;
+    setSavingEditId(logId);
+    try {
+      await updateLoggedSet(logId, w);
+      await fetchServerSets();
+      setEditingServerId(null);
+      setEditServerWeight("");
+      toast.success(`Updated to ${w}kg`);
+    } catch {
+      toast.error("Failed to update");
+    } finally {
+      setSavingEditId(null);
+    }
+  }
+
   // Multi-set expanded view
   if (hasMultiSets && expanded) {
-    const allDone = setLogged.every(Boolean);
+    const remainingSlots = Math.max(0, expectedSets! - serverSets.length);
     return (
       <div className="flex flex-col gap-1.5">
-        {Array.from({ length: expectedSets! }, (_, i) => (
-          <div key={i} className="flex items-center gap-2">
+        {/* Logged sets from server */}
+        {serverSets.map((s, i) => (
+          <div key={s.id} className="flex items-center gap-2">
             <span className="w-10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
               S{i + 1}
             </span>
-            {setLogged[i] ? (
-              <span className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-primary">
-                <span
-                  className="material-symbols-outlined text-sm"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  check_circle
-                </span>
-                {setWeights[i]}kg{effectiveReps ? ` ×${effectiveReps}` : ""}
-              </span>
-            ) : (
+            {editingServerId === s.id ? (
               <>
                 <input
                   type="number"
                   step="0.5"
                   min="0"
-                  placeholder="kg"
-                  value={setWeights[i]}
-                  onChange={(e) => {
-                    const next = [...setWeights];
-                    next[i] = e.target.value;
-                    setSetWeights(next);
-                  }}
+                  value={editServerWeight}
+                  onChange={(e) => setEditServerWeight(e.target.value)}
+                  autoFocus
                   onKeyDown={(e) => {
-                    if (e.key === "Enter") handleLogSet(i);
+                    if (e.key === "Enter") handleSaveEdit(s.id);
+                    if (e.key === "Escape") {
+                      setEditingServerId(null);
+                      setEditServerWeight("");
+                    }
                   }}
                   className="w-16 border-0 border-b border-outline-variant bg-transparent p-0 py-1 text-center font-headline text-sm font-bold text-on-surface placeholder:text-outline focus:border-primary focus:ring-0"
                 />
-                {effectiveReps && (
-                  <span className="text-[10px] font-bold text-on-surface-variant">×{effectiveReps}</span>
+                {s.reps && (
+                  <span className="text-[10px] font-bold text-on-surface-variant">×{s.reps}</span>
                 )}
                 <button
-                  onClick={() => handleLogSet(i)}
-                  disabled={loadingSetIdx === i}
+                  onClick={() => handleSaveEdit(s.id)}
+                  disabled={savingEditId === s.id}
                   className="squishy bg-primary-container px-2 py-1 text-[10px] font-bold text-on-primary-fixed disabled:opacity-50"
                 >
-                  {loadingSetIdx === i ? "..." : "OK"}
+                  {savingEditId === s.id ? "..." : "OK"}
+                </button>
+                <button
+                  onClick={() => {
+                    setEditingServerId(null);
+                    setEditServerWeight("");
+                  }}
+                  className="text-outline hover:text-on-surface"
+                >
+                  <span className="material-symbols-outlined text-sm">close</span>
+                </button>
+              </>
+            ) : (
+              <>
+                <span className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-primary">
+                  <span
+                    className="material-symbols-outlined text-sm"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    check_circle
+                  </span>
+                  {s.weight}kg{s.reps ? ` ×${s.reps}` : ""}
+                </span>
+                <button
+                  onClick={() => {
+                    setEditingServerId(s.id);
+                    setEditServerWeight(s.weight.toString());
+                  }}
+                  className="ml-auto text-outline hover:text-on-surface"
+                >
+                  <span className="material-symbols-outlined text-sm">edit</span>
+                </button>
+                <button
+                  onClick={() => handleDeleteSet(s.id)}
+                  disabled={deletingId === s.id}
+                  className="text-outline hover:text-red-400 disabled:opacity-50"
+                >
+                  <span className="material-symbols-outlined text-sm">
+                    {deletingId === s.id ? "hourglass_empty" : "close"}
+                  </span>
                 </button>
               </>
             )}
           </div>
         ))}
-        {allDone && (
-          <button
-            onClick={() => setExpanded(false)}
-            className="text-[10px] font-bold uppercase tracking-widest text-outline hover:text-on-surface"
-          >
-            COLLAPSE
-          </button>
-        )}
+        {/* Input rows for remaining sets */}
+        {Array.from({ length: remainingSlots }, (_, ri) => {
+          const slotIdx = serverSets.length + ri;
+          return (
+            <div key={`input-${ri}`} className="flex items-center gap-2">
+              <span className="w-10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                S{slotIdx + 1}
+              </span>
+              <input
+                type="number"
+                step="0.5"
+                min="0"
+                placeholder="kg"
+                value={setWeights[slotIdx] ?? lastWeight?.toString() ?? ""}
+                onChange={(e) => {
+                  const next = [...setWeights];
+                  while (next.length <= slotIdx) next.push(lastWeight?.toString() ?? "");
+                  next[slotIdx] = e.target.value;
+                  setSetWeights(next);
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") handleLogSet(slotIdx);
+                }}
+                className="w-16 border-0 border-b border-outline-variant bg-transparent p-0 py-1 text-center font-headline text-sm font-bold text-on-surface placeholder:text-outline focus:border-primary focus:ring-0"
+              />
+              {effectiveReps && (
+                <span className="text-[10px] font-bold text-on-surface-variant">×{effectiveReps}</span>
+              )}
+              <button
+                onClick={() => handleLogSet(slotIdx)}
+                disabled={loadingSetIdx === slotIdx}
+                className="squishy bg-primary-container px-2 py-1 text-[10px] font-bold text-on-primary-fixed disabled:opacity-50"
+              >
+                {loadingSetIdx === slotIdx ? "..." : "OK"}
+              </button>
+            </div>
+          );
+        })}
+        <button
+          onClick={() => setExpanded(false)}
+          className="text-[10px] font-bold uppercase tracking-widest text-outline hover:text-on-surface"
+        >
+          COLLAPSE
+        </button>
       </div>
     );
   }
@@ -220,7 +336,7 @@ export function LogExerciseInline({
       {hasMultiSets ? (
         allSetsLogged ? (
           <button
-            onClick={() => setExpanded(true)}
+            onClick={() => { fetchServerSets(); setExpanded(true); }}
             className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-primary"
           >
             <span
@@ -233,7 +349,7 @@ export function LogExerciseInline({
           </button>
         ) : (
           <button
-            onClick={() => setExpanded(true)}
+            onClick={() => { fetchServerSets(); setExpanded(true); }}
             className="squishy flex items-center gap-1 bg-surface-variant px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-on-surface transition-colors hover:bg-surface-bright"
           >
             <span className="material-symbols-outlined text-sm">add_task</span>
