@@ -1706,7 +1706,7 @@ export async function getSubstitutionCandidates(): Promise<string[]> {
   if (!userId) return [];
   const [userHistory, library] = await Promise.all([
     db
-      .select({ name: userLiftLogs.liftName, freq: count(userLiftLogs.id) })
+      .select({ name: userLiftLogs.liftName })
       .from(userLiftLogs)
       .where(eq(userLiftLogs.userId, userId))
       .groupBy(userLiftLogs.liftName)
@@ -1716,7 +1716,7 @@ export async function getSubstitutionCandidates(): Promise<string[]> {
       .from(movements)
       .orderBy(asc(movements.name)),
   ]);
-  const userNames = userHistory.map((r) => r.name);
+  const userNames = userHistory.map((r) => normalizeLiftName(r.name));
   const userNamesSet = new Set(userNames);
   const libraryOnly = library
     .map((r) => r.name)
