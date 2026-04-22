@@ -1,7 +1,8 @@
 import type { PercentageSet } from "@/db/schema";
-import { calculateWeight } from "@/lib/percentage";
+import { calculateWeight, normalizeLiftName } from "@/lib/percentage";
 import { LogExerciseInline } from "@/components/log-exercise-inline";
 import { PercentageRow } from "@/components/percentage-row";
+import { SubstitutableExerciseRow } from "@/components/substitutable-exercise-row";
 
 interface PreviousWeight {
   weight: number;
@@ -26,6 +27,7 @@ interface SectionDisplayProps {
   workoutId: number;
   previousWeights?: Record<string, PreviousWeight>;
   loggedSetsToday?: Record<string, number>;
+  substitutions?: Record<string, string[]>;
 }
 
 function parseSetsAndReps(sets: string | null): { setCount?: number; repsPerSet?: number } {
@@ -52,7 +54,7 @@ function parseDefaultReps(name: string): number | undefined {
   return match ? parseInt(match[1]) : undefined;
 }
 
-export function SectionDisplay({ section, userMax, date, workoutId, previousWeights, loggedSetsToday }: SectionDisplayProps) {
+export function SectionDisplay({ section, userMax, date, workoutId, previousWeights, loggedSetsToday, substitutions }: SectionDisplayProps) {
   const isOlympic = section.type === "OLYMPIC LIFT";
   const isLoggable =
     isOlympic ||
@@ -160,46 +162,21 @@ export function SectionDisplay({ section, userMax, date, workoutId, previousWeig
               </div>
             ) : (
               <div className="flex flex-col gap-1 py-2">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <span className="font-bold text-on-surface">
-                      {exercise.name}
-                    </span>
-                    {previousWeights?.[exercise.name] && (() => {
-                      const pw = previousWeights[exercise.name];
-                      const delta = pw.prevWeight != null ? pw.weight - pw.prevWeight : null;
-                      return (
-                        <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
-                          <span>
-                            PREV: {pw.weight}kg
-                            {pw.reps && ` × ${pw.reps}`}
-                          </span>
-                          {delta != null && delta !== 0 && (
-                            <span className={delta > 0 ? "text-primary" : "text-red-400"}>
-                              <span className="material-symbols-outlined align-middle text-xs">
-                                {delta > 0 ? "arrow_upward" : "arrow_downward"}
-                              </span>
-                              {Math.abs(delta).toFixed(1)}kg
-                            </span>
-                          )}
-                        </span>
-                      );
-                    })()}
-                  </div>
-                  {isLoggable && (
-                    <LogExerciseInline
-                      date={date}
-                      workoutId={workoutId}
-                      exerciseName={exercise.name}
-                      lastWeight={previousWeights?.[exercise.name]?.weight}
-                      lastReps={previousWeights?.[exercise.name]?.reps ?? undefined}
-                      defaultReps={parseDefaultReps(exercise.name) ?? sectionReps}
-                      sectionType={section.type}
-                      expectedSets={expectedSets}
-                      initialLoggedCount={loggedSetsToday?.[exercise.name] ?? 0}
-                    />
-                  )}
-                </div>
+                {isLoggable ? (
+                  <SubstitutableExerciseRow
+                    date={date}
+                    workoutId={workoutId}
+                    exerciseName={exercise.name}
+                    sectionType={section.type}
+                    previousWeights={previousWeights}
+                    expectedSets={expectedSets}
+                    defaultReps={parseDefaultReps(exercise.name) ?? sectionReps}
+                    loggedSetsToday={loggedSetsToday}
+                    initialReplacements={substitutions?.[normalizeLiftName(exercise.name)] ?? null}
+                  />
+                ) : (
+                  <span className="font-bold text-on-surface">{exercise.name}</span>
+                )}
               </div>
             )}
           </div>

@@ -9,6 +9,7 @@ import {
   getWodResult,
   getUserProfile,
   getLoggedSetsForDate,
+  getExerciseSubstitutionsForDate,
 } from "@/app/actions";
 import { SectionDisplay } from "@/components/section-display";
 import { Barbell1RMSection } from "@/components/barbell-1rm-section";
@@ -74,12 +75,15 @@ async function BarbellDetail({
     ...strengthExerciseNames,
   ];
 
+  const substitutions = await getExerciseSubstitutionsForDate(date, workout.id);
+  const replacementNames = Object.values(substitutions).flat();
+
   const [userMax, estimated1RM, previousWeights, exerciseHistory, loggedSetsToday] = await Promise.all([
     liftName ? getUserMaxForLift(liftName) : null,
     liftName ? getEstimated1RM(liftName) : null,
-    getLastLoggedWeights(strengthExerciseNames),
-    getExerciseHistory(allLoggableNames, 10),
-    getLoggedSetsForDate(date, allLoggableNames),
+    getLastLoggedWeights([...strengthExerciseNames, ...replacementNames]),
+    getExerciseHistory([...allLoggableNames, ...replacementNames], 10),
+    getLoggedSetsForDate(date, [...allLoggableNames, ...replacementNames]),
   ]);
 
   const STALE_THRESHOLD_MS = 4 * 7 * 24 * 60 * 60 * 1000;
@@ -167,6 +171,7 @@ async function BarbellDetail({
             workoutId={workout.id}
             previousWeights={previousWeights}
             loggedSetsToday={loggedSetsToday}
+            substitutions={substitutions}
           />
         ))}
       </div>
