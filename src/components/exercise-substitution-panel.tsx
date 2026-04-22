@@ -19,8 +19,16 @@ export function ExerciseSubstitutionPanel({
   const [saving, setSaving] = useState(false);
 
   useEffect(() => {
-    getSubstitutionCandidates().then(setCandidates);
+    getSubstitutionCandidates().then(setCandidates).catch(() => {});
   }, []);
+
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") onCancel();
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [onCancel]);
 
   function filter(q: string): string[] {
     if (q.length === 0) return candidates.slice(0, 5);
@@ -59,7 +67,6 @@ export function ExerciseSubstitutionPanel({
           onChange={(e) => setInput1(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === "Enter") handleConfirm();
-            if (e.key === "Escape") onCancel();
           }}
           className="w-full border-0 border-b border-outline-variant bg-transparent py-1 text-sm font-bold text-on-surface placeholder:text-outline focus:border-primary focus:ring-0"
         />
@@ -85,9 +92,6 @@ export function ExerciseSubstitutionPanel({
             placeholder="Second movement..."
             value={input2}
             onChange={(e) => setInput2(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Escape") onCancel();
-            }}
             className="w-full border-0 border-b border-outline-variant bg-transparent py-1 text-sm font-bold text-on-surface placeholder:text-outline focus:border-primary focus:ring-0"
           />
           {chips2.length > 0 && (
