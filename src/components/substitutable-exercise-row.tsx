@@ -187,7 +187,7 @@ export function SubstitutableExerciseRow({
           </div>
 
           <div className="flex flex-col items-end gap-1.5">
-            {complexLoggedSets.length > 0 && (
+            {complexOpen && complexLoggedSets.length > 0 && (
               <div className="flex flex-wrap justify-end gap-1">
                 {complexLoggedSets.map((s, i) => (
                   <span
