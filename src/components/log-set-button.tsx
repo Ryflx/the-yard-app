@@ -125,22 +125,13 @@ export function LogSetButton({
   }
 
   return (
-    <div className="flex items-center gap-1">
-      <button
-        onClick={() => handleLog()}
-        disabled={loading}
-        className="squishy flex items-center gap-1 bg-surface-variant px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-on-surface transition-colors hover:bg-surface-bright disabled:opacity-50"
-      >
-        <span className="material-symbols-outlined text-sm">add_task</span>
-        {loading ? "..." : "LOG"}
-      </button>
-      <button
-        onClick={() => setEditing(true)}
-        className="flex items-center justify-center p-1.5 text-outline transition-colors hover:text-on-surface"
-        title="Adjust weight/reps"
-      >
-        <span className="material-symbols-outlined text-sm">edit</span>
-      </button>
-    </div>
+    <button
+      onClick={() => setEditing(true)}
+      disabled={loading}
+      className="squishy flex items-center gap-1 bg-surface-variant px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-on-surface transition-colors hover:bg-surface-bright disabled:opacity-50"
+    >
+      <span className="material-symbols-outlined text-sm">add_task</span>
+      LOG
+    </button>
   );
 }
