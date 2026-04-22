@@ -96,8 +96,8 @@ export function LogExerciseInline({
   }, [date, exerciseName, expectedSets, lastWeight]);
 
   async function handleLogSingle() {
-    const w = parseFloat(weight);
-    if (isNaN(w) || w < 0) return;
+    const w = parseFloat(weight) || 0;
+    if (w < 0) return;
 
     setLoading(true);
     try {
@@ -126,8 +126,8 @@ export function LogExerciseInline({
   }
 
   async function handleLogSet(index: number) {
-    const w = parseFloat(setWeights[index]);
-    if (isNaN(w) || w < 0) return;
+    const w = parseFloat(setWeights[index]) || 0;
+    if (w < 0) return;
 
     setLoadingSetIdx(index);
     try {
@@ -171,8 +171,8 @@ export function LogExerciseInline({
     const startIdx = serverSets.length;
     const toLog: { idx: number; w: number }[] = [];
     for (let i = startIdx; i < expectedSets; i++) {
-      const w = parseFloat(setWeights[i] ?? "");
-      if (!isNaN(w) && w > 0) toLog.push({ idx: i, w });
+      const w = parseFloat(setWeights[i] ?? "") || 0;
+      if (w >= 0) toLog.push({ idx: i, w });
     }
     if (toLog.length === 0) {
       toast.error("No weights to log");
