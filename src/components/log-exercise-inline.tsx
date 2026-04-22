@@ -399,7 +399,7 @@ export function LogExerciseInline({
             >
               check_circle
             </span>
-            {totalLogged}/{expectedSets} SETS
+            {expectedSets}/{expectedSets} SETS
           </button>
         ) : (
           <button
