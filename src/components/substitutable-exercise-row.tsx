@@ -131,6 +131,9 @@ export function SubstitutableExerciseRow({
     const pw = previousWeights?.[complexName];
     const delta = pw?.prevWeight != null ? pw.weight - pw.prevWeight : null;
     const prevRepsDisplay = pw?.repsText ?? (pw?.reps != null ? String(pw.reps) : null);
+    const initialComplexLogged = loggedSetsToday?.[complexName] ?? 0;
+    const totalComplexLogged = initialComplexLogged + complexLoggedSets.length;
+    const allComplexDone = expectedSets ? totalComplexLogged >= expectedSets : false;
 
     return (
       <div className="flex flex-col gap-1 py-1">
@@ -185,13 +188,28 @@ export function SubstitutableExerciseRow({
               </div>
             )}
             {!complexOpen ? (
-              <button
-                onClick={() => openComplex(pw)}
-                className="squishy flex items-center gap-1 bg-surface-variant px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-on-surface transition-colors hover:bg-surface-bright"
-              >
-                <span className="material-symbols-outlined text-sm">add_task</span>
-                {complexLoggedSets.length > 0 ? `SET ${complexLoggedSets.length + 1}` : "LOG"}
-              </button>
+              allComplexDone ? (
+                <button
+                  onClick={() => openComplex(pw)}
+                  className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-primary"
+                >
+                  <span
+                    className="material-symbols-outlined text-sm"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    check_circle
+                  </span>
+                  {totalComplexLogged}/{expectedSets} SETS
+                </button>
+              ) : (
+                <button
+                  onClick={() => openComplex(pw)}
+                  className="squishy flex items-center gap-1 bg-surface-variant px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-on-surface transition-colors hover:bg-surface-bright"
+                >
+                  <span className="material-symbols-outlined text-sm">add_task</span>
+                  {totalComplexLogged > 0 ? `SET ${totalComplexLogged + 1}` : "LOG"}
+                </button>
+              )
             ) : (
               <div className="flex items-center gap-1.5">
                 <input
