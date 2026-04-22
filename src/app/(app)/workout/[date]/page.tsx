@@ -76,7 +76,7 @@ async function BarbellDetail({
   ];
 
   const substitutions = await getExerciseSubstitutionsForDate(date, workout.id);
-  const replacementNames = Object.values(substitutions).flat();
+  const replacementNames = [...new Set(Object.values(substitutions).flat())];
 
   const [userMax, estimated1RM, previousWeights, exerciseHistory, loggedSetsToday] = await Promise.all([
     liftName ? getUserMaxForLift(liftName) : null,
