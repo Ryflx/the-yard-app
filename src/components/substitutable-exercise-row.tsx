@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { saveExerciseSubstitution, deleteExerciseSubstitution, logLift } from "@/app/actions";
 import { LogExerciseInline } from "@/components/log-exercise-inline";
 import { ExerciseSubstitutionPanel } from "@/components/exercise-substitution-panel";
@@ -54,6 +54,18 @@ export function SubstitutableExerciseRow({
   const [complexRep2, setComplexRep2] = useState("");
   const [complexLogging, setComplexLogging] = useState(false);
   const [complexLoggedSets, setComplexLoggedSets] = useState<{ weight: number; repsText: string }[]>([]);
+  const complexFormRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!complexOpen) return;
+    function handleClickOutside(e: MouseEvent) {
+      if (complexFormRef.current && !complexFormRef.current.contains(e.target as Node)) {
+        setComplexOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [complexOpen]);
 
   async function handleConfirm(newReplacements: string[]) {
     await saveExerciseSubstitution(workoutId, date, exerciseName, newReplacements);
@@ -211,7 +223,7 @@ export function SubstitutableExerciseRow({
                 </button>
               )
             ) : (
-              <div className="flex items-center gap-1.5">
+              <div ref={complexFormRef} className="flex items-center gap-1.5">
                 <input
                   type="number"
                   step="0.5"
