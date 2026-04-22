@@ -14,6 +14,7 @@ interface LogSetButtonProps {
   reps: number;
   unit?: string;
   sectionType?: string;
+  initialLogged?: boolean;
 }
 
 export function LogSetButton({
@@ -24,10 +25,11 @@ export function LogSetButton({
   reps: presetReps,
   unit = "kg",
   sectionType = "OLYMPIC LIFT",
+  initialLogged = false,
 }: LogSetButtonProps) {
   const { startTimer } = useRestTimer();
   const { celebrate } = usePRCelebration();
-  const [logged, setLogged] = useState(false);
+  const [logged, setLogged] = useState(initialLogged);
   const [loading, setLoading] = useState(false);
   const [editing, setEditing] = useState(false);
   const [customWeight, setCustomWeight] = useState(presetWeight.toString());

@@ -15,6 +15,7 @@ interface PercentageRowProps {
   reps: number;
   sectionType: string;
   setLabel?: string;
+  initialLogged?: boolean;
 }
 
 export function PercentageRow({
@@ -28,6 +29,7 @@ export function PercentageRow({
   reps,
   sectionType,
   setLabel,
+  initialLogged = false,
 }: PercentageRowProps) {
   const [plateOpen, setPlateOpen] = useState(false);
 
@@ -59,6 +61,7 @@ export function PercentageRow({
             reps={reps}
             unit={unit}
             sectionType={sectionType}
+            initialLogged={initialLogged}
           />
         </div>
       </div>

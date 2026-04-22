@@ -90,7 +90,10 @@ export function SectionDisplay({ section, userMax, date, workoutId, previousWeig
           <div key={i}>
             {exercise.percentageSets ? (
               <div className="flex flex-col gap-px">
-                {exercise.percentageSets.flatMap((ps, j) => {
+                {(() => {
+                  let globalSetIdx = 0;
+                  const loggedCount = section.liftName ? (loggedSetsToday?.[section.liftName] ?? 0) : 0;
+                  return exercise.percentageSets!.flatMap((ps, j) => {
                   const multiMatch = ps.reps.match(/^(\d+)\s*x\s*(\d+)$/i);
                   const setCount = multiMatch ? parseInt(multiMatch[1]) : 1;
                   const repsPerSet = multiMatch ? parseInt(multiMatch[2]) : (parseInt(ps.reps) || 1);
@@ -98,6 +101,7 @@ export function SectionDisplay({ section, userMax, date, workoutId, previousWeig
 
                   return Array.from({ length: setCount }, (_, s) => {
                     const key = `${j}-${s}`;
+                    const setIndex = globalSetIdx++;
                     const computedWeight = userMax
                       ? calculateWeight(userMax.maxWeight, ps.percentage)
                       : null;
@@ -116,6 +120,7 @@ export function SectionDisplay({ section, userMax, date, workoutId, previousWeig
                           reps={repsPerSet}
                           sectionType={section.type}
                           setLabel={setCount > 1 ? `Set ${s + 1}/${setCount}` : undefined}
+                          initialLogged={setIndex < loggedCount}
                         />
                       );
                     }
@@ -150,7 +155,8 @@ export function SectionDisplay({ section, userMax, date, workoutId, previousWeig
                       </div>
                     );
                   });
-                })}
+                  });
+                })()}
               </div>
             ) : (
               <div className="flex flex-col gap-1 py-2">
