@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { saveExerciseSubstitution, deleteExerciseSubstitution, logLift } from "@/app/actions";
 import { LogExerciseInline } from "@/components/log-exercise-inline";
 import { ExerciseSubstitutionPanel } from "@/components/exercise-substitution-panel";
@@ -54,19 +54,6 @@ export function SubstitutableExerciseRow({
   const [complexRep2, setComplexRep2] = useState("");
   const [complexLogging, setComplexLogging] = useState(false);
   const [complexLoggedSets, setComplexLoggedSets] = useState<{ weight: number; repsText: string }[]>([]);
-  const complexFormRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!complexOpen) return;
-    function handleClickOutside(e: MouseEvent) {
-      if (complexFormRef.current && !complexFormRef.current.contains(e.target as Node)) {
-        setComplexOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [complexOpen]);
-
   async function handleConfirm(newReplacements: string[]) {
     await saveExerciseSubstitution(workoutId, date, exerciseName, newReplacements);
     setReplacements(newReplacements);
@@ -223,7 +210,9 @@ export function SubstitutableExerciseRow({
                 </button>
               )
             ) : (
-              <div ref={complexFormRef} className="flex items-center gap-1.5">
+              <>
+              <div className="fixed inset-0 z-10" onClick={() => setComplexOpen(false)} />
+              <div className="relative z-20 flex items-center gap-1.5">
                 <input
                   type="number"
                   step="0.5"
@@ -277,6 +266,7 @@ export function SubstitutableExerciseRow({
                   <span className="material-symbols-outlined text-sm">close</span>
                 </button>
               </div>
+              </>
             )}
           </div>
         </div>
