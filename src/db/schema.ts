@@ -186,17 +186,17 @@ export const userExerciseSubstitutions = pgTable(
     workoutId: integer("workout_id")
       .notNull()
       .references(() => workouts.id, { onDelete: "cascade" }),
-    date: text("date").notNull(),
+    date: date("date").notNull(),
     originalName: text("original_name").notNull(),
     replacements: text("replacements").array().notNull(),
     createdAt: timestamp("created_at").defaultNow().notNull(),
   },
-  (t) => ({
-    unique: uniqueIndex("user_exercise_substitutions_unique").on(
+  (t) => [
+    uniqueIndex("user_exercise_substitutions_unique").on(
       t.userId,
       t.workoutId,
       t.date,
       t.originalName
     ),
-  })
+  ]
 );
