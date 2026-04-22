@@ -177,3 +177,26 @@ export const userLiftLogs = pgTable("user_lift_logs", {
   notes: text("notes"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
+
+export const userExerciseSubstitutions = pgTable(
+  "user_exercise_substitutions",
+  {
+    id: serial("id").primaryKey(),
+    userId: text("user_id").notNull(),
+    workoutId: integer("workout_id")
+      .notNull()
+      .references(() => workouts.id, { onDelete: "cascade" }),
+    date: text("date").notNull(),
+    originalName: text("original_name").notNull(),
+    replacements: text("replacements").array().notNull(),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (t) => ({
+    unique: uniqueIndex("user_exercise_substitutions_unique").on(
+      t.userId,
+      t.workoutId,
+      t.date,
+      t.originalName
+    ),
+  })
+);
