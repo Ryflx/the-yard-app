@@ -7,9 +7,11 @@ import { SubstitutableExerciseRow } from "@/components/substitutable-exercise-ro
 interface PreviousWeight {
   weight: number;
   reps: number | null;
+  repsText?: string | null;
   unit: string;
   prevWeight: number | null;
   prevReps: number | null;
+  prevRepsText?: string | null;
 }
 
 interface SectionDisplayProps {

@@ -77,13 +77,17 @@ async function BarbellDetail({
 
   const substitutions = await getExerciseSubstitutionsForDate(date, workout.id);
   const replacementNames = [...new Set(Object.values(substitutions).flat())];
+  const complexNames = Object.values(substitutions)
+    .filter((r) => r.length === 2)
+    .map((r) => `${r[0]} + ${r[1]}`);
+  const allReplacementNames = [...new Set([...replacementNames, ...complexNames])];
 
   const [userMax, estimated1RM, previousWeights, exerciseHistory, loggedSetsToday] = await Promise.all([
     liftName ? getUserMaxForLift(liftName) : null,
     liftName ? getEstimated1RM(liftName) : null,
-    getLastLoggedWeights([...strengthExerciseNames, ...replacementNames]),
-    getExerciseHistory([...allLoggableNames, ...replacementNames], 10),
-    getLoggedSetsForDate(date, [...allLoggableNames, ...replacementNames]),
+    getLastLoggedWeights([...strengthExerciseNames, ...allReplacementNames]),
+    getExerciseHistory([...allLoggableNames, ...allReplacementNames], 10),
+    getLoggedSetsForDate(date, [...allLoggableNames, ...allReplacementNames]),
   ]);
 
   const STALE_THRESHOLD_MS = 4 * 7 * 24 * 60 * 60 * 1000;

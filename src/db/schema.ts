@@ -175,6 +175,7 @@ export const userLiftLogs = pgTable("user_lift_logs", {
   sets: integer("sets"),
   unit: text("unit").notNull().default("kg"),
   notes: text("notes"),
+  repsText: text("reps_text"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 

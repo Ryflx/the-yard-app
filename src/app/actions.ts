@@ -218,6 +218,7 @@ export async function logLift(data: {
   liftName: string;
   weight: number;
   reps?: number;
+  repsText?: string;
   sets?: number;
   notes?: string;
 }): Promise<{ isPR: boolean; previousBest: number | null }> {
@@ -245,6 +246,7 @@ export async function logLift(data: {
     liftName: normalized,
     weight: data.weight,
     reps: data.reps ?? null,
+    repsText: data.repsText ?? null,
     sets: data.sets ?? null,
     notes: data.notes ?? null,
   });
@@ -488,14 +490,14 @@ export async function getExerciseHistory(
   exerciseNames: string[],
   limit = 5
 ): Promise<
-  Record<string, { id: number; weight: number; reps: number | null; unit: string; date: string }[]>
+  Record<string, { id: number; weight: number; reps: number | null; repsText: string | null; unit: string; date: string }[]>
 > {
   const { userId } = await auth();
   if (!userId || exerciseNames.length === 0) return {};
 
   const result: Record<
     string,
-    { id: number; weight: number; reps: number | null; unit: string; date: string }[]
+    { id: number; weight: number; reps: number | null; repsText: string | null; unit: string; date: string }[]
   > = {};
 
   for (const name of exerciseNames) {
@@ -514,6 +516,7 @@ export async function getExerciseHistory(
         id: l.id,
         weight: l.weight,
         reps: l.reps,
+        repsText: l.repsText ?? null,
         unit: l.unit,
         date: l.date,
       }));
@@ -620,9 +623,11 @@ export async function getLastLoggedWeights(
 ): Promise<Record<string, {
   weight: number;
   reps: number | null;
+  repsText: string | null;
   unit: string;
   prevWeight: number | null;
   prevReps: number | null;
+  prevRepsText: string | null;
 }>> {
   const { userId } = await auth();
   if (!userId || exerciseNames.length === 0) return {};
@@ -630,9 +635,11 @@ export async function getLastLoggedWeights(
   const result: Record<string, {
     weight: number;
     reps: number | null;
+    repsText: string | null;
     unit: string;
     prevWeight: number | null;
     prevReps: number | null;
+    prevRepsText: string | null;
   }> = {};
 
   for (const name of exerciseNames) {
@@ -650,9 +657,11 @@ export async function getLastLoggedWeights(
       result[name] = {
         weight: logs[0].weight,
         reps: logs[0].reps,
+        repsText: logs[0].repsText ?? null,
         unit: logs[0].unit,
         prevWeight: logs[1]?.weight ?? null,
         prevReps: logs[1]?.reps ?? null,
+        prevRepsText: logs[1]?.repsText ?? null,
       };
     }
   }

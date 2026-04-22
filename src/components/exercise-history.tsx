@@ -7,6 +7,7 @@ interface HistoryEntry {
   id: number;
   weight: number;
   reps: number | null;
+  repsText?: string | null;
   unit: string;
   date: string;
 }
@@ -40,10 +41,10 @@ function ExerciseGroup({ name, logs }: { name: string; logs: HistoryEntry[] }) {
               <div className="flex flex-col">
                 <span className="font-headline font-bold">
                   {log.weight} {log.unit}
-                  {log.reps != null && (
+                  {(log.repsText ?? log.reps) != null && (
                     <>
                       <span className="mx-1 text-on-surface-variant">x</span>
-                      <span>{log.reps}</span>
+                      <span>{log.repsText ?? log.reps}</span>
                     </>
                   )}
                 </span>
