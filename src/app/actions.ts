@@ -11,6 +11,7 @@ import {
   userGoals,
   movements,
   wodResults,
+  userExerciseSubstitutions,
 } from "@/db/schema";
 import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, WodScoreType, WodFormat, WodMovement } from "@/db/schema";
 import { eq, and, gte, lte, lt, desc, isNotNull, isNull, or, count, sql, asc, inArray } from "drizzle-orm";
@@ -1486,17 +1487,35 @@ export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
   const { userId } = await auth();
 
   const benchmark = findBenchmarkWod(wodName);
-  if (!benchmark) return null;
 
   const sections = await db
-    .select({ id: workoutSections.id, wodScoreType: workoutSections.wodScoreType })
+    .select({
+      id: workoutSections.id,
+      wodScoreType: workoutSections.wodScoreType,
+      timeCap: workoutSections.timeCap,
+      rxWeights: workoutSections.rxWeights,
+    })
     .from(workoutSections)
     .where(eq(workoutSections.wodName, wodName));
 
-  const sectionIds = sections.map((s) => s.id);
-  if (sectionIds.length === 0) return { wod: benchmark, userBest: null, entries: [], currentUserId: userId };
+  if (!benchmark && sections.length === 0) return null;
 
-  const scoreType = (sections[0].wodScoreType as WodScoreType) ?? benchmark.scoreType;
+  const sectionIds = sections.map((s) => s.id);
+  const sectionScoreType = sections[0]?.wodScoreType as WodScoreType | undefined;
+  const scoreType = sectionScoreType ?? benchmark?.scoreType;
+  if (!scoreType) return null;
+
+  const wodMeta = benchmark
+    ? { name: benchmark.name, description: benchmark.description, scoreType: benchmark.scoreType }
+    : {
+        name: wodName,
+        description: buildCustomWodDescription(sections[0]),
+        scoreType,
+      };
+
+  if (sectionIds.length === 0) {
+    return { wod: wodMeta, userBest: null, entries: [], currentUserId: userId };
+  }
 
   const optedInUsers = await db
     .select()
@@ -1603,11 +1622,26 @@ export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
   }
 
   return {
-    wod: { name: benchmark.name, description: benchmark.description, scoreType: benchmark.scoreType },
+    wod: wodMeta,
     userBest,
     entries,
     currentUserId: userId,
   };
+}
+
+function buildCustomWodDescription(section?: {
+  timeCap: number | null;
+  rxWeights: string | null;
+}): string {
+  if (!section) return "";
+  const parts: string[] = [];
+  if (section.timeCap) {
+    const m = Math.floor(section.timeCap / 60);
+    const s = section.timeCap % 60;
+    parts.push(`Cap ${m}:${String(s).padStart(2, "0")}`);
+  }
+  if (section.rxWeights) parts.push(`RX ${section.rxWeights}`);
+  return parts.join(" · ");
 }
 
 export async function parseWorkoutText(input: {
@@ -1616,4 +1650,96 @@ export async function parseWorkoutText(input: {
   const allMovements = await db.select({ name: movements.name }).from(movements);
   const movementNames = allMovements.map((m) => m.name);
   return parseWorkoutWithAI(input.text, movementNames);
+}
+
+export async function saveExerciseSubstitution(
+  workoutId: number,
+  date: string,
+  originalName: string,
+  replacements: string[]
+): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+  const normalizedOriginal = normalizeLiftName(originalName);
+  const normalizedReplacements = replacements.map(normalizeLiftName);
+  await db
+    .insert(userExerciseSubstitutions)
+    .values({
+      userId,
+      workoutId,
+      date,
+      originalName: normalizedOriginal,
+      replacements: normalizedReplacements,
+    })
+    .onConflictDoUpdate({
+      target: [
+        userExerciseSubstitutions.userId,
+        userExerciseSubstitutions.workoutId,
+        userExerciseSubstitutions.date,
+        userExerciseSubstitutions.originalName,
+      ],
+      set: { replacements: normalizedReplacements },
+    });
+}
+
+export async function getExerciseSubstitutionsForDate(
+  date: string,
+  workoutId: number
+): Promise<Record<string, string[]>> {
+  const { userId } = await auth();
+  if (!userId) return {};
+  const rows = await db
+    .select()
+    .from(userExerciseSubstitutions)
+    .where(
+      and(
+        eq(userExerciseSubstitutions.userId, userId),
+        eq(userExerciseSubstitutions.workoutId, workoutId),
+        eq(userExerciseSubstitutions.date, date)
+      )
+    );
+  return Object.fromEntries(rows.map((r) => [r.originalName, r.replacements]));
+}
+
+export async function getSubstitutionCandidates(): Promise<string[]> {
+  const { userId } = await auth();
+  if (!userId) return [];
+  const [userHistory, library] = await Promise.all([
+    db
+      .select({ name: userLiftLogs.liftName, freq: count(userLiftLogs.id) })
+      .from(userLiftLogs)
+      .where(eq(userLiftLogs.userId, userId))
+      .groupBy(userLiftLogs.liftName)
+      .orderBy(desc(count(userLiftLogs.id))),
+    db
+      .select({ name: movements.name })
+      .from(movements)
+      .orderBy(asc(movements.name)),
+  ]);
+  const userNames = userHistory.map((r) => r.name);
+  const userNamesSet = new Set(userNames);
+  const libraryOnly = library
+    .map((r) => r.name)
+    .filter((n) => !userNamesSet.has(normalizeLiftName(n)));
+  return [...userNames, ...libraryOnly];
+}
+
+export async function deleteExerciseSubstitution(
+  workoutId: number,
+  date: string,
+  originalName: string
+): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+  const normalized = normalizeLiftName(originalName);
+  await db
+    .delete(userExerciseSubstitutions)
+    .where(
+      and(
+        eq(userExerciseSubstitutions.userId, userId),
+        eq(userExerciseSubstitutions.workoutId, workoutId),
+        eq(userExerciseSubstitutions.date, date),
+        eq(userExerciseSubstitutions.originalName, normalized)
+      )
+    );
 }
