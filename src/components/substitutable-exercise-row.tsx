@@ -189,7 +189,10 @@ export function SubstitutableExerciseRow({
             )}
             {!complexOpen ? (
               allComplexDone ? (
-                <span className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-primary">
+                <button
+                  onClick={() => openComplex(pw)}
+                  className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-primary"
+                >
                   <span
                     className="material-symbols-outlined text-sm"
                     style={{ fontVariationSettings: "'FILL' 1" }}
@@ -197,7 +200,7 @@ export function SubstitutableExerciseRow({
                     check_circle
                   </span>
                   {expectedSets}/{expectedSets} SETS
-                </span>
+                </button>
               ) : (
                 <button
                   onClick={() => openComplex(pw)}
