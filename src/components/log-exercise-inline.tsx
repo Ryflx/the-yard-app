@@ -227,7 +227,9 @@ export function LogExerciseInline({
   if (hasMultiSets && expanded) {
     const remainingSlots = Math.max(0, expectedSets! - serverSets.length);
     return (
-      <div className="flex flex-col gap-1.5">
+      <>
+      <div className="fixed inset-0 z-10" onClick={() => setExpanded(false)} />
+      <div className="relative z-20 flex flex-col gap-1.5">
         {/* Logged sets from server */}
         {serverSets.map((s, i) => (
           <div key={s.id} className="flex items-center gap-2">
@@ -361,6 +363,7 @@ export function LogExerciseInline({
           )}
         </div>
       </div>
+      </>
     );
   }
 
