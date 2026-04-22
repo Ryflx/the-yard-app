@@ -69,6 +69,7 @@ export function LogExerciseInline({
   const [editingServerId, setEditingServerId] = useState<number | null>(null);
   const [editServerWeight, setEditServerWeight] = useState("");
   const [savingEditId, setSavingEditId] = useState<number | null>(null);
+  const [loggingAll, setLoggingAll] = useState(false);
 
   const totalLogged = serverSets.length > 0 ? serverSets.length : initialLoggedCount + loggedSets.length;
   const allSetsLogged = expectedSets ? totalLogged >= expectedSets : false;
@@ -78,26 +79,25 @@ export function LogExerciseInline({
   const [setWeights, setSetWeights] = useState<string[]>(
     Array.from({ length: expectedSets ?? 0 }, () => lastWeight?.toString() ?? "")
   );
-  const [setLogged, setSetLogged] = useState<boolean[]>(
-    Array.from({ length: expectedSets ?? 0 }, (_, i) => i < initialLoggedCount)
-  );
   const [loadingSetIdx, setLoadingSetIdx] = useState<number | null>(null);
 
   const fetchServerSets = useCallback(async () => {
     const sets = await getLoggedSetsDetailForDate(date, exerciseName);
     setServerSets(sets);
-    // Sync local state with server
-    const newLogged = Array.from({ length: expectedSets ?? 0 }, (_, i) => i < sets.length);
-    setSetLogged(newLogged);
-    const newWeights = Array.from({ length: expectedSets ?? 0 }, (_, i) =>
-      sets[i] ? sets[i].weight.toString() : (lastWeight?.toString() ?? "")
+    // Logged rows mirror server. Unlogged rows keep whatever the user typed so
+    // they can fill every row first then OK each one without losing input when
+    // the list re-fetches after each log.
+    setSetWeights((prev) =>
+      Array.from({ length: expectedSets ?? 0 }, (_, i) => {
+        if (sets[i]) return sets[i].weight.toString();
+        return prev[i] && prev[i].length > 0 ? prev[i] : (lastWeight?.toString() ?? "");
+      })
     );
-    setSetWeights(newWeights);
   }, [date, exerciseName, expectedSets, lastWeight]);
 
   async function handleLogSingle() {
     const w = parseFloat(weight);
-    if (isNaN(w) || w <= 0) return;
+    if (isNaN(w) || w < 0) return;
 
     setLoading(true);
     try {
@@ -127,7 +127,7 @@ export function LogExerciseInline({
 
   async function handleLogSet(index: number) {
     const w = parseFloat(setWeights[index]);
-    if (isNaN(w) || w <= 0) return;
+    if (isNaN(w) || w < 0) return;
 
     setLoadingSetIdx(index);
     try {
@@ -166,9 +166,49 @@ export function LogExerciseInline({
     }
   }
 
+  async function handleLogAll() {
+    if (!expectedSets) return;
+    const startIdx = serverSets.length;
+    const toLog: { idx: number; w: number }[] = [];
+    for (let i = startIdx; i < expectedSets; i++) {
+      const w = parseFloat(setWeights[i] ?? "");
+      if (!isNaN(w) && w > 0) toLog.push({ idx: i, w });
+    }
+    if (toLog.length === 0) {
+      toast.error("No weights to log");
+      return;
+    }
+    setLoggingAll(true);
+    try {
+      let lastPR: { weight: number; previousBest: number | null } | null = null;
+      for (const { w } of toLog) {
+        const result = await logLift({
+          workoutId,
+          date,
+          liftName: exerciseName,
+          weight: w,
+          reps: effectiveReps ?? undefined,
+        });
+        if (result.isPR) lastPR = { weight: w, previousBest: result.previousBest };
+      }
+      await fetchServerSets();
+      if (lastPR) {
+        celebrate({ liftName: exerciseName, weight: lastPR.weight, unit: "kg", previousBest: lastPR.previousBest });
+      } else {
+        toast.success(`${toLog.length} sets logged`);
+      }
+      if (isBarbellSection) startTimer(sectionType);
+    } catch {
+      toast.error("Failed to log");
+      await fetchServerSets();
+    } finally {
+      setLoggingAll(false);
+    }
+  }
+
   async function handleSaveEdit(logId: number) {
     const w = parseFloat(editServerWeight);
-    if (isNaN(w) || w <= 0) return;
+    if (isNaN(w) || w < 0) return;
     setSavingEditId(logId);
     try {
       await updateLoggedSet(logId, w);
@@ -303,12 +343,23 @@ export function LogExerciseInline({
             </div>
           );
         })}
-        <button
-          onClick={() => setExpanded(false)}
-          className="text-[10px] font-bold uppercase tracking-widest text-outline hover:text-on-surface"
-        >
-          COLLAPSE
-        </button>
+        <div className="mt-1 flex items-center justify-between gap-2">
+          <button
+            onClick={() => setExpanded(false)}
+            className="text-[10px] font-bold uppercase tracking-widest text-outline hover:text-on-surface"
+          >
+            COLLAPSE
+          </button>
+          {remainingSlots > 1 && (
+            <button
+              onClick={handleLogAll}
+              disabled={loggingAll}
+              className="squishy bg-primary px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-on-primary disabled:opacity-50"
+            >
+              {loggingAll ? "LOGGING..." : "LOG ALL"}
+            </button>
+          )}
+        </div>
       </div>
     );
   }

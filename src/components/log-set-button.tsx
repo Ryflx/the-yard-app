@@ -59,7 +59,7 @@ export function LogSetButton({
   function handleCustomSubmit() {
     const w = parseFloat(customWeight);
     const r = parseInt(customReps);
-    if (isNaN(w) || w <= 0) return;
+    if (isNaN(w) || w < 0) return;
     handleLog(w, isNaN(r) ? presetReps : r);
   }
 
