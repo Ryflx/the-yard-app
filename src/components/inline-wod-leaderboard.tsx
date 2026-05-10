@@ -27,12 +27,17 @@ export function InlineWodLeaderboard({ sectionId, defaultRxLevel, wodName }: Inl
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-    getWodLeaderboard(sectionId, rxLevel).then((data) => {
+    let cancelled = false;
+    const run = async () => {
+      setLoading(true);
+      const data = await getWodLeaderboard(sectionId, rxLevel);
+      if (cancelled) return;
       setEntries(data.entries);
       setCurrentUserId(data.currentUserId);
       setLoading(false);
-    });
+    };
+    run();
+    return () => { cancelled = true; };
   }, [sectionId, rxLevel]);
 
   const userEntry = entries.find((e) => e.userId === currentUserId);

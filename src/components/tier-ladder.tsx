@@ -16,9 +16,6 @@ const TIER_THRESHOLDS = [
 ];
 
 export function TierLadder({ compositeScore, overallTier, pointsToNextTier, nextTier }: TierLadderProps) {
-  const currentTierIdx = TIER_THRESHOLDS.findIndex((t) => t.name === overallTier);
-  const currentTierColor = TIERS[currentTierIdx]?.color ?? "#777";
-
   return (
     <div className="bg-surface-container px-5 py-4">
       <span className="font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">

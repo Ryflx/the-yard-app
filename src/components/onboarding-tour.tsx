@@ -72,10 +72,11 @@ export function OnboardingTour() {
   }, [step, started]);
 
   useEffect(() => {
-    measureTarget();
+    const raf = requestAnimationFrame(measureTarget);
     window.addEventListener("resize", measureTarget);
     window.addEventListener("scroll", measureTarget, true);
     return () => {
+      cancelAnimationFrame(raf);
       window.removeEventListener("resize", measureTarget);
       window.removeEventListener("scroll", measureTarget, true);
     };

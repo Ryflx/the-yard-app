@@ -1,5 +1,5 @@
 import type { WodScoreType } from "@/db/schema";
-import { TIERS, assessWodScore, findBenchmarkWod, getAllBenchmarkWods } from "./benchmark-wods";
+import { findBenchmarkWod } from "./benchmark-wods";
 import type { Sex } from "./strength-standards";
 
 export function parseTimeToSeconds(value: string): number {

@@ -23,14 +23,19 @@ export function CrossfitLeaderboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-    getCrossfitLeaderboardData(rxLevel).then((data) => {
+    let cancelled = false;
+    const run = async () => {
+      setLoading(true);
+      const data = await getCrossfitLeaderboardData(rxLevel);
+      if (cancelled) return;
       setRankings(data.rankings);
       setCurrentUser(data.currentUser);
       setBenchmarkWods(data.benchmarkWods);
       setCurrentUserId(data.currentUserId);
       setLoading(false);
-    });
+    };
+    run();
+    return () => { cancelled = true; };
   }, [rxLevel]);
 
   if (loading) {

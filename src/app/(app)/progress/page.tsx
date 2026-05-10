@@ -11,7 +11,6 @@ import { PRCard } from "@/components/pr-card";
 import { StrengthDashboard } from "@/components/strength-dashboard";
 import { LiftCharts } from "@/components/lift-chart";
 import { GoalsSection } from "@/components/goals-section";
-import { format, parseISO } from "date-fns";
 import { normalizeLiftName } from "@/lib/percentage";
 import { RecentPerformance } from "@/components/recent-performance";
 import { assessStrength, assessGeneralStrength, type Sex } from "@/lib/strength-standards";
