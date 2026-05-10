@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { format, addDays, startOfWeek, isToday, parseISO, isSunday, getDay } from "date-fns";
+import { format, addDays, startOfWeek, isToday, parseISO, isSunday } from "date-fns";
 import { getWorkoutsForWeek, getPersonalSummaryForWorkouts, getUserProfile, getStreakData } from "@/app/actions";
 import { WeekNav } from "@/components/week-nav";
 import { DaySelector } from "@/components/day-selector";

@@ -28,7 +28,7 @@ export function WodScoreEntry({
   sectionId,
   scoreType,
   timeCap,
-  rxWeights,
+  rxWeights: _rxWeights,
   wodName,
   userSex,
   existingScore,

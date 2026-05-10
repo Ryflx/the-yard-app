@@ -1,4 +1,5 @@
 import { UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 import Link from "next/link";
 import { BottomNav } from "@/components/bottom-nav";
 import { RestTimerProvider } from "@/components/rest-timer";
@@ -12,7 +13,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 z-50 flex h-16 w-full items-center justify-between bg-[#0e0e0e] px-6">
         <div className="flex items-center gap-4">
-          <img src="/yard-logo-32.png" alt="The Yard Peckham" className="h-7 w-7" />
+          <Image src="/yard-logo-32.png" alt="The Yard Peckham" width={28} height={28} />
           <Link href="/schedule">
             <h1 className="font-headline text-xl font-black uppercase tracking-widest text-white">
               THE YARD PECKHAM

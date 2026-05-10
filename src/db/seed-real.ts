@@ -2,7 +2,6 @@ import { neon } from "@neondatabase/serverless";
 import { drizzle } from "drizzle-orm/neon-http";
 import * as dotenv from "dotenv";
 import { workouts, workoutSections } from "./schema";
-import { sql } from "drizzle-orm";
 import type { SectionExercise, WorkoutSectionType } from "./schema";
 
 dotenv.config({ path: ".env.local" });

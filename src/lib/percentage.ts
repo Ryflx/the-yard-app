@@ -56,6 +56,10 @@ const LIFT_ALIASES: Record<string, string[]> = {
   "front squat": ["front squat"],
 };
 
+export function isStaleAfter(updatedAt: Date | string, ms: number): boolean {
+  return Date.now() - new Date(updatedAt).getTime() > ms;
+}
+
 export function normalizeLiftName(name: string): string {
   const lower = name.toLowerCase().trim();
   for (const [canonical, aliases] of Object.entries(LIFT_ALIASES)) {

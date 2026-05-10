@@ -22,11 +22,16 @@ export function WodDrilldownClient({
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    getWodDrilldown(wodName, rxLevel).then((result) => {
+    let cancelled = false;
+    const run = async () => {
+      setLoading(true);
+      const result = await getWodDrilldown(wodName, rxLevel);
+      if (cancelled) return;
       if (result) setData(result);
       setLoading(false);
-    });
+    };
+    run();
+    return () => { cancelled = true; };
   }, [rxLevel, wodName]);
 
   const { userBest, entries, currentUserId } = data;

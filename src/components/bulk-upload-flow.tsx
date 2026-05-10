@@ -131,7 +131,8 @@ export function BulkUploadFlow() {
     setSavingAll(true);
     let savedCount = 0;
 
-    for (const w of workouts) {
+    for (let idx = 0; idx < workouts.length; idx++) {
+      const w = workouts[idx];
       if (!w.parsed || w.saved) continue;
       try {
         await addWorkout({
@@ -154,12 +155,11 @@ export function BulkUploadFlow() {
             wodMovements: s.wodMovements,
           })),
         });
-        w.saved = true;
         savedCount++;
+        setWorkouts((prev) => prev.map((item, i) => i === idx ? { ...item, saved: true } : item));
       } catch {
-        w.error = "Failed to save";
+        setWorkouts((prev) => prev.map((item, i) => i === idx ? { ...item, error: "Failed to save" } : item));
       }
-      setWorkouts([...workouts]);
     }
 
     setSavingAll(false);

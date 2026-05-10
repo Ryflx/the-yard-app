@@ -3,6 +3,7 @@ import { format, parseISO } from "date-fns";
 import {
   getWorkoutByDate,
   getUserMaxForLift,
+  getUserMaxes,
   getEstimated1RM,
   getLastLoggedWeights,
   getExerciseHistory,
@@ -18,7 +19,8 @@ import { ExerciseHistorySection } from "@/components/exercise-history";
 import { WarmupCalculator } from "@/components/warmup-calculator";
 import { WodScoreEntry } from "@/components/wod-score-entry";
 import { LogExerciseInline } from "@/components/log-exercise-inline";
-import { calculateWeight } from "@/lib/percentage";
+import { calculateWeight, isStaleAfter } from "@/lib/percentage";
+import { isComplex, parseComplex, pickLimitingLift, deriveBase1RM } from "@/lib/complex";
 import Link from "next/link";
 
 import type { ClassType, WodScoreType, RxLevel } from "@/db/schema";
@@ -53,7 +55,7 @@ export default async function WorkoutDetailPage({ params, searchParams }: Props)
 async function BarbellDetail({
   workout,
   date,
-  classType,
+  classType: _classType,
   backHref,
 }: {
   workout: Awaited<ReturnType<typeof getWorkoutByDate>> & {};
@@ -82,34 +84,58 @@ async function BarbellDetail({
     .map((r) => `${r[0]} + ${r[1]}`);
   const allReplacementNames = [...new Set([...replacementNames, ...complexNames])];
 
-  const [userMax, estimated1RM, previousWeights, exerciseHistory, loggedSetsToday] = await Promise.all([
+  const liftIsComplex = !!liftName && isComplex(liftName);
+
+  const [userMax, estimated1RM, previousWeights, exerciseHistory, loggedSetsToday, allUserMaxes] = await Promise.all([
     liftName ? getUserMaxForLift(liftName) : null,
     liftName ? getEstimated1RM(liftName) : null,
-    getLastLoggedWeights([...strengthExerciseNames, ...allReplacementNames]),
+    getLastLoggedWeights([...(liftName ? [liftName] : []), ...strengthExerciseNames, ...allReplacementNames]),
     getExerciseHistory([...allLoggableNames, ...allReplacementNames], 10),
     getLoggedSetsForDate(date, [...allLoggableNames, ...allReplacementNames]),
+    liftIsComplex ? getUserMaxes() : Promise.resolve([] as Awaited<ReturnType<typeof getUserMaxes>>),
   ]);
 
   const STALE_THRESHOLD_MS = 4 * 7 * 24 * 60 * 60 * 1000;
-  const isStale = userMax
-    ? Date.now() - new Date(userMax.updatedAt).getTime() > STALE_THRESHOLD_MS
-    : false;
+  const isStale = userMax ? isStaleAfter(userMax.updatedAt, STALE_THRESHOLD_MS) : false;
   const showEstimateBanner =
     estimated1RM &&
     (!userMax || (isStale && estimated1RM.estimatedMax > userMax.maxWeight));
 
   // Effective 1RM used for percentage-based computations: use the higher of stored max
   // and estimated 1RM so percentages reflect current actual strength, not a stale value.
-  const effectiveMax = (() => {
+  // Source is tagged so the UI can surface an EST badge when estimated wins.
+  const directEffectiveMax = (() => {
     if (userMax && estimated1RM) {
-      return estimated1RM.estimatedMax > userMax.maxWeight
-        ? { maxWeight: estimated1RM.estimatedMax, unit: userMax.unit }
-        : userMax;
+      if (estimated1RM.estimatedMax > userMax.maxWeight) {
+        return { maxWeight: estimated1RM.estimatedMax, unit: userMax.unit, source: "estimated" as const };
+      }
+      return { maxWeight: userMax.maxWeight, unit: userMax.unit, source: "manual" as const };
     }
-    if (userMax) return userMax;
-    if (estimated1RM) return { maxWeight: estimated1RM.estimatedMax, unit: "kg" };
+    if (userMax) return { maxWeight: userMax.maxWeight, unit: userMax.unit, source: "manual" as const };
+    if (estimated1RM) return { maxWeight: estimated1RM.estimatedMax, unit: "kg", source: "estimated" as const };
     return null;
   })();
+
+  // Complex fallback: if the lift is a complex (e.g. "snatch pull + hang squat snatch")
+  // and we have no direct/estimated 1RM, derive a base 1RM from the limiting lift's
+  // component 1RMs. Tagged "estimated" so the UI shows an EST badge → tap-to-pin.
+  const complexDerivedMax = (() => {
+    if (directEffectiveMax) return null;
+    if (!liftName || !liftIsComplex) return null;
+    const maxesMap: Record<string, number> = {};
+    for (const m of allUserMaxes) maxesMap[m.liftName] = m.maxWeight;
+    const components = parseComplex(liftName);
+    const limiting = pickLimitingLift(components);
+    const derived = deriveBase1RM(limiting, maxesMap);
+    if (!derived) return null;
+    return {
+      maxWeight: Math.round(derived.base1RM * 2) / 2,
+      unit: "kg",
+      source: "estimated" as const,
+    };
+  })();
+
+  const effectiveMax = directEffectiveMax ?? complexDerivedMax;
 
   return (
     <div className="flex flex-col gap-8">
@@ -137,11 +163,13 @@ async function BarbellDetail({
       </section>
 
       {liftName && !showEstimateBanner && (
-        <Barbell1RMSection
-          liftName={liftName}
-          currentMax={userMax?.maxWeight}
-          unit={userMax?.unit ?? "kg"}
-        />
+        <div id="barbell-1rm-section">
+          <Barbell1RMSection
+            liftName={liftName}
+            currentMax={userMax?.maxWeight}
+            unit={userMax?.unit ?? "kg"}
+          />
+        </div>
       )}
 
       {showEstimateBanner && estimated1RM && (
@@ -171,6 +199,7 @@ async function BarbellDetail({
             key={i}
             section={section}
             userMax={section.type === "OLYMPIC LIFT" ? effectiveMax : undefined}
+            olympicLiftName={section.type === "OLYMPIC LIFT" ? liftName ?? undefined : undefined}
             date={date}
             workoutId={workout.id}
             previousWeights={previousWeights}
@@ -188,7 +217,7 @@ async function BarbellDetail({
 async function CrossFitDetail({
   workout,
   date,
-  classType,
+  classType: _classType,
   backHref,
 }: {
   workout: Awaited<ReturnType<typeof getWorkoutByDate>> & {};

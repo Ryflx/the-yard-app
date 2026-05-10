@@ -24,7 +24,8 @@ interface SectionDisplayProps {
       percentageSets?: PercentageSet[];
     }[];
   };
-  userMax?: { maxWeight: number; unit: string } | null;
+  userMax?: { maxWeight: number; unit: string; source: "manual" | "estimated" } | null;
+  olympicLiftName?: string;
   date: string;
   workoutId: number;
   previousWeights?: Record<string, PreviousWeight>;
@@ -56,7 +57,7 @@ function parseDefaultReps(name: string): number | undefined {
   return match ? parseInt(match[1]) : undefined;
 }
 
-export function SectionDisplay({ section, userMax, date, workoutId, previousWeights, loggedSetsToday, substitutions }: SectionDisplayProps) {
+export function SectionDisplay({ section, userMax, olympicLiftName, date, workoutId, previousWeights, loggedSetsToday, substitutions }: SectionDisplayProps) {
   const isOlympic = section.type === "OLYMPIC LIFT";
   const isLoggable =
     isOlympic ||
@@ -125,30 +126,46 @@ export function SectionDisplay({ section, userMax, date, workoutId, previousWeig
                           sectionType={section.type}
                           setLabel={setCount > 1 ? `Set ${s + 1}/${setCount}` : undefined}
                           initialLogged={setIndex < loggedCount}
+                          maxSource={userMax!.source}
+                          effectiveMaxWeight={userMax!.maxWeight}
                         />
                       );
                     }
 
+                    // No-max fallback: show tappable chip seeded from previous session weight
+                    const prevLiftKey = olympicLiftName ?? section.liftName;
+                    const prevWeight = prevLiftKey ? previousWeights?.[prevLiftKey]?.weight : undefined;
                     return (
                       <div
                         key={key}
                         className="flex items-center justify-between bg-surface-container p-3"
                       >
-                        <span className="font-headline font-bold">
-                          {repsLabel}
-                          <span className="mx-1 text-on-surface-variant">@</span>
-                          {ps.percentage}%
-                          {setCount > 1 && (
-                            <span className="ml-2 text-[10px] font-normal text-on-surface-variant">
-                              Set {s + 1}/{setCount}
-                            </span>
+                        <div className="flex min-w-0 items-center gap-3">
+                          <span className="shrink-0 font-headline font-bold">
+                            {repsLabel}
+                            <span className="mx-1 text-on-surface-variant">@</span>
+                            {ps.percentage}%
+                            {setCount > 1 && (
+                              <span className="ml-2 text-[10px] font-normal text-on-surface-variant">
+                                Set {s + 1}/{setCount}
+                              </span>
+                            )}
+                          </span>
+                          {section.liftName && (
+                            <a
+                              href="#barbell-1rm-section"
+                              className="text-[9px] font-bold uppercase tracking-widest text-primary/60 underline underline-offset-2 hover:text-primary"
+                            >
+                              Set 1RM to auto-fill %
+                            </a>
                           )}
-                        </span>
+                        </div>
                         {section.liftName ? (
                           <LogExerciseInline
                             date={date}
                             workoutId={workoutId}
                             exerciseName={section.liftName}
+                            lastWeight={prevWeight}
                             sectionType={section.type}
                           />
                         ) : (

@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function OfflinePage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-background px-6 text-center">
-      <img src="/icon-192.png" alt="" className="mb-8 h-20 w-20" />
+      <Image src="/icon-192.png" alt="" width={80} height={80} className="mb-8" />
       <h1 className="mb-4 font-headline text-3xl font-black uppercase tracking-tighter text-white">
         YOU&apos;RE OFFLINE
       </h1>
