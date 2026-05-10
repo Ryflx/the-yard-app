@@ -17,6 +17,7 @@ import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, 
 import { eq, and, gte, lte, lt, desc, isNotNull, isNull, or, count, sql, asc, inArray } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { normalizeLiftName, estimateOneRepMax } from "@/lib/percentage";
+import { ALL_CATALOG_LIFTS } from "@/lib/lift-catalog";
 import { type RxLevel } from "@/db/schema";
 import { compareWodScores, isBetterScore, computeCompositeScore, distanceToNextTier } from "@/lib/wod-scoring";
 import { assessWodScore, getAllBenchmarkWods, findBenchmarkWod } from "@/lib/benchmark-wods";
@@ -599,6 +600,27 @@ export async function getLiftChartData(): Promise<
   const { userId } = await auth();
   if (!userId) return {};
 
+  // Charts only make sense for "main lifts" — the canonical movements you'd
+  // actually want a progress curve for. We define that as the union of:
+  //   - the canonical lift catalog (Olympic, squats, presses, pulls, etc.)
+  //   - any lift the user has explicitly recorded a 1RM for (covers ad-hoc
+  //     complexes the user is tracking even if they're not in the catalog)
+  // Accessory work like "6 strict pull ups" or "12 Zercher lunges" is logged
+  // by the rep-prefixed exercise name and doesn't normalize to anything in
+  // either set, so it's filtered out automatically.
+  const userMaxRows = await db
+    .select({ liftName: userMaxes.liftName })
+    .from(userMaxes)
+    .where(eq(userMaxes.userId, userId));
+
+  const validCanonicals = new Set<string>();
+  for (const lift of ALL_CATALOG_LIFTS) {
+    validCanonicals.add(normalizeLiftName(lift));
+  }
+  for (const row of userMaxRows) {
+    validCanonicals.add(row.liftName);
+  }
+
   const logs = await db
     .select({
       liftName: userLiftLogs.liftName,
@@ -611,11 +633,45 @@ export async function getLiftChartData(): Promise<
 
   const grouped: Record<string, { date: string; weight: number }[]> = {};
   for (const log of logs) {
-    if (!grouped[log.liftName]) grouped[log.liftName] = [];
-    grouped[log.liftName].push({ date: log.date, weight: log.weight });
+    const canonical = canonicaliseLogLift(log.liftName, validCanonicals);
+    if (!canonical) continue;
+    if (!grouped[canonical]) grouped[canonical] = [];
+    grouped[canonical].push({ date: log.date, weight: log.weight });
   }
 
   return grouped;
+}
+
+/**
+ * Map a raw logged liftName (which may carry a leading rep prefix like
+ * "6 back squats" because exercise.name is what gets stored) to a canonical
+ * lift name from the supplied whitelist. Returns null if the log isn't a
+ * "main lift" we should chart.
+ */
+function canonicaliseLogLift(
+  rawName: string,
+  validCanonicals: Set<string>,
+): string | null {
+  const lower = rawName.toLowerCase().trim();
+
+  // 1. Direct alias match (e.g. "Snatch" → "squat snatch").
+  const direct = normalizeLiftName(lower);
+  if (validCanonicals.has(direct)) return direct;
+
+  // 2. Strip a leading rep prefix and re-try (e.g. "6 back squats" → "back squats").
+  const stripped = lower.replace(/^\d+x?\s+/, "");
+  const strippedDirect = normalizeLiftName(stripped);
+  if (validCanonicals.has(strippedDirect)) return strippedDirect;
+
+  // 3. Lenient suffix tolerance — handle plurals not covered by the alias
+  //    table (e.g. "back squats" → "back squat") by trimming a trailing 's'
+  //    only when the result is a known canonical.
+  if (stripped.endsWith("s")) {
+    const singular = normalizeLiftName(stripped.slice(0, -1));
+    if (validCanonicals.has(singular)) return singular;
+  }
+
+  return null;
 }
 
 export async function getLastLoggedWeights(
