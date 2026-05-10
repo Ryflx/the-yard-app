@@ -24,7 +24,7 @@ const BARBELL_WORKOUTS: DayData[] = [
   // ── MONDAY 11 MAY ──
   {
     date: "2026-05-11",
-    title: "Monday",
+    title: "Snatch Complex (Hang)",
     sections: [
       {
         type: "WARM UP",
@@ -76,7 +76,7 @@ const BARBELL_WORKOUTS: DayData[] = [
   // ── TUESDAY 12 MAY ──
   {
     date: "2026-05-12",
-    title: "Tuesday",
+    title: "Clean Complex (Hang)",
     sections: [
       {
         type: "WARM UP",
@@ -124,7 +124,7 @@ const BARBELL_WORKOUTS: DayData[] = [
   // ── WEDNESDAY 13 MAY ──
   {
     date: "2026-05-13",
-    title: "Wednesday",
+    title: "Snatch Complex (Full Pull)",
     sections: [
       {
         type: "WARM UP",
@@ -172,7 +172,7 @@ const BARBELL_WORKOUTS: DayData[] = [
   // ── THURSDAY 14 MAY ──
   {
     date: "2026-05-14",
-    title: "Thursday",
+    title: "Front Squat + Jerk",
     sections: [
       {
         type: "WARM UP",
