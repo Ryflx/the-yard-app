@@ -7,14 +7,14 @@ import {
   getMonthlyRecap,
   getUserGoals,
 } from "@/app/actions";
-import { PRCard } from "@/components/pr-card";
+import { PersonalRecordsSection } from "@/components/personal-records-section";
 import { StrengthDashboard } from "@/components/strength-dashboard";
 import { LiftCharts } from "@/components/lift-chart";
 import { GoalsSection } from "@/components/goals-section";
 import { normalizeLiftName } from "@/lib/percentage";
 import { RecentPerformance } from "@/components/recent-performance";
 import { assessStrength, assessGeneralStrength, type Sex } from "@/lib/strength-standards";
-import { ALL_CATALOG_LIFTS } from "@/lib/lift-catalog";
+import { ALL_CATALOG_LIFTS, LIFT_CATALOG } from "@/lib/lift-catalog";
 import Link from "next/link";
 
 export default async function ProgressPage() {
@@ -28,10 +28,6 @@ export default async function ProgressPage() {
     getUserGoals(),
   ]);
 
-  const maxesByName = new Map(
-    maxes.map((m) => [normalizeLiftName(m.liftName), m])
-  );
-
   const allLiftNames = Array.from(
     new Set([
       ...programmedLifts,
@@ -39,6 +35,42 @@ export default async function ProgressPage() {
       ...ALL_CATALOG_LIFTS.map((l) => normalizeLiftName(l)),
     ])
   ).sort();
+
+  // PR section data: split into "set" (user has a 1RM) and "unset" grouped by catalog category.
+  const setMaxNames = new Set(maxes.map((m) => normalizeLiftName(m.liftName)));
+  const setMaxes = [...maxes]
+    .sort(
+      (a, b) =>
+        new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),
+    )
+    .map((m) => ({
+      liftName: normalizeLiftName(m.liftName),
+      maxWeight: m.maxWeight,
+      unit: m.unit,
+      updatedAt: new Date(m.updatedAt),
+    }));
+
+  const unsetByGroup = LIFT_CATALOG.map((group) => ({
+    label: group.label,
+    lifts: group.lifts.filter(
+      (lift) => !setMaxNames.has(normalizeLiftName(lift)),
+    ),
+  })).filter((g) => g.lifts.length > 0);
+
+  const catalogNormalised = new Set(
+    ALL_CATALOG_LIFTS.map((l) => normalizeLiftName(l)),
+  );
+  const programmedExtras = programmedLifts.filter(
+    (p) =>
+      !catalogNormalised.has(normalizeLiftName(p)) &&
+      !setMaxNames.has(normalizeLiftName(p)),
+  );
+  if (programmedExtras.length > 0) {
+    unsetByGroup.unshift({
+      label: "Programmed (this week)",
+      lifts: programmedExtras,
+    });
+  }
 
   const profileComplete = profile?.bodyweightKg != null && profile?.sex != null;
 
@@ -195,36 +227,10 @@ export default async function ProgressPage() {
       )}
 
       {/* PR Cards */}
-      <section>
-        <h3 className="mb-4 font-headline text-xl font-black uppercase tracking-tighter">
-          PERSONAL RECORDS
-        </h3>
-        {allLiftNames.length === 0 ? (
-          <div className="bg-surface-container-high p-12 text-center">
-            <p className="font-headline text-xl font-bold uppercase tracking-tight text-on-surface-variant">
-              NO LIFTS PROGRAMMED YET
-            </p>
-            <p className="mt-2 font-label text-xs tracking-widest text-outline">
-              1RM CARDS APPEAR ONCE WORKOUTS ARE ADDED BY THE COACH
-            </p>
-          </div>
-        ) : (
-          <div className="flex flex-col gap-px">
-            {allLiftNames.map((name) => {
-              const existing = maxesByName.get(name);
-              return (
-                <PRCard
-                  key={name}
-                  liftName={name}
-                  maxWeight={existing?.maxWeight}
-                  unit={existing?.unit ?? "kg"}
-                  updatedAt={existing?.updatedAt}
-                />
-              );
-            })}
-          </div>
-        )}
-      </section>
+      <PersonalRecordsSection
+        setMaxes={setMaxes}
+        unsetByGroup={unsetByGroup}
+      />
 
       {/* Progress Charts */}
       <LiftCharts data={chartData} />
