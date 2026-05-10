@@ -28,7 +28,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
   // ── MONDAY 11 MAY ──
   {
     date: "2026-05-11",
-    title: "Monday",
+    title: "Partner Grind",
     sections: [
       {
         type: "WARM UP",
@@ -48,6 +48,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
         wodScoreType: "INTERVAL",
         timeCap: 1800,
         sets: "8:00 on 2:00 off x 3 with a partner",
+        wodName: "Partner Grind",
         exercises: [
           { name: "20 d-ball squats (ball on shoulder) (50/70)" },
           { name: "70/90 cal bike" },
@@ -68,7 +69,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
   // ── TUESDAY 12 MAY ──
   {
     date: "2026-05-12",
-    title: "Tuesday",
+    title: "Box & Bell Sprint",
     sections: [
       {
         type: "WARM UP",
@@ -88,6 +89,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
         wodScoreType: "ROUNDS_REPS",
         timeCap: 420,
         sets: "AMRAP 7",
+        wodName: "Box & Bell Sprint",
         exercises: [
           { name: "8 box jump overs (20/24)" },
           { name: "10 american KBS (16/24)" },
@@ -106,7 +108,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
   // ── WEDNESDAY 13 MAY ──
   {
     date: "2026-05-13",
-    title: "Wednesday",
+    title: "Wall Walk Grinder",
     sections: [
       {
         type: "WARM UP",
@@ -130,6 +132,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
         wodScoreType: "TIME",
         timeCap: 1800,
         sets: "4 rounds for time",
+        wodName: "Wall Walk Grinder",
         exercises: [
           { name: "1600/2000-m bike" },
           { name: "30 alternating DB hang clean to overhead (15/22.5)" },
@@ -150,7 +153,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
   // ── THURSDAY 14 MAY ──
   {
     date: "2026-05-14",
-    title: "Thursday",
+    title: "Run, Squat, Pull",
     sections: [
       {
         type: "WARM UP",
@@ -169,6 +172,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
         wodScoreType: "TIME",
         timeCap: 540,
         sets: "3 rounds for time",
+        wodName: "Run, Squat, Pull",
         exercises: [
           { name: "200-m run" },
           { name: "15 overhead squats (35/52.5)" },
@@ -189,7 +193,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
   // ── FRIDAY 15 MAY ──
   {
     date: "2026-05-15",
-    title: "Friday",
+    title: "Deadlift Climb",
     sections: [
       {
         type: "WARM UP",
@@ -214,6 +218,7 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
         wodScoreType: "INTERVAL",
         timeCap: 1800,
         sets: "Every 3:00 x 10",
+        wodName: "Deadlift Climb",
         exercises: [
           { name: "25 double unders" },
           { name: "10 deadlifts (60/90)" },
