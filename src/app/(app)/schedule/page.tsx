@@ -5,7 +5,7 @@ import { WeekNav } from "@/components/week-nav";
 import { DaySelector } from "@/components/day-selector";
 import { ClassTypeTabs } from "@/components/class-type-tabs";
 import { OnboardingTour } from "@/components/onboarding-tour";
-import { SwipeDayNav } from "@/components/swipe-day-nav";
+import { WorkoutCardSlider } from "@/components/workout-card-slider";
 import type { ClassType } from "@/db/schema";
 import Link from "next/link";
 
@@ -70,7 +70,6 @@ export default async function SchedulePage({ searchParams }: Props) {
 
   const todayDay = weekDays.find((d) => d.isToday);
   const selectedDay = params.day || todayDay?.date || weekDays[0].date;
-  const selectedWorkout = workouts.find((w) => w.date === selectedDay);
 
   function workoutHref(workoutDate: string) {
     const qs = new URLSearchParams();
@@ -231,121 +230,131 @@ export default async function SchedulePage({ searchParams }: Props) {
         <DaySelector days={weekDays} selectedDay={selectedDay} />
       </Suspense>
 
-      <SwipeDayNav days={weekDays.map((d) => d.date)} selectedDay={selectedDay}>
-      {selectedWorkout ? (
-        <div className="flex flex-col gap-4">
-          <Link href={workoutHref(selectedWorkout.date)} data-tour="workout-card">
-            <div className="bg-surface-container-high p-8 transition-colors hover:bg-surface-bright">
-              <div className="mb-6 flex items-center gap-3">
-                <span className="bg-primary-container px-3 py-1 font-headline text-sm font-bold text-on-primary-fixed">
-                  {getWorkoutBadge(selectedWorkout)}
-                </span>
-                <span className="font-label text-xs tracking-widest text-on-surface-variant">
-                  {format(parseISO(selectedWorkout.date), "EEEE, MMM d").toUpperCase()}
-                </span>
+      <WorkoutCardSlider
+        days={weekDays.map((d) => d.date)}
+        selectedDay={selectedDay}
+      >
+        {weekDays.map((day) => {
+          const workout = workouts.find((w) => w.date === day.date);
+          if (!workout) {
+            return (
+              <div key={day.date} className="bg-surface-container-high p-12 text-center">
+                <p className="font-headline text-xl font-bold uppercase tracking-tight text-on-surface-variant">
+                  REST DAY
+                </p>
+                <p className="mt-2 font-label text-xs tracking-widest text-outline">
+                  NO WORKOUT PROGRAMMED FOR THIS DAY
+                </p>
+                {workouts.length === 0 && (
+                  <p className="mt-4 font-label text-xs tracking-widest text-primary">
+                    SWIPE OR TAP THE ARROWS TO CHECK OTHER WEEKS
+                  </p>
+                )}
               </div>
+            );
+          }
 
-              <h3 className="mb-4 font-headline text-3xl font-bold uppercase tracking-tight">
-                {getWorkoutHeadline(selectedWorkout)}
-              </h3>
+          const chips = isBarbell ? getWorkoutSummaryChips(workout) : [];
+          const wod = !isBarbell
+            ? workout.sections.find((s) => s.type === "WOD")
+            : undefined;
+          const isSelected = day.date === selectedDay;
 
-              {isBarbell && (() => {
-                const chips = getWorkoutSummaryChips(selectedWorkout);
-                if (chips.length === 0) return null;
-                return (
-                  <div className="mb-6 flex flex-wrap gap-2">
-                    {chips.map((chip, i) => (
-                      <span
-                        key={i}
-                        className="flex items-center gap-1.5 bg-surface-container px-3 py-1.5"
-                      >
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
-                          {chip.label}
+          return (
+            <div key={day.date} className="flex flex-col gap-4">
+              <Link
+                href={workoutHref(workout.date)}
+                data-tour={isSelected ? "workout-card" : undefined}
+              >
+                <div className="bg-surface-container-high p-8 transition-colors hover:bg-surface-bright">
+                  <div className="mb-6 flex items-center gap-3">
+                    <span className="bg-primary-container px-3 py-1 font-headline text-sm font-bold text-on-primary-fixed">
+                      {getWorkoutBadge(workout)}
+                    </span>
+                    <span className="font-label text-xs tracking-widest text-on-surface-variant">
+                      {format(parseISO(workout.date), "EEEE, MMM d").toUpperCase()}
+                    </span>
+                  </div>
+
+                  <h3 className="mb-4 font-headline text-3xl font-bold uppercase tracking-tight">
+                    {getWorkoutHeadline(workout)}
+                  </h3>
+
+                  {isBarbell && chips.length > 0 && (
+                    <div className="mb-6 flex flex-wrap gap-2">
+                      {chips.map((chip, i) => (
+                        <span
+                          key={i}
+                          className="flex items-center gap-1.5 bg-surface-container px-3 py-1.5"
+                        >
+                          <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                            {chip.label}
+                          </span>
+                          <span className="font-headline text-sm font-bold text-primary-container">
+                            {chip.value}
+                          </span>
                         </span>
-                        <span className="font-headline text-sm font-bold text-primary-container">
-                          {chip.value}
+                      ))}
+                    </div>
+                  )}
+
+                  {!isBarbell && wod && (wod.timeCap || wod.rxWeights) && (
+                    <div className="mb-6 flex flex-wrap gap-2">
+                      {wod.timeCap && (
+                        <span className="flex items-center gap-1.5 bg-surface-container px-3 py-1.5">
+                          <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                            TIME CAP
+                          </span>
+                          <span className="font-headline text-sm font-bold text-primary-container">
+                            {Math.floor(wod.timeCap / 60)}:{String(wod.timeCap % 60).padStart(2, "0")}
+                          </span>
                         </span>
-                      </span>
+                      )}
+                      {wod.rxWeights && (
+                        <span className="flex items-center gap-1.5 bg-surface-container px-3 py-1.5">
+                          <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+                            RX
+                          </span>
+                          <span className="font-headline text-sm font-bold text-primary-container">
+                            {wod.rxWeights}kg
+                          </span>
+                        </span>
+                      )}
+                    </div>
+                  )}
+
+                  <div className="mb-8 space-y-3">
+                    {workout.sections.map((section, i) => (
+                      <div key={i} className="border-b border-outline-variant/20 pb-3">
+                        <span className="mb-1 block text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+                          {section.type}
+                        </span>
+                        {section.liftName ? (
+                          <span className="font-headline font-bold uppercase text-on-surface">
+                            {section.liftName}
+                          </span>
+                        ) : (
+                          <div className="flex flex-col gap-0.5">
+                            {section.exercises.map((ex, j) => (
+                              <span key={j} className="text-sm text-on-surface">
+                                {ex.name}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     ))}
                   </div>
-                );
-              })()}
 
-              {!isBarbell && (() => {
-                const wod = selectedWorkout.sections.find((s) => s.type === "WOD");
-                if (!wod) return null;
-                return (
-                  <div className="mb-6 flex flex-wrap gap-2">
-                    {wod.timeCap && (
-                      <span className="flex items-center gap-1.5 bg-surface-container px-3 py-1.5">
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
-                          TIME CAP
-                        </span>
-                        <span className="font-headline text-sm font-bold text-primary-container">
-                          {Math.floor(wod.timeCap / 60)}:{String(wod.timeCap % 60).padStart(2, "0")}
-                        </span>
-                      </span>
-                    )}
-                    {wod.rxWeights && (
-                      <span className="flex items-center gap-1.5 bg-surface-container px-3 py-1.5">
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
-                          RX
-                        </span>
-                        <span className="font-headline text-sm font-bold text-primary-container">
-                          {wod.rxWeights}kg
-                        </span>
-                      </span>
-                    )}
-                  </div>
-                );
-              })()}
-
-              <div className="mb-8 space-y-3">
-                {selectedWorkout.sections.map((section, i) => (
-                  <div key={i} className="border-b border-outline-variant/20 pb-3">
-                    <span className="mb-1 block text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
-                      {section.type}
-                    </span>
-                    {section.liftName ? (
-                      <span className="font-headline font-bold uppercase text-on-surface">
-                        {section.liftName}
-                      </span>
-                    ) : (
-                      <div className="flex flex-col gap-0.5">
-                        {section.exercises.map((ex, j) => (
-                          <span key={j} className="text-sm text-on-surface">
-                            {ex.name}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              <button className="digital-texture w-full py-4 font-headline font-black uppercase tracking-widest text-on-primary-fixed transition-transform duration-150 active:scale-95">
-                GO TO WORKOUT
-              </button>
+                  <button className="digital-texture w-full py-4 font-headline font-black uppercase tracking-widest text-on-primary-fixed transition-transform duration-150 active:scale-95">
+                    GO TO WORKOUT
+                  </button>
+                </div>
+              </Link>
             </div>
-          </Link>
-
-        </div>
-      ) : (
-        <div className="bg-surface-container-high p-12 text-center">
-          <p className="font-headline text-xl font-bold uppercase tracking-tight text-on-surface-variant">
-            REST DAY
-          </p>
-          <p className="mt-2 font-label text-xs tracking-widest text-outline">
-            NO WORKOUT PROGRAMMED FOR THIS DAY
-          </p>
-          {workouts.length === 0 && (
-            <p className="mt-4 font-label text-xs tracking-widest text-primary">
-              SWIPE OR TAP THE ARROWS TO CHECK OTHER WEEKS
-            </p>
-          )}
-        </div>
-      )}
-      </SwipeDayNav>
+          );
+        })}
+      </WorkoutCardSlider>
     </div>
   );
 }
