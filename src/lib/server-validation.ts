@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import type { SectionExercise, WodMovement, PercentageSet } from "@/db/schema";
 
 const MAX_WEIGHT_KG = 1000;
 const MAX_REPS = 1000;
@@ -57,4 +58,89 @@ export function sanitiseDisplayName(name: string | undefined): string | null {
 // row's userId against currentUserId returned in the same payload.
 export function publicUserId(userId: string): string {
   return createHash("sha256").update(userId).digest("hex").slice(0, 16);
+}
+
+const MAX_NAME = 100;
+const MAX_REPS_STR = 32;
+const MAX_WEIGHT_STR = 32;
+const MAX_NOTE = 200;
+const MAX_EXERCISES_PER_SECTION = 50;
+const MAX_MOVEMENTS_PER_SECTION = 50;
+const MAX_PERCENTAGE_SETS = 30;
+
+function isStringWithMax(value: unknown, max: number): value is string {
+  return typeof value === "string" && value.length <= max;
+}
+
+function isOptionalStringWithMax(value: unknown, max: number): value is string | undefined {
+  return value === undefined || (typeof value === "string" && value.length <= max);
+}
+
+function isNullableStringWithMax(value: unknown, max: number): value is string | null {
+  return value === null || (typeof value === "string" && value.length <= max);
+}
+
+export function validatePercentageSet(value: unknown): PercentageSet {
+  if (!value || typeof value !== "object") throw new Error("Invalid percentageSet");
+  const v = value as Record<string, unknown>;
+  if (!isStringWithMax(v.reps, MAX_REPS_STR)) throw new Error("Invalid percentageSet.reps");
+  if (typeof v.percentage !== "number" || !Number.isFinite(v.percentage) || v.percentage < 0 || v.percentage > 200) {
+    throw new Error("Invalid percentageSet.percentage");
+  }
+  return { reps: v.reps, percentage: v.percentage };
+}
+
+export function validateSectionExercise(value: unknown): SectionExercise {
+  if (!value || typeof value !== "object") throw new Error("Invalid exercise");
+  const v = value as Record<string, unknown>;
+  if (!isStringWithMax(v.name, MAX_NAME) || v.name.length === 0) {
+    throw new Error("Invalid exercise.name");
+  }
+  if (!isOptionalStringWithMax(v.reps, MAX_REPS_STR)) throw new Error("Invalid exercise.reps");
+  if (!isOptionalStringWithMax(v.weight, MAX_WEIGHT_STR)) throw new Error("Invalid exercise.weight");
+  let percentageSets: PercentageSet[] | undefined;
+  if (v.percentageSets !== undefined) {
+    if (!Array.isArray(v.percentageSets) || v.percentageSets.length > MAX_PERCENTAGE_SETS) {
+      throw new Error("Invalid exercise.percentageSets");
+    }
+    percentageSets = v.percentageSets.map(validatePercentageSet);
+  }
+  return {
+    name: v.name,
+    reps: v.reps as string | undefined,
+    weight: v.weight as string | undefined,
+    percentageSets,
+  };
+}
+
+export function validateWodMovement(value: unknown): WodMovement {
+  if (!value || typeof value !== "object") throw new Error("Invalid wodMovement");
+  const v = value as Record<string, unknown>;
+  if (!isStringWithMax(v.name, MAX_NAME) || v.name.length === 0) {
+    throw new Error("Invalid wodMovement.name");
+  }
+  if (!isStringWithMax(v.reps, MAX_REPS_STR)) throw new Error("Invalid wodMovement.reps");
+  if (!isNullableStringWithMax(v.weight, MAX_WEIGHT_STR)) throw new Error("Invalid wodMovement.weight");
+  if (!isNullableStringWithMax(v.unit, 16)) throw new Error("Invalid wodMovement.unit");
+  if (!isNullableStringWithMax(v.note, MAX_NOTE)) throw new Error("Invalid wodMovement.note");
+  return {
+    name: v.name,
+    reps: v.reps,
+    weight: v.weight as string | null,
+    unit: v.unit as string | null,
+    note: v.note as string | null,
+  };
+}
+
+export function validateSectionExercises(value: unknown): SectionExercise[] {
+  if (!Array.isArray(value)) throw new Error("Invalid exercises array");
+  if (value.length > MAX_EXERCISES_PER_SECTION) throw new Error("Too many exercises");
+  return value.map(validateSectionExercise);
+}
+
+export function validateWodMovements(value: unknown): WodMovement[] | null {
+  if (value === null || value === undefined) return null;
+  if (!Array.isArray(value)) throw new Error("Invalid wodMovements array");
+  if (value.length > MAX_MOVEMENTS_PER_SECTION) throw new Error("Too many wodMovements");
+  return value.map(validateWodMovement);
 }
