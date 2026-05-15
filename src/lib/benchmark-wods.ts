@@ -1,4 +1,5 @@
 import type { Sex } from "./strength-standards";
+import { parseTimeToSeconds, parseRoundsReps } from "./wod-scoring";
 
 export interface WodTier {
   name: string;
@@ -272,21 +273,6 @@ const BENCHMARK_WODS: BenchmarkWodEntry[] = [
   },
 ];
 
-function parseTimeToSeconds(timeStr: string): number {
-  const parts = timeStr.split(":");
-  if (parts.length === 2) {
-    return parseInt(parts[0]) * 60 + parseInt(parts[1]);
-  }
-  return parseInt(parts[0]) || 0;
-}
-
-function parseRoundsReps(scoreStr: string): number {
-  const parts = scoreStr.split("+");
-  const rounds = parseInt(parts[0]) || 0;
-  const reps = parseInt(parts[1]) || 0;
-  return rounds + reps / 100;
-}
-
 export function findBenchmarkWod(wodName: string): BenchmarkWodEntry | null {
   const lower = wodName.toLowerCase().trim();
   return BENCHMARK_WODS.find((w) => w.name.toLowerCase() === lower) ?? null;
@@ -330,14 +316,16 @@ export function assessWodScore(
       percentileLabel: labels[tierIdx],
     };
   } else {
-    const score = parseRoundsReps(scoreValue);
-    if (score <= 0) return null;
+    const { rounds, reps } = parseRoundsReps(scoreValue);
+    if (rounds <= 0 && reps <= 0) return null;
 
+    // Brackets are stored as whole rounds; partial-round reps are tie-break
+    // detail that doesn't qualify a higher tier.
     let tierIdx: number;
-    if (score >= brackets.dragon) tierIdx = 0;
-    else if (score >= brackets.beast) tierIdx = 1;
-    else if (score >= brackets.warrior) tierIdx = 2;
-    else if (score >= brackets.hunter) tierIdx = 3;
+    if (rounds >= brackets.dragon) tierIdx = 0;
+    else if (rounds >= brackets.beast) tierIdx = 1;
+    else if (rounds >= brackets.warrior) tierIdx = 2;
+    else if (rounds >= brackets.hunter) tierIdx = 3;
     else tierIdx = 4;
 
     const labels = ["Top 2%", "Top 16%", "Top 50%", "Top 84%", "Getting started"];
