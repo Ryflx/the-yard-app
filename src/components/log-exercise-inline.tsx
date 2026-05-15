@@ -85,6 +85,9 @@ export function LogExerciseInline({
   const fetchServerSets = useCallback(async () => {
     const sets = await getLoggedSetsDetailForDate(date, exerciseName);
     setServerSets(sets);
+    // Server is now authoritative — drop optimistic in-session state so the
+    // "X/Y SETS" badge isn't computed from both sources.
+    setLoggedSets([]);
     // Logged rows mirror server. Unlogged rows keep whatever the user typed so
     // they can fill every row first then OK each one without losing input when
     // the list re-fetches after each log.
