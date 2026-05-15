@@ -1,5 +1,6 @@
 import type { PercentageSet } from "@/db/schema";
 import { calculateWeight, normalizeLiftName } from "@/lib/percentage";
+import { parseSetsAndReps } from "@/lib/parse-sets";
 import { LogExerciseInline } from "@/components/log-exercise-inline";
 import { PercentageRow } from "@/components/percentage-row";
 import { SubstitutableExerciseRow } from "@/components/substitutable-exercise-row";
@@ -31,25 +32,6 @@ interface SectionDisplayProps {
   previousWeights?: Record<string, PreviousWeight>;
   loggedSetsToday?: Record<string, number>;
   substitutions?: Record<string, string[]>;
-}
-
-function parseSetsAndReps(sets: string | null): { setCount?: number; repsPerSet?: number } {
-  if (!sets) return {};
-  // "3-3-3-3-3" → 5 sets of 3
-  const dashMatch = sets.match(/^(\d+)(?:\s*-\s*\d+)+$/);
-  if (dashMatch) {
-    const parts = sets.split(/\s*-\s*/);
-    return { setCount: parts.length, repsPerSet: parseInt(parts[0]) };
-  }
-  // "5 sets" or "5x3"
-  const setsMatch = sets.match(/(\d+)\s*(?:sets?|x)\s*(\d+)?/i);
-  if (setsMatch) {
-    return {
-      setCount: parseInt(setsMatch[1]),
-      repsPerSet: setsMatch[2] ? parseInt(setsMatch[2]) : undefined,
-    };
-  }
-  return {};
 }
 
 function parseDefaultReps(name: string): number | undefined {
