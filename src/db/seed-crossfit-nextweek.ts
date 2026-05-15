@@ -22,8 +22,7 @@ interface WorkoutData {
   sections: SectionData[];
 }
 
-// CrossFit programming for week of 18-22 May 2026 (Mon-Fri).
-// Saturday is left out — Liam will add it separately.
+// CrossFit programming for week of 18-23 May 2026 (Mon-Sat).
 const CROSSFIT_WORKOUTS: WorkoutData[] = [
   // ── MONDAY 18 MAY ──
   {
@@ -193,10 +192,53 @@ const CROSSFIT_WORKOUTS: WorkoutData[] = [
       },
     ],
   },
+  // ── SATURDAY 23 MAY ──
+  {
+    date: "2026-05-23",
+    title: "Hybrid Deadlift Sprint",
+    sections: [
+      {
+        type: "WARM UP",
+        exercises: [
+          { name: "1 set: 400-m run" },
+          { name: "2 sets: 10 barbell good mornings + 10 down ups" },
+        ],
+      },
+      {
+        type: "LOADING UP",
+        sets: "5 sets",
+        exercises: [{ name: "3 hybrid deadlifts" }],
+      },
+      {
+        type: "WOD",
+        wodScoreType: "ROUNDS_REPS",
+        timeCap: 1800,
+        sets: "9:00 on / 1:00 off with a partner x 3",
+        wodName: "Hybrid Deadlift Sprint",
+        rxWeights: "95/130kg",
+        exercises: [
+          { name: "800-m med ball run (split into 200-m)" },
+          { name: "45 synchronised over the bar burpees" },
+          { name: "max hybrid deadlifts in remaining time at 95/130kg" },
+          { name: "- score is total reps" },
+        ],
+      },
+      {
+        type: "ON RAMP",
+        sets: "9:00 on / 1:00 off with a partner x 3",
+        exercises: [
+          { name: "800-m run (split into 200-m)" },
+          { name: "30 synchronised over the bar burpees" },
+          { name: "max hybrid deadlifts in remaining time at 35/50kg" },
+          { name: "- score is total reps" },
+        ],
+      },
+    ],
+  },
 ];
 
 async function seed() {
-  console.log("Seeding CrossFit workouts for 18-22 May 2026...\n");
+  console.log("Seeding CrossFit workouts for 18-23 May 2026...\n");
 
   for (const day of CROSSFIT_WORKOUTS) {
     const existing = await db
@@ -237,7 +279,7 @@ async function seed() {
     console.log(`  ✓ ${day.date} (${day.title}): ${sectionSummary}`);
   }
 
-  console.log("\nDone! 5 CrossFit workouts seeded.");
+  console.log(`\nDone! ${CROSSFIT_WORKOUTS.length} CrossFit workouts seeded.`);
   process.exit(0);
 }
 
