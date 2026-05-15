@@ -118,7 +118,19 @@ export function WodScoreEntry({
             </div>
           </div>
           <button
-            onClick={() => { setLogged(false); setDisplayScore(""); setDisplayRxLevel("SCALED"); setTierResult(null); }}
+            onClick={() => {
+              setLogged(false);
+              setDisplayScore("");
+              setDisplayRxLevel("SCALED");
+              setTierResult(null);
+              setMinutes("");
+              setSeconds("");
+              setRounds("");
+              setReps("");
+              setRxLevel("RX");
+              setIsPublic(true);
+              setExpanded(false);
+            }}
             className="text-[10px] font-bold uppercase tracking-widest text-primary hover:underline"
           >
             LOG AGAIN

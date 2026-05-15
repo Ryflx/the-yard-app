@@ -2,24 +2,35 @@ import type { WodScoreType } from "@/db/schema";
 import { findBenchmarkWod } from "./benchmark-wods";
 import type { Sex } from "./strength-standards";
 
+// Accepts "m:ss" or plain seconds. Returns 0 on unparseable input. This is
+// the canonical parser — benchmark-wods.ts also imports from here so the
+// two sites can't drift.
 export function parseTimeToSeconds(value: string): number {
   const parts = value.split(":");
-  if (parts.length !== 2) return 0;
-  const m = parseInt(parts[0]) || 0;
-  const s = parseInt(parts[1]) || 0;
-  return m * 60 + s;
+  if (parts.length === 2) {
+    return (parseInt(parts[0], 10) || 0) * 60 + (parseInt(parts[1], 10) || 0);
+  }
+  return parseInt(parts[0], 10) || 0;
 }
+
+// `total` packs rounds and reps into a single sortable number. We use 1e6
+// as the multiplier so even pathological partial-round rep counts (>1000)
+// can't collide with the next whole round. Threshold comparisons against
+// whole-round brackets should use `total` against `threshold * REPS_PER_ROUND_SCALE`.
+const REPS_PER_ROUND_SCALE = 1_000_000;
 
 export function parseRoundsReps(value: string): { rounds: number; reps: number; total: number } {
   if (value.includes("+")) {
     const [r, rep] = value.split("+");
-    const rounds = parseInt(r) || 0;
-    const reps = parseInt(rep) || 0;
-    return { rounds, reps, total: rounds * 1000 + reps };
+    const rounds = parseInt(r, 10) || 0;
+    const reps = parseInt(rep, 10) || 0;
+    return { rounds, reps, total: rounds * REPS_PER_ROUND_SCALE + reps };
   }
-  const rounds = parseInt(value) || 0;
-  return { rounds, reps: 0, total: rounds * 1000 };
+  const rounds = parseInt(value, 10) || 0;
+  return { rounds, reps: 0, total: rounds * REPS_PER_ROUND_SCALE };
 }
+
+export { REPS_PER_ROUND_SCALE };
 
 export function compareWodScores(a: string, b: string, scoreType: WodScoreType): number {
   if (scoreType === "TIME" || scoreType === "INTERVAL") {
@@ -107,12 +118,11 @@ export function distanceToNextTier(
 
   if (scoreType === "ROUNDS_REPS") {
     const current = parseRoundsReps(scoreValue).total;
-    // Bracket values are whole rounds — scale to match rounds*1000+reps format
-    const targetScaled = target * 1000;
+    const targetScaled = target * REPS_PER_ROUND_SCALE;
     const diff = targetScaled - current;
     if (diff <= 0) return null;
-    const rounds = Math.floor(diff / 1000);
-    const reps = diff % 1000;
+    const rounds = Math.floor(diff / REPS_PER_ROUND_SCALE);
+    const reps = diff % REPS_PER_ROUND_SCALE;
     if (rounds > 0 && reps > 0) return `${rounds} rounds + ${reps} reps more`;
     if (rounds > 0) return `${rounds} more rounds`;
     return `${reps} more reps`;

@@ -29,11 +29,35 @@ import {
   assertOneOf,
   sanitiseDisplayName,
   publicUserId,
+  validateSectionExercises,
+  validateWodMovements,
 } from "@/lib/server-validation";
 
 const WOD_SCORE_TYPES = ["TIME", "ROUNDS_REPS", "LOAD", "CALS", "DISTANCE", "INTERVAL"] as const satisfies readonly WodScoreType[];
 const RX_LEVELS = ["SCALED", "RX", "RX_PLUS"] as const satisfies readonly RxLevel[];
 const MAX_PARSE_WORKOUT_TEXT = 8000;
+
+type WorkoutRow = typeof workouts.$inferSelect;
+type SectionRow = typeof workoutSections.$inferSelect;
+
+// Fan-out fetch sections for a batch of workouts in one query, then group
+// in JS. Replaces the per-workout loop that issued one section query each.
+async function attachSections(rows: WorkoutRow[]): Promise<(WorkoutRow & { sections: SectionRow[] })[]> {
+  if (rows.length === 0) return [];
+  const ids = rows.map((r) => r.id);
+  const sections = await db
+    .select()
+    .from(workoutSections)
+    .where(inArray(workoutSections.workoutId, ids))
+    .orderBy(workoutSections.sortOrder);
+  const byWorkout = new Map<number, SectionRow[]>();
+  for (const s of sections) {
+    const list = byWorkout.get(s.workoutId);
+    if (list) list.push(s);
+    else byWorkout.set(s.workoutId, [s]);
+  }
+  return rows.map((r) => ({ ...r, sections: byWorkout.get(r.id) ?? [] }));
+}
 
 export async function getWorkoutsForWeek(weekStart: string, weekEnd: string, classType?: ClassType) {
   const conditions = [gte(workouts.date, weekStart), lte(workouts.date, weekEnd)];
@@ -45,17 +69,7 @@ export async function getWorkoutsForWeek(weekStart: string, weekEnd: string, cla
     .where(and(...conditions))
     .orderBy(workouts.date);
 
-  const result = [];
-  for (const workout of rows) {
-    const sections = await db
-      .select()
-      .from(workoutSections)
-      .where(eq(workoutSections.workoutId, workout.id))
-      .orderBy(workoutSections.sortOrder);
-    result.push({ ...workout, sections });
-  }
-
-  return result;
+  return attachSections(rows);
 }
 
 export async function getWorkoutByDate(date: string, classType?: ClassType) {
@@ -85,16 +99,7 @@ export async function getWorkoutsByDate(date: string) {
     .where(eq(workouts.date, date))
     .orderBy(workouts.classType);
 
-  const result = [];
-  for (const workout of rows) {
-    const sections = await db
-      .select()
-      .from(workoutSections)
-      .where(eq(workoutSections.workoutId, workout.id))
-      .orderBy(workoutSections.sortOrder);
-    result.push({ ...workout, sections });
-  }
-  return result;
+  return attachSections(rows);
 }
 
 export async function getWorkoutById(id: number) {
@@ -435,22 +440,35 @@ export async function claimAdmin(): Promise<void> {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
 
-  const alreadyHasAdmin = await hasAnyAdmin();
-  if (alreadyHasAdmin) throw new Error("Admin already exists");
+  // Two concurrent first-time visitors both passing a check-then-act would
+  // both become admin. The advisory lock serializes claimAdmin calls so the
+  // re-check inside the transaction sees the prior winner's write.
+  await db.transaction(async (tx) => {
+    await tx.execute(sql`SELECT pg_advisory_xact_lock(hashtext('claim_admin'))`);
 
-  const existing = await db
-    .select()
-    .from(userProfiles)
-    .where(eq(userProfiles.userId, userId));
+    const [existingAdminCount] = await tx
+      .select({ total: count() })
+      .from(userProfiles)
+      .where(eq(userProfiles.role, "admin"));
 
-  if (existing.length > 0) {
-    await db
-      .update(userProfiles)
-      .set({ role: "admin", updatedAt: new Date() })
+    if ((existingAdminCount?.total ?? 0) > 0) {
+      throw new Error("Admin already exists");
+    }
+
+    const existing = await tx
+      .select()
+      .from(userProfiles)
       .where(eq(userProfiles.userId, userId));
-  } else {
-    await db.insert(userProfiles).values({ userId, role: "admin" });
-  }
+
+    if (existing.length > 0) {
+      await tx
+        .update(userProfiles)
+        .set({ role: "admin", updatedAt: new Date() })
+        .where(eq(userProfiles.userId, userId));
+    } else {
+      await tx.insert(userProfiles).values({ userId, role: "admin" });
+    }
+  });
 
   revalidatePath("/admin/users");
   revalidatePath("/progress");
@@ -857,29 +875,42 @@ export async function addWorkout(data: {
 }) {
   if (!(await isCurrentUserAdmin())) throw new Error("Not authorized");
 
+  assertStringLength(data.title, { max: 200, label: "title" });
+  assertStringLength(data.date, { max: 10, label: "date" });
+  const validatedSections = data.sections.map((s) => ({
+    ...s,
+    exercises: validateSectionExercises(s.exercises),
+    wodMovements: validateWodMovements(s.wodMovements ?? null),
+    sets: s.sets ?? null,
+    liftName: s.liftName ?? null,
+    wodName: s.wodName ?? null,
+    rxWeights: s.rxWeights ?? null,
+    wodDescription: s.wodDescription ?? null,
+  }));
+
   const [workout] = await db
     .insert(workouts)
     .values({ date: data.date, title: data.title, classType: data.classType ?? "BARBELL" })
     .returning();
 
-  for (let i = 0; i < data.sections.length; i++) {
-    const section = data.sections[i];
+  for (let i = 0; i < validatedSections.length; i++) {
+    const section = validatedSections[i];
     await db.insert(workoutSections).values({
       workoutId: workout.id,
       type: section.type,
       sortOrder: i,
-      liftName: section.liftName ?? null,
-      sets: section.sets ?? null,
+      liftName: section.liftName,
+      sets: section.sets,
       exercises: section.exercises,
       wodScoreType: section.wodScoreType ?? null,
       timeCap: section.timeCap ?? null,
-      wodName: section.wodName ?? null,
-      rxWeights: section.rxWeights ?? null,
+      wodName: section.wodName,
+      rxWeights: section.rxWeights,
       wodFormat: section.wodFormat ?? null,
       wodRounds: section.wodRounds ?? null,
       wodInterval: section.wodInterval ?? null,
-      wodDescription: section.wodDescription ?? null,
-      wodMovements: section.wodMovements ?? null,
+      wodDescription: section.wodDescription,
+      wodMovements: section.wodMovements,
     });
   }
 
@@ -913,6 +944,19 @@ export async function updateWorkout(
 ) {
   if (!(await isCurrentUserAdmin())) throw new Error("Not authorized");
 
+  assertStringLength(data.title, { max: 200, label: "title" });
+  assertStringLength(data.date, { max: 10, label: "date" });
+  const validatedSections = data.sections.map((s) => ({
+    ...s,
+    exercises: validateSectionExercises(s.exercises),
+    wodMovements: validateWodMovements(s.wodMovements ?? null),
+    sets: s.sets ?? null,
+    liftName: s.liftName ?? null,
+    wodName: s.wodName ?? null,
+    rxWeights: s.rxWeights ?? null,
+    wodDescription: s.wodDescription ?? null,
+  }));
+
   await db.update(workouts).set({
     date: data.date,
     title: data.title,
@@ -920,24 +964,24 @@ export async function updateWorkout(
   }).where(eq(workouts.id, workoutId));
   await db.delete(workoutSections).where(eq(workoutSections.workoutId, workoutId));
 
-  for (let i = 0; i < data.sections.length; i++) {
-    const section = data.sections[i];
+  for (let i = 0; i < validatedSections.length; i++) {
+    const section = validatedSections[i];
     await db.insert(workoutSections).values({
       workoutId,
       type: section.type,
       sortOrder: i,
-      liftName: section.liftName ?? null,
-      sets: section.sets ?? null,
+      liftName: section.liftName,
+      sets: section.sets,
       exercises: section.exercises,
       wodScoreType: section.wodScoreType ?? null,
       timeCap: section.timeCap ?? null,
-      wodName: section.wodName ?? null,
-      rxWeights: section.rxWeights ?? null,
+      wodName: section.wodName,
+      rxWeights: section.rxWeights,
       wodFormat: section.wodFormat ?? null,
       wodRounds: section.wodRounds ?? null,
       wodInterval: section.wodInterval ?? null,
-      wodDescription: section.wodDescription ?? null,
-      wodMovements: section.wodMovements ?? null,
+      wodDescription: section.wodDescription,
+      wodMovements: section.wodMovements,
     });
   }
 
@@ -962,16 +1006,7 @@ export async function getUpcomingWorkouts() {
     .orderBy(asc(workouts.date))
     .limit(20);
 
-  const result = [];
-  for (const workout of rows) {
-    const sections = await db
-      .select()
-      .from(workoutSections)
-      .where(eq(workoutSections.workoutId, workout.id))
-      .orderBy(workoutSections.sortOrder);
-    result.push({ ...workout, sections });
-  }
-  return result;
+  return attachSections(rows);
 }
 
 export async function getRecentWorkouts() {
@@ -983,16 +1018,7 @@ export async function getRecentWorkouts() {
     .orderBy(desc(workouts.date))
     .limit(10);
 
-  const result = [];
-  for (const workout of rows) {
-    const sections = await db
-      .select()
-      .from(workoutSections)
-      .where(eq(workoutSections.workoutId, workout.id))
-      .orderBy(workoutSections.sortOrder);
-    result.push({ ...workout, sections });
-  }
-  return result;
+  return attachSections(rows);
 }
 
 // ── Movement Library ──

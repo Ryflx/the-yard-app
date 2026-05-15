@@ -45,7 +45,7 @@ const STANDARDS: LevelData[] = [
       { bodyweight: 73, total: 129, snatch: 58, cleanAndJerk: 71, backSquat: 90, frontSquat: 77 },
       { bodyweight: 81, total: 136, snatch: 61, cleanAndJerk: 75, backSquat: 95, frontSquat: 82 },
       { bodyweight: 89, total: 145, snatch: 65, cleanAndJerk: 80, backSquat: 102, frontSquat: 87 },
-      { bodyweight: 96, total: 152, snatch: 68, cleanAndJerk: 84, backSquat: 103, frontSquat: 63 },
+      { bodyweight: 96, total: 152, snatch: 68, cleanAndJerk: 84, backSquat: 103, frontSquat: 88 },
       { bodyweight: 102, total: 157, snatch: 71, cleanAndJerk: 86, backSquat: 110, frontSquat: 94 },
       { bodyweight: 109, total: 162, snatch: 73, cleanAndJerk: 89, backSquat: 113, frontSquat: 97 },
       { bodyweight: 110, total: 167, snatch: 75, cleanAndJerk: 92, backSquat: 117, frontSquat: 100 },

@@ -64,6 +64,7 @@ function parseDateString(value: string): string {
 export function BulkUploadFlow() {
   const router = useRouter();
   const fileRef = useRef<HTMLInputElement>(null);
+  const parsingRef = useRef(false);
   const [workouts, setWorkouts] = useState<UploadedWorkout[]>([]);
   const [parsing, setParsing] = useState(false);
   const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
@@ -74,54 +75,65 @@ export function BulkUploadFlow() {
     const file = e.target.files?.[0];
     if (!file) return;
 
-    const text = await file.text();
-    const data = parseCSV(text);
+    if (parsingRef.current) {
+      toast.error("Already parsing a file — wait for it to finish");
+      if (fileRef.current) fileRef.current.value = "";
+      return;
+    }
+    parsingRef.current = true;
 
-    if (data.length === 0) { toast.error("Empty file"); return; }
+    try {
+      const text = await file.text();
+      const data = parseCSV(text);
 
-    const headerRow = data[0];
-    const extracted: UploadedWorkout[] = [];
+      if (data.length === 0) { toast.error("Empty file"); return; }
 
-    for (let col = 0; col < headerRow.length; col++) {
-      const dateStr = headerRow[col]?.trim();
-      if (!dateStr) continue;
+      const headerRow = data[0];
+      const extracted: UploadedWorkout[] = [];
 
-      const parsedDate = parseDateString(dateStr);
+      for (let col = 0; col < headerRow.length; col++) {
+        const dateStr = headerRow[col]?.trim();
+        if (!dateStr) continue;
 
-      const cellTexts: string[] = [];
-      for (let row = 1; row < data.length; row++) {
-        const cell = data[row]?.[col]?.trim();
-        if (cell) cellTexts.push(cell);
+        const parsedDate = parseDateString(dateStr);
+
+        const cellTexts: string[] = [];
+        for (let row = 1; row < data.length; row++) {
+          const cell = data[row]?.[col]?.trim();
+          if (cell) cellTexts.push(cell);
+        }
+
+        if (cellTexts.length === 0) continue;
+
+        extracted.push({
+          text: cellTexts.join("\n\n"),
+          date: parsedDate,
+          parsed: null,
+          error: null,
+          saved: false,
+        });
       }
 
-      if (cellTexts.length === 0) continue;
+      if (extracted.length === 0) { toast.error("No workouts found in file"); return; }
 
-      extracted.push({
-        text: cellTexts.join("\n\n"),
-        date: parsedDate,
-        parsed: null,
-        error: null,
-        saved: false,
-      });
-    }
+      setWorkouts(extracted);
+      toast.success(`Found ${extracted.length} workouts`);
 
-    if (extracted.length === 0) { toast.error("No workouts found in file"); return; }
-
-    setWorkouts(extracted);
-    toast.success(`Found ${extracted.length} workouts`);
-
-    setParsing(true);
-    for (let i = 0; i < extracted.length; i++) {
-      try {
-        const result = await parseWorkoutText({ text: extracted[i].text });
-        extracted[i].parsed = result;
-      } catch {
-        extracted[i].error = "Failed to parse";
+      setParsing(true);
+      for (let i = 0; i < extracted.length; i++) {
+        try {
+          const result = await parseWorkoutText({ text: extracted[i].text });
+          extracted[i].parsed = result;
+        } catch {
+          extracted[i].error = "Failed to parse";
+        }
+        setWorkouts([...extracted]);
+        setProgress(((i + 1) / extracted.length) * 100);
       }
-      setWorkouts([...extracted]);
-      setProgress(((i + 1) / extracted.length) * 100);
+      setParsing(false);
+    } finally {
+      parsingRef.current = false;
     }
-    setParsing(false);
   }
 
   async function handleSaveAll() {

@@ -107,16 +107,42 @@ export async function parseWorkoutWithAI(text: string, movementNames: string[]):
   const jsonMatch = content.text.match(/\{[\s\S]*\}/);
   if (!jsonMatch) throw new Error("No JSON found in response");
 
-  const parsed = JSON.parse(jsonMatch[0]) as ParsedWorkout;
+  let raw: unknown;
+  try {
+    raw = JSON.parse(jsonMatch[0]);
+  } catch {
+    throw new Error("LLM returned invalid JSON");
+  }
 
-  for (const section of parsed.sections) {
-    section.sortOrder = parsed.sections.indexOf(section);
+  if (!isParsedWorkoutShape(raw)) {
+    throw new Error("LLM returned JSON in unexpected shape");
+  }
+  const parsed = raw;
+
+  parsed.sections.forEach((section, i) => {
+    section.sortOrder = i;
     section.exercises = section.exercises ?? [];
     section.wodMovements = section.wodMovements ?? [];
     if (section.wodFormat && !section.wodScoreType) {
       section.wodScoreType = FORMAT_SCORE_DEFAULTS[section.wodFormat] ?? "TIME";
     }
-  }
+  });
 
   return parsed;
+}
+
+function isParsedWorkoutShape(value: unknown): value is ParsedWorkout {
+  if (!value || typeof value !== "object") return false;
+  const v = value as Record<string, unknown>;
+  if (v.classType !== "BARBELL" && v.classType !== "CROSSFIT") return false;
+  if (typeof v.title !== "string") return false;
+  if (!Array.isArray(v.sections)) return false;
+  for (const s of v.sections) {
+    if (!s || typeof s !== "object") return false;
+    const sec = s as Record<string, unknown>;
+    if (typeof sec.type !== "string") return false;
+    if (sec.exercises !== undefined && !Array.isArray(sec.exercises)) return false;
+    if (sec.wodMovements !== undefined && !Array.isArray(sec.wodMovements)) return false;
+  }
+  return true;
 }
