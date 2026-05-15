@@ -19,10 +19,12 @@ interface DayData {
   sections: SectionData[];
 }
 
+// Barbell programming for week of 18-21 May 2026 (Mon-Thu).
+// Fri/Sat barbell not shared yet — Liam will add them later if needed.
 const BARBELL_WORKOUTS: DayData[] = [
-  // ── MONDAY 13 APRIL ──
+  // ── MONDAY 18 MAY ──
   {
-    date: "2026-04-13",
+    date: "2026-05-18",
     title: "Monday",
     sections: [
       {
@@ -33,16 +35,16 @@ const BARBELL_WORKOUTS: DayData[] = [
         type: "PRIMER",
         sets: "3 sets",
         exercises: [
-          { name: "3 clean pulls" },
-          { name: "3 hip cleans" },
+          { name: "3 muscle snatches" },
+          { name: "3 overhead squats" },
         ],
       },
       {
         type: "OLYMPIC LIFT",
-        liftName: "Power clean + hang squat clean",
+        liftName: "Snatch pull + power snatch + overhead squat",
         exercises: [
           {
-            name: "Clean pull + hang squat clean",
+            name: "Snatch pull + power snatch + overhead squat",
             percentageSets: [
               { reps: "1", percentage: 50 },
               { reps: "1", percentage: 60 },
@@ -58,24 +60,24 @@ const BARBELL_WORKOUTS: DayData[] = [
         type: "STRENGTH 1",
         sets: "3 sets",
         exercises: [
-          { name: "6 back squats" },
-          { name: ":20 echo bike sprint" },
+          { name: "3 snatch pulls (heavy)" },
+          { name: "9 snatch grip RDLs" },
+          { name: "- use straps if possible" },
         ],
       },
       {
         type: "STRENGTH 2",
         sets: "3 sets",
         exercises: [
-          { name: "10 double DB push press" },
-          { name: "10 double DB bench press" },
-          { name: "10 double DB floor press" },
+          { name: "6 strict pull ups" },
+          { name: "8 single arm bench supported bent over rows / side" },
         ],
       },
     ],
   },
-  // ── TUESDAY 14 APRIL ──
+  // ── TUESDAY 19 MAY ──
   {
-    date: "2026-04-14",
+    date: "2026-05-19",
     title: "Tuesday",
     sections: [
       {
@@ -86,16 +88,16 @@ const BARBELL_WORKOUTS: DayData[] = [
         type: "PRIMER",
         sets: "3 sets",
         exercises: [
-          { name: "3 hang power snatch" },
-          { name: "3 overhead squats" },
+          { name: "3 muscle cleans" },
+          { name: "3 front squats" },
         ],
       },
       {
         type: "OLYMPIC LIFT",
-        liftName: "Squat snatch",
+        liftName: "Power clean + 2 hang squat cleans",
         exercises: [
           {
-            name: "Squat snatch",
+            name: "Power clean + 2 hang squat cleans",
             percentageSets: [
               { reps: "1", percentage: 50 },
               { reps: "1", percentage: 60 },
@@ -111,23 +113,23 @@ const BARBELL_WORKOUTS: DayData[] = [
         type: "STRENGTH 1",
         sets: "3 sets",
         exercises: [
-          { name: "6 tempo sumo RDLs (3X11)" },
-          { name: "8 RDLs" },
+          { name: "6 x 1+1/4 front squats" },
+          { name: "12 alternating jumping lunges" },
         ],
       },
       {
         type: "STRENGTH 2",
         sets: "3 sets",
         exercises: [
-          { name: "6 pendalay rows" },
-          { name: "12 ring rows" },
+          { name: "6 double KB seated press" },
+          { name: "10 deficit press ups (1 plate)" },
         ],
       },
     ],
   },
-  // ── WEDNESDAY 15 APRIL ──
+  // ── WEDNESDAY 20 MAY ──
   {
-    date: "2026-04-15",
+    date: "2026-05-20",
     title: "Wednesday",
     sections: [
       {
@@ -138,17 +140,16 @@ const BARBELL_WORKOUTS: DayData[] = [
         type: "PRIMER",
         sets: "3 sets",
         exercises: [
-          { name: "3 front squats" },
-          { name: "2 push jerks" },
-          { name: "1 split jerk" },
+          { name: "3 muscle snatches" },
+          { name: "3 overhead squats" },
         ],
       },
       {
         type: "OLYMPIC LIFT",
-        liftName: "Squat clean + split jerk",
+        liftName: "Power snatch + 2 hang squat snatches",
         exercises: [
           {
-            name: "Squat clean + split jerk",
+            name: "Power snatch + 2 hang squat snatches",
             percentageSets: [
               { reps: "1", percentage: 50 },
               { reps: "1", percentage: 60 },
@@ -164,23 +165,23 @@ const BARBELL_WORKOUTS: DayData[] = [
         type: "STRENGTH 1",
         sets: "3 sets",
         exercises: [
-          { name: "12 zercher lunges (6/6)" },
-          { name: "6 zercher squats" },
+          { name: "4-6 barbell bent over rows (heavy)" },
+          { name: "max chin ups (2 reps in reserve)" },
         ],
       },
       {
         type: "STRENGTH 2",
         sets: "3 sets",
         exercises: [
-          { name: "12 press ups" },
-          { name: "3 wall walks" },
+          { name: "8 double DB swings" },
+          { name: "4 devils press" },
         ],
       },
     ],
   },
-  // ── THURSDAY 16 APRIL ──
+  // ── THURSDAY 21 MAY ──
   {
-    date: "2026-04-16",
+    date: "2026-05-21",
     title: "Thursday",
     sections: [
       {
@@ -191,16 +192,15 @@ const BARBELL_WORKOUTS: DayData[] = [
         type: "PRIMER",
         sets: "3 sets",
         exercises: [
-          { name: "3 snatch pulls" },
-          { name: "3 hip snatches" },
+          { name: "3 split jerk balances" },
         ],
       },
       {
         type: "OLYMPIC LIFT",
-        liftName: "Snatch pull + hang squat snatch",
+        liftName: "Front squat + 2 split jerks",
         exercises: [
           {
-            name: "Snatch pull + hang squat snatch",
+            name: "Front squat + 2 split jerks",
             percentageSets: [
               { reps: "1", percentage: 50 },
               { reps: "1", percentage: 60 },
@@ -216,17 +216,16 @@ const BARBELL_WORKOUTS: DayData[] = [
         type: "STRENGTH 1",
         sets: "3 sets",
         exercises: [
-          { name: "6 double KB/DB russian swings" },
-          { name: "12 single KB american swings" },
+          { name: "12 squat jumps" },
+          { name: "6 d-ball squats (ball on chest)" },
         ],
       },
       {
         type: "STRENGTH 2",
         sets: "3 sets",
         exercises: [
-          { name: ":20 chin over bar hold" },
-          { name: "6 strict pull ups" },
-          { name: ":10 chin over bar hold" },
+          { name: "6 double DB push press" },
+          { name: "6 strict ring dips" },
         ],
       },
     ],
@@ -234,7 +233,7 @@ const BARBELL_WORKOUTS: DayData[] = [
 ];
 
 async function seed() {
-  console.log("Seeding barbell workouts for 13-16 April 2026...\n");
+  console.log("Seeding barbell workouts for 18-21 May 2026...\n");
 
   for (const day of BARBELL_WORKOUTS) {
     const existing = await db
@@ -271,7 +270,7 @@ async function seed() {
     console.log(`  ✓ ${day.date} (${day.title}): ${lift}`);
   }
 
-  console.log("\nDone! 4 barbell workouts seeded for next week.");
+  console.log(`\nDone! ${BARBELL_WORKOUTS.length} barbell workouts seeded for next week.`);
   process.exit(0);
 }
 
