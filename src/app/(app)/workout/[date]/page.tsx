@@ -21,6 +21,7 @@ import { WodScoreEntry } from "@/components/wod-score-entry";
 import { LogExerciseInline } from "@/components/log-exercise-inline";
 import { calculateWeight, isStaleAfter } from "@/lib/percentage";
 import { isComplex, parseComplex, pickLimitingLift, deriveBase1RM } from "@/lib/complex";
+import { parseSetsAndReps } from "@/lib/parse-sets";
 import Link from "next/link";
 
 import type { ClassType, WodScoreType, RxLevel } from "@/db/schema";
@@ -323,10 +324,7 @@ async function CrossFitDetail({
                     </div>
                     {(() => {
                       const combinedName = section.exercises.map((e) => e.name).join(" + ");
-                      const dashMatch = section.sets?.match(/^(\d+)(?:\s*-\s*\d+)+$/);
-                      const setsMatch = section.sets?.match(/(\d+)\s*(?:sets?|x)\s*(\d+)?/i);
-                      const expectedSets = dashMatch ? section.sets!.split(/\s*-\s*/).length : setsMatch ? parseInt(setsMatch[1]) : undefined;
-                      const sectionReps = dashMatch ? parseInt(dashMatch[1]) : setsMatch?.[2] ? parseInt(setsMatch[2]) : undefined;
+                      const { setCount: expectedSets, repsPerSet: sectionReps } = parseSetsAndReps(section.sets);
                       const repsMatch = section.exercises[0]?.name.match(/^(\d+)\s+/);
                       const defaultReps = repsMatch ? parseInt(repsMatch[1]) : sectionReps;
                       return (
@@ -348,10 +346,7 @@ async function CrossFitDetail({
               ) : (
                 <div className="flex flex-col gap-1">
                   {section.exercises.map((exercise, i) => {
-                    const dashMatch = section.sets?.match(/^(\d+)(?:\s*-\s*\d+)+$/);
-                    const setsMatch = section.sets?.match(/(\d+)\s*(?:sets?|x)\s*(\d+)?/i);
-                    const expectedSets = dashMatch ? section.sets!.split(/\s*-\s*/).length : setsMatch ? parseInt(setsMatch[1]) : undefined;
-                    const sectionReps = dashMatch ? parseInt(dashMatch[1]) : setsMatch?.[2] ? parseInt(setsMatch[2]) : undefined;
+                    const { setCount: expectedSets, repsPerSet: sectionReps } = parseSetsAndReps(section.sets);
                     const repsMatch = exercise.name.match(/^(\d+)\s+/);
                     const defaultReps = repsMatch ? parseInt(repsMatch[1]) : sectionReps;
                     return (
