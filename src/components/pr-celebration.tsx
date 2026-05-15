@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, useRef } from "react";
 
 interface PRData {
   liftName: string;
@@ -28,11 +28,21 @@ export function PRCelebrationProvider({
 }) {
   const [pr, setPR] = useState<PRData | null>(null);
   const [visible, setVisible] = useState(false);
+  const dismissTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const celebrate = useCallback((data: PRData) => {
+    if (dismissTimeoutRef.current) {
+      clearTimeout(dismissTimeoutRef.current);
+    }
     setPR(data);
     setVisible(true);
-    setTimeout(() => setVisible(false), 3500);
+    dismissTimeoutRef.current = setTimeout(() => setVisible(false), 3500);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (dismissTimeoutRef.current) clearTimeout(dismissTimeoutRef.current);
+    };
   }, []);
 
   return (
