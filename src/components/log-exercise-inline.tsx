@@ -62,6 +62,7 @@ export function LogExerciseInline({
   const [expanded, setExpanded] = useState(false);
   const [singleOpen, setSingleOpen] = useState(false);
   const [weight, setWeight] = useState(lastWeight?.toString() ?? "");
+  const [customReps, setCustomReps] = useState(effectiveReps?.toString() ?? "");
   const [loading, setLoading] = useState(false);
   const [loggedSets, setLoggedSets] = useState<LoggedSet[]>([]);
   const [serverSets, setServerSets] = useState<ServerSet[]>([]);
@@ -96,12 +97,26 @@ export function LogExerciseInline({
   }, [date, exerciseName, expectedSets, lastWeight]);
 
   async function handleLogSingle() {
-    const w = parseFloat(weight) || 0;
-    if (w < 0) return;
+    const w = parseFloat(weight);
+    if (!Number.isFinite(w) || w < 0) {
+      toast.error("Enter a valid weight");
+      return;
+    }
+
+    let finalReps: number | undefined;
+    if (mode === "cals") {
+      finalReps = Math.round(w);
+    } else if (defaultReps) {
+      finalReps = defaultReps;
+    } else if (customReps.trim().length > 0) {
+      const parsedReps = parseInt(customReps, 10);
+      finalReps = Number.isFinite(parsedReps) && parsedReps > 0 ? parsedReps : undefined;
+    } else {
+      finalReps = effectiveReps ?? undefined;
+    }
 
     setLoading(true);
     try {
-      const finalReps = mode === "cals" ? Math.round(w) : effectiveReps ?? undefined;
       const result = await logLift({
         workoutId,
         date,
@@ -439,8 +454,8 @@ export function LogExerciseInline({
               type="number"
               min="1"
               placeholder="reps"
-              value={effectiveReps?.toString() ?? ""}
-              onChange={() => {}}
+              value={customReps}
+              onChange={(e) => setCustomReps(e.target.value)}
               onKeyDown={(e) => {
                 if (e.key === "Enter") handleLogSingle();
                 if (e.key === "Escape") setSingleOpen(false);

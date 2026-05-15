@@ -20,6 +20,14 @@ export function ServiceWorkerRegister() {
       });
     };
 
+    let pollInterval: ReturnType<typeof setInterval> | null = null;
+
+    const onControllerChange = () => {
+      if (refreshing.current) return;
+      refreshing.current = true;
+      window.location.reload();
+    };
+
     navigator.serviceWorker.register("/sw.js").then((reg) => {
       // A SW that finished installing while a previous tab was open will be
       // sitting in "waiting". Surface the prompt for it on next page load.
@@ -44,18 +52,19 @@ export function ServiceWorkerRegister() {
 
       // Poll every 60s. update() is a no-op if nothing's changed; it triggers
       // updatefound only when the SW file's bytes differ from the active one.
-      setInterval(() => {
+      pollInterval = setInterval(() => {
         reg.update().catch(() => {});
       }, 60_000);
     });
 
     // Fires once SKIP_WAITING activates the new SW. At that point the new
     // bundle is in control, so a single reload swaps the app to the new build.
-    navigator.serviceWorker.addEventListener("controllerchange", () => {
-      if (refreshing.current) return;
-      refreshing.current = true;
-      window.location.reload();
-    });
+    navigator.serviceWorker.addEventListener("controllerchange", onControllerChange);
+
+    return () => {
+      if (pollInterval) clearInterval(pollInterval);
+      navigator.serviceWorker.removeEventListener("controllerchange", onControllerChange);
+    };
   }, []);
 
   return null;

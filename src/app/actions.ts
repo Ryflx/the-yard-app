@@ -22,6 +22,18 @@ import { type RxLevel } from "@/db/schema";
 import { compareWodScores, isBetterScore, computeCompositeScore, distanceToNextTier } from "@/lib/wod-scoring";
 import { assessWodScore, getAllBenchmarkWods, findBenchmarkWod } from "@/lib/benchmark-wods";
 import { parseWorkoutWithAI, type ParsedWorkout } from "@/lib/workout-parser";
+import {
+  assertValidWeight,
+  assertValidReps,
+  assertStringLength,
+  assertOneOf,
+  sanitiseDisplayName,
+  publicUserId,
+} from "@/lib/server-validation";
+
+const WOD_SCORE_TYPES = ["TIME", "ROUNDS_REPS", "LOAD", "CALS", "DISTANCE", "INTERVAL"] as const satisfies readonly WodScoreType[];
+const RX_LEVELS = ["SCALED", "RX", "RX_PLUS"] as const satisfies readonly RxLevel[];
+const MAX_PARSE_WORKOUT_TEXT = 8000;
 
 export async function getWorkoutsForWeek(weekStart: string, weekEnd: string, classType?: ClassType) {
   const conditions = [gte(workouts.date, weekStart), lte(workouts.date, weekEnd)];
@@ -174,6 +186,9 @@ export async function setUserMax(liftName: string, weight: number) {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
 
+  assertStringLength(liftName, { max: 100, label: "lift name" });
+  assertValidWeight(weight, { min: 0.5, label: "1RM weight" });
+
   const normalized = normalizeLiftName(liftName);
 
   const existing = await db
@@ -225,6 +240,12 @@ export async function logLift(data: {
 }): Promise<{ isPR: boolean; previousBest: number | null }> {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
+
+  assertStringLength(data.liftName, { max: 100, label: "lift name" });
+  assertValidWeight(data.weight, { min: 0, label: "weight" });
+  assertValidReps(data.reps);
+  assertStringLength(data.repsText, { max: 32, label: "reps text" });
+  assertStringLength(data.notes, { max: 1000, label: "notes" });
 
   const normalized = normalizeLiftName(data.liftName);
 
@@ -322,13 +343,24 @@ export async function updateUserProfile(data: {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
 
+  const cleanedName =
+    data.displayName !== undefined ? sanitiseDisplayName(data.displayName) : undefined;
+  if (data.bodyweightKg !== undefined) {
+    if (!Number.isFinite(data.bodyweightKg) || data.bodyweightKg < 20 || data.bodyweightKg > 400) {
+      throw new Error("Invalid bodyweight");
+    }
+  }
+  if (data.sex !== undefined && data.sex !== "male" && data.sex !== "female") {
+    throw new Error("Invalid sex");
+  }
+
   const existing = await db
     .select()
     .from(userProfiles)
     .where(eq(userProfiles.userId, userId));
 
   const updates: Record<string, unknown> = { updatedAt: new Date() };
-  if (data.displayName !== undefined) updates.displayName = data.displayName || null;
+  if (cleanedName !== undefined) updates.displayName = cleanedName;
   if (data.bodyweightKg !== undefined) updates.bodyweightKg = data.bodyweightKg;
   if (data.sex !== undefined) updates.sex = data.sex;
 
@@ -340,7 +372,7 @@ export async function updateUserProfile(data: {
   } else {
     await db.insert(userProfiles).values({
       userId,
-      displayName: data.displayName || null,
+      displayName: cleanedName ?? null,
       bodyweightKg: data.bodyweightKg ?? null,
       sex: data.sex ?? null,
     });
@@ -823,6 +855,8 @@ export async function addWorkout(data: {
     wodMovements?: WodMovement[];
   }[];
 }) {
+  if (!(await isCurrentUserAdmin())) throw new Error("Not authorized");
+
   const [workout] = await db
     .insert(workouts)
     .values({ date: data.date, title: data.title, classType: data.classType ?? "BARBELL" })
@@ -877,6 +911,8 @@ export async function updateWorkout(
     }[];
   }
 ) {
+  if (!(await isCurrentUserAdmin())) throw new Error("Not authorized");
+
   await db.update(workouts).set({
     date: data.date,
     title: data.title,
@@ -910,6 +946,8 @@ export async function updateWorkout(
 }
 
 export async function deleteWorkout(workoutId: number) {
+  if (!(await isCurrentUserAdmin())) throw new Error("Not authorized");
+
   await db.delete(workouts).where(eq(workouts.id, workoutId));
   revalidatePath("/schedule");
   revalidatePath("/admin/workouts");
@@ -1112,14 +1150,15 @@ export async function getLeaderboardData(): Promise<{
   for (const m of allMaxes) {
     const lift = m.liftName;
     if (!grouped[lift]) grouped[lift] = [];
-    const existing = grouped[lift].find((e) => e.userId === m.userId);
+    const publicId = publicUserId(m.userId);
+    const existing = grouped[lift].find((e) => e.userId === publicId);
     if (!existing || m.maxWeight > existing.weight) {
       if (existing) {
         existing.weight = m.maxWeight;
         existing.unit = m.unit;
       } else {
         grouped[lift].push({
-          userId: m.userId,
+          userId: publicId,
           displayName: nameMap.get(m.userId) || "ANONYMOUS",
           weight: m.maxWeight,
           unit: m.unit,
@@ -1132,7 +1171,11 @@ export async function getLeaderboardData(): Promise<{
     grouped[lift].sort((a, b) => b.weight - a.weight);
   }
 
-  return { lifts: Object.keys(grouped).sort(), entries: grouped, currentUserId: userId };
+  return {
+    lifts: Object.keys(grouped).sort(),
+    entries: grouped,
+    currentUserId: userId ? publicUserId(userId) : null,
+  };
 }
 
 // ── Monthly Recap ──
@@ -1220,6 +1263,10 @@ export async function createGoal(data: {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
 
+  assertStringLength(data.liftName, { max: 100, label: "lift name" });
+  assertValidWeight(data.targetWeight, { min: 0.5, label: "target weight" });
+  assertStringLength(data.targetDate, { max: 10, label: "target date" });
+
   await db.insert(userGoals).values({
     userId,
     liftName: normalizeLiftName(data.liftName),
@@ -1290,6 +1337,23 @@ export async function logWodResult(data: {
 }) {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
+
+  assertOneOf(data.scoreType, WOD_SCORE_TYPES, "score type");
+  assertOneOf(data.rxLevel, RX_LEVELS, "rx level");
+  assertStringLength(data.scoreValue, { max: 100, label: "score value" });
+  if (!data.scoreValue || data.scoreValue.trim().length === 0) {
+    throw new Error("Score value required");
+  }
+  assertStringLength(data.notes, { max: 1000, label: "notes" });
+
+  const [section] = await db
+    .select({ id: workoutSections.id, workoutId: workoutSections.workoutId })
+    .from(workoutSections)
+    .where(eq(workoutSections.id, data.sectionId))
+    .limit(1);
+  if (!section || section.workoutId !== data.workoutId) {
+    throw new Error("Section does not belong to workout");
+  }
 
   await db.insert(wodResults).values({
     userId,
@@ -1383,14 +1447,14 @@ export async function getWodLeaderboard(
   const nameMap = new Map(profiles.map((p) => [p.userId, p.displayName || "ANONYMOUS"]));
 
   const entries = sorted.map((r, i) => ({
-    userId: r.userId,
+    userId: publicUserId(r.userId),
     displayName: nameMap.get(r.userId) || "ANONYMOUS",
     scoreValue: r.scoreValue,
     rxLevel: r.rxLevel as RxLevel,
     position: i + 1,
   }));
 
-  return { entries, currentUserId: userId, scoreType };
+  return { entries, currentUserId: userId ? publicUserId(userId) : null, scoreType };
 }
 
 export async function getCrossfitLeaderboardData(rxLevel: RxLevel) {
@@ -1464,7 +1528,7 @@ export async function getCrossfitLeaderboardData(rxLevel: RxLevel) {
       const { score, overallTier, pointsToNextTier, nextTier } = computeCompositeScore(tierResults);
 
       return {
-        userId: uid,
+        userId: publicUserId(uid),
         displayName: nameMap.get(uid) || "ANONYMOUS",
         compositeScore: score,
         overallTier,
@@ -1523,7 +1587,7 @@ export async function getCrossfitLeaderboardData(rxLevel: RxLevel) {
       }
 
       const { score, overallTier, pointsToNextTier, nextTier } = computeCompositeScore(tierResults);
-      currentUser = { userId, compositeScore: score, overallTier, tierCounts, pointsToNextTier, nextTier };
+      currentUser = { userId: publicUserId(userId), compositeScore: score, overallTier, tierCounts, pointsToNextTier, nextTier };
     }
   }
 
@@ -1545,7 +1609,12 @@ export async function getCrossfitLeaderboardData(rxLevel: RxLevel) {
     };
   });
 
-  return { rankings, currentUser, benchmarkWods: benchmarkWodCards, currentUserId: userId };
+  return {
+    rankings,
+    currentUser,
+    benchmarkWods: benchmarkWodCards,
+    currentUserId: userId ? publicUserId(userId) : null,
+  };
 }
 
 export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
@@ -1579,7 +1648,12 @@ export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
       };
 
   if (sectionIds.length === 0) {
-    return { wod: wodMeta, userBest: null, entries: [], currentUserId: userId };
+    return {
+      wod: wodMeta,
+      userBest: null,
+      entries: [],
+      currentUserId: userId ? publicUserId(userId) : null,
+    };
   }
 
   const optedInUsers = await db
@@ -1626,7 +1700,7 @@ export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
       }
     }
     return {
-      userId: r.userId,
+      userId: publicUserId(r.userId),
       displayName: nameMap.get(r.userId) || "ANONYMOUS",
       scoreValue: r.scoreValue,
       tier,
@@ -1690,7 +1764,7 @@ export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
     wod: wodMeta,
     userBest,
     entries,
-    currentUserId: userId,
+    currentUserId: userId ? publicUserId(userId) : null,
   };
 }
 
@@ -1712,6 +1786,14 @@ function buildCustomWodDescription(section?: {
 export async function parseWorkoutText(input: {
   text: string;
 }): Promise<ParsedWorkout> {
+  if (!(await isCurrentUserAdmin())) throw new Error("Not authorized");
+  if (typeof input.text !== "string" || input.text.length === 0) {
+    throw new Error("Empty workout text");
+  }
+  if (input.text.length > MAX_PARSE_WORKOUT_TEXT) {
+    throw new Error(`Workout text exceeds ${MAX_PARSE_WORKOUT_TEXT} chars`);
+  }
+
   const allMovements = await db.select({ name: movements.name }).from(movements);
   const movementNames = allMovements.map((m) => m.name);
   return parseWorkoutWithAI(input.text, movementNames);

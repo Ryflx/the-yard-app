@@ -85,9 +85,14 @@ export function RestTimerProvider({ children }: { children: React.ReactNode }) {
   );
 
   useEffect(() => {
-    if (finished) {
-      dismissTimeoutRef.current = setTimeout(dismiss, 4000);
-    }
+    if (!finished) return;
+    dismissTimeoutRef.current = setTimeout(dismiss, 4000);
+    return () => {
+      if (dismissTimeoutRef.current) {
+        clearTimeout(dismissTimeoutRef.current);
+        dismissTimeoutRef.current = null;
+      }
+    };
   }, [finished, dismiss]);
 
   useEffect(() => {
