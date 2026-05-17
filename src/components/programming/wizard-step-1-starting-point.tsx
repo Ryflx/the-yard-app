@@ -1,0 +1,66 @@
+"use client";
+
+import type { WizardState } from "./wizard";
+
+interface Props {
+  state: WizardState;
+  onChange: <K extends keyof WizardState>(k: K, v: WizardState[K]) => void;
+  onNext: () => void;
+}
+
+function Slider({
+  label, value, onChange,
+}: { label: string; value: number; onChange: (n: number) => void }) {
+  return (
+    <div>
+      <div className="flex items-baseline justify-between">
+        <label className="text-sm">{label}</label>
+        <span className="font-headline text-sm font-black text-primary-container">{value}/5</span>
+      </div>
+      <input
+        type="range"
+        min={1}
+        max={5}
+        value={value}
+        onChange={(e) => onChange(Number(e.target.value))}
+        className="mt-2 w-full"
+      />
+    </div>
+  );
+}
+
+export function StartingPointStep({ state, onChange, onNext }: Props) {
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="font-headline text-2xl font-black uppercase tracking-tight">WHERE ARE YOU AT?</h2>
+        <p className="mt-2 text-sm text-on-surface-variant">
+          Rate yourself honestly — we&apos;ll use this to pace the plan.
+        </p>
+      </div>
+
+      <div>
+        <label className="text-sm">WODs per week</label>
+        <input
+          type="number"
+          min={1}
+          max={7}
+          value={state.wodsPerWeek}
+          onChange={(e) => onChange("wodsPerWeek", Number(e.target.value))}
+          className="mt-2 w-full bg-surface-container px-3 py-2 text-sm"
+        />
+      </div>
+
+      <Slider label="Rope work" value={state.ropeConfidence} onChange={(v) => onChange("ropeConfidence", v)} />
+      <Slider label="Handstands" value={state.handstandConfidence} onChange={(v) => onChange("handstandConfidence", v)} />
+      <Slider label="Pull gymnastics" value={state.pullGymConfidence} onChange={(v) => onChange("pullGymConfidence", v)} />
+
+      <button
+        onClick={onNext}
+        className="w-full bg-primary-container py-3.5 font-headline text-sm font-black uppercase tracking-widest text-on-primary-fixed"
+      >
+        NEXT
+      </button>
+    </div>
+  );
+}
