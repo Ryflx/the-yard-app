@@ -1415,7 +1415,7 @@ export async function getWodLeaderboard(
   sectionId: number,
   rxLevel: RxLevel
 ): Promise<{
-  entries: { userId: string; displayName: string; scoreValue: string; rxLevel: RxLevel; position: number }[];
+  entries: { userId: string; displayName: string; scoreValue: string; rxLevel: RxLevel; position: number; notes: string | null }[];
   currentUserId: string | null;
   scoreType: WodScoreType | null;
 }> {
@@ -1478,6 +1478,7 @@ export async function getWodLeaderboard(
     scoreValue: r.scoreValue,
     rxLevel: r.rxLevel as RxLevel,
     position: i + 1,
+    notes: r.notes,
   }));
 
   return { entries, currentUserId: userId ? publicUserId(userId) : null, scoreType };
@@ -1731,6 +1732,7 @@ export async function getWodDrilldown(wodName: string, rxLevel: RxLevel) {
       scoreValue: r.scoreValue,
       tier,
       position: i + 1,
+      notes: r.notes,
     };
   });
 

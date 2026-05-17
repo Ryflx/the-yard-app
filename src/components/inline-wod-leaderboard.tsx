@@ -18,6 +18,7 @@ type LeaderboardEntry = {
   scoreValue: string;
   rxLevel: RxLevel;
   position: number;
+  notes: string | null;
 };
 
 export function InlineWodLeaderboard({ sectionId, defaultRxLevel, wodName }: InlineWodLeaderboardProps) {
@@ -72,21 +73,28 @@ export function InlineWodLeaderboard({ sectionId, defaultRxLevel, wodName }: Inl
             return (
               <div
                 key={entry.userId}
-                className={`flex items-center py-2 ${isMe ? "bg-primary/5 -mx-2 px-2" : ""}`}
+                className={`flex flex-col py-2 ${isMe ? "bg-primary/5 -mx-2 px-2" : ""}`}
               >
-                <span className={`w-6 text-sm font-bold ${
-                  entry.position === 1 ? "text-yellow-400" :
-                  entry.position === 2 ? "text-gray-300" :
-                  entry.position === 3 ? "text-amber-600" : "text-outline"
-                }`}>
-                  {entry.position}
-                </span>
-                <span className={`flex-1 text-sm font-bold uppercase tracking-tight ${isMe ? "text-primary" : "text-on-surface"}`}>
-                  {isMe ? "You" : entry.displayName}
-                </span>
-                <span className={`text-sm font-bold tabular-nums ${isMe ? "text-primary" : "text-on-surface-variant"}`}>
-                  {entry.scoreValue}
-                </span>
+                <div className="flex items-center">
+                  <span className={`w-6 text-sm font-bold ${
+                    entry.position === 1 ? "text-yellow-400" :
+                    entry.position === 2 ? "text-gray-300" :
+                    entry.position === 3 ? "text-amber-600" : "text-outline"
+                  }`}>
+                    {entry.position}
+                  </span>
+                  <span className={`flex-1 text-sm font-bold uppercase tracking-tight ${isMe ? "text-primary" : "text-on-surface"}`}>
+                    {isMe ? "You" : entry.displayName}
+                  </span>
+                  <span className={`text-sm font-bold tabular-nums ${isMe ? "text-primary" : "text-on-surface-variant"}`}>
+                    {entry.scoreValue}
+                  </span>
+                </div>
+                {entry.notes && (
+                  <p className="ml-6 mt-0.5 text-[10px] italic text-outline">
+                    “{entry.notes}”
+                  </p>
+                )}
               </div>
             );
           })}

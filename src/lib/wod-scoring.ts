@@ -1,6 +1,36 @@
 import type { WodScoreType } from "@/db/schema";
 import { findBenchmarkWod } from "./benchmark-wods";
 import type { Sex } from "./strength-standards";
+import { parseSetsAndReps } from "./parse-sets";
+
+// "Completion" workouts (EMOMs, intervals) don't have a competitive numeric
+// score — you either complete them or scale, so we log RX level + an
+// optional rounds-completed count + a free-text note rather than the usual
+// rounds/reps or time inputs.
+export function isCompletionMode(
+  scoreType: WodScoreType | null | undefined,
+  sets: string | null | undefined,
+): boolean {
+  if (scoreType === "INTERVAL") return true;
+  if (sets && /\bEMOM\b/i.test(sets)) return true;
+  return false;
+}
+
+// Best-effort prescribed round/interval count for a completion-mode WOD.
+// Returns undefined when the sets string isn't recognisable — the form
+// then prompts the user to enter without a "/Y" denominator.
+export function prescribedRoundsFromSets(sets: string | null | undefined): number | undefined {
+  if (!sets) return undefined;
+  const { setCount } = parseSetsAndReps(sets);
+  if (setCount && setCount > 0) return setCount;
+  // Handle "X:XX on Y:XX off x N", "X:XX on / Y:XX off with a partner x N"
+  const intervalMatch = sets.match(/(?:on|off)[^x]*\bx\s*(\d+)\b/i);
+  if (intervalMatch) {
+    const n = parseInt(intervalMatch[1], 10);
+    if (Number.isFinite(n) && n > 0) return n;
+  }
+  return undefined;
+}
 
 // Accepts "m:ss" or plain seconds. Returns 0 on unparseable input. This is
 // the canonical parser — benchmark-wods.ts also imports from here so the

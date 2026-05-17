@@ -381,8 +381,9 @@ async function CrossFitDetail({
                   timeCap={section.timeCap}
                   rxWeights={section.rxWeights}
                   wodName={section.wodName}
+                  wodSets={section.sets}
                   userSex={profile?.sex as "male" | "female" | null}
-                  existingScore={wodResult ? { scoreValue: wodResult.scoreValue, rxLevel: wodResult.rxLevel as RxLevel } : null}
+                  existingScore={wodResult ? { scoreValue: wodResult.scoreValue, rxLevel: wodResult.rxLevel as RxLevel, notes: wodResult.notes } : null}
                 />
               )}
             </div>
