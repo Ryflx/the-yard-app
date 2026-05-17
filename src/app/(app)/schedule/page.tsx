@@ -16,7 +16,11 @@ interface Props {
 
 export default async function SchedulePage({ searchParams }: Props) {
   const params = await searchParams;
-  const classType = (params.class as ClassType) || "BARBELL";
+  // Always fetch the active plan so we can default to CUSTOM tab when one exists
+  // (and gate the empty-state CTA on the CUSTOM tab when one doesn't).
+  const activePlan = await getActivePlan();
+  const classType: ClassType =
+    (params.class as ClassType | undefined) ?? (activePlan ? "CUSTOM" : "BARBELL");
 
   const now = new Date();
   const autoAdvance = !params.week && isSunday(now);
@@ -33,7 +37,6 @@ export default async function SchedulePage({ searchParams }: Props) {
 
   const workouts = await getWorkoutsForWeek(startStr, endStr, classType);
   const isBarbell = classType === "BARBELL";
-  const activePlan = classType === "CUSTOM" ? await getActivePlan() : null;
 
   const workoutLifts = isBarbell
     ? workouts.map((w) => {

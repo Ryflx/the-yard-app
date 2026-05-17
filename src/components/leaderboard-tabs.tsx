@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { CrossfitLeaderboard } from "./crossfit-leaderboard";
+import { LIFT_CATALOG } from "@/lib/lift-catalog";
 
 interface BarbellData {
   lifts: string[];
@@ -39,8 +40,30 @@ export function LeaderboardTabs({ barbellData }: { barbellData: BarbellData }) {
   );
 }
 
+const CATEGORY_LABELS = ["ALL", ...LIFT_CATALOG.map((g) => g.label.toUpperCase())] as const;
+type Category = (typeof CATEGORY_LABELS)[number];
+
+function categoryFor(lift: string): string | null {
+  const lower = lift.toLowerCase();
+  for (const g of LIFT_CATALOG) {
+    if (g.lifts.some((l) => l.toLowerCase() === lower)) return g.label.toUpperCase();
+  }
+  return null;
+}
+
 function BarbellLeaderboard({ data }: { data: BarbellData }) {
   const { lifts, entries, currentUserId } = data;
+  const [category, setCategory] = useState<Category>("ALL");
+  const [query, setQuery] = useState("");
+
+  const filteredLifts = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return lifts.filter((lift) => {
+      if (category !== "ALL" && categoryFor(lift) !== category) return false;
+      if (q && !lift.toLowerCase().includes(q)) return false;
+      return true;
+    });
+  }, [lifts, category, query]);
 
   if (lifts.length === 0) {
     return (
@@ -63,7 +86,58 @@ function BarbellLeaderboard({ data }: { data: BarbellData }) {
 
   return (
     <div className="flex flex-col gap-6">
-      {lifts.map((lift) => (
+      <div className="flex flex-col gap-3">
+        <div className="-mx-6 overflow-x-auto px-6 md:-mx-8 md:px-8">
+          <div className="flex gap-2">
+            {CATEGORY_LABELS.map((c) => (
+              <button
+                key={c}
+                onClick={() => setCategory(c)}
+                className={`squishy shrink-0 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest transition-colors ${
+                  category === c
+                    ? "bg-primary-container text-on-primary-fixed"
+                    : "bg-surface-variant text-on-surface-variant hover:bg-surface-bright hover:text-on-surface"
+                }`}
+              >
+                {c}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="relative">
+          <span className="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-base text-outline">
+            search
+          </span>
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="SEARCH LIFT"
+            className="w-full bg-surface-container py-2.5 pl-10 pr-10 font-label text-[11px] font-bold uppercase tracking-widest text-on-surface outline-none placeholder:text-outline focus:bg-surface-container-high"
+          />
+          {query && (
+            <button
+              onClick={() => setQuery("")}
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface"
+            >
+              <span className="material-symbols-outlined text-base">close</span>
+            </button>
+          )}
+        </div>
+      </div>
+
+      {filteredLifts.length === 0 ? (
+        <div className="bg-surface-container-high p-8 text-center">
+          <p className="font-label text-[11px] font-bold uppercase tracking-widest text-on-surface-variant">
+            NO LIFTS MATCH
+          </p>
+          <p className="mt-1 text-[10px] text-outline">
+            {query ? `No results for "${query}"` : `No ${category.toLowerCase()} lifts yet`}
+          </p>
+        </div>
+      ) : (
+      <div className="flex flex-col gap-6">
+      {filteredLifts.map((lift) => (
         <section key={lift}>
           <h3 className="mb-3 font-headline text-lg font-bold uppercase tracking-tight">
             {lift}
@@ -113,6 +187,8 @@ function BarbellLeaderboard({ data }: { data: BarbellData }) {
           </div>
         </section>
       ))}
+      </div>
+      )}
     </div>
   );
 }

@@ -130,9 +130,11 @@ export function placeDrills(input: SchedulerInput): SchedulerOutput {
     for (const slot of calendar) {
       if (slot.consumed) continue;
       if (slot.minutes < item.drill.estimatedSessionMinutes) continue;
-      // Pre-existing workouts: block if day is already full (>=2) or same pattern today
+      // CUSTOM drills are short (15-60min) additions meant to sit alongside existing classes,
+      // not replace days. Allow placement even when day already has 2 class workouts, as long
+      // as no same-day pattern conflict (next check below).
       const sameDayExisting = input.existingWorkouts.filter((w) => w.date === slot.date);
-      if (sameDayExisting.length >= 2) continue;
+      if (sameDayExisting.length >= 3) continue;
       const sameDayPatternClash = sameDayExisting.some((w) =>
         item.drill.primaryMovementPatterns.some((p) => w.primaryPatterns.includes(p))
       );

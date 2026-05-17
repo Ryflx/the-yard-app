@@ -22,9 +22,10 @@ import { ExerciseHistorySection } from "@/components/exercise-history";
 import { WarmupCalculator } from "@/components/warmup-calculator";
 import { WodScoreEntry } from "@/components/wod-score-entry";
 import { LogExerciseInline } from "@/components/log-exercise-inline";
-import { calculateWeight, isStaleAfter } from "@/lib/percentage";
+import { calculateWeight, isStaleAfter, normalizeLiftName } from "@/lib/percentage";
 import { isComplex, parseComplex, pickLimitingLift, deriveBase1RM } from "@/lib/complex";
 import { parseSetsAndReps } from "@/lib/parse-sets";
+import { SubstitutableWodExercise } from "@/components/substitutable-wod-exercise";
 import Link from "next/link";
 
 import type { ClassType, WodScoreType, RxLevel } from "@/db/schema";
@@ -232,9 +233,10 @@ async function CrossFitDetail({
 }) {
   const wodSection = workout.sections.find((s) => s.type === "WOD");
 
-  const [wodResult, profile] = await Promise.all([
+  const [wodResult, profile, substitutions] = await Promise.all([
     wodSection ? getWodResult(wodSection.id) : null,
     getUserProfile(),
+    getExerciseSubstitutionsForDate(date, workout.id),
   ]);
 
   const strengthSections = workout.sections.filter(
@@ -350,6 +352,17 @@ async function CrossFitDetail({
               ) : (
                 <div className="flex flex-col gap-1">
                   {section.exercises.map((exercise, i) => {
+                    if (isWod || isOnRamp) {
+                      return (
+                        <SubstitutableWodExercise
+                          key={i}
+                          date={date}
+                          workoutId={workout.id}
+                          exerciseName={exercise.name}
+                          initialReplacements={substitutions[normalizeLiftName(exercise.name)] ?? null}
+                        />
+                      );
+                    }
                     const { setCount: expectedSets, repsPerSet: sectionReps } = parseSetsAndReps(section.sets);
                     const repsMatch = exercise.name.match(/^(\d+)\s+/);
                     const defaultReps = repsMatch ? parseInt(repsMatch[1]) : sectionReps;

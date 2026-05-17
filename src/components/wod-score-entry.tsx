@@ -131,6 +131,9 @@ export function WodScoreEntry({
               <span className="font-headline text-xl font-black text-primary">
                 {displayScore}
               </span>
+              {displayNotes && (
+                <span className="ml-2 text-[10px] font-bold text-on-surface-variant">{displayNotes}</span>
+              )}
               <span className={`ml-2 px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest ${
                 displayRxLevel === "RX_PLUS"
                   ? "bg-yellow-500 text-black"

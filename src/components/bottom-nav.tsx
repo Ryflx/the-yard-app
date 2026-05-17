@@ -10,12 +10,14 @@ interface BottomNavProps {
 
 const memberItems = [
   { href: "/schedule", label: "SCHEDULE", icon: "calendar_month" },
+  { href: "/programming", label: "PROGRAM", icon: "fitness_center" },
   { href: "/progress", label: "PROGRESS", icon: "trending_up" },
   { href: "/profile", label: "PROFILE", icon: "account_circle" },
 ];
 
 const adminItems = [
   { href: "/schedule", label: "SCHEDULE", icon: "calendar_month" },
+  { href: "/programming", label: "PROGRAM", icon: "fitness_center" },
   { href: "/admin", label: "COACH", icon: "edit_note" },
   { href: "/progress", label: "PROGRESS", icon: "trending_up" },
   { href: "/profile", label: "PROFILE", icon: "account_circle" },
@@ -32,6 +34,8 @@ export function BottomNav({ isAdmin }: BottomNavProps) {
         if (item.label === "SCHEDULE") {
           isActive =
             pathname === "/schedule" || pathname.startsWith("/workout/");
+        } else if (item.label === "PROGRAM") {
+          isActive = pathname.startsWith("/programming");
         } else if (item.label === "COACH") {
           isActive = pathname.startsWith("/admin");
         } else if (item.label === "PROGRESS") {
