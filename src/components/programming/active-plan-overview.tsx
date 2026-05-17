@@ -113,7 +113,10 @@ export function ActivePlanOverview({ plan, sessions }: Props) {
 
       <section className="flex flex-col gap-2 border-t border-outline-variant pt-4">
         <button
-          onClick={() => handle(() => regeneratePlan(plan.id))}
+          onClick={() => {
+            if (!confirm("Regenerate this plan? Your current plan will be marked completed.")) return;
+            handle(() => regeneratePlan(plan.id));
+          }}
           disabled={pending}
           className="bg-primary-container py-3 font-headline text-xs font-black uppercase tracking-widest text-on-primary-fixed disabled:opacity-50"
         >

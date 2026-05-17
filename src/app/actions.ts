@@ -2201,6 +2201,7 @@ export async function regeneratePlan(planId: number): Promise<{ planId: number }
   };
 
   await db.update(customPlans).set({ status: "completed", updatedAt: new Date() }).where(eq(customPlans.id, planId));
+  revalidatePath("/programming");
   return createPlan(answers, old.weeklyDrillSlots, old.selectedSkillIds);
 }
 
