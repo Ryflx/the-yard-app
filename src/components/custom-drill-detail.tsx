@@ -4,6 +4,8 @@ import type { Sex } from "@/lib/strength-standards";
 import { WodScoreEntry } from "@/components/wod-score-entry";
 import { SwapDrillSheet } from "@/components/programming/swap-drill-sheet";
 import { formatDrillTitle } from "@/lib/programming/format";
+import type { MaxAttempt } from "@/app/actions";
+import { format, parseISO, differenceInDays } from "date-fns";
 import Link from "next/link";
 
 type Workout = typeof workouts.$inferSelect;
@@ -21,9 +23,31 @@ interface Props {
   course: Course;
   userSex?: Sex;
   existingScoreBySectionId?: Map<number, WodResult>;
+  maxTests?: string[];
+  maxAttemptsByMovement?: Record<string, MaxAttempt[]>;
 }
 
-export function CustomDrillDetail({ workout, sections, session, drill, course, userSex, existingScoreBySectionId }: Props) {
+function describeAttemptAge(d: Date): string {
+  const days = differenceInDays(new Date(), d);
+  if (days <= 0) return "today";
+  if (days === 1) return "yesterday";
+  if (days < 14) return `${days} days ago`;
+  const weeks = Math.round(days / 7);
+  return `${weeks} weeks ago`;
+}
+
+export function CustomDrillDetail({
+  workout,
+  sections,
+  session,
+  drill,
+  course,
+  userSex,
+  existingScoreBySectionId,
+  maxTests,
+  maxAttemptsByMovement,
+}: Props) {
+  const hasMaxTests = (maxTests?.length ?? 0) > 0;
   return (
     <div className="space-y-6">
       <div>
@@ -60,6 +84,37 @@ export function CustomDrillDetail({ workout, sections, session, drill, course, u
           </ul>
         </div>
       ))}
+
+      {hasMaxTests && (
+        <div className="border-l-2 border-primary-container bg-surface-container px-4 py-3">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-primary-container">
+            MAX test · record reps per set
+          </p>
+          <p className="mt-1 text-sm text-on-surface-variant">
+            Type your reps for each set into the notes field, e.g. <code className="bg-surface-container-high px-1">10 / 8 / 6</code>.
+          </p>
+          {maxTests!.map((movement) => {
+            const attempts = maxAttemptsByMovement?.[movement] ?? [];
+            return (
+              <div key={movement} className="mt-3">
+                <p className="text-xs font-semibold text-on-surface">{movement}</p>
+                {attempts.length === 0 ? (
+                  <p className="mt-0.5 text-[11px] text-on-surface-variant">No previous attempts logged.</p>
+                ) : (
+                  <ul className="mt-1 space-y-0.5">
+                    {attempts.map((a, i) => (
+                      <li key={i} className="text-[11px] text-on-surface-variant">
+                        {format(parseISO(a.date), "MMM d")} ({describeAttemptAge(a.createdAt)}) —{" "}
+                        <span className="text-on-surface">{a.notes?.trim() || a.scoreValue || "(no notes)"}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       {sections
         .filter((s) => s.wodScoreType != null)

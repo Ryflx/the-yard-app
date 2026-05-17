@@ -2335,6 +2335,57 @@ export async function getWodResultsBySectionIds(sectionIds: number[]) {
   return deduped;
 }
 
+export interface MaxAttempt {
+  date: string;
+  scoreValue: string;
+  notes: string | null;
+  createdAt: Date;
+}
+
+/**
+ * For each MAX-rep test movement, return up to 3 of the user's most-recent
+ * logged attempts on the same movement (matched by substring inside
+ * workout_sections.wod_movements JSONB). Powers the "compare to last attempt"
+ * hint above WodScoreEntry on CUSTOM drill detail pages.
+ */
+export async function getPreviousMaxAttempts(
+  testMovements: string[],
+): Promise<Record<string, MaxAttempt[]>> {
+  const { userId } = await auth();
+  if (!userId || testMovements.length === 0) return {};
+
+  const result: Record<string, MaxAttempt[]> = {};
+  for (const movement of testMovements) {
+    const rows = await db
+      .select({
+        scoreValue: wodResults.scoreValue,
+        notes: wodResults.notes,
+        date: workouts.date,
+        createdAt: wodResults.createdAt,
+      })
+      .from(wodResults)
+      .innerJoin(workoutSections, eq(wodResults.sectionId, workoutSections.id))
+      .innerJoin(workouts, eq(wodResults.workoutId, workouts.id))
+      .where(
+        and(
+          eq(wodResults.userId, userId),
+          sql`workout_sections.wod_movements::text ILIKE ${"%" + movement + "%"}`,
+        ),
+      )
+      .orderBy(desc(wodResults.createdAt))
+      .limit(3);
+    if (rows.length) {
+      result[movement] = rows.map((r) => ({
+        date: r.date as unknown as string,
+        scoreValue: r.scoreValue,
+        notes: r.notes,
+        createdAt: r.createdAt,
+      }));
+    }
+  }
+  return result;
+}
+
 // Helpers
 
 function todayISO(): string {

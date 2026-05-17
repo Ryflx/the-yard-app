@@ -13,6 +13,7 @@ import {
   getExerciseSubstitutionsForDate,
   getPlanSessionByWorkoutId,
   getWodResultsBySectionIds,
+  getPreviousMaxAttempts,
 } from "@/app/actions";
 import { CustomDrillDetail } from "@/components/custom-drill-detail";
 import { SectionDisplay } from "@/components/section-display";
@@ -448,6 +449,14 @@ async function CustomDetail({
 
   const existingScoreBySectionId = new Map(wodResultRows.map((r) => [r.sectionId, r]));
 
+  // Detect MAX-rep tests in the drill and pull the user's last attempts on the
+  // same movement — gives a "compare to last time" hint above the score input.
+  const { extractMaxTests } = await import("@/lib/programming/format");
+  const maxTests = extractMaxTests(planSession.drill.sections);
+  const maxAttemptsByMovement = maxTests.length
+    ? await getPreviousMaxAttempts(maxTests)
+    : {};
+
   return (
     <div className="flex flex-col gap-8">
       <Link
@@ -466,6 +475,8 @@ async function CustomDetail({
         course={planSession.course}
         userSex={profile?.sex ?? undefined}
         existingScoreBySectionId={existingScoreBySectionId}
+        maxTests={maxTests}
+        maxAttemptsByMovement={maxAttemptsByMovement}
       />
     </div>
   );
