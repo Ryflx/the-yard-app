@@ -86,6 +86,18 @@ describe("failedCompletionSignal", () => {
       })
     ).toBeNull();
   });
+
+  it("returns null when prescribedRounds is zero (guard against divide by zero)", () => {
+    expect(
+      failedCompletionSignal({
+        skillId: 4,
+        wodName: "Fran",
+        movement: "Pull Up",
+        roundsCompleted: 0,
+        prescribedRounds: 0,
+      })
+    ).toBeNull();
+  });
 });
 
 describe("rankSignals", () => {

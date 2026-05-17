@@ -3,6 +3,12 @@ import { db } from "@/db";
 import { skillCourses, wodResults, userLiftLogs, workoutSections, workouts } from "@/db/schema";
 import { sql, eq, and, gte } from "drizzle-orm";
 
+// Signal strengths are normalised to roughly 0.4..1.0 so cross-signal
+// ranking is meaningful. Per-signal base floors (0.5 / 0.4 / 0.55) reflect
+// signal confidence; frequency-gap is binary so it's fixed at 0.55. Strength
+// dividers: /10 = "10 programmed WODs without Rx is full confidence";
+// /1.5 = "RPE 8.5 -> 10.0 saturates the signal".
+
 export function movementGapSignal(args: {
   skillId: number;
   skillName: string;
@@ -56,6 +62,7 @@ export function failedCompletionSignal(args: {
   roundsCompleted: number;
   prescribedRounds: number;
 }): WeaknessSignal | null {
+  if (args.prescribedRounds <= 0) return null;
   if (args.roundsCompleted >= args.prescribedRounds) return null;
   const shortfall = (args.prescribedRounds - args.roundsCompleted) / args.prescribedRounds;
   return {
@@ -75,11 +82,21 @@ export function rankSignals(signals: WeaknessSignal[]): WeaknessSignal[] {
 }
 
 export async function getWeaknessSignalsForUser(userId: string): Promise<WeaknessSignal[]> {
-  const courses = await db.select({ id: skillCourses.id, name: skillCourses.name, category: skillCourses.category }).from(skillCourses);
+  const courses = await db
+    .select({ id: skillCourses.id, name: skillCourses.name, category: skillCourses.category })
+    .from(skillCourses)
+    .orderBy(skillCourses.difficulty, skillCourses.id);
 
   const signals: WeaknessSignal[] = [];
 
-  // 1. Movement-gap (per course, by course name in wod_movements)
+  // 1. Movement-gap signal.
+  // KNOWN v0 LIMITATION: matches `wod_movements ILIKE %course_name%`.
+  // Course names are brand names ("Endless Engine", "Happy Hips") so this
+  // effectively only fires for courses whose name IS the movement (Pull-up
+  // family, Toes To Bar Transformed, Ring/Bar Muscle Up Mastery). Most
+  // courses produce no movement-gap signal — that's acceptable for v0
+  // because RPE/frequency/completion signals carry the load. Future:
+  // add a `movement_keywords text[]` column to skill_courses + seed via curation.
   for (const c of courses) {
     const rows = await db.execute(sql`
       SELECT
@@ -178,7 +195,8 @@ export async function getWeaknessSignalsForUser(userId: string): Promise<Weaknes
     if (!section || !section.movements) continue;
     const movementBlob = JSON.stringify(section.movements).toLowerCase();
     for (const c of courses) {
-      if (!movementBlob.includes(c.name.toLowerCase().split(" ")[0])) continue;
+      const keyword = c.name.toLowerCase().split(" ").slice(0, 2).join(" ");
+      if (!movementBlob.includes(keyword)) continue;
       const s = failedCompletionSignal({
         skillId: c.id,
         wodName: section.wodName ?? "WOD",
