@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect, useCallback, useTransition } from "react";
-import { completeOnboarding } from "@/app/actions";
+import { markTourSeen } from "@/app/actions";
 import { useRouter } from "next/navigation";
+import type { TourId } from "@/lib/programming/types";
 
 interface TourStep {
   target: string;
@@ -11,41 +12,63 @@ interface TourStep {
   position: "top" | "bottom";
 }
 
-const STEPS: TourStep[] = [
-  {
-    target: "class-tabs",
-    title: "SWITCH CLASS TYPE",
-    body: "Tap here to switch between Barbell and CrossFit classes. Each has its own workouts and tracking.",
-    position: "bottom",
-  },
-  {
-    target: "workout-card",
-    title: "YOUR WORKOUT",
-    body: "Tap a workout to open it. You\u2019ll see your programmed sets, percentages, and can log every lift.",
-    position: "top",
-  },
-  {
-    target: "nav-progress",
-    title: "TRACK PROGRESS",
-    body: "Check your strength levels, PR history, and how you stack up against established standards.",
-    position: "top",
-  },
-  {
-    target: "nav-profile",
-    title: "SET UP PROFILE",
-    body: "Enter your name, bodyweight, and sex to unlock personalised standards and the leaderboard. You can also manage your 1RMs here.",
-    position: "top",
-  },
-];
+const TOURS: Record<TourId, TourStep[]> = {
+  "onboarding-v1": [
+    {
+      target: "class-tabs",
+      title: "SWITCH CLASS TYPE",
+      body: "Tap here to switch between Barbell, CrossFit, and your Custom programming. Each has its own workouts.",
+      position: "bottom",
+    },
+    {
+      target: "workout-card",
+      title: "YOUR WORKOUT",
+      body: "Tap a workout to open it. You'll see your programmed sets, percentages, and can log every lift.",
+      position: "top",
+    },
+    {
+      target: "nav-progress",
+      title: "TRACK PROGRESS",
+      body: "Check your strength levels, PR history, and how you stack up against established standards.",
+      position: "top",
+    },
+    {
+      target: "nav-profile",
+      title: "SET UP PROFILE",
+      body: "Enter your name, bodyweight, and sex to unlock personalised standards and the leaderboard.",
+      position: "top",
+    },
+    {
+      target: "class-tabs-custom",
+      title: "NEW: CUSTOM PROGRAMMING",
+      body: "Build a personalised 8-week skill plan around your classes — double unders, muscle ups, handstands.",
+      position: "bottom",
+    },
+  ],
+  "custom-programming-v1": [
+    {
+      target: "class-tabs-custom",
+      title: "NEW: CUSTOM PROGRAMMING",
+      body: "Build a personalised 8-week skill plan around your classes.",
+      position: "bottom",
+    },
+    {
+      target: "programming-cta",
+      title: "START YOUR FIRST PLAN",
+      body: "Pick the skills you want to work on — we'll weave them into your week.",
+      position: "top",
+    },
+  ],
+};
 
-interface Rect {
-  top: number;
-  left: number;
-  width: number;
-  height: number;
+interface Rect { top: number; left: number; width: number; height: number }
+
+interface Props {
+  tourId: TourId;
 }
 
-export function OnboardingTour() {
+export function OnboardingTour({ tourId }: Props) {
+  const STEPS = TOURS[tourId];
   const [step, setStep] = useState(0);
   const [targetRect, setTargetRect] = useState<Rect | null>(null);
   const [isPending, startTransition] = useTransition();
@@ -69,7 +92,7 @@ export function OnboardingTour() {
     } else {
       setTargetRect(null);
     }
-  }, [step, started]);
+  }, [step, started, STEPS]);
 
   useEffect(() => {
     const raf = requestAnimationFrame(measureTarget);
@@ -84,17 +107,14 @@ export function OnboardingTour() {
 
   function finish() {
     startTransition(async () => {
-      await completeOnboarding();
+      await markTourSeen(tourId);
       router.refresh();
     });
   }
 
   function handleNext() {
-    if (step < STEPS.length - 1) {
-      setStep(step + 1);
-    } else {
-      finish();
-    }
+    if (step < STEPS.length - 1) setStep(step + 1);
+    else finish();
   }
 
   if (!started) {
@@ -102,37 +122,36 @@ export function OnboardingTour() {
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-6 backdrop-blur-sm">
         <div className="flex w-full max-w-sm flex-col items-center gap-6 bg-surface-container px-8 pb-8 pt-10 text-center">
           <div className="flex h-16 w-16 items-center justify-center bg-[#cafd00]/20">
-            <span
-              className="material-symbols-outlined text-4xl text-[#cafd00]"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              waving_hand
+            <span className="material-symbols-outlined text-4xl text-primary-container" style={{ fontVariationSettings: "'FILL' 1" }}>
+              {tourId === "onboarding-v1" ? "waving_hand" : "auto_awesome"}
             </span>
           </div>
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#cafd00]">
-              YOUR TRAINING COMPANION
+            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary-container">
+              {tourId === "onboarding-v1" ? "YOUR TRAINING COMPANION" : "WHAT'S NEW"}
             </p>
             <h2 className="mt-2 font-headline text-2xl font-black uppercase tracking-tight text-on-surface">
-              WELCOME TO THE YARD
+              {tourId === "onboarding-v1" ? "WELCOME TO THE YARD" : "CUSTOM PROGRAMMING IS HERE"}
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-on-surface-variant">
-              Let us show you around. We&apos;ll highlight the key areas so you know exactly where everything is.
+              {tourId === "onboarding-v1"
+                ? "Let us show you around. We'll highlight the key areas so you know exactly where everything is."
+                : "Quick tour of the new skill-programming track — under a minute."}
             </p>
           </div>
           <div className="flex w-full flex-col gap-2">
             <button
               onClick={() => setStarted(true)}
-              className="squishy w-full bg-[#cafd00] py-3.5 font-headline text-sm font-black uppercase tracking-widest text-black transition-transform duration-150 active:scale-95"
+              className="squishy w-full bg-primary-container py-3.5 font-headline text-sm font-black uppercase tracking-widest text-on-primary-fixed transition-transform duration-150 active:scale-95"
             >
-              TAKE THE TOUR
+              {tourId === "onboarding-v1" ? "TAKE THE TOUR" : "SHOW ME"}
             </button>
             <button
               onClick={finish}
               disabled={isPending}
               className="py-2 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant transition-colors hover:text-on-surface disabled:opacity-50"
             >
-              SKIP — I&apos;LL FIGURE IT OUT
+              SKIP
             </button>
           </div>
         </div>
@@ -158,60 +177,30 @@ export function OnboardingTour() {
 
   return (
     <div className="fixed inset-0 z-50">
-      {/* Backdrop with cutout */}
       <svg className="absolute inset-0 h-full w-full">
         <defs>
           <mask id="tour-mask">
             <rect x="0" y="0" width="100%" height="100%" fill="white" />
             {targetRect && (
-              <rect
-                x={targetRect.left}
-                y={targetRect.top}
-                width={targetRect.width}
-                height={targetRect.height}
-                rx="4"
-                fill="black"
-              />
+              <rect x={targetRect.left} y={targetRect.top} width={targetRect.width} height={targetRect.height} rx="4" fill="black" />
             )}
           </mask>
         </defs>
-        <rect
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-          fill="rgba(0,0,0,0.75)"
-          mask="url(#tour-mask)"
-        />
+        <rect x="0" y="0" width="100%" height="100%" fill="rgba(0,0,0,0.75)" mask="url(#tour-mask)" />
       </svg>
 
-      {/* Highlight border */}
       {targetRect && (
         <div
-          className="absolute rounded border-2 border-[#cafd00] transition-all duration-300"
-          style={{
-            top: targetRect.top,
-            left: targetRect.left,
-            width: targetRect.width,
-            height: targetRect.height,
-            pointerEvents: "none",
-          }}
+          className="absolute rounded border-2 border-primary-container transition-all duration-300"
+          style={{ top: targetRect.top, left: targetRect.left, width: targetRect.width, height: targetRect.height, pointerEvents: "none" }}
         />
       )}
 
-      {/* Tooltip */}
-      <div
-        className="absolute z-10 flex flex-col gap-3 bg-surface-container-high p-5 shadow-2xl transition-all duration-300"
-        style={tooltipStyle}
-      >
+      <div className="absolute z-10 flex flex-col gap-3 bg-surface-container-high p-5 shadow-2xl transition-all duration-300" style={tooltipStyle}>
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="font-headline text-sm font-black uppercase tracking-tight text-[#cafd00]">
-              {current.title}
-            </p>
-            <p className="mt-1 text-sm leading-relaxed text-on-surface-variant">
-              {current.body}
-            </p>
+            <p className="font-headline text-sm font-black uppercase tracking-tight text-primary-container">{current.title}</p>
+            <p className="mt-1 text-sm leading-relaxed text-on-surface-variant">{current.body}</p>
           </div>
           <span className="shrink-0 text-[10px] font-bold uppercase tracking-widest text-outline">
             {step + 1}/{STEPS.length}
@@ -229,7 +218,7 @@ export function OnboardingTour() {
           <button
             onClick={handleNext}
             disabled={isPending}
-            className="squishy bg-[#cafd00] px-5 py-2 font-headline text-xs font-black uppercase tracking-widest text-black transition-transform duration-150 disabled:opacity-50 active:scale-95"
+            className="squishy bg-primary-container px-5 py-2 font-headline text-xs font-black uppercase tracking-widest text-on-primary-fixed transition-transform duration-150 disabled:opacity-50 active:scale-95"
           >
             {isPending ? "..." : isLast ? "DONE" : "NEXT"}
           </button>

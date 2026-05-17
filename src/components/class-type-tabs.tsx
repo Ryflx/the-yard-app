@@ -3,9 +3,10 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import type { ClassType } from "@/db/schema";
 
-const CLASS_TYPES: { value: ClassType; label: string }[] = [
+const CLASS_TYPES: { value: ClassType; label: string; tourTarget?: string }[] = [
   { value: "BARBELL", label: "BARBELL" },
   { value: "CROSSFIT", label: "CROSSFIT" },
+  { value: "CUSTOM", label: "CUSTOM", tourTarget: "class-tabs-custom" },
 ];
 
 interface ClassTypeTabsProps {
@@ -28,6 +29,7 @@ export function ClassTypeTabs({ selected }: ClassTypeTabsProps) {
       {CLASS_TYPES.map((ct) => (
         <button
           key={ct.value}
+          data-tour={ct.tourTarget}
           onClick={() => handleSelect(ct.value)}
           className={`flex-1 py-2.5 text-center font-headline text-[11px] font-black uppercase tracking-widest transition-colors ${
             selected === ct.value

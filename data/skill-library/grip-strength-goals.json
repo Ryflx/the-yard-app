@@ -1,0 +1,144 @@
+{
+  "skill": "grip-strength-goals",
+  "course_name": "Grip Strength Goals",
+  "course_slug": "grip-strength-goals",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/grip-strength-goals",
+  "scraped": "2026-05-17",
+  "total_weeks": 1,
+  "total_lessons": 4,
+  "skipped_lessons": 1,
+  "weeks": [
+    {
+      "week": 0,
+      "workouts": [
+        {
+          "id": "ref.1",
+          "lesson_id": 2207609,
+          "title": "Grip Workout 1",
+          "url": "/c/grip-strength-goals/sections/585553/lessons/2207609",
+          "description": "Welcome to Grip Strength Goals Workout 1. For a complete explanation of each movement watch the video above or click the \"\" for demo. Be sure to document the weight/bands you use in each exercise so we can continue building in the weeks progressing. You can also download a printable copy of today's programming under the Files tab.",
+          "sections": [
+            {
+              "name": "WORK",
+              "items": [
+                {
+                  "movement": "Movement 2 • 12x Lateral Pinch Red Band Standing Row",
+                  "has_video": true
+                },
+                {
+                  "movement": "Movement 3 • 50m walk x Diagonal Volar Grip with KB",
+                  "has_video": true
+                },
+                {
+                  "movement": "Movement 4 • Spherical Volar Grip (standing - with KB in hand and arm in front)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed before starting the next round.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record weights used for future progressions.",
+                  "has_video": false
+                }
+              ],
+              "format": "Movement 1 • 50m walk x Pulp Grip with 2.5-5 lb plate"
+            }
+          ]
+        },
+        {
+          "id": "ref.2",
+          "lesson_id": 2207610,
+          "title": "Grip Workout 2",
+          "url": "/c/grip-strength-goals/sections/585553/lessons/2207610",
+          "description": "Grip Strength Goals Workout 2. Today we'll focus on holds and building reps. Like Day 1, watch the video above for a full explanation or click on the '' icon to review the demo. You can also download a printable copy of today's programming under the Files tab.",
+          "sections": [
+            {
+              "name": "WORK",
+              "items": [
+                {
+                  "movement": "Movement 2 • 50 m x Farmers Carry",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30-60 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Movement 3 • 30 sec x Lumbricle Flappers",
+                  "has_video": true
+                },
+                {
+                  "movement": "Movement 4 • 50 m x Pinch Grip Carry @ 2.5-5 kg",
+                  "has_video": true
+                },
+                {
+                  "movement": "Movement 5 • 30 sec x Bottoms Up KB Hold (one arm first, then the other)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed before starting the next round.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record weights used for future progressions.",
+                  "has_video": false
+                }
+              ],
+              "format": "Movement 1 • 30 sec x Bilateral KB Hold"
+            }
+          ]
+        },
+        {
+          "id": "ref.3",
+          "lesson_id": 2207611,
+          "title": "Grip Workout 3",
+          "url": "/c/grip-strength-goals/sections/585553/lessons/2207611",
+          "description": "Grip Strength Goals Workout 3. Today we're going to work on endurance and control. Watch the video above for a full breakdown along with recommendations for weight, reps and modifications. Remember, Rome wasn't built in a day! You can also download a printable copy of today's programming under the Files tab.",
+          "sections": [
+            {
+              "name": "WORK",
+              "items": [
+                {
+                  "movement": "Rest 1min",
+                  "has_video": false
+                },
+                {
+                  "movement": "Movement 2 • 5x Hanging Single Arm Pronation/Supination",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build this movement from a single arm hang, then add a controlled twist and finally, changing your grip from pronated to supinated.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1min",
+                  "has_video": false
+                },
+                {
+                  "movement": "Movement 3 • 50m walk x Spherical Grip KB Walk (switch hands)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1min",
+                  "has_video": false
+                }
+              ],
+              "format": "Movement 1 • 2:00 Barbell Rollups",
+              "notes": "Record weights used for future progressions."
+            }
+          ]
+        },
+        {
+          "id": "ref.4",
+          "lesson_id": 2207612,
+          "title": "Congratulations! What's next?",
+          "url": "/c/grip-strength-goals/sections/585553/lessons/2207612",
+          "description": "Remember, real progress comes from consistent effort and recovery. There’s no quick fix for strength gains, so keep showing up! For continued improvement, repeat the workouts weekly while gradually increasing weight and time under tension. We recommend sticking with the program for at least 3–4 weeks to see results. Have any questions about modifying an exercise or if you're doing it right? Ask it inside the Academy Coaching Space. Looking for your next challenge? Check out our full 8 week courses here or if you’re a WODprep Acamdey athlete check out your Rx Road Map. All the best! - Coach Will & the WODprep Team Thumbnail Photo credit: Alora Griffiths",
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

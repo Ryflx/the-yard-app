@@ -1,0 +1,3108 @@
+{
+  "skill": "double-under-pro",
+  "course_name": "Double Under Pro",
+  "course_slug": "double-under-pro",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/double-under-pro",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 34,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2182478,
+          "title": "DU PRO 1.1 (Week 1, Workout 1)",
+          "url": "/c/double-under-pro/sections/579108/lessons/2182478",
+          "description": "Welcome to Day 1 of Double Under Pro! Today is all about setting a baseline and deciding your best starting point. Based on how things go, you’ll either jump right into Double Under Pro or begin with Double Under Foundations, a 3-week mini-course designed to hone your double under technique. If you find counting jump rope reps difficult, video your sets and count them afterwards when reviewing the video. Download the Double Under Score Sheet found under the file icon or use the Double Under Automated Tracking Sheet.",
+          "sections": [
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Record number of Big Slow Single Unders achieved",
+                  "has_video": false
+                },
+                {
+                  "movement": "30 sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "2. 30 sec x Speed Single Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Record number Speed Single Unders SU achieved",
+                  "has_video": false
+                },
+                {
+                  "movement": "30 sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "3. 30 sec x Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "As many DU attempts as you want in 30 sec.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use this as your warm-up set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "4. 60 sec x Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Your money set. As many attempts as you want in 60 sec (Rest as needed).",
+                  "has_video": false
+                },
+                {
+                  "movement": "The goal here isn’t how many double unders you can do but how many you can do consecutively.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record highest # of unbroken double unders achieved.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "5. 50 x Double Unders for Time",
+                  "has_video": true
+                },
+                {
+                  "movement": "90 sec Time Cap",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record time to complete 50 DU. Add 1 sec for every rep not completed.",
+                  "has_video": false
+                }
+              ],
+              "format": "1. 30 sec x Big Slow Single Unders"
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "Using your 60sec Unbroken Double Under test result (#4), find your WODprep Double Under Level below and decide where you want to start Day 2.",
+                  "has_video": false
+                },
+                {
+                  "movement": "WODprep Double Under Levels",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 0 - No Double Unders",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 1 - 1 Double Under",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 2 - 1 Double Under + Single Under",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 3 - 1 Double Under + Single Unders + Double Unders (continuous)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 4 - 2 Unbroken Double Unders",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 5 - 2 Unbroken Double Unders + Single Unders (continuous)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 6 - Multiple Double Unders*",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 7 - 50+ DU anytime",
+                  "has_video": false
+                }
+              ],
+              "format": "Double Under Pro uses WODprep Double Under Levels to measure skill and progress.",
+              "notes": "Level 6.1 • 3-9 DU Level 6.2 • 10 - 19 DU Level 6.3 • 20 - 29 DU Level 6.4 • 30 - 39 DU Level 6.5 • 40 - 49 DU"
+            },
+            {
+              "name": "IF YOU FINISHED...",
+              "items": [
+                {
+                  "movement": "It's recommended you start with Double Under Foundations, the additional course that comes bundled with Double Under Pro.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 3 - Level 5",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you’ve been struggling for years with double unders, consider starting with Double Under Foundations.",
+                  "has_video": false
+                },
+                {
+                  "movement": "-OR-",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you’ve been making double under progress recently, and ready for the challenge, move on to Day 2 of Double Under Pro.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 6 - Level 6.1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Continue with Day 2 of Double Unders Pro. However, if you feel you’ve been stuck in double under purgatory for years and need a hard reset. Begin with Day 2 of Double Unders Foundations.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 6.2 + Level 7",
+                  "has_video": false
+                },
+                {
+                  "movement": "Wow! We love athletes who are focused on improving their form and technique. If you hit more than 50+ unbroken DU in your 60sec test (#4) use 50 for your % number throughout the course.",
+                  "has_video": false
+                }
+              ],
+              "format": "Level 0 - Level 2"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2182479,
+          "title": "DU PRO 1.2 (Week 1, Workout 2)",
+          "url": "/c/double-under-pro/sections/579108/lessons/2182479",
+          "description": "Welcome to the start of Double Under Pro! Today, we’re reinforcing solid jump rope mechanics using a heavy rope (or the heaviest cable you have access to) and reviewing the basics of your jump technique. If you haven’t reviewed the lesson on cable weights yet, make sure to check it out HERE. While this course is optimized for the Heavy and Medium rope use, you can use any jump rope or combination of jump ropes you have access to. If you only have one rope, no problem! Just stick with it and complete all drills using what you’ve got.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Yoga Push-up with Downward Dog Calf Stretch",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec x World's Greatest Stretch",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Toe / Heel raises",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: SINGLE UNDERS",
+              "items": [
+                {
+                  "movement": "Focus on timing, positioning, bounding through the balls of the feet",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec x Single Penguin Calf Raises",
+                  "has_video": true
+                },
+                {
+                  "movement": "20 sec x HEAVY Single Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 20-30 sec between sets",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 2: SPEED SINGLE UNDERS",
+              "items": [
+                {
+                  "movement": "10 sec x Single Bound Single Penguin Taps",
+                  "has_video": true
+                },
+                {
+                  "movement": "20 sec x HEAVY Speed Single Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 20-30 sec between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "DRILL 3: BIG SLOW SINGLE UNDERS & THE PERFECT SET-UP",
+              "items": [
+                {
+                  "movement": "10 sec x Single Bound Single Penguin Taps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Perfect Set-up Single Jumps",
+                  "has_video": true
+                },
+                {
+                  "movement": "20 sec x HEAVY Big Slow Single Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 20-30 sec between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "DRILL 4: PUT IT ALL TOGETHER",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Single Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 30,
+                  "movement": "Speed Single Unders",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Unders",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Big Slow Single Unders",
+                  "has_video": true
+                }
+              ],
+              "format": "4 min EMOM: Every minute, perform as one HEAVY sequence",
+              "notes": "Rest walk 1-2 minutes before Drill 5"
+            },
+            {
+              "name": "DRILL 5: BUY OUT",
+              "items": [
+                {
+                  "movement": "7 Big Slow Single Unders + up to 10 Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30 sec between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "3 sets - Once you trip that's one set!"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2182480,
+          "title": "DU PRO 1.3 (Week 1, Workout 3)",
+          "url": "/c/double-under-pro/sections/579108/lessons/2182480",
+          "description": "Penguin Claps are the Air Squats of Double Unders! Struggle with the timing of Penguin Claps and you'll likely struggle with double unders, too. Today, we're going to build the Penguin Clap ups to ensure we can master the timing and bound. We'll finish the lesson by aiming to combine that timing and positioning to our Double Unders.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Leg Swings (Forward, Back & Side to Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15 sec x Wall Calf Stretch (Each Leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Seated Hamstring Stretch (Each Leg)",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: SINGLE TAP PENGUIN CLAPS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Calf Raise Single Tap Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Bound Single Tap Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Tap Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30 sec",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Rounds"
+            },
+            {
+              "name": "DRILL 2: 'DOUBLE TAP' PENGUIN CLAPS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Calf Raise 'Double' Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Bound Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30 sec",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Rounds"
+            },
+            {
+              "name": "DRILL 3: POSITIONING",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Penguin Claps",
+                  "has_video": false
+                },
+                {
+                  "sets": 30,
+                  "movement": "Speed Single Unders",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Unders",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Big Slow Single Unders",
+                  "has_video": false
+                }
+              ],
+              "format": "6 Min EMOM: Every Minute perform as one HEAVY sequence",
+              "notes": "Rest walk 1-2 minutes before Drill 4"
+            },
+            {
+              "name": "DRILL 4: BUY OUT",
+              "items": [
+                {
+                  "movement": "If you struggle with HEAVY Double Unders, use a MEDIUM cable. Once you trip that's one set!",
+                  "has_video": false
+                }
+              ],
+              "format": "3 sets • HEAVY",
+              "notes": "7 Big Slow Single Unders into or up to 10 Double Unders Rest 30sec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2182481,
+          "title": "DU PRO 2.1 (Week 2, Workout 1)",
+          "url": "/c/double-under-pro/sections/579109/lessons/2182481",
+          "description": "Positioning. Positioning. Positioning. Let’s continue working on our double under foundations so we can improve our overall chances for double under success.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Ankle Roll Outs + 10ft x Toe Walks + 10ft x Heel Walks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Shoulder Pass-through + Overhead Squat (use PVC or jump rope)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Child Pose",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: WRIST CONTROL & ROPE SPEED",
+              "items": [
+                {
+                  "movement": "10 sec x Single Handle Double Under Rope Spin Left",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Single Handle Double Under Rope Spin Right",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Both Handle Double Under Rope Spin",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: JUMP ROPE POSITIONING",
+              "items": [
+                {
+                  "movement": "10-15 x Hollow Rocks (or Hollow Hold or Dead Bug Hold)",
+                  "has_video": true
+                },
+                {
+                  "sets": 6,
+                  "movement": "Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "HEAVY Big Slow Single Unders",
+                  "has_video": true
+                },
+                {
+                  "sets": 6,
+                  "movement": "Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 6,
+                  "movement": "HEAVY Big Slow Single Unders into or up to 5 Double Unders.",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "HEAVY Big Slow Single Unders into or up to 5 Double Unders.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets • All work below should be performed as 1 full set."
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2182482,
+          "title": "DU PRO 2.2 (Week 2, Workout 2)",
+          "url": "/c/double-under-pro/sections/579109/lessons/2182482",
+          "description": "Your shoulders, elbows, and hands all play a major role in proper double under positioning. Today, we’re reinforcing the “elbows back” and “quick draw” position with some targeted banded drills. To set it up, loop a resistance band around one elbow, then pull it behind your back and around the other elbow. This will help keep your hands by your hips and mimic the ideal quick-draw position. If you tend to jump with your hands too far forward, try wrapping the band around the front of your body instead to cue proper hand placement. At the end of the session, review your video from Drill 3. Did the banded drill improve your positioning and control in your double unders?",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Yoga Push-up with Downward Dog Calf Stretch",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec x World's Greatest Stretch",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Toe / Heel raises",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: BAND PRACTICE",
+              "items": [
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ],
+              "format": "Practice using the band and accumulate 100 HEAVY Single Unders"
+            },
+            {
+              "name": "DRILL 2: BAND PRACTICE II",
+              "items": [
+                {
+                  "movement": "Move between sets using a band and without. Aim to replicate the 'With Band' positioning so each set looks and feels the same. The goal is to reinforce good upper body positioning. If you struggle to perform double unders with the heavy rope aim for 1 clean rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "8 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • No Band • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • With Band • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • No Band • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • With Band • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • No Band • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 • With Band • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 7 • No Band • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 8 • With Band • MEDIUM",
+                  "has_video": false
+                }
+              ],
+              "notes": "12 Single Unders + 6 Big Slow Single Unders into or up to 10 Double Unders Rest between 60-90 sec between sets"
+            },
+            {
+              "name": "DRILL 3: BUY OUT",
+              "items": [
+                {
+                  "movement": "8 Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "movement": "6 Big Slow Single Unders into or up to 5 Double Unders",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video last set for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets • MEDIUM - NO BAND"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2182483,
+          "title": "DU PRO 2.3 (Week 2, Workout 3)",
+          "url": "/c/double-under-pro/sections/579109/lessons/2182483",
+          "description": "We’ve practiced speed singles, but there’s a limit to how fast you can go with simple two-footed jumps. To boost speed and wrist turnover, we’re adding alternating steps to your jump rope toolkit. If you’re struggling with this drill, start with a few single unders and then transitioning into it. That can often feel smoother than jumping straight into it from the first rep.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Leg Swings (Forward, Back & Side to Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15 sec x Wall Calf Stretch (Each Leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Seated Hamstring Stretch (Each Leg)",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: NO ROPE ALTERNATING SPEED STEPS",
+              "items": [
+                {
+                  "movement": "10 sec x No Rope Alternating Speed Steps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Each set, lift the knees and feet slightly off the ground (not back). Build in height (a little) each round.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 20 sec",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "DRILL 2: NO ROPE ALTERNATING SPEED STEP TAPS",
+              "items": [
+                {
+                  "movement": "10 sec x No Rope Alternating Speed Step Taps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Tap your hip once as each knee comes up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 20 sec",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "DRILL 3: SPEED WORK WITH ROPE",
+              "items": [
+                {
+                  "movement": "Set 1 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • MEDIUM",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets",
+              "notes": "20x Speed Single Unders into 20x Alternating Speed Steps (easy pace) Rest 10-20sec 10x Speed Single Unders into 40x Alternating Speed Steps (easy pace) Rest 10-20sec 40 x Alternating Speed Steps (increase speed each round) Rest 40-60sec between sets"
+            },
+            {
+              "name": "DRILL 4: BUY OUT",
+              "items": [
+                {
+                  "movement": "Let's finish by applying fast wrist speed to our double unders. Note: we're using fast single unders here to lead into our double unders. I normally prefer big slow single unders to start but let's see trying something different is helpful for you.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets with MEDIUM or HEAVY",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Speed Single Unders into or up to 5 Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2182485,
+          "title": "DU PRO 3.1 (Week 3, Workout 1)",
+          "url": "/c/double-under-pro/sections/579110/lessons/2182485",
+          "description": "Coach Ben breaks down the optimal bound for double unders. It’s the same relaxed pogo-style bounce you’ve been using with penguin claps and single unders. The goal is to maintain that same bound during your double unders - just a little higher. To help, focus on keeping your legs and feet together throughout the entire movement. Consistency starts with control.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Ankle Roll Outs + 10ft x Toe Walks + 10ft x Heel Walks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Shoulder Pass-through + Overhead Squat (use PVC or jump rope)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Child Pose",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: SPIN DRILLS",
+              "items": [
+                {
+                  "movement": "10 sec x Left Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Right Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Both Handle Double Under Rope Spin",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: CROP CIRCLES",
+              "items": [
+                {
+                  "movement": "Let’s put Coach Ben’s pogo stick bound into practice. For a challenge, draw a one-foot circle on the ground and try to stay inside it throughout the drill.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 - MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 - MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Every 2 minutes",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Speed Singles",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 5 x Singles",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Penguin Claps",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Big Singles into or up to 10 Double Unders",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest and set-up for next set with remaining time",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video last set and review how well legs and feet stay close together.",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 4: BUY OUT",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Speed Single Unders into or up to 10 Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30-60 sec between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets • MEDIUM or HEAVY"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2182486,
+          "title": "DU PRO 3.2 (Week 3, Workout 2)",
+          "url": "/c/double-under-pro/sections/579110/lessons/2182486",
+          "description": "This is one of Coach Ben’s favorite drills. It might feel strange at first, and you may even wonder why you’re doing it, but year after year, we’ve seen athletes finally get “it” by working both extremes of their bound.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Yoga Push-up with Downward Dog Calf Stretch",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec x World's Greatest Stretch",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Toe / Heel raises",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: JUMP CONFUSION",
+              "items": [
+                {
+                  "movement": "Set 1 - NO ROPE",
+                  "has_video": true
+                },
+                {
+                  "movement": "Set 2 - HEAVY rope",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 - HEAVY rope",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 - MEDIUM rope",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 - MEDIUM rope",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x “Jump Confusion Complex”",
+                  "has_video": true
+                },
+                {
+                  "movement": "Looking for a challenge? Do this complex with double unders instead.",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets",
+              "notes": "Rest 1 min between sets"
+            },
+            {
+              "name": "DRILL 2: POGO BOUND & DOUBLE UNDERS",
+              "items": [
+                {
+                  "movement": "Bound through the toes with upright posture while landing in the same spot consistently.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "movement": "5 Big Slow Single Unders into MAX Unbroken Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30-60sec between sets",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2182487,
+          "title": "DU PRO 3.3 (Week 3, Workout 3)",
+          "url": "/c/double-under-pro/sections/579110/lessons/2182487",
+          "description": "Today we’re going to expand your jump rope repertoire with a fun freestyle skill that will reinforce rope control, core bracing, hand positioning and looks really cool, too. Say hello to the Side Swings. We'll build these up slowly each drill and you'll be a Side Swing pro by the end of today's lesson. 2-4 minutes Row, Bike, Slow Jog or No Jump Burpees 10 x Leg Swings (Forward, Back & Side to Side) 15 sec x Wall Calf Stretch (Each Leg) 30 sec x Seated Hamstring Stretch (Each Leg)",
+          "sections": [
+            {
+              "name": "DRILL 1: SINGLE HAND SIDE SWING WITH HEAVY ROPE",
+              "items": [
+                {
+                  "movement": "Set 1 & 2: Standing in Spot",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 & 4: Alternating Steps (Small Bound)",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec x Left Hand Side Swings (Left Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Left Hand Side Swings (Right Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Left Hand Alternating Side Swings",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec x Right Hand Side Swings (Left Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Right Hand Side Swings (Right Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Right Hand Alternating Side Swings",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: SIDE SWING WITH HEAVY ROPE",
+              "items": [
+                {
+                  "movement": "Set 1 & 2 - Standing in Spot",
+                  "has_video": true
+                },
+                {
+                  "movement": "Set 3 & 4 - Alternating Steps (Small Bound)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Side Swing Practice",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed.",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets"
+            },
+            {
+              "name": "DRILL 3: SIDE SWING WITH HEAVY ROPE",
+              "items": [
+                {
+                  "movement": "Let's connect Side Swings with Single Unders. Refer to the top video for an in-depth demonstration.",
+                  "has_video": false
+                },
+                {
+                  "movement": "8 Rounds • 20 sec on - 10 sec off",
+                  "has_video": false
+                },
+                {
+                  "movement": "Side Swing with Single Under",
+                  "has_video": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2182488,
+          "title": "DU PRO 4.1 (Week 4, Workout 1)",
+          "url": "/c/double-under-pro/sections/579111/lessons/2182488",
+          "description": "Today we'll experiment with ‘feeling’ the rope in space by channeling our inner Jedi and closing our eyes while jumping. Sounds crazy but it's a great drill to force us to sense where the rope is in space. Listen to the rope moving around you and the 'ta-ta-tum' pattern of double unders. Note that the banded arms drill we practice in Lesson 2.2 makes a comeback here. Video your last set of MAX Double Unders for post session review and see if Jedi eye closed training helped improve your DU form. 2-4 minutes Row, Bike, Slow Jog or No Jump Burpees 10 x Ankle Roll Outs + 10ft x Toe Walks + 10ft x Heel Walks 10 x Shoulder Pass-through + Overhead Squat (use PVC or jump rope) 30 sec x Child Pose 2 Sets • HEAVY 20sec x Side Swing Flow 10 sec Rest Draw a circle on the ground, about a foot in diameter with the goal of keeping all your bounds inside the circle. Don't be afraid to peek or just stop jumping and reset if you feel things are unsafe. #safetyfirst Set 1 - HEAVY • Eyes Closed Only Set 2 - HEAVY • Eyes Closed with BAND around arms Set 3 - HEAVY • Eyes Open Set 4 - MEDIUM • Eyes closed Only Set 5 - MEDIUM • Eyes Closed with BAND around arms Set 6 - MEDIUM • Eyes Open 6 sets; every 2 minutes 8 x Penguin Claps 4 x Big Slow Singles into or up to 10 Double Unders Rest and set-up for next set with remaining time. 3 Sets • MEDIUM (Eyes Open) 4 Big Slow Single Unders into MAX Double Unders Rest 30-60sec between sets • Once you trip that's one set. Video last set for post training review.",
+          "sections": []
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2182489,
+          "title": "DU PRO 4.2 (Week 4, Workout 2)",
+          "url": "/c/double-under-pro/sections/579111/lessons/2182489",
+          "description": "The DU Stop Drill is money! It’s one of the best drills to build Double Under capacity with solid form. Start with 1 Double Under, then stop. If it’s a clean rep, go for 2 next time. If not, stay at that rep until you can hit it consistently. The key is not to rush it. Take your time. The goal isn’t how many reps you can string together, it’s how well you can connect big, slow single unders to double unders with as little change as possible.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Yoga Push-up with Downward Dog Calf Stretch",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec x World's Greatest Stretch",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Toe / Heel raises",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: WRIST WARM-UP",
+              "items": [
+                {
+                  "movement": "10 sec x Left Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Right Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Both Handle Double Under Rope Spin",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: TEMPO WORK",
+              "items": [
+                {
+                  "movement": "Slow Motion Single Unders will challenge you to jump as slowly as possible without “double jumping”. Meaning, no extra knee bend or pause before leaving the ground. The rope should move smoothly around you even at a slower pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "Alternating Step Speeds",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Slow Motion Single Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest is the time it takes to change cables",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 3: DU STOP DRILL",
+              "items": [
+                {
+                  "movement": "After each successful double under, add one rep or repeat the last successful set. Ideally, by Set 10, you’ll be at 10 reps. Remember, form and technique matter more than the number of reps.",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets • HEAVY or MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Single Unders + 1 Double Under & STOP 🛑",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed but no more than 3 sets per minute.",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 4: BUY OUT",
+              "items": [
+                {
+                  "movement": "Complete as many double under sets as you want in 2min. Focus on applying the cues you've been working on.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Minute Double Under Attempts • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Single Unders + MAX Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video drill for self review",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2182490,
+          "title": "DU PRO 4.3 (Week 4, Workout 3)",
+          "url": "/c/double-under-pro/sections/579111/lessons/2182490",
+          "description": "Time to pull out your Double Under Pro Score Sheet (or online tracker) from Week 1. it’s mid-course check-in time. As you compare your results, highlight one win, one challenge, and identify what you’ll need to focus on in the remaining weeks to keep progressing.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Leg Swings (Forward, Back & Side to Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15 sec x Wall Calf Stretch (Each Leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Seated Hamstring Stretch (Each Leg)",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: SIDE SWING WARM-UP",
+              "items": [
+                {
+                  "movement": "20sec x Side Swing Flow",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec Rest",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: ROPE CONTROL",
+              "items": [
+                {
+                  "movement": "After each success double under on the Double Under + STOP 🛑 drill add another rep on the next set. Ideally, you’ll finish Set 4 with 4 reps.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "Alternating Speed Steps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Slow Motion Single Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "4 Single Unders + 1 Double Under & STOP 🛑",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Record number of Big Slow Single Unders achieved",
+                  "has_video": false
+                },
+                {
+                  "movement": "30 sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "2. 30sec x Speed Single Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Record number Speed Single Unders SU achieved",
+                  "has_video": false
+                },
+                {
+                  "movement": "30 sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "3. 30sec x Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "As many DU attempts as you want in 30 sec.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use this as your warm-up set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "4. 60sec x Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Your money set. As many attempts as you want in 60sec (Rest as needed).",
+                  "has_video": false
+                },
+                {
+                  "movement": "The goal here isn’t how many double unders you can do but how many you can do consecutively.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record highest # of unbroken double unders achieved.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "5. 50 x Double Unders for Time",
+                  "has_video": true
+                },
+                {
+                  "movement": "90 sec Time Cap",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record time to complete 50 DU. Add 1 sec for every rep not completed.",
+                  "has_video": false
+                }
+              ],
+              "format": "1. 30sec x Big Slow Single Unders"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2182491,
+          "title": "DU PRO 5.1 (Week 5, Workout 1)",
+          "url": "/c/double-under-pro/sections/579112/lessons/2182491",
+          "description": "We’ve been working on elbow positioning and wrist snap to keep the rope moving in a smooth, circular path. When your hands drift too far forward or back, that circle breaks — and double unders become much harder to maintain. To reinforce proper alignment, draw two lines on the floor about 12 inches apart. Bound on one line and aim to have your rope strike the other. This helps train consistency in both hand placement and rope path. Today also introduces percentage programming. Use your best unbroken set from the 60 sec double under retest in Lesson 4.3 to calculate your target rep count. If you’re using the Double Under Pro Automated Tracking Sheet, it will calculate the rep percentages for you automatically.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Ankle Roll Outs + 10ft x Toe Walks + 10ft x Heel Walks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Shoulder Pass-through + Overhead Squat (use PVC or jump rope)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Child Pose",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: WRIST WARM-UP",
+              "items": [
+                {
+                  "movement": "10 sec x Left Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Right Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Both Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Build from slow single unders to challenging double unders bounds with spins.",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec x Double Under Spins Left with Bound",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Double Under Spins Right with Bound",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: DOUBLE UNDER PRIMER @20%",
+              "items": [
+                {
+                  "movement": "Mark the floor with two pieces of tape or chalk lines. One where you’ll be jumping and another roughly 12 inches in front of you where the rope should be consistently striking.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1: HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2: MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform as one sequence",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Speed Single Unders",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Big Slow Single Unders",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Penguin Claps",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders into 20% Double Unders.",
+                  "has_video": false
+                }
+              ],
+              "format": "Use 20% of your best unbroken double under set from the 60sec test from Week 4"
+            },
+            {
+              "name": "DRILL 3: TEMPO DOUBLE UNDERS @30%",
+              "items": [
+                {
+                  "movement": "Focus on getting the rope to strike about 12 inches in front of you. If that’s tough, add a band around your arms for support. Aim to go unbroken, but if you trip (and you probably will), finish your reps within 3 attempts.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 - 3 Single Unders into 30% Double Under PR - Normal Speed w/ HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 - 3 Single Unders into 30% Double Under PR - Normal Speed w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 - 3 Single Unders into 30% Double Under PR - SLOW w/ HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 - 3 Single Unders into 30% Double Under PR - SLOW w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 - 3 Single Unders into 30% Double Under PR - FAST w/ HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 - 3 Single Unders into 30% Double Under PR - FAST w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 7 - 3 Single Unders into 30% Double Under PR - Normal Speed w/ HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 8 - 3 Single Unders into 30% Double Under PR - Normal Speed w/ MEDIUM",
+                  "has_video": false
+                }
+              ],
+              "format": "Use 30% of your best unbroken double under set from the 60sec test from Week 4",
+              "notes": "Rest 30-60sec between sets and change cable weights"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2182492,
+          "title": "DU PRO 5.2 (Week 5, Workout 2)",
+          "url": "/c/double-under-pro/sections/579112/lessons/2182492",
+          "description": "So excited for this training session! For the next four weeks, we’ll be building double under capacity using percentage-based work sets as the speed rope finally makes its debut. Your goal with the percentages is to hit each set unbroken. No need to exceed the prescribed numbers — once you hit 40%, stop there. If you can’t complete a set unbroken, that’s totally fine. Just make a note of it; we’ve got a special buyout waiting for you at the end of the session. You’ll also see the first appearance of the Ta-Ta-Tum Drill. In this drill, perform 1–2 reps while saying “Ta-Ta-Tum” out loud, in sync with the rope. “Ta” represents the rope hitting the floor, and “Tum” is the reload of your double under bound. This will help you better feel and understand the rhythm and timing of the rope.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x World's Greatest Stretch (Each Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Downward Dog Calf Stretch (Each Side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Toe & Heel Raises",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: SIDE SWING WARM-UP",
+              "items": [
+                {
+                  "movement": "20sec x Side Swing Flow",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: TA-TA-TUM DU DRILL",
+              "items": [
+                {
+                  "movement": "In this drill, we're going to say \"Ta-Ta-Tum\" or \"1-2\" + (beat) out loud to help us visualize the motion and timing of the rope as we perform Double Unders.",
+                  "has_video": false
+                },
+                {
+                  "movement": "We'll say \"Ta\" as the rope hits the ground and use 'tum' or (beat) as we reload the bound for the next rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets • HEAVY or MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders + 1-2 Double Unders with \"Ta-Ta-Tum\" or \"1-2\" + (beat)",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 3: 9 MINUTE EMOM W/ DOUBLE UNDERS @40%",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10x Penguin Claps + 10x Speed Single Unders + 10x Big Slow Single Unders (HEAVY)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 Single Unders up to 40% Double Unders (HEAVY)",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3 Single Unders up to 40% Double Unders (HEAVY)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "10x Penguin Claps + 10x Speed Single Unders + 10x Big Slow Single Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "minute": 5,
+                  "movement": "3 Single Unders into 40% Double Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "minute": 6,
+                  "movement": "3 Single Unders into 40% Double Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "minute": 7,
+                  "movement": "10x Penguin Claps + 10x Speed Single Unders + 10x Big Slow Single Unders (SPEED)",
+                  "has_video": true
+                },
+                {
+                  "minute": 8,
+                  "movement": "3 Single Unders into 40% Double Unders (SPEED)",
+                  "has_video": true
+                },
+                {
+                  "minute": 9,
+                  "movement": "3 Single Unders into 40% Double Unders (SPEED)",
+                  "has_video": true
+                }
+              ],
+              "format": "Use 40% of your best unbroken double under set from the 60sec test from Week 4",
+              "notes": "Rest 30-60sec between sets and change cable weights"
+            },
+            {
+              "name": "DRILL 4: BUY OUT",
+              "items": [
+                {
+                  "movement": "Every 40% set you didn’t complete unbroken in Drill 3, perform 20 Alternating Speed Steps.",
+                  "has_video": false
+                },
+                {
+                  "movement": "ex. If you failed on 3 sets, perform 60 total reps.",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "HEAVY Alternating Speed Steps",
+                  "has_video": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2182493,
+          "title": "DU PRO 5.3 (Week 5, Workout 3)",
+          "url": "/c/double-under-pro/sections/579112/lessons/2182493",
+          "description": "Back in Week 3, we used alternating steps to boost speed singles and improve wrist turnover. Today, we’ll push that tempo further with High Knee Speed Steps. Afterward, compare your Drill 3 reps to your speed single numbers from the Week 4.3 test. Ideally, you’ll see faster rope movement and improved control.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Leg Swings (Forward, Back & Side to Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15 sec x Wall Calf Stretch (Each Leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Seated Hamstring Stretch (Each Leg)",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: ALTERNATING SPEED STEP WARM-UP",
+              "items": [
+                {
+                  "movement": "Side Swipes into 10x Alternating Speed Steps",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "DRILL 2: HIGH KNEES SPEED STEPS (NO ROPE)",
+              "items": [
+                {
+                  "movement": "10 sec x Alternating Steps + 5 sec x High Knee Speed Steps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Light jog in place into faster high knees (no rope). Build in speed each round.",
+                  "has_video": false
+                },
+                {
+                  "movement": "PRO TIP: Keep your feet under you rather than kicking them back behind you.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "DRILL 3: HIGH KNEES SPEED STEPS (WITH ROPE)",
+              "items": [
+                {
+                  "movement": "Set 1: HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2: MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3: SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4: Cable weight of your choice",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Speed Single Unders + 10x Alternating Speed Steps + 10x High Knee Speed Steps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Easy pace to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Single Unders + 20x High Knee Speed Steps",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 30,
+                  "movement": "High Knee Speed Steps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Start slow but each round increase the speed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest up to 60 sec between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets"
+            },
+            {
+              "name": "DRILL 4 • HIGH KNEE SPEED SPEED",
+              "items": [
+                {
+                  "movement": "Now that you know how to perform High Knee Speed Steps, let's put those skills to the test",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • Cable weight of your choice",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec x High Knee Speed Steps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 20-40 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record reps achieved each round",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 5: BUY OUT",
+              "items": [
+                {
+                  "movement": "Let's apply all that speedy wrist work to our Double Under turnover",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets with MEDIUM or HEAVY",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Speed Single Unders into or up to 15 Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2182495,
+          "title": "DU PRO 6.1 (Week 6, Workout 1)",
+          "url": "/c/double-under-pro/sections/579113/lessons/2182495",
+          "description": "Today, let’s force good positioning by jumping between a rock and hard place... Literally. If you can't create a tight space then use an arm band as we did Week 2, Workout 2 for the drills below.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Ankle Roll Outs + 10ft x Toe Walks + 10ft x Heel Walks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Shoulder Pass-through + Overhead Squat (use PVC or jump rope)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Child Pose",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: SIDE SWIPES IN TIGHT SPACE",
+              "items": [
+                {
+                  "movement": "Put yourself between two objects (ex. two boxes, wall + box) that are just a little wider than your optional jump rope position. Perform all of today's drills between those two objects. If you can't create a tight space, perform banded arm work instead.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "20 sec x Side Swipes",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 2: TIGHT SPACE DU PRIMER 20%",
+              "items": [
+                {
+                  "movement": "Set 1 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets • Perform as one sequence",
+                  "has_video": true
+                },
+                {
+                  "sets": 6,
+                  "movement": "Speed Singles",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Alternating Steps",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "High Knees",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Big Slow Single Unders",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders into 20% Double Unders",
+                  "has_video": false
+                }
+              ],
+              "format": "Use 20% of your best unbroken double under set from the 60sec test from Week 4"
+            },
+            {
+              "name": "DRILL 3: TEMPO DOUBLE UNDERS IN TIGHT SPACE @40%",
+              "items": [
+                {
+                  "movement": "Stay in your tight space unless it’s affecting your unbroken goal. If so, make your space wider or use a band around your arms instead.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 3 Single Unders into 40% Double Unders - Normal Speed w/ HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 3 Single Unders into 40% Double Unders - Normal Speed w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 3 Single Unders into 40% Double Unders - SLOW w/ HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 3 Single Unders into 40% Double Unders - SLOW w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 3 Single Unders into 40% Double Unders - FAST w/ HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 • 3 Single Unders into 40% Double Unders - FAST w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 7 • 3 Single Unders into 40% Double Unders - Normal Speed w/ HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 8 • 3 Single Unders into 40% Double Unders - Normal Speed w/ MEDIUM",
+                  "has_video": false
+                }
+              ],
+              "format": "Use 40% of your best unbroken double under set from the 60sec test from Week 4",
+              "notes": "Rest 30-60sec between sets and change cable weights"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2182496,
+          "title": "DU PRO 6.2 (Week 6, Workout 2)",
+          "url": "/c/double-under-pro/sections/579113/lessons/2182496",
+          "description": "Today, we’ll revisit the Ta-Ta-Tum drill to prime your rhythm, then build up to 50% of your double under max from the 4.3 retest.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x World's Greatest Stretch (Each Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Downward Dog Calf Stretch (Each Side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Toe & Heel Raises",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL #1: TA-TA-TUM DU DRILL",
+              "items": [
+                {
+                  "movement": "In this drill, we're going to say \"Ta-Ta-Tum\" out loud to help us visualize the motion and timing of the rope moving around us as we perform Double Unders.",
+                  "has_video": false
+                },
+                {
+                  "movement": "We'll say \"Ta\" as the rope hits the ground and use 'Tum' as we reload the bound for the next rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets • HEAVY or MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders + 2-3 Double Unders with \"Ta-Ta-Tum\"",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 2: 9 MINUTE EMOM W/ DOUBLE UNDERS @50%",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "8x Penguin Claps + 8x Speed Single Unders + 8x Big Slow Single Unders (HEAVY)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 Single Unders up to 50% Double Unders (HEAVY)",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3 Single Unders up to 50% Double Unders (HEAVY)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "8x Penguin Claps + 8x Speed Single Unders + 8x Big Slow Single Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "minute": 5,
+                  "movement": "3 Single Unders into 50% Double Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "minute": 6,
+                  "movement": "3 Single Unders into 50% Double Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "minute": 7,
+                  "movement": "8x Penguin Claps + 8x Speed Single Unders + 8x Big Slow Single Unders (SPEED)",
+                  "has_video": true
+                },
+                {
+                  "minute": 8,
+                  "movement": "3 Single Unders into 50% Double Unders (SPEED)",
+                  "has_video": true
+                },
+                {
+                  "minute": 9,
+                  "movement": "3 Single Unders into 50% Double Unders (SPEED)",
+                  "has_video": true
+                }
+              ],
+              "format": "Use 50% of your best unbroken double under set from the 60sec test in Week 4",
+              "notes": "Rest 30-60sec between sets and change cable weights"
+            },
+            {
+              "name": "DRILL 3: BUY OUT",
+              "items": [
+                {
+                  "movement": "Every 50% set you didn’t complete unbroken perform 20 High Knee Speed Steps.",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you failed on 3 sets, perform 60 total reps.",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "HEAVY High Knee Speed Steps",
+                  "has_video": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2182497,
+          "title": "DU PRO 6.3 (Week 6, Workout 3)",
+          "url": "/c/double-under-pro/sections/579113/lessons/2182497",
+          "description": "Let’s continue to build on our jump rope repertoire are with a new jump - Scissors Skips. This is a great jump rope skill that translates nicely to double unders as it requires an engaged core, hands close to the hips and a healthy dose of coordination. Have some fun with it!",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Leg Swings (Forward, Back & Side to Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Wall Calf Stretch (Each Leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Seated Hamstring Stretch",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: SCISSOR SKIPS IN PLACE W/ NO ROPE",
+              "items": [
+                {
+                  "movement": "10sec x No Rope Scissor Skips",
+                  "has_video": true
+                },
+                {
+                  "movement": "PRO TIP: Keep strides consistent and smooth with front foot coming a little forward.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets • NO ROPE"
+            },
+            {
+              "name": "DRILL 2: SCISSOR SKIPS IN PLACE WITH ROPE",
+              "items": [
+                {
+                  "movement": "Set 1 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • SPEED",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Unders + 10x Scissor Skips (Easy)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Penguin Claps",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Single Unders + 20x Scissor Skips (Easy)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 30,
+                  "movement": "Scissor Skips",
+                  "has_video": true
+                },
+                {
+                  "movement": "Try to increase the speed each set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "6 Sets"
+            },
+            {
+              "name": "DRILL 3: BUY OUT",
+              "items": [
+                {
+                  "movement": "10 Scissor Skips + 3 Single Unders into or up to 10 Double Unders",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets • Rope Weight of your Choice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2182498,
+          "title": "DU PRO 7.1 (Week 7, Workout 1)",
+          "url": "/c/double-under-pro/sections/579114/lessons/2182498",
+          "description": "Today you get to pick the drill that worked best for you and use it again to help reinforce proper Double Under mechanics.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Ankle Roll Outs + 10ft x Toe Walks + 10ft x Heel Walks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Shoulder Pass-through + Overhead Squat (use PVC or jump rope)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Seated Hamstring Stretch (Each Leg)",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: WRIST CONTROL",
+              "items": [
+                {
+                  "movement": "10 sec x Left Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Right Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Both Handle Double Under Rope Spin",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Build from slow single unders to challenging double unders bounds with spins.",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec x Double Under Spins Left with Bound",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Double Under Spins Right with Bound",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: DU PRIMER WITH OPTIONS @ 40%",
+              "items": [
+                {
+                  "movement": "Choose the most helpful option for the drills below.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Option A: Band Around Arms",
+                  "has_video": false
+                },
+                {
+                  "movement": "Option B: Jump inside a Circle",
+                  "has_video": false
+                },
+                {
+                  "movement": "Option C: Eyes Closed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Option D: Tight Space",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets • Perform as one sequence",
+                  "has_video": true
+                },
+                {
+                  "sets": 6,
+                  "movement": "Alternating Steps",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "High Knees",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Big Slow Single Unders",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders into 30% Double Unders",
+                  "has_video": false
+                }
+              ],
+              "format": "Use 40% of your best unbroken double under set from the 60sec test from Week 4"
+            },
+            {
+              "name": "DRILL 3: TEMPO DOUBLE UNDERS WITH OPTIONS @50%",
+              "items": [
+                {
+                  "movement": "Challenge is to control the tempo of your double unders while continuing to use your most helpful option above. If struggling, forget the drill and focus only on tempo.",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you trip up, no worries! That's to be expected when you work with tempo.",
+                  "has_video": false
+                },
+                {
+                  "movement": "The aim is to go unbroken but if you trip up finish the set (in no more than 3 attempts) and take a short rest before moving on to the next set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 3 Single Unders into 50% Double Unders - Normal Speed w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 3 Single Unders into 50% Double Unders - Normal Speed w/ SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 3 Single Unders into 50% Double Unders - SLOW w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 3 Single Unders into 50% Double Unders - SLOW w/ SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 3 Single Unders into 50% Double Unders - FAST w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 • 3 Single Unders into 50% Double Unders - FAST w/ SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Complete Set 7 and 8 without additional drill option.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 7 • 3 Single Unders into 50% Double Unders - Normal Speed w/ MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 8 • 3 Single Unders into 50% Double Unders - Normal Speed w/ SPEED",
+                  "has_video": false
+                }
+              ],
+              "format": "Use 50% of your best unbroken double under set from the 60-second test in Week 4 for this drill",
+              "notes": "Rest 30-60sec between sets and change cable weights"
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2182499,
+          "title": "DU PRO 7.2 (Week 7, Workout 2)",
+          "url": "/c/double-under-pro/sections/579114/lessons/2182499",
+          "description": "Seriously, how amazing are these double under work days? Trust the process and keep putting in the work!",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Yoga Push-up with Downward Dog Calf Stretch",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec x World's Greatest Stretch",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Toe / Heel raises",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL #1: TA-TA-TUM DU DRILL",
+              "items": [
+                {
+                  "movement": "In this drill, we're going to say \"Ta-Ta-Tum\" out loud to help us visualize the motion and timing of the rope as we perform Double Unders.",
+                  "has_video": false
+                },
+                {
+                  "movement": "We'll say \"Ta\" as the rope hits the ground and use 'tum' as we reload the bound for the next rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets • HEAVY or MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders + 3-4 Double Unders with \"Ta-Ta-Tum\"",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "DRILL 2: 9 MINUTE EMOM W/ DOUBLE UNDERS @60%",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "6x Penguin Claps + 6x Speed Single Unders + 6x Big Slow Single Unders (MEDIUM)",
+                  "has_video": false
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 Single Unders up to 60% Double Unders (MEDIUM)",
+                  "has_video": false
+                },
+                {
+                  "minute": 3,
+                  "movement": "3 Single Unders up to 60% Double Unders (MEDIUM)",
+                  "has_video": false
+                },
+                {
+                  "minute": 4,
+                  "movement": "6x Penguin Claps + 6x Speed Single Unders + 6x Big Slow Single Unders (MEDIUM)",
+                  "has_video": false
+                },
+                {
+                  "minute": 5,
+                  "movement": "3 Single Unders into 60% Double Unders (MEDIUM)",
+                  "has_video": false
+                },
+                {
+                  "minute": 6,
+                  "movement": "3 Single Unders into 60% Double Unders (MEDIUM)",
+                  "has_video": false
+                },
+                {
+                  "minute": 7,
+                  "movement": "6x Penguin Claps + 6x Speed Single Unders + 6x Big Slow Single Unders (SPEED)",
+                  "has_video": false
+                },
+                {
+                  "minute": 8,
+                  "movement": "3 Single Unders into 60% Double Unders (SPEED)",
+                  "has_video": false
+                },
+                {
+                  "minute": 9,
+                  "movement": "3 Single Unders into 60% Double Unders (SPEED)",
+                  "has_video": false
+                }
+              ],
+              "format": "Use 60% of your best unbroken double under set from the 60-second test in Week 4",
+              "notes": "Rest 30-60sec between sets and change cable weights"
+            },
+            {
+              "name": "DRILL 3: BUY OUT",
+              "items": [
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ],
+              "format": "Every 60% set you didn’t complete unbroken, perform 1 set of 20 x HEAVY Scissor Steps."
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2182500,
+          "title": "DU PRO 7.3 (Week 7, Workout 3)",
+          "url": "/c/double-under-pro/sections/579114/lessons/2182500",
+          "description": "We’ve been using the DU Stop Drill and tempo double unders to reinforce strong positions and rope control. Today, we’ll take it up a notch with the DU Connect Drill.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Leg Swings (Forward, Back & Side to Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Wall Calf Stretch (Each Leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Seated Hamstring Stretch (Each Leg)",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: SKILL BUILDER",
+              "items": [
+                {
+                  "movement": "Start with Side Swipes and when ready perform the main jump below. Add 1 Double Under with every successful set and aim for a max unbroken set in Rep 4/",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Side Swipes into 10x Big Slow Single Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 10 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Side Swipes into",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders + 1 Double Under & STOP 🛑",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30-60sec between sets",
+                  "has_video": false
+                }
+              ],
+              "notes": "Side Swipes into 10x Speed Singles Rest 10 sec Side Swipes into 10x Alternating Speed Steps Rest 10 sec Side Swipes into 10x High Knee Speed Steps Rest 10 sec Side Swipes into 10x Scissors Steps Rest 10 sec"
+            },
+            {
+              "name": "DRILL 2: DU CONNECT DRILL",
+              "items": [
+                {
+                  "movement": "Set 1 • HEAVY (easy set)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • HEAVY",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • MEDIUM (easy set)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • SPEED (easy set)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 • SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Aim to connect each Double Under set with 3 Single Unders but ultimately use the number of singles unders that works best for you.",
+                  "has_video": false
+                },
+                {
+                  "movement": "DU Connect Drill",
+                  "has_video": true
+                },
+                {
+                  "movement": "i.e. SU-SU-SU-1x DU-SU-SU-SU- 2xDU-SU-SU-SU-3xDU-SU-SU-SU...",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 90sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Continue each set until you trip up or successfully perform 10 unbroken Double Unders.",
+                  "has_video": false
+                }
+              ],
+              "format": "6 Total Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2182502,
+          "title": "DU PRO 8.1 (Week 8, Workout 1)",
+          "url": "/c/double-under-pro/sections/579115/lessons/2182502",
+          "description": "Last day of our volume percentage work! It's going to be the toughest one, yet but it's the final week so let’s get after it.",
+          "sections": [
+            {
+              "name": "WARM-UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x World's Greatest Stretch (Each Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "1 min x Downward Dog Calf Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Toe & Heel Raises",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL #1: DU STOP DRILL",
+              "items": [
+                {
+                  "movement": "Side Swipes into",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders + 1 Double Under & STOP 🛑",
+                  "has_video": true
+                },
+                {
+                  "movement": "Add 1 Double Under with every successful set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed • 10-30sec between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "10 Sets"
+            },
+            {
+              "name": "DRILL 2: 9 MINUTE EMOM W/ DOUBLE UNDERS @70%",
+              "items": [
+                {
+                  "movement": "Min 1 • 6x Penguin Claps + 6x Speed Single Unders + 6x Big Slow Single Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Min 2 • 3 Single Unders up to 70% Double Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Min 3 • 3 Single Unders up to 70% Double Unders (MEDIUM)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Min 4 • 6x Penguin Claps + 6x Speed Single Unders + 6x Big Slow Single Unders (MEDIUM or SPEED)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Min 5 • 3 Single Unders into 70% unbroken Double Unders (MEDIUM or SPEED)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Min 6 • 3 Single Unders into 70% unbroken Double Unders (MEDIUM or SPEED)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Min 7 • 6x Penguin Claps + 6x Speed Single Unders + 6x Big Slow Single Unders (SPEED)",
+                  "has_video": true
+                },
+                {
+                  "minute": 8,
+                  "movement": "3 Single Unders into 70% unbroken Double Unders (SPEED)",
+                  "has_video": true
+                },
+                {
+                  "minute": 9,
+                  "movement": "3 Single Unders into 70% unbroken Double Unders (SPEED)",
+                  "has_video": true
+                }
+              ],
+              "format": "Use 70% of your best unbroken double under set from the 60-second test in Week 4",
+              "notes": "Rest 30-60sec between sets and change cable weights"
+            },
+            {
+              "name": "DRILL 3: BUY OUT",
+              "items": [
+                {
+                  "movement": "Each set goes until you trip or hit 5 consecutive Double Unders.",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Double Under Connect Drill",
+                  "has_video": true
+                }
+              ],
+              "format": "Every 70% set you didn’t complete unbroken perform 1 set of MEDIUM / SPEED DU Connect Drill."
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2182503,
+          "title": "DU PRO 8.2 (Week 8, Workout 2)",
+          "url": "/c/double-under-pro/sections/579115/lessons/2182503",
+          "description": "After today, take at least 1–2 full days off from double unders before performing the final workout. As for today, this fun little game is one of Coach Ben’s favorites so we couldn't resist including it with Double Under Pro. Have fun with it!",
+          "sections": [
+            {
+              "name": "WARM UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Ankle Roll Outs + 10ft x Toe Walks + 10ft x Heel Walks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Shoulder Pass-through + Overhead Squat (use PVC or jump rope)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 min x Seated Hamstring Stretch (each leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "In exactly 3 attempts, no more - no less, record the EXACT amount of double unders for 200% of your best unbroken double under set from the 60 sec Test in Week 4.",
+                  "has_video": false
+                },
+                {
+                  "movement": "For each rep over/under your target number, you must do TWO burpees.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record your scores below.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 1: MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 2: MEDIUM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 3: SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 4: SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 5: Rope Weight of your Choice",
+                  "has_video": false
+                },
+                {
+                  "movement": "Let’s say your unbroken double under streak was 10. At 200%, your target would be 20 reps.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 1: 7/6/4 = 17 Double Unders (6 burpees)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 2: 10/9/1 = 20 Double Unders (0 burpees)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 3: 3/3/5 = 11 Double Unders (18 burpees)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 4: 14/7/0 = 21 Double Unders (2 burpees and proud of it!)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Game 5: 7/7/6 = 20 Double Unders (0 burpees)",
+                  "has_video": false
+                }
+              ],
+              "notes": "Rest 60-120sec between games."
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2182504,
+          "title": "DU PRO 8.3 (Week 8, Workout 3)",
+          "url": "/c/double-under-pro/sections/579115/lessons/2182504",
+          "description": "Congratulations, you made it to the final day! It's time to retest and evaluate our progress from Week 1. Remember to keep calm, breathe and be proud. It's not easy to dedicate yourself +8 weeks to a difficult and frustrating movement like Double Unders, but you did it! All that's left is to get warmed up and seize the day.",
+          "sections": [
+            {
+              "name": "WARM UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "2-4 minutes Row, Bike, Slow Jog or No Jump Burpees",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Leg Swings (Forward, Back & Side to Side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Wall Calf Stretch (Each Leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Child Pose",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "DRILL 1: JUMP ROPE WARM-UP (LIGHT AND EASY)",
+              "items": [
+                {
+                  "movement": "20 sec x HEAVY Side Swing Flow",
+                  "has_video": true
+                },
+                {
+                  "movement": "20 sec x HEAVY Alternating Speed Steps",
+                  "has_video": true
+                },
+                {
+                  "movement": "20 sec x HEAVY Scissors Kicks",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec Rest",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets • HEAVY"
+            },
+            {
+              "name": "DRILL 2: DU PRIMER",
+              "items": [
+                {
+                  "movement": "Set 2 • SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • SPEED",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets • Performed as one sequence",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Speed Single Unders",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Big Slow Single Unders",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Penguin Claps",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Single Unders into or up to 20 Double Unders",
+                  "has_video": false
+                }
+              ],
+              "format": "Set 1 • MEDIUM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Record number of Big Slow Single Unders achieved",
+                  "has_video": false
+                },
+                {
+                  "movement": "30 sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "2. 30sec x Speed Single Unders (Fastest style)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Record number Speed Single Unders SU achieved",
+                  "has_video": false
+                },
+                {
+                  "movement": "30 sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "3. 30sec x Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "As many DU attempts as you want in 30 sec.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use this as your warm-up set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec rest",
+                  "has_video": false
+                },
+                {
+                  "movement": "4. 60sec x Double Unders",
+                  "has_video": true
+                },
+                {
+                  "movement": "Your money set. As many attempts as you want in 60 sec (Rest as needed).",
+                  "has_video": false
+                },
+                {
+                  "movement": "The goal here isn’t how many double unders you can do but how many you can do consecutively.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record highest # of unbroken double unders achieved.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "5. 50 x Double Unders for Time",
+                  "has_video": true
+                },
+                {
+                  "movement": "90 sec Time Cap",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record time to complete 50 DU. Add 1 sec for every rep not completed.",
+                  "has_video": false
+                }
+              ],
+              "format": "1. 30sec x Big Slow Single Unders"
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "Looking at your results find your Week 8 Double Under Level and see how it compares to your Week 1 and Week 4 tests.",
+                  "has_video": false
+                },
+                {
+                  "movement": "WODprep Double Under Levels",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 0 - No DU",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 1 - 1 DU",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 2 - 1 DU & SU's",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 3 - SU + DU + SU + DU",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 4 - 2 UB DU",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 5 - 2 UB DU + SU's",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 6 - *Multiple Double Unders",
+                  "has_video": false
+                },
+                {
+                  "movement": "Level 7 - 50+ DU anytime",
+                  "has_video": false
+                }
+              ],
+              "notes": "Level 6.1 • 3-9 DU Level 6.2 • 10 - 19 DU Level 6.3 • 20 - 29 DU Level 6.4 • 30 - 39 DU Level 6.5 • 40 - 49 DU"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

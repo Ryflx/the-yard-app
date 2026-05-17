@@ -1,0 +1,608 @@
+{
+  "skill": "4-week-butterfly-ctb-pull-up-programming",
+  "course_name": "Butterfly Pull-up Chest to Bar",
+  "course_slug": "4-week-butterfly-ctb-pull-up-programming",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/4-week-butterfly-ctb-pull-up-programming",
+  "scraped": "2026-05-17",
+  "total_weeks": 4,
+  "total_lessons": 12,
+  "skipped_lessons": 9,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2182138,
+          "title": "CTB BPUB 1.1 (Week 1, Workout 1)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579024/lessons/2182138",
+          "description": "If you’re reading this, you’ve already got 20+ butterfly pull-ups and at least 10 kipping chest-to-bar pull-ups under your belt — which means you’re ready for Butterfly Chest-to-Bar Pull-ups! If you’re not quite there yet, we recommend starting with the Butterfly Pull-up Breakthrough course to build your foundation first. In this lesson, we’ll begin grooving this new movement pattern and dialling in the positions needed to successfully complete butterfly chest to bars. At the end of the session, you’ll complete baseline videos. Be sure to review them, compare your form to the demo video, and ask yourself: How would I rate my form and efficiency?",
+          "sections": [
+            {
+              "name": "WARM-UP",
+              "items": [
+                {
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Strict CTB Fall Through",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets",
+              "notes": "Rest 2 minutes before Test"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX unbroken Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record the reps for each set",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2182139,
+          "title": "CTB BPUP 1.2 (Week 1, Workout 2)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579024/lessons/2182139",
+          "description": "Let’s work on getting that chest to the bar! If you’re having trouble hitting full range of motion, don’t hesitate to use a box or a low bar. Using your toes for assistance is totally fine if it helps you develop better pulling mechanics. Today is all about getting a real feel for the CTB pattern, so stay focused and intentional with every rep!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "1-2 x Pronated Strict CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Pronated Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Kipping CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 10sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "CTB Build Complex (Beat Swing + Scoop + CTB Pull + Drop)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2182140,
+          "title": "CTB BPUP 1.3 (Week 1, Workout 3)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579024/lessons/2182140",
+          "description": "As always, we need to strengthen the positions required for these movements — and that’s exactly what today is all about. Focus on making solid chest-to-bar contact and squeezing tight through every rep. For the Arms Only Box Drill, make sure you’re set up directly under the bar and that your feet are under your chest as it makes contact. This drill is key for developing the timing and range needed for strong, efficient Butterfly Chest to Bar pull-ups.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30-40sec Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30-40sec Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "5x Arms Only Box Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Film a min 3 set for demo comparison",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX EFFORT CTB hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest +30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Shoulder Row",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "20-30sec Active Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2182141,
+          "title": "CTB BPUP 2.1 (Week 2, Workout 1)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579025/lessons/2182141",
+          "description": "Today we’re putting in the work to really dial in the feel of the Butterfly Chest to Bar pattern. Stay patient, focus on your positions, and trust the process. After today’s session, take a moment to reflect on how the CTB butterfly pattern coming together for you.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM:",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "CTB Build Complex",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video final minute for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2182142,
+          "title": "CTB BPUP 2.2 (Week 2, Workout 2)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579025/lessons/2182142",
+          "description": "Complexes are fun and today’s is a great one! Focus on making consistent chest to bar contact and stay aware of your gaze (hint: don’t look at the pull-up bar). During the Butterfly Pull-up + Butterfly CTB Pull-up drill, pay close attention to where you’re looking. If the movement feels off, your gaze might be the issue. Try keeping your eyes fixed at a 45-degree angle, it may make a big difference. Small adjustments go a long way!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "1-2 x Pronated Strict CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "3-5x Butterfly Pull-up + 1-2x Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec Hollow Body Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "4 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2182143,
+          "title": "CTB BPUP 2.3 (Week 2, Workout 3)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579025/lessons/2182143",
+          "description": "Groove the pattern. Strengthen the pattern. Own the movement.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Bent Arm Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX CTB hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets",
+              "notes": "5 x CTB Build Complex (Beat Swing + Scoop + CTB pull + Drop) Rest walk 1 minute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2182144,
+          "title": "CTB BPUP 3.1 (Week 3, Workout 1)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579026/lessons/2182144",
+          "description": "Remember to focus on making progress with every single rep! Even small improvements matter. Filming your sets can be a powerful way to track that progress over time. After reviewing your EMOM videos from today, how would you rate your ability to scoop through the CTB Butterfly complex? Are you lifting your feet and staying long through the movement, or are you driving to the bar with your knees? Knee drives may feel more efficient, but they often limit chest to bar contact by breaking the hollow position. An “immature scoop” doesn’t just affect your butterfly CTB, it can also hold you back in movements like kipping pull-ups and bar muscle-ups. Focus on refining the pattern, the payoff is worth it.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "CTB Build Complex (Beat Swing + Scoop + CTB pull + Arch)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Film the first and final set",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2182145,
+          "title": "CTB BPUP 3.2 (Week 3, Workout 2)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579026/lessons/2182145",
+          "description": "Today includes a lot of singles and transitions. Stick to your routine and focus on creating consistency with each movement, that’s where real progress builds.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "3-5 x Pronated Strict CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets; 1 set every 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Butterfly CTB Complex",
+                  "has_video": true
+                }
+              ],
+              "format": "4 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2182146,
+          "title": "CTB BPUP 3.3 (Week 3, Workout 3)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579026/lessons/2182146",
+          "description": "Week 3 wraps up today, and it’s a great chance to check in on your control. How dialed in is your movement? If you’re not quite there yet, ask yourself: What might be missing, and how can you set yourself up for success in next week’s retest? It could be as simple as an extra day of recovery. If you’re having trouble hitting the prescribed rep ranges in any drill, don’t sweat it! Just modify to a range you can complete consistently with quality. Consistency beats quantity every time.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "10sec Chin Over Bar Hold + Push Away + Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets; 1 set every 90sec:",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Butterfly Pull-ups + 1-2 x CTB Butterfly Pull-ups",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2182155,
+          "title": "CTB BPUP 4.1 (Week 4, Workout 1)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579027/lessons/2182155",
+          "description": "Last week already?! Today we’re fine-tuning your movement patterns and building toward that final retest. Stay sharp, have fun, and trust the process. By now, those CTB reps should be feeling pretty dialled in, especially throughout today’s EMOM!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "2 x CTB Build Complex",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "1 x Butterfly CTB Complex",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3-5 x Butterfly Pull-up + 1-2 x CTB Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "Rest walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video final set for review",
+                  "has_video": false
+                }
+              ],
+              "format": "16 min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2182156,
+          "title": "CTB BPUP 4.2 (Week 4, Workout 2)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579027/lessons/2182156",
+          "description": "It’s the final day to polish things up before we wrap this program up with a bang! Prioritize recovery by taking an extra rest day if needed and making sure you’re getting a full night of sleep. For your next session, plan to hit the 4.3 CTB retest before doing any other programming. Give yourself the best shot at showing off everything you’ve been working hard on. Let’s finish strong!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets; 1 set every 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Butterfly CTB Complex",
+                  "has_video": true
+                },
+                {
+                  "movement": "Hollow Hop In + Butterfly Pull-up + Butterfly CTB Pull-up",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2182157,
+          "title": "CTB BPUP 4.3 (Week 4, Workout 3)",
+          "url": "/c/4-week-butterfly-ctb-pull-up-programming/sections/579027/lessons/2182157",
+          "description": "Congratulations on making it to TEST DAY! It’s time to showcase all your hard work and see just how far you’ve come. After today’s session, take a moment to review your Week 1 CTB videos and numbers, and compare them to your results today. Where did you see the biggest improvement? What areas still need refinement? We want to hear all about your progress! Share your before-and-after videos on the Wall of Wins and score some sweet WODprep swag just for posting. You’ve put in the work, time to show it off!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Strict CTB Fall Through",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest at least 2 minutes before Test",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX Unbroken Butterfly CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video all sets and share your success on the Wall of Wins!",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

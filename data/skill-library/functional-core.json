@@ -1,0 +1,1457 @@
+{
+  "skill": "functional-core",
+  "course_name": "Functional Core",
+  "course_slug": "functional-core",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/functional-core",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 4,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2182415,
+          "title": "FC 1.1 (Week 1, Workout 1)",
+          "url": "/c/functional-core/sections/579091/lessons/2182415",
+          "description": "Welcome athletes! Today starts your journey of building the core that is needed to staying healthy, performing at high levels, and feeling good! The aim of Week 1 is to build basic core control that will be needed for later more advanced movements. Some of these movements may be simple for some of you and difficult for others. Either way, the basics are the basics because they work. So let's build this core from the ground up and set up a really strong foundation.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Straight Leg Raises on Roller (each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15s x Plank on Elbows",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Bird Dogs with Foam Roller (5 each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15s x Side Plank on Elbows (each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "CARRIES",
+              "items": [
+                {
+                  "movement": "50m x Suit Case Carry",
+                  "has_video": true
+                },
+                {
+                  "movement": "50m x Dual KB Front Rack Carry (or till middle back fatigues)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds not for time"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2182416,
+          "title": "FC 1.2 (Week 1, Workout 2)",
+          "url": "/c/functional-core/sections/579091/lessons/2182416",
+          "description": "Today we’re focusing on building foundational global flexion and extension—teaching the body to move as one strong, coordinated unit. This is key for movements like Toes-to-Bar, Pull-ups, and Muscle-ups. Quick note: When you see a “↳” in the programming, it signals a superset—perform the first movement, then immediately move on to the one marked with the arrow",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Straight Leg Crunches",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Lumbar Back Extensions",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Toe Touch Sit-Ups",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "sets": 20,
+                  "movement": "Hammer Jacks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Raises",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "GHD Back Extensions (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳10 x GHD Kick Backs",
+                  "has_video": true
+                },
+                {
+                  "movement": "No GHD? Substitute",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Prisoner Superman",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2182417,
+          "title": "FC 1.3 (Week 1, Workout 3)",
+          "url": "/c/functional-core/sections/579091/lessons/2182417",
+          "description": "For Day 3, we are going to hit some crucial movements that are usually not performed in your local box. These movements should be performed one to two times a week once you have completed the Functional Core Program.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Pallof Presses (each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Kneeling KB Throws (each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Kneeling Med Chops",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "movement": "30s x Hanging Knee Raise Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "L-Sit Single Leg Alternating Raises (each leg)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2182418,
+          "title": "FC 2.1 (Week 2, Workout 1)",
+          "url": "/c/functional-core/sections/579092/lessons/2182418",
+          "description": "Athletes — as we head into Week 2, we’ll be increasing difficulty either by adding volume (more sets or reps) or by progressing to harder movements. Some workouts may look similar to last week, but they’ll be more challenging. Today, we’re focusing on strengthening the lateral lines — the sides of your body. Building strength here helps support more powerful and stable movement in exercises like squats, deadlifts, overhead presses, and kipping. A stronger lateral chain means your body can handle more demanding positions with greater confidence and control.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Straight Leg Raises on Roller - Progression #2 (5 each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15s x Plank on Elbows (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 15s x Push Up Plank",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Bird Dogs with Foam Roller (10 each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Elbow Side Plank with Leg Raises (each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "CARRIES",
+              "items": [
+                {
+                  "sets": 7,
+                  "movement": "Single Arm KB Pulls - (each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "50m x Suit Case Carry (or till grip fatigues)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2182419,
+          "title": "FC 2.2 (Week 2, Workout 2)",
+          "url": "/c/functional-core/sections/579092/lessons/2182419",
+          "description": "Week 2 of increasing our global flexion and extension strength. After hitting anti-rotation strengthening on Mondays it allows our body to increase power, strength, & coordination in these more demanding movements. For instance, when going into the extension piece of a muscle up swing, if we do not have strong intrinsic spinal stabilizers, we will be much more susceptible to injury and not only that, our body will naturally limit our ROM. Day 1 we work on being more ridged and stable, and Day 2 we are working on combining that with fluidity and grace!",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 12,
+                  "movement": "Straight Leg Crunches",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Lumbar Back Extensions",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Toe Touch Sit-Ups",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Hanging Knee Raises (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 20x Hammer Jacks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Raises",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "GHD Back Extensions (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 10x GHD Kick Backs",
+                  "has_video": true
+                },
+                {
+                  "movement": "No GHD? Substitute",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Prisoner Supermans",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2182420,
+          "title": "FC 2.3 (Week 2, Workout 3)",
+          "url": "/c/functional-core/sections/579092/lessons/2182420",
+          "description": "Today’s focus is anti-rotation work to strengthen your transverse abdominis — a key core muscle that’s often overlooked. Once we’ve activated that, we’ll move into some foundational rotation drills. These are essential for developing stronger, more controlled full-body rotation in the future. Strong obliques and rotational strength are critical for trunk stability and injury prevention — especially in a sport like CrossFit, where we place a lot of stress on the spine. As humans, we’re built for rotation (it’s why we’re so good at throwing), so training these patterns alongside your compound lifts helps distribute force more safely and effectively.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 12,
+                  "movement": "Pallof Presses (each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Kneeling KB Throws (each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Kneeling Med Ball Chops",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "movement": "45s x Hanging Knee Raise Tucks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "L-Sit Single Leg Alternating Raises Each Leg (L-Sit Progression)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Pike Pulses",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2182421,
+          "title": "FC 3.1 (Week 3, Workout 1)",
+          "url": "/c/functional-core/sections/579093/lessons/2182421",
+          "description": "Hopefully by now you’re staying consistent and starting to move with more confidence and endurance. In these early weeks, we’re focused on building a strong, stable core — especially through anti-rotation and lateral flexion work. Why? Because weakness in these areas is often what leads to back pain later in life. It’s why something as simple as shovelling snow can cause injuries — we lose the core strength we naturally had when we were young and active. Once we rebuild that foundation, your nervous system starts to feel safer, and your body can move more freely without holding tension in the wrong places. Think of it this way: if your body knows it’s strong and stable, it won’t hit the brakes when you try to move deeper or stretch further. That’s when mobility actually starts to work — and you finally get flexy.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Dual Straight Leg Raises on Roller (Progression #3)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20s x Forward Lean Plank",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Bird Dogs with Foam Roller (5 each side) (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 50m x Bear Crawl With Foam Roller",
+                  "has_video": true
+                },
+                {
+                  "movement": "The goal is to go as far as you can without the foam roller falling off your back",
+                  "has_video": false
+                },
+                {
+                  "movement": "20s x Full Side Plank Hold (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 10x Elbow Side Plank With Leg Raises (10 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "CARRIES",
+              "items": [
+                {
+                  "movement": "50m x Dual KB Front Rack Carry (or until middle back fatigue)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Half Moon KB Rolls (each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2182422,
+          "title": "FC 3.2 (Week 3, Workout 2)",
+          "url": "/c/functional-core/sections/579093/lessons/2182422",
+          "description": "Let’s continue working global flexion and extension by adding weight to a few familiar movements. If you’re not quite ready for weighted variations, no problem — stick with the Week 2 versions and continue building a strong foundation.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Weighted Straight Leg Crunches",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Prisoner Superman",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Weighted Straight Leg Sit-ups",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Hanging Knee Raises (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 10 x Hanging Leg Raises",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "GHD Back Extensions",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳10 Single Leg Glute Bridges Each leg",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2182423,
+          "title": "FC 3.3 (Week 3, Workout 3)",
+          "url": "/c/functional-core/sections/579093/lessons/2182423",
+          "description": "There are a few things about this week that I really love. The push-up bird dogs, for one, are a really great progression for increasing our rotational stability or anti-rotation strength. Once we incorporate some mid-line stability, we are going to add in some throws that re-teach you how to create more rotation in your t-spine - which many of us lose when we only lift in the frontal and sagittal planes (ie. like Squatting, Deadlifts, Pull-ups and about every other CrossFit movement).",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 12,
+                  "movement": "Push Up Bird Dog Holds (6 each side, 5s holds)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Square Kneeling Med Ball Throws (6 each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Square Standing Med Ball Throws (6 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "MAX EFFORT Hanging L-Sit",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "L-Sit Progression 2 (each leg, 5s holds)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Pike Pulses",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds x not for time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2182424,
+          "title": "FC 4.1 (Week 4, Workout 1)",
+          "url": "/c/functional-core/sections/579094/lessons/2182424",
+          "description": "For week 4 we are incorporating more difficult rotational stability exercises. Now that we are getting some better TBA engagement we are going to start to incorporate more rotational bodyweight movements. Like we discussed before, we must increase the spinal stabilizers strength and then increase the coordination and timing of those stabilizers. So start to look for more flow-like body weight movements.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Reverse Crunches (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 8 x Straight Leg Raises With the Roller",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Push Up Bird Dog Holds (5s Hold, 10 each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "50m x Bear Crawl with Roller",
+                  "has_video": true
+                },
+                {
+                  "movement": "Every time the foam roller falls off during the bear crawl, 5 push-up penalty",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Full Side Plank Leg Raises (10 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            },
+            {
+              "name": "CARRIES",
+              "items": [
+                {
+                  "movement": "4 sets: 30s x Forward Lean Plank",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets: 5x Y-Rotations Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets: 10x Half Moon KB Rolls (each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2182425,
+          "title": "FC 4.2 (Week 4, Workout 2)",
+          "url": "/c/functional-core/sections/579094/lessons/2182425",
+          "description": "One thing to think about in these global flexion and extensions days is creating balance. Going forward in your training, you should always strive to create balance in your programming. For instance, in our ground work we have to two global flexion movements and two global extension movements. The act of going back and forth between the two will really increase you mobility and power in movements like muscle ups.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 15,
+                  "movement": "Weighted Straight Leg Crunches",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Prisoner Supermans",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Weighted Sit-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Leg Glute Bridges",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Max Effort Bridge Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "movement": "3 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Max Effort Hanging L-Sit Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Record times | Rest 1 minute",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hanging Straight Leg Raises",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 15,
+                  "movement": "GHD Back Extensions",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "No GHD? Substitute",
+                  "has_video": false
+                },
+                {
+                  "sets": 15,
+                  "movement": "Prisoner Supermans",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, not for time"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2182426,
+          "title": "FC 4.3 (Week 4, Workout 3)",
+          "url": "/c/functional-core/sections/579094/lessons/2182426",
+          "description": "We’re working our way toward full med ball throws. If you played a throwing sport growing up, this might feel natural — but for others, it can be trickier than it looks. Full-body throws are great for improving weight shifts, absorbing force through the landing leg, and freeing up our ‘slings’ — the muscle chains that often get stiff from all the squatting, deadlifting, and pressing we do without enough rotational movement or timing practice.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 12,
+                  "movement": "Push-up Knee to Elbow (6 each side, 5s hold)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Square Standing Med Ball Throws (6 each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Full Med Ball Throws (6 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "movement": "4 sets: 1x Max Effort L-Sit Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1:30 between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets: 15x Pike Pulses",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1:30 between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Round, not for time",
+              "notes": "Rest walk 2 minutes before next movement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2182436,
+          "title": "FC 5.1 (Week 5, Workout 1)",
+          "url": "/c/functional-core/sections/579095/lessons/2182436",
+          "description": "Over halfway through the program! Hopefully you are staying consistent, and by now are feeling more solid in your lifts and gymnastic movements.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 12,
+                  "movement": "Reverse Crunches (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 12x Straight Leg Raises With the Roller",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Push Up Bird Dog Hold (5s hold, 10 each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Pallof Presses (each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "The push-up bird dog and the palloff presses are really attacking our TBA endurance.",
+                  "has_video": false
+                },
+                {
+                  "movement": "15s x Side Plank Hold (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 15x Full Side Plank Leg Raises (15 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            },
+            {
+              "name": "CARRIES",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Paused KB Goblet Squats",
+                  "has_video": true
+                },
+                {
+                  "sets": 3,
+                  "movement": "Turkish Get Ups (TGU’s) each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 14,
+                  "movement": "Y-Rotations (7 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2182437,
+          "title": "FC 5.2 (Week 5, Workout 2)",
+          "url": "/c/functional-core/sections/579095/lessons/2182437",
+          "description": "It’s Week 5, and we’re stepping into more demanding global flexion and extension work. If you haven’t spent much time training strict positions in your gymnastics (especially Toes to Bar), expect to see a big improvement from here on out.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Strict Knees to Elbows",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Extension Plank Raises",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Max Effort Bridge Holds",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "movement": "2 sets: 10x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets: 10x Hollow Body Band Pull Rest",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets: 10x Alternating Single Leg Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Round, not for time",
+              "notes": "+ +"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2182438,
+          "title": "FC 5.3 (Week 5, Workout 3)",
+          "url": "/c/functional-core/sections/579095/lessons/2182438",
+          "description": "Today, we’re focusing on ironing out any asymmetries through single-arm pulls and medball throws. These unilateral movements help address imbalances that can cause issues when pulling with both arms — like during barbell lifts.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 16,
+                  "movement": "Push-up Knees to Elbow (8 each side, 5s hold)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Single Arm KB Pulls (6 each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Full Med Ball Throws (6 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "movement": "3 sets: 1x Max Effort L-Sit Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets: 20x Side Plank Jump Stretch Rows (10 each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets: 20x Hanging Flutter Kicks",
+                  "has_video": true
+                },
+                {
+                  "movement": "20 too easy? Keep going until fatigue.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Round, not for time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2182439,
+          "title": "FC 6.1 (Week 6, Workout 1)",
+          "url": "/c/functional-core/sections/579096/lessons/2182439",
+          "description": "We’re starting the home stretch! This final push is all about building a core that supports better movement, longevity in your lifts, and understanding proper bracing mechanics. A strong, functional core isn’t just for now, it’s the foundation for moving well and improving the chances of being injury-free for a lifetime.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Straight Leg Raises No Roller",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Pallof Presses (each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "50m x Knee to Elbow Bear Crawls",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Full Side Plank Leg Raises Each Side (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳15x Side Plank Rows",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "CARRIES",
+              "items": [
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "30s x Forward Lean Plank",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "50m (or until fatigued) x Suit Case Carry (each side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "3-5 x TGU's (each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time",
+              "notes": "Rest 1 minute before last set"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2182440,
+          "title": "FC 6.2 (Week 6, Workout 2)",
+          "url": "/c/functional-core/sections/579096/lessons/2182440",
+          "description": "Global Positioning movements you do in your everyday CrossFit programming like pull-ups, toes to bar, muscle ups should be feeling stronger these days. Keep the good work rolling!",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Plank Slides",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Rolling Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Extension Plank Raises (5s Each)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "movement": "2 sets: 10x Strict Knees to Elbows",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets: 15x Hollow Body Band Pull",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets: 20x Alternating Single Leg Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Round, not for time"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2182441,
+          "title": "FC 6.3 (Week 6, Workout 3)",
+          "url": "/c/functional-core/sections/579096/lessons/2182441",
+          "description": "Continuing to hammer the hip flexor strength as well as hitting our oblique slings - both sides. GROUND WORK 3 Rounds, not for time 20x Flexor Raise Overs (10 each leg) Focus on stay as forward as possible. Hug the knee tight and try not to lean back to raise the leg. 16x Single Arm Russian KB Swings (8 each side) 16x Kneeling KB Throws (8 each side) FINISHER 2 Rounds, not for time In 1 minute 15s On x 15s Off L-Sit Holds Rest remaining time + 6 x Straight Leg Raises No Roller 12x Y-Rotation Complex (each side) Rest 2 minutes between rounds",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2182442,
+          "title": "FC 7.1 (Week 7, Workout 1)",
+          "url": "/c/functional-core/sections/579097/lessons/2182442",
+          "description": "Not too much is changing this week. We'll be closing up the program and finishing up with our biggest and most demanding moves. Going forward, always remember to program kettlebell work like we have done in this program - Unilateral work is so important as we continually do bilateral movements with the barbel. GROUND WORK 3 Rounds, not for time 10x Straight Leg Raises No Roller 10x Bird Dog Push Up Holds (5s hold) 20x Spider-Man Push-ups CARRIES 2 Rounds, not for time 10x AHAP Dual KB Front Rack Front Squats 50m x Suit Case Carry + OH Waiters Carry (each side) 2x TGU's (each side)",
+          "sections": []
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2182443,
+          "title": "FC 7.2 (Week 7, Workout 2)",
+          "url": "/c/functional-core/sections/579097/lessons/2182443",
+          "description": "Pace between movements so we can focus on strength. If we run through these movements too fast, we'll miss the stimulus we're aiming for.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 15,
+                  "movement": "Plank Slides",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Hanging L-Sit Flutter Kicks",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "GHD Hip Extensions",
+                  "has_video": true
+                },
+                {
+                  "movement": "No GHD? Substitute",
+                  "has_video": false
+                },
+                {
+                  "sets": 15,
+                  "movement": "Banded Good Mornings",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Hollow Rocks (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 8x V-Ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Bridge Pulses",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Single Leg Alternating Toes to Bar",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2182444,
+          "title": "FC 7.3 (Week 7, Workout 3)",
+          "url": "/c/functional-core/sections/579097/lessons/2182444",
+          "description": "Rotational work is very vital for health and longevity. Moving forward in your training, try to implement some rotational work at least once a week.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 16,
+                  "movement": "Full Med Ball Rotations",
+                  "has_video": true
+                },
+                {
+                  "sets": 16,
+                  "movement": "KB Snatches (8 each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 16,
+                  "movement": "Kneeling KB Throws (8 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "KB Half Moon Rolls (each side or until shoulder fatigues)",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Forward Lean Plank (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ To fatigue x Plank Slide",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Flexor Raise Overs (10 each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds not for time",
+              "notes": "Rest 2 minutes between rounds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2182456,
+          "title": "FC 8.1 (Week 8, Workout 1)",
+          "url": "/c/functional-core/sections/579098/lessons/2182456",
+          "description": "Welcome to the final week! By now, you’ve built a solid foundation for a truly functional core. Your bracing mechanics should feel stronger and more automatic, supporting smoother movement in big lifts, gymnastics skills, and beyond. This program was designed to get every part of your core firing — even the weaker links — to boost performance and reduce the risk of injury.",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 15,
+                  "movement": "Reverse Crunches",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Bird Dog Push Up Holds (5s holds)",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Spider-man Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "15s x Right Full Side Plank Holds (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 10x Right Full Side Plank Leg Raises",
+                  "has_video": true
+                },
+                {
+                  "movement": "15s x Left Full Side Plank Holds (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 10x Left Full Side Plank Leg Raises",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            },
+            {
+              "name": "CARRIES",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "AHAP Dual KB Front Rack Front Squats",
+                  "has_video": true
+                },
+                {
+                  "movement": "65m x Suit Case Carry + OH Waiters Carry (each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 3,
+                  "movement": "TGU's (each side / Aim a little heavier this week)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2182457,
+          "title": "FC 8.2 (Week 8, Workout 2)",
+          "url": "/c/functional-core/sections/579098/lessons/2182457",
+          "description": "By now, you should be feeling noticeably stronger in your global flexion and extension patterns. This foundational strength will carry over into movements like Toes-to-Bar, Muscle-Ups, Kipping Pull-Ups, and more. Here’s to a stronger, more powerful core — and all the gains that come with it! 💪",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 7,
+                  "movement": "Forward Lean Plank (Immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ To fatigue x Plank Slide",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Strict Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "GHD Hip Extensions",
+                  "has_video": true
+                },
+                {
+                  "movement": "No GHD? Substitute",
+                  "has_video": false
+                },
+                {
+                  "sets": 15,
+                  "movement": "Banded good mornings",
+                  "has_video": true
+                },
+                {
+                  "movement": "FINISHER",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Rounds, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Hollow Rocks (immediately into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ 10 V-Ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Bridge Pulses",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Alternating Single Leg Toes to Bar",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2182458,
+          "title": "FC 8.3 (Week 8, Workout 3)",
+          "url": "/c/functional-core/sections/579098/lessons/2182458",
+          "description": "Final Day of Anti-Rotation + Rotation Training! This wraps up your dedicated work on anti-rotation and rotation strength — two essential pillars for a strong, resilient spine. If you’re training heavy compound lifts, it’s crucial that your spinal stabilizers and oblique slings are just as strong as your prime movers. Remember, these movements aren’t just accessories — they’re foundational for performance and long-term health. Thanks again for being part of this program — may your core stay strong and functional for life!",
+          "sections": [
+            {
+              "name": "GROUND WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Pallof Presses (each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Knee to Elbow Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Flexor Raise Overs (each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            },
+            {
+              "name": "FINISHER",
+              "items": [
+                {
+                  "sets": 20,
+                  "movement": "KB Half Moon Rolls (10 each side or shoulder fatigue)",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Kneeling Oblique KB Throws (10 each side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Full Med Rotation Throws (10 each Side)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds, not for time"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

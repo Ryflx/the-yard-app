@@ -1,10 +1,11 @@
 import { Suspense } from "react";
 import { format, addDays, startOfWeek, isToday, parseISO, isSunday } from "date-fns";
-import { getWorkoutsForWeek, getPersonalSummaryForWorkouts, getUserProfile, getStreakData } from "@/app/actions";
+import { getWorkoutsForWeek, getPersonalSummaryForWorkouts, getUserProfile, getStreakData, getActivePlan } from "@/app/actions";
 import { WeekNav } from "@/components/week-nav";
 import { DaySelector } from "@/components/day-selector";
 import { ClassTypeTabs } from "@/components/class-type-tabs";
 import { OnboardingTour } from "@/components/onboarding-tour";
+import { pickNextTour } from "@/lib/programming/tour";
 import { WorkoutCardSlider } from "@/components/workout-card-slider";
 import type { ClassType } from "@/db/schema";
 import Link from "next/link";
@@ -32,6 +33,7 @@ export default async function SchedulePage({ searchParams }: Props) {
 
   const workouts = await getWorkoutsForWeek(startStr, endStr, classType);
   const isBarbell = classType === "BARBELL";
+  const activePlan = classType === "CUSTOM" ? await getActivePlan() : null;
 
   const workoutLifts = isBarbell
     ? workouts.map((w) => {
@@ -130,11 +132,12 @@ export default async function SchedulePage({ searchParams }: Props) {
     return "WOD";
   }
 
-  const showOnboarding = !profile?.onboardingComplete;
+  const seenModules = (profile?.seenTourModules as string[] | undefined) ?? [];
+  const nextTour = pickNextTour(seenModules, profile?.onboardingComplete ?? false);
 
   return (
     <div className="flex flex-col gap-8">
-      {showOnboarding && <OnboardingTour />}
+      {nextTour && <OnboardingTour tourId={nextTour} />}
 
       <section className="mb-2">
         <p className="mb-2 font-label text-xs uppercase tracking-[0.2em] text-primary">
@@ -237,6 +240,26 @@ export default async function SchedulePage({ searchParams }: Props) {
         {weekDays.map((day) => {
           const workout = workouts.find((w) => w.date === day.date);
           if (!workout) {
+            if (classType === "CUSTOM" && !activePlan) {
+              return (
+                <div key={day.date} className="px-4 py-10 text-center">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-on-surface-variant">CUSTOM PROGRAMMING</p>
+                  <h2 className="mt-2 font-headline text-xl font-black uppercase tracking-tight">
+                    BUILD YOUR SKILL PLAN
+                  </h2>
+                  <p className="mt-3 text-sm text-on-surface-variant">
+                    Pick the skills you want to work on — we&apos;ll weave them into your week.
+                  </p>
+                  <Link
+                    href="/programming/new"
+                    data-tour="programming-cta"
+                    className="mt-6 inline-block bg-primary-container px-6 py-3.5 font-headline text-sm font-black uppercase tracking-widest text-on-primary-fixed"
+                  >
+                    START YOUR FIRST PLAN
+                  </Link>
+                </div>
+              );
+            }
             return (
               <div key={day.date} className="bg-surface-container-high p-12 text-center">
                 <p className="font-headline text-xl font-bold uppercase tracking-tight text-on-surface-variant">

@@ -1,0 +1,3002 @@
+{
+  "skill": "shoulderrom-unlocked",
+  "course_name": "ShoulderROM Unlocked",
+  "course_slug": "shoulderrom-unlocked",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/shoulderrom-unlocked",
+  "scraped": "2026-05-17",
+  "total_weeks": 1,
+  "total_lessons": 57,
+  "skipped_lessons": 7,
+  "weeks": [
+    {
+      "week": 0,
+      "workouts": [
+        {
+          "id": "ref.1",
+          "lesson_id": 2129972,
+          "title": "Before Photos",
+          "url": "/c/shoulderrom-unlocked/sections/565475/lessons/2129972",
+          "description": "Taking \"Before Pictures\" will allow you to clearly see where you are starting your shoulder mobility journey from. Ideally, you want to reveal as much as your shoulder and upper body area as possible in the pictures. For that reason, men are encouraged to take their photos topless or in a tank top and women in sports bra or tank top. 1. Picture should be taken up to the chin with the full arm in view. 2. Stand naturally with arms loose and relaxed by your sides. 1. Picture should be taken from the top of the head to the the waist. 2. Stand naturally with arms loose and relaxed by your sides.",
+          "sections": []
+        },
+        {
+          "id": "ref.2",
+          "lesson_id": 2129915,
+          "title": "ShoulderROM Pre-Test",
+          "url": "/c/shoulderrom-unlocked/sections/565475/lessons/2129915",
+          "description": "Ensure you have your ShoulderROM Scorecard printed to document your results. Keep a phone or camera handy to capture your before photos and even video your tests for reference and review. We also recommend taking regular photos to track any visible improvements in your shoulder area. Remember we'll be grading each test out of 3. Grade '0' if there is any pain whatsoever in the movement (pain) Grade '1' if the range is very restricted (difficulty moving) Grade '2' if range is mildly restricted (movement a little difficult) Grade '3' if you can exhibit a full range of motion (Nothing limiting movement)",
+          "sections": [
+            {
+              "name": "TEST 1 • BEHIND THE BACK REACH",
+              "items": []
+            },
+            {
+              "name": "TEST 2 • OVER THE SHOULDER REACH",
+              "items": []
+            },
+            {
+              "name": "TEST 3 • OVERHEAD MOBILITY",
+              "items": []
+            },
+            {
+              "name": "TEST 4 • SHOULDER EXTENSION",
+              "items": []
+            },
+            {
+              "name": "TEST 5 • SHOULDER EXTENSION",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.3",
+          "lesson_id": 2130372,
+          "title": "》WEEK 1 | Geek Out",
+          "url": "/c/shoulderrom-unlocked/sections/565476/lessons/2130372",
+          "description": "Each week, ShoulderROM workouts will have a specific focus on one of the following;",
+          "sections": []
+        },
+        {
+          "id": "ref.4",
+          "lesson_id": 2129998,
+          "title": "SROM | Day 1",
+          "url": "/c/shoulderrom-unlocked/sections/565476/lessons/2129998",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Thoracic Extension | 1 x 1:30min",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Cat Cow | 1x 1:30min",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Chicken Wing | 1x 45sec each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Plank | 4 x 20sec on / off",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY | TGU",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① KB Stability Circles | 10 clockwise & 10 counterclockwise (each arm)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Emphasize good form over weight, lock out at the top. Focus on keeping neutral spine.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ],
+              "notes": "3 sets, not for time"
+            }
+          ]
+        },
+        {
+          "id": "ref.5",
+          "lesson_id": 2130325,
+          "title": "SROM | Day 2",
+          "url": "/c/shoulderrom-unlocked/sections/565476/lessons/2130325",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Modified Child's Pose | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "Move in and out of the child pose position",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Snow Angel | 1 set x 1:00min",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Shoulder Extension| 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Neck Flexor Stretch | 30 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Extension Plank | 3 sets x 10 sec on | 10 sec off",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"A\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Anterior Shoulder Extension with Internal Rotation | 1:00 min x each side (accumulate)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Keep it Dynamic!",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Posterior Shoulder Extension with Internal Rotation | 1:00 min x each side (accumulate)",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.6",
+          "lesson_id": 2130369,
+          "title": "SROM | Day 3",
+          "url": "/c/shoulderrom-unlocked/sections/565476/lessons/2130369",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Subscapular Smash | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Thoracic Extension | 1 set x 1:30min",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Reach Under | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Side Lying Internal Rotation Windmills | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Oblique Chops | 3 sets x 8 reps (each side)",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Overhead Waiters Carry - 3 x 30ft each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Zig-zag and turn frequently to increase shoulder activation.",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Single Arm Suitcase Carry - 3 x 30ft each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Pull your belly button in and keep stable",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.7",
+          "lesson_id": 2130370,
+          "title": "SROM | Day 4",
+          "url": "/c/shoulderrom-unlocked/sections/565476/lessons/2130370",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① 1st Rib Mobilization | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Child's Pose Off of Bench | 1 set x 1:30 min (Hold 7-10 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Foam Roller Pec Minor Release | 45sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Foam Roller Lat Release | 45sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Push+ | 3 sets x 15 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Choose the modification you can hold best",
+                  "has_video": false
+                },
+                {
+                  "movement": "Variation 1 • Plank with knees ON the ground",
+                  "has_video": false
+                },
+                {
+                  "movement": "Variation 2 • Plank with knees OFF the ground",
+                  "has_video": false
+                },
+                {
+                  "movement": "Variation 3 • Push up position",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"B\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Front Rack Banded Lat Pull | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Remember, ribs down and core tight",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Overhead Lat Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Drive head trough and keep it dynamic",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.8",
+          "lesson_id": 2130371,
+          "title": "SROM | Day 5",
+          "url": "/c/shoulderrom-unlocked/sections/565476/lessons/2130371",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Subscapular Smash | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Snow Angels | 1:00 min (Hold 7-10 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Shoulder Extension | 45 sec x each side)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Sprinklers | 30 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Chicken Wings | 30 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ [PNF] - Proprioceptive Neuromuscular Facilitation | 1:00min (Alternate sides)",
+                  "has_video": false
+                },
+                {
+                  "movement": "One palm facing up and the other one facing down, look to the facing down palm",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY FRIDAYS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "2 sets, not for time:",
+                  "has_video": false
+                },
+                {
+                  "movement": "① T’s & Y’s | 7 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Strengthening the posterior chain",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Band Pull-aparts | 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Drive head trough and keep it dynamic",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.9",
+          "lesson_id": 2131000,
+          "title": "》WEEK 2 • Geek Out",
+          "url": "/c/shoulderrom-unlocked/sections/565477/lessons/2131000",
+          "description": "",
+          "sections": [
+            {
+              "name": "WEEK 2",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.10",
+          "lesson_id": 2130916,
+          "title": "SROM | Day 6",
+          "url": "/c/shoulderrom-unlocked/sections/565477/lessons/2130916",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Mid Trap Smash | 1:00 min each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Reach Unders | 1:00 min (hold 5-7secs)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Side Lying Windmills | 40 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Post Delt Stretch | 1:00 min (switch sides every 5-7secs)",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Push Ups | 3 sets x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Push through the shoulders, round upper back. Modify to knees if necessary.",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY | TGU",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① KB Half Moon Rolls | 5 reps x each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Picture perfect form. Technique before weight.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.11",
+          "lesson_id": 2130917,
+          "title": "SROM | Day 7",
+          "url": "/c/shoulderrom-unlocked/sections/565477/lessons/2130917",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Thoracic Bridges | 1:00min",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Seated Twist | 30 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Modified Child's Pose with Walking Hands | 1:00 min (10 sec each side)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Banded Pec Stretch | 45sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Extension Plank | 4sets x 20 sec on | 20 off",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"A\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Shoulder Internal Rotation Banded distraction | (accumulate) 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set band a little higher than head height",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Horizontal Adduction Banded Distraction | (accumulate) 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set band around chest height",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.12",
+          "lesson_id": 2130918,
+          "title": "SROM | Day 8",
+          "url": "/c/shoulderrom-unlocked/sections/565477/lessons/2130918",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Posterior Delt Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Side Lying Internal Rotation | 30 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Internal Rotation Swimmers | 1:00 min (Hold back position 5 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Bow and Arrows | 1:00 min (Hold 5 sec up, 5 sec down)",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ T's | 3 sets x 7 reps (Contract for 2 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Bonus Programming: CARRY & PRESS",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Waiters Carry Complex | 3 sets x each side",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "KB Presses | 30m x Waiter Carry | 5 x KB Presses | 30m x Waiter Carry",
+                  "has_video": false
+                },
+                {
+                  "movement": "Add Zig-zags to increase shoulder activation.",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Single Arm Suitcase Carry | 3 sets x 30ft each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Pull your belly button in and keep hips square",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.13",
+          "lesson_id": 2130919,
+          "title": "SROM | Day 9",
+          "url": "/c/shoulderrom-unlocked/sections/565477/lessons/2130919",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① 90 deg Pec Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Y-Pec Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Pole Reach Unders | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Pole Lat Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Post Delt Punches | 3 sets x 7 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING : JOINT CAPSULE SUPPORT \"B\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Pec Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Lat Stretch | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.14",
+          "lesson_id": 2130920,
+          "title": "SROM | Day 10",
+          "url": "/c/shoulderrom-unlocked/sections/565477/lessons/2130920",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Reach & Turn-outs | 2 sets x 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Staggered Y-Raises | 2 sets x 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Seated Wall Slides | 2 sets x 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ OH Raises | 2 sets x 6 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY FRIDAYS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① T’s & Y’s | 10 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Band Pull-aparts | 10 reps",
+                  "has_video": false
+                }
+              ],
+              "notes": "2 sets, not for time:"
+            }
+          ]
+        },
+        {
+          "id": "ref.15",
+          "lesson_id": 2131004,
+          "title": "》WEEK 3 • Geek Out",
+          "url": "/c/shoulderrom-unlocked/sections/565478/lessons/2131004",
+          "description": "",
+          "sections": [
+            {
+              "name": "WEEK 3",
+              "items": [
+                {
+                  "movement": "Lessons typically start off with deep tissue work, then go into the daily flow/working on re-wiring movement, then lastly working on stability.",
+                  "has_video": false
+                },
+                {
+                  "movement": "By week 3 we are clearing up some adhesions and improving range of motion.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.16",
+          "lesson_id": 2131005,
+          "title": "SROM | Day 11",
+          "url": "/c/shoulderrom-unlocked/sections/565478/lessons/2131005",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① First Rib Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Child's Pose Off the Bench | 1:00 min (hold 5-7secs)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Doorway Pec Stretch | 1:00 min (hold 7-10 secs)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Plank Push-Ups | 3 sets x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Modify to knees if necessary",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Yoga Push-Ups | 3 sets x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Modify to regular push-ups with the complete range of motion",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY | TGU",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① KB Sit-Ups | 5 reps x each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Keep the KB tight to the body. Put the same leg down as the arm that is pressing up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Keep chest tall when sitting up and eyes on KB.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.17",
+          "lesson_id": 2131006,
+          "title": "SROM | Day 12",
+          "url": "/c/shoulderrom-unlocked/sections/565478/lessons/2131006",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Peanut Extension | 1:30 min (moving up and down)",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Cat - Cow | 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Jefferson Curls | 3 sets x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Y- Rotation | 3 sets x 5 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"A\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Thoracic Rotation | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.18",
+          "lesson_id": 2131007,
+          "title": "SROM | Day 13",
+          "url": "/c/shoulderrom-unlocked/sections/565478/lessons/2131007",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Internal Rotation Smash | 1:00 min each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Side Lying Windmills | 10 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Reach Unders | 1:00 min (Hold 5-7 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Bow and Arrows | 10 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded Reverse Fly's | 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Banded Horizontal External Rotation| 10 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: CARRY & PRESS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 Sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Upside Down KB Waiters Carry | 30-50m track x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Flip the KB upside down so that the bell faces the ceiling",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Unilateral Front Rack KB Carry | 30-50m track x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "With heavier KB, hold in front rack position, core tight and hips square.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.19",
+          "lesson_id": 2131008,
+          "title": "SROM | Day 14",
+          "url": "/c/shoulderrom-unlocked/sections/565478/lessons/2131008",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": [
+                {
+                  "movement": "① Subscap Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Pec Minor Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Wall Slides | 2 sets x 8 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Staggered Y-Turn Outs | 2 sets x 8 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Face Pulls | 2 sets x 8 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"B\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Shoulder Flexion | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Lat Stretch | 1:00 x min each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.20",
+          "lesson_id": 2131009,
+          "title": "SROM | Day 15",
+          "url": "/c/shoulderrom-unlocked/sections/565478/lessons/2131009",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Midback Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Snow Angels | 1:00 min (move back & forth)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Chicken Wings | 12 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Sprinklers | 2 sets x 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Child's Pose with Moving Hands | 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Vertical External Rotation | 2 sets x 8 reps (each side)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Same knee up that you're pulling back from",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY FRIDAYS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time:",
+                  "has_video": false
+                },
+                {
+                  "movement": "① T’s & Y’s | 7 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use a light weight - no more than 3lbs",
+                  "has_video": false
+                },
+                {
+                  "movement": "② External Rotation Banded Pull-aparts | 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Palms up",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.21",
+          "lesson_id": 2133284,
+          "title": "》WEEK 4 • Geek Out",
+          "url": "/c/shoulderrom-unlocked/sections/565479/lessons/2133284",
+          "description": "",
+          "sections": [
+            {
+              "name": "WEEK 4",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.22",
+          "lesson_id": 2133285,
+          "title": "SROM | Day 16",
+          "url": "/c/shoulderrom-unlocked/sections/565479/lessons/2133285",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Peanut Extension | 1:00min",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Side Lying Windmills | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Alternating Seated Twists | 1:00min (switch every 10 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Jefferson Curls | 3 sets x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Planks | 3 sets x 15 secs",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY | TGU",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① KB Roll-N-Sit-Up | 5 reps x each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Keep chest tall when sitting up, keeping eyes on KB.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Roll up to your elbow, and then up to your hand, then back down.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ],
+              "notes": "3 sets, not for time"
+            }
+          ]
+        },
+        {
+          "id": "ref.23",
+          "lesson_id": 2133286,
+          "title": "SROM | Day 17",
+          "url": "/c/shoulderrom-unlocked/sections/565479/lessons/2133286",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Lacrosse Ball Pec Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Snow Angels | 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ 90 deg Pec Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Alternating Split Lat Stretch | 1:15 min (hold 5-7 secs)",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Face Pulls | 2 sets x 10 reps (eye level)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Bonus Programming: JOINT CAPSULE SUPPORT \"A\"",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Shoulder Internal Rotation Banded Distraction | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Pec Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set band a little higher than height head",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.24",
+          "lesson_id": 2133287,
+          "title": "SROM | Day 18",
+          "url": "/c/shoulderrom-unlocked/sections/565479/lessons/2133287",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① First Rib Smash | 1:00min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Child's Pose Off the Bench | 1:00min (Hold 7-10 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ OH Raises on the Wall | 1:00min (Hold 5-7 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Wall Slides | 1 set x 15 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded OH Squat | 2 set x 10 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: CARRY & PRESS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 Sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① KB Windmill | 5x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Take KB overhead, turn feet 25 - 45 degrees away from the arm with the KB. Slide opposite hand down your leg, looking up at the KB the whole time. Shoot hips back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Upside Down Waiters Carry | 30m x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "KB facing up (overhead) grip by handle. Opposite arm out to the side, walk 30 meters.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.25",
+          "lesson_id": 2133288,
+          "title": "SROM | Day 19",
+          "url": "/c/shoulderrom-unlocked/sections/565479/lessons/2133288",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Side Lying IR Smash | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Chicken Wings | 30 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Sprinklers | 30 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Side Lying Windmills w/ Rotation | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Bow & Arrows | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Banded Horizontal External Rotation | 2 sets x 10 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"B\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Front Rack Banded Lat Pull | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Grab and pull the same shoulder blade",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Front Rack Banded Lat Pull with Neck Floss | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Same movement put move your neck through different ranges.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.26",
+          "lesson_id": 2133290,
+          "title": "SROM | Day 20",
+          "url": "/c/shoulderrom-unlocked/sections/565479/lessons/2133290",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Sub Scap Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Pec Minor Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Extension Stretch | 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ T's | 2 sets x 7 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Y- Rotations | 2 sets x 5 reps (each side)",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY FRIDAYS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "2 sets, not for time:",
+                  "has_video": false
+                },
+                {
+                  "movement": "① T’s & Y’s | 10 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use a light weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "② External Rotation Banded Pull-aparts | 15 reps",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.27",
+          "lesson_id": 2133373,
+          "title": "》WEEK 5 • Geek Out",
+          "url": "/c/shoulderrom-unlocked/sections/565480/lessons/2133373",
+          "description": "",
+          "sections": [
+            {
+              "name": "WEEK 5",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.28",
+          "lesson_id": 2133374,
+          "title": "SROM | Day 21",
+          "url": "/c/shoulderrom-unlocked/sections/565480/lessons/2133374",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Pec Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Pec Fly Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Doorway Lat Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Split Lat Stretch | 1:00 min (switch sides every 15 secs)",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded Post Delt Fly's | 2 sets x 12 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY | TGU",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Turkish Get-Up - Glute Bridge | 5 reps x each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Sit up with a proud chest - then glute bridge up with one second pause at the top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.29",
+          "lesson_id": 2133375,
+          "title": "SROM | Day 22",
+          "url": "/c/shoulderrom-unlocked/sections/565480/lessons/2133375",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Peanut Smash | 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Thoracic Bridges | 3 x 10 sec holds",
+                  "has_video": false
+                },
+                {
+                  "movement": "The higher the step the easier the bridge. Too difficult? Continue with Peanut Smash",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Chicken Wings | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Sprinkler | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Jefferson Curls | 2 sets x 7 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"A\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Reach Under Banded Distraction | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set band at shin height",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.30",
+          "lesson_id": 2133376,
+          "title": "SROM | Day 23",
+          "url": "/c/shoulderrom-unlocked/sections/565480/lessons/2133376",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Trap Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Child's Pose w/ Walking Hands | 45 sec (Hold 8-10 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Wall Slides | 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Staggered Y-Turn Outs | 1 set x 8 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded OH Squat | 2 sets x 8 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: CARRY & PRESS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 Sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Upside KB Single Arm Presses | 3 reps x one arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Upside Down Waiters Carry | 15m",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Upside KB Single Arm Presses | 3 reps x same arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Upside Down Waiters Carry | 15m",
+                  "has_video": false
+                },
+                {
+                  "movement": "Switch arms",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ KB Windmills | 5 reps x each arm",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.31",
+          "lesson_id": 2133377,
+          "title": "SROM | Day 24",
+          "url": "/c/shoulderrom-unlocked/sections/565480/lessons/2133377",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Mid Back Smash | 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Pec Minor Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Snow Angels | 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Extension Stretch | 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Extension Planks | 4 sets x 15 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Y-Rotations | 2 sets x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set = both sides",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"B\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Pec Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Palm turned up to create external rotation",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Sideway Lat Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Feel the stretch running through the lat",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.32",
+          "lesson_id": 2133378,
+          "title": "SROM | Day 25",
+          "url": "/c/shoulderrom-unlocked/sections/565480/lessons/2133378",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Rear Delt Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Sidelying Windmills with Rotation | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Alternating Reach Unders | 45 sec (switch every 5-7 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Bow & Arrows | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Horizontal External Rotation | 2 sets x 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ External Rotation Reverse Fly's | 2 sets x 10 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY FRIDAYS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "2 sets, not for time:",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Dracula Rows | 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Face Pulls | 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Superset with Dracula Pulls",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Banded External Rotation Flys | 10 reps",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.33",
+          "lesson_id": 2133463,
+          "title": "》WEEK 6 • Geek Out",
+          "url": "/c/shoulderrom-unlocked/sections/565481/lessons/2133463",
+          "description": "",
+          "sections": [
+            {
+              "name": "WEEK 6",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.34",
+          "lesson_id": 2133464,
+          "title": "SROM | Day 26",
+          "url": "/c/shoulderrom-unlocked/sections/565481/lessons/2133464",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Sub Scap Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② First Rib Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Child's Pose off of Bench | 45 sec (move in and out)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Wall Slides | 2 sets x 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Yoga Push-Ups | 3 sets x 7 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Push shoulder blades into the armpits",
+                  "has_video": false
+                },
+                {
+                  "movement": "Modify to knees as needed",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY | TGU",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① KB Glute Bridge Kneeling Progressions | 3 reps x each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Lower the reps or sets as needed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.35",
+          "lesson_id": 2133465,
+          "title": "SROM | Day 27",
+          "url": "/c/shoulderrom-unlocked/sections/565481/lessons/2133465",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Pec Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Snow Angels | 1 x 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Pec Minor Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Extension Stretch | 1 x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Extension Planks | 2 sets x 15 secs",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Y-Rotations | 2 sets x 5 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"A\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Chicken Wing Banded Distraction | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Keep this movement dynamic",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.36",
+          "lesson_id": 2133466,
+          "title": "SROM | Day 28",
+          "url": "/c/shoulderrom-unlocked/sections/565481/lessons/2133466",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Side Lying IR Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Side Lying Windmills with Rotation | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Chicken Wings | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Sprinklers | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded Horizontal External Rotation | 2 sets x 12 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Palms up and elbows pinned to sides",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Banded Vertical External Rotation | 2 sets x 10 reps (each side)",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: CARRY & PRESS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 Sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① KB Snatches | 10 reps x each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Bring your elbow up above the KB and as you snap your elbow back, punch towards ceiling so that the KB turns over at the top so it doesn't smack the back of your hands.",
+                  "has_video": false
+                },
+                {
+                  "movement": "② KB Windmills | 5 reps x each arm",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.37",
+          "lesson_id": 2133467,
+          "title": "SROM | Day 29",
+          "url": "/c/shoulderrom-unlocked/sections/565481/lessons/2133467",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Peanut Smash | 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Cat - Cow | 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Hold top and bottom positions for 1-2 secs",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Jefferson Curls | 1 set x 12 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Weight is optional. Modify reps as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Thoracic Bridges | 4 sets x 10 sec on | off",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ T's | 2 sets x 12 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"B\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Front Rack Banded Lat Pull | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Overhead Lat Stretch | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.38",
+          "lesson_id": 2133468,
+          "title": "SROM | Day 30",
+          "url": "/c/shoulderrom-unlocked/sections/565481/lessons/2133468",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① 90° Pec Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Pec Fly Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Doorway Lat Stretch | 40 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Split Lat Stretch | 40 sec (switch every 5 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded Reverse Fly's | 2 sets x 12 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Bonus Programming: STABILITY FRIDAYS",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time:",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Dracula Rows | 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Face Pulls | 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Superset with Dracula Pulls",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Banded External Rotation Flys | 10 reps",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.39",
+          "lesson_id": 2133471,
+          "title": "》WEEK 7 • Geek Out",
+          "url": "/c/shoulderrom-unlocked/sections/565482/lessons/2133471",
+          "description": "",
+          "sections": [
+            {
+              "name": "WEEK 7",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.40",
+          "lesson_id": 2133472,
+          "title": "SROM | Day 31",
+          "url": "/c/shoulderrom-unlocked/sections/565482/lessons/2133472",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Side Lying Internal Rotation Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Post Delt Stretch | 45 sec x alternate sides",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Bow & Arrow | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Chicken Wings | 40 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded Horizontal External Rotation | 2 sets x 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Banded Vertical External Rotation | 2 sets x 10 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY | TGU",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Turkish Get Up | 3 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use all the past Turkish Get Up progressions (core tight, look up at kettlebell, kick opposite leg up, tall chest pressing straight up) and put it all together.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.41",
+          "lesson_id": 2133473,
+          "title": "SROM | Day 32",
+          "url": "/c/shoulderrom-unlocked/sections/565482/lessons/2133473",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Pec Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Sub Scap Smash | 1 set x 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Internal Rotation Swimmers | 1 set x 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Extension Stretch | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Extension Planks | 1 set x 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Y-Rotations | 2 sets x 5 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"A\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Thoracic Rotation | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.42",
+          "lesson_id": 2133474,
+          "title": "SROM | Day 33",
+          "url": "/c/shoulderrom-unlocked/sections/565482/lessons/2133474",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Peanut Smash | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Reach Unders | 1 set x 45 sec (keep moving)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Side Lying Windmills | 40 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Cat - Cows | 1 set x 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Hold top and bottom positions for 1-2 secs",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Thoracic Bridges | 1 set x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Jefferson Curls | 1 set x 8 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: CARRY & PRESS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 Sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① KB Snatches | 10 reps x each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "② KB Windmills | 5 reps x each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Suitcase Carry | 30m x switch sides",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.43",
+          "lesson_id": 2133475,
+          "title": "SROM | Day 34",
+          "url": "/c/shoulderrom-unlocked/sections/565482/lessons/2133475",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① First Rib Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Child's Pose off of Bench | 1 set x 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Wall Slides | 1 set x 15 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Staggered Y-Turnouts | 1 set x 15 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded Overhead Squats | 2 sets x 8 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"B\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Front Rack Banded Lat Pull | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Front Rack Banded Lat Pull with Neck Floss | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.44",
+          "lesson_id": 2133476,
+          "title": "SROM | Day 35",
+          "url": "/c/shoulderrom-unlocked/sections/565482/lessons/2133476",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Mid Back Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Snow Angels | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Pec Minor Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Lat Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded Reverse Fly's | 2 sets x 10 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY FRIDAYS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Dracula Rows | 7 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Incline Y's | 7 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "No incline bench? Get creative or stick with a regular flat bench.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.45",
+          "lesson_id": 2133580,
+          "title": "》WEEK 8 • Geek Out",
+          "url": "/c/shoulderrom-unlocked/sections/565483/lessons/2133580",
+          "description": "",
+          "sections": [
+            {
+              "name": "WEEK 8",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.46",
+          "lesson_id": 2133581,
+          "title": "SROM | Day 36",
+          "url": "/c/shoulderrom-unlocked/sections/565483/lessons/2133581",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Sub Scap Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Child's Pose with Walking Hands | 1 set x 1:00 min (hold 7-10 sec)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Wall Slides | 2 sets x 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Push Up Complex | 2 sets x 8 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Yoga Push Ups | 2 sets x 8 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY | TGU",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "2 sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① TGU Pressing Complex | each arm",
+                  "has_video": false
+                },
+                {
+                  "movement": "Complete 3 presses at each of the 4 positions of the TGU.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.47",
+          "lesson_id": 2133582,
+          "title": "SROM | Day 37",
+          "url": "/c/shoulderrom-unlocked/sections/565483/lessons/2133582",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Side Lying Internal Rotation Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Side Lying Windmills with Rotation | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Bow & Arrow | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Banded Horizontal External Rotation | 2 sets x 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Banded Vertical External Rotation | 2 sets x 10 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"A\"",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Shoulder Internal Rotation Banded distraction | (accumulate) 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set band a little higher than height head",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Horizontal Adduction Banded Distraction | (accumulate) 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.48",
+          "lesson_id": 2133583,
+          "title": "SROM | Day 38",
+          "url": "/c/shoulderrom-unlocked/sections/565483/lessons/2133583",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Peanut Smash | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Chicken Wings | 40 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Sprinklers | 40 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Cat - Cows | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Thoracic Bridges | 1 set x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Hold top position for 5 sec",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: CARRY & PRESS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 Sets, not for time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① KB Snatches | 15 reps x each arm (medium KB)",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Upside Down Overhead Waiter Complex | 1 set x each arm (light KB)",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Suitcase Carry | 30m x each arm (heavy KB)",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.49",
+          "lesson_id": 2133584,
+          "title": "SROM | Day 39",
+          "url": "/c/shoulderrom-unlocked/sections/565483/lessons/2133584",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Pec Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Pec Minor Stretch | 40 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Extension Stretch | 1 set x 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Extension Planks | 1 set x 5 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Hold plank position for 5 sec each",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Y-Rotations | 2 sets x 5 reps (each side)",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: JOINT CAPSULE SUPPORT \"B”",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Shoulder Flexion | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Lat Stretch | 1:00 x min each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.50",
+          "lesson_id": 2133585,
+          "title": "SROM | Day 40",
+          "url": "/c/shoulderrom-unlocked/sections/565483/lessons/2133585",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Mid Back Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Snow Angels | 1 set x 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ 90° Pec Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Doorway Lat Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Split Lat Stretch | 1 set x 6 reps (one side = 1 rep)",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Banded Reverse Fly's | 2 sets x 12 reps",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "BONUS PROGRAMMING: STABILITY FRIDAYS",
+              "items": []
+            },
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "3 sets, not for time:",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Dracula Rows | 7 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Incline Y's | 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "No incline bench? Get creative or stick with a regular flat bench.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.51",
+          "lesson_id": 2135937,
+          "title": "ShoulderROM Post Test",
+          "url": "/c/shoulderrom-unlocked/sections/565484/lessons/2135937",
+          "description": "",
+          "sections": [
+            {
+              "name": "POST TEST PHOTOS",
+              "items": [
+                {
+                  "movement": "Next, find your ShoulderROM Score Card from Week 1 and as you go through the 5 tests, self grade each test out of 3.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Grade '0' if there is any pain whatsoever in the movement (pain)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Grade '1' if the range is very restricted (difficulty moving)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Grade '2' if range is mildly restricted (movement a little difficult)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Grade '3' if you can exhibit a full range of motion (Nothing limiting movement)",
+                  "has_video": false
+                }
+              ],
+              "format": "To start, take your \"After\" ShoulderROM pictures so you can compare your shoulder changes from week 1 to week 8. Aim to take these photos the same way you did for your pre test -- Wearing the same clothes, in front of the same wall, taken from the same height and angle... all of those little factors will help make it easier to see the changes in your pictures."
+            },
+            {
+              "name": "TEST 1 • BEHIND THE BACK REACH",
+              "items": []
+            },
+            {
+              "name": "TEST 2 • OVER THE SHOULDER REACH",
+              "items": []
+            },
+            {
+              "name": "TEST 3 • OVERHEAD MOBILITY",
+              "items": []
+            },
+            {
+              "name": "TEST 4 • SHOULDER EXTENSION",
+              "items": []
+            },
+            {
+              "name": "TEST 5 • SCAP PUSH-UP",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.52",
+          "lesson_id": 2136048,
+          "title": "ShoulderROM Analysis",
+          "url": "/c/shoulderrom-unlocked/sections/565484/lessons/2136048",
+          "description": "At the end of the test, add up your score and compare to Week 1. Review your videos from each movement and compare. What do you notice when you compare the two sets of videos? Do you see an improvement in range, shoulder positioning? Do you feel less limitation or pain? What is your biggest take away after completing ShoulderROM ?",
+          "sections": []
+        },
+        {
+          "id": "ref.53",
+          "lesson_id": 2129895,
+          "title": "The ShoulderROM Philosophy",
+          "url": "/c/shoulderrom-unlocked/sections/565486/lessons/2129895",
+          "description": "We'll incorporate 3 different approaches into each ShoulderROM session to better improve shoulder flexibility, stability and strength. 1. Soft Tissue Work Each session will begin with some foam roller / lacrosse ball work to help increase the effectiveness of the session. This work is like adding water to brittle clay and will prep your soft tissue for the work ahead. 2. Dynamic Stretching Allows us to rewire the brain and demonstrate that we can safely go to these new ranges of motion. 3. Strengthen Good Positions Now that we've increased our range, we need to let our body know that it's okay to be stronger in these new positions.",
+          "sections": []
+        },
+        {
+          "id": "ref.54",
+          "lesson_id": 2129889,
+          "title": "Shoulder Warm-up Downloadable PDF",
+          "url": "/c/shoulderrom-unlocked/sections/565486/lessons/2129889",
+          "description": "As a free bonus, download our Ultimate 7-Step Shoulder Warm-up Guide from the Files tab.",
+          "sections": []
+        },
+        {
+          "id": "ref.55",
+          "lesson_id": 2136097,
+          "title": "Shoulder Pain",
+          "url": "/c/shoulderrom-unlocked/sections/565486/lessons/2136097",
+          "description": "Although the shoulders are the most flexible joint in the body here are some underlying factors that could be leading to our shoulder becoming still and painful. 1. Too Much Sitting We are wired to move and sitting for long periods can have a negative effect on our bodies. Moving frequently and sitting with better posture are some ways to combat those negative effects. 2. Lack of Core Stability If our foundation is weak everything else will be too. We'll do some work with it in this program but if you feel you need additional core focus, check out our Functional Core program. It was designed to improve core stability and can be done in conjunction with this program. 3. Lack of Shoulder Stability If we are lacking proper strength and stability in our shoulders, we won't be able to express full power until our body knows it can do that safely. 4. Move Small Our shoulder is meant to move through a full 360 degree range. In this day and age, many adults can go long periods without moving their shoulders through big ranges of motion as they were intended. We'll work to rectify every time you do a ShoulderROM workout.",
+          "sections": []
+        },
+        {
+          "id": "ref.56",
+          "lesson_id": 2136098,
+          "title": "Desk Mobility Tips",
+          "url": "/c/shoulderrom-unlocked/sections/565486/lessons/2136098",
+          "description": "Here are links to products that we recommend in this video! 1. Standing Desk Option 1: http://amzn.to/2jIqE1 Option 2: http://amzn.to/2kKczyc Option 3 (low budget, but still effective!): http://iamnotaprogrammer.com/Ikea-Standing-desk-fo... 2. Swiss Ball Link: http://amzn.to/2kEGDfl 3. Massage Ball Link: https://amzn.to/2HuQCQv You can use the peanut to roll out your feet while sitting or standing at your desk.",
+          "sections": []
+        },
+        {
+          "id": "ref.57",
+          "lesson_id": 2136099,
+          "title": "ShoulderROM Results",
+          "url": "/c/shoulderrom-unlocked/sections/565486/lessons/2136099",
+          "description": "In this call Coach Garry, CJ, and Ben dissect what it takes to have real, long-term results from the ShoulderROM program. You'll find a couple major takeaways when it comes to mobility, skill development, and progress as an athlete! Pro tip - try playing the video at 1.25x to 1.5x speed! Click the \"gear\" icon to change the video settings. You'll be able to digest the info more quickly and not miss anything! :)",
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

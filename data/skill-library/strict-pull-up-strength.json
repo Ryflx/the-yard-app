@@ -1,0 +1,1381 @@
+{
+  "skill": "strict-pull-up-strength",
+  "course_name": "Strict Pull-up Strength",
+  "course_slug": "strict-pull-up-strength",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/strict-pull-up-strength",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 21,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2182029,
+          "title": "SPUS 1.1 (Week 1, Workout 1)",
+          "url": "/c/strict-pull-up-strength/sections/578984/lessons/2182029",
+          "description": "Welcome to Strict Pull-Up Strength! Today we’re setting your baseline for the program, so be sure to video all three check in attempts. This will help you track your progress over the next 8 weeks. If you don’t have any pull-ups yet, don’t stress! That’s exactly why you’re here. Measuring progress is important, so complete your check in today and you’ll be glad you did when we look back later. We’re also introducing tempo training, a method that builds strength by slowing things down and increasing time under tension. In your Banded Face Pulls today, the tempo @1111 means each part of the movement takes 1 second. It’s not about rushing, it’s about moving with control and intention.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Superman Lift",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull @1111",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 min EMOM (4 rounds)",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "10 x Banded Straight Arm Lat Pulldown @1111",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30-40sec x Skin the Cat Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "CHECK IN",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Max Unbroken Strict Pull-up Attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Max Unbroken Strict Chest to Bar Pull-up Attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use bands as necessary. Pick a number of bands which allows you to perform 5-10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Max Chin Over Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use as many bands as necessary",
+                  "has_video": false
+                },
+                {
+                  "movement": "VIDEO each test for comparison in later weeks",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2182030,
+          "title": "SPUS 1.2 (Week 1, Workout 2)",
+          "url": "/c/strict-pull-up-strength/sections/578984/lessons/2182030",
+          "description": "Today we’re focusing on hanging, the foundation of a strong pull-up. Don’t overlook the importance of proper hand placement and active engagement. Building good habits here sets you up for long-term progress and injury-free pulling.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Superman Lift",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Prone Thoracic Rotation (Left)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Prone Thoracic Rotation (Right)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "20sec x Pronated Passive Hang + 10sec x Pronated Active Hang",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2182031,
+          "title": "SPUS 1.3 (Week 1, Workout 3)",
+          "url": "/c/strict-pull-up-strength/sections/578984/lessons/2182031",
+          "description": "Let’s get to work on building upper body pulling strength! Today is all about repeating one key pattern: stack the shoulders down and back, then pull. Drill that in every rep. We’re also adding a bit more complexity with tempo work. For example, in a movement like Trap 3 Raise @2106, that means: wait 1 sec before you lift immediately (0), hold at the top for 6 seconds, then lower over 2 seconds. If you need a refresher on tempo, review Lesson 1 or ask in the Academy coaching space, we’re here to help.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Trap 3 Raise @2106",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Field Goal Exercise @2222",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Left Single Arm Dumbbell Row",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Right Single Arm Dumbbell Row",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull @1111",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Straight Arm Lat Pulldown @1111",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2182032,
+          "title": "SPUS 2.1 (Week 2, Workout 1)",
+          "url": "/c/strict-pull-up-strength/sections/578985/lessons/2182032",
+          "description": "Today’s session is all about grip and hanging strength. There’s a lot of volume coming your way, so stick to the rest times, stay focused, and hang on tight!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "10sec x Pronated Passive Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "5sec x Pronated Active Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest Walk 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2182033,
+          "title": "SPUS 2.2 (Week 2, Workout 2)",
+          "url": "/c/strict-pull-up-strength/sections/578985/lessons/2182033",
+          "description": "Today is all about the pulling pattern. Elbow flexion strength plays a key role in your ability to perform pull-ups and is also essential for keeping your elbows and shoulders healthy. Stay focused, put in the work, and enjoy the process. A quick note on today’s movements: Dumbbell External Rotations should not be heavy. If you don’t have light dumbbells, use fractional plates or any small object you can hold comfortably. For Bicep Curls, choose a load that’s challenging but controllable.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Dumbbell Left Arm External Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Dumbbell Right Arm External Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-20sec x Supinated Passive Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Supinated Bicep Curl @4010",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Pronated Scapular Pull-up @2222",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2182034,
+          "title": "SPUS 2.3 (Week 2, Workout 3)",
+          "url": "/c/strict-pull-up-strength/sections/578985/lessons/2182034",
+          "description": "In today’s session, we’re introducing a few different grip positions in your pulling work. Remember, your shoulder blades should stay in the same stacked position, down and away from your ears. Any grip rotation should come through the elbow, not the shoulder. Below is a quick breakdown of the different grips you’ll be using. Check out the corresponding demo videos to see each grip in action.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-40sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Supinated Grip Ring Row",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Neutral Grip Ring Row",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Pronated Grip Ring Row",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2182037,
+          "title": "SPUS 3.1 (Week 3, Workout 1)",
+          "url": "/c/strict-pull-up-strength/sections/578986/lessons/2182037",
+          "description": "Today we’re introducing the lowering (eccentric) phase of the pull-up. A powerful tool for building strength and control. Use a pull-up bar that’s high enough for your feet to hang freely without needing to tuck. A sturdy box is recommended to help you get into the assisted position, noted as the “A” in the @51A1 tempo. Control is key. Lower yourself all the way to a passive hang and avoid dropping into the bottom position. If that’s too challenging, use a box that allows you to start at the top, then use your legs (typically your toes) to assist the descent. Make it challenging! The goal is to gradually reduce leg assistance and eventually eliminate the box altogether.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "2-3 x Supinated Pull-up Negative (5 seconds down)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Too challenging?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Scale to Box Assisted Pull-Up Negatives instead.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2182038,
+          "title": "SPUS 3.2 (Week 3, Workout 2)",
+          "url": "/c/strict-pull-up-strength/sections/578986/lessons/2182038",
+          "description": "Just like last week, today is all about refining the pull pattern. Elbow flexion is key not only for building toward your first pull-up but also for maintaining healthy elbows and shoulders. Put in the work and enjoy the progress!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Dumbbell Left Arm External Rotation @3111",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Dumbbell Right Arm External Rotation @3111",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Supinated Ring Row",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Pronated Bicep Curl @4010",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Pronated Scapular Pull-up @2222",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2182039,
+          "title": "SPUS 3.3 (Week 3, Workout 3)",
+          "url": "/c/strict-pull-up-strength/sections/578986/lessons/2182039",
+          "description": "Your grip may be challenged today with the introduction of Powell Raises, an excellent exercise for strengthening your shoulders, along with some valuable time spent in the passive hang. Stay focused, stay engaged, and hang out in your happy place.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Left Arm Powell Raise @2111",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Arm Powell Raise @2111",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 min x Pronated Grip Ring Row",
+                  "has_video": true
+                },
+                {
+                  "movement": "Accumulate 1 min in minimal sets x Pronated Passive Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30 sec",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2182040,
+          "title": "SPUS 4.1 (Week 4, Workout 1)",
+          "url": "/c/strict-pull-up-strength/sections/578987/lessons/2182040",
+          "description": "We’re already at the halfway point! Today we continue progressing through our controlled negatives. Keep a close eye on your tempo and stay sharp with your positions!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Pronated Ring Row",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "2-3 x Pronated Pull-up Negative (5 seconds down)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Supinated Grip Ring Row @4011",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2182041,
+          "title": "SPUS 4.2 (Week 4, Workout 2)",
+          "url": "/c/strict-pull-up-strength/sections/578987/lessons/2182041",
+          "description": "You’ve put in the work to dial in proper shoulder position at the start of your pull-up. Today, it’s time to start bending those arms! Focus on driving the movement by using your back to pull up and not just your arms.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Dumbbell Left Arm External Rotation @3111",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Dumbbell Right Arm External Rotation @3111",
+                  "has_video": true
+                },
+                {
+                  "movement": "1min x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-2 x Scapular Pull-up+ @1112",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2182042,
+          "title": "SPUS 4.3 (Week 4, Workout 3)",
+          "url": "/c/strict-pull-up-strength/sections/578987/lessons/2182042",
+          "description": "You’ve been working hard on your pulling pattern, and now it’s time to get into some bent-arm hanging. Remember, your shoulders have no business touching your ears. Avoid a shrugging pattern at all costs. Think shoulder bladed back and down, that’s the name of the game!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Superman Lift —",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation —",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation —",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Hollow Body Hold —",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Pronated Supine Row @2222 —",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-20sec x Chin Over Bar Hold —",
+                  "has_video": true
+                },
+                {
+                  "movement": "Chin Over Bar Hold too challenging?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use a box or bands to assist the hold",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2182048,
+          "title": "SPUS 5.1 (Week 5, Workout 1)",
+          "url": "/c/strict-pull-up-strength/sections/578988/lessons/2182048",
+          "description": "It’s time to check in on your progress and get some pull-up attempts in! No matter the results, you’re on the right path! Keep showing up and putting in the work. Remember to video your check-in attempts. These are invaluable for tracking your progress, sharing with WODprep Coaches, and reviewing on your own. You might even spot a few faults from the Fault Fixer series that could be holding you back. Keep grinding, you’ve got this!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Hollow Body Band Pulldown",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 min EMOM:",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "10 x Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x Skin the Cat Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "CHECK IN",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Max Unbroken Strict Pull-up Attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Max Unbroken Strict Chest to Bar Pull-up Attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use bands as necessary. Pick a number of bands which allows you to perform 5-10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Max Chin Over Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use as many bands as necessary",
+                  "has_video": false
+                },
+                {
+                  "movement": "VIDEO each test and compare to Week 1",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2182049,
+          "title": "SPUS 5.2 (Week 5, Workout 2)",
+          "url": "/c/strict-pull-up-strength/sections/578988/lessons/2182049",
+          "description": "After the last lesson, you should have a solid sense of where you are in your pull-up progress and milestones. Hopefully, your videos helped highlight a few key focus areas. Bring that insight into today’s session, stay intentional, and enjoy the work. This is where real progress is made!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Trap 3 Raise @2106",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Field Goal Exercise @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Double Leg Assisted Pronated Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Pull-up Negative (5sec down)",
+                  "has_video": true
+                }
+              ],
+              "format": "4 Sets"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2182051,
+          "title": "SPUS 5.3 (Week 5, Workout 3)",
+          "url": "/c/strict-pull-up-strength/sections/578988/lessons/2182051",
+          "description": "Today we are attacking some load sequencing faults and bent arm static holds. It’s all about understanding, and movement fluency. Be present and focused in on every little activation through these movements today.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Superman Lift",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Scapular Pull-up+ @1112",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "10-15sec x Bent Arm Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "10-15sec x Chin Over Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Chin Over Bar Hold too challenging?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use a box or bands to assist the hold",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2182052,
+          "title": "SPUS 6.1 (Week 6, Workout 1)",
+          "url": "/c/strict-pull-up-strength/sections/578989/lessons/2182052",
+          "description": "Can you keep an active midline while you pull? If not, you’re not performing your strict pull-up as efficiently as possible. After today’s session, and with the help of some new drills. you’ll gain a better understanding of just how important midline stability is throughout the pull.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30sec x Hollow Body Band Pulldown",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Circular Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Pronated Active Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "12 min EMOM:",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5 x Single Leg Assisted Strict Pull-up @2121",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x Banded Face Pull",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "1 x Pronated Pull-up Negative (5sec down) + 5 x Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "30sec x Hollow Body Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2182053,
+          "title": "SPUS 6.2 (Week 6, Workout 2)",
+          "url": "/c/strict-pull-up-strength/sections/578989/lessons/2182053",
+          "description": "We’ve got a high-volume session today with 10 sets of 10 Inverted Ring Rows. If maintaining proper form for all 10 reps is too tough, scale back to standard ring rows. Prioritize quality over quantity, and make sure you’re giving yourself enough recovery afterwards. A good night’s rest or even an extra rest day before the next session, will go a long way in supporting your progress.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Scapular Pull-up+ @1112",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Supinated Bicep Curl @50X0",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "40sec x Hollow Body Band Pulldown",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10 x Inverted Ring Row (feet on box)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Inverted Ring Rows too challenging?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Modify to regular ring rows with a more challenging foot position.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2182054,
+          "title": "SPUS 6.3 (Week 6, Workout 3)",
+          "url": "/c/strict-pull-up-strength/sections/578989/lessons/2182054",
+          "description": "Today we’re bringing out the bands to help you feel the full concentric portion of the pull-up with reduced load. Choose a band that challenges you for the required volume, and don’t forget everything you’ve learned about positioning. Stay focused and stick to solid form!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Double Leg Assisted Pronated Pull-up @2121",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Pronated Pull-up Negative (5sec down) + 6 x Scapular Pull-up @2222",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-10 x Band Assisted Pull-up @2202",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use as many bands as needed to consistently achieve 5–10 quality pull-ups.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2182056,
+          "title": "SPUS 7.1 (Week 7, Workout 1)",
+          "url": "/c/strict-pull-up-strength/sections/578990/lessons/2182056",
+          "description": "There’s a lot of volume in today’s negative reps, so stay sharp. Avoid dropping into the bottom uncontrolled. Stick to the tempo, stay engaged, and use your back throughout every rep! SKILLS 8 min EMOM: Min 1: 2 x Pronated Pull-up Negative @11A5 + 6x Scapular Pull-up @2222 Min 2: 30-40sec x Hollow Body Band Pulldown @2222 + 4 Sets 6-8 x Single Leg Assisted Strict Pull-up @2121 2-4 x Pronated Pull-up Negative (6 seconds down)",
+          "sections": []
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2182057,
+          "title": "SPUS 7.2 (Week 7, Workout 2)",
+          "url": "/c/strict-pull-up-strength/sections/578990/lessons/2182057",
+          "description": "Today is all about building pulling strength. Make sure your rows and curls are performed at a challenging weight. Enough to push you, while still maintaining good form.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Single Arm Dumbbell Row @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Arm Supinated Bicep Curl @50X0",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Arm Dumbbell Row @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Arm Supinated Bicep Curl @50X0",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5 x Circular Scapular Pull-up (both directions)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10-30sec x Bent Arm Hang",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2182058,
+          "title": "SPUS 7.3 (Week 7, Workout 3)",
+          "url": "/c/strict-pull-up-strength/sections/578990/lessons/2182058",
+          "description": "Keep that core tight! We’re challenging midline stability again today, so make sure every rep is controlled and truly challenging. Quality over quantity!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Double Leg Assisted Strict Pull-up @5121",
+                  "has_video": true
+                },
+                {
+                  "sets": 3,
+                  "movement": "Pronated Pull-up Negative (6 seconds down)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Arm Left Ring Row",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Single Arm Right Ring Row",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Hollow Body Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2182059,
+          "title": "SPUS 8.1 (Week 8, Workout 1)",
+          "url": "/c/strict-pull-up-strength/sections/578991/lessons/2182059",
+          "description": "The final week of Strict Pull-Up Strength is here! Let’s finish strong with some a demanding drills to set you up for showcasing all your hard work in the final session.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "3-5 x Pronated Pull-up Negative (8 seconds down)",
+                  "has_video": true
+                },
+                {
+                  "movement": "4-6 x Scapular Pull-up @2222",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk remaining time",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8 x Single Leg Assisted Strict Pull-up @2121",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-30sec x Chin Over Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Chin Over Bar Hold too challenging?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use a box or bands to assist the hold",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets; Every 2 minutes"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2182060,
+          "title": "SPUS 8.2 (Week 8, Workout 2)",
+          "url": "/c/strict-pull-up-strength/sections/578991/lessons/2182060",
+          "description": "We’ve got a lot of pulling on the menu today, so find the balance between challenging yourself and maintaining proper form. Aim for quality over quantity as we head into the final day!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Single Arm Dumbbell Row @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Single Arm Supinated Bicep Curl @50X0",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Single Arm Dumbbell Row @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Single Arm Supinated Bicep Curl @50X0",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM:",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "30-45sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Band Assisted Pull-up",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2182061,
+          "title": "SPUS 8.3 (Week 8, Workout 3)",
+          "url": "/c/strict-pull-up-strength/sections/578991/lessons/2182061",
+          "description": "It’s here, the final day of Strict Pull-Up Strength! Today, we put all your hard work to the test with a check-in on your strict pull-up progress. For some, that might mean hitting a big PR. For others, it could be improved shapes, stronger positions, or simply getting your chin a little closer to the bar. No matter what your check-in numbers look like, we’re proud of the effort you’ve put in. We want to celebrate your success! Post your before-and-after videos on the Wall of Wins and earn yourself with some sweet WODprep swag just for sharing.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Superman Lift",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets"
+            },
+            {
+              "name": "CHECK IN",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Max Unbroken Strict Pull-up Attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Max Unbroken Strict Chest to Bar Pull-up Attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use bands as necessary. Pick a number of bands which allows you to perform 5-10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Max Chin Over Bar Hold (Use band if necessary)",
+                  "has_video": true
+                },
+                {
+                  "movement": "VIDEO each test and compare to Week 1",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

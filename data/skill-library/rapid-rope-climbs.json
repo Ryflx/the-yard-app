@@ -1,0 +1,818 @@
+{
+  "skill": "rapid-rope-climbs",
+  "course_name": "Rapid Rope Climbs",
+  "course_slug": "rapid-rope-climbs",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/rapid-rope-climbs",
+  "scraped": "2026-05-17",
+  "total_weeks": 3,
+  "total_lessons": 9,
+  "skipped_lessons": 18,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2169589,
+          "title": "RRC 1.1 (Week 1 , Workout 1)",
+          "url": "/c/rapid-rope-climbs/sections/575685/lessons/2169589",
+          "description": "Welcome to the first week of Rapid Rope Climbs. Today we're going to start things off easy by becoming comfortable hanging from the rope and lifting our knees up towards the elbows while hanging on the rope.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Good Mornings",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Scap Push-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Yoga Push-ups (Modify as needed)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "3 sets x 10-20 sec Rope Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1 minute before moving to the next exercise",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 5-7 Rope Knee Lifts",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1 minute before moving to the next exercise",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1-2 Rope Lowering Negatives",
+                  "has_video": true
+                },
+                {
+                  "movement": "*Modify this movement as needed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "How did today's session go? If you did this session again what would you focus on?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2169590,
+          "title": "RRC 1.2 (Week 1 , Workout 2)",
+          "url": "/c/rapid-rope-climbs/sections/575685/lessons/2169590",
+          "description": "Today's we're going to work on 'The Clamp' and securing it with a hang.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 7,
+                  "movement": "Scap Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Child Pose from Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "25m x Straight Arm & Leg Bear Crawl",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "5min x [Box] Clamp Practice",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "[Box] Clamp & Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "FILM one of your sets for review",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes before moving to the next exercise",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2-3 x Floor Rope Climbs",
+                  "has_video": true
+                },
+                {
+                  "movement": "*Modify this movement as needed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "If you filmed one of your Clamp & Hangs, how would you evaluate your clamp? Did you feel secure and ready for more or do you need more practice?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2169591,
+          "title": "RRC 1.3 (Week 1 , Workout 3)",
+          "url": "/c/rapid-rope-climbs/sections/575685/lessons/2169591",
+          "description": "Today is all about applying the 'Clamp' with the Rope Climb Rig Drill. If you don't have access to a rig or a rope over rig combo outlined in the video above, continue practicing from the box instead.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "3-5 x Rope Scap Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-7 x Banded Chin-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-7 x Rope Knee Lifts (Modify as needed)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "5min x [Rig] Clamp Practice",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pulls",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-10 x Rig Assisted Rope Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "*Modify this movement as needed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 90-120 seconds between sets",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "How did the rig practice go? The clamp should be feeling pretty secure and if it isn't, highly encourage you to revisit this week until you feel you got it!",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2169585,
+          "title": "RRC 2.1 (Week 2 , Workout 1)",
+          "url": "/c/rapid-rope-climbs/sections/575686/lessons/2169585",
+          "description": "After today 'the Clamp' should be feeling pretty secure and we're ready to start repeat th process to get us up the rope.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Air Squats",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-7 x Rope Scap Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Lemon Squeeze (Modify as needed)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "5 min x [Box] Clamp Practice",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Clamp, Hang & Stand",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "7-10 x Leg Assisted Rope Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "* Make it challenging and add more legs as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 60-90 seconds between sets",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "Feeling ready for the next challenge?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2169586,
+          "title": "RRC 2.2 (Week 2 , Workout 2)",
+          "url": "/c/rapid-rope-climbs/sections/575686/lessons/2169586",
+          "description": "In today’s session, we’re putting the rope climb together. Once you can perform all the rope climbing steps twice in a row, there’s nothing stopping you from completing a full rope climb—no matter how long the rope! Remember, a successful rope climb isn’t about pulling with your arms; it’s all about pushing with your legs. You’ve got this!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "10-20sec x Bent Arm Rope hang (with toe assist)",
+                  "has_video": true
+                },
+                {
+                  "movement": "45 sec x Child Pose from Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "25m x Straight Leg Bear Crawl",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "10 sec x Rope Reach Hang Practice",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest at least 20-30sec between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2-3 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Rope Climb Negatives",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Unassisted 2 Pulls",
+                  "has_video": true
+                },
+                {
+                  "movement": "If 2 pulls are a struggle, keep with the Reach, Clamp, Stand & Reach Drill.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "*Record video of an attempt for personal review or post it inside of Academy Group Coaching space for feedback",
+                  "has_video": false
+                }
+              ],
+              "format": "10 sets"
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "How did putting together the start of your rope climb go? If it felt challenging, what part gave you the most trouble? Was it the clamp, the lift, or just feeling confident being off the ground?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2169587,
+          "title": "RRC 2.3 (Week 2 , Workout 3)",
+          "url": "/c/rapid-rope-climbs/sections/575686/lessons/2169587",
+          "description": "Time to put it all together! Let's aim for your first full rope climb!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Scap Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "7-10 x Banded Chin-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Should be slightly challenging but more of a warm-up",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-7 x Rope Knee Lifts",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Your choice from a box, the rig or a standing position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Clamp Practice",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 4 Minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Minute AMRAP",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rope Climb",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between attempts!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Staring with a long reach, climb as high as you comfortably can up the rope and/or perform as many of those rope climbs as possible in 5 minutes. Remember it’s better to rest at the bottom before you start the next climb than resting on the rope.",
+                  "has_video": false
+                }
+              ],
+              "format": "Set 5min on the clock and perform clamp practice"
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "Did you exceed your expectations? For some that might have been 3 steps up the rope, for others that might have been getting up and down the rope multiple times. Regardless, we're proud of your effort.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2169581,
+          "title": "RRC 3.1 (Week 3, Workout 1)",
+          "url": "/c/rapid-rope-climbs/sections/575687/lessons/2169581",
+          "description": "Welcome to Week 3 of Rapid Rope Climb! Before jumping into these more advanced techniques, make sure you’re comfortable getting up and down the rope multiple times. If you’re not quite there yet — no worries! Keep working through the earlier weeks until you feel confident with the Reach, Lift, Clamp, and Stand. If you’re ready, it’s time to level up. This week, we’ll focus on minimizing the number of pulls needed by nailing a powerful first rope jump. Start by reviewing Coach Ben’s first jump explanation video. This is a grippy session, so chalk up often and take breaks as needed to keep your grip fresh!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 12,
+                  "movement": "Banded Good Mornings",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-15sec x Bent Arm Hang (toe assist)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Should be slightly challenging but more of a warm-up",
+                  "has_video": false
+                },
+                {
+                  "movement": "20-30sec x Lemon Squeeze",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Rope Jump Practice",
+                  "has_video": true
+                },
+                {
+                  "movement": "Aim to jump as high up the rope as possible and hang for a few seconds.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Need more challenge? Modify to 10x Jump & Clamp",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Rope Lowering Negatives",
+                  "has_video": true
+                },
+                {
+                  "movement": "At your own speed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform the following:",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Rope Jump + Clamp",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Need more challenge? Modify to Perform 10x Jump, Clamp & Stand",
+                  "has_video": true
+                }
+              ],
+              "format": "Perform the following:"
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "How did today’s drills go? How confident are you feeling in your rope climb — or more specifically, in your ability to put all the pieces together by the end of the course?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2169582,
+          "title": "RRC 3.2 (Week 2 , Workout 2)",
+          "url": "/c/rapid-rope-climbs/sections/575687/lessons/2169582",
+          "description": "Let's breakdown the rope climb descent and how we can optimize how we come down from the rope",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "7-10 x Rope Scap Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "With control. Feel those scaps work!",
+                  "has_video": false
+                },
+                {
+                  "movement": "45-60sec x Child Pose from Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "50m x Straight Leg Bear Crawl",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "5-10min x Descent Practice",
+                  "has_video": true
+                },
+                {
+                  "movement": "Climb the rope and practice the tips for coming down with purpose.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Leg Assisted Rope Chin-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2-4 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 slow rep + 1 fast rep x Rope Climb",
+                  "has_video": true
+                },
+                {
+                  "movement": "Practice 1 deliberate rope climb then piece it together with a faster one. Take the rope climb as high as you're comfortable. Inn many cases 2 pulls should be sufficient. Make sure you're rested enough so you can do both reps back to back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "How did today’s drills go? How confident do you fee descending down the rope?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2169583,
+          "title": "RRC 3.3 (Week 2 , Workout 3)",
+          "url": "/c/rapid-rope-climbs/sections/575687/lessons/2169583",
+          "description": "Before today's session, check out Coach Ben's Advanced Rope Climb Tips! With the final rope climb test, do your best and as you continue to improve come back to retest this one to note your improvement. Crush it!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "7-10 x Yoga Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "7-10 x Rope Scap Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "7-10 x Rope Knee Lifts",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "5-10min x Advanced Rope Climb Tips",
+                  "has_video": true
+                },
+                {
+                  "movement": "Climb the rope and practice any of Coach Ben's advanced tips to help better your rope climbs.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "REST 4 MINUTES",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Min AMRAP",
+                  "has_video": false
+                },
+                {
+                  "movement": "In 5 minutes, perform as many rope climbs as possible.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rope Climb",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Remember better to rest at the bottom than on the rope.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Looking to improve? Video your test for personal review or share in the Academy Group Coaching space.",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "How did today’s session go? Did you get your first rope climbs or more than you were expecting. If so, congratulations.",
+                  "has_video": false
+                },
+                {
+                  "movement": "If we’re still not there with rope climbs, that’s OKAY! Rope Climbs are a skill that takes practice. Repeat Week 2 or 3 until you feel you've levelled up your rope climbing skill.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
