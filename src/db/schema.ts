@@ -201,3 +201,71 @@ export const userExerciseSubstitutions = pgTable(
     ),
   ]
 );
+
+export type SkillCategory =
+  | "jump_rope"
+  | "gymnastics_pull"
+  | "handstand"
+  | "conditioning"
+  | "mobility"
+  | "lifting"
+  | "weightlifting";
+
+export type MovementPattern =
+  | "pull"
+  | "press"
+  | "overhead"
+  | "squat"
+  | "hinge"
+  | "core"
+  | "conditioning"
+  | "jump"
+  | "unilateral";
+
+export const skillCourses = pgTable("skill_courses", {
+  id: serial("id").primaryKey(),
+  slug: text("slug").notNull().unique(),
+  name: text("name").notNull(),
+  source: text("source").notNull(),
+  sourceUrl: text("source_url").notNull(),
+  totalWeeks: integer("total_weeks").notNull(),
+  category: text("category").notNull().$type<SkillCategory>(),
+  prerequisiteSkillId: integer("prerequisite_skill_id"),
+  difficulty: integer("difficulty").notNull(),
+  estimatedSessionMinutes: integer("estimated_session_minutes").notNull(),
+  drillsPerWeek: integer("drills_per_week").notNull().default(1),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export interface SkillDrillSectionItem {
+  movement: string;
+  sets?: number;
+  reps?: string | number;
+  minute?: number;
+  notes?: string;
+  has_video?: boolean;
+}
+
+export interface SkillDrillSection {
+  name: string;
+  items: SkillDrillSectionItem[];
+}
+
+export const skillDrills = pgTable(
+  "skill_drills",
+  {
+    id: serial("id").primaryKey(),
+    courseId: integer("course_id")
+      .notNull()
+      .references(() => skillCourses.id, { onDelete: "cascade" }),
+    week: integer("week").notNull(),
+    orderInWeek: integer("order_in_week").notNull(),
+    externalId: text("external_id").notNull(),
+    title: text("title").notNull(),
+    sections: jsonb("sections").$type<SkillDrillSection[]>().notNull(),
+    movementsSummary: text("movements_summary").notNull(),
+    primaryMovementPatterns: text("primary_movement_patterns").array().notNull().$type<MovementPattern[]>(),
+  },
+  (t) => [uniqueIndex("skill_drills_unique").on(t.courseId, t.externalId)]
+);
