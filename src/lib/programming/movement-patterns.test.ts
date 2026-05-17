@@ -36,4 +36,22 @@ describe("classifyMovements", () => {
     // "EMOM 10" is structural, not a movement — must not match anything
     expect(classifyMovements(["EMOM 10:"])).toEqual([])
   })
+
+  it("does not classify 'Bent-over Row' as conditioning (strength row, not erg)", () => {
+    expect(classifyMovements(["Bent-over Row"])).toEqual([]);
+  });
+
+  it("does not classify 'Bench Press' as overhead (horizontal press)", () => {
+    expect(classifyMovements(["Bench Press"])).toEqual(
+      expect.not.arrayContaining(["overhead"])
+    );
+  });
+
+  it("classifies 'Rowing 500m' as conditioning (erg context)", () => {
+    expect(classifyMovements(["Rowing 500m"])).toEqual(expect.arrayContaining(["conditioning"]));
+  });
+
+  it("classifies 'Running 1km' as conditioning (gerund form)", () => {
+    expect(classifyMovements(["Running 1km"])).toEqual(expect.arrayContaining(["conditioning"]));
+  });
 })

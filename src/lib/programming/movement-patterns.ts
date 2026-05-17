@@ -19,9 +19,10 @@ const RULES: PatternRule[] = [
   { match: /\b(pistol|single leg squat)\b/i, patterns: ["squat", "unilateral"] },
   { match: /\b(back squat|front squat|overhead squat|air squat)\b/i, patterns: ["squat"] },
   { match: /\b(deadlift|clean pull|snatch pull|rdl)\b/i, patterns: ["hinge"] },
-  { match: /\b(clean|snatch|jerk|press|push press|push jerk|thruster)\b/i, patterns: ["press", "overhead"] },
+  { match: /\b(strict press|push press|push jerk|jerk|clean|snatch|thruster|overhead press|ohp)\b/i, patterns: ["press", "overhead"] },
+  { match: /\bbench press\b/i, patterns: ["press"] },
   { match: /\b(plank|hollow|core|sit ?up|v[- ]?up|gh\s*sit)\b/i, patterns: ["core"] },
-  { match: /\b(burpee|row|bike|ski|run|jog)\b/i, patterns: ["conditioning"] },
+  { match: /\b(burpees?|bike|biking|ski(?:ing)?|run(?:ning)?|jog(?:ging)?|rowing|row\s*erg)\b/i, patterns: ["conditioning"] },
 ]
 
 export function classifyMovements(movements: string[]): MovementPattern[] {
