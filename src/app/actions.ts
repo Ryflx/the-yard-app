@@ -12,8 +12,18 @@ import {
   movements,
   wodResults,
   userExerciseSubstitutions,
+  customPlans,
+  customPlanSessions,
+  goalQuestionnaires,
+  skillCourses,
+  skillDrills,
 } from "@/db/schema";
-import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, WodScoreType, WodFormat, WodMovement } from "@/db/schema";
+import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, WodScoreType, WodFormat, WodMovement, WeeklyDrillSlot, GenerationMeta, SkillDrillSection } from "@/db/schema";
+import { classifyMovements } from "@/lib/programming/movement-patterns";
+import { placeDrills, RULES_VERSION, type SchedulerSkillCandidate, type ExistingWorkout } from "@/lib/programming/scheduler";
+import { personalisePlan } from "@/lib/programming/personalise";
+import { getWeaknessSignalsForUser } from "@/lib/programming/weakness";
+import type { ValidationEnv } from "@/lib/programming/validator";
 import { eq, and, gte, lte, lt, desc, isNotNull, isNull, or, count, sql, asc, inArray } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { normalizeLiftName, estimateOneRepMax } from "@/lib/percentage";
@@ -1917,4 +1927,199 @@ export async function deleteExerciseSubstitution(
         eq(userExerciseSubstitutions.originalName, normalized)
       )
     );
+}
+
+// ── Custom Programming ──
+
+export interface CreatePlanAnswers {
+  wodsPerWeek: number;
+  ropeConfidence: number;       // 1-5
+  handstandConfidence: number;  // 1-5
+  pullGymConfidence: number;    // 1-5
+}
+
+export async function createPlan(
+  answers: CreatePlanAnswers,
+  slots: WeeklyDrillSlot[],
+  skillIds: number[]
+): Promise<{ planId: number }> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+  if (skillIds.length === 0) throw new Error("Pick at least one skill");
+  if (skillIds.length > 5) throw new Error("Pick at most 5 skills");
+  if (slots.length === 0) throw new Error("Add at least one training slot");
+
+  const PLAN_LENGTH_WEEKS = 8;
+  const startsOn = todayISO();
+  const endsOn = addDaysISO(startsOn, PLAN_LENGTH_WEEKS * 7 - 1);
+
+  // Load selected courses + drills
+  const selectedCourses = await db
+    .select()
+    .from(skillCourses)
+    .where(inArray(skillCourses.id, skillIds));
+  const allDrills = await db
+    .select()
+    .from(skillDrills)
+    .where(inArray(skillDrills.courseId, skillIds));
+
+  const candidates: SchedulerSkillCandidate[] = selectedCourses.map((c) => ({
+    skillId: c.id,
+    drillsPerWeek: c.drillsPerWeek,
+    drills: allDrills
+      .filter((d) => d.courseId === c.id)
+      .sort((a, b) => a.week - b.week || a.orderInWeek - b.orderInWeek)
+      .map((d) => ({
+        id: d.id,
+        courseId: c.id,
+        week: d.week,
+        orderInWeek: d.orderInWeek,
+        estimatedSessionMinutes: c.estimatedSessionMinutes,
+        primaryMovementPatterns: d.primaryMovementPatterns,
+        title: d.title,
+        courseName: c.name,
+      })),
+  }));
+
+  // Load existing workouts in window for conflict checks
+  const existingRows = await db
+    .select({
+      date: workouts.date,
+      patterns: sql<string[]>`COALESCE((SELECT array_agg(DISTINCT m->>'name') FROM workout_sections ws, jsonb_array_elements(COALESCE(ws.wod_movements, '[]'::jsonb)) m WHERE ws.workout_id = ${workouts.id}), ARRAY[]::text[])`,
+    })
+    .from(workouts)
+    .where(and(gte(workouts.date, startsOn), lte(workouts.date, endsOn)));
+
+  const existingWorkouts: ExistingWorkout[] = existingRows.map((r) => ({
+    date: r.date as unknown as string,
+    primaryPatterns: classifyMovements(r.patterns ?? []),
+  }));
+
+  // Pass 1: rules scheduler
+  const { placements, unplaceable: _unplaceable } = placeDrills({
+    startsOn, weeks: PLAN_LENGTH_WEEKS, slots, candidates, existingWorkouts,
+  });
+  if (placements.length === 0) throw new Error("No sessions could be placed — add more slots or trim skills");
+
+  // Build validator env for pass 2
+  const allowedDrillsBySkill = new Map<number, number[]>();
+  const drillMinutes = new Map<number, number>();
+  const drillSkill = new Map<number, number>();
+  for (const c of selectedCourses) {
+    const drillIds = allDrills.filter((d) => d.courseId === c.id).map((d) => d.id);
+    allowedDrillsBySkill.set(c.id, drillIds);
+    for (const did of drillIds) {
+      drillMinutes.set(did, c.estimatedSessionMinutes);
+      drillSkill.set(did, c.id);
+    }
+  }
+  const env: ValidationEnv = { allowedDrillsBySkill, drillMinutes, drillSkill };
+
+  // Activity digest (compact, no PII)
+  const last14 = addDaysISO(todayISO(), -14);
+  const digestRows = await db
+    .select({
+      classType: workouts.classType,
+      cnt: sql<number>`count(*)`,
+    })
+    .from(workouts)
+    .where(and(gte(workouts.date, last14), lte(workouts.date, todayISO())))
+    .groupBy(workouts.classType);
+  const activityDigest = digestRows.map((r) => `${r.classType}: ${r.cnt}`).join(", ") || "(no logged activity)";
+
+  // Pass 2: LLM personalisation
+  const goalSummary = buildGoalSummary(answers, selectedCourses.map((c) => c.name));
+  const weaknessSignals = await getWeaknessSignalsForUser(userId);
+  const { personalisation, llmFallbackUsed, modelUsed } = await personalisePlan({
+    goalSummary, weaknessSignals, draft: placements, activityDigest, env,
+  });
+
+  // Apply swaps to the placements
+  const finalPlacements = placements.map((p) => {
+    const swap = personalisation.swaps.find((s) => s.sessionIndex === p.sessionIndex);
+    if (swap) return { ...p, drillId: swap.newDrillId, originalDrillId: p.drillId };
+    return { ...p, originalDrillId: null as number | null };
+  });
+  const rationaleBySession = new Map(personalisation.sessionRationales.map((r) => [r.sessionIndex, r.rationale]));
+
+  // Persist
+  const generationMeta: GenerationMeta = {
+    rulesVersion: RULES_VERSION, llmModel: modelUsed, generatedAt: new Date().toISOString(), llmFallbackUsed,
+  };
+
+  const planId = await db.transaction(async (tx) => {
+    const [plan] = await tx.insert(customPlans).values({
+      userId,
+      name: "8-Week Skill Plan",
+      goalSummary,
+      weeklyDrillSlots: slots,
+      selectedSkillIds: skillIds,
+      planLengthWeeks: PLAN_LENGTH_WEEKS,
+      startsOn,
+      endsOn,
+      generationMeta,
+      updatedAt: new Date(),
+    }).returning();
+
+    for (const p of finalPlacements) {
+      const drill = allDrills.find((d) => d.id === p.drillId);
+      const course = selectedCourses.find((c) => c.id === drill?.courseId);
+      if (!drill || !course) continue;
+      const [workout] = await tx.insert(workouts).values({
+        date: p.plannedDate,
+        classType: "CUSTOM",
+        title: `${course.name} — ${drill.title}`,
+      }).returning();
+      // One section holding the drill content
+      await tx.insert(workoutSections).values({
+        workoutId: workout.id,
+        type: "SKILL",
+        sortOrder: 0,
+        exercises: [],
+        wodFormat: "EMOM", // sentinel — triggers isCompletionMode() in WodScoreEntry
+        wodScoreType: "INTERVAL", // ditto
+        wodName: drill.title,
+        wodDescription: drill.movementsSummary,
+        wodMovements: drill.sections.flatMap((s: SkillDrillSection) => s.items.map((it) => ({
+          name: it.movement, reps: String(it.reps ?? ""), weight: null, unit: null, note: it.notes ?? null,
+        }))),
+      });
+      await tx.insert(customPlanSessions).values({
+        planId: plan.id,
+        workoutId: workout.id,
+        drillId: p.drillId,
+        originalDrillId: p.originalDrillId,
+        plannedDate: p.plannedDate,
+        plannedSlotMinutes: p.plannedSlotMinutes,
+        llmRationale: rationaleBySession.get(p.sessionIndex) ?? null,
+      });
+    }
+
+    await tx.insert(goalQuestionnaires).values({
+      userId, planId: plan.id, answers,
+    });
+
+    return plan.id;
+  });
+
+  revalidatePath("/schedule");
+  revalidatePath("/programming");
+  return { planId };
+}
+
+// Helpers
+
+function todayISO(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function addDaysISO(iso: string, days: number): string {
+  const d = new Date(iso + "T00:00:00Z");
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+function buildGoalSummary(a: CreatePlanAnswers, skillNames: string[]): string {
+  return `Improving ${skillNames.join(" and ")} over 8 weeks (${a.wodsPerWeek} WODs/wk). ` +
+         `Self-rated confidence: rope ${a.ropeConfidence}/5, handstand ${a.handstandConfidence}/5, pull gym ${a.pullGymConfidence}/5.`;
 }
