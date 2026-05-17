@@ -1,0 +1,3554 @@
+{
+  "skill": "endless-engine-running-only",
+  "course_name": "Endless Engine - Running Only",
+  "course_slug": "endless-engine-running-only",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/endless-engine-running-only",
+  "scraped": "2026-05-17",
+  "total_weeks": 9,
+  "total_lessons": 27,
+  "skipped_lessons": 18,
+  "weeks": [
+    {
+      "week": 0,
+      "workouts": [
+        {
+          "id": "0.1",
+          "lesson_id": 2181829,
+          "title": "EE|RO 0.1 Testing (Week 0, Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578941/lessons/2181829",
+          "description": "Welcome to the Day 3 of the Endless Engine testing. Today you'll be lacing up your running shoes and recording your 5km run time. Whether it takes 75 minutes or 15, aim to run at a consistent, manageable pace for the entire distance. Ultimately, take the time you need to finish and if you need to pull it back to a walk, do so and add in bursts of steady jogging when you're ready. Use an website like On the Go Map or Google Maps to measure your route before hand or an app on your phone / watch like Strava, Adidas Running or Runkeeper, to name a few. Under the Files tab, download the attached Endless Engine - Running Only Score Sheet and use it too record this week’s Test scores so you can measure your improvement between Week 1 to Week 8 and make note of the training splits you'll need to hit throughout the program.",
+          "sections": [
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Plan out your route, and when you’re ready, click start on your stopwatch and record your total time from start to finish.",
+                  "has_video": false
+                }
+              ],
+              "format": "5km Run Time Trial"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10min light bike or walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0.2",
+          "lesson_id": 2181830,
+          "title": "EE|RO 0.2 Testing (Week 0, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578941/lessons/2181830",
+          "description": "Day 2 of our Initial Testing is a designated rest day to give you ample time to recover and ensure you’re ready to go for the 400m time trial on Day 0.3.",
+          "sections": [
+            {
+              "name": "RECOVERY",
+              "items": [
+                {
+                  "movement": "Take it easy today. Go for an easy walk, bike or better yet, follow along with Coach Garry's Mobility Flow.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0.3",
+          "lesson_id": 2181831,
+          "title": "EE|RO 0.3 Testing (Week 0, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578941/lessons/2181831",
+          "description": "Welcome to the last day of our Initial Testing. Today you'll be setting your 400m sprint time. Not running on a track? Use an website like On the Go Map to measure out 400 metres. It doesn't have to be perfect as long you run the same route in week 8. Don't forget to add today's results to your Score Sheet.",
+          "sections": [
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "With your route set and you’re ready to test, click start on your stopwatch and record your total time to run 400m from start to finish.",
+                  "has_video": false
+                }
+              ],
+              "format": "1 x 400m Sprint"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10min light bike or walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2181832,
+          "title": "EE|RO 1.1 (Week 1, Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578942/lessons/2181832",
+          "description": "Welcome to your first official Endless Engine - Running Only run workout! Aim for a 85% interval running speed that should feel as fast as but not faster than your 5km pace. The speed needs to be REPEATABLE for all the intervals programmed. The goal is to increase cycle rate during short intervals (ie. run faster with good technique while decreasing the rest) which will allow us to be faster when it comes to our next 5k test.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "10 minutes steady jog for warm-up. Then, 10 minutes of 2 sprints of 20 sec sprints @ 85% followed by 10 sec walks every minute.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Start with a 10 minute steady jog @ faster than 5k pace. Then, nice and easy warm-up, then after 1-2 minute rest, transition into…",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 1 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sprints every minute! 20 sec sprint followed by a 10 sec rest walk before the next set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 2 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec walk after each sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 3 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec walk after each sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 4 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec walk after each sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 5 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec walk after each sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 6 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec walk after each sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 7 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec walk after each sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 8 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec walk after each sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 9 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sec walk after each sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 10 • 2 x 20sec sprint @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Immediately into…",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 minute of an easy, continuous jog.",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 30min workout",
+              "notes": "Use a repeatable 30sec distance and aim for 85% sprint."
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ],
+              "notes": "Cool downs aid in recovery as they allow the body to get back to its baseline quicker."
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2181833,
+          "title": "EE|RO 1.2 (Week 1, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578942/lessons/2181833",
+          "description": "Today, we'll be doing 800m intervals but make note of how the work is split up. If you're running on a track, you'll go 400m, then for the next 200m you'll increase the pace then finish it off by walking the last 200m. When you get back to your starting position, start the next interval. On a 'there and back again' course, run out 400m, turn around and increase your pace for 200m before walking the remaining distance back. When you get return to your starting mark, turn around and start the next interval.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "400m at 5km pace +",
+                  "has_video": false
+                },
+                {
+                  "movement": "200m faster pace +",
+                  "has_video": false
+                },
+                {
+                  "movement": "200m walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "= 800m",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 400m @ 5k TT pace + 200m @ faster pace + 200m @ walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 400m @ 5k TT pace + 200m @ faster pace + 200m @ walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 400m @ 5k TT pace + 200m @ faster pace + 200m @ walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 400m @ 5k TT pace + 200m @ faster pace + 200m @ walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or sets",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 20min workout. Aim for repeatable times for every set!"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Cool downs aid in recovery as they allow the body to get back to its baseline quicker.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2181834,
+          "title": "EE|RO 1.3 (Week 1, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578942/lessons/2181834",
+          "description": "Lean into those 100m sprints today and aim for repeatable times!!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "Warm up with a 400m light run @ 5k pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 100m @ 400m Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 100m @ 400m Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 100m @ 400m Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ Rest 2:00 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 100m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Aim to keep all the sets repeatable (same time).",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 100m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 100m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 100m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 100m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 20 min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Cool downs aid in recovery as they allow the body to get back to its baseline quicker.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2181835,
+          "title": "EE|RO 2.1 (Week 2, Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578943/lessons/2181835",
+          "description": "Today we're working a TOUGH consistent pace through 4 minute intervals. However, REPEATABILITY is the key goal so ensure we're covering the same distance for all 6 sets. Good luck!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "Aim for 6 sets of 4 minute intervals at a TOUGH pace followed by a 2 min walk.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Goal is to cover the same distance each 4 minute interval.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 x 4min @ tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "into 2min Walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 x 4min @ tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "into 2min Walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 x 4min @ tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "into 2min Walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 x 4min @ tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "into 2min Walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 x 4min @ tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "into 2min Walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 x 4min @ tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "into 2min Walk",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 24 min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10min light walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2181836,
+          "title": "EE|RO 2.2 (Week 2, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578943/lessons/2181836",
+          "description": "Today we'll be doing 400m intervals but make note that we want create repeatable efforts for each set.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "3 rounds of 5 sets x 200m @ Faster than 5km pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds between sets and 3 full minutes between rounds.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Aim for repeatable times for every set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 200m @ faster than 5k TT pace",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 20min workout",
+              "notes": "Rest a full 3:00min before next round Rest a full 3:00min before next round"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2181837,
+          "title": "EE|RO 2.3 (Week 2, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578943/lessons/2181837",
+          "description": "It’ll be tough but aim for repeatable times!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "movement": "Approx. 20 min workout",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 100m @ 400m Pace (Walk back to start) • Aim for repeatable times.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:00",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 200m @ 2-3 secs faster than 400m Pace • Aim for repeatable times.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:00 between sets",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "TRAINING SESSION",
+              "items": [
+                {
+                  "movement": "Warm up with a 400m light run @ 5k pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 100m @ 400m Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 100m @ 400m Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 100m @ 400m Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 200m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 200m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 200m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 200m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 200m @ 2-3 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "notes": "Rest 2:00 minutes before next section."
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2181838,
+          "title": "EE|RO 3.1 (Week 3, Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578944/lessons/2181838",
+          "description": "Let’s continue building tempo and cadence by increasing our minute-interval work to 15. Go by feel—if Week 1 felt tough, ease the pace slightly so you can sustain the distance. Likewise, listen to your body during the final 10-minute run. If you’ve got more left in the tank, see if you can match or beat the distance you covered in Week 1. If not, no worries—just settle into an easy, continuous jog. It’s all good.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "Warm up with a 10 min of steady jog (slower than 5k pace), then move to the workout of 2 sprints each minute of 20sec sprint + 10 sec walk for 15 minutes for a total of ;l sprints. Finish the workout with 10 min easy, continuous jog. Use a repeatable 30sec distance and aim for 85% of your 5km pace sprint.",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min of steady jog @ faster than 5k Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "After 1-2 minute rest move to…",
+                  "has_video": false
+                },
+                {
+                  "movement": "15 minutes with 30 total runs",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 1 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Every minute perform 2 sets of: 20 sec sprint + 10 sec rest walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 2 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 3 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 4 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 5 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 6 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 7 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 8 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 9 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 10 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 11 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 12 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 13 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 14 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 15 • 2 x 20sec sprint + 10 sec walk @ 85% of full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min easy, continuous jog @ below 5k pace",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 35min workout",
+              "notes": "Immediately into"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2181839,
+          "title": "EE|RO 3.2 (Week 3, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578944/lessons/2181839",
+          "description": "Today we'll be doing a bit more complexity to the 400m intervals we did 2 weeks ago and cranking the distance up to 1000m. Make sure you understand how to break up the intervals before you you start running.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "sets": 4,
+                  "movement": "1000m Intervals",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 400m (at 5km pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 200 meters (faster pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 100m walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 100m sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 200m walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Start right into next set with no additional rest.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Aim for repeatable times every set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 400m @ 5k TT pace + 200m @ faster pace + 100m @ walk + 100m @ Sprint! + 200m @ walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 400m @ 5k TT pace + 200m @ faster pace + 100m @ walk + 100m @ Sprint! + 200m @ walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 400m @ 5k TT pace + 200m @ faster pace + 100m @ walk + 100m @ Sprint! + 200m @ walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 400m @ 5k TT pace + 200m @ faster pace + 100m @ walk + 100m @ Sprint! + 200m @ walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or sets",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 20min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2181840,
+          "title": "EE|RO 3.3 (Week 3, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578944/lessons/2181840",
+          "description": "Be mentally ready for those late sets of 200m. You are going to have to push hard to keep your times repeatable over the 6 sets. Good luck!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "3 sets x 100m @ 400m Pace (Walk back to start) • Aim for repeatable times.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:00",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 sets x 200m @ 2-3 secs faster than 400m Pace • Aim for repeatable times.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:30 between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Warm up with a 600m light run @ 5k pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 100m @ Starting pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 100m @ Build pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 100m @ Build pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:00 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 200m @ 3-5 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:30 before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 200m @ 3-5 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:30 before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 200m @ 3-5 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:30 before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 200m @ 3-5 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:30 before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 200m @ 3-5 secs faster than 400m Pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:30 before next set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 • 200m @ 3-5 secs faster than 400m Pace.",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 20 min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2181841,
+          "title": "EE|RO 4.1 (Week 4, Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578945/lessons/2181841",
+          "description": "Let's continue building from workout 2.1 with 5 rounds of 5 minute intervals at a TOUGH pace. If you don't have a smart watch use the out and back method to ensure you're hitting the same distance every time.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "5 rounds of 5 min @ TOUGH pace (ie. faster than 5k pace) followed by 2 minute walk.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Objective is to cover the same distance with each 5 minute interval.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 - 5min run @ tough pace (faster than 5km pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 - 5min run @ tough pace (faster than 5km pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 - 5min run @ tough pace (faster than 5km pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 - 5min run @ tough pace (faster than 5km pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 - 5min run @ tough pace (faster than 5km pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 30min workout. Goal is repeatable times every set."
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10min light walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2181842,
+          "title": "EE|RO 4.2 (Week 4, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578945/lessons/2181842",
+          "description": "Straight-up 400m interval work today—focus on staying consistent. The next training session is a deload day, so earn that reward by putting in solid effort today.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "3 Rounds of 3 sets x 400m (faster than 5k TT pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest a full 4 minutes before the start of each round.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "REST 4 MINUTES BEFORE NEXT SET",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "REST 4 MINUTES BEFORE NEXT SET",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 minute rest between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 400m @ faster than 5k TT pace",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 40min workout. Goal is repeatable times every set!"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2181843,
+          "title": "EE|RO 4.3 (Week 4, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578945/lessons/2181843",
+          "description": "DELOAD DAY! Keep the pace easy and use this session to dial in your running form and technique.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "Warm up with an easy 800",
+                  "has_video": false
+                },
+                {
+                  "movement": "4-6 sets of 400m repeats at easy pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1 (if it takes 2:05 to run 400m, then rest for 2:05 before starting the next set).",
+                  "has_video": false
+                },
+                {
+                  "movement": "800M light run @ well below 5k Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-2 minute rest walk before…",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 (optional) • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 (optional) • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 30min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2181844,
+          "title": "EE|RO 5.1 (Week 5, Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578946/lessons/2181844",
+          "description": "This session might look rough on paper, but it should fly by once you’re in it. Focus on the running mechanics we’ve been working on, and remember—85% effort isn’t an all-out sprint; it’s just a controlled pickup in pace.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "A 20 minute sprint session of 40 x 20 sec sprints sandwich between two 10min light runs.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Stay consistent and don't come out too hot. 85% = 85% of 5km pace not 85% full sprint.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Pace must be repeatable for all rounds!",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min of steady jog @ faster than 5k Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-2 minute rest walk into…",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 1 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "30 sec sets every minute.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 2 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 3 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 4 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 5 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 6 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 7 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 8 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 9 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 10 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 11 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 12 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 13 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 14 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 15 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 16 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 17 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 18 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 19 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Minute 20 • 2 x 20sec sprint + 10 sec walk @ 85% full sprint effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min easy, continuous jog @ below 5k pace",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 40min workout",
+              "notes": "Immediately into"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10min light walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2181845,
+          "title": "EE|RO 5.2 (Week 5, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578946/lessons/2181845",
+          "description": "Some more complexity intervals. Again, know where along your course you'll be doing each part of the interval and it should be as easy as sprinting between phone poles.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "1100m Intervals",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 200m @ 5km TT pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 200m easy jog",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 200m @ faster pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 200m easy job",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 100m sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "+ 200m walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Start right onto next set with no additional rest. Aim for repeatable times on every set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 200m @ 5k TT pace + 200m easy jog + 200m @ faster pace + 200m easy jog + 100m Sprint! + 200m walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or Sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 200m @ 5k TT pace + 200m easy jog + 200m @ faster pace + 200m easy jog + 100m Sprint! + 200m walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 200m @ 5k TT pace + 200m easy jog + 200m @ faster pace + 200m easy jog + 100m Sprint! + 200m walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 200m @ 5k TT pace + 200m easy jog + 200m @ faster pace + 200m easy jog + 100m Sprint! + 200m walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "No rest between Intervals or Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 200m @ 5k TT pace + 200m easy jog + 200m @ faster pace + 200m easy jog + 100m Sprint! + 200m walk",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 20min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2181846,
+          "title": "EE|RO 5.3 (Week 5, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578946/lessons/2181846",
+          "description": "All out speed work today.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "3 sets x 100m @ building pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:00",
+                  "has_video": false
+                },
+                {
+                  "movement": "7 sets x 100m sprint repeats at 95-100% effort.",
+                  "has_video": false
+                },
+                {
+                  "movement": "With the all out sprints, rest 3:00 minutes between sets. As always, the aim is for repeatable times.",
+                  "has_video": false
+                },
+                {
+                  "movement": "600M light run @ 5k Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-2 minute walk rest into..",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 100m @ Starting pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 100m @ Build pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 100m @ Build pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest = Time it takes to walk back to start.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2:00",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 100m sprint @ 95-100% Effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 3:00 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 100m sprint @ 95-100% Effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 3:00 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 100m sprint @ 95-100% Effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 3:00 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 100m sprint @ 95-100% Effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 3:00 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 • 100m sprint @ 95-100% Effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 3:00 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 • 100m sprint @ 95-100% Effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 3:00 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 7 • 100m sprint @ 95-100% Effort",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 3:00 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 30min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2181847,
+          "title": "EE|RO 6.1 (Week 6 Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578947/lessons/2181847",
+          "description": "We're adding a minute to our interval time this week but our goal is the same - Sustainable speed. We should be faster than our 5km pace time and our hard work today will pay in spades in just a couple of weeks. Get after it!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "5 sets x 6 min @ tough pace run (ie. faster than 5k pace) followed by a 2 minute walk.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Aim to cover the same distance with each 6 minute interval.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 - 6 min run @ tough pace @ faster than 5k pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 - 6 min run @ tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 - 6 min run at tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 - 6 min run at tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 - 6 min run at tough pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 40min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "10min light walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2181848,
+          "title": "EE|RO 6.2 (Week 6, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578947/lessons/2181848",
+          "description": "Something a little different today. A 30minute run for distance with an increasing pace every 10 minutes.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "A 30 minute run. Increase your speed every 10 minutes.",
+                  "has_video": false
+                },
+                {
+                  "movement": "30 minute total run",
+                  "has_video": false
+                },
+                {
+                  "movement": "Part 1 • 10 minute run",
+                  "has_video": false
+                },
+                {
+                  "movement": "Part 2 • 10 minute run @ faster pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Part 3 • 10 minute run @ even faster pace",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 40min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2181849,
+          "title": "EE|RO 6.3 (Week 6, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578947/lessons/2181849",
+          "description": "Descending distance sprints with changing paces. Know the times and distances you're aiming for before you start and dig in to stay as consistent as possible.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "3 Rounds of 800m (faster than 5km TT), then 400 (5-7sec slower than 400m TT), then 200 (2-3 sec faster than 400m TT) with 1:1 rest between.",
+                  "has_video": false
+                },
+                {
+                  "movement": "800m @ faster than 5k pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1 (ie. Rest the same amount as time as your 800m time)",
+                  "has_video": false
+                },
+                {
+                  "movement": "400m @ 5-7secs slower than 400m pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:1 (ie. Rest for your 400m time x 2)",
+                  "has_video": false
+                },
+                {
+                  "movement": "200m @ 2-3secs faster than 400m pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 4:1 (ie. Rest for your 200m time x 4)",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 40min workout"
+            },
+            {
+              "name": "ROUND 2",
+              "items": [
+                {
+                  "movement": "800m @ faster than 5k pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "400m @ 5-7 sec slower than 400m pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "200m @ 2-3secs faster than 400m pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 4:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "800m @ faster than 5k pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "400m @ 5-7 sec slower than 400m pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "200m @ 2-3secs faster than 400m pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 4:1",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2181852,
+          "title": "EE|RO 7.1 (Week 7 Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578948/lessons/2181852",
+          "description": "Our final week of interval training! Just like in previous weeks, aim to cover the same distance at a pace noticeably faster than your 5K time. This is a great opportunity to gauge where you’ll want to set your target pace for next week’s retest.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "4 sets of 8 min runs @ tough pace (faster than 5k pace).",
+                  "has_video": false
+                },
+                {
+                  "movement": "Then recover with 2 minute walk.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Goal is to cover the same distance with each 8 minute interval.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 8 min @ tough pace (faster than 5k pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 8 min @ tough pace (faster than 5k pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 8 min @ tough pace (faster than 5k pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 8 min @ tough pace (faster than 5k pace)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 40 minute Workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "10min light walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2181853,
+          "title": "EE|RO 7.2 (Week 7, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578948/lessons/2181853",
+          "description": "Building on our volume with a long steady run.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "A 40 minute run. Work on holding a sustainable and steady pace.",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "40 minute total run",
+                  "has_video": false
+                },
+                {
+                  "movement": "Run • 40 minute run @ Steady pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Another option is 10 sets of 2 minutes on (running at steady pace) + 2 minutes off (walk / recovery).",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 50min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2181854,
+          "title": "EE|RO 7.3 (Week 7, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578948/lessons/2181854",
+          "description": "DELOAD DAY! Nice and easy before our 5km and 400m retests next week. Be sure to take it easy this weekend, stay mobile and mentally prepared to revisit these workouts.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "RUNNING WORKOUT",
+              "items": [
+                {
+                  "movement": "Warm up with an easy 800m",
+                  "has_video": false
+                },
+                {
+                  "movement": "4-6 sets of 400m repeats at easy pace.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1 (if it takes 2:05 to run 400m, then rest for 2:05 before starting the next set).",
+                  "has_video": false
+                },
+                {
+                  "movement": "800M light run @ well below 5k Pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-2 minute walk rest into..",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 1 • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 2 • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 3 • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 4 • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 5 (optional) • 400m @ easy pace",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1:1",
+                  "has_video": false
+                },
+                {
+                  "movement": "Set 6 (optional) • 400m @ easy pace",
+                  "has_video": false
+                }
+              ],
+              "format": "Approx. 30min workout"
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10 min easy walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2181856,
+          "title": "EE|RO 8.1 (Week 8 Workout 1)",
+          "url": "/c/endless-engine-running-only/sections/578949/lessons/2181856",
+          "description": "Welcome to TEST WEEK! Don't let the name stress you out -- Think of it as checking in on your progress. Today, we're going to run the same course we ran in Week 1. Don't come out too hot and aim for negatives splits (ie. run faster over time). Don't miss Coach CJ's 5km Run Strategy breakdown above.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "5km Time Trial Run",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record finishing time & compare to Week 1",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10min light walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2181857,
+          "title": "EE|RO 8.2 Testing (Week 8, Workout 2)",
+          "url": "/c/endless-engine-running-only/sections/578949/lessons/2181857",
+          "description": "Day 2 of Test Week is going to be a \"rest day\" to give us ample time for 400m sprint. RECOVERY Take it easy today. Go for an easy walk, row or bike or better yet, follow along with Coach Garry's Mobility Flow.",
+          "sections": []
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2181858,
+          "title": "EE|RO 8.3 Testing (Week 8, Workout 3)",
+          "url": "/c/endless-engine-running-only/sections/578949/lessons/2181858",
+          "description": "Our final day of testing! Don't come out too hot and aim to build an increasing pace so you can sent it in the last 100m. After this session, visit the next \"🎉 Course Completion\" section.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Running Drill Follow Along",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Samson Lunges ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Scoops ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Side Shuffles ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Karaoke ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Skipping ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "In Place Single Arm Alternating ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ Figure 4 ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠70% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 80% of 5km Pace Jog ►",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "50’ ＠ 90% of 5km Pace Jog ►",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Feel free to add in a few warm-up runs until you feel ready to go!",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "400m Sprint",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record time & compare to Week 1",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "COOL DOWN",
+              "items": [
+                {
+                  "movement": "5-10min light walk",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

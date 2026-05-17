@@ -1,0 +1,1929 @@
+{
+  "skill": "happy-hips",
+  "course_name": "Happy Hips",
+  "course_slug": "happy-hips",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/happy-hips",
+  "scraped": "2026-05-17",
+  "total_weeks": 1,
+  "total_lessons": 49,
+  "skipped_lessons": 3,
+  "weeks": [
+    {
+      "week": 0,
+      "workouts": [
+        {
+          "id": "ref.1",
+          "lesson_id": 2160793,
+          "title": "Happy Hips Pre-Test",
+          "url": "/c/happy-hips/sections/573394/lessons/2160793",
+          "description": "Be sure to have your Happy Hips Scorecard printed to record your results and a phone or camera ready to take your before photos and even video your tests for your reference and review. Remember we'll be grading each test out of 3. Here’s a list of equipment you'll need to perform the tests below: Remember, not rush these test or push your body to extreme positions to get more range. It should feel like natural easy motion.",
+          "sections": [
+            {
+              "name": "TEST 1 • PASSIVE HIP EXTENSION",
+              "items": []
+            },
+            {
+              "name": "TEST 2 • ACTIVE STRAIGHT LEG TEST",
+              "items": []
+            },
+            {
+              "name": "TEST 3 • INLINE LUNGE",
+              "items": []
+            },
+            {
+              "name": "TEST 4 • HURDLE STEP OVER",
+              "items": []
+            },
+            {
+              "name": "TEST 5 • HEELS ELEVATED OVERHEAD SQUAT",
+              "items": []
+            },
+            {
+              "name": "TEST 6 • OVERHEAD SQUAT",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.2",
+          "lesson_id": 2160795,
+          "title": "Happy Hips | Day 1",
+          "url": "/c/happy-hips/sections/573396/lessons/2160795",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Follow Along Warm-up Flow x 2 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Jefferson Curl ▸ 3/4 Push-up ▸ Up Dog ▸ Down Dog",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Hip Flexor Stretch | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Lateral Hip Stretch | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Hamstring Floss | 15 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Modified Couch Stretch | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Focus on good breathing",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.3",
+          "lesson_id": 2160798,
+          "title": "Happy Hips | Day 2",
+          "url": "/c/happy-hips/sections/573396/lessons/2160798",
+          "description": "Welcome to Day 2 of Happy Hips! You'll find that two days each week will be self-directed sessions focused (i.e., no follow-along video) on developing strength/stability. The aim of these workouts will be to train those areas of the hips that tend to be weak, underdeveloped, or undertrained. The movements in the beginning may seem easy; however, they lay the foundation for our later progressions. It is imperative to master the basics before progressing to more difficult movements. Aim to complete all the reps and sets as prescribed.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Body Weight (BW) Clam Shells | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Body Weight (BW) Glute Bridges | 20 reps",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ 10 Single Leg Glute Bridges | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Hamstring Sliders | 10 reps x each side",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.4",
+          "lesson_id": 2160799,
+          "title": "Happy Hips | Day 3",
+          "url": "/c/happy-hips/sections/573396/lessons/2160799",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Quadricep Foam Rolling | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Glute Foam Rolling | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Inner Thigh (Adductor) Foam Rolling | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Outer Thigh (Vastus Lateralis) Foam Rolling | 1:30 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.5",
+          "lesson_id": 2160800,
+          "title": "Happy Hips | Day 4",
+          "url": "/c/happy-hips/sections/573396/lessons/2160800",
+          "description": "Day 2 of self directed training! There is no follow along video on self directed workout days. *Use a weight that works best for you. A general guideline may be: Males @ 40lbs | Females @ 25lbs",
+          "sections": [
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Straight Leg Raises | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Banded Side Steps | 10 reps x each direction",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Single Leg Reverse Step Deficit Lunges | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ 10 Single Leg Deadlifts | 10 reps x each side",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.6",
+          "lesson_id": 2160801,
+          "title": "Happy Hips | Day 5",
+          "url": "/c/happy-hips/sections/573396/lessons/2160801",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① PVC Pipe Deep Lunge | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Scorpions | 3 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Scorpion Holds | 2 reps x each side with 10-15 sec hold",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Caterpillar Rolls | 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Caterpillar Roll Overs | 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Split Sides | 3 reps x each side with 10-15 sec hold",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑦ Adductor Split Stretch | 1 set x 45 sec",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.7",
+          "lesson_id": 2160802,
+          "title": "Happy Hips | Day 6",
+          "url": "/c/happy-hips/sections/573397/lessons/2160802",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": [
+                {
+                  "movement": "① Follow Along Warm-up Flow x 2 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Jefferson Curl ▸ 3/4 Push-up ▸ Up Dog ▸ Down Dog",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Long Sit to Side Sit | 1 set x 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Dynamic 90/90 Stretch | 2 sets x 3 reps (each side)",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Modified Couch Stretch | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.8",
+          "lesson_id": 2160803,
+          "title": "Happy Hips | Day 7",
+          "url": "/c/happy-hips/sections/573397/lessons/2160803",
+          "description": "In Week 2, you will see many of the strength/stability exercises that are the same as last week. We do this because the development of strength and muscles requires progressive overload. Constantly varied does not only apply to strength! Enjoy today's self-guided workout.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": [],
+              "notes": "Use a weight that works best for you. A general guideline may be: Males • 40lbs | Females • 25lbs"
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Body Weight (BW) Clam Shells | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Weighted Glute Bridges | 15-20 reps",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Single Leg Glute Bridges | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Hamstring Sliders | 10 reps x each side",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.9",
+          "lesson_id": 2160804,
+          "title": "Happy Hips | Day 8",
+          "url": "/c/happy-hips/sections/573397/lessons/2160804",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Quadricep Foam Rolling | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Glute Foam Rolling | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Inner Thigh (Adductor) Foam Rolling | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Lateral Glute Smash | 1:30 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.10",
+          "lesson_id": 2160805,
+          "title": "Happy Hips | Day 9",
+          "url": "/c/happy-hips/sections/573397/lessons/2160805",
+          "description": "Our 2nd day of self-directed training this week! Today, we'll be adding in some superset movements. This means you'll perform one exercise and immediately after go into the next one without rest. Supersets are noted with the \"↳ ⓑ\" icons.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Straight Leg Raises | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Banded Side Steps (lightest band) | 10 reps x each direction",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ ⓑ Valgus Knee Drops (moderate band) | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Single Leg Reverse Step Deficit Lunges | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ 10 Single Leg Deadlifts | 10 reps x each side",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.11",
+          "lesson_id": 2160806,
+          "title": "Happy Hips | Day 10",
+          "url": "/c/happy-hips/sections/573397/lessons/2160806",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① PVC Hip Flexor Stretch | 45 sec x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Scorpions | 3 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Scorpion Holds | 3 reps x each side with 10-15 sec hold",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Caterpillar Rolls | 1 set x 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Caterpillar Roll Overs with Split | 1 set x 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Split Sides | 1 set x 6 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑦ Adductor Split Stretch | 1 set x 45 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Keep it dynamic!",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑧ Adductor Hurtle Stretch | 8 reps x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.12",
+          "lesson_id": 2160807,
+          "title": "Happy Hips | Day 11",
+          "url": "/c/happy-hips/sections/573398/lessons/2160807",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Follow Along Warm-up Flow x 4 sets (alternate sides)",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Long Sit to Side Sit | 6 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Couch Stretch | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Squat Developers | 1 set x 10 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ BW Cossack Squat | 6 reps x both sides",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.13",
+          "lesson_id": 2160808,
+          "title": "Happy Hips | Day 12",
+          "url": "/c/happy-hips/sections/573398/lessons/2160808",
+          "description": "Can you believe we're already into week 3? Great work staying consistent and committing yourself and your mind to the program. This week you will see some new movements, some higher level progressions higher reps. So strap up, stay committed, and get after it.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Clam Shells | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "▸ Lightest Band",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Weighted Hip Bridges | 10-20 reps",
+                  "has_video": true
+                },
+                {
+                  "movement": "▸ 2nd Lightest Band",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Single Leg Glute Bridges | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Side Planks with Leg Raises | 10 reps x each side",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.14",
+          "lesson_id": 2160809,
+          "title": "Happy Hips | Day 13",
+          "url": "/c/happy-hips/sections/573398/lessons/2160809",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE SOFT TISSUE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Hip Flexor Smash | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Hamstring Ball Floss | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Glute Smash | 1:30 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.15",
+          "lesson_id": 2160810,
+          "title": "Happy Hips | Day 14",
+          "url": "/c/happy-hips/sections/573398/lessons/2160810",
+          "description": "Today, let's continue our focus on building stability and strength.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded RDL's | 10-20 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Single Leg Deadlifts | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Abductor Wall Slides | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Adductor Slides | 10 reps x each leg",
+                  "has_video": true
+                }
+              ],
+              "notes": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.16",
+          "lesson_id": 2160811,
+          "title": "Happy Hips | Day 15",
+          "url": "/c/happy-hips/sections/573398/lessons/2160811",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Deep Hip Flexor Stretch | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Hamstring Stretch | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Lightly floss the knee in&out and side-to-side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Lateral Capsule Stretch | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Banded Crossed Leg Knee Pull | 1 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.17",
+          "lesson_id": 2160813,
+          "title": "Happy Hips | Day 16",
+          "url": "/c/happy-hips/sections/573399/lessons/2160813",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Follow Along Warm-up Flow x 4 sets (alternate sides)",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Couch Stretch with Bench | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Pigeon Pose on Bench | 1:30 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Squat Developers | 1 set x 15 reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ BW Cossack Squat | 10 reps x both sides",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.18",
+          "lesson_id": 2160814,
+          "title": "Happy Hips | Day 17",
+          "url": "/c/happy-hips/sections/573399/lessons/2160814",
+          "description": "Unlike our regular WODprep programs, Happy Hips spans 9 weeks instead of 8. This structure enables us to offer three distinct levels of progression difficulty, each lasting approximately 3 weeks. This is crucial as it provides more time to establish a solid foundation and dedicate sufficient time to advanced movements with heavier weights.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Clam Shells | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "② DB Weighted Hip Bridges | 10-20 reps",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Weighted Single Leg Deadlifts | 10 reps x each side",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Side Planks with Leg Raises | 10 reps x each side",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.19",
+          "lesson_id": 2160815,
+          "title": "Happy Hips | Day 18",
+          "url": "/c/happy-hips/sections/573399/lessons/2160815",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE SOFT TISSUE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Hip Flexor Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② TFL Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Too rough? Move back to the wall.",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Quad Smash with Leg Curls | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Glute Smash | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.20",
+          "lesson_id": 2160816,
+          "title": "Happy Hips | Day 19",
+          "url": "/c/happy-hips/sections/573399/lessons/2160816",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Bulgarian Split Squats | 10-20 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Single Leg Hip Bridges | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ 8 Adductor Slides Toe Down | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Flexor Pulls Total | 10 reps x each leg",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.21",
+          "lesson_id": 2160818,
+          "title": "Happy Hips | Day 20",
+          "url": "/c/happy-hips/sections/573399/lessons/2160818",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Deep Hip Flexor Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Drive into the stretch and squeeze Glute",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Hamstring Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Lightly floss the knee in&out and side-to-side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Lateral Capsule Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Wall Split | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Deep Wall Squat | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use your arms to push your knees out",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.22",
+          "lesson_id": 2160819,
+          "title": "Happy Hips | Day 21",
+          "url": "/c/happy-hips/sections/573400/lessons/2160819",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① PVC Hip Flexor Stretch | 1:00 min each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Modified Pretzel Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Half Split Adductor Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Dynamic 90/90 Stretch | 6 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ IT Track Stretch | 3 sets x 3 reps both sides",
+                  "has_video": false
+                },
+                {
+                  "movement": "Drive the knee in and out with your elbow",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.23",
+          "lesson_id": 2160820,
+          "title": "Happy Hips | Day 22",
+          "url": "/c/happy-hips/sections/573400/lessons/2160820",
+          "description": "We are now exploring new areas. You have opened up the hips a bit, and they are getting stronger. Our next challenge is to start increasing your weights. If you have access to heavier weights for exercises that need them, try to add more weight each week. This is especially important for exercises like weighted hip thrusts and lunges. Increasing weight on these lifts will directly improve your main lifts like squats and deadlifts. The stronger you can become in these auxiliary lifts, the stronger you will become in your main lifts.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE:",
+              "items": [
+                {
+                  "movement": "① MAXIMUM EFFORT DB Banded Hip Thrusts | To Failure",
+                  "has_video": true
+                },
+                {
+                  "movement": "Go as heavy as possible!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Box Step Offs | 15 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "2 seconds on the descend",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Banded Side Steps | 10 reps x each way",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Hamstring Sliders | 10 reps x each leg",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.24",
+          "lesson_id": 2160821,
+          "title": "Happy Hips | Day 23",
+          "url": "/c/happy-hips/sections/573400/lessons/2160821",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE SOFT TISSUE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Lateral Quad Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Quad Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Adductor Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ QL Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Stiff back? You're going to love this one!",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.25",
+          "lesson_id": 2160822,
+          "title": "Happy Hips | Day 24",
+          "url": "/c/happy-hips/sections/573400/lessons/2160822",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Side Plank Clam Shells | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Flexor Pulls Total | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Bulgarian Split Squats l | 6-8 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "As heavy as possible!",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Adductor Slides Toe Down | 10 reps x each leg",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.26",
+          "lesson_id": 2160823,
+          "title": "Happy Hips | Day 25",
+          "url": "/c/happy-hips/sections/573400/lessons/2160823",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Couch Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Hamstring Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Deep Squat Adductor Stretch | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Wall Internal Rotation | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Wall External Rotation | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.27",
+          "lesson_id": 2160824,
+          "title": "Happy Hips | Day 26",
+          "url": "/c/happy-hips/sections/573401/lessons/2160824",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Dynamic 90/90 Stretch | 6 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Adductor Side Split | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Roll the toes and knee up to the ceiling",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Pigeon Pose on Bench | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Couch Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ BW Cossack Squat | 10 reps x both sides",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.28",
+          "lesson_id": 2160825,
+          "title": "Happy Hips | Day 27",
+          "url": "/c/happy-hips/sections/573401/lessons/2160825",
+          "description": "The only way to continue to get stronger is to increase weights progressively. So, in Week 6, aim to increase weight each week. If you are strapped with only one DB or kettlebell weight available, that is still okay; stick with that and increase rounds and/or reps. Now as we near the end of the course and start to incorporate a barbell, you should be getting to the point of really loading those hips up with some serious weight.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① MAXIMUM EFFORT Romanian Deadlifts | To Failure",
+                  "has_video": true
+                },
+                {
+                  "movement": "Go as heavy as possible!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Side Plank Clam Shell | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Side Box Step Offs | 15 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "2 seconds on the descent | Try to go a little higher this week",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Single Leg Deadlifts | 10 reps x each leg",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.29",
+          "lesson_id": 2160826,
+          "title": "Happy Hips | Day 28",
+          "url": "/c/happy-hips/sections/573401/lessons/2160826",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE SOFT TISSUE ROUTINE",
+              "items": [
+                {
+                  "movement": "① TFL Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Lateral Quadricep Smash with Knee Flexion | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Glute Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ QL Smash | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.30",
+          "lesson_id": 2160827,
+          "title": "Happy Hips | Day 29",
+          "url": "/c/happy-hips/sections/573401/lessons/2160827",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Flexor Pulls Total | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Bulgarian Split Squats l | 6-8 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "Try to go heavier this week!",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Adductor Slides Toe Down | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ QL Walks | 1 set x 10 shifts forward",
+                  "has_video": true
+                },
+                {
+                  "movement": "1 Rep = both sides - Weight doesn't need to be heavy",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.31",
+          "lesson_id": 2160828,
+          "title": "Happy Hips | Day 30",
+          "url": "/c/happy-hips/sections/573401/lessons/2160828",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Hamstring Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Dip Hip Flexor Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Banded Glute Stretch | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Wall Internal Rotation | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Deep Wall Squat Stretch | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.32",
+          "lesson_id": 2160829,
+          "title": "Happy Hips | Day 31",
+          "url": "/c/happy-hips/sections/573402/lessons/2160829",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Hamstring Floss | 10 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Side Lying Glute Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Adductor Hurdle Stretch | 10 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Couch Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "Full Couch Stretch with the knee flush to the wall. Stay low and focus on full hip extension.",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Squat Developer | 1 set x 10 reps",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.33",
+          "lesson_id": 2160830,
+          "title": "Happy Hips | Day 32",
+          "url": "/c/happy-hips/sections/573402/lessons/2160830",
+          "description": "Now that we have opened up the hips, it's time to build muscle. Over the next three weeks, we will tackle our biggest and toughest progressions. While many movements will remain the same, our goal is to increase the weight each week. Therefore, recording the weight lifted today is crucial for your success during the Happy Hips retest.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": [
+                {
+                  "movement": "3 Rounds; Not For Time",
+                  "has_video": false
+                },
+                {
+                  "movement": "① Barbell Banded Hip Thrusts | AHAP x 10",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or DB Banded Hip Thrusts | AHAP x 10",
+                  "has_video": true
+                },
+                {
+                  "movement": "AHAP = As heavy as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Stiff Leg Deadlifts @ 6-8 reps x 55% of Deadlift Max",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or Single Leg Deadlifts | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Side Box Single Leg Squat Progression | 6-8 reps x each leg",
+                  "has_video": true
+                }
+              ],
+              "format": "Self-Directed Routine"
+            }
+          ]
+        },
+        {
+          "id": "ref.34",
+          "lesson_id": 2160831,
+          "title": "Happy Hips | Day 33",
+          "url": "/c/happy-hips/sections/573402/lessons/2160831",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE SOFT TISSUE ROUTINE",
+              "items": [
+                {
+                  "movement": "① TFL Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Lateral Quadricep Smash with Knee Flexion | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Adductor Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Glute Smash | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.35",
+          "lesson_id": 2160832,
+          "title": "Happy Hips | Day 34",
+          "url": "/c/happy-hips/sections/573402/lessons/2160832",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Flexor Push Pulls Total | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Adductor Slides Toe Up | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Bulgarian Split Squats | 6-8 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "Aim to increase the weight this week.",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Single Leg Good Morning | 6-8 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or Side Box Step Offs | 12 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "2 sec on the decent | Go lower than last week",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.36",
+          "lesson_id": 2160833,
+          "title": "Happy Hips | Day 35",
+          "url": "/c/happy-hips/sections/573402/lessons/2160833",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Hamstring Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Deep Couch Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Banded Lateral Capsule Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Wall Butterfly Stretch | Accumlate 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "Press knees in and out through the minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Wall Adductor Split Stretch | Accumlate 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "Turns toes out with glutes tight to the wall",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.37",
+          "lesson_id": 2160834,
+          "title": "Happy Hips | Day 36",
+          "url": "/c/happy-hips/sections/573403/lessons/2160834",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Active Internal Rotation | 6 reps x both sides",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Long Sit to Side Sit Stretch | 6 reps x both sides",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Dynamic 90/90 Stretch | 6 reps x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Pigeon Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Wall Couch Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Squat Developer | 1 set x 6 reps",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.38",
+          "lesson_id": 2160835,
+          "title": "Happy Hips | Day 37",
+          "url": "/c/happy-hips/sections/573403/lessons/2160835",
+          "description": "In the final two weeks of Happy Hips, we will repeat many of the same movements with the goal of increasing the weight! You will notice that a few exercises have a +10 lbs to help you progressively overload each week. Happy Hips are strong hips, so we want to finish the program with some quality strength gains.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Barbell Banded Hip Thrusts | +10lb. from last week x 10",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or DB Banded Hip Thrusts | + weight (or reps) from last week x 10",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Stiff Leg Deadlifts @ 6-8 reps x +10lb. from last week",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or Single Leg Deadlifts | + weight (or reps) from last week x 10",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Side Box Single Leg Squat Progression | 6-8 reps x each Leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "Aim to go deeper this week!",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.39",
+          "lesson_id": 2160836,
+          "title": "Happy Hips | Day 38",
+          "url": "/c/happy-hips/sections/573403/lessons/2160836",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE SOFT TISSUE ROUTINE",
+              "items": [
+                {
+                  "movement": "① TFL Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Lateral Quadricep Smash with Knee Flexion | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Glute Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ QL Smash | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.40",
+          "lesson_id": 2160837,
+          "title": "Happy Hips | Day 39",
+          "url": "/c/happy-hips/sections/573403/lessons/2160837",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Flexor Push Pulls | 8 reps x both legs",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Adductor Slides Toe Up | 6 reps",
+                  "has_video": true
+                },
+                {
+                  "movement": "↳ ⓑ Adductor Slides Toe Down | 6 reps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Switch legs",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Reverse Deficit Lunges | 8-10 reps x AHAP",
+                  "has_video": true
+                },
+                {
+                  "movement": "Limited weight? Add reps!",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Single Leg Good Morning | 6-8 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or Side Box Step Offs | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "2 sec on the decent",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.41",
+          "lesson_id": 2160838,
+          "title": "Happy Hips | Day 40",
+          "url": "/c/happy-hips/sections/573403/lessons/2160838",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Hamstring Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Dip Hip Flexor Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Banded Glute Stretch | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Wall Internal Rotation | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Deep Wall Squat Stretch | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.42",
+          "lesson_id": 2160839,
+          "title": "Happy Hips | Day 41",
+          "url": "/c/happy-hips/sections/573416/lessons/2160839",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Active Internal Rotation | 6 reps x both sides",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Adductor Half Split Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Glute Side Roll Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Pigeon Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Wall Couch Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑥ Cossack Squat | 1 set x 10 reps",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.43",
+          "lesson_id": 2160840,
+          "title": "Happy Hips | Day 42",
+          "url": "/c/happy-hips/sections/573416/lessons/2160840",
+          "description": "Like last week, aim to increase the weight this final week so we can finish strong.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Barbell Banded Hip Thrusts | +10lb. from last week x 10",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or DB Banded Hip Thrusts | + weight (or reps) from last week x 10",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Stiff Leg Deadlifts @ 6-8 reps x +10lb. from last week",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or Single Leg Deadlifts | + weight (or reps) from last week x 10",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Side Box Single Leg Squat Progression | 6-8 reps x each Leg",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.44",
+          "lesson_id": 2160841,
+          "title": "Happy Hips | Day 43",
+          "url": "/c/happy-hips/sections/573416/lessons/2160841",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE SOFT TISSUE ROUTINE",
+              "items": [
+                {
+                  "movement": "① TFL Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Lateral Quadricep Smash with Knee Flexion | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Adductor Smash | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Glute Smash | 1:00 min x each side",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.45",
+          "lesson_id": 2160843,
+          "title": "Happy Hips | Day 44",
+          "url": "/c/happy-hips/sections/573416/lessons/2160843",
+          "description": "Last self-directed workout is here! After you complete tomorrow's workout, please be sure to complete the Happy Hips post-testing evaluation. It is very important to be able to quantify your results, even if you can feel the difference.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "SELF-DIRECTED ROUTINE",
+              "items": [
+                {
+                  "movement": "① Flexor Push Pulls | 8 reps x both sides",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Single Leg Hamstring Sliders | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Reverse Deficit Lunges | 8-10 reps x +10lbs over last week",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Single Leg Good Morning | 6-8 reps x +10lbs over last week (each leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "＊or Side Box Step Offs | 10 reps x each leg",
+                  "has_video": true
+                },
+                {
+                  "movement": "2 sec on the decent",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Rounds; Not For Time"
+            }
+          ]
+        },
+        {
+          "id": "ref.46",
+          "lesson_id": 2160844,
+          "title": "Happy Hips | Day 45",
+          "url": "/c/happy-hips/sections/573416/lessons/2160844",
+          "description": "Congratulations! It's the final day of Happy Hips! Please remember to share your feedback in the course completion section, let us know your thoughts and suggestions for improvement. Also, don't forget to post your progress on the Wall of Wins for a chance to earn some awesome WODprep swag.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Banded Hamstring Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Banded Deep Couch Stretch | 1:00 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Banded Lateral Capsule Stretch | 1 set x 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Wall Butterfly Stretch | Accumulate 1:00 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "⑤ Wall Adductor Stretch | Accumulate 1:00 min",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.47",
+          "lesson_id": 2160845,
+          "title": "Happy Hips Post Test",
+          "url": "/c/happy-hips/sections/573417/lessons/2160845",
+          "description": "Ensure you have your Week 1 Happy Hips Scorecard ready to document your results, and have a phone or camera prepared to record your test video for comparison with Week 1. Remember we'll be grading each test out of 3. Here’s a list of equipment you'll need to perform the tests below: Remember, not rush these test or push your body to extreme positions to get more range. It should feel like natural easy motion.",
+          "sections": [
+            {
+              "name": "TEST 1 • PASSIVE HIP EXTENSION",
+              "items": []
+            },
+            {
+              "name": "TEST 2 • ACTIVE STRAIGHT LEG TEST",
+              "items": []
+            },
+            {
+              "name": "TEST 3 • INLINE LUNGE",
+              "items": []
+            },
+            {
+              "name": "TEST 4 • HURDLE STEP OVER",
+              "items": []
+            },
+            {
+              "name": "TEST 5 • HEELS ELEVATED OVERHEAD SQUAT",
+              "items": []
+            },
+            {
+              "name": "TEST 6 • OVERHEAD SQUAT",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.48",
+          "lesson_id": 2161969,
+          "title": "Post Test Analysis",
+          "url": "/c/happy-hips/sections/573417/lessons/2161969",
+          "description": "Now that you’ve completed the Post course test, add up your score and compare to Week 1. Review your videos from each movement and compare.",
+          "sections": [
+            {
+              "name": "WE LOVE CELEBRATING SUCCESS!",
+              "items": [
+                {
+                  "movement": "Share your before and after videos on the Wall of Wins to earn some free swag. WODprep Academy athletes can post questions and videos in the Academy Group Coaching space. Lastly, posting on social media? Don’t forget to tag us @WODprep.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.49",
+          "lesson_id": 2160847,
+          "title": "What's next? Your Next Step!",
+          "url": "/c/happy-hips/sections/573418/lessons/2160847",
+          "description": "",
+          "sections": [
+            {
+              "name": "CONGRATULATIONS ON FINISHING HAPPY HIPS!",
+              "items": [
+                {
+                  "movement": "Depending on your goals and milestones, you may wish to go through this programming again or come back to it if you find you need it. Fortunately, as a WODprep athlete you have access to this program and all future updates for life or as long as your a WODprep Academy member.",
+                  "has_video": false
+                },
+                {
+                  "movement": "For those ready to continue the journey, we recommend Coach Garry's other mobility and strength courses ShoulderROM Unlocked and Functional Core.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Looking for something different? Double Under Pro, Kipping Pull Performance or even Handstand Push-Up Power are great choices to continue your CrossFit development and get you ready for whatever comes next.",
+                  "has_video": false
+                },
+                {
+                  "movement": "And remember — as a WODprep athlete, you get 50% off all future courses.",
+                  "has_video": false
+                },
+                {
+                  "movement": "As always, if you need help with anything, just email support@wodprep.com. We’re always here for you.",
+                  "has_video": false
+                },
+                {
+                  "movement": "All the best and good luck,",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "skill": "ankle-flexibility-solution",
+  "course_name": "Ankle Flexibility",
+  "course_slug": "ankle-flexibility-solution",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/ankle-flexibility-solution",
+  "scraped": "2026-05-17",
+  "total_weeks": 1,
+  "total_lessons": 4,
+  "skipped_lessons": 2,
+  "weeks": [
+    {
+      "week": 0,
+      "workouts": [
+        {
+          "id": "ref.1",
+          "lesson_id": 2165270,
+          "title": "Ankle Mobility Flow",
+          "url": "/c/ankle-flexibility-solution/sections/574630/lessons/2165270",
+          "description": "Follow Along with Coach Garry's Ankle Mobility Flow.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "4 STEP MOBILITY ROUTINE",
+              "items": [
+                {
+                  "movement": "① Plantar Fasciitis Ball Smash | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "② Ankle Capsule Floss | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "③ Ankle Dorsal Flexion Distraction | 1 min x each side",
+                  "has_video": false
+                },
+                {
+                  "movement": "④ Calf Negatives | 2 sets x 8-10 reps (alternate sides)",
+                  "has_video": false
+                },
+                {
+                  "movement": "Drive up with both feet, lower with control on one foot and hold for 3 secs. Repeat with other side.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.2",
+          "lesson_id": 2165271,
+          "title": "AF Workout 1",
+          "url": "/c/ankle-flexibility-solution/sections/574630/lessons/2165271",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Foot Smash x 1:30 Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Ankle Distraction 1x 1:00 Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ 3-5-5 Stretch x 2 Sets of 10 Rep",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Wall Ankle Loading x 10 Reps Each Side",
+                  "has_video": true
+                }
+              ],
+              "format": "Perform this workout once a week. Make note of your progress so each you can build on your progress."
+            }
+          ]
+        },
+        {
+          "id": "ref.3",
+          "lesson_id": 2165272,
+          "title": "AF Workout 2",
+          "url": "/c/ankle-flexibility-solution/sections/574630/lessons/2165272",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Tibialis Smash x 1 Minute Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Banded Ankle Distraction 2 x 1 Minute Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ Wall Ankle Floss - 1 Minute Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Soleus Ankle Drops - 10 Reps Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "⑤ Close Legged Squats - 2 Sets of 10 Reps",
+                  "has_video": true
+                }
+              ],
+              "format": "Perform this workout once a week. Make note of your progress so each you can build on your progress."
+            }
+          ]
+        },
+        {
+          "id": "ref.4",
+          "lesson_id": 2165273,
+          "title": "AF Workout 3",
+          "url": "/c/ankle-flexibility-solution/sections/574630/lessons/2165273",
+          "description": "",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED",
+              "items": []
+            },
+            {
+              "name": "THE ROUTINE",
+              "items": [
+                {
+                  "movement": "① Calf Smash x 1 Minute Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "② Wall Calf Stretch x 1 Minute Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "③ KB Dorsiflexion x 1 Minute Each Side",
+                  "has_video": true
+                },
+                {
+                  "movement": "④ Single Leg Ankle Drops x 2 Sets of 8 Reps (each leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "⑤ Counter Balance Cossack Squat x 10 Reps Total",
+                  "has_video": true
+                }
+              ],
+              "format": "Perform this workout once a week. Make note of your progress so each you can build on your progress."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

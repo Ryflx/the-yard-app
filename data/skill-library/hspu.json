@@ -1,0 +1,1503 @@
+{
+  "skill": "hspu",
+  "course_name": "Handstand Push-up Power",
+  "course_slug": "handstand-push-up-power",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/handstand-push-up-power",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 16,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2183383,
+          "title": "HSPUP 1.1 (Week 1, Workout 1)",
+          "url": "/c/handstand-push-up-power/sections/579352/lessons/2183383",
+          "description": "Welcome! Today kicks off with a warm-up and a few baseline assessments to help track your progress. Be sure to record videos of each test, these are key to seeing how far you’ve come by the end of the program. This week, you’ll test your handstand hold and complete AMRPAS (as many reps as possible) for both strict and kipping handstand push-ups. Don’t stress if you score zero—many athletes start there. These baselines simply help us measure your growth when we retest in Weeks 4 and 8. Download the Handstand Push-up Score Sheet under the Files tab to track your results.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20sec hollow body hold + 5 prone arm raises",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec FLR hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10x thoracic rotation (each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "9 min EMOM",
+              "notes": "Rest walk 4 minutes before Test"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Once you feel any loss in form, especially in your lower back, STOP!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record time",
+                  "has_video": false
+                }
+              ],
+              "format": "1 x Max Effort Handstand Hold (wall assisted w/ stomach to wall)"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2183384,
+          "title": "HSPUP 1.2 (Week 1, Workout 2)",
+          "url": "/c/handstand-push-up-power/sections/579352/lessons/2183384",
+          "description": "Be careful not to blow up too fast in this 5-minute AMRAP! The volume adds up quickly, so pacing is key. Fast singles or doubles with short breaks can be a smart strategy to stay consistent across the full 5 minutes. Looking for your first strict HSPU? You’re in the right place! Record all of your attempts, then share 1-2 trimmed clips in the Academy Coaching Space for actionable feedback from our WODprep Coaches. Use the Handstand Push-up Score Sheet under the Files tab to track your results.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "20sec x FLR Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Reverse Plank",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between sets.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 sets",
+              "notes": "Rest at least 2 minutes before Test"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Strict HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Film your attempts and record max unbroken reps and total number of reps.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 min AMRAP"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2183385,
+          "title": "HSPUP 1.3 (Week 1, Workout 3)",
+          "url": "/c/handstand-push-up-power/sections/579352/lessons/2183385",
+          "description": "While today you’ll be testing your kipping handstand push-up, the next four weeks will primarily focus on developing your strict handstand push-up. Building strict strength and control lays the foundation for long-term success. Mastering strict handstand push-ups first ensures you have the strength, technique, and stability needed to transition to kipping with greater ease, making your progress safer, more efficient, and more sustainable. Again, use your Handstand Push-up Score Sheet under the Files tab to track your results.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "10sec Body Tighteners",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 5 sec between reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets; 1 set every 2 mins",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "5sec Tripod Against Wall",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 10 sec between reps",
+                  "has_video": false
+                }
+              ],
+              "format": "2 sets; 1 set every 2 mins",
+              "notes": "Rest walk 2minutes before Test"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Effort UNBROKEN Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film sets and record numbers",
+                  "has_video": false
+                }
+              ],
+              "format": "2 sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2183386,
+          "title": "HSPUP 2.1 (Week 2, Workout 1)",
+          "url": "/c/handstand-push-up-power/sections/579353/lessons/2183386",
+          "description": "When it comes to handstand push-ups, don’t underestimate the power of static holds and time under tension in the positions that matter most. Today, we’re laying the groundwork by building positional strength, an essential step toward more controlled and efficient HSPUs.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "20sec FLR Hold + 10 Prone Arm Raises",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets:",
+                  "has_video": false
+                },
+                {
+                  "movement": "10sec Body Tightener + 1 Wall Walk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets:",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 Pike Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Challenging? Modify to feet on box, feet on the floor or knees elevated tripod HSPU",
+                  "has_video": false
+                }
+              ],
+              "format": "5 sets"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2183387,
+          "title": "HSPUP 2.2 (Week 2, Workout 2)",
+          "url": "/c/handstand-push-up-power/sections/579353/lessons/2183387",
+          "description": "Today’s focus is upper body pressing strength paired with proper muscle activation and strong midline stability which is fundamental to mastering handstand push-ups. Let’s get after it!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 3,
+                  "movement": "Box Rocks (hold 5sec)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk for 30sec before…",
+                  "has_video": false
+                },
+                {
+                  "movement": "20sec x Tripod Against Wall",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk for 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "8 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5 x Z Presses (@25% BW/hand or tough weight)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x Prone Arm Raises",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2183388,
+          "title": "HSPUP 2.3 (Week 2, Workout 3)",
+          "url": "/c/handstand-push-up-power/sections/579353/lessons/2183388",
+          "description": "Today, we’re getting upside down! Building a strong foundation for your inverted pressing strength is on the menu—enjoy the work!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "2 x Box Rocks (with 10sec hold)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Reverse Plank",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-10 x Pike Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Challenging? Modify to feet on box, feet on the floor or knees elevated tripod HSPU",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 90sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "movement": "Every min: 10 x Handstand Hold With Shoulder Shrugs (back to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "In the final minute (min 5), continue the handstand hold as long as you can after shrugs.",
+                  "has_video": false
+                }
+              ],
+              "format": "8 min EMOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2183389,
+          "title": "HSPUP 3.1 (Week 3, Workout 1)",
+          "url": "/c/handstand-push-up-power/sections/579354/lessons/2183389",
+          "description": "Our volume is building. Choose a pike push-up variation that is most challenging for you and get pressing!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "4 x Box Rocks (with 5sec hold)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM:",
+                  "has_video": false
+                },
+                {
+                  "movement": "Every min: 3-5 Pike Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Challenging? Modify to feet on box, feet on the floor or knees elevated tripod HSPU",
+                  "has_video": false
+                }
+              ],
+              "format": "8 min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2183390,
+          "title": "HSPUP 3.2 (Week 3, Workout 2)",
+          "url": "/c/handstand-push-up-power/sections/579354/lessons/2183390",
+          "description": "Today, we’re focusing on body alignment and stability to challenge your balance and improve how you distribute weight through your hands. Let’s build a solid base of support!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10sec x Body Tightener + 1 x Wall Walk + 30sec x Handstand Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "Rest walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Handstand Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 90sec",
+                  "has_video": false
+                }
+              ],
+              "format": "10 min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2183391,
+          "title": "HSPUP 3.3 (Week 3, Workout 3)",
+          "url": "/c/handstand-push-up-power/sections/579354/lessons/2183391",
+          "description": "Hand placement and a consistent kick-up are key to building confidence and progressing in your HSPU. This is where we start to demonstrate a true understanding of the positions required. Aim to make every rep identical—creating “one pattern” is essential for building efficiency. We’re also introducing tempo training, a method that increases time under tension to build greater strength and control. Don’t stress about hitting the tempo perfectly—it’s meant to guide you toward moving with focus, not speed.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "sets": 2,
+                  "movement": "Kick-ups to Wall",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Handstand Hold With Shoulder Shrugs (back to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Tempo HSPU Negatives @51A1",
+                  "has_video": true
+                },
+                {
+                  "movement": "@51A1 is our tempo. 5secs down, 1sec pause at bottom. Assisted = kick up with 1 sec hold at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 90sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "In 5 minutes: 10sec work + 20sec rest x 10",
+                  "has_video": false
+                },
+                {
+                  "movement": "Hollow Body Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "3 sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2183397,
+          "title": "HSPUP 4.1 (Week 4, Workout 1)",
+          "url": "/c/handstand-push-up-power/sections/579355/lessons/2183397",
+          "description": "We'll be jumping into some longer complexes today. It's also time to check in with how our strength and endurance is coming along with a max wall hold for time.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Kick-up to Wall (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Handstand Hold With Shoulder Shrugs (back to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Tempo HSPU Negative (51A1)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform as one movement. Adjust the shoulder tap reps to keep this unbroken.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-10 x Pike Push-Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Focus on getting hips over hands and shoulders.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 90sec. Rest walk at least 2 minutes before Test",
+                  "has_video": false
+                }
+              ],
+              "format": "5 sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Once you feel any loss in form, especially in your lower back, STOP!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record time",
+                  "has_video": false
+                }
+              ],
+              "format": "1 x Max Effort Handstand Hold (wall assisted w/ stomach to wall)"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2183398,
+          "title": "HSPUP 4.2 (Week 4, Workout 2)",
+          "url": "/c/handstand-push-up-power/sections/579355/lessons/2183398",
+          "description": "Let’s check out how all our effort has paid off so far! Be sure to record your set of Strict HSPU and if you're looking for feedback and coaching, post trimmed video of your Strict Handstand Push-ups in the Academy Coaching space.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x FLR Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "2 x Box Rocks (with 5 sec hold)",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "2x 10sec x Body Tightener (rest 5 sec)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "movement": "min 1 • 8-10 x Standing DB Overhead Press (Moderate Load @ 30X1)",
+                  "has_video": true
+                },
+                {
+                  "movement": "min 2 • 20-30sec x Reverse Plank",
+                  "has_video": true
+                }
+              ],
+              "format": "6 min EMOM",
+              "notes": "Rest walk at least 2 minutes before Test"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Strict HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Film your attempts and record max unbroken reps and total number of reps.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 min AMRAP"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2183399,
+          "title": "HSPUP 4.3 (Week 4, Workout 3)",
+          "url": "/c/handstand-push-up-power/sections/579355/lessons/2183399",
+          "description": "Our last test gave us valuable insight into your progress with the Strict Handstand Push-Up. Now’s the time to apply that feedback, focus on the key coaching points and let’s take things to the next level! Today, we’re kicking off our kipping handstand work with a check-in. Oh, happy day!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30sec x Prone Arm Raises",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "1x Wall Walk",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3x Kick-Up to Wall (1 attempt every 10 secs)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Wall Assisted Tripod to Headstand",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "HSPU Negative to Tripod (back to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "1-3 x Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute and at least 2 minutes before Test",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Effort UNBROKEN Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film sets and record numbers",
+                  "has_video": false
+                }
+              ],
+              "format": "2 sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2183400,
+          "title": "HSPUP 5.1 (Week 5, Workout 1)",
+          "url": "/c/handstand-push-up-power/sections/579356/lessons/2183400",
+          "description": "Consistency is key! Mark your ideal hand placement on the ground and aim to hit that spot with every kick-up. Grip the floor with your fingertips and stay engaged throughout the entire movement. Tension and control make all the difference!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Kick-up to Wall",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Handstand Hold With Shoulder Shrugs (back to wall)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Tempo HSPU Negative @51A1 (back to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 min EMOM:",
+                  "has_video": false
+                },
+                {
+                  "movement": "Every min: 20sec x AMRAP Regular Push-Ups",
+                  "has_video": true
+                }
+              ],
+              "format": "12 sets"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2183401,
+          "title": "HSPUP 5.2 (Week 5, Workout 2)",
+          "url": "/c/handstand-push-up-power/sections/579356/lessons/2183401",
+          "description": "We’re following up this week’s strict work with focused kipping skill practice. Keep your feet together and lead the movement with a strong hip drive! Be sure to film your sets—comparing your reps to the demo videos can be a game-changer. The more feedback you gather (whether self-assessed or from the WODprep Coaches), the faster your progress will be.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Tripod Weight Shifts",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Wall Assisted Tripod to Headstand",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kip Drill",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets: 1 attempt every 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Headstand to Plank",
+                  "has_video": true
+                }
+              ],
+              "format": "3 sets"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2183402,
+          "title": "HSPUP 5.3 (Week 5, Workout 3)",
+          "url": "/c/handstand-push-up-power/sections/579356/lessons/2183402",
+          "description": "Establishing the timing of the kip is our primary focus today. When you are working through the kipping drills, keep in mind where you feel tension and when you are pressing through the shoulders. WARM UP Wrist Warm Up Flow SKILLS 6 sets 10 x Kip Drill Rest 10sec before… 1 x Kip to Plank Rest 10sec before… 1 x Kip to Wall Rest walk 30 sec + 6 sets: One set every 90sec 2 x Tripod Tuck to Headstand",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2183403,
+          "title": "HSPUP 6.1 (Week 6, Workout 1)",
+          "url": "/c/handstand-push-up-power/sections/579357/lessons/2183403",
+          "description": "Today we’re continuing to build strict handstand push-up volume. Focus on keeping your entire body tight, from head to toe, to create strong, bulletproof movement patterns. At the end of the session, you’ll complete a mini check-in assessment. Keep in mind your shoulders will be fatigued by this point, so don’t stress over the numbers. If you’re out of strict HSPUs, finish with controlled negatives and consider it a solid win for the day! WARM UP Wrist Warm Up Flow SKILLS 15 sets: 1 every 30sec 1 x Kick-up to Wall 5 x Handstand Hold With Shoulder Shrugs (back to wall) 1 x Tempo HSPU Negative (control the movement) Perform as one movement. Adjust the shoulder tap reps to keep this unbroken. + 5 sets AMRAP Strict HSPU (into) 2 x Tempo HSPU Negatives @52A1 Tempo = @5sec down, 2sec at bottom, (Assisted) Wall kick up, 1sec at top. Rest walk 2 minutes",
+          "sections": []
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2183404,
+          "title": "HSPUP 6.2 (Week 6, Workout 2)",
+          "url": "/c/handstand-push-up-power/sections/579357/lessons/2183404",
+          "description": "Today is all about the kip!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 2,
+                  "movement": "Tripod Tuck to Headstands",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 10sec before…",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Kip to Plank",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 10sec before…",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Kip to Wall",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "HSPU Negative to Tripod (back to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "HSPU Negative to Tripod (back to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "HSPU Negative to Tripod (back to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1-2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "6 sets"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2183405,
+          "title": "HSPUP 6.3 (Week 6, Workout 3)",
+          "url": "/c/handstand-push-up-power/sections/579357/lessons/2183405",
+          "description": "We’ve been putting in the work on our positions and kipping skills—now it’s time to see how far we’ve come with another check-in assessment. Take a moment to review your progress and evaluate how your HSPUs are developing. Don’t forget that WODprep Coaches are available inside Academy Coaching to provide guidance and actionable feedback If you’re looking for a more personalized approach, consider booking a complimentary discovery call to see if WODprep 1-on-1 Coaching is a better fit for your goals.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Handstand Rocks (or stop at the 40sec mark)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5x Kip Drill",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Effort UNBROKEN Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1-2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film both sets for review",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5-10 x Pike Push-up",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30-40sec x Hollow Body Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "10 min EMOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2183406,
+          "title": "HSPUP 7.1 (Week 7, Workout 1)",
+          "url": "/c/handstand-push-up-power/sections/579358/lessons/2183406",
+          "description": "There’s a lot of volume on the menu today! Do your best to hit the prescribed ranges, but don’t hesitate to make smart adjustments as needed. Focus on quality reps and staying consistent throughout.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "AMRAP Unbroken Strict HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "No strict HSPUs yet? Substitute with 2x strict HSPU negatives using a @51A1 tempo. The “A” stands for assisted, so kick back up to the starting position after each rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "HSPU Negative to Tripod (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "4-6 x Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 3 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "5 sets"
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2183407,
+          "title": "HSPUP 7.2 (Week 7, Workout 2)",
+          "url": "/c/handstand-push-up-power/sections/579358/lessons/2183407",
+          "description": "Handstand kipping refinement is on the menu today! Choose a rep range you can sustain across all sets. This one’s going to be a blast. Enjoy the challenge!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 4,
+                  "movement": "Tripod Tuck to Headstands",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 10sec before…",
+                  "has_video": false
+                },
+                {
+                  "sets": 3,
+                  "movement": "Kip to Plank",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 10sec before…",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Kip to Wall",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 10sec before…",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-10 x Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 min EMOM:",
+                  "has_video": false
+                },
+                {
+                  "movement": "Every Minute: 1x Wall Walks + 10-20sec x Handstand Hold (stomach to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Modify the handstand hold to match your level",
+                  "has_video": false
+                }
+              ],
+              "format": "10 sets"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2183408,
+          "title": "HSPUP 7.3 (Week 7, Workout 3)",
+          "url": "/c/handstand-push-up-power/sections/579358/lessons/2183408",
+          "description": "We’ve built up a lot of volume this week in both strict and kipping HSPU work. Today, we’re dialing it back with lower volume and a strong dose of midline accessory work. Your core might be feeling this one tomorrow!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30sec x FLR Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec x Reverse Plank",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "10sec x AMRAP Strict HSPU (into) + 10sec x AMRAP Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Tripod Weight Shifts",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Wall Assisted Tripod to Headstand",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "8 min EMOM",
+              "notes": "Rest walk 2 minutes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2183409,
+          "title": "HSPUP 8.1 (Week 8, Workout 1)",
+          "url": "/c/handstand-push-up-power/sections/579359/lessons/2183409",
+          "description": "Our final week… wait, what?! Time flies when you’re upside down. Keep the videos rolling and enjoy the process, you’ve put in a ton of work to get here! Make sure to film your attempts, document your scores, and compare them to Week 1.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20sec x hollow body hold + 5 x prone arm raises",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x FLR hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10 x thoracic rotation (each side)",
+                  "has_video": true
+                }
+              ],
+              "format": "9 min EMOM",
+              "notes": "Rest walk 4 minutes before Test"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Once you feel any loss in form, especially in your lower back, STOP!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record time",
+                  "has_video": false
+                }
+              ],
+              "format": "1 x Max Effort Handstand Hold (wall assisted w/ stomach to wall)"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2183410,
+          "title": "HSPUP 8.2 (Week 8, Workout 2)",
+          "url": "/c/handstand-push-up-power/sections/579359/lessons/2183410",
+          "description": "Our Week 8 Strict HSPU assessment is finally here! You’ve put in the work, so trust your progress and pace yourself. No need to redline early. Once you’ve finished, compare your score to Week 1 and celebrate your progress! Don’t forget to share your win on the Wall of Wins, you might even score some free WODprep swag!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "5-10 x Knees Elevated Tripod HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest/ Walk 10sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "20sec x Reverse Plank",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest/ Walk 10sec & 4min before Test.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Strict HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Film your attempts and record max unbroken reps and total number of reps.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 min AMRAP"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2183411,
+          "title": "HSPUP 8.3 (Week 8, Workout 3)",
+          "url": "/c/handstand-push-up-power/sections/579359/lessons/2183411",
+          "description": "Congratulations — you made it! 🎉 It’s our final day of the program, and we’re wrapping things up with a kipping HSPU reassessment. Give it your all, but remember: efficiency beats brute force. Stay focused on the technique you’ve worked so hard to build. Some of you may choose to repeat this 8-week journey to further refine your skills, while others might be ready to take the next step into our Handstand Walking Hero program. Before you go, don’t forget to share your feedback in the Course Completion Survey — we’d love to hear about your experience!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "10sec Body Tighteners (Rest 5sec between attempts)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets; 1 set every 2 mins",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Kip Drill",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time",
+                  "has_video": false
+                }
+              ],
+              "format": "2 sets; 1 set every 2 mins",
+              "notes": "Rest walk 2 minutes before Test"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Effort UNBROKEN Kipping HSPU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film sets and record numbers",
+                  "has_video": false
+                }
+              ],
+              "format": "2 sets"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

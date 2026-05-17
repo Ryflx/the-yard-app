@@ -1,0 +1,2236 @@
+{
+  "skill": "ring-mu",
+  "course_name": "Ring Muscle Up Madness",
+  "course_slug": "muscle-up-madness",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/muscle-up-madness",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 25,
+  "skipped_lessons": 74,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2227988,
+          "title": "MUM 1.1 (Week 1, Workout 1)",
+          "url": "/c/muscle-up-madness/sections/585530/lessons/2227988",
+          "description": "\"Without a struggle, there can be no progress.\" - Frederick Douglass",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Full warm up walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Chest Smash each side (KB or Lax ball)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Banded Shoulder Extension each side",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Strict Hollow & Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Ring Dip Negative (8sec) + Hold (8sec)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Transitions",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "3-5 x Strict Ring Pull-up",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3-5 x \"Super Deep\" Ring Dip w/ pause at bottom",
+                  "has_video": true
+                }
+              ],
+              "format": "8 Minute (4 rounds)"
+            },
+            {
+              "name": "TRANSITION WORK",
+              "items": [
+                {
+                  "movement": "10-15 x Banded Ring Pull-Downs",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-8 x Banded Strict Muscle Up Attempts",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use band heavy enough to get you over the rings at least once!",
+                  "has_video": false
+                },
+                {
+                  "movement": "If possible, chose a collection of smaller bands instead of one super thick one.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Round, Not For Time:"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2227989,
+          "title": "MUM 1.2 (Week 1, Workout 2)",
+          "url": "/c/muscle-up-madness/sections/585530/lessons/2227989",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Full warm up walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Cat & Camel Breaths",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Global Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x \"World's Greatest Stretch\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Shoulder Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Lat Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "TRANSITION WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Jumping Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Bonus: do a \"negative\" after each Jumping Muscle Up",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Seated Transitions",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "3-5x Kip Levers",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3-5x Kip Elevates",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3-5x Hips-to-rings",
+                  "has_video": true
+                }
+              ],
+              "format": "9 Minute EMOM"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2227990,
+          "title": "MUM 1.3 (Week 1, Workout 3)",
+          "url": "/c/muscle-up-madness/sections/585530/lessons/2227990",
+          "description": "",
+          "sections": [
+            {
+              "name": "MUSCLE UP STRENGTH",
+              "items": [
+                {
+                  "movement": "Record the weight used so we can continue to increase it in the coming weeks.",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you are easily getting 8 reps, increase your weight or slow down your tempo!",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8 x Bent Over Rows (each arm) @12X1",
+                  "has_video": true
+                },
+                {
+                  "movement": "1sec pause at the top, 2sec down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8x Bicep Curls(each arm) @12X1",
+                  "has_video": true
+                },
+                {
+                  "movement": "1sec pause at the top, 2sec down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2227991,
+          "title": "MUM 2.1 (Week 2, Workout 1)",
+          "url": "/c/muscle-up-madness/sections/585531/lessons/2227991",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Full warm up walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Chest Smash each side (KB or Lax ball)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Banded Shoulder Extension each side",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Strict Hollow & Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Ring Dip Negative (8sec) + Hold (8sec)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Transitions",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "1-2 x Slow Muscle Up Negatives",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3-5 x Dead-Bottom Dip",
+                  "has_video": true
+                }
+              ],
+              "format": "8 Minute EMOM"
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "\"Bounce, Bounce, Go\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2227992,
+          "title": "MUM 2.2 (Week 2, Workout 2)",
+          "url": "/c/muscle-up-madness/sections/585531/lessons/2227992",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Full warm up walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Cat & Camel Breaths",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Global Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x \"World's Greatest Stretch\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Shoulder Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Lat Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "movement": "Accumulate 10-20 sec x Closed Fist False Grip Ring Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Strict Chest-to-Bar Pull-ups",
+                  "has_video": false
+                },
+                {
+                  "movement": "Go for max reps unbroken on 3rd set",
+                  "has_video": false
+                },
+                {
+                  "movement": "No strict C2B? Substitute normal strict pull-ups",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 reps x Strict Deep Ring Dips",
+                  "has_video": true
+                },
+                {
+                  "movement": "Go for max reps unbroken on 3rd set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "sets": 4,
+                  "movement": "Ring Levers",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 4,
+                  "movement": "Ring Elevates",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "TRANSITION WORK",
+              "items": [
+                {
+                  "movement": "10 total reps x Seated Transitions",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 total reps x Banded Ring Pull-Down",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2227994,
+          "title": "MUM 2.3 (Week 2, Workout 3)",
+          "url": "/c/muscle-up-madness/sections/585531/lessons/2227994",
+          "description": "Let's continue building on our strength for ring muscle ups. You'll notice that these exercises have a tempo associated with them. If you have never used tempo before review the image below or click it to watch Coach Ben explain it in more detail. Do you best to follow the prescribed tempo and make sure you note of any weight used so we can build on it in the coming weeks.",
+          "sections": [
+            {
+              "name": "MUSCLE UP STRENGTH",
+              "items": [
+                {
+                  "movement": "6-8x Tempo Scapular Pull-ups @21X1",
+                  "has_video": true
+                },
+                {
+                  "movement": "1 second pause at the top, 2 seconds down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1 minute between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "20-25x Seated Barbell Wrist Curls",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute between set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use a PVC pipe, dumbbell or unweighted barbell. Whichever allows you to complete the reps but stay challenging.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.0",
+          "lesson_id": 2366558,
+          "title": "Muscle Up Road Map 2.0",
+          "url": "/c/muscle-up-madness/sections/625755/lessons/2366558",
+          "description": "Muscle Up Road Map was a special guide we released that you can get access to here. You can also download the full infographic poster and the Muscle Up Road Map Guide from under the Files tab.",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2227995,
+          "title": "MUM 3.1 (Week 3, Workout 1)",
+          "url": "/c/muscle-up-madness/sections/585532/lessons/2227995",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Chest Smash each side (KB or Lax ball)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Banded Shoulder Extension each side",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Strict Hollow & Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Ring Dip Negative (8sec) + Hold (8sec)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Transitions",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Lever + 1 x Elevate + 1 x Hips to Rings",
+                  "has_video": true
+                },
+                {
+                  "movement": "Aim to perform as an unbroken complex",
+                  "has_video": false
+                }
+              ],
+              "format": "10 Sets; Every 30sec for 5 minutes"
+            },
+            {
+              "name": "TRANSITION WORK",
+              "items": [
+                {
+                  "sets": 4,
+                  "movement": "Kneeling Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 4,
+                  "movement": "Russian Dips",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "movement": "5-8 x Slow Muscle Up Negatives",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between attempts",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2227996,
+          "title": "MUM 3.2 (Week 3, Workout 2)",
+          "url": "/c/muscle-up-madness/sections/585532/lessons/2227996",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Cat & Camel Breaths",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Global Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x \"World's Greatest Stretch\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Shoulder Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Lat Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "movement": "Every min: Slow Muscle Up + 2 Transitions",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest Walk 2 Minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "8 Min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "1-3x Banded Strict Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3-5x False Grip Ring Pull-ups (no band)",
+                  "has_video": true
+                },
+                {
+                  "movement": "See how to link two bands together for the Banded Strict Muscle Ups",
+                  "has_video": true
+                }
+              ],
+              "format": "8 Min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2227997,
+          "title": "MUM 3.3 (Week 3, Workout 3)",
+          "url": "/c/muscle-up-madness/sections/585532/lessons/2227997",
+          "description": "",
+          "sections": [
+            {
+              "name": "MUSCLE UP STRENGTH",
+              "items": [
+                {
+                  "movement": "Record the weight used so we can continue to increase it in the coming weeks.",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you are easily getting 8 reps, increase your weight or slow down your tempo!",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8 x Bent Over Rows (each arm) @21x1",
+                  "has_video": true
+                },
+                {
+                  "movement": "1sec pause at the top, 2sec down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8 x Bicep Curls (each arm) @21x1",
+                  "has_video": true
+                },
+                {
+                  "movement": "1sec pause at the top, 2sec down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2227999,
+          "title": "MUM 4.1 (Week 4, Workout 1)",
+          "url": "/c/muscle-up-madness/sections/585533/lessons/2227999",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Chest Smash each side (KB or Lax ball)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Banded Shoulder Extension each side",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Strict Hollow & Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Ring Dip Negative (8sec) + Hold (8sec)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Transitions",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Lever + 1 x Elevate + 1 x Hips to Rings",
+                  "has_video": true
+                },
+                {
+                  "movement": "Perform as an unbroken complex",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Set; Every 30 seconds for 5 minutes"
+            },
+            {
+              "name": "TRANSITION WORK",
+              "items": [
+                {
+                  "movement": "min 1 • 2-3 x Seated Transitions",
+                  "has_video": true
+                },
+                {
+                  "movement": "min 2 • 3-5 x Dead-Bottom Dip",
+                  "has_video": true
+                }
+              ],
+              "format": "6 Min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2228000,
+          "title": "MUM 4.2 (Week 4, Workout 2)",
+          "url": "/c/muscle-up-madness/sections/585533/lessons/2228000",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Cat & Camel Breaths",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Global Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x \"World's Greatest Stretch\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Shoulder Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Lat Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "TRANSITION & STRENGTH WORK",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Banded Ring Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Russian Dips",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "\"Sub-Max Effort\" Strict Chest to bar Pull-ups",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "\"Sub Max Effort\" = stop approximately 2 reps from failure. If you cannot do strict C2B, scale to normal strict pull-ups. NO KIPPING!",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            },
+            {
+              "name": "BOUNCE & GO",
+              "items": [
+                {
+                  "movement": "5-10min x \"Bounce, Bounce, Go\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed.",
+                  "has_video": false
+                }
+              ],
+              "format": "Play with this drill for 5-10minutes; Focus on quality, not quantity"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2228001,
+          "title": "MUM 4.3 (Week 4, Workout 3)",
+          "url": "/c/muscle-up-madness/sections/585533/lessons/2228001",
+          "description": "",
+          "sections": [
+            {
+              "name": "MUSCLE UP STRENGTH",
+              "items": [
+                {
+                  "movement": "6-8 x Tempo Scapular Pull-ups @21X1",
+                  "has_video": true
+                },
+                {
+                  "movement": "*1 second pause at the top, 2 seconds down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "20-25 x Seated Barbell Wrist Curls",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use a PVC pipe, dumbbell or unweighted barbell. Whichever allows you to complete the reps but stay challenging.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2228002,
+          "title": "MUM 5.1 (Week 5, Workout 1)",
+          "url": "/c/muscle-up-madness/sections/585534/lessons/2228002",
+          "description": "Today you will be using a partner for some of the drills. If you can't find a partner, then please utilize the use of a band instead.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Chest Smash each side (KB or Lax ball)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Banded Shoulder Extension each side",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Strict Hollow & Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Ring Dip Negative (8sec) + Hold (8sec)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Transitions",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time",
+              "notes": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "movement": "3-5 x Weighted Ring Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pull as high as possible. Ideally pulling to the sternum.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Aim between 5-25lbs. Record weight so you can build on it.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-3 x Partner Assisted Strict Muscle Up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Focus on PERFECT form! Use the extra support to eliminate bad habits like chicken wings, loose core, and slow transitions. No partner? Preform 2-5 x Banded Strict Muscle Ups",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2228003,
+          "title": "MUM 5.2 (Week 5, Workout 2)",
+          "url": "/c/muscle-up-madness/sections/585534/lessons/2228003",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Cat & Camel Breaths",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Global Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x \"World's Greatest Stretch\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Shoulder Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Lat Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "sets": 3,
+                  "movement": "Ring Levers",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 20 seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 3,
+                  "movement": "Ring Elevates",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 20 seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 3,
+                  "movement": "Hips to Rings",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 90 seconds",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "TRANSITION WORK",
+              "items": [
+                {
+                  "movement": "1-2 x \"Bounce, Bounce, Go\"",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Set; Every 30 seconds for 5 minutes (10 Total Sets):"
+            },
+            {
+              "name": "RIP & KIP (OPTIONAL)",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "total attempts \"Kip, Kip, Rip\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "For those who can already do muscle ups, use these attempts to eliminate your bad habits. Avoid chicken wings, slow transitions, and other \"Fault Fixer\" problems",
+                  "has_video": false
+                }
+              ],
+              "format": "Feel like you are ready for something more challenging?"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2228004,
+          "title": "MUM 5.3 (Week 5, Workout 3)",
+          "url": "/c/muscle-up-madness/sections/585534/lessons/2228004",
+          "description": "",
+          "sections": [
+            {
+              "name": "MUSCLE UP STRENGTH",
+              "items": [
+                {
+                  "movement": "Record the weight used and aim to increase from MUM 3.3",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you are easily getting 8 reps, increase your weight or slow down your tempo!",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8x Bent Over Rows (each arm) @21x1",
+                  "has_video": true
+                },
+                {
+                  "movement": "*1sec pause at the top, 2sec down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8x Right Arm, Bicep Curls @21x1",
+                  "has_video": true
+                },
+                {
+                  "movement": "*1sec pause at the top, 2sec down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Rounds, Not for Time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2228005,
+          "title": "MUM 6.1 (Week 6, Workout 1)",
+          "url": "/c/muscle-up-madness/sections/585535/lessons/2228005",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Chest Smash each side (KB or Lax ball)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Banded Shoulder Extension each side",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Strict Hollow & Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Ring Dip Negative (8sec) + Hold (8sec)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Transitions",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "movement": "7 sets; Every 2 minutes for 14 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Lever + 1 x Elevate + 1 x Hips to Rings + 1 x \"Perfect\" Muscle Up/ attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "Perform all of these drills with a paper or knee sleeve in between your feet the entire time. You may drop and reset before the muscle up attempt.",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you can do multiple muscle ups, then try to do 2-3 unbroken muscle ups at the end of this complex each round.",
+                  "has_video": false
+                }
+              ],
+              "format": "\"Paper Drill\" Complex"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2228006,
+          "title": "MUM 6.2 (Week 5, Workout 2)",
+          "url": "/c/muscle-up-madness/sections/585535/lessons/2228006",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Cat & Camel Breaths",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Global Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x \"World's Greatest Stretch\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Shoulder Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Lat Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Banded Muscle Up + 2 x Transitions",
+                  "has_video": true
+                },
+                {
+                  "movement": "Sit in a band heavy enough for you to complete at least one rep!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "8 Min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "1-3x Heavy Banded Strict Muscle Up",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3-5x False Grip Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pull as high a possible",
+                  "has_video": false
+                }
+              ],
+              "format": "8 Min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2228007,
+          "title": "MUM 6.3 (Week 5, Workout 3)",
+          "url": "/c/muscle-up-madness/sections/585535/lessons/2228007",
+          "description": "",
+          "sections": [
+            {
+              "name": "MUSCLE UP STRENGTH",
+              "items": [
+                {
+                  "movement": "6-8x Tempo Scapular Pull-ups @21X1",
+                  "has_video": true
+                },
+                {
+                  "movement": "*1 second pause at the top, 2 seconds down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "20-25x Seated Barbell Wrist Curls",
+                  "has_video": true
+                },
+                {
+                  "movement": "*Use a PVC pipe, dumbbell or unweighted barbell. Whichever allows you to complete the reps but stay challenging.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2228008,
+          "title": "MUM 7.1 (Week 7, Workout 1)",
+          "url": "/c/muscle-up-madness/sections/585536/lessons/2228008",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Chest Smash each side (KB or Lax ball)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Banded Shoulder Extension each side",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Strict Hollow & Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Ring Dip Negative (8sec) + Hold (8sec)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Transitions",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "TRANSITION WORK",
+              "items": [
+                {
+                  "sets": 4,
+                  "movement": "Kneeling Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 4,
+                  "movement": "Russian Dips",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes before STRICT WORK",
+                  "has_video": false
+                }
+              ],
+              "format": "4 sets"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "movement": "5-8 x Low Ring Negatives",
+                  "has_video": true
+                },
+                {
+                  "movement": "As slow as possible!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2228009,
+          "title": "MUM 7.2 (Week 7, Workout 2)",
+          "url": "/c/muscle-up-madness/sections/585536/lessons/2228009",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Cat & Camel Breaths",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Global Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x \"World's Greatest Stretch\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Shoulder Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Lat Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "movement": "Every min: 1 x Banded Muscle Up + 3 x Transitions (slow)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 3 minutes before Kipping Work",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Min EMOM"
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Lever + 1 x Elevate + 1 x Hips to Rings *",
+                  "has_video": true
+                },
+                {
+                  "movement": "Perform as an unbroken complex",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you can do kipping muscle ups, add \"+ 1 Kipping Muscle Up\" to the end of the complex",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2228010,
+          "title": "MUM 7.3 (Week 7, Workout 3)",
+          "url": "/c/muscle-up-madness/sections/585536/lessons/2228010",
+          "description": "",
+          "sections": [
+            {
+              "name": "MUSCLE UP STRENGTH",
+              "items": [
+                {
+                  "movement": "Aim to increase weight from last time in MUM 5.3",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you are easily getting 8 reps, increase your weight or slow down your tempo!",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8x Bent Over Rows (each arm)",
+                  "has_video": true
+                },
+                {
+                  "movement": "1sec pause at the top, 2sec down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 30 seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "6-8x Bicep Curls (each arm)",
+                  "has_video": true
+                },
+                {
+                  "movement": "1sec pause at the top, 2sec down",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 30 seconds",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2228011,
+          "title": "MUM 8.1 (Week 8, Workout 1)",
+          "url": "/c/muscle-up-madness/sections/585537/lessons/2228011",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Chest Smash each side (KB or Lax ball)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Banded Shoulder Extension each side",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Strict Hollow & Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Ring Dip Negative (8sec) + Hold (8sec)",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Kneeling Transitions",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "STRICT WORK",
+              "items": [
+                {
+                  "sets": 2,
+                  "movement": "Heavy Weighted Ring Pull-ups with false grip.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Pull as high as possible. Aim to increase weight from MUM 5.2",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 30 seconds",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Strict Muscle Up Attempt",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film strict Muscle Ups for post review",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk remaining 3 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets; Every 3 minutes for 9 minutes"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2228012,
+          "title": "MUM 8.2 (Week 8, Workout 2)",
+          "url": "/c/muscle-up-madness/sections/585537/lessons/2228012",
+          "description": "",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Watch the full walkthrough",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5min Bike, Row, or Run (a little movement to get the blood flowing)",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "PVC Pass-Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Overhead Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Chest Pull Aparts",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Cat & Camel Breaths",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Global Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x \"World's Greatest Stretch\"",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Shoulder Extension w/ Barbell",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Banded Lat Pull-downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Round, Not For Time"
+            },
+            {
+              "name": "KIPPING WORK",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Lever + 1 x Elevate + 1 x Hips to Rings + 1 x Kipping Muscle Up Attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "You should only try 3 attempts during today's workout. Please don't do any more than 3 attempts! If you already have muscle ups, you can change the complex to include \"Max Effort Unbroken Muscle Ups\" instead.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets; Every 3 minutes for 9 minutes"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2228013,
+          "title": "MUM 8.3 (Week 8, Workout 3)",
+          "url": "/c/muscle-up-madness/sections/585537/lessons/2228013",
+          "description": "",
+          "sections": [
+            {
+              "name": "RING MUSCLE UP APPLICATION DAY",
+              "items": [
+                {
+                  "movement": "⚠ Be sure to record a video so you can compare it to your Week 1 footage and clearly see how far you’ve come.",
+                  "has_video": true
+                },
+                {
+                  "movement": "At the end of your session, take a few minutes to reflect on your progress over the past 8 weeks by considering the questions below:",
+                  "has_video": false
+                }
+              ],
+              "format": "Put 20 minutes on the clock and practice 10 minutes practicing your muscle-ups and then the next 10minutes practice Kipping Muscle Ups."
+            },
+            {
+              "name": "WALL OF WINS",
+              "items": [
+                {
+                  "movement": "Did you hit a muscle-up milestone, love the programming, or benefit from our coaching? Share your win on the Wall of Wins and score some awesome WODprep swag!",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

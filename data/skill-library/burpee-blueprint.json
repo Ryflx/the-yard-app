@@ -1,0 +1,234 @@
+{
+  "skill": "burpee-blueprint",
+  "course_name": "Burpee Blueprint",
+  "course_slug": "burpee-blueprint",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/burpee-blueprint",
+  "scraped": "2026-05-17",
+  "total_weeks": 1,
+  "total_lessons": 27,
+  "skipped_lessons": 5,
+  "weeks": [
+    {
+      "week": 0,
+      "workouts": [
+        {
+          "id": "ref.1",
+          "lesson_id": 2078938,
+          "title": "Anatomy of the Burpee",
+          "url": "/c/burpee-blueprint/sections/552756/lessons/2078938",
+          "description": "The Anatomy of the Burpee The mechanics we'll learn here we can apply to any burpee standard or variation that comes our way.",
+          "sections": []
+        },
+        {
+          "id": "ref.2",
+          "lesson_id": 2078956,
+          "title": "Fixing the Hip",
+          "url": "/c/burpee-blueprint/sections/552756/lessons/2078956",
+          "description": "The hip is a HUGE power generator that we we need utilize to get the most out of our burpee.",
+          "sections": []
+        },
+        {
+          "id": "ref.3",
+          "lesson_id": 2078961,
+          "title": "Chest First",
+          "url": "/c/burpee-blueprint/sections/552756/lessons/2078961",
+          "description": "When it comes to being fast and efficient, too many athletes use the slow loading arm burpee and then spend time too much on the ground. Our approach, especially with the \"chest first\" mentality, is to spend as little time on the ground as possible and instead spend most of our time upright where it's easier to breathe and keep composure.",
+          "sections": []
+        },
+        {
+          "id": "ref.4",
+          "lesson_id": 2078966,
+          "title": "Training the Step Up",
+          "url": "/c/burpee-blueprint/sections/552756/lessons/2078966",
+          "description": "A slower, less exhaustive burpee ideal for high repetitions if the standards allow for it.",
+          "sections": []
+        },
+        {
+          "id": "ref.5",
+          "lesson_id": 2078975,
+          "title": "Burpee Breathing",
+          "url": "/c/burpee-blueprint/sections/552756/lessons/2078975",
+          "description": "Becoming aware of how you're breathing in a burpee is very important. Often we'll hold our breathe when we hit the ground or change direction. Much like a double under, staying long and tall will help you keep your breathing full and natural.",
+          "sections": []
+        },
+        {
+          "id": "ref.6",
+          "lesson_id": 2078997,
+          "title": "Where to Breathe with Burpee Box Jumps?",
+          "url": "/c/burpee-blueprint/sections/552756/lessons/2078997",
+          "description": "The Burpee Box Jump is one of the most labour intensive burpees. That means proper breathing is critical for success. Whether it's the box jump or box jump over, focus on spending as little time on the ground as possible and breathing while upright. That pattern alone will be a huge mental win as you'll be in great position to get the work done.",
+          "sections": []
+        },
+        {
+          "id": "ref.7",
+          "lesson_id": 2079005,
+          "title": "Common Burpees",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079005",
+          "description": "In this section, you'll find different types of burpees, their standards and how to pace and set-up each one properly and efficiently.",
+          "sections": []
+        },
+        {
+          "id": "ref.8",
+          "lesson_id": 2079247,
+          "title": "Burpee to a Target",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079247",
+          "description": "A great burpee since it sets a similar standard for all athletes.",
+          "sections": []
+        },
+        {
+          "id": "ref.9",
+          "lesson_id": 2079262,
+          "title": "Bar Facing Burpee",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079262",
+          "description": "A staple to a functional fitness workout. Positioning, tempo and pacing are all keys to an efficient bar facing burpee.",
+          "sections": []
+        },
+        {
+          "id": "ref.10",
+          "lesson_id": 2079269,
+          "title": "Burpee Box Step Over",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079269",
+          "description": "Another burpee that will benefit from maximizing efficacy and cutting down on steps.",
+          "sections": []
+        },
+        {
+          "id": "ref.11",
+          "lesson_id": 2079272,
+          "title": "Burpee Box Jump Overs",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079272",
+          "description": "Is one of the most common burpees that is very similar to the bar facing burpee.",
+          "sections": []
+        },
+        {
+          "id": "ref.12",
+          "lesson_id": 2079274,
+          "title": "Burpee Box Get Over",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079274",
+          "description": "A perfect burpee for training. It's a burpee with an anything goes box get over that helps develop power output.",
+          "sections": []
+        },
+        {
+          "id": "ref.13",
+          "lesson_id": 2079282,
+          "title": "Burpee Pull Ups",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079282",
+          "description": "This movement is a great 1:1 sub for any complex push/pull movement like the kipping ring muscle up.",
+          "sections": []
+        },
+        {
+          "id": "ref.14",
+          "lesson_id": 2079292,
+          "title": "Lateral Burpee Overs",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079292",
+          "description": "Since we’re able to stay low and fast, the lateral or “sideways” burpee can add intensity and speed to an over a bar burpee.",
+          "sections": []
+        },
+        {
+          "id": "ref.15",
+          "lesson_id": 2079322,
+          "title": "The Devil Press Burpee",
+          "url": "/c/burpee-blueprint/sections/552757/lessons/2079322",
+          "description": "As if a regular burpee wasn't enough, someone took it and added a double doubbell power snatch to it.",
+          "sections": []
+        },
+        {
+          "id": "ref.16",
+          "lesson_id": 2079348,
+          "title": "Burpee Pacing",
+          "url": "/c/burpee-blueprint/sections/552758/lessons/2079348",
+          "description": "In this section we'll cover everything you need to know about pacing burpees no matter if it's a short intense workout or a long gruelling one.",
+          "sections": []
+        },
+        {
+          "id": "ref.17",
+          "lesson_id": 2079378,
+          "title": "Sprint Burpees",
+          "url": "/c/burpee-blueprint/sections/552758/lessons/2079378",
+          "description": "Any short intense burst of burpees like 30secs of max effort of burpees (as you'll see in the training part of this program) or short workout where burpees are combined with other movements like the power cleans is where you'll want to use the sprint burpee.",
+          "sections": []
+        },
+        {
+          "id": "ref.18",
+          "lesson_id": 2079403,
+          "title": "Pace Regulators",
+          "url": "/c/burpee-blueprint/sections/552758/lessons/2079403",
+          "description": "In many workouts, burpees can be done at a steady pace to keep us from blowing up in the WOD, especially when it's paired with another movement, like thrusters. Staying consistent will keep you in control until we you're closer to the finish and can let your foot off the brake. We cover how to pace burpees the Pacing Tools module in the Improving your Burpee section.",
+          "sections": []
+        },
+        {
+          "id": "ref.19",
+          "lesson_id": 2079411,
+          "title": "The Burpee",
+          "url": "/c/burpee-blueprint/sections/552758/lessons/2079411",
+          "description": "When doing longer sets of burpees (like, 10 minutes), we're going to hold ourselves to a 4 count burpee for as long as we can. Once fatigued, we can move to the step-in burpee with foot slide. Also, depending on our level, we can also use a 5 count burpee if we need a little extra time getting the work done.",
+          "sections": []
+        },
+        {
+          "id": "ref.20",
+          "lesson_id": 2079461,
+          "title": "Improving your Burpee",
+          "url": "/c/burpee-blueprint/sections/552759/lessons/2079461",
+          "description": "In this section we'll look at pacing, strength and one of the easiest ways to improve your burpees -- flexibility. With just need a little practice and dedication you'll be crushing it!",
+          "sections": []
+        },
+        {
+          "id": "ref.21",
+          "lesson_id": 2079464,
+          "title": "Pacing Tools",
+          "url": "/c/burpee-blueprint/sections/552759/lessons/2079464",
+          "description": "A metronome is a great tool to stay on beat. This is especially true when it comes to a big set of burpees where we simply need to plug our 4 count burpee into a steady pace to get the work done. A simple search in any app store or web browser will give you a host of metronome options. It really doesn't matter what you use as long as you can hear a beat range between 30-80 BPM. Here is a breakdown of BPM and the expected number of burpees you can perform --",
+          "sections": []
+        },
+        {
+          "id": "ref.22",
+          "lesson_id": 2079483,
+          "title": "Strength",
+          "url": "/c/burpee-blueprint/sections/552759/lessons/2079483",
+          "description": "There are movements we can do that will make us stronger burpees by working the the press, the high hip and the hip flexors. Those movements are: Start by doing these movements 2-3x a week with a comfortable rep range and adding a couple of reps each week until difficult. Then increase the sets.",
+          "sections": []
+        },
+        {
+          "id": "ref.23",
+          "lesson_id": 2079502,
+          "title": "Flexibility",
+          "url": "/c/burpee-blueprint/sections/552759/lessons/2079502",
+          "description": "Having good flexibility is not always about whether you can hit a particular range or position but if you can hit that position when tired. These mobility drills can help improve shoulder flexion and hamstring flexibility which are crucial for burpee success:",
+          "sections": []
+        },
+        {
+          "id": "ref.24",
+          "lesson_id": 2079507,
+          "title": "Workout Explanations",
+          "url": "/c/burpee-blueprint/sections/552760/lessons/2079507",
+          "description": "Now it's time to put all we've learned into action with 3 different workouts that will attack burpees from short, medium and long time domains. Follow any of the programming sheet in the next lesson to take your burpees to the ultimate level! To start, we recommend focusing on your weakest Burpee style first and working thorough the 6 weeks of programming one or two times a week. The 2nd weekly workout listed is optional. Once all the programming is completed, you're ready to move on to the next one. If you decide on twice a week Burpee training, schedule at least 2 days rest between sessions. Good luck! Want to train two Burpee styles at the same time? Work on each just once a week and on separate days. For instance, you might do the :30sec On: 2:30 Off training on Monday and then the 3 Min AMRAP training on Thursday. Whatever you decide, make sure it fits your training schedule and you're getting ample recovery. Consistency rules the day! Under the FILE tab of this lesson, you'll find 3 different 6-week printable tracking sheets for each Burpee program.",
+          "sections": []
+        },
+        {
+          "id": "ref.25",
+          "lesson_id": 2079533,
+          "title": "Workout 1 | :30 On/ 2:30 Off",
+          "url": "/c/burpee-blueprint/sections/552760/lessons/2079533",
+          "description": ":30 on | 2:30 Off x 5 Our first workout is a SPRINT style workout! Go hard and fast! Our goal is hit the same number each and every round, especially when following the progression below. Progression We'll start with 5 rounds then add a 6th round every other week. After that, we'll reset to 5 rounds again but will shorten the rest time between the sets. Maintaining our burpee density while having shorter rests means you'll be a Burpee Monster by the end of 6 weeks. Find the :30 On/ 2:30 Off Burpee Tracking sheet, under the FILE tab of this lesson.",
+          "sections": []
+        },
+        {
+          "id": "ref.26",
+          "lesson_id": 2079535,
+          "title": "Workout 2 | 3 Min AMRAP",
+          "url": "/c/burpee-blueprint/sections/552760/lessons/2079535",
+          "description": "This workout is all about PACE! Settle in and if we're following our burpee pacing properly each round should have the exact same number of reps. Remember you can We'll build on this by increasing the sets over the weeks. Progression Find the 3 Min AMRAP Burpee Tracking sheet, under the FILE tab of this lesson.",
+          "sections": []
+        },
+        {
+          "id": "ref.27",
+          "lesson_id": 2079587,
+          "title": "Workout 3 | 10 Min EMOM",
+          "url": "/c/burpee-blueprint/sections/552760/lessons/2079587",
+          "description": "If 10 minutes of burpees sounds terrible it’s because it is. No doubt this one is all about developing your mental calluses. Our goal here is a minute of continual work using the metronome/ 4 count burpee strategies we've learned in the previous sections. Unlike a standard EMOM there is no rest. We want to fill each minute with a continually work and repeat that 10 times. Start with manageable rate of burpees (ie. 8 burpees per minute - 36 BPM) and aim to add an additional burpee a week until we're cruising at a steady pace and crushing 10 minutes of burpees. For more on using BPM review the module on Pacing Tools. Find the 10 Min EMOM Burpee Tracking sheet, under the FILE tab of this lesson.",
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

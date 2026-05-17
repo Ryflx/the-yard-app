@@ -1,0 +1,1774 @@
+{
+  "skill": "handstand-walk-hero",
+  "course_name": "Handstand Walk Hero",
+  "course_slug": "handstand-walk-hero",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/handstand-walk-hero",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 12,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2182349,
+          "title": "HSWH 1.1 (Week 1, Workout 1)",
+          "url": "/c/handstand-walk-hero/sections/579073/lessons/2182349",
+          "description": "The first step to mastering any skill is building a strong foundation—and that’s exactly what Day 1 is about. Before progressing, we need to ensure you have the strength, control, and awareness to support long-term success. To measure your progress, you’ll complete a few baseline tests this week: shoulder touches, freestanding handstand holds, and handstand walks for distance. We’ll repeat these in Weeks 4 and 8 to track your improvement. Download the Handstand Walk Score Sheet under the Files tab to record your test results. Even if your technique isn’t perfect yet, these metrics will help highlight how far you’ve come.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Trap 3-Raises @2116",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "10sec x Body Tightener + Rest 5 sec + 10sec x Body Tightener",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x FLR Hold with Opposite Shoulder Taps",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "MAX DISTANCE Handstand Walk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk at least 60 seconds attempts",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record a video and measure the distance of each attempt.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Add all the distances together to calculate your total handstand walk distance.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2182350,
+          "title": "HSWH 1.2 (Week 1, Workout 2)",
+          "url": "/c/handstand-walk-hero/sections/579073/lessons/2182350",
+          "description": "Today is all about shapes and finding and maintaining the most proper position possible. Continue using the Handstand Walk Hero Score Sheet to record your results.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "10sec x FLR Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Body Tightener + 10sec x Angled Wall Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Box Handstand Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "1 x Wall Walk",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Freestanding Kick-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30-60 sec between attempts",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film Attempts and use video to help find times.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Attempts"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2182351,
+          "title": "HSWH 1.3 (Week 1, Workout 3)",
+          "url": "/c/handstand-walk-hero/sections/579073/lessons/2182351",
+          "description": "We’re getting up against the wall today. Think of your hands as your new feet and start paying attention to your balance and how your weight is distributed through your hands. It’ll take some practice to find your balance point, but that awareness is key to progress!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Hollow Body Rock",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 x Trap 3 Raises @2116",
+                  "has_video": true
+                },
+                {
+                  "movement": "Tempo is 2sec lowering, 1sec hold, 1 sec lift, 6 sec hold at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Handstand Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 60sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15sec x Floaters",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX EFFORT Shoulder Taps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Kick up with back to wall. Once you feel any loss in form, especially in your lower back, STOP!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record the reps for each set",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2182353,
+          "title": "HSWH 2.1 (Week 2, Workout 1)",
+          "url": "/c/handstand-walk-hero/sections/579074/lessons/2182353",
+          "description": "We are getting that body aligned today! Focus on creating perfect positions.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30-40sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "DB Shoulder Rocks @2222",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets: 1 set every 90sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "10sec x FLR Hold (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Body Tightener (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Angled Wall Hold (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Handstand Hold (stomach to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk remaining time",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2182354,
+          "title": "HSWH 2.2 (Week 2, Workout 2)",
+          "url": "/c/handstand-walk-hero/sections/579074/lessons/2182354",
+          "description": "Today we are working hard on developing control in the HS Hold and intentionally shifting and redistributing our weight. Take your time and feel each position as we move through today's programming.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "20sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Handstand Hold (stomach to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "20-30sec Box Shoulder Shifts",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec FLR Hold With Opposite Shoulder Touches",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2182355,
+          "title": "HSWH 2.3 (Week 2, Workout 3)",
+          "url": "/c/handstand-walk-hero/sections/579074/lessons/2182355",
+          "description": "Your journey to a consistent, solid kick-up starts today. Keep the end goal in mind, walking on your hands, and focus on finding your balance with every attempt.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Hollow Body Rock",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 x Trap 3 Raises @2116",
+                  "has_video": true
+                },
+                {
+                  "movement": "Tempo is 2sec lowering, 1sec hold, 1 sec lift, 6 sec hold at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15sec x Floaters",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec before…",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Straddle Jump Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2182362,
+          "title": "HSWH 3.1 (Week 3, Workout 1)",
+          "url": "/c/handstand-walk-hero/sections/579075/lessons/2182362",
+          "description": "Today’s focus is on holds and positional work to continue strengthening your handstand foundation. Take your time in each position to build control and body awareness.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30-40sec x Hollow Body Rock",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "DB Shoulder Rocks @1111",
+                  "has_video": true
+                },
+                {
+                  "movement": "Tempo is 1 sec down, 1 sec hold, 1 second up, 1 sec hold at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets; 1 set every 90sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "10sec x Body Tightener (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Handstand Hold (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Floaters",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2182363,
+          "title": "HSWH 3.2 (Week 3, Workout 2)",
+          "url": "/c/handstand-walk-hero/sections/579075/lessons/2182363",
+          "description": "Using the box for support, the goal today is to practice shifting weight between your hands and getting light off the ground. Before we walk, we learn to tap!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Handstand Hold (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Floaters",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Box Palm Lifts (5/ hand) (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Box Shoulder Taps (5/ hand)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2182366,
+          "title": "HSWH 3.3 (Week 3, Workout 3)",
+          "url": "/c/handstand-walk-hero/sections/579075/lessons/2182366",
+          "description": "We are getting into our sequence of kicking up to start our handstand walk. Our focus is going to be on feeling our balance point first.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "15sec x Floaters",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec before…",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Straddle Jump Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kick-ups (staggered feet)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Handstand Shoulder Shifts (wall)",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "FLR Hold with Opposite Shoulder Taps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2182369,
+          "title": "HSWH 4.1 (Week 4, Workout 1)",
+          "url": "/c/handstand-walk-hero/sections/579076/lessons/2182369",
+          "description": "We're spending lots of time upside down today! The static holds mixed with more dynamic movements will help us understand our weight distribution and body alignment. We’ll also be revisiting the Shoulder Tap test, so be sure to add your scores to your Week 1Score Sheet.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "45-60sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "DB Shoulder Rocks @1111",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets; 1 Set every 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Handstand Hold (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Handstand Rocks (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Floaters",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk remaining time",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX EFFORT Shoulder Taps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Kick up with back to wall. Once you feel a loss in form, especially in your lower back, STOP!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record the reps for each set",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2182370,
+          "title": "HSWH 4.2 (Week 4, Workout 2)",
+          "url": "/c/handstand-walk-hero/sections/579076/lessons/2182370",
+          "description": "We’re back to box work today. Use the box as a stable anchor while focusing on proper hip and shoulder positioning during lifts and taps. At this stage in the program, spatial awareness is crucial. Keep a mental checklist of how each position feels and use video to check how it looks. No surprise, we’ll also be checking in on your freestanding handstand. Be sure to add those test results to your Week 1 Score Sheet.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Flow Follow Along",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec Handstand Hold (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec Floaters",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Box Palm Lifts (5/hand) (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Box Shoulder Taps (5/hand)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute + 3min before Test",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Freestanding Kick-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30-60 sec between attempts",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film Attempts and use video to help find times",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Attempts"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2182371,
+          "title": "HSWH 4.3 (Week 4, Workout 3)",
+          "url": "/c/handstand-walk-hero/sections/579076/lessons/2182371",
+          "description": "Let’s get some work in on our kick-up and balance and test our handstand walk progress. Feel the floor through gripping the floor and be aware of shoulder and hip positions. The final skill piece today will challenge our endurance and balance in the handstand hold. Be patient! WARM UP Wrist Warm up Flow SKILLS 3 Sets 3 x Straddle Jump Press 5 x Kick Up (staggered feet) Rest walk 30 sec + 4 Sets Kick up (into) 8 x Handstand Shoulder Shifts (4/arm) Rest walk 30secs before… Kick up (into) 8 x Handstand Palm Lift (4/arm) Rest walk 30secs before… Wall walk (into) 2 x Handstand Shoulder Taps (1/arm) Rest walk 1 minute before next set + 4 min before Test",
+          "sections": [
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX DISTANCE Handstand Walk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk at least 60 seconds attempts",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record a video and measure the distance of each attempt.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Add all the distances together to calculate your total handstand walk distance.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2182372,
+          "title": "HSWH 5.1 (Week 5, Workout 1)",
+          "url": "/c/handstand-walk-hero/sections/579077/lessons/2182372",
+          "description": "Today we’re flipping things around with a focus on stomach-to-wall work. These progressions are more challenging than back-to-wall drills, so pay close attention to your form. Only your toes should be touching the wall—no resting with your belly, quads, or chest against it. Maintain a strong, stacked position and stay active throughout. Remember toes only!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "60sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "DB Shoulder Rocks @1111",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Handstand Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Handstand Hold (toes to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Floaters (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Handstand Shoulder Taps (toes to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 90 sec",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2182373,
+          "title": "HSWH 5.2 (Week 5, Workout 2)",
+          "url": "/c/handstand-walk-hero/sections/579077/lessons/2182373",
+          "description": "Let’s get to more handstand walking! Today, the box will serve as your anchor and balance point. We’re stepping into a key progression, so stay patient, focus on your form, and—most importantly—don’t forget to breathe.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Walk walk (into)",
+                  "has_video": false
+                },
+                {
+                  "movement": "20-30sec x Floaters (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 4,
+                  "movement": "Handstand Shoulder Taps (stomach to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Box Single Leg Extensions (5/leg) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Box Handstand Walk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2182374,
+          "title": "HSWH 5.3 (Week 5, Workout 3)",
+          "url": "/c/handstand-walk-hero/sections/579077/lessons/2182374",
+          "description": "Videos are important for self analysis and comparisons from rep to rep, set to set, and day to day. There are a bunch of “little things” to handstand walking that once discovered can really transcend you to the next level in this skill.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Kick Up (staggered feet)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec before…",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kick Up (feet together)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec before…",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Wall Walk (into)",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Shoulder Taps (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Floaters (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Max Distance Handstand Walk Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2182375,
+          "title": "HSWH 6.1 (Week 6, Workout 1)",
+          "url": "/c/handstand-walk-hero/sections/579078/lessons/2182375",
+          "description": "Today’s goal is to hold our handstand as long as possible after kicking up. No matter how long you stay inverted, marvel at the skills you’re building! Keep rocking as it all adds up!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Handstand Rocks (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Floaters",
+                  "has_video": true
+                },
+                {
+                  "movement": "No rest, directly into…",
+                  "has_video": false
+                },
+                {
+                  "sets": 20,
+                  "movement": "DB Shoulder Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "30sec x Box Shoulder Taps",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kick-up (from floor with hold)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 90 sec",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2182376,
+          "title": "HSWH 6.2 (Week 6, Workout 2)",
+          "url": "/c/handstand-walk-hero/sections/579078/lessons/2182376",
+          "description": "Make sure you’re in control during your Handstand Walk to the Wall. Adjust the 10’ distance if needed, it’s totally okay. Focus on everything you’ve learned so far about positioning and kick-up technique. Go slow, stay intentional, and most importantly have fun!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Wall walk (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Handstand Shoulder Taps (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Lateral Handstand Walk (5 steps each way) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform all movements as one set",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-10’ x Handstand Walk to Wall",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Handstand Shoulder Taps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2182377,
+          "title": "HSWH 6.3 (Week 6, Workout 3)",
+          "url": "/c/handstand-walk-hero/sections/579078/lessons/2182377",
+          "description": "Let’s put those free handstand walks to the test! Take videos and share them for ongoing coaching and feedback, this is where real progress happens. How much further can you go compared to Week 1? Test, don’t guess!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Floaters (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "6-10 x Shoulder Taps (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Max Distance Handstand Walk Away (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Child Pose from Box",
+                  "has_video": true
+                },
+                {
+                  "sets": 3,
+                  "movement": "Kick-up (feet together)",
+                  "has_video": true
+                },
+                {
+                  "movement": "From last kick up go right into…",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Distance Handstand Walk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "In 5 minutes find",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Distance Unbroken Handstand Walk Away from Wall",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record longest distance made",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2182378,
+          "title": "HSWH 7.1 (Week 7, Workout 1)",
+          "url": "/c/handstand-walk-hero/sections/579079/lessons/2182378",
+          "description": "Being able to hold a free standing handstand is a critical part of our HS walk control. Let’s see how long we can hold one for today!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10 x DB Shoulder Rocks",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "40sec x Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kick Up (staggered feet)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kick Up (feet together)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kick Up into MAX EFFORT Handstand Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform all movements together as one set",
+                  "has_video": false
+                }
+              ],
+              "format": "10 min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2182379,
+          "title": "HSWH 7.2 (Week 7, Workout 2)",
+          "url": "/c/handstand-walk-hero/sections/579079/lessons/2182379",
+          "description": "We’re attacking the Handstand Walk from every angle today! Focus on clean hand placement and aim for consistent step lengths to stay in control with every step.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "6-10 x Handstand Shoulder Taps (stomach to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "6-10 x Lateral Handstand Walk (3-5 steps each way)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-20 x Handstand Shoulder Taps (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Max Distance Handstand Walk Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform as one movement. Adjust reps to keep this unbroken.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2182380,
+          "title": "HSWH 7.3 (Week 7, Workout 3)",
+          "url": "/c/handstand-walk-hero/sections/579079/lessons/2182380",
+          "description": "Can you handstand walk all the way to the wall? Let’s put your progress to the test and see how your Handstand Walk is coming along!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "20sec x FLR Hold (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "FLR Hold with Opposite Shoulder Taps",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Kick Up (feet together)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 minutes to find",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max distance Handstand Walk to Wall",
+                  "has_video": true
+                },
+                {
+                  "movement": "Record length of longest walk",
+                  "has_video": false
+                }
+              ],
+              "format": "5 min EMOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2182385,
+          "title": "HSWH 8.1 (Week 8, Workout 1)",
+          "url": "/c/handstand-walk-hero/sections/579080/lessons/2182385",
+          "description": "We’re doing lots of kick-up work today! The goal is to find the balance point on your hands to set yourself up for a strong start in your handstand walk. We’ll also be checking in on your shoulder taps. Compare today’s progress to Week 1 and take note of how far you’ve come!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "DB Shoulder Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-40sec x Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Child Pose from Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "15 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kick Up (staggered feet)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 5 sec before…",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kick Up (feet together)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 5 sec before…",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kick Up to MAX EFFORT Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX EFFORT Shoulder Taps",
+                  "has_video": true
+                },
+                {
+                  "movement": "Kick up with back to wall. Once you feel a loss in form, especially in your lower back, STOP!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record the reps for each set and compare to Week 1",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2182386,
+          "title": "HSWH 8.2 (Week 8, Workout 2)",
+          "url": "/c/handstand-walk-hero/sections/579080/lessons/2182386",
+          "description": "Let’s continue to dial in your handstand walk ahead of our big retest next session by practicing walking to and from the wall. If the 10-20 Handstand reps are still a challenge, modify the reps to a range you can complete consistently. We’ll finish today by revisiting our freestanding handstand kick-ups to see just how far you’ve come since Week 1.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm Up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Wall Walk (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-20 x Handstand Shoulder Taps (stomach to wall) (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Max Distance Handstand Walk Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute before…",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-15’ Handstand Walk to Wall (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-20 x Handstand Shoulder Taps (back to wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Freestanding Kick-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30-60 sec between attempts",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film Attempts and use video to help find times",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Attempts"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2182389,
+          "title": "HSWH 8.3 (Week 8, Workout 3)",
+          "url": "/c/handstand-walk-hero/sections/579080/lessons/2182389",
+          "description": "Congratulations and thank you for the incredible effort you’ve put into this program! Today is the day to showcase your Handstand Walk progress. Let’s finish strong! Don’t forget to share your success on the Wall of Wins for a chance to get some free WODprep swag. Finally, we’d love to hear your thoughts, please take a moment to complete the course completion survey and let us know how the journey went for you.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Wrist Warm up Flow",
+                  "has_video": true
+                }
+              ]
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 3,
+                  "movement": "Straddle Jump Press",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kick Up (staggered feet)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30 sec between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "9 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "20sec x FLR Hold + 10 x FLR with Opposite Shoulder Taps",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20sec x Hollow Body Hold + 10sec x Hollow Body Rock",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "2 x Free Standing Kick Up (with 1-5sec hold)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets",
+              "notes": "Rest walk 4 minutes before Test"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX DISTANCE Handstand Walk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk at least 1 minute between attempts",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record a video and measure the distance of each attempt.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Add all the distances together to calculate your total handstand walk distance.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Then, review your video and compare your progress to Week 1.",
+                  "has_video": false
+                },
+                {
+                  "movement": "For extra insight, be sure to post in Academy Coaching. The WODprep Coaches are there to help!",
+                  "has_video": false
+                },
+                {
+                  "movement": "And don’t forget to celebrate your hard work by sharing your success on the Wall of Wins.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

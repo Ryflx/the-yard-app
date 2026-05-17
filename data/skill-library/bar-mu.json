@@ -1,0 +1,1754 @@
+{
+  "skill": "bar-mu",
+  "course_name": "Bar Muscle Up Mastery",
+  "course_slug": "bar-muscle-up-mastery",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/bar-muscle-up-mastery",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 24,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2182246,
+          "title": "BMUM 1.1 (Week 1, Workout 1)",
+          "url": "/c/bar-muscle-up-mastery/sections/579036/lessons/2182246",
+          "description": "Welcome to Bar Muscle Up Mastery! Today, we’ll start by activating the lats! Without proper lat engagement, your bar muscle ups will look more like chest-to-bar pull-ups. We’ll wrap up the session with some bar muscle up testing. Don’t worry if you’re not close to a bar muscle up this is just your starting point. You’ll be amazed by your progress in 8 weeks. If you’re an athlete who wants to make the fastest progress possible, consider working directly with WODprep Coach. Book a complementary discovery call to see if WODprep 1-on-1 Coaching is right for you. Don't forget to print the Bar Muscle Up Score Sheet under the File tab so you can track your progress.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Hollow snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat swings",
+                  "has_video": true
+                },
+                {
+                  "movement": "7-10 x Banded Strict C2B Pull-ups (easy)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "movement": "For all the drills, use your lats to continually press down on the bar which will help lever you back.",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "10 x Banded Lat Pull-down",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3-5 x Strict Levers",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3-5 x Kip Levers (singles)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "5 x Standing Transitions (singles)",
+                  "has_video": true
+                }
+              ],
+              "format": "8 EMOM (2 total rounds)"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX Unbroken BMU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 2 minute between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Do not rip your hands! If that means stopping after your first attempt, that’s okay.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video all sets for review and add results to Bar Muscle Up Score Sheet",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2182247,
+          "title": "BMUM 1.2 (Week 1, Workout 2)",
+          "url": "/c/bar-muscle-up-mastery/sections/579036/lessons/2182247",
+          "description": "Week 1 baseline testing continues with a capacity test for Toes to Bar and Kipping Chest to Bar. While neither is a bar muscle up, both share key components that are essential for success. You’ll also be introduced to the Jumping Bar Muscle Up, a drill that helps develop transition over the bar. Many athletes underestimate this drill and set up too far under the bar, making it difficult to generate enough upward momentum. To start, position yourself so the top of your head is in line with the top of the bar. Don’t be surprised if you need to adjust so that your eye line or chin is in line instead. Find whatever height allows you to jump and clear the bar efficiently.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Passive Hang + 5 x Strict Levers + 5 x Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "movement": "7-10 x Banded Strict C2B Pull-ups (easy)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30sec x Hollow hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3-5x Hand-release Kip Swings",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3-5x Standing Transitions (singles)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "2-3x Jumping BMU",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video the final set of Jumping BMU for review",
+                  "has_video": false
+                }
+              ],
+              "format": "12 Min EMOM (3 total rounds)"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "While these two movements aren’t bar muscle ups, they develop key elements you’ll need to get up and over the bar successfully.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Unbroken Kipping Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Unbroken Kipping Chest to Bar Pull-Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2182248,
+          "title": "BMUM 1.3 (Week 1, Workout 3)",
+          "url": "/c/bar-muscle-up-mastery/sections/579036/lessons/2182248",
+          "description": "Today’s skill and test is the Banded Bar Muscle Up. This is another surprising technical movement, so don’t worry if you don’t get your first rep today. It may come later in the program, and that’s totally normal. We recommend starting with more bands than you think you need. Over the next 8 weeks, we’ll work on gradually reducing the number of bands. The goal for today is simple, find enough assistance to get up and over the bar successfully.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "10-12 x Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-12 x Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Glute Bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Hollow Hop-in + Kip lever",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Keep adding bands or removing bands to help get you over the bar. We recommend more thin red bands over a super thick heavy band.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use try the banded BMU ‘X’ method if you're having difficulties.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets: 1 set every 4 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Hand-release Kip Swings",
+                  "has_video": true
+                },
+                {
+                  "movement": "3-5 x Standing Transitions",
+                  "has_video": true
+                },
+                {
+                  "movement": "Banded Bar Muscle Ups practice with remaining time",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "Here’s your chance to get comfortable with the Banded Bar Muscle Up so there is no reason to rush your attempts here. It may take a few rounds or even a few weeks to dial it in. However, the goal is to get enough practice that you feel ready the MAX Banded BMU test."
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Use any combo of bands or setup style (like the BMU ‘X’ method) to complete a banded bar muscle up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Unbroken Banded Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1-2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film and review your final set. Record the number of bands and the color(s) used.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2182255,
+          "title": "BMUM 2.1 (Week 2, Workout 1)",
+          "url": "/c/bar-muscle-up-mastery/sections/579037/lessons/2182255",
+          "description": "A big secret to the bar muscle up is creating enough momentum to lift yourself up and over the bar. That’s where the Hollow Hop-in comes in. When used correctly, it’s like rocket fuel for your bar muscle up and nearly 90% of athletes learning the movement aren’t using it. Be sure to watch the Hollow Hop-in explanation video so you can focus on jumping into a hollow position for every rep in today’s skill work and all future attempts. Mastering this concept is key to generating the momentum and lift you need for a successful BMU. Below are some screenshots of common mistakes. Notice how the feet are directly below or behind the body, instead of out in front in a true hollow position.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded C2B Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Banded Lat Pull-down",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Perform all movement as singles.",
+                  "has_video": false
+                },
+                {
+                  "movement": "12 Min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "4 x Kip Levers",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "4 x Hand-release Kip Swings",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3 x Jumping Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video the last set of Jumping Bar Muscle Ups for review",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2182256,
+          "title": "BMUM 2.2 (Week 2, Workout 2)",
+          "url": "/c/bar-muscle-up-mastery/sections/579037/lessons/2182256",
+          "description": "Today, you’ll be trying a new drill called the Box Drop-in. Like the Hollow Hop-in from the last workout, this technique focuses on one of the most important parts of the bar muscle up - momentum. Be sure to watch the Box Drop-in explanation video video before you start. Why does this matter? Many athletes attempt bar muscle ups from what I call a “dead stop”. They jump to the bar, pause for a few seconds (killing all momentum), then try to kip their way above the bar. It rarely works. Here's an example of the \"dead stop\" Here’s what it looks like when you use the box to drop into your first rep. When paired with a well-timed kip, you’ll see a big difference! It’s like a turbo boost that adds a little extra float to your movement.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10-12 x Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10-12 x Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10-12 x Banded Chest to Bar Pull-ups (easy)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "15 x Banded Lat Pull-down (easy)",
+                  "has_video": true
+                }
+              ],
+              "format": "8 Minute EMOM"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Take your time to feel these movements. No need to rush through",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "2-3 x Kip Levers",
+                  "has_video": true
+                },
+                {
+                  "movement": "2-3 x Kipping Belly-to-bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "2-3 x Standing Transitions",
+                  "has_video": true
+                },
+                {
+                  "movement": "1-2 x Bar Muscle Up Attempt",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video the last set of bar muscle ups for review",
+                  "has_video": false
+                }
+              ],
+              "format": "Perform each drill as singles with a Box Drop-in."
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2182257,
+          "title": "BMUM 2.3 (Week 2, Workout 3)",
+          "url": "/c/bar-muscle-up-mastery/sections/579037/lessons/2182257",
+          "description": "It’s national “Give Your Hands a Break” day — so today’s minimal kipping is by design. Let your hands recover and get ready for next week. We’re also introducing a new concept: tempo training. This means controlling the speed of different parts of a movement to build strength more effectively. Today’s programming calls for Strict Pull-ups at a tempo of 31X1. That means 1 second in the bottom hang, explode up (that’s the “X”), 1 second hold with chin over the bar before a 3-second controlled lower. Click here for a tempo deep dive. Follow the tempo as best you can. If you can’t do all 5 reps unbroken, drop, reset, and finish at the best tempo you can manage. If it feels too easy, add weight or slow down to keep it challenging with good form.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 15,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Hop-in + Kip",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict TTB",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Supinated Pull-up Negative (chin up grip)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Tempo Strict Pull-ups @31X1",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10 x Weighted Glute Bridge @11X2 (challenging)",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec x Hollow Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "12 Min EMOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2182258,
+          "title": "BMUM 3.1 (Week 3, Workout 1)",
+          "url": "/c/bar-muscle-up-mastery/sections/579038/lessons/2182258",
+          "description": "Watch the Fault Fixer video titled “Slow Elbows.” This is a common mistake that holds many athletes back when they’re just inches away from their first bar muscle up — and it’s often the cause of chicken-winging. As you practice today, focus on getting your hands and elbows into the right position for a fast, smooth transition over the bar during your banded bar muscle ups. Be sure both hands release and slide at the same time quickly!",
+          "sections": [
+            {
+              "name": "WARM-UP",
+              "items": [
+                {
+                  "movement": "8-10 x Banded Strict C2B Pull-ups (easy)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Banded Lat Pull-down (easy)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Perform all drills as singles. However, if you can Rx bar muscle ups or feel like you’re \"ready\", perform regular bar muscle ups instead of banded ones.",
+                  "has_video": false
+                },
+                {
+                  "movement": "9 Min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "4 x Kip Levers",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "4 x Hand-release Kip Swings",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "2-3 x Banded Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video the last set of banded bar muscle ups for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2182259,
+          "title": "BMUM 3.2 (Week 3, Workout 2)",
+          "url": "/c/bar-muscle-up-mastery/sections/579038/lessons/2182259",
+          "description": "Before starting today’s session, review the linked Fault Fixer videos. You might even have an “aha” moment that improves your performance. You’ll also find a new drill in today’s training called the Elevated Standing Transition, be sure to watch the deep dive video before setting up.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10-12 x Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10-12 x Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10-12 x Banded Strict Chest to Bar Pull-ups (easy)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "15 x Banded Lat Pull-down (easy)",
+                  "has_video": true
+                }
+              ],
+              "format": "8 Min EMOM"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Depending on your level, perform bar muscles up with a hollow hop-in, box drop-in or as a banded bar muscle up. If you already have bar muscle ups, add a extra rep (performed as a single) with every set.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Elevated Standing Transition",
+                  "has_video": true
+                },
+                {
+                  "sets": 3,
+                  "movement": "Jumping Bar Muscle Up",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Bar Muscle Up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1-2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video the last set of bar muscle ups for review",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2182260,
+          "title": "BMUM 3.3 (Week 3, Workout 3)",
+          "url": "/c/bar-muscle-up-mastery/sections/579038/lessons/2182260",
+          "description": "To give your hands a break, we’ll focus on more strength work with minimal kipping. While today's session isn't introducing anything new or fancy, aim to make each rep better than last week's!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Glute Bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict TTB",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Hollow Hop-in + Kip Lever (singles)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Aim to increase any weight from last week",
+                  "has_video": false
+                },
+                {
+                  "movement": "12 Min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5 x Tempo Strict Pull-ups @31X1",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10 x Weighted Glute Bridge @21X1 (challenging)",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec x Hollow Hold",
+                  "has_video": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2182263,
+          "title": "BMUM 4.1 (Week 4, Workout 1)",
+          "url": "/c/bar-muscle-up-mastery/sections/579039/lessons/2182263",
+          "description": "Today we'll be practicing all of our kipping utilizing the \"knee sleeve technique\". To understand this concept fully, please watch the \"Knee Sleeve Technique\" explained video. For homework, please also watch the \"Wide Grip” fault fixer video and experiment with your grip width in today's skill work.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Strict C2B Pull-ups (feel easy)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down (feel easy)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat Swings (use \"knee sleeve technique\")",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "All drills in this session should be done using the Knee Sleeve Technique to help build tension throughout your kip. If you’re not close to hitting a bar muscle up yet, no problem. Substitute with Banded Bar Muscle Ups and skip the Knee Sleeve Technique for those reps.",
+                  "has_video": false
+                },
+                {
+                  "movement": "9 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "4 x Kip Levers, singles",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "4 x Hand-release Kip Swings (singles)",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "1 x Bar Muscle Up Attempts (singles)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video the last set bar muscle ups for review",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2182264,
+          "title": "BMUM 4.2 (Week 4, Workout 2)",
+          "url": "/c/bar-muscle-up-mastery/sections/579039/lessons/2182264",
+          "description": "If you’re working toward your first bar muscle up, make sure to watch this the Hip Pop Fault Fixer video before today’s session. It covers one of the most common issues we see in athletes. so pay extra attention to your hip pop during practice! If you’ve already hit at least one bar muscle up, we’re introducing a new drill today called the Top Start Drill to help you better understand the mechanics of linking multiple reps.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Strict C2B Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Unweighted Glute Bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Knee Sleeve Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "If you already have bar muscle ups, modify Minute 3 by performing Top Start Bar Muscle Ups instead.",
+                  "has_video": false
+                },
+                {
+                  "movement": "12 Min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "3-4 x Elevated Standing Transitions (as singles)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 x Jumping BMU",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "Bar Muscle Up Attempts or 1-3x Top Start Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video the last set of bar muscle ups for review",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2182265,
+          "title": "BMUM 4.3 (Week 4, Workout 3)",
+          "url": "/c/bar-muscle-up-mastery/sections/579039/lessons/2182265",
+          "description": "We close this week out again with minimal kipping to give your hands time to recover and get ready for next week. If you haven’t watched all the Fault Fixer videos yet, that’s your homework for the weekend. They’re key to spotting and correcting major issues in your technique.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 15,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Hop-in + Kip",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict TTB",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Supinated Pull-up Negative (chin up grip)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Aim to increase any weight from last week",
+                  "has_video": false
+                },
+                {
+                  "movement": "12 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5 x Tempo Strict Pull-ups @31X1",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10 x Weighted Glute Bridge @21X1 (challenging)",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec x Hollow Hold",
+                  "has_video": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2182266,
+          "title": "BMUM 5.1 (Week 5, Workout 1)",
+          "url": "/c/bar-muscle-up-mastery/sections/579040/lessons/2182266",
+          "description": "Some athletes are hitting solid bar muscle ups using the box drop-in technique, while others are generating too much momentum and losing control of their swing. Here’s the fix! When using the box drop-in, don’t place the boxes in front of the bar or launch yourself into the kip. Instead, set the boxes directly under the bar and drop into a hollow position. This sets you up for a strong, controlled kip. If you’ve been using the hollow hop-in instead and struggling with momentum, make sure to give the hollow hop-in technique video another review. Success is all in the details.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded C2B Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Banded Lat Pull-down",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Perform single box drop-in or hollow hop-in in minute 1 and 2. Challenge yourself by using a lighter band than usual for the banded bar muscle ups.",
+                  "has_video": false
+                },
+                {
+                  "movement": "9 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "3 x Kipping Belly-to-bar",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 x Clapping Kips",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "1-3 x Banded Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Already RX bar muscle ups? Perform 4-6 banded bar muscle ups each round.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video the last set of banded bar muscle ups for review",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2182267,
+          "title": "BMUM 5.2 (Week 5, Workout 2)",
+          "url": "/c/bar-muscle-up-mastery/sections/579040/lessons/2182267",
+          "description": "Today, we’re zeroing in on common faults. The videos below highlight the most frequent issues we see. Whether you’re just starting out or have been at it for a while. Which one looks like you?",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "Row, Air Bike, or Run for 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Strict C2B Pull-ups (easy)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Glute Bridge @11X2",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat Swings (use knee sleeves)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "3-4 x Elevated Standing Transitions (singles)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "1 x Bar Muscle Up attempt (a single rep! Use box drop-in or hollow hop-in)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Already RX bar muscle ups? Aim for multiple unbroken reps today instead of a single rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video the last bar muscle up attempt for review",
+                  "has_video": false
+                }
+              ],
+              "format": "10 Min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2182268,
+          "title": "BMUM 5.3 (Week 5, Workout 3)",
+          "url": "/c/bar-muscle-up-mastery/sections/579040/lessons/2182268",
+          "description": "Today we’re introducing two new strength-building drills. Take a moment to review the Jumping Bar Muscle Up Negative and Strict Levers so you can perform each movement with proper form and get the most out of your reps!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 15,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Hop-in + Kip",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict TTB",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Supinated Pull-up Negative (chin up grip)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Take your time and rest well between movements, today’s skill work is not for time. If the negative feels too fast or out of control, use a band to help slow your descent. Remember, we want to slow and control the negative as much as possible to build strength and reinforce good mechanics.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-3 x Jumping BMU Negative",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Hollow Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-7 x Strict Levers (singles)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video the last set of Jumping Bar Muscle Up Negatives for review",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2182271,
+          "title": "BMUM 6.1 (Week 6, Workout 1)",
+          "url": "/c/bar-muscle-up-mastery/sections/579041/lessons/2182271",
+          "description": "Overall, I’ve been incredibly impressed with everyone’s progress so far! Even if you haven’t hit your first bar muscle up yet, many of you have made huge strides in the right direction. Today, it’s time to push beyond your comfort zone and make things a little tougher. Here’s a quick video explaining why we want to get outside your comfort zone!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Strict C2B Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down (challenging)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Challenge a lighter band than usual or go for bar muscle ups without a band.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets of 90 seconds",
+                  "has_video": false
+                },
+                {
+                  "sets": 15,
+                  "movement": "burpees (as fast as possible) with remaining time -",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max unbroken Banded Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 3 minutes between sets",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2182272,
+          "title": "BMUM 6.2 (Week 6, Workout 2)",
+          "url": "/c/bar-muscle-up-mastery/sections/579041/lessons/2182272",
+          "description": "Today is a repeat of Bar Muscle Up Mastery Week 3, Workout 2, but with one key difference, everyone should use the “knee sleeve technique” during their bar muscle up attempts in the skill work. If you’re unsure how to set it up or why it’s important, be sure to review Knee Sleeve Drill as a quick refresher.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10-12 x Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10-12 x Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10-12 x Banded Strict Chest to Bar Pull-ups (easy)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "10-12 x Banded Lat Pull-down (easy)",
+                  "has_video": true
+                }
+              ],
+              "format": "8 min EMOM"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Elevated Standing Transitions",
+                  "has_video": true
+                },
+                {
+                  "sets": 3,
+                  "movement": "Jumping Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "1-2 x Bar Muscle Up attempts (with knee sleeve)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Already RX bar muscle ups? Double the BMU reps to 2-5 aim to string multiples together!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video the last set of knee sleeve bar muscle ups for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2182274,
+          "title": "BMUM 6.3 (Week 6, Workout 3)",
+          "url": "/c/bar-muscle-up-mastery/sections/579041/lessons/2182274",
+          "description": "Last week we worked on Jumping Bar Muscle Up Negatives, this time, focus on lowering yourself as slowly and with as much control as possible, going all the way down to the bottom hang for maximum strength gains. If these still feel too challenging, use a band to help maintain control throughout the descent.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 15,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Hop-in + Kip",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict TTB",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Supinated Pull-up Negative (chin up grip)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "1-3 x Jumping BMU Negative",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Hollow Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-7 x Strict Levers (singles)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Scapular Pull-ups @1111",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video the last set of negatives for review and compare to workout 5.3",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2182276,
+          "title": "BMUM 7.1 (Week 7, Workout 1)",
+          "url": "/c/bar-muscle-up-mastery/sections/579042/lessons/2182276",
+          "description": "Let’s revisit the conditioning challenge from Week 6, Workout 1 and see how much progress you’ve made. Aim for improved pacing, smoother transitions, or just a stronger effort overall!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Strict C2B Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down (challenging)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "The goal is to beat your results from last week’s session. Use the same band set up (or no band if you did regular bar muscle ups) for an accurate comparison.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets of 90 seconds",
+                  "has_video": false
+                },
+                {
+                  "sets": 15,
+                  "movement": "burpees (as fast as possible) with remaining time -",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max unbroken Banded Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 3 minutes between sets",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2182277,
+          "title": "BMUM 7.2 (Week 7, Workout 2)",
+          "url": "/c/bar-muscle-up-mastery/sections/579042/lessons/2182277",
+          "description": "Repeat Week continues with a throwback to Week 5, Workout 2. This is one where many athletes hit their first BMU. If you’re on the cusp, today could be your day!",
+          "sections": [
+            {
+              "name": "WARM-UP",
+              "items": [
+                {
+                  "movement": "Row, Air Bike, or Run for 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Strict C2B Pull-ups (easy)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Glute Bridge @11X2",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "You have 30 seconds to perform as many single Bar Muscle Up attempts as you’d like. Use either the box drop-in or hollow hop-in technique. Focus on quality and control with each rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "3-4 x Elevated Standing Transitions (singles)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30 sec x Bar Muscle Up attempts (singles)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video all your Bar Muscle Up sets and compare your best and worst attempts.",
+                  "has_video": false
+                },
+                {
+                  "movement": "What differences do you notice in timing, body position, or momentum?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2182278,
+          "title": "BMUM 7.3 (Week 7, Workout 3)",
+          "url": "/c/bar-muscle-up-mastery/sections/579042/lessons/2182278",
+          "description": "Our final workout before test week! Amazing job making it this far! More important than just the movement is the consistency and habits you’ve built along the way. That’s the real key to mastery.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 15,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Hop-in + Kip",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict TTB",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Supinated Pull-up Negative (chin up grip)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Aim to match or increase in weight from Week 4 workout 3",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-8 x Tempo Strict Pull-ups @31X1",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-8 x Strict Levers",
+                  "has_video": true
+                },
+                {
+                  "movement": "30-45sec x Hollow Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Weighted Glute Bridge @11X2 (challenging)",
+                  "has_video": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2182283,
+          "title": "BMUM 8.1 (Week 8, Workout 1)",
+          "url": "/c/bar-muscle-up-mastery/sections/579043/lessons/2182283",
+          "description": "Welcome to Test Week! Over the past 8 weeks, we’ve been building both bar muscle up skills and conditioning. After a short conditioning piece today, we’ll test how your bar muscle up training has improved other key movements like chest to bar pull-ups and toes to bar.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Passive Hang + 5 x Strict Levers + 5 x Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 3,
+                  "movement": "Kip Levers",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Use whichever starting technique (box drop-in or hollow hop-in) that gives you the most reps or strongest attempts.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets of 90 seconds",
+                  "has_video": false
+                },
+                {
+                  "sets": 15,
+                  "movement": "burpees (as fast as possible) with remaining time -",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Bar Muscle Ups (as singles)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 3 minutes between sets",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Unbroken Kipping Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Unbroken Kipping Chest to Bar Pull-Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video your final set of each movement and log your numbers to compare with your Week 1 results.",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2182284,
+          "title": "BMUM 8.2 (Week 8, Workout 2)",
+          "url": "/c/bar-muscle-up-mastery/sections/579043/lessons/2182284",
+          "description": "Progress in gymnastics can be tough to measure. If we only focus on achieving the “big, hard” movement, we miss all the small wins along the way. Take a moment to acknowledge the effort and consistency it took to get here.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Hollow Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull-down",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Hollow Hop-in + Kip lever",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "2-3 x Jumping BMU",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "4 x Elevated Standing Transitions",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "1-2 x Banded BMU",
+                  "has_video": true
+                }
+              ],
+              "format": "12 Min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "To accurately measure your progress, make sure to use the same bands and band technique you used in Week 1.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Unbroken Banded Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1-2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film your final set for review and compared your logged results to Week 1",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2182285,
+          "title": "BMUM 8.3 (Week 8, Workout 3)",
+          "url": "/c/bar-muscle-up-mastery/sections/579043/lessons/2182285",
+          "description": "The final workout of Bar Muscle Up Mastery! Hitting your first bar muscle up today would be amazing, but if you’re still putting the pieces together, that’s perfectly okay. Be proud of the consistency and effort you’ve shown over the past 8 weeks. Many athletes find their biggest breakthroughs during a second round of the program, your body’s more prepared, your confidence is higher, and you know what to focus on. Keep showing up and trust the process! Don’t forget to share your success and your before and after videos on the WODprep Wall of Wins, you might even score some free WODprep swag!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Glute Bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Banded Lat Pull-Down",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Levers",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "40sec x Hollow hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "3-5 x Hollow Hop-in + Kip lever",
+                  "has_video": true
+                },
+                {
+                  "movement": "3-5 x Elevated Standing Transition Drill, singles",
+                  "has_video": true
+                },
+                {
+                  "movement": "1-2 x Jumping Bar Muscle Up Negative",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets",
+              "notes": "Rest walk 4 minutes before TEST"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Unbroken Bar Muscle Ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 2 minute between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video all sets fro review and compare to your Week 1 results",
+                  "has_video": false
+                }
+              ],
+              "format": "Show time! Use whichever starting technique, box drop-in or hollow hop-in, you’re most confident with. Let’s see what you’ve got!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

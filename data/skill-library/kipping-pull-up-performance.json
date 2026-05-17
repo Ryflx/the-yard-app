@@ -1,0 +1,1482 @@
+{
+  "skill": "kipping-pull-up-performance",
+  "course_name": "Kipping Pull-up Performance",
+  "course_slug": "kipping-pull-up-performance",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/kipping-pull-up-performance",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 11,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2183037,
+          "title": "KPUP 1.1 (Week 1, Workout 1)",
+          "url": "/c/kipping-pull-up-performance/sections/579267/lessons/2183037",
+          "description": "Welcome to Kipping Pull-Up Performance! We’re kicking things off by testing your current kipping skills. Don’t worry if you can’t do one yet, today is simply about seeing where you’re starting from so you can clearly track your progress over the next 8 weeks. To help, download and print the Kipping Pull-Up Performance Score Sheet from the Files tab. Even if your score is zero, that’s a valuable starting point. You won’t know how far you’ve come unless you know where you began. If you’re a WODprep Academy athlete, post your test video in the Academy Coaching space to get personalized feedback from our coaches. Not an Academy athlete but want coaching? Reach out to us at support@wodprep.com.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Scapular Pull-up+ (with control)",
+                  "has_video": true
+                }
+              ],
+              "format": "10 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Use the Kipping Pull-up Score Sheet to track your score. Set ends when you drop from the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX unbroken Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2183038,
+          "title": "KPUP 1.2 (Week 1, Workout 2)",
+          "url": "/c/kipping-pull-up-performance/sections/579267/lessons/2183038",
+          "description": "A good benchmark for kipping pull-ups is a 1:3 ratio, for every strict pull-up you can do, you’ll likely be able to perform five kipping pull-ups. That’s why today we’re testing your strict pull-up strength after running through some shoulder stability drills. You’ll see these movements often throughout the program, because healthy shoulders are key to safe, efficient kipping. Building this foundation now will pay off in a big way later.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Scapular Pull-up+ (with control)",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-15sec x Bent Arm Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat Swing",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest walk 2minutes before Test",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Set ends when you drop from the bar. Track your results on the Kipping Pull-up Score Sheet.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Pronated Strict Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 mins between sets",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2183039,
+          "title": "KPUP 1.3 (Week 1, Workout 3)",
+          "url": "/c/kipping-pull-up-performance/sections/579267/lessons/2183039",
+          "description": "Hard to believe we’re already at the end of Week 1! Today is all about dialling in the basics: the arch and hollow positions. The foundation of every kipping movement. Start slow, stay in control, and focus on quality. We’ll finish with a quick core test using hollow rocks. This will give you a baseline to compare against later in the program. Expect a good burn, your core is what ties the kipping pull-up together!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Circular Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swing",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kip Swing",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes before TEST",
+                  "has_video": false
+                }
+              ],
+              "format": "8 min EMOM (4 total sets)"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2183040,
+          "title": "KPUP 2.1 (Week 2, Workout 1)",
+          "url": "/c/kipping-pull-up-performance/sections/579268/lessons/2183040",
+          "description": "Shoulder health is essential. Building a full expression of strength, mobility, and stability will help you feel strong and pain-free as you move through the program.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "40sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "6 x Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Circular Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "8 min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2183041,
+          "title": "KPUP 2.2 (Week 2, Workout 2)",
+          "url": "/c/kipping-pull-up-performance/sections/579268/lessons/2183041",
+          "description": "Let’s dial in some focused work on your kipping pattern today. Be sure to video your movement during the final set of the EMOM and either share it for coaching feedback or use it for your own review. The more input you get early in the program, the faster and more effectively you’ll improve. Don’t miss the opportunity to refine your technique!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-15sec x Bent Arm Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "3-5 x Pronated Strict Pull-up",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Beat Swing + 5x Kip Swing + 1-2 Kip Swing with Re-grip",
+                  "has_video": true
+                },
+                {
+                  "movement": "Video final set of minute 2 for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2183042,
+          "title": "KPUP 2.3 (Week 2, Workout 3)",
+          "url": "/c/kipping-pull-up-performance/sections/579268/lessons/2183042",
+          "description": "Developing control at the top of the kip will drastically improve the timing and position through your kipping pattern. Today is all about timing, positions and core. Have fun!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "20-30sec x Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "20-30sec x Chin Over Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat Swing (Towel Drill)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2183043,
+          "title": "KPUP 3.1 (Week 3, Workout 1)",
+          "url": "/c/kipping-pull-up-performance/sections/579269/lessons/2183043",
+          "description": "One of the biggest challenges in the kipping pull-up is the push away at the top of the kip. Without it, you fall straight down and usually need a “double kip” to get going again. Nailing this part sets you up perfectly for fluid, consistent reps.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "10-20 x Banded Face Pulls",
+                  "has_video": true
+                },
+                {
+                  "movement": "No rig to attach to the band to? Do Banded Pull Aparts",
+                  "has_video": false
+                },
+                {
+                  "movement": "10-20 x Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "movement": "8-10 x Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "movement": "45sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "10sec x Chin Over Bar Hold + Push Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 1min x Passive Hang",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2183044,
+          "title": "KPUP 3.2 (Week 3, Workout 2)",
+          "url": "/c/kipping-pull-up-performance/sections/579269/lessons/2183044",
+          "description": "Think of your midline like a hose, any kinks mean lost power. Keeping your body aligned and activated prevents energy leaks and helps everything work in together. Today we’re attacking that with drills to build midline stability and core stamina.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30 x Child Pose on Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "20-30sec x Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "movement": "15-30sec x Bent Arm Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30-60sec",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2183045,
+          "title": "KPUP 3.3 (Week 3, Workout 3)",
+          "url": "/c/kipping-pull-up-performance/sections/579269/lessons/2183045",
+          "description": "Double whammy today! We’re dialling in our kipping positions and building strict pull-up strength. Two essential pieces, one solid session. Go after it with focus and intensity!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10 x Beat Swing (Towel Drill)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Kip Swing with Re-grip",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + Hold for 1 sec + Push Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + Hold for 1 sec + Push Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + Hold for 1 sec +Push Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Want more challenge? Increase your hold time at the top of the pull-up",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2183046,
+          "title": "KPUP 4.1 (Week 4, Workout 1)",
+          "url": "/c/kipping-pull-up-performance/sections/579270/lessons/2183046",
+          "description": "Take your time with the first piece, your shoulders should feel primed and ready to go. As we move into kipping work, focus on hitting each position with intention and staying smooth through your transitions. Grab your Week 1 test score sheet, it’s time to revisit the Hollow Rock Test and see how your core strength and endurance are shaping up!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "60sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "movement": "8-10 x Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kip Swing",
+                  "has_video": true
+                },
+                {
+                  "movement": "1-3 x Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2183047,
+          "title": "KPUP 4.2 (Week 4, Workout 2)",
+          "url": "/c/kipping-pull-up-performance/sections/579270/lessons/2183047",
+          "description": "Aside from a 3 set check-in on strict pull-up strength, it’s a light day for the hands with a focus on core activation and control.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "45sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "45sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "45sec x Skin the Cat Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "12min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Set ends when you drop from the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Pronated Strict Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 mins between sets",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2183048,
+          "title": "KPUP 4.3 (Week 4, Workout 3)",
+          "url": "/c/kipping-pull-up-performance/sections/579270/lessons/2183048",
+          "description": "You’ve crushed the first half of the Kipping Pull-up Performance course and today, we’re putting that hard work on display! Be sure to video all three Max Kipping Pull-up sets for personal review or to share with a WODprep Coach in the Academy Coaching Space. If you’ve made it this far and feel like you could use more personalized support, don’t hesitate to book a complimentary discovery call. It’s a great way to find out if 1-on-1 Coaching is the right move to help you reach your goals faster and with more confidence.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + Hold for 3 sec + Push Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + Hold for 3 sec +Push Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + Hold for 3 sec + Push Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Want more challenge? Increase your hold time at the top of the pull-up.",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Set ends when you drop from the bar",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX unbroken Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2183049,
+          "title": "KPUP 5.1 (Week 5, Workout 1)",
+          "url": "/c/kipping-pull-up-performance/sections/579271/lessons/2183049",
+          "description": "Today we’re focusing on serious time under tension. You’ll start with Chin-over-Bar holds, then flow directly into a kipping pull-up. While the set calls for holds up to 30 seconds, most athletes will land in the 5–15 second range and that’s totally fine. Focus on quality positioning and control.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "20-30sec x Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "60 sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets; every 2 mins",
+                  "has_video": false
+                },
+                {
+                  "movement": "Up to 30sec x Chin Over Bar Hold + Push Away + 1 x Kipping Pull-up",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 1 minute in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Passive Hang",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2183050,
+          "title": "KPUP 5.2 (Week 5, Workout 2)",
+          "url": "/c/kipping-pull-up-performance/sections/579271/lessons/2183050",
+          "description": "The fundamentals are always worth revisiting. Today, we’ll flow through all the key positions needed to knock out big sets of kipping pull-ups. Don’t rush these but focus on quality movement and control in every rep. We’re also introducing a Supinated Pull-up (aka Chin-up) negative. Control the descent as much as possible, especially near the bottom range. That’s where the real strength gains are made.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pulls",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Circular Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets",
+              "notes": "3-5 Supinated Pull-up Negative (5 second negative) Rest walk 30sec between each pull-up attempt Rest walk 1 minute"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2183051,
+          "title": "KPUP 5.3 (Week 5, Workout 3)",
+          "url": "/c/kipping-pull-up-performance/sections/579271/lessons/2183051",
+          "description": "Lots of positional work on deck today. Slow things down, stay focused, and hit every shape with intention. Your future kip will thank you.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Passive Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Child Pose on Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + 5sec Chin Over Bar Hold + Push Away + Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + 5sec Chin Over Bar Hold + Push Away + Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + 5sec Chin Over Bar Hold + Push Away + Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "Want more challenge? Increase your hold time at the top of the pull-up",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 3,
+                  "movement": "Kipping Pull-ups with a 2sec hold at the top of each rep",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2183052,
+          "title": "KPUP 6.1 (Week 6, Workout 1)",
+          "url": "/c/kipping-pull-up-performance/sections/579272/lessons/2183052",
+          "description": "We are getting strong! Here is another opportunity to work on that strict strength. The complex at the end of the day is spicy. Manage your reps well and aim for unbroken sets.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Banded Face Pull",
+                  "has_video": true
+                },
+                {
+                  "movement": "10-20sec x Bent Arm Hang",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Circular Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets; Every 2 mins",
+                  "has_video": false
+                },
+                {
+                  "sets": 3,
+                  "movement": "Pronated Strict Pull-up + Push Away + 3 x Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Want more challenge? Increase the number of pull-ups you can maintain across all sets with good form.",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2183053,
+          "title": "KPUP 6.2 (Week 6, Workout 2)",
+          "url": "/c/kipping-pull-up-performance/sections/579272/lessons/2183053",
+          "description": "It’s a nice, easy day on the hands today! If you’re looking to increase the challenge, feel free to add more time under tension during the EMOM (for example, try a 45-second Superman Hold instead of 30). Just make sure you leave yourself enough time to transition smoothly into the next movement.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30sec x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x Child Pose on Box",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "20sec x Left Prone Thoracic Rotation + 20sec x Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "minute": 5,
+                  "movement": "30sec x Banded Straight Arm Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "minute": 6,
+                  "movement": "MAX x Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "minute": 7,
+                  "movement": "Rest walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "Short on time? Do 1-2 rounds instead of 3.",
+                  "has_video": false
+                }
+              ],
+              "format": "21 min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2183054,
+          "title": "KPUP 6.3 (Week 6, Workout 3)",
+          "url": "/c/kipping-pull-up-performance/sections/579272/lessons/2183054",
+          "description": "Today we’re tackling top-end reps under fatigue so after the Kipping Pull-ups with a 2-second hold, you’ll go straight into a max unbroken kipping set with whatever ‘juice’ you’ve got left. It might be 10, it might be 0, just give your best effort and focus on all the positional work you’ve built so far. And of course, if your hands are feeling close to ripping, don’t hesitate to call it a day. Protect your hands so you can stay consistent and strong heading into the home stretch.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + 10sec x Chin Over Bar Hold + Push Away + 3 x Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 3,
+                  "movement": "Kipping Pull-ups with a 2sec hold at the top of each rep",
+                  "has_video": true
+                },
+                {
+                  "movement": "directly into",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Unbroken Kipping Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2183057,
+          "title": "KPUP 7.1 (Week 7, Workout 1)",
+          "url": "/c/kipping-pull-up-performance/sections/579273/lessons/2183057",
+          "description": "Let’s keep the momentum going with some strict and kipping pull-up complexes to build volume and control. Stay focused, stay tight, and earn every rep!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "12sec x Chin Over Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Child Pose on Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets; Every 2 mins",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Pronated Strict Pull-up + Push Away + 5 x Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Modify the reps as needed to complete the full moment unbroken",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 1 minute in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Passive Hang",
+                  "has_video": true
+                }
+              ],
+              "format": "2 sets"
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2183058,
+          "title": "KPUP 7.2 (Week 7, Workout 2)",
+          "url": "/c/kipping-pull-up-performance/sections/579273/lessons/2183058",
+          "description": "Fundamentals are the foundation of every movement and today we’re putting in the work to strengthen them. If the 60sec holds are a little much, feel free to modify or break them up until you’ve accumulated the full minute. Focus on quality over perfection.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "60sec x Child Pose on Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "60sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "4 Sets"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2183059,
+          "title": "KPUP 7.3 (Week 7, Workout 3)",
+          "url": "/c/kipping-pull-up-performance/sections/579273/lessons/2183059",
+          "description": "Final session before test week, let’s go big on volume. Protect those hands. Earn that recovery!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Pronated Strict Pull-up + 5sec x Chin Over Bar Hold + Push Away + 2 x Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Pronated Strict Pull-up + 5sec Chin Over Bar Hold + Push Away + 4 x Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "6 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "3 x Kipping Pull-ups with a 2sec hold at the top of each rep",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "15sec x Kipping Pull-ups",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2183060,
+          "title": "KPUP 8.1 (Week 8, Workout 1)",
+          "url": "/c/kipping-pull-up-performance/sections/579274/lessons/2183060",
+          "description": "Welcome to Week 8 of Kipping Pull-up Performance, you made it! That alone speaks volumes about your focus and commitment. Remember, your consistency matters far more than any number you write on your score sheet today. There’s a lot of pulling in today’s session, so feel free to scale back the skill work if needed to protect your hands for the test. Take care of them, they’ve worked hard, too. Use your Week 1 score sheet and film your strict pull-up test so you can compare your test results to Week 1.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "20sec x Hollow Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30 sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swing (Towel Drill)",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kip Swing",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kip Swing with Re-grip",
+                  "has_video": true
+                },
+                {
+                  "movement": "1-2x Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "TEST",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Pronated Strict Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 mins between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record each set for Week 1 comparison",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2183061,
+          "title": "KPUP 8.2 (Week 8, Workout 2)",
+          "url": "/c/kipping-pull-up-performance/sections/579274/lessons/2183061",
+          "description": "Time to show your shoulders some love after that strict pull-up test. Go slow, stay focused, and treat this like the maintenance work it is, it’ll pay off. Before our final kipping test next session, we’re revisiting the Hollow Rock test. Let’s see how much stronger your core has gotten over the last 8 weeks!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Prone Thoracic Rotation (Left)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Prone Thoracic Rotation (Right)",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Circular Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "5 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2183062,
+          "title": "KPUP 8.3 (Week 8, Workout 3)",
+          "url": "/c/kipping-pull-up-performance/sections/579274/lessons/2183062",
+          "description": "Today is our final day of Kipping Pull-up Performance! For some, today test might be a new PR. For others, it could be improved shapes or stronger positions. No matter what your numbers look like, we’re proud of all your effort and success! We want to hear all your your success! Post your before-and-after videos on the Wall of Wins and earn yourself with some sweet WODprep swag just for sharing.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "15sec Hollow Body Hold + 15sec x Superman Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "9 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX unbroken Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video both sets and share your success on the Wall of Wins!",
+                  "has_video": false
+                }
+              ],
+              "format": "3 sets"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1181 @@
+{
+  "skill": "butterfly-pull-up-breakthrough",
+  "course_name": "Butterfly Pull-up Breakthrough",
+  "course_slug": "butterfly-pull-up-breakthrough",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/butterfly-pull-up-breakthrough",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 14,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2183100,
+          "title": "BPUB 1.1 (Week 1, Workout 1)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579288/lessons/2183100",
+          "description": "Let’s get a good feel for the flow of this movement. You will get a solid dose of these movements throughout the next 8 weeks in the program. These fundamentals help us to get the feel for the positions and the direction of movement!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10 x Beat Swing",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX unbroken Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record the reps for each set",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2183101,
+          "title": "BPUB 1.2 (Week 1, Workout 2)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579288/lessons/2183101",
+          "description": "We have said it before and we will say it again: Shoulder health and strict strength are essential foundational pieces to a solid skill program. We are in it for the long game and you will find success in the work assigned today! Enjoy!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "3-5 x Pronated Strict Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-7 x Scapular Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "9 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5 x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 x Hollow Hop In",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "1 x Strict Fall Through",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2183102,
+          "title": "BPUB 1.3 (Week 1, Workout 3)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579288/lessons/2183102",
+          "description": "Let’s keep grooving that butterfly pattern and work on some solid strength in these positions! * to be performed as one movement or as separate pieces as needed.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "8 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5 x Scapular Pull-up+",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10sec x Bent Arm Hang + 2 x Shoulder Row",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2183103,
+          "title": "BPUB 2.1 (Week 2, Workout 1)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579289/lessons/2183103",
+          "description": "Fundamentals are FUN! Here is a day to focus on just that, the fundamentals!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "4-6 x Pronated Strict Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "6-8 x Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "12 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "5-10 x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "2-3 x Strict Fall Through",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3 x Hollow Hop In + 3-5 x Kipping Pull-up",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2183104,
+          "title": "BPUB 2.2 (Week 2, Workout 2)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579289/lessons/2183104",
+          "description": "Over the next few days and into the coming weeks we will be building on a progression through the butterfly pattern. Stay patient and record video so you can review and look back on your progress.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swings + Scoop + Drop",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2183105,
+          "title": "BPUB 2.3 (Week 2, Workout 3)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579289/lessons/2183105",
+          "description": "Groove the pattern - strengthen the pattern - groove the pattern - strengthen the pattern… That is the flow for today’s session. Let’s get it!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "10 x Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Beat Swing + Scoop + Drop",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2183106,
+          "title": "BPUB 3.1 (Week 3, Workout 1)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579290/lessons/2183106",
+          "description": "Today is a big day for positional strength development and establishing movement fluency. Remember: videos are gold!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Scapular Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 3,
+                  "movement": "Strict Pronated Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "5-10sec x Chin Over Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Performed as one movement or as separate pieces as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swing + Scoop + Drop",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2183107,
+          "title": "BPUB 3.2 (Week 3, Workout 2)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579290/lessons/2183107",
+          "description": "Let’s give the hands a bit of a day off and work on that midline stability and body alignment needed to perform big sets of butterfly pull-ups.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "60sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Body Rock",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Superman Lift",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                }
+              ],
+              "format": "3 sets"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2183108,
+          "title": "BPUB 3.3 (Week 3, Workout 3)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579290/lessons/2183108",
+          "description": "We are adding in the next step to our butterfly pattern today! If you're part of WODprep Coaching, keep the videos coming.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Hollow Hop In",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swing + Scoop + Pull + Drop",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2183109,
+          "title": "BPUB 4.1 (Week 4, Workout 1)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579291/lessons/2183109",
+          "description": "Understanding the difference between the kipping and butterfly pattern is very important. Today we have a nice little complex to practice and develop a feel for the differences.",
+          "sections": [
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Beat Swing + Scoop + Pull + Drop",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5x Kipping Pull-up + 1 Butterfly Pull-up",
+                  "has_video": true
+                }
+              ],
+              "format": "10 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2183110,
+          "title": "BPUB 4.2 (Week 4, Workout 2)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579291/lessons/2183110",
+          "description": "Today is all about the core (our hands need a quick vacation).",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "1 min x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Superman Lift",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Superman Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2183111,
+          "title": "BPUB 4.3 (Week 4, Workout 3)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579291/lessons/2183111",
+          "description": "You have put in 4 weeks of work at this point. Congrats everyone! Let’s see how these butterfly pull-ups are coming together. Share your videos and please compare them to your starting point!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10x Beat Swing",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                }
+              ],
+              "format": "6 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX unbroken Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record each set each set and compare to Week 1",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2183113,
+          "title": "BPUB 5.1 (Week 5, Workout 1)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579292/lessons/2183113",
+          "description": "Let's start building on our Week 4 successes!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Beat Swing + Scoop + Pull + Drop",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Kipping Pull-ups + 2-3 x Butterfly Pull-up",
+                  "has_video": true
+                }
+              ],
+              "format": "10 sets; Every 30sec"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2183112,
+          "title": "BPUB 5.2 (Week 5, Workout 2)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579292/lessons/2183112",
+          "description": "Let’s bring the focus back to shoulder health that will allow us to achieve long term success in the program!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "60sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Superman Lift",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2183114,
+          "title": "BPUB 5.3 (Week 5, Workout 3)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579292/lessons/2183114",
+          "description": "Focus on your patterns. Record each butterfly pull-up single for your personal review. The more you watch and compare your reps, the easier it is to pick out improvements and points of focus for yourself!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 2,
+                  "movement": "Beat Swing",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Strict Fall Through",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets; Every 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Hollow Hop In + Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Shoulder Row",
+                  "has_video": true
+                }
+              ],
+              "format": "10 Sets; Every 30sec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2183115,
+          "title": "BPUB 6.1 (Week 6, Workout 1)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579293/lessons/2183115",
+          "description": "We are building volume in our kipping to butterfly progression and adding in the next step of the butterfly pattern. Do your best to maintain the desired reps!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Beat Swing + Scoop + Pull + Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Kipping Pull-ups + 2-3 x Butterfly Pull-up",
+                  "has_video": true
+                }
+              ],
+              "format": "10 Sets; Every 30sec:"
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2183116,
+          "title": "BPUB 6.2 (Week 6, Workout 2)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579293/lessons/2183116",
+          "description": "Let’s build on that bulletproof core!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "60sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2183117,
+          "title": "BPUB 6.3 (Week 6, Workout 3)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579293/lessons/2183117",
+          "description": "Butterfly singles will help us master our set-up positions and hopping into the bar. To establish consistency, look to build a routine or specific sequence to follow with every set.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Strict Fall Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Beat Swing + Scoop + Pull + Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Hollow Hop In + Butterfly Pull-up",
+                  "has_video": true
+                }
+              ],
+              "format": "10 Sets; 1 Set every 30sec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2183118,
+          "title": "BPUB 7.1 (Week 7, Workout 1)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579294/lessons/2183118",
+          "description": "BIG volume on our kipping to butterfly complex progression today. Work for those reps and remember your positions!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Strict Kip Butterfly Complex",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Kipping Pull-ups + 3-5 x Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video last set for review",
+                  "has_video": false
+                }
+              ],
+              "format": "10 min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2183119,
+          "title": "BPUB 7.2 (Week 7, Workout 2)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579294/lessons/2183119",
+          "description": "Today we're dialling in our butterfly pattern!!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Beat Swing + Scoop + Pull + Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "10 Sets"
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2183120,
+          "title": "BPUB 7.3 (Week 7, Workout 3)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579294/lessons/2183120",
+          "description": "We are getting into bigger sets of butterfly pull-ups in this session. Record video so you can review your form and make some final adjustments before heading into test week!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Strict Fall Through",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Beat Swing + Scoop + Pull + Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 min EMOM",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Butterfly Pull-up",
+                  "has_video": true
+                }
+              ],
+              "format": "12 Sets; Every 30sec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2183121,
+          "title": "BPUB 8.1 (Week 8, Workout 1)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579295/lessons/2183121",
+          "description": "We are entering the final week of this 8 week program. Thank you for your effort so far. We can’t wait to see where this week takes you!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 2,
+                  "movement": "Strict Kip Butterfly Complex",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "8 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Kipping Pull-ups + 3-5 x Butterfly Pull-up",
+                  "has_video": true
+                }
+              ],
+              "format": "10 Sets; 1 Set every 90sec"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2183122,
+          "title": "BPUB 8.2 (Week 8, Workout 2)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579295/lessons/2183122",
+          "description": "Groove the pattern. This is the final prep day to polish up our technique!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Beat Swing + Scoop + Pull + Drop",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Beat Swing + Scoop + Pull + Arch",
+                  "has_video": true
+                }
+              ],
+              "format": "10 Sets"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2183123,
+          "title": "BPUB 8.3 (Week 8, Workout 3)",
+          "url": "/c/butterfly-pull-up-breakthrough/sections/579295/lessons/2183123",
+          "description": "Congrats everyone! You have worked your way through to the final day of programming in Butterfly Pull-up Breakthrough. Let’s see how your efforts have paid off! Don't forget to leave us your thoughts in the Course Completion Section. If you're part of WODprep Coaching please share your videos so we can celebrate your progress and give you feedback on how to continue to dial in this movement. We want to hear all your your success! Post your before-and-after videos on the Wall of Wins and earn yourself with some sweet WODprep swag just for sharing.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10 x Beat Swing",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arms Only Box Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Reverse Bicycle Kick",
+                  "has_video": true
+                }
+              ],
+              "format": "6 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "MAX unbroken Butterfly Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video every sets for review and share your success on the Wall of Wins!",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

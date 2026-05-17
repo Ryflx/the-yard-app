@@ -1,0 +1,861 @@
+{
+  "skill": "confident-kick-ups",
+  "course_name": "Confident Kick-ups",
+  "course_slug": "confident-kick-ups",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/confident-kick-ups",
+  "scraped": "2026-05-17",
+  "total_weeks": 3,
+  "total_lessons": 9,
+  "skipped_lessons": 5,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2200427,
+          "title": "CKU 1.1 (Week 1 , Workout 1)",
+          "url": "/c/confident-kick-ups/sections/583403/lessons/2200427",
+          "description": "Welcome to the first week of Confident Kick Ups. Today we're going to work on keeping our arms locked out, holding a hollow body and putting weight on the head.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Positional Wrist Warm Up",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Downward Dog Scap Push Up",
+                  "has_video": true
+                },
+                {
+                  "movement": "10sec x Hollow Hold (Modify as needed)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 4,
+                  "movement": "25m Straight Arm | Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "sets": 4,
+                  "movement": "Yoga Push Up",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Angled Wall Walk x 5-10sec hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1-2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2-4 x Wall-Assisted Tripod Building Drill (use wall)",
+                  "has_video": true
+                },
+                {
+                  "movement": "If you're unsure about your tripod ability do it up against a wall. That way there is no chance for you to tip over backwards. Often taking away that 'fear' element is enough to do really well at the movement.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Rounds",
+              "notes": "Walk up to a 45 degree angle on the wall. Keep those arms locked out, push through the shoulders and tuck the hips with the ribcage down. Come down early from hold so not to fall from the wall. Rest up to 1 min between holds"
+            },
+            {
+              "name": "REFLECT",
+              "items": [
+                {
+                  "movement": "How did today's session go? If you did this session again what would you focus on?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2200428,
+          "title": "CKU 1.2 (Week 1, Workout 2)",
+          "url": "/c/confident-kick-ups/sections/583403/lessons/2200428",
+          "description": "Today we'll add in box holds to continue working on fully locking out our arm while becoming comfortable with our hips coming over our hands. 2 rounds 1 x Hand Circle Walks (Focus on straight arms) 30 sec x Child’s Pose with Box 6 x Downward Dog Scap Push Up",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Downward Dog Single Leg Lift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Alternate between legs with control and a pause at top.",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Angled Wall Walk x 5 sec hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Box Handstand Hold x up to 10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Film last set from side for angle",
+                  "has_video": false
+                },
+                {
+                  "movement": "On a box, get your hips over your hands as close as possible and hold.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Ensure your arms are locked and you’re pushing through the shoulders.",
+                  "has_video": false
+                },
+                {
+                  "movement": "The higher the box, the easier the drill.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Then rest 2 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Wall-Assisted Tripod Hold x Hold up to 15 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Using the wall for support, focus on creating a tripod shape with your hands and head making a triangle.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Start by bringing one knee up to your elbow and then the other.",
+                  "has_video": false
+                },
+                {
+                  "movement": "When you feel stable and safe, unfold the hips so you're in a tucked position.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 rounds"
+            },
+            {
+              "name": "REVIEW",
+              "items": [
+                {
+                  "movement": "Watching the video of your Box Handstand Hold how well did you get your hips over your hands?",
+                  "has_video": false
+                },
+                {
+                  "movement": "We're you able to keep your arms locked out or can you see some bending?",
+                  "has_video": false
+                },
+                {
+                  "movement": "No worries if you did. Our goal here was simply to get upside down. We'll look at refining this movement in the coming weeks.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2200429,
+          "title": "CKU 1.3 (Week 1, Workout 3)",
+          "url": "/c/confident-kick-ups/sections/583403/lessons/2200429",
+          "description": "Let’s continue developing our tripod by progressing into a tuck position—or even a full headstand if you’re feeling confident. More importantly, we’ll be adding a leg lift to our box hold to start feeling what it’s like to stack our body over our hands. This is a crucial position to get comfortable with, as it directly translates to the mechanics of a successful kick-up. 2 rounds 1 x Wrist Circles 2 x 25m Straight Arm | Straight Leg Bear Crawl 4 x Downward Dog Single Leg Lift w/ Light Jump (Alternate)",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Box Handstand Hold (15sec hold)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Set box a leg length from wall",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Angled Wall Walk x 10sec hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Box Single Leg Lift (Alternate) x 2 sec hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "With our hands shoulders width or slightly wider, aim to get shoulders and hips as stacked over the hands as best as possible. From there, slowly raise one leg as straight and hold. Ideally we'd create a nice straight 90 line. However, doesn’t need to be perfect, just do your best!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film final set from side angle for review.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed with 1 min b/t sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 4,
+                  "movement": "Wall-Assisted Tripod to Tuck Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "Using the wall for support, move from a tripod position by moving the hips and knees to a tucked position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Feeling confident? Try for a headstand. To keep your balance, keep your feet in front of your hips by keeping your hips slightly tucked.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 1 min between sets",
+                  "has_video": false
+                }
+              ],
+              "format": "3 rounds",
+              "notes": "1 x Angled Wall walk (10 sec hold)"
+            },
+            {
+              "name": "REVIEW",
+              "items": [
+                {
+                  "movement": "When reviewing your box single leg lift, how true was your line from wrist to ankle? Were you able to feel that solid stack from your hands all the way through your leg?",
+                  "has_video": false
+                },
+                {
+                  "movement": "More importantly, how comfortable have you become being upside down with your arms locked out? Your answer to that will help you decide whether it’s time to move on to Week 2, or whether another week of focused practice will help solidify those foundations.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2200431,
+          "title": "CKU 2.1 (Week 2 , Workout 1)",
+          "url": "/c/confident-kick-ups/sections/583404/lessons/2200431",
+          "description": "Welcome to Week 2!! This week we'll be increasing our confidence getting inverted by getting our feet off the ground.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Proprioceptive Neuromuscular Facilitation",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Positional Wrist Warm Up",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "25m Straight Arm | Straight Leg Bear Crawl",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 3,
+                  "movement": "Tripod hold x 10-15 sec",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Box Single Leg lift (Alternate) x 4 sec hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "From the box hold, slowly lift each leg off the box.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Don’t worry about the height of the leg, rather that the leg remains relatively straight without major knee bend. Dismount safely.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Hand Set Tick Tock Drill (Alternate)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Film last attempt",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed between attempts.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 rounds",
+              "notes": "1 x Angled Wall Walk with Single Leg Lift (Alternate) x 2 sec hold Pushing through shoulders pull one leg off the wall. Aim to keep the knee locked and leg relatively straight. 1x Box Handstand Hold x 10 sec (into)"
+            },
+            {
+              "name": "REVIEW",
+              "items": [
+                {
+                  "movement": "Looking at your kick-up footage we're you able to demonstrate good kick-up mechanics? If not, what do we need to focus on for next time?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2200432,
+          "title": "CKU 2.2 (Week 2, Workout 2)",
+          "url": "/c/confident-kick-ups/sections/583404/lessons/2200432",
+          "description": "Let's continue working on being comfortable getting our feet off the ground. Remember kick up success is dependant on our ability to keep our arms long and locked out.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Hand Circle Walks (Focus on straight arms)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Child Pose from Box",
+                  "has_video": true
+                },
+                {
+                  "movement": "30 sec x Shoulder Extension",
+                  "has_video": true
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 4,
+                  "movement": "25’ Straight Arm | Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Tripod to Tuck Position or Headstand x 5-10sec hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Either in free space or with the wall as support, take your tripod into a tuck then a headstand if able, hold and then slowly and safely come back down.",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Box Handstand Hold x 20sec hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Box Single Leg Lift (each leg) x 5sec hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 8,
+                  "movement": "Hand Set Tick Tock Drill (Alternate)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Start with hands set on the floor then kick-up a touch higher than last time. Alternate between feet.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film last attempt",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest as needed between attempts",
+                  "has_video": false
+                }
+              ],
+              "format": "3 rounds"
+            },
+            {
+              "name": "REVIEW",
+              "items": [
+                {
+                  "movement": "Comparing your kick-up footage from the last session, where have you improved and where can you still see opportunities to get better?",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2200433,
+          "title": "CKU 2.3 (Week 2, Workout 3)",
+          "url": "/c/confident-kick-ups/sections/583404/lessons/2200433",
+          "description": "So far we've been working on our kick-ups from the floor. Today we're introduce a new element, the step in! Best of luck and remember safety first. ⛑ 2 rounds 1 x Hand Circle Walks (Focus on straight arms) 30 sec x Child’s Pose with Box 4x 25m Straight Arm | Straight Leg Bear Crawl",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 4,
+                  "movement": "Athletic Inch Worm",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Angled Leg Lifts (Alternate) x 4sec hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 4,
+                  "movement": "Hand Set Tick Tock Drill (Use dominant leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "With your hands firmly planted, try kicking up slightly higher than last time.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use only your dominant leg—the one you’d use to kick a soccer ball—to initiate the movement.",
+                  "has_video": false
+                },
+                {
+                  "sets": 8,
+                  "movement": "Step In Tick Tock Drill (Alternate)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 20 sec between attempts",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film final attempt for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 rounds",
+              "notes": "+"
+            },
+            {
+              "name": "REVIEW",
+              "items": [
+                {
+                  "movement": "How did the step in kick ups go? Looking at your footage, breakdown one thing you did well and one thing we can improve on as we move forward.",
+                  "has_video": false
+                },
+                {
+                  "movement": "ACADEMY COACHING",
+                  "has_video": false
+                },
+                {
+                  "movement": "Looking for rope climb help? Share a video with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Kick Up 2.3” and choose the topic “Handstand”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2200435,
+          "title": "CKU 3.1 (Week 3 , Workout 1)",
+          "url": "/c/confident-kick-ups/sections/583405/lessons/2200435",
+          "description": "Today, let’s start with a quick review of your last session. If everything’s feeling solid and you’re confident, go ahead and put your full wall kick-up together. If not, take your time—there’s no rush.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Wrist Circles",
+                  "has_video": true
+                },
+                {
+                  "movement": "45 sec x Shoulder Extension",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Tripod Hold into Headstand x Hold 10-15 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Headstand challenging? Modify to a tuck or tripod hold if necessary.",
+                  "has_video": false
+                }
+              ],
+              "format": "2 rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 6,
+                  "movement": "Athletic Inch Worm",
+                  "has_video": true
+                },
+                {
+                  "sets": 4,
+                  "movement": "Downward Dog Scap Push-up + 2 x Single Leg Lift",
+                  "has_video": true
+                },
+                {
+                  "sets": 4,
+                  "movement": "Hand Set Tick Tock Drill (dominant leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Step-in Single Leg kick-ups (dominant leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Being safe and deliberate, let’s continue to practice our set-in kick-ups taking our lead leg a touch higher than last time.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 6,
+                  "movement": "Box Assisted Kick Ups (dominant leg) + 5 sec wall hold FILM last 3 attempts",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed between each attempt",
+                  "has_video": false
+                }
+              ],
+              "format": "3 rounds",
+              "notes": "Rest as needed between attempts"
+            },
+            {
+              "name": "REVIEW",
+              "items": [
+                {
+                  "movement": "If not, take a moment to review your video and compare it to the demo. Let’s figure out what might have been holding you back. In most cases, it comes down to something bending—maybe at the knees, hips, or elbows.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Remember: stay long and tall through the kick-up. You’re closer than you think—keep practicing, and you’ll get there!",
+                  "has_video": false
+                }
+              ],
+              "format": "Were you able to kick up to the wall from the box?"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2200436,
+          "title": "CKU 3.2 (Week 3, Workout 2)",
+          "url": "/c/confident-kick-ups/sections/583405/lessons/2200436",
+          "description": "Show Time! If you haven’t already, it’s time to take the training wheels off and go for it! We’ve spent the last few weeks drilling the shapes, positions, and confidence needed—now let’s put it all together. Make sure you’ve reviewed the Wall Kick-Up Breakdown so you’re clear on exactly what to focus on. Let’s do this!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Proprioceptive Neuromuscular Facilitation",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Hand Circle Walk",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Yoga Push-ups + Single Leg Lift (each leg)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 6,
+                  "movement": "Athletic Inch Worm",
+                  "has_video": true
+                },
+                {
+                  "sets": 4,
+                  "movement": "25m Straight Arm | Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Wall Kick Up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Using either the step in or hands set technique we’ve been practicing, let’s take our single dominant leg kick-up as high as we can -- That might even mean a full kick-up to the wall!!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film last few attempts for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 rounds",
+              "notes": "2 x Wall Walk (10 sec hold) Rest 30sec between sets 2 x Box Assisted Kick Up (Dominant leg + 10 sec hold) Rest as needed Rest as needed between each attempt."
+            },
+            {
+              "name": "REVIEW",
+              "items": [
+                {
+                  "movement": "If you nailed your wall kick-up and you feel you got this, then GO HERE to graduate from the program.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Not quite there or need want more reps? Review your footage and breakdown what's holding you back so we can crush it in the next session.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2200437,
+          "title": "CKU 3.3 (Week 3, Workout 3)",
+          "url": "/c/confident-kick-ups/sections/583405/lessons/2200437",
+          "description": "You’ve done the work. You know exactly what to do. Now let’s execute. Go crush it! 💪",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 1,
+                  "movement": "Positional Wrist Warm Up",
+                  "has_video": true
+                },
+                {
+                  "movement": "45 sec x Child Pose from Box",
+                  "has_video": true
+                },
+                {
+                  "sets": 4,
+                  "movement": "Yoga Push Up Deluxe (each leg)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Push Up to Downward Dog into Downward Dog Scap Push Ups with Single Leg Lift",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Rounds"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 6,
+                  "movement": "Athletic Inch Worm",
+                  "has_video": true
+                },
+                {
+                  "sets": 4,
+                  "movement": "25m Straight Arm | Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "sets": 2,
+                  "movement": "Wall Walk x 10 sec hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 2,
+                  "movement": "Box Assisted Kick Up (dominant leg) x 10 sec hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest 2 min",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "sets": 12,
+                  "movement": "Wall Kick Up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Using either the step-in or hands set technique, let's shoot for a full kick-up to the wall or at least the highest we've come, yet!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record the last 3 attempts for review and comparison with Week 1.",
+                  "has_video": false
+                }
+              ],
+              "format": "3 rounds",
+              "notes": "Rest 30sec between sets Rest as needed between each attempt."
+            },
+            {
+              "name": "REVIEW",
+              "items": [
+                {
+                  "movement": "How did this final session go? Did you hit that wall kick-up, or are you still closing the gap? Either way, we’re proud of your progress. Just know that another round through this week could be exactly what gets you there. Keep showing up—success is coming! 💥",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

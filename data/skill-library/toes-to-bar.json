@@ -1,0 +1,1942 @@
+{
+  "skill": "toes-to-bar",
+  "course_name": "Toes To Bar Transformed",
+  "course_slug": "toes-to-bar-transformed",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/toes-to-bar-transformed",
+  "scraped": "2026-05-17",
+  "total_weeks": 8,
+  "total_lessons": 24,
+  "skipped_lessons": 34,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2183235,
+          "title": "TTBT 1.1 (Week 1, Workout 1)",
+          "url": "/c/toes-to-bar-transformed/sections/579319/lessons/2183235",
+          "description": "We’re kicking off your Day 1 Toes to Bar journey by setting some baseline numbers and working on the foundational shapes that support the movement. While today’s testing includes a Max Kipping Toes to Bar attempt, don’t be discouraged if your current score is zero. That’s exactly why you’re here — to improve. This baseline is just the starting point for the progress we’ll build over the next eight weeks. Make sure to download the Toes to Bar Transformed Score Sheet from the Files tab under this lesson to record your test results.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Glute Bridge (2sec hold)",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Hollow Body Band Pull-overs",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Kipping Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record the reps for each set",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Hollow Hop-in Kips",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "5 x Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "9 min EMOM | 3 total rounds"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2183236,
+          "title": "TTBT 1.2 (Week 1, Workout 2)",
+          "url": "/c/toes-to-bar-transformed/sections/579319/lessons/2183236",
+          "description": "Today, we’re not just assessing your strict Toes to Bars baseline",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 6,
+                  "movement": "Seated Pike Pulses",
+                  "has_video": true
+                },
+                {
+                  "sets": 6,
+                  "movement": "Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Plank Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Strict Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record the reps for each set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Not there yet with Strict Toes to Bar?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Subsitute to Max Strict Leg Raises to 90 degrees",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Strict Leg Raises (controlled)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 x Trap-3 Raises (6 seconds down)",
+                  "has_video": true
+                }
+              ],
+              "format": "8 min EMOM | 4 Total Rounds"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2183237,
+          "title": "TTBT 1.3 (Week 1, Workout 3)",
+          "url": "/c/toes-to-bar-transformed/sections/579319/lessons/2183237",
+          "description": "Last day of Week 1 testing as we measure your L-Sit Hold and Passive Hang. Do you best with these tough movements and don’t forget to log your results in your Toes to Bar Transformed Score Card. Tracking your progress is a key part of your journey.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Scap Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Scap Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Left Side Bridge",
+                  "has_video": true
+                },
+                {
+                  "movement": "10 sec x Right Side Bridge",
+                  "has_video": true
+                },
+                {
+                  "movement": "20’ x Inch Worm",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Hanging L-sit Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Legs straight! Stop once you can't hold your feet up at 90 degree.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Passive Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Test ends when you let go of the bar",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record the times for both tests",
+                  "has_video": false
+                },
+                {
+                  "movement": "9 min EMOM | 3 Total Rounds",
+                  "has_video": false
+                },
+                {
+                  "minute": 1,
+                  "movement": "15-25sec x Tuck Hang Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "15-25sec x Hollow Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "15-25sec x Arrested Superman Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "1 Set Only",
+              "notes": "Rest walk 2 minutes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2183241,
+          "title": "TTBT 2.1 (Week 2, Workout 1)",
+          "url": "/c/toes-to-bar-transformed/sections/579320/lessons/2183241",
+          "description": "Today is all about dialling in your timing. Videoing and reviewing your attempts will help you sharpen your technique, track your progress, and spot key areas to improve. You can also share your video with a WODprep Coach through Academy coaching to get actionable feedback and tips. Want to add optional Grip Strength accessory work to your training? Click the Day 1 of Grip Strength Goals link under the SKILLS section at the end of the session. Highly recommend checking out the Grip Strength Goals Welcome Video first to get you started. You’ll see optional Grip Strength links in Week 2, 3, 5, 6 & 7.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "PVC Prone Raises (2 second hold)",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Gymnastic Hip Extension",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Glute Bridges",
+                  "has_video": true
+                }
+              ],
+              "format": "5 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30sec x Vertical Toe Touches",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "6 x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "6 x Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 60 seconds in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Seated Hamstring Stretch (each leg)",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 1 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2183242,
+          "title": "TTBT 2.2 (Week 2, Workout 2)",
+          "url": "/c/toes-to-bar-transformed/sections/579320/lessons/2183242",
+          "description": "Shoulder health and back strength are key to long-term fitness and overall health. Today, we’re putting the spotlight on these areas and building your strict strength as a foundation for progress. We’re also introducing Tempo Training, a method that adds controlled timing to each phase of a movement to ensure it’s properly challenging, rather than just rushing through reps. Tempo is expressed using four-digits, each number represents a specific phase: the lowering phase, bottom position, lifting phase, and top position. For example, today’s workout includes 6 x Strict Leg Raises @ 2110. That means you’ll take 2 seconds to lower your legs, pause for 1 second at the bottom, raise your legs with no pause, and hold the top position for 0 seconds before repeating.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Field Goals @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Jefferson Curls (light & controlled)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "6 x Floor T2B @3110",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "6 x Strict Leg Raises @2110",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "10 x Banded Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "10-20 sec x Passive Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "No barbell for the Floor T2B set-up?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Use KB or anything sturdy to hold onto",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH (OPTIONAL)",
+              "items": [],
+              "format": "Add in Day 2 of Grip Strength Goals."
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2183243,
+          "title": "TTBT 2.3 (Week 2, Workout 3)",
+          "url": "/c/toes-to-bar-transformed/sections/579320/lessons/2183243",
+          "description": "Today is all about building hip flexor strength and endurance. Don’t be surprised if you feel some quad cramping, that’s it’s totally normal. Just part of the process when we focus on areas that don’t usually get this kind of attention.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Scap Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Psoas March",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Seated Pike Pulses",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Tuck Hang Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x L-sit Hold on Floor",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec x Arrested Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 60 seconds in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Seated Hamstring Stretch (each leg)",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 3 of Grip Strength Goals.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2183245,
+          "title": "TBTT 3.1 (Week 3, Workout 1)",
+          "url": "/c/toes-to-bar-transformed/sections/579321/lessons/2183245",
+          "description": "Today we’re introducing a game-changer for your Toes to Bar: the Hollow Hop-in. Whether you’re working on strict or kipping reps, the Hollow Hop involves jumping to the bar in a strong hollow body position, then riding that shape into an arch. This helps generate the momentum needed to hit that first rep and sets you up to connect reps more efficiently. For a deeper dive into the Hollow Hop-in, check out the Fault Fixer video on the Dead Stop Fault. It breaks down the movement and common mistakes in more detail.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Left Side Bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Lumbar Extensions",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Right Side Bridge",
+                  "has_video": true
+                },
+                {
+                  "movement": "25sec x FLR hold",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "4 x Hollow Hop-in Kips (1 rep every 10sec)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "8 x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "8 x Hollow Body Band Pull-overs",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "8 x Beat Swings with Knee Tuck",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 1 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2183246,
+          "title": "TTBT 3.2 (Week 3, Workout 2)",
+          "url": "/c/toes-to-bar-transformed/sections/579321/lessons/2183246",
+          "description": "Today’s session is a solid mix of shoulder and lat activation, plus strict strength work. A little bit of everything to keep building that upper body control and power.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Seated Pike Pulses",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Field Goals @2222",
+                  "has_video": true
+                },
+                {
+                  "movement": "3-5 x Jefferson Curls (Slow with light weight)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 1 minute in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Standing Straddle Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Floor T2B @3110",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10 x Straight Arm Band Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec Straight Arm, Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "10 x PVC Prone Raises (hold 2 sec)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 90 seconds (each leg) in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Seated Hamstring Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 2 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2183247,
+          "title": "TTBT 3.3 (Week 3, Workout 3)",
+          "url": "/c/toes-to-bar-transformed/sections/579321/lessons/2183247",
+          "description": "Stopping power is important, especially when lowering your feet in Toes to Bar and setting up for the next rep. Today’s training will help you better understand the activation required to control your body in space.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 8,
+                  "movement": "Left Prone Thoracic Rotations",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Right Prone Thoracic Rotations",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Glute Bridge (2sec hold at top)",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Psoas March (4/side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 rounds (not for time)"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10sec x Hollow Body Rock + 20sec Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "8 x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec x Trap-3 Raise (HOLD at top)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "8 x Hammer Jacks",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 60 seconds in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Active Hang",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM",
+              "notes": "Rest walk 2minutes"
+            },
+            {
+              "name": "GRIP STRENGTH (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 3 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2183248,
+          "title": "TTBT 4.1 (Week 4, Workout 1)",
+          "url": "/c/toes-to-bar-transformed/sections/579322/lessons/2183248",
+          "description": "Today, we’re revisiting the strict Toes to Bar test to measure the progress from all that hold and hang work. No worries if this movement still feels far off or if your test results aren’t as impressive as you’d hoped. This entire week is simply a check-in, not an evaluation of improvement. Remember, progress isn’t always linear, and building real strength takes time. What matters most is showing up, staying consistent, and trusting the process. If you’ve been following the optional accessory grip work, it will resume in Week 5.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "20sec x Prone Sphinx Pose",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Left side bridge",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Right side bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Seated Pike Pulses",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "min 1 • 5 x Strict Leg Raises @2110",
+                  "has_video": true
+                },
+                {
+                  "movement": "min 2 • 3 x Trap-3 Raises @2106",
+                  "has_video": true
+                },
+                {
+                  "movement": "min 3 • 25-30sec x Tuck Hang Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "9 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Strict Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record the reps for each set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Not there yet with Strict Toes to Bar?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Modify to Max Strict Leg Raises to 90 degrees",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2183250,
+          "title": "TTBT 4.2 (Week 4, Workout 2)",
+          "url": "/c/toes-to-bar-transformed/sections/579322/lessons/2183250",
+          "description": "Get ready for a solid dose of strict strength work — shoulders, midline, and grip are all in the spotlight today. We’re also checking in with a test of your L-Sit Hold and Passive Hang to see how things are progressing.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Field Goals @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Scap Push-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x FLR Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Scap Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Active Hang Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "3 rounds (not for time)"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Strict Leg Raises to 90 degrees @3110",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10 x Straight Arm Band Lat Pulldown",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "30sec x Standing Straddle Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "9 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Hanging L-sit Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Legs straight! Stop once you can't hold your feet up at 90 degree",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Passive Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Test ends when you let go of the bar",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record the times for both tests",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Set Only",
+              "notes": "Rest walk 2 minutes"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2183251,
+          "title": "TTBT 4.3 (Week 4, Workout 3)",
+          "url": "/c/toes-to-bar-transformed/sections/579322/lessons/2183251",
+          "description": "We’re at the halfway point! Time to check in on your Kipping Toes to Bar. Stay tight and controlled, and pay close attention to your positions — especially engaging your lats with every rep. Just like with the Strict Toes to Bar test, don’t stress if your results haven’t moved the needle yet. Most Toes to Bar breakthroughs happen in Weeks 6–8, as all the work you’ve been putting in starts to pay off.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Glute Bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Psoas March (10 aside)",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Scap Pull ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 8,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10x Hollow Body Rock + 10sec Hollow Body Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "10x Lumbar Extensions + 10sec Arrested Superman",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "6x Beat Swings with Knees to Chest",
+                  "has_video": true
+                }
+              ],
+              "format": "9 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Kipping Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record the reps for each set",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2183253,
+          "title": "TTBT 5.1 (Week 5, Workout 1)",
+          "url": "/c/toes-to-bar-transformed/sections/579323/lessons/2183253",
+          "description": "Today we’re introducing the WODprep Toes to Bar Build Drill! This drill brings together all the positions and holds you’ve been working on over the past four weeks, combining them into a single complex that teaches your body (and brain) how to connect each piece into a smooth, efficient kipping Toes to Bar. This week, just focus on doing your best with the drill. If you don’t hit every part perfectly, no worries! Drop off the bar, shake it out, and jump back up there. Like anything technical, you’ll gets better with practice. Be sure to watch the Toes to Bar Build Drill breakdown video in the Fault Fixer series so you have a clear understanding of how the drill works before you attempt it.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "20’ x Inch Worm",
+                  "has_video": true
+                },
+                {
+                  "sets": 15,
+                  "movement": "Glute Bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Body Band Pull-overs",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Beat Swings with Knee Tuck",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "6 x Hollow Hop-in Kips (1 rep every 6 seconds)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "WODprep TTB Build Drill (2 rep build w/ 1-2 TTB to finish)",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "Rest walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 Set",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Kipping TTB",
+                  "has_video": true
+                },
+                {
+                  "movement": "Take your toes to as close to the bar as you can while still maintaining a full kip",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 90 seconds (each leg) in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Seated Hamstring Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 1 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2183254,
+          "title": "TTBT 5.2 (Week 5, Workout 2)",
+          "url": "/c/toes-to-bar-transformed/sections/579323/lessons/2183254",
+          "description": "Today might be SPICY on that midline. Stay in control of your movements and focus on your positions.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Field Goals @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Seated Pike Pulses",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x FLR Hold",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "KB Floor T2B @3111",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILL",
+              "items": [
+                {
+                  "movement": "30sec x Left Side Bridge Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Right Side Bridge Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Straight Arm, Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "movement": "1-3 x Max Strict T2B @2110",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 1 minute in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Passive Hang",
+                  "has_video": true
+                }
+              ],
+              "format": "4 Sets"
+            },
+            {
+              "name": "GRIP STRENGTH (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 2 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2183255,
+          "title": "TBTT 5.3 (Week 5, Workout 3)",
+          "url": "/c/toes-to-bar-transformed/sections/579323/lessons/2183255",
+          "description": "Let's continue our mid-line focus while continue to strengthen our positions through the kip. 3 Sets 30sec x Prone Sphinx Pose 10 x Left Prone Thoracic Rotations 10 x Right Prone Thoracic Rotations 10 x Seated Pike Pulses 30sec x Vertical Toe Touches 12 min EMOM min 1: 15sec x Hollow Body Rock + 20sec x Hollow Body Hold min 2: 13 x Hammer Jacks min 3: 9 x Strict Bar Hanging Hollow to Arch (Hold each position for 2 sec) min 4: 10-30sec x Hanging L-sit Hold + Accumulate 2 minutes in as few sets as possible Standing Straddle Stretch",
+          "sections": [
+            {
+              "name": "GRIP STRENGTH ACCESSORY (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 3 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2183258,
+          "title": "TTBT 6.1 (Week 6, Workout 1)",
+          "url": "/c/toes-to-bar-transformed/sections/579324/lessons/2183258",
+          "description": "As with previous weeks, when performing any Kipping Toes to Bar work (whether in the build drill or otherwise), aim to bring your toes as close to the bar as possible while maintaining a full, fluid kip that you can sustain for multiple reps. Understanding how to connect reps smoothly is more important right now than actually touching the bar, that part will come with time and consistency.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 12,
+                  "movement": "Lumbar Extensions",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Seated Pike Pulses",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Banded Lat Pull Downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Beat Swings with Lat Activation",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Strict TTB @ 31X1",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Hollow Body Band Pull-overs @ 21X5",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "WODprep TTB Build Drill (3rep build w/ up to 3 TTB to finish)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "Rest walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Effort Kipping TTB",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "12 min EMOM",
+              "notes": "Rest walk 2 minutes"
+            },
+            {
+              "name": "GRIP STRENGTH ACCESSORY (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 1 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2183259,
+          "title": "TTBT 6.2 (Week 6, Workout 2)",
+          "url": "/c/toes-to-bar-transformed/sections/579324/lessons/2183259",
+          "description": "Strict strength works!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Field Goals @2222",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotations",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotations",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Jefferson Curls (slow & controlled)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Strict Leg Raises to 90 degrees @3110",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "3 x Floor T2B @5212",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "20-30sec x Hanging Tuck Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "20-30sec x Straight Arm, Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 2 minutes in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Standing Straddle Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH ACCESSORY (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 2 of Grip Strength Goals.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2183260,
+          "title": "TTBT 6.3 (Week 6, Workout 3)",
+          "url": "/c/toes-to-bar-transformed/sections/579324/lessons/2183260",
+          "description": "It’s been an amazing journey so far, so let’s take a moment to acknowledge your wins, big or small. Seriously, we’re proud of how far you’ve come. But as they say, a rolling stone gathers no moss… and we’ve got an important week of work ahead! No bar work today to give your hands a well deserved break!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Lumbar Extensions",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Rocks",
+                  "has_video": true
+                },
+                {
+                  "sets": 20,
+                  "movement": "Psoas March (10/side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Jefferson Curls @ 5522 (moderate weight)",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Left Side Bridge Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Right Side Bridge Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x FLR hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Straight Arm, Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 1 minute (each leg) in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Foot Elevated Hamstring Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "4 Sets"
+            },
+            {
+              "name": "GRIP STRENGTH ACCESSORY (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 3 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2183262,
+          "title": "TTBT 7.1 (Week 7, Workout 1)",
+          "url": "/c/toes-to-bar-transformed/sections/579325/lessons/2183262",
+          "description": "Your homework this week, if you haven’t already, is to review the entire Fault Fixer series. It’s an incredible resource that just might hold the key to unlocking your Toes to Bar as we head into this final week of work before the retest in Week 8.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Banded Lat Pull Downs",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Hollow Body Rocks",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arch Snaps",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "1-6 x Strict TTB @ 21X1",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "6 x Hollow Body Band Pull-overs @ 21X4",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "WODprep TTB Build Drill (4rep build w/ up to 4 TTB to finish)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "Rest walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Effort Kipping TTB",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "12min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH ACCESSORY (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 1 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2183263,
+          "title": "TTBT 7.2 (Week 7, Workout 2)",
+          "url": "/c/toes-to-bar-transformed/sections/579325/lessons/2183263",
+          "description": "Let’s check in on how your strict strength is progressing. Pay close attention to both the tempo and the suggested leg raise height during the Toes to Bar Build Drill, and stay aware of how each set feels. Small adjustments from round to round can make a big difference and might be exactly what you need to break this movement wide open.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "30sec x Prone Sphinx Pose",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Right Side Bridge",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Left Side Bridge",
+                  "has_video": true
+                },
+                {
+                  "movement": "30' x Inch Worm",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Field Goals @3333",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Jefferson Curls (slow)",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10 x PVC Prone Raises (w/ 3sec hold)",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec AMRAP x Strict Leg Raises to 135 degrees @3110",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3 x Trap 3 Raise @2106",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "12 x Supine Windshield Wipers (6/side)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 2 minute in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Standing Straddle Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "12 MIN EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH ACCESSORY (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 2 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2183264,
+          "title": "TTBT 7.3 (Week 7, Workout 3)",
+          "url": "/c/toes-to-bar-transformed/sections/579325/lessons/2183264",
+          "description": "Last day before test week! Today, we’re putting everything on display. Your grip and midline endurance will be pushed, so hang on tight and have some fun with it. That said, if your hands start to feel close to ripping, call it early and protect your progress. This also marks the end of our accessory grip strength work. We can’t wait to hear how it’s helped your Toes to Bar progress!",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 20,
+                  "movement": "Psoas March (10/side)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Left Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Right Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Seated Pike Pulses",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Scap Push-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Scap Pull-ups",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "10-40sec x Hanging L-Sit Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x Straight Arm, Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "MAX Kipping Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "Rest walk",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Accumulate 2 minute (each leg) in as few sets as possible",
+                  "has_video": false
+                },
+                {
+                  "movement": "Foot Elevated Hamstring Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "12 min EMOM"
+            },
+            {
+              "name": "GRIP STRENGTH ACCESSORY (OPTIONAL)",
+              "items": [
+                {
+                  "movement": "Day 3 of Grip Strength Goals",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2183266,
+          "title": "TTBT 8.1 (Week 8, Workout 1)",
+          "url": "/c/toes-to-bar-transformed/sections/579326/lessons/2183266",
+          "description": "Welcome to the final week of Toes to Bar Transformed! Whether it’s taken you 8 weeks or a year to get here, reaching this point is a huge accomplishment and we’re proud of your effort. Today, we’ll be re-testing our holds and comparing them to your Week 1 results. Hopefully you’ve been tracking your progress on the Toes to Bar Transformed Score Sheet, you’ll need it this week.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "movement": "20’ x Inch Worm",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Left Prone Thoracic Rotations",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Right Prone Thoracic Rotations",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Seated Pike Pulses",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Scap Push-ups",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Scap Pull-ups",
+                  "has_video": true
+                }
+              ],
+              "format": "2 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20-30sec x Tuck Hang Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "20-30sec x Hollow Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "20-30sec x Arrested Superman Hold",
+                  "has_video": true
+                }
+              ],
+              "format": "9 min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Hanging L-sit Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Legs straight! Stop once you can't hold your feet up at 90 degree.",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "Max Passive Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "Test ends when you let go of the bar",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record the times for both tests",
+                  "has_video": false
+                }
+              ],
+              "format": "1 Set Only",
+              "notes": "Rest walk 2 minutes"
+            }
+          ]
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2183267,
+          "title": "TTBT 8.2 (Week 8, Workout 2)",
+          "url": "/c/toes-to-bar-transformed/sections/579326/lessons/2183267",
+          "description": "Day 2 of our Week 8 testing, and it’s time to revisit your Strict Toes to Bar. Tempo and control are key here, so let’s show off the strength and technique you’ve built over the past several weeks. Take your time, focus on quality reps, and be proud of how far you’ve come and the effort you’ve put in to get here.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Glute Bridge",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Arrested Superman",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "KB Floor T2B @3110",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Standing Straddle Stretch",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Strict Leg Raises @2110",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x Straight Arm, Straight Leg Bear Crawl",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "3 x Trap-3 Raises @2106",
+                  "has_video": true
+                }
+              ],
+              "format": "6min EMOM"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Strict Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record the reps for each set for Week 1 comparison",
+                  "has_video": false
+                },
+                {
+                  "movement": "Still not there with Strict Toes to Bar?",
+                  "has_video": false
+                },
+                {
+                  "movement": "Modify to Max Strict Leg Raises to 90 degrees",
+                  "has_video": true
+                }
+              ],
+              "format": "2 sets"
+            }
+          ]
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2183268,
+          "title": "TTBT 8.3 (Week 8, Workout 3)",
+          "url": "/c/toes-to-bar-transformed/sections/579326/lessons/2183268",
+          "description": "Today is our final day! For some, today test might be a new PR. For others, it could be improved shapes, stronger positions, or just getting those feet a little closer to the bar. No matter what your numbers look like, we’re proud of you. We want to hear all your your success! Post your before-and-after videos on the Wall of Wins and earn yourself with some sweet WODprep swag just for sharing.",
+          "sections": [
+            {
+              "name": "WARM UP",
+              "items": [
+                {
+                  "sets": 3,
+                  "movement": "Glute Bridge (hold 6sec at top)",
+                  "has_video": true
+                },
+                {
+                  "sets": 6,
+                  "movement": "Beat Swings",
+                  "has_video": true
+                },
+                {
+                  "sets": 9,
+                  "movement": "Hollow Body Band Pull-overs (hold 2sec at top)",
+                  "has_video": true
+                },
+                {
+                  "sets": 12,
+                  "movement": "Psoas March (6/side)",
+                  "has_video": true
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "5 x Hollow Hop-in Kips",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "1 x WODprep TTB Build Drill (1-2rep build w/ 1-2 TTB to finish)",
+                  "has_video": true
+                },
+                {
+                  "minute": 4,
+                  "movement": "Rest walk",
+                  "has_video": false
+                }
+              ],
+              "format": "8min EMOM",
+              "notes": "Rest walk 4 minutes before Testing."
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "Max Kipping Toes to Bar",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video both sets and share your success on the Wall of Wins!",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

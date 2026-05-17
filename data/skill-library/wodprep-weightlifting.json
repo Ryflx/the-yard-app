@@ -1,0 +1,3218 @@
+{
+  "skill": "wodprep-weightlifting",
+  "course_name": "WODprep Weightlifting",
+  "course_slug": "wodprep-weightlifting",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/wodprep-weightlifting",
+  "scraped": "2026-05-17",
+  "total_weeks": 1,
+  "total_lessons": 57,
+  "skipped_lessons": 7,
+  "weeks": [
+    {
+      "week": 0,
+      "workouts": [
+        {
+          "id": "ref.1",
+          "lesson_id": 2090121,
+          "title": "Course Overview",
+          "url": "/c/wodprep-weightlifting/sections/555784/lessons/2090121",
+          "description": "The goal of this course is to improve your foundational weightlifting skills. To do that, here's a breakdown of the equipment you'll need, how the weeks are structured, and recommended barbell loading during training sessions.",
+          "sections": [
+            {
+              "name": "EQUIPMENT NEEDED:",
+              "items": []
+            },
+            {
+              "name": "PRE COURSE",
+              "items": [
+                {
+                  "movement": "Before starting the course, test your Snatch and Clean & Jerk by recording each lift from 3 different angles using up to 75% of your established max.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Week 1 is packed with so much important information that we've broken each day down into individual sections to make it easier to digest, find, and review.",
+                  "has_video": false
+                },
+                {
+                  "movement": "In week 1, there are 4 training sessions covering the Snatch, Clean, Jerk and an end of week Review.",
+                  "has_video": false
+                },
+                {
+                  "movement": "The notes at the top of each training day will highlight weights to be used. When practicing set-up up from the floor, use a barbell with a full sized plate as it better replicates starting positions than an empty bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "There will be a coaching video at the top of each lesson, with a quick overview, and a video legend then followed by the prescribed workout including demo videos.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Each week builds off the previous so it's highly recommend to follow the course in order.",
+                  "has_video": false
+                },
+                {
+                  "movement": "In Week 3-4, we'll focus more on the power position so using an empty barbell or one with light weight will be essential to honing in technique.",
+                  "has_video": false
+                },
+                {
+                  "movement": "From Week 5 and on, the Clean & Jerk sessions are combined into 1, so you will only need 3 training days each week until the end of the course.",
+                  "has_video": false
+                },
+                {
+                  "movement": "We'll be spending more time pulling from the floor, so full size plates will be key to piecing your lift together from the floor.",
+                  "has_video": false
+                },
+                {
+                  "movement": "While we might be tempted to add on more weight here, remember the focus is on improving technique and being able to mimic the demo videos to your best of your ability, if you're unable to do that, likely your bar is too heavy.",
+                  "has_video": false
+                },
+                {
+                  "movement": "In Week 8, the first two sessions will be review while also covering common lifting faults. In the last session, we'll revisit course testing by recording the Snatch and Clean and Jerk from 3 angles and at the same weight.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.2",
+          "lesson_id": 2097276,
+          "title": "Weightlifting Calculator",
+          "url": "/c/wodprep-weightlifting/sections/555784/lessons/2097276",
+          "description": "The WODprep Weightlifting Calculator, while not specifically designed for this course, is a fun and useful tool to track your progress. You can plug in your current lifts to see how they improve over the span of the course and beyond. To use it, simply clear any pre-filled fields and enter your own lifts. The weightlifting totals are estimated based on expected percentages of your back squat PR. When you visit the shared Calculator, you’ll have the opportunity to save your own version by clicking the link along the top of the sheet.",
+          "sections": []
+        },
+        {
+          "id": "ref.3",
+          "lesson_id": 2090168,
+          "title": "Pre-Course Testing",
+          "url": "/c/wodprep-weightlifting/sections/555785/lessons/2090168",
+          "description": "Coach Ben, CJ, and Savannah review the IMPORTANCE of pre-course testing and why it's essential you don't skip this step.",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.4",
+          "lesson_id": 2090174,
+          "title": "Testing Day",
+          "url": "/c/wodprep-weightlifting/sections/555785/lessons/2090174",
+          "description": "Pre Course testing is such an important part of measuring success and progress that we seriously suggest taking the time to record these tests prior to starting the course. For the test, you'll be recording both the Snatch and Clean and Jerk from 3 angles for 6 videos in total. Once you're warmed-up perform 3 Snatches and 3 Clean and Jerks at 75% of your 1 rep max or at a medium weight that you can repeat easily.",
+          "sections": [
+            {
+              "name": "SNATCH TEST",
+              "items": [
+                {
+                  "movement": "Video 2 • 45 degree angle",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video 3 • Side View",
+                  "has_video": false
+                },
+                {
+                  "movement": "Make sure your entire body and barbell is in view for the entire lift.",
+                  "has_video": false
+                }
+              ],
+              "format": "Video 1 • Head on"
+            },
+            {
+              "name": "CLEAN AND JERK TEST",
+              "items": [
+                {
+                  "movement": "Video 2 • 45 degree angle",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video 3 • Side View",
+                  "has_video": false
+                },
+                {
+                  "movement": "Make sure your entire body and barbell is in view for the entire lift.",
+                  "has_video": false
+                }
+              ],
+              "format": "Video 1 • Head on"
+            }
+          ]
+        },
+        {
+          "id": "ref.5",
+          "lesson_id": 2092014,
+          "title": "Snatch Grip",
+          "url": "/c/wodprep-weightlifting/sections/555786/lessons/2092014",
+          "description": "The \"Hook Grip\" provides the most secure grip on the bar, preventing the barbell from rolling out of the fingers throughout the lift.",
+          "sections": [
+            {
+              "name": "HOOK GRIP REVIEW",
+              "items": []
+            },
+            {
+              "name": "SNATCH GRIP REVIEW",
+              "items": []
+            },
+            {
+              "name": "TESTING SNATCH GRIP WIDTH",
+              "items": [
+                {
+                  "movement": "➀ Test proper grip by bending at the waist with the arms locked and bar in the hip.",
+                  "has_video": false
+                },
+                {
+                  "movement": "➁ Lift one leg up and bar should sit in your hip without bend in arms",
+                  "has_video": false
+                },
+                {
+                  "movement": "➂ With the barbell overhead, make sure the bar isn't too close to your head and almost touching it (grip too wide) or very high above your head (grip too narrow)",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.6",
+          "lesson_id": 2092015,
+          "title": "Snatch Set-up",
+          "url": "/c/wodprep-weightlifting/sections/555786/lessons/2092015",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.7",
+          "lesson_id": 2092019,
+          "title": "Receiving the Snatch",
+          "url": "/c/wodprep-weightlifting/sections/555786/lessons/2092019",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.8",
+          "lesson_id": 2092023,
+          "title": "Overhead Squat & Bottom Position",
+          "url": "/c/wodprep-weightlifting/sections/555786/lessons/2092023",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF THE PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.9",
+          "lesson_id": 2092081,
+          "title": "Week ➀ Day 1 | Snatch Training",
+          "url": "/c/wodprep-weightlifting/sections/555786/lessons/2092081",
+          "description": "Perform Snatch Start Position with standard sized plates, all other movements with PVC pipe or empty bar. POP = Points of Performance Perform 1 set every 30 seconds 8 sets x Snatch Start Position Hold @10sec - Rest 20sec Perform with standard sized plates. Keep it light and focus on technique. POP: Tension, bar on the ground, finding balance, hip position, torso position, bar relationship to the foot. Perform 1 set every 30 seconds 8 sets x Power Snatch Receiving Position Hold @10sec POP: Bar position, knee bend, 45-60 °, shoulder and wrist position. 8 sets x 3 Overhead Squat @3311 Rest between 60-90 secs between sets POP: Focus on shoulder position, go to depth that maintains lockout and upright chest. What does @3311 tempo mean? 3 seconds ⬇, 3 seconds bottom hold, 1 second ⬆, 1 second top hold",
+          "sections": [
+            {
+              "name": "ACADEMY GROUP COACHING",
+              "items": [
+                {
+                  "movement": "Looking for Snatch video analysis and actionable feedback? Share a video with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Weightlifting 1.1” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.10",
+          "lesson_id": 2092096,
+          "title": "Clean Grip",
+          "url": "/c/wodprep-weightlifting/sections/555787/lessons/2092096",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.11",
+          "lesson_id": 2092097,
+          "title": "Clean Set-up",
+          "url": "/c/wodprep-weightlifting/sections/555787/lessons/2092097",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.12",
+          "lesson_id": 2092102,
+          "title": "Receiving the Clean",
+          "url": "/c/wodprep-weightlifting/sections/555787/lessons/2092102",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.13",
+          "lesson_id": 2092108,
+          "title": "Front Squat",
+          "url": "/c/wodprep-weightlifting/sections/555787/lessons/2092108",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.14",
+          "lesson_id": 2092117,
+          "title": "Week ➀ Day 2 | Clean Training",
+          "url": "/c/wodprep-weightlifting/sections/555787/lessons/2092117",
+          "description": "Perform Clean Start Position with standard sized plates, all other movements with PVC pipe or empty bar. 1 set every 30 seconds 8 sets x Clean Start Position Hold @10sec Perform with standard sized plates. Keep it light and focus on technique. POP: Tension throughout, bar on the ground, find balance, hip position, torso position. 1 set every 30 seconds 8 sets x Power Clean Receiving Position Hold @10sec POP: Bar position, knee bend, 45-60 °, shoulder position, wrists, elbows high, good front rack. 5 sets x 3 Front Squats @3311 Rest as Needed POP: Hips back and down simultaneously, upright torso, and elbows high. What does @3311 tempo mean? 3 seconds ⬇, 3 seconds bottom hold, 1 second ⬆, 1 second top hold. ACADEMY GROUP COACHING Looking for Clean video analysis and actionable feedback? Share a video with the WODprep Coaches. Name your post “Weightlifting 1.2” and choose the topic “Barbell”",
+          "sections": []
+        },
+        {
+          "id": "ref.15",
+          "lesson_id": 2092084,
+          "title": "Jerk Grip",
+          "url": "/c/wodprep-weightlifting/sections/555788/lessons/2092084",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.16",
+          "lesson_id": 2092143,
+          "title": "Jerk Receiving Position",
+          "url": "/c/wodprep-weightlifting/sections/555788/lessons/2092143",
+          "description": "",
+          "sections": [
+            {
+              "name": "POINTS OF PERFORMANCE",
+              "items": []
+            },
+            {
+              "name": "BRINGING THE BAR DOWN FROM OVERHEAD TO FRONT RACK",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "ref.17",
+          "lesson_id": 2092159,
+          "title": "Week ➀ Day 3 | Jerk Training",
+          "url": "/c/wodprep-weightlifting/sections/555788/lessons/2092159",
+          "description": "Practice receiving the bar from overhead into a good front rack position. Perform all drills with an empty barbell or scaled to PVC pipe as needed. 1 Set Every 30sec 10 sets x 3 Jerk Dip Hold Dip @5sec POP: Elbows up, balanced in foot with proper hip/torso positioning, go to proper dip depth. + 1 Set Every 30sec 10 sets x Barbell Overhead Hold Hold @15sec",
+          "sections": [
+            {
+              "name": "ACADEMY GROUP COACHING",
+              "items": [
+                {
+                  "movement": "Looking for Jerk video analysis and actionable feedback? Share a video with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Weightlifting 1.3” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.18",
+          "lesson_id": 2092187,
+          "title": "Week ➀ | Day 4 • Review",
+          "url": "/c/wodprep-weightlifting/sections/555789/lessons/2092187",
+          "description": "As we move into week 2, daily sessions will come stacked with an instructional video at the top, a short write up underneath, followed by the day's training session with demo links and a downloadable workout sheet below. Coach CJ and Savannah review bar grip and set-up for the snatch, clean and jerk. Go back to any of the previous weeks' videos to review the points of performance and deep dive into lift mechanics.",
+          "sections": [
+            {
+              "name": "WEEK ➀ | DAY 4 • TRAINING",
+              "items": [
+                {
+                  "movement": "Perform all Start Position drills with standard sized plates, all other movements with PVC pipe or empty bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 Set Every 30 Seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x Snatch Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Perform with standard size plates. Keep it light and focus on technique.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Tension, bar on the ground, finding balance, hip position, torso position, relationship to the foot.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 Set Every 30 Seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x Power Snatch Receiving Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar position, knee bend, 45-60 °, shoulder and wrist position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Overhead Squat @3311",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest as Needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "@3311 tempo = 3sec ⬇, 3sec bottom hold, 1sec ⬆, 1sec top hold",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, go to depth that maintains lockout and upright chest.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 Set Every 30 Seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x Clean Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Perform with standard size plates. Keep it light and focus on technique.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Tension throughout, bar on the ground, find balance, hip position, torso position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 Set Every 30 Seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x Power Clean Receiving Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar position, knee bend, 45-60 °, shoulder position, wrists, front rack.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Front Squats @3311",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, go to depth that maintains lockout and upright chest.",
+                  "has_video": false
+                },
+                {
+                  "movement": "@3311 tempo = 3sec ⬇, 3sec bottom hold, 1sec ⬆, 1sec top hold",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 Set Every 30 seconds",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Jerk Dip Hold @5sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use an empty barbell",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Elbows up, balanced in foot with proper hip/torso positioning, go to proper dip depth.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 Set Every Minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x Barbell Overhead Hold Hold @15sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use an empty barbell",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "ACADEMY GROUP COACHING",
+              "items": [
+                {
+                  "movement": "Looking for Snatch video analysis and actionable feedback? Share a video with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Weightlifting 1.4” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.19",
+          "lesson_id": 2092220,
+          "title": "Week ➁ Day 1 | Snatch",
+          "url": "/c/wodprep-weightlifting/sections/555790/lessons/2092220",
+          "description": "The Power Position (also called Position 1 or the High Hang) is one of the most fundamental components to creating an efficient lift. While it looks simple, making sure you pass through it during your lift is paramount to becoming better at the snatch. ⚠ We'll spend much time paused in the Power Position in the drills to reinforce our drive is coming from our legs driving out of the dip and not bending forward and throwing the shoulders back to create momentum. VIDEO REVIEW [3:20] Snatch High Pull from Power Position [4:38] Muscle Snatch from Power Position [6:08] Power Snatch from Power Position",
+          "sections": [
+            {
+              "name": "WEEK ➁ DAY 1 | SNATCH TRAINING",
+              "items": [
+                {
+                  "movement": "Use a PVC pipe until the last movement then move to an empty bar. Rest as needed between sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3-5 Snatch Power To Extension Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar and torso position with knuckles down.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Snatch Dip and Shrug Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Snatch Dip and High Pull Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs (ankles), relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Snatch Grip Strict Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar in back rack (behind the head) with elbows down, press bar into a locked out receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Snatch Grip Push Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar in back rack (behind the head) with elbows down, short dip and drive pressing the bar into a locked out receiving position with speed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Power Snatch Balance",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows down in the back rack, short dip and drive pressing the bar into a locked out receiving position with speed. Focus on a snappy lockout while pushing under the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3-5 Muscle Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3-5 Power Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch and pulling under the bar and moving the feet into receiving position.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.20",
+          "lesson_id": 2092245,
+          "title": "Week ➁ Day 2 | Clean",
+          "url": "/c/wodprep-weightlifting/sections/555790/lessons/2092245",
+          "description": "Here we look at the Power Position (Position 1) in the clean. Since our clean grip is set just outside the hips, the bar will sit a lower on the thighs than with the Snatch. Unlike the snatch, where releasing the hook grip may vary from person to person depending on their overhead position, you MUST let the hook grip go as you bring the bar through to the clean receiving position. Lastly, the importance of the power position is that it drives the bar vertically with power coming from leg drive out of the dip versus leaning forward and creating momentum by driving the shoulders back. VIDEO REVIEW [1:49] Clean High Pull from Power Position [3:22] Muscle Clean from Power Position [4:06] Power Clean from Power Position Use a PVC pipe until the last movement then move to an empty barbell. Rest as needed between sets. 5 Sets x 3-5 Clean Power Position to Extension Hold Dip @2sec POP: Focus on bar and torso position with knuckles down. 5 sets x 3 Clean Dip and Shrug Hold Dip @2sec POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back. 5 sets x 3 Clean High Pull from Power Position Hold Dip @2sec POP: Initiate with legs into hip/knee extension and up onto toes, relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body. 5 sets x 3-5 Muscle Clean from Power Position POP: From high pull add transition - High pull to shoulders, release hook grip and elbows through. 5 sets x 3-5 Power Clean from Power Position POP: From Muscle Clean with feet in receiving position and pull under into quarter squat.",
+          "sections": []
+        },
+        {
+          "id": "ref.21",
+          "lesson_id": 2092311,
+          "title": "Week ➁ Day 3 | Jerk",
+          "url": "/c/wodprep-weightlifting/sections/555790/lessons/2092311",
+          "description": "Your introduction to the \"press\" progression. With each lift, pull the head back so the bar can travel straight up. The rep is complete with arms locked out overhead and the bar over the center of the body. Strict Press: Bar stacked on shoulders, hips and legs locked out, with elbows slightly in front and a full grip on bar. Push Press: Dip into power position to drive bar off shoulders through the legs without a redip. Push Jerk: Push down under the bar as feet slide out to receiving position. Stand bar up to finish. VIDEO REVIEW [0:35] Strict Press [2:18] Push Press [6:15] Push Jerk Perform all drills with an empty barbell. Rest as needed. 3 sets x 5 Strict Press POP: Standing tall with hips and legs locked out and bar in a solid front rack, move head out of the way, press straight up and lock out. Receive the bar back into front rack with elbows slightly in front of bar. 5 sets x 3-5 Jerk Dip Hold Dip @2 sec POP: Elbows up, torso upright, balanced in the foot, dip depth shouldn't be so deep it sacrifices torso or foot balance. 5 sets x 3 Segmented Push Press Hold Dip @2 sec POP: Dip positions from above, head moves out of the way to strong overhead finish position. Pause along the way. 5 sets x 3 Paused Push Press Hold Dip @2 sec POP: Dip positions from above, head moves out of the way to strong overhead finish position. 5 sets x 3 Tall Push Jerk Hold Start and End Position @2 sec POP: Bar starts right above forehead. Aim to time feet and elbow lockout, press up on the bar as you move under it, receive in the push jerk position with bar slightly behind the head. Stand after receiving the bar. 5 sets x 3-5 Paused Push Jerk Hold Dip and Catch @2 sec POP: Dip, drive and be patient to get to hip extension, elbows lockout and feet land simultaneously.",
+          "sections": []
+        },
+        {
+          "id": "ref.22",
+          "lesson_id": 2092320,
+          "title": "Week ➁ Day 4 | Review",
+          "url": "/c/wodprep-weightlifting/sections/555790/lessons/2092320",
+          "description": "Coach CJ & Savannah review the power positions for the snatch, clean and moving the barbell from the shoulder to overhead.",
+          "sections": [
+            {
+              "name": "WEEK ➁ DAY 4 | TRAINING",
+              "items": [
+                {
+                  "movement": "Use PVC pipe for starting movements and move to an empty barbell for all muscle, power and jerk drills.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3-5 Snatch Power Position To Extension Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar and torso position with knuckles down.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Snatch Dip and Shrug Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Snatch Dip and High Pull Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs (ankles), relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3-5 Muscle Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 3-5 Power Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch and pulling under the bar and moving the feet into receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 Sets x 3-5 Clean Power Position to Extension Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar and torso position with knuckles down.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Clean Dip and Shrug Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Clean High Pull from Power Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs into hip/knee extension and up onto toes, relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3-5 Muscle Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From high pull add transition - High pull to shoulders, release hook grip and elbows through.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 3-5 Power Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From Muscle Clean with feet in receiving position and pull under into quarter squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3-5 Jerk Dip Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows up, torso upright, balanced in the foot, dip depth shouldn't be so deep it sacrifices torso or foot balance.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Segmented Push Press Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Dip positions from above, head moves out of the way to strong overhead finish position. Pause along the way.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Push Press Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Dip positions from above, head moves out of the way to strong overhead finish position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 3 Tall Push Jerk Hold Start and End Position @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar starts right above forehead. Aim to time feet and elbow lockout, press up on the bar as you move under it, receive in the push jerk position with bar slightly behind the head. Stand after receiving the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3-5 Push Jerk Hold Dip and Catch @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Dip, drive and be patience to get to hip extension, elbows lockout and feet land simultaneously.",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "ACADEMY GROUP COACHING",
+              "items": [
+                {
+                  "movement": "Looking for Weightlifting analysis and actionable feedback? Share a video with the WODprep Coaches. Name your post “Weightlifting 2.4” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.23",
+          "lesson_id": 2092354,
+          "title": "Week ➂ Day 1 | Snatch",
+          "url": "/c/wodprep-weightlifting/sections/555791/lessons/2092354",
+          "description": "With a snatch grip, slide the bar down your thigh from the power position with hips back and shoulders over the bar. Aim to keep the feet firmly planted with weight in the mid foot. Feeling tension in your hamstrings is a good cue to know you're in the correct position. VIDEO REVIEW [0:30] Hang position [2:19] Power position to the hang [4:05] Hang Power Snatch",
+          "sections": [
+            {
+              "name": "WEEK ➂ DAY 1 | SNATCH TRAINING",
+              "items": [
+                {
+                  "movement": "Perform drills with an empty barbell. Use review movements as warm-up and rest as needed between sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Snatch Dip and Shrug Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Snatch Dip and High Pull Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs (ankles), relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Muscle Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Power Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch and pulling under the bar and moving the feet into receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 4 Snatch Power Position to Hang Transition",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on starting power position (vertical torso, knees forward, bar in hip) and transitions to hang position (bar at knees, shoulders over the bar, knees back, shins vertical).",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Snatch Slow High Pull from Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Slow second pull, focus on thigh contact and driving with the legs, passing through power position - No swinging!",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Hang Power Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Second pull: Focus on passing through the power position, hip extension, elbows up and knuckles down to keep bar close with weight balanced in feet",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.24",
+          "lesson_id": 2096037,
+          "title": "Week ➂ Day 2 | Clean",
+          "url": "/c/wodprep-weightlifting/sections/555791/lessons/2096037",
+          "description": "With a clean grip on the bar and starting from a power position, shift the bar down the thigh, with knees and hips back, shoulders over the bar, shins vertical and weight evenly distributed in the foot. ⚠ In a fluid motion, elevate the bar up the leg back through the power position keeping it close to the body and once fully extended, with knuckles down and elbows high, turn the bar over while dropping underneath to receive the bar in the power clean position. VIDEO REVIEW [1:24] Hang to Power Position [1:56] Hang Muscle Clean [2:14] Hang Power Clean",
+          "sections": [
+            {
+              "name": "WEEK ➂ DAY 2 | CLEAN TRAINING",
+              "items": [
+                {
+                  "movement": "Perform drills with an empty barbell. Use review movements as warm-up and rest as needed between sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Clean Dip and Shrug Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Clean High Pull from Power Position Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs into hip/knee extension and up onto toes, relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Muscle Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From high pull add transition - High pull to shoulders, release hook grip and elbows through.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3-5 Power Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From Muscle Clean with feet in receiving position and pull under into quarter squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 4 Clean Power Position to Hang Transition",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on starting power position (vertical torso, knees forward, bar in power position/high thigh) and transitions to hang position (bar at knees, shoulders over the bar, knees back, shins vertical).",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Clean Slow High Pull from Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Slow second pull, focus on thigh contact and driving with the legs, passing through power position - No swinging!",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Hang Power Clean",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Second pull: Focus on passing through the power position, hip extension, elbows up and knuckles down to keep bar close with weight balanced in feet.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.25",
+          "lesson_id": 2096062,
+          "title": "Week ➂ Day 3 | Jerk",
+          "url": "/c/wodprep-weightlifting/sections/555791/lessons/2096062",
+          "description": "The key to a solid split jerk is foot work. Using a Split Jerk foot work map will help you dial in your Split Jerk positioning. Points of Performance",
+          "sections": [
+            {
+              "name": "WEEK ➂ DAY 3 | JERK",
+              "items": [
+                {
+                  "movement": "Perform drills with an empty barbell. Use review movements as warm-up and rest as needed between sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 12-15 Split Jerk Floor Map",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Front foot/shin should be straight, back knee bent and heel up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Tall Split Jerk Hold @2 sec in Receiving Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar starts at forehead. Focus on timing the split jerk and lockout. Aim for simultaneous elbow lock and feet contacting floor. Press under the bar not up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Jerk Dip Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows up, balanced in foot with proper hip/torso positioning, go to proper dip depth.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Paused Push Press Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Dip positions from above, don't re-dip, head moves back through press with strong overhead finish position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Paused Push Jerk Hold Dip and Catch @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: No re-dip, repeat POP's from above.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 2 Behind the Neck Split Jerk @2 sec pause in Dip & Catch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Elbows up, dip straight down and drive vertically. Time elbows and feet at the same time as bar hits finishing position. Start recovery with 2 steps in with lead foot.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Elbows up, dip straight down and drive vertically. Time elbows and feet at the same time as bar hits finishing position. Start recovery with 2 steps in with lead foot.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.26",
+          "lesson_id": 2096063,
+          "title": "Week ➂ Day 4 | Training",
+          "url": "/c/wodprep-weightlifting/sections/555791/lessons/2096063",
+          "description": "Coach CJ and Savannah review the power hang, setting up for a solid split jerk and the common faults found at this stage in the lifts.",
+          "sections": [
+            {
+              "name": "WEEK ➂ DAY 4 | TRAINING",
+              "items": [
+                {
+                  "movement": "Perform drills with an empty barbell. Use review movements as warm-up and rest as needed between sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Snatch Dip and Shrug Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Snatch Dip and High Pull Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs (ankles), relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 sets x 3 Muscle Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Power Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch and pulling under the bar and moving the feet into receiving position",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Snatch Power Position to Hang Transition",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on starting power position (vertical torso, knees forward, bar in hip) and transitions to hang position (bar at knees, shoulders over the bar, knees back, shins vertical).",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Snatch Slow High Pull from Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Slow second pull, focus on thigh contact and driving with the legs, passing through power position - No swinging!",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Hang Power Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Second pull: Focus on passing through the power position, hip extension, elbows up and knuckles down to keep bar close with weight balanced in feet",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Clean Dip and Shrug Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Clean High Pull from Power Position Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs into hip/knee extension and up onto toes, relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Muscle Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From high pull add transition - High pull to shoulders, release hook grip and elbows through.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Power Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From Muscle Clean with feet in receiving position and pull under into quarter squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Clean Power Position to Hang Transition",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on starting power position (vertical torso, knees forward, bar in power position/high thigh) and transitions to hang position (bar at knees, shoulders over the bar, knees back, shins vertical).",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Clean Slow High Pull from Hang",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Slow second pull, focus on thigh contact and driving with the legs, passing through power position - No swinging!",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Hang Power Clean",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Second pull: Focus on passing through the power position, hip extension, elbows up and knuckles down to keep bar close with weight balanced in feet.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Split Jerk Foot Work",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Front foot and shin straight, balanced weight 50/50, back knee bent with heel up and in line with lower leg.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Tall Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar starts at forehead. Focus on timing the split jerk and lockout. Aim for simultaneous elbow lock and feet contacting floor. Press under the bar not up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Jerk Dip Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows up, balanced in foot with proper hip/torso positioning, go to proper dip depth.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Paused Push Press Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Dip positions from above, don't re-dip, head moves back through press with strong overhead finish position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Paused Push Jerk Hold Dip and Catch @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: No re-dip, repeat POP's from above.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows up, dip straight down and drive vertically. Time elbows and feet at the same time as bar hits finishing position. Start recovery with 2 steps in with lead foot.",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "ACADEMY GROUP COACHING",
+              "items": [
+                {
+                  "movement": "Looking for Weightlifting analysis and actionable feedback? Share a video with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Weightlifting 3.4” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.27",
+          "lesson_id": 2096592,
+          "title": "Week ➃ Day 1 | Snatch Training",
+          "url": "/c/wodprep-weightlifting/sections/555792/lessons/2096592",
+          "description": "In weightlifting, the hang to the power position is called the 2nd Pull while the bar from the hip to the overhead receiving position is called the 3rd Pull. The key to a successful Snatch is to be super patient through the 3rd pull and allow yourself to reach full extension. ⚠ If contacting the bar is painful, likely we're not being patient enough and bringing the hips to meet the bar instead of pulling the bar to the hips. Think of the 3rd pull as being patient and allowing the bar to come to the hips and then you and bar moving up together. Lastly, struggling with depth? Receive the bar where natural and then ride the receiving position into a deeper squat. This will help you become more comfortable receiving the bar lower and lower.",
+          "sections": [
+            {
+              "name": "WEEK ➃ DAY 1 | SNATCH TRAINING",
+              "items": [
+                {
+                  "movement": "Start with an empty bar, then build to 40-50% for last two movements",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Snatch Dip and Shrug Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Goal is to initiate with legs, reinforce pause, then shrug up - not back.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Snatch Dip and High Pull Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs (ankles), relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Muscle Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Power Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch and pulling under the bar and moving the feet into receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Snatch Power Position to Hang Transition",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on starting power position (vertical torso, knees forward, bar in hip) and transitions to hang position (bar at knees, shoulders over the bar, knees back, shins vertical).",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Hang Power Snatch into Overhead Squat",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Foot work and timing drill, landing in position to continue into an OHS.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Snatch Balance",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows down, small dip and push under the bar with aggressive lockout to the Snatch receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Dip hold, knuckles down, bar close, torso vertical, aim for full hip extension, pulling under, receiving as low as you can maintain proper OHS positioning.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Hang Snatch Pause at Knee @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Strong hang position at the knee with a pause; working on getting from power position to hip extension and pulling under into a full Snatch",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.28",
+          "lesson_id": 2096670,
+          "title": "Week ➃ Day 2 | Clean Training",
+          "url": "/c/wodprep-weightlifting/sections/555792/lessons/2096670",
+          "description": "The goal today is to move our Clean from the power / hang further and further into a squat from the hang and power position. Like the snatch, where you catch isn't as important, as making sure you finish strong by riding your receiving position into a deeper squat. As you reach the bottom of your squat, keep the chest tall with a strong front rack position with elbows high which will allow you to stand the bar up easily.",
+          "sections": [
+            {
+              "name": "WEEK ➃ DAY 2 | CLEAN TRAINING",
+              "items": [
+                {
+                  "movement": "Start with an empty bar, then build to 40-50% for the last three movements.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Clean High Pull from Power Position Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs into hip/knee extension and up onto toes, relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Muscle Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From high pull add transition - High pull to shoulders, release hook grip and elbows through.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Power Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From Muscle Clean with feet in receiving position and pull under into quarter squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Clean Power Position to Hang Transition",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on starting power position (vertical torso, knees forward, bar in power position/high thigh) and transitions to hang position (bar at knees, shoulders over the bar, knees back, shins vertical).",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Hang Power Clean to Front Squat",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Foot work and timing drill, landing in a position to continue into front squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Dip hold, knuckles down, bar close, torso vertical, hip extension, pulling under, receiving as low as you can maintain proper front squat positioning.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Hang Clean @2 sec pause at knee",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Strong hang position at the knee with a pause; working on getting from power position to hip extension and pulling under into a full Clean.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.29",
+          "lesson_id": 2096690,
+          "title": "Week ➃ Day 3 | Jerk Training",
+          "url": "/c/wodprep-weightlifting/sections/555792/lessons/2096690",
+          "description": "Revisiting the Split Jerk and the importance of timing and hammer in the key points of performance with the landing of the lift.",
+          "sections": [
+            {
+              "name": "WEEK ➃ DAY 3 | JERK TRAINING",
+              "items": [
+                {
+                  "movement": "Start with an empty bar, then build to 40-50% for the last two movements.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 12-15 Split Jerk Floor Map",
+                  "has_video": true
+                },
+                {
+                  "movement": "Use a floor map to help hit proper positioning.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Front foot/shin should be straight, back knee bent and heel up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Tall Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar starts at forehead. Focus on timing the split jerk and lockout. Aim for simultaneous elbow lock and feet contacting floor. Press under the bar not up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Jerk Dip Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows up, balanced in foot with proper hip/torso positioning, go to proper dip depth.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Paused Push Press Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Dip positions from above, don't re-dip, head moves back through press with strong overhead finish position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Paused Push Jerk Hold Dip and Catch @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: No re-dip, repeat POP's from above.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 2 Behind the Neck Split Jerk Hold Dip, Hold Catch @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows up, dip straight down and drive vertically. Time elbows and feet at the same time as bar hits finishing position. Start recovery with 2 steps in with lead foot.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows up, dip straight down and drive vertically. Time elbows and feet at the same time as bar hits finishing position. Start recovery with 2 steps in with lead foot.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.30",
+          "lesson_id": 2096706,
+          "title": "Week ➃ Day 4 | Training",
+          "url": "/c/wodprep-weightlifting/sections/555792/lessons/2096706",
+          "description": "Coach CJ and Savannah review everything covered this week, especially receiving the bar lower in the squat and building depth over time.",
+          "sections": [
+            {
+              "name": "WEEK ➃ DAY 4 | TRAINING",
+              "items": [
+                {
+                  "movement": "Start each movement with empty bar and then build to 40-50% for last two movements of each section.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Snatch Dip and High Pull Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs (ankles), relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 2 Power Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on bar path finish with a pull and punch and pulling under the bar and moving the feet into receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Hang Power Snatch into Overhead Squat",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Foot work and timing drill, landing in position to continue into an OHS.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Snatch Balance",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows down, small dip and push under the bar with aggressive lockout to the Snatch receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Dip hold, knuckles down, bar close, torso vertical, aim for full hip extension, pulling under, receiving as low as you can maintain proper OHS positioning.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Hang Snatch Pause at Knee @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Strong hang position at the knee with a pause; working on getting from power position to hip extension and pulling under into a full Snatch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Clean High Pull from Power Hold Dip @2sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs into hip/knee extension and up onto toes, relaxed arms, knuckles, elbow above wrist, arms engaged, keep bar close to body.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Power Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: From Muscle Clean with feet in receiving position and pull under into quarter squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Hang Power Clean to Front Squat",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Foot work and timing drill, landing in a position to continue into Front squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Dip hold, knuckles down, bar close, torso vertical, hip extension, pulling under, receiving as low as you can maintain proper format squat positioning.",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 sets x 2 Hang Clean @2 sec pause at knee",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Strong hang position at the knee with a pause; working on getting from power position to hip extension and pulling under into a full Clean.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Split Jerk Footwork",
+                  "has_video": true
+                },
+                {
+                  "movement": "No barbell or tape needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Front foot and shin straight, balanced weight 50/50, back knee bent with heel up and in line with lower leg.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Jerk Dip Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Elbows up, balanced in foot with proper hip/torso positioning, go to proper dip depth.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Push Press Hold Dip @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Dip positions from above, don't re-dip, head moves back through press with strong overhead finish position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Push Jerk Hold Dip and Catch @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: No re-dip, repeat POP's from above.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 3 Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Elbows up, dip straight down and drive vertically. Time elbows and feet at the same time as bar hits finishing position. Start recovery with 2 steps in with lead foot. Send it!",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "ACADEMY GROUP COACHING",
+              "items": [
+                {
+                  "movement": "Looking for Weightlifting analysis and actionable feedback? Share a video with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Weightlifting 4.4” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.31",
+          "lesson_id": 2097053,
+          "title": "Week ➄ Day 1 | Snatch Training",
+          "url": "/c/wodprep-weightlifting/sections/555793/lessons/2097053",
+          "description": "One thing that can help when the pulling the snatch from the floor is thinking of the \"1st pull' as a \"push with the legs\". When lifting the weight from the floor to the knees, focus on staying tight with the hips to shoulder angle staying the same. Staying balanced through the whole foot with chest up and eyes forward will help position you to push through the legs and maintain proper back angle through the 1st pull.",
+          "sections": [
+            {
+              "name": "WEEK ➄ DAY 1 | SNATCH TRAINING",
+              "items": [
+                {
+                  "movement": "Perform all movements with normal size plates on bar (keep it light) then build up to 40-50% for last movement.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x Snatch Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Where is the bar in relation to the foot?",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Snatch Break the Floor Drill Hold @3sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Come 1” off the ground with 3 sec hold at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position and back angle, pressure through whole foot as you push through floor.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Segmented Snatch Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "10-15 sets x 1 Segmented Power Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "Pause 1 sec at the knee, pause 1 sec in the power position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang, shoulder over the bar, mid hang - torso begins to move back shoulders are on top of the bar, passing through power position and finishing the lift.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.32",
+          "lesson_id": 2097061,
+          "title": "Week ➄ Day 2 | Clean & Jerk",
+          "url": "/c/wodprep-weightlifting/sections/555793/lessons/2097061",
+          "description": "Much the same information from the previous Snatch video with the differences being that the hands grip the bar just outside the hips for the Clean which will cause the hips to be set slightly higher in the start position. ⚠ The key to a proper Clean set-up is that the shins pull close in the set-up position. This allows the foot to stay connected to the floor, enabling whole foot pressure to be maintained and enabling better positioning of the knees, hips and shoulders in the set-up and as the barbell breaks the floor.",
+          "sections": [
+            {
+              "name": "WEEK ➄ DAY 2 | CLEAN & JERK TRAINING",
+              "items": [
+                {
+                  "movement": "Perform all movements with normal size plates on the bar (keep it light) then build up to 40-50% for the last movement.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x Clean Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Where is the bar in relation to the foot?",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Clean Break the Floor Drill Hold @3sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Come 1” off the ground with 3 sec hold at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position and back angle, pressure through the whole foot as you push through the floor.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Segmented Clean Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "10-15 sets x1 Segmented Power Clean",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "Pause 1 sec at the knee, pause 1 sec in the power position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang, shoulder over the bar, mid hang - torso begins to move back shoulders are on top of the bar, passing through power position and finishing the lift.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.33",
+          "lesson_id": 2097063,
+          "title": "Week ➄ Day 3 | Review",
+          "url": "/c/wodprep-weightlifting/sections/555793/lessons/2097063",
+          "description": "This week we looked pulling from the floor, the similarities between the snatch and the clean and what to focus on for a good 1st pull.",
+          "sections": [
+            {
+              "name": "WEEK ➄ DAY 3 | REVIEW",
+              "items": [
+                {
+                  "movement": "Perform all movements with normal size plates on bar (keep it light) then build up to 40-50% for last movement of each section.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x Snatch Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Where is bar is in relation to the foot?",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Snatch Break the Floor Drill Hold @3sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Maintain initial start position and back angle, pressure through whole foot as you push through floor.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Segmented Snatch Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "10-15 sets x1 Segmented Power Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "Pause 1 sec at the knee, pause 1 sec in the power position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang, shoulder over the bar, mid hang - torso begins to move back shoulders are on top of the bar, passing through power position and finishing the lift",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x Clean Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Where is bar is in relation to the foot?",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 2 Clean Break the Floor Drill Hold @3sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Come 1” off the ground with 3 sec hold at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position and back angle, pressure through whole foot as you push through floor.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Segmented Clean Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "10-15 sets x1 Segmented Power Clean",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 40-50%",
+                  "has_video": false
+                },
+                {
+                  "movement": "Pause 1 sec at the knee, pause 1 sec in the power position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang, shoulder over the bar, mid hang - torso begins to move back shoulders are on top of the bar, passing through power position and finishing the lift.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.34",
+          "lesson_id": 2097068,
+          "title": "Week ➅ Day 1 | Snatch Training",
+          "url": "/c/wodprep-weightlifting/sections/555794/lessons/2097068",
+          "description": "Today we're taking the 1st pull, 2nd pull and 3rd pull and putting it all together for a full power snatch from the floor. The goal is to stay patient and create one smooth continuous movement. ⚠ Aim to keep the bar close through the 3rd pull with full extension through the ankle, knees and hip with the shoulder behind the bar. Remember, as we turn the bar over to receive it we're actively \"push the bar to the ceiling\" to create a solid overhead catch position.",
+          "sections": [
+            {
+              "name": "WEEK ➅ DAY 1 | SNATCH TRAINING",
+              "items": [
+                {
+                  "movement": "Normal size plates for the warm up, can build to 50-60% for the last two movements.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Snatch Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar over foot pull tight to shin.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 2 Snatch Break the Floor Drill Hold @3sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Maintain initial start position and back angle, pressure through whole foot as you push through floor.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Segmented Snatch Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 2 Segmented Power Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec at the knee, pause 1 sec in the power position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang, shoulder over the bar, mid hang - torso begins to move back shoulders are on top of the bar, passing through power position and finishing the lift.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 1 Slow Pull Power Snatch Pull @2-3 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 50-60%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows locked on receiving Snatch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x 1 Power Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 50-60%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Set up: back and hips rise together, bar passes through hang and power position and elbows locked out in receiving position.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.35",
+          "lesson_id": 2097076,
+          "title": "Week ➅ Day 2 | Clean & Jerk",
+          "url": "/c/wodprep-weightlifting/sections/555794/lessons/2097076",
+          "description": "We'll be working on the complete Power Clean from the floor into the jerk and focusing on two different ways to regrip the bar before starting the Jerk. ⚠ The majority of athletes will need to adjust their Clean receiving grip (from bar in fingers tips) to a Jerk full grip (fingers around the bar). Regripping for the jerk here also allows for the hands to be slightly widened, creating a better Jerk grip.",
+          "sections": [
+            {
+              "name": "WEEK ➅ DAY 2 | CLEAN & JERK",
+              "items": [
+                {
+                  "movement": "Normal size plates for the warm up, can build to be at 50-60% for last two movements.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x Clean Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Where is the bar in relation to the foot?",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Jerk Dip Hold @5 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 5 sec in Front Rack, pause 5 secs in Dip.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Keep elbows up and back vertical.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-2 sets x 1 Segmented Power Clean",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec at the knee, pause 1 sec in the power position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang, shoulder over the bar, mid hang - torso begins to move back shoulders are on top of the bar, passing through power position and finishing the lift.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Strict Press + Push Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "Perform 3 Strict Press followed by 3 Push Press.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Note elbow adjustments from Strict to Push press with full lock out in the finish position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Slow Pull Power Clean @2-3 sec Pull",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows locked on receiving Clean.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Paused Push Jerk Hold Dip and Catch @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 50-60%",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sec pause in Dip, 2 sec pause Receiving Position",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Pause in the dip with a vertical torso position, with no re-dip drive up through the legs and finish by pushing under into receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x 1 Power Clean Push Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 50-60%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Proper set up at the floor, pass through the hang to power position into power clean receiving position. Transition hands to jerk grip and reset feet. Dip, drive up through the legs and finish by pushing under the bar into receiving position.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.36",
+          "lesson_id": 2097080,
+          "title": "Week ➅ Day 3 | Training",
+          "url": "/c/wodprep-weightlifting/sections/555794/lessons/2097080",
+          "description": "Here are the main takeaways of the past week! The importance of a maintaining body position through a slow pull from the floor and how to regrip the bar prior to the Jerk.",
+          "sections": [
+            {
+              "name": "WEEK ➅ DAY 3 | TRAINING",
+              "items": [
+                {
+                  "movement": "Normal size plates for the warm up, can build to be at 50-60% for the last two movements of each section.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Snatch Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar over foot pull tight to shin.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 2 Snatch Break the Floor Drill Hold @3sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Maintain initial start position and back angle, pressure through whole foot as you push through floor.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Segmented Snatch Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 2 Segmented Power Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec at the knee, pause 1 sec in the power position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang, shoulder over the bar, mid hang - torso begins to move back shoulders are on top of the bar, passing through power position and finishing the lift.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 1 Slow Pull Power Snatch Pull @2-3 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 50-60%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows locked on receiving Snatch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x 1 Power Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 50-60%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Set up: back and hips rise together, bar passes through hang and power position and elbows locked out in receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Clean Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar over foot pull tight to shin.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Jerk Dip Hold @5 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 5 sec in Front Rack, pause 5 secs in Dip.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Keep elbows up and back vertical.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-2 sets x 1 Segmented Power Clean",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec at the knee, pause 1 sec in the power position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang, shoulder over the bar, mid hang - torso begins to move back shoulders are on top of the bar, passing through power position and finishing the lift.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Strict Press + Push Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "Perform 3 Strict Press followed by 3 Push Press.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Note elbow adjustments from Strict to Push press with full lock out in the finish position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 1 Slow Pull Power Clean @2-3 sec Pull",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows locked on receiving Clean.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Paused Push Jerk Hold Dip and Catch @2 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build 50-60%",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sec pause in Dip, 2 sec pause Receiving Position",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Pause in the dip with a vertical torso position, drive up through the legs and finish by pushing under into receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x1 Power Clean Push Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 50-60%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Proper set up at the floor, pass through the hang to power position into power clean receiving position. Transition hands to jerk grip and reset feet. Dip, drive up through the legs and finish by pushing under the bar into receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "ACADEMY COACHING",
+                  "has_video": false
+                },
+                {
+                  "movement": "Looking for Weightlifting analysis and actionable feedback? Share a video with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Weightlifting 6.3” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.37",
+          "lesson_id": 2097086,
+          "title": "Week ➆ Day 1 | Snatch Training",
+          "url": "/c/wodprep-weightlifting/sections/555795/lessons/2097086",
+          "description": "We've been building on the full snatch and the goal today is to dial in the timing by staying patient from the floor through to full hip extension. ⚠ While catching the Snatch in a low squat is sexy, staying tall through extension and meeting the bar at the turnover is more important and will allow you to receive in the squat as your skill and strength improves.",
+          "sections": [
+            {
+              "name": "WEEK ➆ DAY 1 | SNATCH TRAINING",
+              "items": [
+                {
+                  "movement": "Moving to the full movement without pauses. Start with an empty barbell to 40% for warm up work, then build to 60-70% for working sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 5 Snatch Grip Strict Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: With bar behind neck, start elbows down and focus on full lockout at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Snatch Grip Push Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: With bar behind neck, start elbows down, lockout at top and focus on speed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Overhead Squat @33x1",
+                  "has_video": true
+                },
+                {
+                  "movement": "Work at getting lower with each rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, depth to where lockout and upright chest is maintained.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Snatch Balance",
+                  "has_video": true
+                },
+                {
+                  "movement": "Building speed and depth of receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Elbows down, small dip and push under the bar with aggressive lockout to the Snatch receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Segmented Snatch Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 2 Power Snatch to Overhead Squat",
+                  "has_video": true
+                },
+                {
+                  "movement": "Move slowly through this drill. Build to 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause, accelerate through the power position, elbows locked on receiving landing in a stable ¼ squat and moving into a full overhead squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 1 Slow Pull Power Snatch Pull @2-3 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows locked on receiving Snatch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x 1 Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Balanced set up, accelerate past the knees through the power position to full extension. Pull under bar to the lowest squat or receiving position that can maintain good form (chest up locked arms, heels down).",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.38",
+          "lesson_id": 2097091,
+          "title": "Week ➆ Day 2 | Clean & Jerk Training",
+          "url": "/c/wodprep-weightlifting/sections/555795/lessons/2097091",
+          "description": "Like we do before pulling the Snatch or Clean from the floor, take a nice deep breath in before the Jerk and with the lungs full of air, press through the belly, push the shoulders into the bar and create a rigid and stiff torso. This limits the loss of position and power through the Jerk.",
+          "sections": [
+            {
+              "name": "WEEK ➆ DAY 2 | CLEAN & JERK TRAINING",
+              "items": [
+                {
+                  "movement": "Moving to the full movement without pauses. Start with Empty bar to 40% for warm up work, then build to 60-70% for working sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Clean Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar over foot pull tight to shin.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 5-8 Split Jerk Footwork",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Front foot and shin straight, balanced weight 50/50, back knee bent with heel up and in line with lower leg.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Jerk Dip Hold @5 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 5 sec in Front Rack, pause 5 sec in Dip.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Keep elbows up and back vertical.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Front Squats @3311",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, go to depth that maintains lockout and upright chest.",
+                  "has_video": false
+                },
+                {
+                  "movement": "@3311 tempo = 3 seconds ⬇, 3 seconds bottom hold, 1 second ⬆, 1 second top hold.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Segmented Clean Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Slow Pull Power Clean into Front Squat @2-3 sec Pull",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows rotate through to front rack position then lower into squat with elbows and chest up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Strict Press + Push Press + Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: With each press, focus on getting head out of the way of a direct bar path. Receive the bar back into front rack with elbows slightly in front of bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x 1 Full Clean and Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Proper set up at the floor, passing through the hang and power position, into full Squat Clean. Transition hands to jerk grip, reset your feet and complete the jerk with a dip and drive up through the legs to finish by pushing under into split jerk receiving position.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.39",
+          "lesson_id": 2097097,
+          "title": "Week ➆ Day 3 | Review",
+          "url": "/c/wodprep-weightlifting/sections/555795/lessons/2097097",
+          "description": "Let's go over the full lifts for the Snatch and Clean with breathing & bracing tips along the way and reviewing what the role of the arms through the lifts.",
+          "sections": [
+            {
+              "name": "WEEK ➆ DAY 3 | REVIEW",
+              "items": [
+                {
+                  "movement": "Start with an empty barbell to 40% for warm up work, then build to 60-70% for working sets.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 5 Snatch Grip Strict Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: With bar behind the neck, start elbows down and focus on full lockout at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Snatch Grip Push Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: With bar behind the neck, start elbows down, lockout at top and focus on speed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Overhead Squat @33x1",
+                  "has_video": true
+                },
+                {
+                  "movement": "Work at getting lower with each rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, depth to where lockout and upright chest is maintained.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Snatch Balance",
+                  "has_video": true
+                },
+                {
+                  "movement": "Building speed and depth of receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Elbows down, small dip and push under the bar with aggressive lockout to the Snatch receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Segmented Snatch Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 2 Power Snatch into Overhead Squat",
+                  "has_video": true
+                },
+                {
+                  "movement": "Move Slowly through the drill. Build to 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause, accelerate through the power position, elbows locked on receiving landing in a stable ¼ squat and moving into a full overhead squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 1 Slow Pull Power Snatch Pull @2-3 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows locked on receiving Snatch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every 30-60 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x 1 Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Balanced set up, accelerate past the knees through the power position to full extension. Pull under bar to the lowest squat or receiving position that can maintain good form (chest up locked arms, heels down).",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Clean Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar over foot pull tight to shin.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 5-8 Split Jerk Footwork",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Front foot and shin straight, balanced weight 50/50, back knee bent with heel up and in line with lower leg.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Jerk Dip Hold @5 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 5 sec in Front Rack, pause 5 sec in Dip.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Keep elbows up and back vertical.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Front Squats @3311",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, go to depth that maintains lockout and upright chest.",
+                  "has_video": false
+                },
+                {
+                  "movement": "@3311 tempo = 3sec ⬇, 3sec bottom hold, 1sec ⬆, 1 sec top hold.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Segmented Clean Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Slow Pull Power Clean into Front Squat @2-3 sec Pull",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build to 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows rotate through to front rack position then lower into squat with elbows and chest up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Strict Press + Push Press + Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: With each press, focus on getting head out of the way of a direct bar path. Receive the bar back into front rack with elbows slightly in front of bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every 30-60 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x 1 Full Clean and Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "At 60-70%",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Proper set up at the floor, passing through the hang and power position, into full Squat Clean. Transition hands to jerk grip, reset your feet and complete the jerk with a dip and drive up through the legs to finish by pushing under into split jerk receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "ACADEMY GROUP COACHING",
+                  "has_video": false
+                },
+                {
+                  "movement": "Looking for Weightlifting analysis and actionable feedback? Share a video with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Weightlifting 7.3” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.40",
+          "lesson_id": 2097131,
+          "title": "Week ➇ Day 1 | Common Faults 1",
+          "url": "/c/wodprep-weightlifting/sections/555796/lessons/2097131",
+          "description": "Week 8 is our opportunity to continue to dial our full lifts, review common faults and finish off the course by revisiting the testing we did at the beginning of the course. ⚠ Keep this simple, rather than trying to remember all the cues for a lift, focus on one or two through the lift. A majority of early faults like losing positioning on the 1st pull or not keeping the bar close are often due to not setting up correctly. FIX: Maintain good torso positioning by staying slow and smooth through the first pull and taking the time to make sure you're in the most ideal start position with the last engaged and bar tight to the shins. Common 2nd pull faults include missing contact with the hip entirely or hitting low on the legs which can result in a added space between the bar and the body and a loss of power. FIX: Slow down the first pull, aim to stay patient through the 2nd pull and work back from the Hang so you can continually dial in the correct position and timing. Faults like the catch and roll (holding the bar too tightly or not letting the hook grip soon enough in the Clean) or receiving the bar below the collar bone (recieving in a weak position, so you need to roll and stand to correct the fault). FIX: Focus on the \"first touch\" with the elbows high and hips back. Like most faults, if you fault here, fix the fault before standing. Working with lighter load can help develop the right timing. Common faults here are receiving with bent arms and pressing out after the catch is complete or catching the bar too far forward (limits the weight you can snatch) or too far back (which will dump the shoulders forward. FIX: Like all faults, own the receiving position before standing. Fixing faults in the receiving position reinforces the proper positioning when receiving the bar.",
+          "sections": [
+            {
+              "name": "WEEK ➇ DAY 1 | SNATCH TRAINING",
+              "items": [
+                {
+                  "movement": "Last week of WODprep Weightlifting so let's pull it all together! Start with an empty bar, add weight from the Snatch Balance and build the Snatch up to test weight from initial testing.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 5 Snatch Grip Strict Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Start elbows down and focus on full lockout at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Snatch Grip Push Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Start elbows down, lockout at top and focus on speed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Overhead Squat @33x1",
+                  "has_video": true
+                },
+                {
+                  "movement": "Work at getting lower with each rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, depth to where lockout and upright chest is maintained.",
+                  "has_video": false
+                },
+                {
+                  "movement": "@3311= 3sec ⬇, 3sec bottom hold, 1sec ⬆, 1sec top hold.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Snatch Balance",
+                  "has_video": true
+                },
+                {
+                  "movement": "Building speed and depth of receiving position. Build in weight from this moment.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Elbows down, small dip and push under the bar with aggressive lockout to the Snatch receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Segmented Snatch Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 2 Power Snatch into Overhead Squat",
+                  "has_video": true
+                },
+                {
+                  "movement": "Move slowly through entire drill",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause, accelerate through the power position, elbows locked on receiving landing in a stable ¼ squat and moving into a full overhead squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets x 1 Slow Pull Power Snatch Pull @2-3 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows locked on receiving Snatch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 sets x 1 Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build in weight with every set to your Week 1 testing weight.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Balanced set up, accelerate past the knees through the power position to full extension. Pull under the bar to the lowest squat or receiving position that can maintain good form (chest up locked arms, heels down).",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.41",
+          "lesson_id": 2097132,
+          "title": "Week ➇ Day 2 | Common Faults 2",
+          "url": "/c/wodprep-weightlifting/sections/555796/lessons/2097132",
+          "description": "Let's continue reviewing common faults you might see in your training. Is an extreme loss of power and occurs when we start pulling with the arms before we've fully extended the legs and hips in either the Snatch or Clean. FIX: Go back to the power and hang position and reinforce the positions with drills and practice. Focus on keeping your arms long and levered against the body. When we drive the hips to the bar we can create painful contact and send the bar out and away instead up vertical and tight. FIX: Revist the transition between the power and receiving position and continue to focus on levering the bar into the body with the lats. A common fault is to keep the arms locked through the power position of the snatch or clean and swing the bar around the body making it difficult to receive in the proper position. FIX: From the power position, drive the elbows high, keeping them over the wrists which will help drive the bar vertically and keep it close to the body.",
+          "sections": [
+            {
+              "name": "WEEK ➇ DAY 2 | COMMON FAULTS 2",
+              "items": [
+                {
+                  "movement": "Last day! Start with an empty bar, begin to add weight from the Power Clean on. Build your Clean and Jerk up to test weight from initial testing.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Clean Start Position Hold @10sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Bar over foot pull tight to shin.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 5-8 Split Jerk Footwork",
+                  "has_video": true
+                },
+                {
+                  "movement": "No barbell or tape needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Front foot and shin straight, balanced weight 50/50, back knee bent with heel up and in line with lower leg.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x Jerk Dip Hold @5 sec",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 5 sec in Front Rack, pause 5 sec in Dip.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Keep elbows up and back vertical.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Front Squats @3311",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, go to depth that maintains lockout and upright chest.",
+                  "has_video": false
+                },
+                {
+                  "movement": "@3311= 3sec ⬇, 3sec bottom hold, 1sec ⬆, 1sec top hold.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 3 Segmented Clean Deadlift",
+                  "has_video": true
+                },
+                {
+                  "movement": "Pause 1 sec off ground, pause 1 sec at knee, pause 1 sec mid hang then stand.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Maintain initial start position off floor, at hang shoulders stay over bar, at mid hang torso begins to move back with shoulders over top of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Slow Pull Power Clean into Front Squat @2-3 sec Pull",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Slow pull to the knee, no pause and accelerate through the power position, elbows rotate through to front rack position then lower into squat with elbows and chest up.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Strict Press + Push Press + Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: With each press, focus on getting head out of the way of a direct bar path. Receive the bar back into front rack with elbows slightly in front of bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform 1 set every minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "12-15 sets x 1 Full Clean and Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build in weight with every set to your Week 1 testing weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Proper set up at the floor, passing through the hang and power position, into full Squat Clean. Transition hands to jerk grip, reset your feet and complete the jerk with a dip and drive up through the legs to finish by pushing under into split jerk receiving position.",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.42",
+          "lesson_id": 2097133,
+          "title": "Week ➇ Day 3 | Final Test",
+          "url": "/c/wodprep-weightlifting/sections/555796/lessons/2097133",
+          "description": "",
+          "sections": [
+            {
+              "name": "WEEK ➇ DAY 3 | FINAL TEST",
+              "items": [
+                {
+                  "movement": "Test day! Let's hit the same weight as we did in Week 1 and compare how our lifting has improved.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 5 Snatch Grip Strict Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: With bar behind the neck, start elbows down and focus on full lockout at top.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 3 Snatch Grip Push Press",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: With bar behind the neck, start elbows down, lockout at top and focus on speed.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Overhead Squat @33x1",
+                  "has_video": true
+                },
+                {
+                  "movement": "Work at getting lower with each rep.",
+                  "has_video": false
+                },
+                {
+                  "movement": "@3311= 3sec ⬇, 3sec bottom hold, 1sec ⬆, 1sec top hold.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, depth to where lockout and upright chest is maintained.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Snatch Balance",
+                  "has_video": true
+                },
+                {
+                  "movement": "Building speed and depth of receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Elbows down, small dip and push under the bar with aggressive lockout to the Snatch receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 1 Snatch from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Dip hold, knuckles down, bar close, torso vertical, aim for full hip extension, pulling under, receiving as low as you can maintain proper OHS positioning.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 1 Hang Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Working to power position with full hip extension and pull under the bar into full Snatch.",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-7 sets x 1 Snatch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build in weight (starting from about 50%) until you reach Week 1 Test weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Balanced set up, accelerate past the knees through the power position to full extension. Pull under bar to the lowest squat or receiving position that can maintain good form (chest up locked arms, heels down).",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Snatch at Test weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record 1 lift from the front, from 45 degrees and from the side.",
+                  "has_video": false
+                },
+                {
+                  "movement": "1 set x 5-8 Split Jerk Footwork",
+                  "has_video": true
+                },
+                {
+                  "movement": "No barbell or tape needed",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Front foot and shin straight, balanced weight 50/50, back knee bent with heel up and in line with lower leg.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 3 Front Squats @3311",
+                  "has_video": true
+                },
+                {
+                  "movement": "@3311= 3sec ⬇, 3sec bottom hold, 1sec ⬆, 1sec top hold.",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Focus on shoulder position, go to depth that maintains lockout and upright chest.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 1 Power Clean from Power Position",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Initiate with legs into hip/knee extension and up onto toes, relaxed arms, knuckles. Transition to high pull to shoulders, elbow above wrist and bar close to body. Release hook grip as elbows come through to front rack. Feet widen to receiving position as you pull under the bar into quarter squat.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 1 Strict Press + Push Press + Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: With each press, focus on getting the head out of the way of a direct bar path. Receive the bar back in a front rack with elbows slightly in front of the bar.",
+                  "has_video": false
+                },
+                {
+                  "movement": "2 sets x 1 Full Clean from Power Position and Split Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "POP: Full extension receiving bar with good form. For split jerk, elbows up, dip straight down and drive vertically. Time elbows and feet at the same time as bar hits finishing position. Send it!",
+                  "has_video": false
+                },
+                {
+                  "movement": "5-7 sets x 1 Clean and Jerk",
+                  "has_video": true
+                },
+                {
+                  "movement": "Build in weight (starting from about 50%) until you reach Week 1 Test weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "POP: Proper set up at the floor, passing through the hang and power position, into full Squat Clean. Transition hands to jerk grip, reset your feet and complete the jerk with a dip and drive up through the legs to finish by pushing under into split jerk receiving position.",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 1 Clean and Jerk at Test weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "Record 1 lift from the front, from 45 degrees and from the side.",
+                  "has_video": false
+                }
+              ]
+            },
+            {
+              "name": "ACADEMY GROUP COACHING",
+              "items": [
+                {
+                  "movement": "Share your final videos with the WODprep Coaches.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Name your post “Weightlifting 8.3” and choose the topic “Barbell”",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.43",
+          "lesson_id": 2097164,
+          "title": "Congratulations",
+          "url": "/c/wodprep-weightlifting/sections/555797/lessons/2097164",
+          "description": "Now it's your time to now only to look back and review your week 1 and week 8 testing videos and examine at how your movement patterns, depth and bar path has all improved from Day 1. Since this course is based in fundamentals, it can be reviewed or restarted any time. Lastly, we’d love to hear your thoughts on this course and kindly ask you to complete the short survey below. As a thank-you, we’ll send you a FREE 90-day trial of our 3-day-a-week WODprep Weightlifting accessory programming. You can cancel anytime.",
+          "sections": []
+        },
+        {
+          "id": "ref.44",
+          "lesson_id": 2097219,
+          "title": "What's Next?",
+          "url": "/c/wodprep-weightlifting/sections/555797/lessons/2097219",
+          "description": "Based on your goals and progress, you can choose to repeat this programming or complete the post-course survey to unlock 90 days of free access to our weekly weightlifting accessory program, WPxWeightlifting For those ready to continue the journey, WODprep athletes get 50% off future courses or join 1-on-1 Coaching. As always, if you need any help at all email us at WODprep support. All the best and good luck,",
+          "sections": []
+        },
+        {
+          "id": "ref.45",
+          "lesson_id": 2097252,
+          "title": "🛠️ Introduction",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097252",
+          "description": "In nearly all WODprep courses, we include a dedicated section called our Fault Fixer series. This series focuses on common movement mistakes and provides guidance on how to correct them. Specifically for WODprep Weightlifting, you’ll find videos addressing typical faults in lifts like the snatch, clean, and jerk. Each video breaks down the mistake and offers actionable tips to improve your technique. Click on any video in the section to explore a particular fault and learn strategies to correct it. The good news is that this library of Fault Fixers will continue to grow over time.",
+          "sections": []
+        },
+        {
+          "id": "ref.46",
+          "lesson_id": 2097254,
+          "title": "🛠️ Soft Elbows / Rolled Shoulders [Snatch]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097254",
+          "description": "A common fault with the Snatch is soft elbows and rolled shoulders. That occurs when the Snatch is received with the arms not fully locked out or when the shoulders \"dump\" forward rather than being inline with the ears and torso. The elbows don't fully lock out and the bar is 'suspended' in air. The issue is we're supporting the bar with arm strength and not through a strong 'bone-on-bone\" foundation. The head of the shoulder rolls forward and we get trapped in a weak overhead position. Extreme cases of rolled shoulder can expose the shoulder to unnecessary strain or injury. We want our Snatch receiving position with elbows locked, shoulders stacked, elbows and shoulders facing upwards with arm pits forward.",
+          "sections": []
+        },
+        {
+          "id": "ref.47",
+          "lesson_id": 2097256,
+          "title": "🛠️ Slam and Swing [Snatch]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097256",
+          "description": "In trying to create power and speed, athletes will throw their hips to the bar causing the bar to swing out and away which can force them to jump forward to chase the it down. While a swing and slam can look \"pretty good\" in real time, the further the bar gets away from us the more power we lose. If you're an athlete who finds themselves jumping forward to catch a Snatch or experiencing a lot of pain through the hip pop, it's likely you've have some degree of Swing and Slam in your lift. Recording and reviewing video is one of the best ways to diagnose this fault, look for your shoulders in front of the bar with some bend at the waist through the 2nd pull.",
+          "sections": []
+        },
+        {
+          "id": "ref.48",
+          "lesson_id": 2097257,
+          "title": "🛠️ Catch and Roll [Clean]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097257",
+          "description": "The Catch and Roll happens when we are unable to get into a proper front rack position when receiving a Clean because of a \"death grip\" the bar. Athletes who need to stand and roll the bar into position after the first touch are likely guilty of this fault. The Catch and Roll is a mistiming fault when the elbows coming through the transition before full hip extension is achieved. Missing extension forces you to hang onto the bar which can make for a difficult catch that can be hard on the wrists and elbows.",
+          "sections": []
+        },
+        {
+          "id": "ref.49",
+          "lesson_id": 2097260,
+          "title": "🛠️ Early Arm Bend [Snatch, Clean]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097260",
+          "description": "\"When the arm bends, the power ends\" If the bar feels unnecessarily heavy or the transition to the shoulders or overhead feels sluggish or slow it's possible you're pulling the bar up with your arms before fully extending through the legs and hips. The role of the arms is to guide the bar into position and not to power it there. When we pull the bar early with the arms, it's likely we're missing that \"moment\" that will allows us to transition smoothly with the bar close and limiting our lift to what we can \"hold\".",
+          "sections": []
+        },
+        {
+          "id": "ref.50",
+          "lesson_id": 2097262,
+          "title": "🛠️ Early Hip Rise [Snatch, Clean]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097262",
+          "description": "When hips lead the lift from the floor in the Snatch or Clean, it's difficult to drive upwards and hit optimal positions. Hips Rise Early This occurs when the hips initiate the drive and we lose the shoulder to hip angle from the floor. When the hips rise early it makes it difficult to get into a proper hang and power position but also means we have no leg drive left to get power the bar up vertically.",
+          "sections": []
+        },
+        {
+          "id": "ref.51",
+          "lesson_id": 2097264,
+          "title": "🛠️ Lack of Full Extension [Snatch, Clean]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097264",
+          "description": "Muted or closed hips are another common fault that can limit lifting potential. Olympic lifting is super technical and it can feel like there are 300 things to remember to do in a lift. If you find you're failing to get your hips open when reviewing video or it's feeling like you're not moving as much weight as you could, like could be a very likely culprit. The goal is to stay long and tall through extension so we can create as much vertical momentum on the bar as possible.",
+          "sections": []
+        },
+        {
+          "id": "ref.52",
+          "lesson_id": 2097265,
+          "title": "🛠️ Low Contact [Snatch, Clean]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097265",
+          "description": "A common fault in class and competitive settings is making low contact with the bar in the Snatch and Clean. When the bar makes low contact with the leg it indicates that we're rushing the to get to the lift and failing to get full extension, limiting the amount of drive we can extend through the lift.",
+          "sections": []
+        },
+        {
+          "id": "ref.53",
+          "lesson_id": 2097266,
+          "title": "🛠️ Poor Dip [Jerk]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097266",
+          "description": "A poor dip in the push press, push jerk or split jerk is a major loss of power and as the weights get heavier, we'll need to drive as much momentum into the bar to lift the most weight overhead. A poor dip is limits that drive. Here, our weight moves forward, heels come up off the floor and our connection to the floor becomes \"toesy\". Feet stay flat but rather than staying vertical, we bend forward and drive the hips back as we initiate the dip. This can have major implications not only in the bar path but our ability to stay balanced under the bar and receive it in a strong overhead position. Dipping too deeply can not only stall the drive of the dip but can also cause a forward lean as the hips go back to squat. The most effective dip is short, straight and snappy. As you dip, the knees shoot inward and can cause a weakened drive.",
+          "sections": []
+        },
+        {
+          "id": "ref.54",
+          "lesson_id": 2097267,
+          "title": "🛠️ Poor Receiving [Jerk]",
+          "url": "/c/wodprep-weightlifting/sections/555799/lessons/2097267",
+          "description": "Here are common faults we see when driving the bar off the shoulder in the jerk or receiving the bar overhead. A common fault with the spilt jerk as we shoot the hips back and lower the elbows when trying to create a more powerful drive. The more the bar gets away from a vertical line, the more power it loses and the more likely we need to chase it down before we can lock it out. Opposite to the previous fault, with the push jerk there is a tendency to lean back in the receiving position with the knees and hips forward of the shoulders. If the dip and drive is slow or if we not aggressive to the catch we'll end up catching the bar with bent elbows.",
+          "sections": []
+        },
+        {
+          "id": "ref.55",
+          "lesson_id": 2097269,
+          "title": "Live Call: The Snatch",
+          "url": "/c/wodprep-weightlifting/sections/555800/lessons/2097269",
+          "description": "In this Live Call, Coach CJ and Savannah analyze video submissions from WODprep Weightlifting athletes, breaking down the strengths and weaknesses in their cleans. If you’re an athlete who struggles with cleans, watching this session could be transformative. Identifying athletes with similar tendencies and applying key points of performance may lead to significant improvements in your own technique.",
+          "sections": [
+            {
+              "name": "1-ON-1 COACHING",
+              "items": [
+                {
+                  "movement": "Want to make faster progress, get fully customized programming, and work directly with a WODprep Coach? WODprep 1-on-1 Coaching might be perfect to help you reach your goals!",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.56",
+          "lesson_id": 2097272,
+          "title": "Live Call: The Clean",
+          "url": "/c/wodprep-weightlifting/sections/555800/lessons/2097272",
+          "description": "In this Live Call, Coach CJ and Savannah analyze video submissions from WODprep Weightlifting athletes, breaking down the strengths and weaknesses in their cleans. If you’re an athlete who struggles with cleans, watching this session could be transformative. Identifying athletes with similar tendencies and applying key points of performance may lead to significant improvements in your own technique.",
+          "sections": [
+            {
+              "name": "1-ON-1 COACHING",
+              "items": [
+                {
+                  "movement": "Want to make faster progress, get fully customized programming, and work directly with a WODprep Coach? WODprep 1-on-1 Coaching might be perfect to help you reach your goals!",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ref.57",
+          "lesson_id": 2097274,
+          "title": "Live Call: The Jerk",
+          "url": "/c/wodprep-weightlifting/sections/555800/lessons/2097274",
+          "description": "In this Live Call, Coach CJ and Savannah review WODprep Weightlifting athletes’ jerk submissions, providing in-depth analysis of their technique, strengths, and areas to improve. If the jerk is a tough movement for you, this video could offer valuable insights. Watching athletes with similar tendencies and applying targeted performance tips might just be the key to mastering your own jerk technique.",
+          "sections": [
+            {
+              "name": "1-ON-1 COACHING",
+              "items": [
+                {
+                  "movement": "Want to make faster progress, get fully customized programming, and work directly with a WODprep Coach? WODprep 1-on-1 Coaching might be perfect to help you reach your goals!",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

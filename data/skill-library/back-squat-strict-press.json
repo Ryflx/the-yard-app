@@ -1,0 +1,534 @@
+{
+  "skill": "back-squat-strict-press",
+  "course_name": "Back Squat | Strict Press",
+  "course_slug": "back-squat-strict-press",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/back-squat-strict-press",
+  "scraped": "2026-05-17",
+  "total_weeks": 9,
+  "total_lessons": 45,
+  "skipped_lessons": 4,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2181955,
+          "title": "Week 1 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578972/lessons/2181955",
+          "description": "",
+          "sections": [
+            {
+              "name": "WELCOME TO WEEK 1, DAY 1!",
+              "items": [
+                {
+                  "movement": "As you work through these first couple of weeks of Raw Strength, you’ll notice that the RPE feels pretty light and easy. This is intentional and designed to ramp you up for bigger lifts and increased difficulty in the later weeks of the course.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Things will become more challenging soon, so stay focused, ensure you’re lifting with good technique, and take this opportunity to dial in your RPE.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Build to a 1 in 5-7 mins @ RPE 5-6",
+                  "has_video": false
+                },
+                {
+                  "movement": "Followed by",
+                  "has_video": false
+                },
+                {
+                  "movement": "3x5 @ 75% of prior weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest at least 2 minutes between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Build to a set of 7 in 5-7 mins @ RPE 5-6",
+                  "has_video": false
+                },
+                {
+                  "movement": "Followed by",
+                  "has_video": false
+                },
+                {
+                  "movement": "3x10 @ 75% of prior weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest at least 2 minutes between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Build to 3x10-12 @ RPE 6-7",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest at least 2 minutes between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 30 seconds",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2181956,
+          "title": "Week 1 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578972/lessons/2181956",
+          "description": "Build to a 1 in 5-7 mins @ RPE 5-6 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x8 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets On a 4 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2181957,
+          "title": "Week 1 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578972/lessons/2181957",
+          "description": "2 Count. Build to a 1 in 5-7 mins @ RPE 5-6 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 7 in 5-7 mins @ RPE 5-6 Followed by 3x10 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x8 @ RPE 5-6 (each side)",
+          "sections": []
+        },
+        {
+          "id": "1.4",
+          "lesson_id": 2181958,
+          "title": "Week 1 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578972/lessons/2181958",
+          "description": "Build to a 1 in 5-7 mins @ RPE 5-6 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 7 in 5-7 mins @ RPE 5-6 Followed by 3x10 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 (each side) Rest at least 2 minutes between sets On a 4 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "1.5",
+          "lesson_id": 2181959,
+          "title": "Week 1 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578972/lessons/2181959",
+          "description": "100m Run at 75% effort Walking rest 100m x 10 sets Sub any cardio implement 5 sets of 30 seconds on 60 seconds off Build to 3x8-10 @ RPE 6-7 (each side) Rest at least 2 minutes between sets 3x10-12 w/ 1 count pause at the top Sub Single Leg Glute Bridges if no GHD. Same prescription 5x Max Effort sets Rest :90 between sets",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2181960,
+          "title": "Week 2 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578973/lessons/2181960",
+          "description": "",
+          "sections": [
+            {
+              "name": "WELCOME TO WEEK 2, DAY 1!",
+              "items": [
+                {
+                  "movement": "As you dive into these early weeks of Raw Strength, you’ll find the RPE still feels quite manageable. This is all part of the plan to gradually prepare you for heavier lifts and tougher challenges ahead.",
+                  "has_video": false
+                },
+                {
+                  "movement": "The intensity will ramp up soon, so keep your focus sharp, lift with proper form, and use this time to fine-tune your RPE skills. Enjoy the journey and get ready for what’s next!",
+                  "has_video": false
+                },
+                {
+                  "movement": "Build to a 1 in 5-7 mins @ RPE 5-6",
+                  "has_video": false
+                },
+                {
+                  "movement": "Followed by",
+                  "has_video": false
+                },
+                {
+                  "movement": "3x5 @ 75% of prior weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest at least 2 minutes between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Build to a set of 7 in 5-7 mins @ RPE 5-6",
+                  "has_video": false
+                },
+                {
+                  "movement": "Followed by",
+                  "has_video": false
+                },
+                {
+                  "movement": "3x10 @ 75% of prior weight",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest at least 2 minutes between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "Build to 3x10-12 @ RPE 6-7",
+                  "has_video": false
+                },
+                {
+                  "movement": "Rest at least 2 minutes between sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 sets x 30 seconds",
+                  "has_video": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2181961,
+          "title": "Week 2 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578973/lessons/2181961",
+          "description": "Build to a 1 in 5-7 mins @ RPE 5-6 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x8 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets On a 4 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2181962,
+          "title": "Week 2 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578973/lessons/2181962",
+          "description": "2 Count. Build to a 1 in 5-7 mins @ RPE 5-6 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 7 in 5-7 mins @ RPE 5-6 Followed by 3x10 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x8 @ RPE 5-6 (each side)",
+          "sections": []
+        },
+        {
+          "id": "2.4",
+          "lesson_id": 2181963,
+          "title": "Week 2 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578973/lessons/2181963",
+          "description": "Build to a 1 in 5-7 mins @ RPE 5-6 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 7 in 5-7 mins @ RPE 5-6 Followed by 3x10 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 (each side) Rest at least 2 minutes between sets On a 4 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "2.5",
+          "lesson_id": 2181964,
+          "title": "Week 2 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578973/lessons/2181964",
+          "description": "100m Run at 75% effort Walking rest 100m x 10 sets Sub any cardio implement 5 sets of 30 seconds on 60 seconds off Build to 4x8 @ RPE 6-7 (each side) Rest at least 2 minutes between sets 3x10-12 w/ 1 count pause at the top Sub Single Leg Glute Bridges if no GHD. Same prescription 5x Max Effort sets Rest :90 between sets",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2181965,
+          "title": "Week 3 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578974/lessons/2181965",
+          "description": "Build to a 1 in 5-7 mins @ RPE 6-7 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 6 in 5-7 mins @ RPE 6-7 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Built to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets 4 sets x 30 seconds",
+          "sections": []
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2181966,
+          "title": "Week 3 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578974/lessons/2181966",
+          "description": "Build to a 1 in 5-7 mins @ RPE 6-7 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x8 @ RPE 6-7 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets On a 5 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2181967,
+          "title": "Week 3 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578974/lessons/2181967",
+          "description": "2 Count. Build to a 1 in 5-7 mins @ RPE 6-7 Followed by 3x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 6 in 5-7 mins @ RPE 6-7 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 4x8 @ RPE 6-7 (each side)",
+          "sections": []
+        },
+        {
+          "id": "3.4",
+          "lesson_id": 2181968,
+          "title": "Week 3 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578974/lessons/2181968",
+          "description": "Build to a 1 in 5-7 mins @ RPE 6-7 Followed by 3x5 @ 75% or prior weight Rest at least 2 minutes between sets Build to a set of 6 in 5-7 mins @ RPE 6-7 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 (each side) Rest at least 2 minutes between sets On a 5 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "3.5",
+          "lesson_id": 2181969,
+          "title": "Week 3 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578974/lessons/2181969",
+          "description": "100m Run at 80% effort Walking rest 100m x 10 sets Sub any cardio implement 5 sets of 30 seconds on 60 seconds off Build to 4x8-10 @RPE 7-8 (each side) Rest at least 2 minutes between sets 4x10-12 w/ 1 count pause at the top Sub Single Leg Glute Bridges if no GHD. Same prescription 5x Max Effort sets Rest :90 between sets",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2181971,
+          "title": "Week 4 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578975/lessons/2181971",
+          "description": "Build to a 1 in 5-7 mins @ RPE 6-7 Followed by 4x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 6 in 5-7 mins @ RPE 6-7 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets 4 sets x 30 seconds",
+          "sections": []
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2181972,
+          "title": "Week 4 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578975/lessons/2181972",
+          "description": "Build to a 1 in 5-7 mins @ RPE 6-7 Followed by 4x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x8 @ RPE 6-7 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets On a 5 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2181973,
+          "title": "Week 4 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578975/lessons/2181973",
+          "description": "2 Count. Build to a 1 in 5-7 mins @ RPE 6-7 Followed by 4x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 6 in 5-7 mins @ RPE 6-7 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x8 @ RPE 6-7 (each side)",
+          "sections": []
+        },
+        {
+          "id": "4.4",
+          "lesson_id": 2181974,
+          "title": "Week 4 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578975/lessons/2181974",
+          "description": "Build to a 1 in 5-7 mins @ RPE 6-7 Followed by 4x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 6 in 5-7 mins @ RPE 6-7 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 (each side) Rest at least 2 minutes between sets On a 5 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "4.5",
+          "lesson_id": 2181975,
+          "title": "Week 4 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578975/lessons/2181975",
+          "description": "100m Run at 80% effort Walking rest 100m x 10 sets Sub any cardio implement 5 sets of 30 seconds on 60 seconds off Build to 4x8-10 @RPE 7-8 (each side) Rest at least 2 minutes between sets 4x10-12 w/ 1 count pause at the top Sub Single Leg Glute Bridges if no GHD. Same prescription 5x Max Effort sets Rest :90 between sets",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "workouts": [
+        {
+          "id": "5.1",
+          "lesson_id": 2181976,
+          "title": "Week 5 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578976/lessons/2181976",
+          "description": "Build to a 1 in 5-7 mins @ RPE 7-8 Followed by 4x4 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 5 in 5-7 mins @ RPE 7-8 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x8-10 @ RPE 7-8 Rest at least 2 minutes between sets 5 sets x 30 seconds",
+          "sections": []
+        },
+        {
+          "id": "5.2",
+          "lesson_id": 2181977,
+          "title": "Week 5 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578976/lessons/2181977",
+          "description": "Build to a 1 in 5-7 mins @ RPE 7-8 Followed by 4x4 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x7 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x8-10 @ RPE 7-8 Rest at least 2 minutes between sets On a 6 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "5.3",
+          "lesson_id": 2181978,
+          "title": "Week 5 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578976/lessons/2181978",
+          "description": "2 Count. Build to a 1 in 5-7 mins @ RPE 7-8 Followed by 4x4 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 5 in 5-7 mins @ RPE 6-7 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x8-10 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x8 @ RPE 6-7 (each side)",
+          "sections": []
+        },
+        {
+          "id": "5.4",
+          "lesson_id": 2181979,
+          "title": "Week 5 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578976/lessons/2181979",
+          "description": "Build to a 1 in 5-7 mins @ RPE 7-8 Followed by 4x4 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 5 in 5-7 mins @ RPE 6-7 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x8-10 @ RPE 7-8 (each side) Rest at least 2 minutes between sets On a 6 minute running clock, accumulate as many reps as possible without taking any sets to failure.",
+          "sections": []
+        },
+        {
+          "id": "5.5",
+          "lesson_id": 2181980,
+          "title": "Week 5 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578976/lessons/2181980",
+          "description": "100m Run at 85% effort Walking rest 100m x 10 sets Sub any cardio implement 5 sets of 30 seconds on 60 seconds off Build to 4x8-10 @RPE 8-9 (each side) Rest at least 2 minutes between sets 5x10-12 w/ 1 count pause at the top Sub Single Leg Glute Bridges if no GHD. Same prescription 5x Max Effort sets Rest :90 between sets",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "workouts": [
+        {
+          "id": "6.1",
+          "lesson_id": 2181981,
+          "title": "Week 6 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578977/lessons/2181981",
+          "description": "Build to a 1 in 5-7 mins @ RPE 7-8 Followed by 4x4 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 5 in 5-7 mins @ RPE 7-8 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets 5 sets of 30 seconds (each side)",
+          "sections": []
+        },
+        {
+          "id": "6.2",
+          "lesson_id": 2181982,
+          "title": "Week 6 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578977/lessons/2181982",
+          "description": "Build to a 1 in 5-7 mins @ RPE 7-8 Followed by 4x4 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x7 @ RPE 7-8 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 5-6 Rest at least 2 minutes between sets",
+          "sections": []
+        },
+        {
+          "id": "6.3",
+          "lesson_id": 2181983,
+          "title": "Week 6 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578977/lessons/2181983",
+          "description": "2 Count. Build to a 1 in 5-7 mins @ RPE 7-8 Followed by 4x4 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 5 in 5-7 mins @ RPE 7-8 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 (each side) Rest at least 2 minutes between sets 5 sets x 30 seconds",
+          "sections": []
+        },
+        {
+          "id": "6.4",
+          "lesson_id": 2181984,
+          "title": "Week 6 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578977/lessons/2181984",
+          "description": "Build to a 1 in 5-7 mins @ RPE 7-8 Followed by 4x4 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 5 in 5-7 mins @ RPE 7-8 Followed by 3x8 @ 75% of prior weight Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 5-6",
+          "sections": []
+        },
+        {
+          "id": "6.5",
+          "lesson_id": 2181985,
+          "title": "Week 6 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578977/lessons/2181985",
+          "description": "25m push at RPE 5-6 Walking rest 100m x 6 sets Sub Farmer Carry if no sled, 5x100 feet with HEAVY DB. Build to 3x8-10 @RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 5-6 Rest at least 2 minutes between sets",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "workouts": [
+        {
+          "id": "7.1",
+          "lesson_id": 2181986,
+          "title": "Week 7 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578978/lessons/2181986",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x3 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 4 in 5-7 mins @ RPE 7-8 Followed by 4x6 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets 5 sets x 30 seconds (each side)",
+          "sections": []
+        },
+        {
+          "id": "7.2",
+          "lesson_id": 2181987,
+          "title": "Week 7 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578978/lessons/2181987",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x3 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x7 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 5-6 Rest at least 2 minutes between sets",
+          "sections": []
+        },
+        {
+          "id": "7.3",
+          "lesson_id": 2181988,
+          "title": "Week 7 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578978/lessons/2181988",
+          "description": "2 Count. Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x3 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 4 in 5-7 mins @ RPE 7-8 Followed by 4x6 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 (each side) Rest at least 2 minutes between sets 5 sets x 30 seconds",
+          "sections": []
+        },
+        {
+          "id": "7.4",
+          "lesson_id": 2181989,
+          "title": "Week 7 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578978/lessons/2181989",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x3 @ 75% of prior weight Rest at least 2 minutes between sets Built to a set of 4 in 5-7 mins @ RPE 7-8 Followed by 4x6 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 5-6",
+          "sections": []
+        },
+        {
+          "id": "7.5",
+          "lesson_id": 2181990,
+          "title": "Week 7 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578978/lessons/2181990",
+          "description": "25m push at RPE 5-6 Walking rest 100m x 8 sets Sub Farmer Carry if no sled, 5x100 feet with HEAVY DB. Build to 4x8-10 @RPE 6-7 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 5-6 Rest at least 2 minutes between sets",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "workouts": [
+        {
+          "id": "8.1",
+          "lesson_id": 2181991,
+          "title": "Week 8 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578979/lessons/2181991",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x2 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 4 in 5-7 mins @ RPE 7-8 Followed by 4x6 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets 5 sets x 30 seconds (each side)",
+          "sections": []
+        },
+        {
+          "id": "8.2",
+          "lesson_id": 2181992,
+          "title": "Week 8 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578979/lessons/2181992",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x2 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x7 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets",
+          "sections": []
+        },
+        {
+          "id": "8.3",
+          "lesson_id": 2181993,
+          "title": "Week 8 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578979/lessons/2181993",
+          "description": "2 Count. Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x2 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 4 in 5-7 mins @ RPE 7-8 Followed by 4x6 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 (each side) Rest at least 2 minutes between sets 5 sets x 30 seconds",
+          "sections": []
+        },
+        {
+          "id": "8.4",
+          "lesson_id": 2181994,
+          "title": "Week 8 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578979/lessons/2181994",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x2 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 4 in 5-7 mins @ RPE 7-8 Followed by 4x6 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7",
+          "sections": []
+        },
+        {
+          "id": "8.5",
+          "lesson_id": 2181995,
+          "title": "Week 8 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578979/lessons/2181995",
+          "description": "25m push at RPE 6-7 Walking rest 100m x 8 sets Sub Farmer Carry if no sled, 5x100 feet with HEAVY DB. Build to 4x8-10 @RPE 7-8 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets Build to 3x10-12 @ RPE 6-7 Rest at least 2 minutes between sets",
+          "sections": []
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "workouts": [
+        {
+          "id": "9.1",
+          "lesson_id": 2181996,
+          "title": "Week 9 • Day 1",
+          "url": "/c/back-squat-strict-press/sections/578980/lessons/2181996",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x2 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 3 in 5-7 mins @ RPE 7-8 Followed by 4x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets 5 sets x 30 seconds (each side)",
+          "sections": []
+        },
+        {
+          "id": "9.2",
+          "lesson_id": 2181997,
+          "title": "Week 9 • Day 2",
+          "url": "/c/back-squat-strict-press/sections/578980/lessons/2181997",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x2 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x7 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets",
+          "sections": []
+        },
+        {
+          "id": "9.3",
+          "lesson_id": 2181999,
+          "title": "Week 9 • Day 3",
+          "url": "/c/back-squat-strict-press/sections/578980/lessons/2181999",
+          "description": "2 Count. Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x2 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 3 in 5-7 mins @ RPE 7-8 Followed by 4x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 (each side) Rest at least 2 minutes between sets 5 sets x 30 seconds",
+          "sections": []
+        },
+        {
+          "id": "9.4",
+          "lesson_id": 2182000,
+          "title": "Week 9 • Day 4",
+          "url": "/c/back-squat-strict-press/sections/578980/lessons/2182000",
+          "description": "Build to a 1 in 8-9 mins @ RPE 8-9 Followed by 4x2 @ 75% of prior weight Rest at least 2 minutes between sets Build to a set of 3 in 5-7 mins @ RPE 7-8 Followed by 4x5 @ 75% of prior weight Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7",
+          "sections": []
+        },
+        {
+          "id": "9.5",
+          "lesson_id": 2182001,
+          "title": "Week 9 • Day 5",
+          "url": "/c/back-squat-strict-press/sections/578980/lessons/2182001",
+          "description": "25m push at RPE 6-7 Walking rest 100m x 10 sets Sub Farmer Carry if no sled, 5x100 feet with HEAVY DB. Build to 4x8-10 @RPE 7-8 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 7-8 Rest at least 2 minutes between sets Build to 4x10-12 @ RPE 6-7 Rest at least 2 minutes between sets",
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

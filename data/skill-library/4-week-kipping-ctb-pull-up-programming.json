@@ -1,0 +1,672 @@
+{
+  "skill": "4-week-kipping-ctb-pull-up-programming",
+  "course_name": "Kipping Pull-up Chest to Bar",
+  "course_slug": "4-week-kipping-ctb-pull-up-programming",
+  "source": "coaching.wodprep.com",
+  "source_url": "https://coaching.wodprep.com/c/4-week-kipping-ctb-pull-up-programming",
+  "scraped": "2026-05-17",
+  "total_weeks": 4,
+  "total_lessons": 12,
+  "skipped_lessons": 6,
+  "weeks": [
+    {
+      "week": 1,
+      "workouts": [
+        {
+          "id": "1.1",
+          "lesson_id": 2182115,
+          "title": "CTB KPUP 1.1 (Week 1, Workout 1)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579017/lessons/2182115",
+          "description": "Welcome to the Chest to Bar Kipping Pull-up Performance mini course. Let’s get to work by establishing our baseline. When you review your attempts how do they compare to the the demo? What will you need to improve on?",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "movement": "MAX EFFORT Chest to Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            },
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "AMRAP unbroken CTB Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video each set for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "lesson_id": 2182116,
+          "title": "CTB KPUP 1.2 (Week 1, Workout 2)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579017/lessons/2182116",
+          "description": "Strict strength is the foundation for crushing big sets of CTB over time. Getting your first CTB pull-up is cool, hitting 100 reps in a workout? That’s wicked. Let’s build the base to make that happen.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "30sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "30sec x Chest to Ring Row Hold",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "15sec x Hollow Body Hold + 15sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets; Every 2 mins",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Unbroken Pronated Strict CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time.",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video and record number of reps",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "lesson_id": 2182117,
+          "title": "CTB KPUP 1.3 (Week 1, Workout 3)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579017/lessons/2182117",
+          "description": "The final day of week 1 has you getting to work on some Kipping CTB Pull-ups. Be sure to use a box to help start your Chest to Bar Hold Kipping Medley, we don't need to begin with a strict CTB pull-up. Were you able to perform the entire Kipping CTB medley? Reviewing your footage, what was our limiting factor?",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "movement": "15sec x Chest to Ring Row Hold (immediately into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Slow Tempo Ring Row (pull to chest)",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Chest to Bar Hold Kipping Medley",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video final medley attempt for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "workouts": [
+        {
+          "id": "2.1",
+          "lesson_id": 2182118,
+          "title": "CTB KPUP 2.1. (Week 2, Workout 1)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579018/lessons/2182118",
+          "description": "Today we’re opening up the shoulders and building strength in the chest-to-bar position.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest 30 sec",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX Chest to Bar Hold (directly into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20-30sec x Chest to Ring Row Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets; Every 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "3-5 x Kipping Pull-up + 1-2 x Kipping CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time",
+                  "has_video": false
+                },
+                {
+                  "movement": "Modify reps where necessary",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "lesson_id": 2182119,
+          "title": "CTB KPUP 2.2 (Week 2, Workout 2)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579018/lessons/2182119",
+          "description": "Today’s complexes are all about refining your shapes and positions for kipping chest to bar pull-ups. Focus on pulling as deeply to your chest as possible, even in movements like ring rows. This will help you build the range and control needed to keep the bar tight to your chest during more advanced pulling work.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "minute": 1,
+                  "movement": "20sec x Chest to Ring Row Hold + 5 x Ring Row",
+                  "has_video": true
+                },
+                {
+                  "minute": 2,
+                  "movement": "5 x Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "minute": 3,
+                  "movement": "20sec x Hollow Body Hold + 20sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets; Every 2 mins",
+                  "has_video": false
+                },
+                {
+                  "movement": "1-2 x Pronated Strict CTB Pull-up (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+ 1-2 x Kipping CTB Pull-up (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+ 3-5 x Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time",
+                  "has_video": false
+                },
+                {
+                  "movement": "Perform as one movement. Modify reps as needed",
+                  "has_video": false
+                }
+              ],
+              "format": "6 min EMOM:"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "lesson_id": 2182120,
+          "title": "CTB KPUP 2.3 (Week 2, Workout 3)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579018/lessons/2182120",
+          "description": "Rips aren’t a badge of honor; they’re an injury that can set back your training and performance. You’ve been putting in serious work on the bar this week so make sure to take care of your hands! Stay smart and stay consistent.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Kip Swing",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 sets; Every 2 mins",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Chest to Bar Kipping Medley",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video final medley attempt for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "workouts": [
+        {
+          "id": "3.1",
+          "lesson_id": 2182124,
+          "title": "CTB KPUP 3.1. (Week 3, Workout 1)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579019/lessons/2182124",
+          "description": "Today we have a mini check-in assessment. As you work through these attempts, take a moment to reflect on your progress since your baseline kipping chest to Bar test. What positives can you identify? Where is there still room to grow? Remember, these unbroken max sets aren’t meant to reflect your peak capacity. You’re coming into this work with accumulated fatigue. Don’t let lower-than-expected numbers get in your head. You’re putting in the work, and you’re on the right path. Battle hard, stay focused, and most importantly, have some fun with it!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "30sec x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Ring Row (slow tempo, pull to chest)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+ 5sec x Chest to Ring Row Hold on final rep",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "4 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX unbroken Strict Pronated CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "MAX unbroken CTB Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video final set for review",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "lesson_id": 2182125,
+          "title": "CTB KPUP 3.2 (Week 3, Workout 2)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579019/lessons/2182125",
+          "description": "Do your best to maintain chest to bar contact during today’s Pause Series work. If you’re struggling to hit the prescribed times for a movement or hold, don’t stress! Simply, adjust the intensity as needed, or focus on accumulating the total time over as few sets as possible. Quality over perfection. Stay sharp and stay committed!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "1 min x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 4,
+                  "movement": "Kipping Chest to Bar Pull-up with Chest to Bar Pause",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1-2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "If you’re struggling to hold your chest to the bar, scale back the reps",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video final set for review",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "lesson_id": 2182126,
+          "title": "CTB KPUP 3.3 (Week 3, Workout 3)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579019/lessons/2182126",
+          "description": "Long complexes are awesome! They challenge you in all the right ways. Take note of how they’re helping your movement, control, and awareness. Where are you seeing improvements? What’s feeling stronger or more connected? Today’s a good one, enjoy it!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 5,
+                  "movement": "Strict Bar Hanging Hollow to Arch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Beat Swing (Towel Drill)",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "5 Sets",
+                  "has_video": false
+                },
+                {
+                  "movement": "20-30sec x Chin Over Bar Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 10,
+                  "movement": "Kipping Pull-ups",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Kipping CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "Modify the reps as needed",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "workouts": [
+        {
+          "id": "4.1",
+          "lesson_id": 2182129,
+          "title": "CTB KPUP 4.1. (Week 4, Workout 1)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579020/lessons/2182129",
+          "description": "Today’s session is low volume, but high focus. Move with intention and use the slower pace to check in on your chest-to-bar form. Are you leading with the knees too early, or keeping a full scoop through the legs? Is your chest actually making contact? Watch your elbow position if they stay under the bar instead of pulling back, a clean pull gets much harder. This range doesn’t get trained often, so take the time to build it right. Precision now pays off later.",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Slow Tempo Ring Row (into)",
+                  "has_video": true
+                },
+                {
+                  "movement": "20sec x Chest to Ring Row Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 1 minute",
+                  "has_video": false
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "10 Sets; Every 30sec",
+                  "has_video": false
+                },
+                {
+                  "sets": 1,
+                  "movement": "Strict Pronated CTB Pull-up (into)",
+                  "has_video": true
+                },
+                {
+                  "sets": 1,
+                  "movement": "Kipping CTB Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest remaining time",
+                  "has_video": false
+                },
+                {
+                  "movement": "Film final set for review",
+                  "has_video": false
+                }
+              ],
+              "format": "2 Sets"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "lesson_id": 2182130,
+          "title": "CTB KPUP 4.2 (Week 4, Workout 2)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579020/lessons/2182130",
+          "description": "Today is a lighter day to set us up for a BIG retest next session. Take this time to reflect: what can you do going into that retest to help maximize your results? Recovery? Nutrition? Mindset? Write them down and commit to executing them. Let’s finish strong!",
+          "sections": [
+            {
+              "name": "SKILLS",
+              "items": [
+                {
+                  "movement": "1 min x Skin the Cat Stretch",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Left Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "sets": 10,
+                  "movement": "Right Prone Thoracic Rotation",
+                  "has_video": true
+                },
+                {
+                  "movement": "30sec x Superman Hold",
+                  "has_video": true
+                },
+                {
+                  "movement": "+",
+                  "has_video": false
+                },
+                {
+                  "movement": "3 Sets",
+                  "has_video": false
+                },
+                {
+                  "sets": 5,
+                  "movement": "Strict Pull-up + Push Away",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                }
+              ],
+              "format": "4 sets"
+            }
+          ]
+        },
+        {
+          "id": "4.3",
+          "lesson_id": 2182131,
+          "title": "CTB KPUP 4.3 (Week 4, Workout 3)",
+          "url": "/c/4-week-kipping-ctb-pull-up-programming/sections/579020/lessons/2182131",
+          "description": "Today marks the final day of our Chest-to-Bar Kipping Pull-Up Mini Course — go for it and enjoy the success you’ve earned! Take time to review your Week 1 videos and numbers. Where have you made the biggest gains? What feels more fluid, more powerful, more in control? And just as important, what still needs your attention moving forward? We want to hear all about your progress! Share your before-and-after videos on the Wall of Wins and score some sweet WODprep swag just for posting. You’ve put in the work, now show it off! SKILLS 2 Sets 30sec x Skin the Cat Stretch 10x Circular Scapular Pull-up 10x Slow Tempo Ring Row 20sec x Chest to Ring Row Hold Rest walk 2 minutes",
+          "sections": [
+            {
+              "name": "TEST",
+              "items": [
+                {
+                  "movement": "AMRAP unbroken CTB Kipping Pull-up",
+                  "has_video": true
+                },
+                {
+                  "movement": "Rest walk 2 minutes",
+                  "has_video": false
+                },
+                {
+                  "movement": "Video all sets and share your success on the Wall of Wins!",
+                  "has_video": false
+                }
+              ],
+              "format": "3 Sets"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
