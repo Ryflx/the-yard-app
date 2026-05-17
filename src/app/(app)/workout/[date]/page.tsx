@@ -473,7 +473,6 @@ async function CustomDetail({
         session={planSession.session}
         drill={planSession.drill}
         course={planSession.course}
-        userSex={profile?.sex ?? undefined}
         existingScoreBySectionId={existingScoreBySectionId}
         maxTests={maxTests}
         maxAttemptsByMovement={maxAttemptsByMovement}

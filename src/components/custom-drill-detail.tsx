@@ -1,7 +1,6 @@
 import type { workouts, workoutSections, customPlanSessions, skillDrills, skillCourses, wodResults } from "@/db/schema";
 import type { WodScoreType } from "@/db/schema";
-import type { Sex } from "@/lib/strength-standards";
-import { WodScoreEntry } from "@/components/wod-score-entry";
+import { DrillScoreEntry } from "@/components/programming/drill-score-entry";
 import { SwapDrillSheet } from "@/components/programming/swap-drill-sheet";
 import { formatDrillTitle } from "@/lib/programming/format";
 import type { MaxAttempt } from "@/app/actions";
@@ -21,7 +20,6 @@ interface Props {
   session: Session;
   drill: Drill;
   course: Course;
-  userSex?: Sex;
   existingScoreBySectionId?: Map<number, WodResult>;
   maxTests?: string[];
   maxAttemptsByMovement?: Record<string, MaxAttempt[]>;
@@ -42,7 +40,6 @@ export function CustomDrillDetail({
   session,
   drill,
   course,
-  userSex,
   existingScoreBySectionId,
   maxTests,
   maxAttemptsByMovement,
@@ -88,10 +85,7 @@ export function CustomDrillDetail({
       {hasMaxTests && (
         <div className="border-l-2 border-primary-container bg-surface-container px-4 py-3">
           <p className="text-[10px] font-bold uppercase tracking-widest text-primary-container">
-            MAX test · record reps per set
-          </p>
-          <p className="mt-1 text-sm text-on-surface-variant">
-            Type your reps for each set into the notes field, e.g. <code className="bg-surface-container-high px-1">10 / 8 / 6</code>.
+            MAX test · previous attempts
           </p>
           {maxTests!.map((movement) => {
             const attempts = maxAttemptsByMovement?.[movement] ?? [];
@@ -119,17 +113,13 @@ export function CustomDrillDetail({
       {sections
         .filter((s) => s.wodScoreType != null)
         .map((s) => (
-          <WodScoreEntry
+          <DrillScoreEntry
             key={s.id}
             workoutId={workout.id}
             sectionId={s.id}
             scoreType={s.wodScoreType as WodScoreType}
-            timeCap={s.timeCap}
-            rxWeights={s.rxWeights}
-            wodName={s.wodName}
-            wodSets={s.sets}
-            userSex={userSex}
             existingScore={existingScoreBySectionId?.get(s.id)}
+            placeholder={hasMaxTests ? "e.g. 10 / 8 / 6" : undefined}
           />
         ))}
 
