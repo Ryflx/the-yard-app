@@ -1,3 +1,4 @@
+import { sql } from "drizzle-orm";
 import {
   pgTable,
   serial,
@@ -11,7 +12,7 @@ import {
   boolean,
 } from "drizzle-orm/pg-core";
 
-export type ClassType = "BARBELL" | "CROSSFIT" | "ENGINES" | "OTHER";
+export type ClassType = "BARBELL" | "CROSSFIT" | "ENGINES" | "OTHER" | "CUSTOM";
 
 export const workouts = pgTable("workouts", {
   id: serial("id").primaryKey(),
@@ -116,6 +117,7 @@ export const userProfiles = pgTable("user_profiles", {
   sex: text("sex").$type<"male" | "female">(),
   leaderboardOptIn: boolean("leaderboard_opt_in").notNull().default(false),
   onboardingComplete: boolean("onboarding_complete").notNull().default(false),
+  seenTourModules: jsonb("seen_tour_modules").notNull().default(sql`'[]'::jsonb`),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
@@ -269,3 +271,62 @@ export const skillDrills = pgTable(
   },
   (t) => [uniqueIndex("skill_drills_unique").on(t.courseId, t.externalId)]
 );
+
+export interface WeeklyDrillSlot {
+  dow: "MON" | "TUE" | "WED" | "THU" | "FRI" | "SAT" | "SUN";
+  when: "before_class" | "after_class" | "open_gym";
+  minutes: 15 | 30 | 45 | 60;
+}
+
+export interface GenerationMeta {
+  rulesVersion: string;
+  llmModel: string | null;
+  generatedAt: string; // ISO
+  llmFallbackUsed: boolean;
+}
+
+export const customPlans = pgTable(
+  "custom_plans",
+  {
+    id: serial("id").primaryKey(),
+    userId: text("user_id").notNull(),
+    name: text("name").notNull(),
+    status: text("status").notNull().default("active").$type<"active" | "paused" | "completed">(),
+    goalSummary: text("goal_summary").notNull(),
+    weeklyDrillSlots: jsonb("weekly_drill_slots").$type<WeeklyDrillSlot[]>().notNull(),
+    selectedSkillIds: integer("selected_skill_ids").array().notNull(),
+    planLengthWeeks: integer("plan_length_weeks").notNull().default(8),
+    startsOn: date("starts_on").notNull(),
+    endsOn: date("ends_on").notNull(),
+    generationMeta: jsonb("generation_meta").$type<GenerationMeta>().notNull(),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  },
+  (t) => [
+    uniqueIndex("custom_plans_one_active")
+      .on(t.userId)
+      .where(sql`status = 'active'`),
+  ]
+);
+
+export const customPlanSessions = pgTable("custom_plan_sessions", {
+  id: serial("id").primaryKey(),
+  planId: integer("plan_id")
+    .notNull()
+    .references(() => customPlans.id, { onDelete: "cascade" }),
+  workoutId: integer("workout_id").references(() => workouts.id, { onDelete: "set null" }),
+  drillId: integer("drill_id").notNull().references(() => skillDrills.id),
+  originalDrillId: integer("original_drill_id").references(() => skillDrills.id),
+  plannedDate: date("planned_date").notNull(),
+  plannedSlotMinutes: integer("planned_slot_minutes").notNull(),
+  llmRationale: text("llm_rationale"),
+  status: text("status").notNull().default("pending").$type<"pending" | "completed" | "skipped" | "swapped">(),
+});
+
+export const goalQuestionnaires = pgTable("goal_questionnaires", {
+  id: serial("id").primaryKey(),
+  userId: text("user_id").notNull(),
+  planId: integer("plan_id").references(() => customPlans.id, { onDelete: "set null" }),
+  answers: jsonb("answers").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
