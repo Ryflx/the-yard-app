@@ -2047,60 +2047,64 @@ export async function createPlan(
     rulesVersion: RULES_VERSION, llmModel: modelUsed, generatedAt: new Date().toISOString(), llmFallbackUsed,
   };
 
-  const planId = await db.transaction(async (tx) => {
-    const [plan] = await tx.insert(customPlans).values({
-      userId,
-      name: "8-Week Skill Plan",
-      goalSummary,
-      weeklyDrillSlots: slots,
-      selectedSkillIds: skillIds,
-      planLengthWeeks: PLAN_LENGTH_WEEKS,
-      startsOn,
-      endsOn,
-      generationMeta,
-      updatedAt: new Date(),
+  // NOTE: Neon's HTTP driver doesn't support db.transaction() at runtime
+  // (it throws "No transactions support in neon-http driver"). For v0 we
+  // accept the atomicity loss — a failed mid-write leaves a partial plan
+  // which the user can clear via regeneratePlan (Task 14). The unique
+  // partial index `custom_plans_one_active` still prevents the only true
+  // race (two active plans for same user).
+  const [plan] = await db.insert(customPlans).values({
+    userId,
+    name: "8-Week Skill Plan",
+    goalSummary,
+    weeklyDrillSlots: slots,
+    selectedSkillIds: skillIds,
+    planLengthWeeks: PLAN_LENGTH_WEEKS,
+    startsOn,
+    endsOn,
+    generationMeta,
+    updatedAt: new Date(),
+  }).returning();
+
+  for (const p of finalPlacements) {
+    const drill = allDrills.find((d) => d.id === p.drillId);
+    const course = selectedCourses.find((c) => c.id === drill?.courseId);
+    if (!drill || !course) continue;
+    const [workout] = await db.insert(workouts).values({
+      date: p.plannedDate,
+      classType: "CUSTOM",
+      title: `${course.name} — ${drill.title}`,
     }).returning();
-
-    for (const p of finalPlacements) {
-      const drill = allDrills.find((d) => d.id === p.drillId);
-      const course = selectedCourses.find((c) => c.id === drill?.courseId);
-      if (!drill || !course) continue;
-      const [workout] = await tx.insert(workouts).values({
-        date: p.plannedDate,
-        classType: "CUSTOM",
-        title: `${course.name} — ${drill.title}`,
-      }).returning();
-      // One section holding the drill content
-      await tx.insert(workoutSections).values({
-        workoutId: workout.id,
-        type: "SKILL",
-        sortOrder: 0,
-        exercises: [],
-        wodFormat: "EMOM", // sentinel — triggers isCompletionMode() in WodScoreEntry
-        wodScoreType: "INTERVAL", // ditto
-        wodName: drill.title,
-        wodDescription: drill.movementsSummary,
-        wodMovements: drill.sections.flatMap((s: SkillDrillSection) => s.items.map((it) => ({
-          name: it.movement, reps: String(it.reps ?? ""), weight: null, unit: null, note: it.notes ?? null,
-        }))),
-      });
-      await tx.insert(customPlanSessions).values({
-        planId: plan.id,
-        workoutId: workout.id,
-        drillId: p.drillId,
-        originalDrillId: p.originalDrillId,
-        plannedDate: p.plannedDate,
-        plannedSlotMinutes: p.plannedSlotMinutes,
-        llmRationale: rationaleBySession.get(p.sessionIndex) ?? null,
-      });
-    }
-
-    await tx.insert(goalQuestionnaires).values({
-      userId, planId: plan.id, answers,
+    // One section holding the drill content
+    await db.insert(workoutSections).values({
+      workoutId: workout.id,
+      type: "SKILL",
+      sortOrder: 0,
+      exercises: [],
+      wodFormat: "EMOM", // sentinel — triggers isCompletionMode() in WodScoreEntry
+      wodScoreType: "INTERVAL", // ditto
+      wodName: drill.title,
+      wodDescription: drill.movementsSummary,
+      wodMovements: drill.sections.flatMap((s: SkillDrillSection) => s.items.map((it) => ({
+        name: it.movement, reps: String(it.reps ?? ""), weight: null, unit: null, note: it.notes ?? null,
+      }))),
     });
+    await db.insert(customPlanSessions).values({
+      planId: plan.id,
+      workoutId: workout.id,
+      drillId: p.drillId,
+      originalDrillId: p.originalDrillId,
+      plannedDate: p.plannedDate,
+      plannedSlotMinutes: p.plannedSlotMinutes,
+      llmRationale: rationaleBySession.get(p.sessionIndex) ?? null,
+    });
+  }
 
-    return plan.id;
+  await db.insert(goalQuestionnaires).values({
+    userId, planId: plan.id, answers,
   });
+
+  const planId = plan.id;
 
   revalidatePath("/schedule");
   revalidatePath("/programming");
