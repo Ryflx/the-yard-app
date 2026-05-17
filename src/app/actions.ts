@@ -400,27 +400,7 @@ export async function updateUserProfile(data: {
 }
 
 export async function completeOnboarding() {
-  const { userId } = await auth();
-  if (!userId) throw new Error("Not authenticated");
-
-  const existing = await db
-    .select()
-    .from(userProfiles)
-    .where(eq(userProfiles.userId, userId));
-
-  if (existing.length > 0) {
-    await db
-      .update(userProfiles)
-      .set({ onboardingComplete: true })
-      .where(eq(userProfiles.userId, userId));
-  } else {
-    await db.insert(userProfiles).values({
-      userId,
-      onboardingComplete: true,
-    });
-  }
-
-  revalidatePath("/schedule");
+  return markTourSeen("onboarding-v1");
 }
 
 // ── Role management ──
@@ -2118,6 +2098,149 @@ export async function createPlan(
   revalidatePath("/schedule");
   revalidatePath("/programming");
   return { planId };
+}
+
+// ── Plan management ──
+
+export async function getActivePlan() {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+  const [plan] = await db
+    .select()
+    .from(customPlans)
+    .where(and(eq(customPlans.userId, userId), eq(customPlans.status, "active")));
+  if (!plan) return null;
+  const sessions = await db
+    .select({
+      session: customPlanSessions,
+      drill: skillDrills,
+      course: skillCourses,
+      workout: workouts,
+    })
+    .from(customPlanSessions)
+    .innerJoin(skillDrills, eq(customPlanSessions.drillId, skillDrills.id))
+    .innerJoin(skillCourses, eq(skillDrills.courseId, skillCourses.id))
+    .leftJoin(workouts, eq(customPlanSessions.workoutId, workouts.id))
+    .where(eq(customPlanSessions.planId, plan.id))
+    .orderBy(customPlanSessions.plannedDate);
+  return { plan, sessions };
+}
+
+export async function getWeaknessSignals() {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+  return getWeaknessSignalsForUser(userId);
+}
+
+export async function swapDrillSession(sessionId: number): Promise<{ newDrillId: number }> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  const [session] = await db
+    .select({ session: customPlanSessions, drill: skillDrills, plan: customPlans })
+    .from(customPlanSessions)
+    .innerJoin(skillDrills, eq(customPlanSessions.drillId, skillDrills.id))
+    .innerJoin(customPlans, eq(customPlanSessions.planId, customPlans.id))
+    .where(and(eq(customPlanSessions.id, sessionId), eq(customPlans.userId, userId)));
+  if (!session) throw new Error("Session not found");
+
+  // Pick an alt drill from the same course not already placed in this plan
+  const placed = await db
+    .select({ drillId: customPlanSessions.drillId })
+    .from(customPlanSessions)
+    .where(eq(customPlanSessions.planId, session.plan.id));
+  const placedIds = new Set(placed.map((p) => p.drillId));
+  const alts = await db
+    .select()
+    .from(skillDrills)
+    .where(eq(skillDrills.courseId, session.drill.courseId));
+  const alt = alts.find((d) => !placedIds.has(d.id) && d.id !== session.drill.id);
+  if (!alt) throw new Error("No alternate drill available in this course");
+
+  await db
+    .update(customPlanSessions)
+    .set({ drillId: alt.id, originalDrillId: session.drill.id, status: "swapped" })
+    .where(eq(customPlanSessions.id, sessionId));
+
+  if (session.session.workoutId) {
+    const [courseRow] = await db.select({ n: skillCourses.name }).from(skillCourses).where(eq(skillCourses.id, alt.courseId));
+    await db
+      .update(workouts)
+      .set({ title: `${courseRow.n} — ${alt.title}` })
+      .where(eq(workouts.id, session.session.workoutId));
+  }
+
+  revalidatePath("/schedule");
+  revalidatePath("/programming");
+  return { newDrillId: alt.id };
+}
+
+export async function regeneratePlan(planId: number): Promise<{ planId: number }> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  const [old] = await db
+    .select()
+    .from(customPlans)
+    .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
+  if (!old) throw new Error("Plan not found");
+
+  await db.update(customPlans).set({ status: "completed", updatedAt: new Date() }).where(eq(customPlans.id, planId));
+  return createPlan(
+    { wodsPerWeek: 3, ropeConfidence: 3, handstandConfidence: 3, pullGymConfidence: 3 },
+    old.weeklyDrillSlots,
+    old.selectedSkillIds
+  );
+}
+
+export async function pausePlan(planId: number): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+  await db
+    .update(customPlans)
+    .set({ status: "paused", updatedAt: new Date() })
+    .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
+  revalidatePath("/programming");
+}
+
+export async function markPlanCompleted(planId: number): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+  await db
+    .update(customPlans)
+    .set({ status: "completed", updatedAt: new Date() })
+    .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
+  revalidatePath("/programming");
+}
+
+export async function markTourSeen(tourId: "onboarding-v1" | "custom-programming-v1"): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  const [profile] = await db.select().from(userProfiles).where(eq(userProfiles.userId, userId));
+  const current: string[] = (profile?.seenTourModules as string[] | undefined) ?? [];
+  const next = new Set<string>(current);
+  next.add(tourId);
+  if (tourId === "onboarding-v1") next.add("custom-programming-v1");
+  const seenArray = Array.from(next);
+
+  if (profile) {
+    await db
+      .update(userProfiles)
+      .set({
+        seenTourModules: seenArray,
+        // Maintain the legacy flag so any old code reading it still works.
+        onboardingComplete: tourId === "onboarding-v1" ? true : profile.onboardingComplete,
+      })
+      .where(eq(userProfiles.userId, userId));
+  } else {
+    await db.insert(userProfiles).values({
+      userId,
+      seenTourModules: seenArray,
+      onboardingComplete: tourId === "onboarding-v1",
+    });
+  }
+  revalidatePath("/schedule");
 }
 
 // Helpers
