@@ -134,7 +134,7 @@ export default async function SchedulePage({ searchParams }: Props) {
 
   return (
     <div className="flex flex-col gap-8">
-      {showOnboarding && <OnboardingTour />}
+      {showOnboarding && <OnboardingTour tourId="onboarding-v1" />}
 
       <section className="mb-2">
         <p className="mb-2 font-label text-xs uppercase tracking-[0.2em] text-primary">
