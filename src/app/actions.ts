@@ -2185,12 +2185,23 @@ export async function regeneratePlan(planId: number): Promise<{ planId: number }
     .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
   if (!old) throw new Error("Plan not found");
 
+  // Reuse the user's original answers so the regenerated plan's goalSummary
+  // and LLM personalisation match their stated intent.
+  const [prior] = await db
+    .select()
+    .from(goalQuestionnaires)
+    .where(eq(goalQuestionnaires.planId, planId))
+    .orderBy(desc(goalQuestionnaires.createdAt))
+    .limit(1);
+  const answers = (prior?.answers as CreatePlanAnswers | undefined) ?? {
+    wodsPerWeek: 3,
+    ropeConfidence: 3,
+    handstandConfidence: 3,
+    pullGymConfidence: 3,
+  };
+
   await db.update(customPlans).set({ status: "completed", updatedAt: new Date() }).where(eq(customPlans.id, planId));
-  return createPlan(
-    { wodsPerWeek: 3, ropeConfidence: 3, handstandConfidence: 3, pullGymConfidence: 3 },
-    old.weeklyDrillSlots,
-    old.selectedSkillIds
-  );
+  return createPlan(answers, old.weeklyDrillSlots, old.selectedSkillIds);
 }
 
 export async function pausePlan(planId: number): Promise<void> {
