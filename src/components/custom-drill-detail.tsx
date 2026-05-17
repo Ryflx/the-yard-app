@@ -3,6 +3,7 @@ import type { WodScoreType } from "@/db/schema";
 import type { Sex } from "@/lib/strength-standards";
 import { WodScoreEntry } from "@/components/wod-score-entry";
 import { SwapDrillSheet } from "@/components/programming/swap-drill-sheet";
+import { formatDrillTitle } from "@/lib/programming/format";
 import Link from "next/link";
 
 type Workout = typeof workouts.$inferSelect;
@@ -32,7 +33,7 @@ export function CustomDrillDetail({ workout, sections, session, drill, course, u
           </Link>
           {" · "}Week {drill.week}, Workout {drill.orderInWeek}
         </p>
-        <h2 className="mt-1 font-headline text-2xl font-black uppercase tracking-tight">{drill.title}</h2>
+        <h2 className="mt-1 font-headline text-2xl font-black uppercase tracking-tight">{formatDrillTitle(drill.title)}</h2>
       </div>
 
       {session.llmRationale && (
@@ -79,14 +80,6 @@ export function CustomDrillDetail({ workout, sections, session, drill, course, u
 
       <div className="flex items-center justify-between border-t border-outline-variant pt-4">
         <SwapDrillSheet sessionId={session.id} />
-        <a
-          href={course.sourceUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:text-on-surface"
-        >
-          Open source →
-        </a>
       </div>
     </div>
   );

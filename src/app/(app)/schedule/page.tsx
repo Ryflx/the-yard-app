@@ -6,6 +6,7 @@ import { DaySelector } from "@/components/day-selector";
 import { ClassTypeTabs } from "@/components/class-type-tabs";
 import { OnboardingTour } from "@/components/onboarding-tour";
 import { pickNextTour } from "@/lib/programming/tour";
+import { formatDrillTitle } from "@/lib/programming/format";
 import { WorkoutCardSlider } from "@/components/workout-card-slider";
 import type { ClassType } from "@/db/schema";
 import Link from "next/link";
@@ -123,6 +124,7 @@ export default async function SchedulePage({ searchParams }: Props) {
       return workout.sections.find((s) => s.type === "OLYMPIC LIFT")?.liftName || workout.title;
     }
     const wod = workout.sections.find((s) => s.type === "WOD");
+    if (workout.classType === "CUSTOM") return formatDrillTitle(workout.title);
     return wod?.wodName || workout.title;
   }
 
