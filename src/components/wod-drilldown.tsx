@@ -99,31 +99,38 @@ export function WodDrilldownClient({
               return (
                 <div
                   key={entry.userId}
-                  className={`flex items-center p-3 ${
+                  className={`flex flex-col p-3 ${
                     isMe ? "bg-primary/5" : "bg-surface-container"
                   }`}
                 >
-                  <span className={`w-7 text-sm font-bold ${
-                    entry.position === 1 ? "text-yellow-400" :
-                    entry.position === 2 ? "text-gray-300" :
-                    entry.position === 3 ? "text-amber-600" : "text-outline"
-                  }`}>
-                    {entry.position}
-                  </span>
-                  <span className={`flex-1 text-sm font-bold uppercase tracking-tight ${isMe ? "text-primary" : ""}`}>
-                    {isMe ? "You" : entry.displayName}
-                  </span>
-                  {entry.tier && (
-                    <span
-                      className="mr-3 px-1.5 py-0.5 text-[8px] font-bold uppercase"
-                      style={{ backgroundColor: TIER_COLORS[entry.tier] + "30", color: TIER_COLORS[entry.tier] }}
-                    >
-                      {entry.tier}
+                  <div className="flex items-center">
+                    <span className={`w-7 text-sm font-bold ${
+                      entry.position === 1 ? "text-yellow-400" :
+                      entry.position === 2 ? "text-gray-300" :
+                      entry.position === 3 ? "text-amber-600" : "text-outline"
+                    }`}>
+                      {entry.position}
                     </span>
+                    <span className={`flex-1 text-sm font-bold uppercase tracking-tight ${isMe ? "text-primary" : ""}`}>
+                      {isMe ? "You" : entry.displayName}
+                    </span>
+                    {entry.tier && (
+                      <span
+                        className="mr-3 px-1.5 py-0.5 text-[8px] font-bold uppercase"
+                        style={{ backgroundColor: TIER_COLORS[entry.tier] + "30", color: TIER_COLORS[entry.tier] }}
+                      >
+                        {entry.tier}
+                      </span>
+                    )}
+                    <span className={`text-sm font-bold tabular-nums ${isMe ? "text-primary" : "text-on-surface-variant"}`}>
+                      {entry.scoreValue}
+                    </span>
+                  </div>
+                  {entry.notes && (
+                    <p className="ml-7 mt-1 text-[11px] italic text-outline">
+                      “{entry.notes}”
+                    </p>
                   )}
-                  <span className={`text-sm font-bold tabular-nums ${isMe ? "text-primary" : "text-on-surface-variant"}`}>
-                    {entry.scoreValue}
-                  </span>
                 </div>
               );
             })}

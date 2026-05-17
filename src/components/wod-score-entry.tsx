@@ -4,6 +4,7 @@ import { useState } from "react";
 import { logWodResult } from "@/app/actions";
 import type { WodScoreType, RxLevel } from "@/db/schema";
 import { assessWodScore, type WodTierResult } from "@/lib/benchmark-wods";
+import { isCompletionMode, prescribedRoundsFromSets } from "@/lib/wod-scoring";
 import type { Sex } from "@/lib/strength-standards";
 import { toast } from "sonner";
 import { RxLevelTabs } from "./rx-level-tabs";
@@ -16,10 +17,12 @@ interface WodScoreEntryProps {
   timeCap?: number | null;
   rxWeights?: string | null;
   wodName?: string | null;
+  wodSets?: string | null;
   userSex?: Sex | null;
   existingScore?: {
     scoreValue: string;
     rxLevel: RxLevel;
+    notes?: string | null;
   } | null;
 }
 
@@ -30,13 +33,18 @@ export function WodScoreEntry({
   timeCap,
   rxWeights: _rxWeights,
   wodName,
+  wodSets,
   userSex,
   existingScore,
 }: WodScoreEntryProps) {
+  const completionMode = isCompletionMode(scoreType, wodSets);
+  const prescribedRounds = completionMode ? prescribedRoundsFromSets(wodSets) : undefined;
+
   const [logging, setLogging] = useState(false);
   const [logged, setLogged] = useState(!!existingScore);
   const [displayScore, setDisplayScore] = useState(existingScore?.scoreValue || "");
   const [displayRxLevel, setDisplayRxLevel] = useState<RxLevel>(existingScore?.rxLevel || "SCALED");
+  const [displayNotes, setDisplayNotes] = useState(existingScore?.notes || "");
   const [tierResult, setTierResult] = useState<WodTierResult | null>(() => {
     if (!existingScore || !wodName || !userSex) return null;
     const st = scoreType === "INTERVAL" ? "TIME" : scoreType;
@@ -49,13 +57,24 @@ export function WodScoreEntry({
   const [seconds, setSeconds] = useState("");
   const [rounds, setRounds] = useState("");
   const [reps, setReps] = useState("");
+  const [roundsCompleted, setRoundsCompleted] = useState(
+    prescribedRounds ? String(prescribedRounds) : ""
+  );
+  const [notes, setNotes] = useState("");
   const [rxLevel, setRxLevel] = useState<RxLevel>("RX");
   const [isPublic, setIsPublic] = useState(true);
 
   async function handleSubmit() {
     let scoreValue = "";
 
-    if (scoreType === "TIME" || scoreType === "INTERVAL") {
+    if (completionMode) {
+      const completed = parseInt(roundsCompleted, 10);
+      if (!Number.isFinite(completed) || completed < 0) {
+        toast.error("Enter rounds completed");
+        return;
+      }
+      scoreValue = prescribedRounds ? `${completed}/${prescribedRounds}` : String(completed);
+    } else if (scoreType === "TIME" || scoreType === "INTERVAL") {
       const m = parseInt(minutes) || 0;
       const s = parseInt(seconds) || 0;
       if (m === 0 && s === 0) { toast.error("Enter a time"); return; }
@@ -70,15 +89,26 @@ export function WodScoreEntry({
       if (!scoreValue || scoreValue === "0") { toast.error("Enter a value"); return; }
     }
 
+    const trimmedNotes = notes.trim();
+
     setLogging(true);
     try {
-      await logWodResult({ workoutId, sectionId, scoreType, scoreValue, rxLevel, public: isPublic });
+      await logWodResult({
+        workoutId,
+        sectionId,
+        scoreType,
+        scoreValue,
+        rxLevel,
+        public: isPublic,
+        notes: trimmedNotes.length > 0 ? trimmedNotes : undefined,
+      });
       toast.success("Score logged!");
       setLogged(true);
       setDisplayScore(scoreValue);
       setDisplayRxLevel(rxLevel);
+      setDisplayNotes(trimmedNotes);
 
-      if (wodName && userSex) {
+      if (wodName && userSex && !completionMode) {
         const st = scoreType === "INTERVAL" ? "TIME" : scoreType;
         if (st === "TIME" || st === "ROUNDS_REPS") {
           setTierResult(assessWodScore(wodName, scoreValue, st, userSex));
@@ -122,11 +152,14 @@ export function WodScoreEntry({
               setLogged(false);
               setDisplayScore("");
               setDisplayRxLevel("SCALED");
+              setDisplayNotes("");
               setTierResult(null);
               setMinutes("");
               setSeconds("");
               setRounds("");
               setReps("");
+              setRoundsCompleted(prescribedRounds ? String(prescribedRounds) : "");
+              setNotes("");
               setRxLevel("RX");
               setIsPublic(true);
               setExpanded(false);
@@ -136,6 +169,11 @@ export function WodScoreEntry({
             LOG AGAIN
           </button>
         </div>
+        {displayNotes && (
+          <p className="bg-primary/5 px-5 py-2 text-[11px] italic text-on-surface-variant">
+            “{displayNotes}”
+          </p>
+        )}
         {tierResult && (
           <div
             className="flex items-center gap-4 px-5 py-4"
@@ -194,7 +232,22 @@ export function WodScoreEntry({
         </button>
       </div>
 
-      {(scoreType === "TIME" || scoreType === "INTERVAL") && (
+      {completionMode ? (
+        <div className="flex items-center gap-2">
+          <input
+            type="number"
+            value={roundsCompleted}
+            onChange={(e) => setRoundsCompleted(e.target.value)}
+            placeholder="RNDS"
+            min="0"
+            max={prescribedRounds}
+            className="w-20 bg-surface-container px-3 py-2 text-center font-headline text-lg font-bold text-on-surface outline-none placeholder:text-outline"
+          />
+          <span className="text-[11px] font-bold uppercase tracking-widest text-outline">
+            {prescribedRounds ? `/ ${prescribedRounds} rounds completed` : "rounds completed"}
+          </span>
+        </div>
+      ) : (scoreType === "TIME" || scoreType === "INTERVAL") ? (
         <div className="flex items-center gap-2">
           <input
             type="number"
@@ -220,9 +273,7 @@ export function WodScoreEntry({
             </span>
           )}
         </div>
-      )}
-
-      {scoreType === "ROUNDS_REPS" && (
+      ) : scoreType === "ROUNDS_REPS" ? (
         <div className="flex items-center gap-2">
           <input
             type="number"
@@ -242,9 +293,7 @@ export function WodScoreEntry({
             className="w-16 bg-surface-container px-3 py-2 text-center font-headline text-lg font-bold text-on-surface outline-none placeholder:text-outline"
           />
         </div>
-      )}
-
-      {(scoreType === "LOAD" || scoreType === "CALS" || scoreType === "DISTANCE") && (
+      ) : (
         <input
           type="text"
           value={rounds}
@@ -255,6 +304,15 @@ export function WodScoreEntry({
       )}
 
       <RxLevelTabs value={rxLevel} onChange={setRxLevel} />
+
+      <textarea
+        value={notes}
+        onChange={(e) => setNotes(e.target.value)}
+        placeholder={notesPlaceholderFor(rxLevel, completionMode)}
+        maxLength={1000}
+        rows={2}
+        className="resize-none bg-surface-container px-3 py-2 text-sm text-on-surface outline-none placeholder:text-outline"
+      />
 
       <div className="flex items-center justify-between">
         <button
@@ -278,4 +336,16 @@ export function WodScoreEntry({
       </div>
     </div>
   );
+}
+
+function notesPlaceholderFor(rxLevel: RxLevel, completionMode: boolean): string {
+  if (rxLevel === "SCALED") {
+    return completionMode
+      ? "What did you scale? (e.g. 8 cal ski, step-ups instead of jumps)"
+      : "What did you scale? (e.g. banded pull-ups, lighter bar)";
+  }
+  if (rxLevel === "RX_PLUS") {
+    return "What did you add? (e.g. weight vest, 15 cal ski)";
+  }
+  return "Notes (optional)";
 }
