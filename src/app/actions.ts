@@ -2048,11 +2048,11 @@ export async function createPlan(
   };
 
   // NOTE: Neon's HTTP driver doesn't support db.transaction() at runtime
-  // (it throws "No transactions support in neon-http driver"). For v0 we
-  // accept the atomicity loss — a failed mid-write leaves a partial plan
-  // which the user can clear via regeneratePlan (Task 14). The unique
-  // partial index `custom_plans_one_active` still prevents the only true
-  // race (two active plans for same user).
+  // (it throws "No transactions support in neon-http driver"). We do sequential
+  // inserts and manually unwind if a post-plan insert fails — without that,
+  // the custom_plans_one_active partial unique index would block the user's
+  // retry after a mid-write failure (the orphan active plan owns the slot).
+  // Recovery on success failure: the user calls regeneratePlan (Task 14).
   const [plan] = await db.insert(customPlans).values({
     userId,
     name: "8-Week Skill Plan",
@@ -2066,43 +2066,52 @@ export async function createPlan(
     updatedAt: new Date(),
   }).returning();
 
-  for (const p of finalPlacements) {
-    const drill = allDrills.find((d) => d.id === p.drillId);
-    const course = selectedCourses.find((c) => c.id === drill?.courseId);
-    if (!drill || !course) continue;
-    const [workout] = await db.insert(workouts).values({
-      date: p.plannedDate,
-      classType: "CUSTOM",
-      title: `${course.name} — ${drill.title}`,
-    }).returning();
-    // One section holding the drill content
-    await db.insert(workoutSections).values({
-      workoutId: workout.id,
-      type: "SKILL",
-      sortOrder: 0,
-      exercises: [],
-      wodFormat: "EMOM", // sentinel — triggers isCompletionMode() in WodScoreEntry
-      wodScoreType: "INTERVAL", // ditto
-      wodName: drill.title,
-      wodDescription: drill.movementsSummary,
-      wodMovements: drill.sections.flatMap((s: SkillDrillSection) => s.items.map((it) => ({
-        name: it.movement, reps: String(it.reps ?? ""), weight: null, unit: null, note: it.notes ?? null,
-      }))),
-    });
-    await db.insert(customPlanSessions).values({
-      planId: plan.id,
-      workoutId: workout.id,
-      drillId: p.drillId,
-      originalDrillId: p.originalDrillId,
-      plannedDate: p.plannedDate,
-      plannedSlotMinutes: p.plannedSlotMinutes,
-      llmRationale: rationaleBySession.get(p.sessionIndex) ?? null,
-    });
-  }
+  try {
+    for (const p of finalPlacements) {
+      const drill = allDrills.find((d) => d.id === p.drillId);
+      const course = selectedCourses.find((c) => c.id === drill?.courseId);
+      if (!drill || !course) continue;
+      const [workout] = await db.insert(workouts).values({
+        date: p.plannedDate,
+        classType: "CUSTOM",
+        title: `${course.name} — ${drill.title}`,
+      }).returning();
+      // One section holding the drill content
+      await db.insert(workoutSections).values({
+        workoutId: workout.id,
+        type: "SKILL",
+        sortOrder: 0,
+        exercises: [],
+        wodFormat: "EMOM", // sentinel — triggers isCompletionMode() in WodScoreEntry
+        wodScoreType: "INTERVAL", // ditto
+        wodName: drill.title,
+        wodDescription: drill.movementsSummary,
+        wodMovements: drill.sections.flatMap((s: SkillDrillSection) => s.items.map((it) => ({
+          name: it.movement, reps: String(it.reps ?? ""), weight: null, unit: null, note: it.notes ?? null,
+        }))),
+      });
+      await db.insert(customPlanSessions).values({
+        planId: plan.id,
+        workoutId: workout.id,
+        drillId: p.drillId,
+        originalDrillId: p.originalDrillId,
+        plannedDate: p.plannedDate,
+        plannedSlotMinutes: p.plannedSlotMinutes,
+        llmRationale: rationaleBySession.get(p.sessionIndex) ?? null,
+      });
+    }
 
-  await db.insert(goalQuestionnaires).values({
-    userId, planId: plan.id, answers,
-  });
+    await db.insert(goalQuestionnaires).values({
+      userId, planId: plan.id, answers,
+    });
+  } catch (e) {
+    // Mid-write failure would leave an active customPlans row, which the
+    // custom_plans_one_active partial unique index would then block retries against.
+    // Roll back manually: delete the plan, which cascades to customPlanSessions.
+    // Orphan workouts/workoutSections rows leak but don't block anything.
+    await db.delete(customPlans).where(eq(customPlans.id, plan.id));
+    throw e;
+  }
 
   const planId = plan.id;
 
