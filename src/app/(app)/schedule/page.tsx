@@ -5,6 +5,7 @@ import { WeekNav } from "@/components/week-nav";
 import { DaySelector } from "@/components/day-selector";
 import { ClassTypeTabs } from "@/components/class-type-tabs";
 import { OnboardingTour } from "@/components/onboarding-tour";
+import { pickNextTour } from "@/lib/programming/tour";
 import { WorkoutCardSlider } from "@/components/workout-card-slider";
 import type { ClassType } from "@/db/schema";
 import Link from "next/link";
@@ -130,11 +131,12 @@ export default async function SchedulePage({ searchParams }: Props) {
     return "WOD";
   }
 
-  const showOnboarding = !profile?.onboardingComplete;
+  const seenModules = (profile?.seenTourModules as string[] | undefined) ?? [];
+  const nextTour = pickNextTour(seenModules, profile?.onboardingComplete ?? false);
 
   return (
     <div className="flex flex-col gap-8">
-      {showOnboarding && <OnboardingTour tourId="onboarding-v1" />}
+      {nextTour && <OnboardingTour tourId={nextTour} />}
 
       <section className="mb-2">
         <p className="mb-2 font-label text-xs uppercase tracking-[0.2em] text-primary">
