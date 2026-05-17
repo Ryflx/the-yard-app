@@ -80,6 +80,19 @@ function allMovementsIn(workout: ScrapedWorkout): string[] {
   return out;
 }
 
+// Some WODprep scrape items are community/coaching prompts ("share your video",
+// "name your post X") rather than real drill prescriptions. Those land in sections
+// named like "ACADEMY GROUP COACHING" and have no actual movements. Filter out any
+// workout whose sections are ALL stubs.
+function isStubSection(name: string): boolean {
+  const n = name.toUpperCase();
+  return n.includes("COACHING") || n.includes("ACADEMY") || n.includes("COMMUNITY");
+}
+
+function hasRealContent(workout: ScrapedWorkout): boolean {
+  return workout.sections.some((s) => !isStubSection(s.name));
+}
+
 async function main() {
   const courses = await loadCourses();
   console.log(`Loaded ${courses.length} courses from ${SKILL_LIBRARY_DIR}`);
@@ -88,6 +101,15 @@ async function main() {
     const curation = CURATION[c.course_slug];
     if (!curation) {
       console.warn(`  ⚠ skipping ${c.course_slug} — no curation entry`);
+      continue;
+    }
+
+    // Pre-filter: collect real (non-stub) workouts. Skip the whole course if zero.
+    const realWorkouts = c.weeks.flatMap((w) =>
+      w.workouts.filter(hasRealContent).map((wo) => ({ week: w.week, workout: wo }))
+    );
+    if (realWorkouts.length === 0) {
+      console.warn(`  ⚠ skipping ${c.course_slug} — all ${c.weeks.reduce((n, w) => n + w.workouts.length, 0)} workouts are stub content (no real drills)`);
       continue;
     }
 
@@ -121,36 +143,35 @@ async function main() {
       .returning();
 
     let drillCount = 0;
-    for (const week of c.weeks) {
-      let order = 0;
-      for (const workout of week.workouts) {
-        order += 1;
-        const movements = allMovementsIn(workout);
-        await db
-          .insert(skillDrills)
-          .values({
-            courseId: course.id,
-            week: week.week,
-            orderInWeek: order,
-            externalId: workout.id,
+    const orderByWeek = new Map<number, number>();
+    for (const { week, workout } of realWorkouts) {
+      const order = (orderByWeek.get(week) ?? 0) + 1;
+      orderByWeek.set(week, order);
+      const movements = allMovementsIn(workout);
+      await db
+        .insert(skillDrills)
+        .values({
+          courseId: course.id,
+          week,
+          orderInWeek: order,
+          externalId: workout.id,
+          title: workout.title,
+          sections: workout.sections as SkillDrillSection[],
+          movementsSummary: movementsSummaryFor(workout),
+          primaryMovementPatterns: classifyMovements(movements),
+        })
+        .onConflictDoUpdate({
+          target: [skillDrills.courseId, skillDrills.externalId],
+          set: {
             title: workout.title,
             sections: workout.sections as SkillDrillSection[],
             movementsSummary: movementsSummaryFor(workout),
             primaryMovementPatterns: classifyMovements(movements),
-          })
-          .onConflictDoUpdate({
-            target: [skillDrills.courseId, skillDrills.externalId],
-            set: {
-              title: workout.title,
-              sections: workout.sections as SkillDrillSection[],
-              movementsSummary: movementsSummaryFor(workout),
-              primaryMovementPatterns: classifyMovements(movements),
-              week: week.week,
-              orderInWeek: order,
-            },
+            week,
+            orderInWeek: order,
+          },
           });
-        drillCount += 1;
-      }
+      drillCount += 1;
     }
 
     console.log(`  ✓ ${c.course_slug} — ${drillCount} drills`);
