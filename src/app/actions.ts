@@ -24,7 +24,7 @@ import { placeDrills, RULES_VERSION, type SchedulerSkillCandidate, type Existing
 import { personalisePlan } from "@/lib/programming/personalise";
 import { getWeaknessSignalsForUser } from "@/lib/programming/weakness";
 import type { ValidationEnv } from "@/lib/programming/validator";
-import { eq, and, gte, lte, lt, desc, isNotNull, isNull, or, count, sql, asc, inArray } from "drizzle-orm";
+import { eq, and, gte, lte, lt, desc, isNotNull, isNull, or, count, sql, asc, inArray, ne } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { normalizeLiftName, estimateOneRepMax } from "@/lib/percentage";
 import { ALL_CATALOG_LIFTS } from "@/lib/lift-catalog";
@@ -1980,6 +1980,8 @@ export async function createPlan(
     startsOn, weeks: PLAN_LENGTH_WEEKS, slots, candidates, existingWorkouts,
   });
   if (placements.length === 0) throw new Error("No sessions could be placed — add more slots or trim skills");
+  // TODO(v0.1): surface unplaceable count to the wizard step 5 ("we couldn't fit X of Y sessions").
+  // Currently silently swallowed — see _unplaceable destructure above.
 
   // Build validator env for pass 2
   const allowedDrillsBySkill = new Map<number, number[]>();
@@ -2201,6 +2203,22 @@ export async function regeneratePlan(planId: number): Promise<{ planId: number }
   };
 
   await db.update(customPlans).set({ status: "completed", updatedAt: new Date() }).where(eq(customPlans.id, planId));
+
+  // Clean up the old plan's future, non-completed workouts so they don't
+  // overlap with the new plan on the calendar.
+  const oldSessions = await db
+    .select({ workoutId: customPlanSessions.workoutId })
+    .from(customPlanSessions)
+    .where(and(
+      eq(customPlanSessions.planId, planId),
+      gte(customPlanSessions.plannedDate, todayISO()),
+      ne(customPlanSessions.status, "completed")
+    ));
+  const oldWorkoutIds = oldSessions.map((s) => s.workoutId).filter((x): x is number => x != null);
+  if (oldWorkoutIds.length) {
+    await db.delete(workouts).where(inArray(workouts.id, oldWorkoutIds));
+  }
+
   revalidatePath("/programming");
   return createPlan(answers, old.weeklyDrillSlots, old.selectedSkillIds);
 }
@@ -2212,7 +2230,21 @@ export async function pausePlan(planId: number): Promise<void> {
     .update(customPlans)
     .set({ status: "paused", updatedAt: new Date() })
     .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
+
+  // Remove future, non-completed workouts so they don't appear scheduled while paused
+  const sessions = await db
+    .select({ workoutId: customPlanSessions.workoutId })
+    .from(customPlanSessions)
+    .where(and(
+      eq(customPlanSessions.planId, planId),
+      gte(customPlanSessions.plannedDate, todayISO()),
+      ne(customPlanSessions.status, "completed")
+    ));
+  const wids = sessions.map((s) => s.workoutId).filter((x): x is number => x != null);
+  if (wids.length) await db.delete(workouts).where(inArray(workouts.id, wids));
+
   revalidatePath("/programming");
+  revalidatePath("/schedule");
 }
 
 export async function markPlanCompleted(planId: number): Promise<void> {

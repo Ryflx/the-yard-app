@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { format, addDays, startOfWeek, isToday, parseISO, isSunday } from "date-fns";
-import { getWorkoutsForWeek, getPersonalSummaryForWorkouts, getUserProfile, getStreakData } from "@/app/actions";
+import { getWorkoutsForWeek, getPersonalSummaryForWorkouts, getUserProfile, getStreakData, getActivePlan } from "@/app/actions";
 import { WeekNav } from "@/components/week-nav";
 import { DaySelector } from "@/components/day-selector";
 import { ClassTypeTabs } from "@/components/class-type-tabs";
@@ -33,6 +33,7 @@ export default async function SchedulePage({ searchParams }: Props) {
 
   const workouts = await getWorkoutsForWeek(startStr, endStr, classType);
   const isBarbell = classType === "BARBELL";
+  const activePlan = classType === "CUSTOM" ? await getActivePlan() : null;
 
   const workoutLifts = isBarbell
     ? workouts.map((w) => {
@@ -239,6 +240,26 @@ export default async function SchedulePage({ searchParams }: Props) {
         {weekDays.map((day) => {
           const workout = workouts.find((w) => w.date === day.date);
           if (!workout) {
+            if (classType === "CUSTOM" && !activePlan) {
+              return (
+                <div key={day.date} className="px-4 py-10 text-center">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-on-surface-variant">CUSTOM PROGRAMMING</p>
+                  <h2 className="mt-2 font-headline text-xl font-black uppercase tracking-tight">
+                    BUILD YOUR SKILL PLAN
+                  </h2>
+                  <p className="mt-3 text-sm text-on-surface-variant">
+                    Pick the skills you want to work on — we&apos;ll weave them into your week.
+                  </p>
+                  <Link
+                    href="/programming/new"
+                    data-tour="programming-cta"
+                    className="mt-6 inline-block bg-primary-container px-6 py-3.5 font-headline text-sm font-black uppercase tracking-widest text-on-primary-fixed"
+                  >
+                    START YOUR FIRST PLAN
+                  </Link>
+                </div>
+              );
+            }
             return (
               <div key={day.date} className="bg-surface-container-high p-12 text-center">
                 <p className="font-headline text-xl font-bold uppercase tracking-tight text-on-surface-variant">

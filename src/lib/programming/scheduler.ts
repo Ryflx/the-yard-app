@@ -114,6 +114,9 @@ function roundRobin(candidates: SchedulerSkillCandidate[]): Array<{ skillId: num
 }
 
 export function placeDrills(input: SchedulerInput): SchedulerOutput {
+  // TODO(v0.1): drillsPerWeek carried on SchedulerSkillCandidate but currently
+  // ignored — all drills go into a flat round-robin queue. Pacing across the
+  // 8-week window is undefined for courses with more drills than weeks*pace.
   const calendar = buildSlotCalendar(input.slots, input.startsOn, input.weeks);
   const queue = roundRobin(input.candidates);
   const placements: DraftSession[] = [];
