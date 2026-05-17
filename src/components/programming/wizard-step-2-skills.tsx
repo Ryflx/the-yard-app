@@ -51,6 +51,12 @@ export function SkillsStep({ state, courses, signals, onChange, onBack, onNext }
         </div>
       )}
 
+      {state.selectedSkillIds.length >= 4 && (
+        <p className="text-xs text-primary-container">
+          Heads up — more skills means thinner placement. We recommend 2–3 for 8 weeks.
+        </p>
+      )}
+
       {Array.from(grouped.entries()).map(([category, list]) => (
         <div key={category}>
           <h3 className="font-headline text-xs font-black uppercase tracking-widest text-on-surface-variant">
@@ -63,7 +69,13 @@ export function SkillsStep({ state, courses, signals, onChange, onBack, onNext }
               return (
                 <li key={c.id}>
                   <label className="flex cursor-pointer items-start gap-3 border-b border-outline-variant py-2">
-                    <input type="checkbox" checked={checked} onChange={() => toggle(c.id)} className="mt-1" />
+                    <input
+                      type="checkbox"
+                      checked={checked}
+                      disabled={!checked && state.selectedSkillIds.length >= 5}
+                      onChange={() => toggle(c.id)}
+                      className="mt-1"
+                    />
                     <div className="flex-1">
                       <p className="text-sm">{c.name}</p>
                       <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">
