@@ -50,7 +50,11 @@ export function WorkoutCardSlider({
     const pane = container.children[idx] as HTMLElement | undefined;
     if (!pane) return;
 
-    const target = pane.offsetLeft;
+    // offsetLeft is relative to the nearest *positioned* ancestor, which isn't
+    // necessarily the scroll container. Use bounding rects instead — they give
+    // us a viewport-relative position that's safe to convert into a scroll target.
+    const target =
+      container.scrollLeft + pane.getBoundingClientRect().left - container.getBoundingClientRect().left;
     if (Math.abs(container.scrollLeft - target) < 4) return; // already there
 
     programmaticScrollUntil.current = Date.now() + 600;
