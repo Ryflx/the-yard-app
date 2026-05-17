@@ -121,8 +121,6 @@ export function placeDrills(input: SchedulerInput): SchedulerOutput {
   const queue = roundRobin(input.candidates);
   const placements: DraftSession[] = [];
   const unplaceable: SchedulerOutput["unplaceable"] = [];
-  // Track drills placed so far in this run for self-adjacency checks
-  const placedSoFar: ExistingWorkout[] = [];
   let sessionIndex = 0;
 
   for (const item of queue) {
@@ -139,8 +137,11 @@ export function placeDrills(input: SchedulerInput): SchedulerOutput {
         item.drill.primaryMovementPatterns.some((p) => w.primaryPatterns.includes(p))
       );
       if (sameDayPatternClash) continue;
-      // Drills placed so far in this run: also enforce 24h adjacency
-      if (conflictsWithExisting(slot.date, item.drill.primaryMovementPatterns, placedSoFar)) continue;
+      // NOTE: we deliberately do NOT enforce 24h adjacency between drills placed
+      // in this run. The user explicitly picked these slots (e.g. SAT+SUN), so
+      // packing same-skill drills onto consecutive days is opted-in behavior,
+      // not a surprise. Recovery adjacency is only enforced against pre-existing
+      // class workouts (above) — they weren't chosen with skill cadence in mind.
       const session: DraftSession = {
         sessionIndex: sessionIndex++,
         drillId: item.drill.id,
@@ -152,7 +153,6 @@ export function placeDrills(input: SchedulerInput): SchedulerOutput {
         primaryMovementPatterns: item.drill.primaryMovementPatterns,
       };
       placements.push(session);
-      placedSoFar.push({ date: slot.date, primaryPatterns: item.drill.primaryMovementPatterns });
       slot.consumed = true;
       placed = true;
       break;

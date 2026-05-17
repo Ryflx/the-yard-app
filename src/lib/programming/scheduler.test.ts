@@ -98,4 +98,37 @@ describe("placeDrills", () => {
     const { placements } = placeDrills(input);
     expect(placements[0].plannedDate).toBe("2026-05-20");
   });
+
+  it("fills user-picked adjacent slots even when drills share movement patterns", () => {
+    // Repro for the wife's bug: picked SAT+SUN with one skill (kipping pull-ups).
+    // Old behavior dropped every Sunday slot due to a self-adjacency check against
+    // the previous Saturday's pull drill. User explicitly opted into this cadence
+    // by picking SAT+SUN, so all slots should fill.
+    const input: SchedulerInput = {
+      startsOn: "2026-05-18", // Mon
+      weeks: 2,
+      slots: [baseSlot("SAT"), baseSlot("SUN")],
+      candidates: [
+        {
+          skillId: 10,
+          drillsPerWeek: 2,
+          drills: [
+            drill(1, 10, 1, 1, 25, ["pull"]),
+            drill(2, 10, 1, 2, 25, ["pull"]),
+            drill(3, 10, 2, 1, 25, ["pull"]),
+            drill(4, 10, 2, 2, 25, ["pull"]),
+          ],
+        },
+      ],
+      existingWorkouts: [],
+    };
+    const { placements, unplaceable } = placeDrills(input);
+    expect(unplaceable).toHaveLength(0);
+    expect(placements.map((p) => p.plannedDate)).toEqual([
+      "2026-05-23", // SAT week 1
+      "2026-05-24", // SUN week 1
+      "2026-05-30", // SAT week 2
+      "2026-05-31", // SUN week 2
+    ]);
+  });
 });

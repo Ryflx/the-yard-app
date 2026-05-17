@@ -32,7 +32,7 @@ export default async function SchedulePage({ searchParams }: Props) {
       ? addDays(startOfWeek(now, { weekStartsOn: 1 }), 7)
       : startOfWeek(now, { weekStartsOn: 1 });
 
-  const weekEnd = addDays(weekStart, 5);
+  const weekEnd = addDays(weekStart, 6);
   const startStr = format(weekStart, "yyyy-MM-dd");
   const endStr = format(weekEnd, "yyyy-MM-dd");
 
@@ -65,7 +65,7 @@ export default async function SchedulePage({ searchParams }: Props) {
 
   const weekParam = params.week || null;
 
-  const weekDays = Array.from({ length: 6 }, (_, i) => {
+  const weekDays = Array.from({ length: 7 }, (_, i) => {
     const date = addDays(weekStart, i);
     return {
       date: format(date, "yyyy-MM-dd"),
