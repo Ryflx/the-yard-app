@@ -127,6 +127,7 @@ export default async function SchedulePage({ searchParams }: Props) {
   }
 
   function getWorkoutBadge(workout: (typeof workouts)[number]) {
+    if (workout.classType === "CUSTOM") return "DRILL";
     if (isBarbell) return "WOD";
     const wod = workout.sections.find((s) => s.type === "WOD");
     if (wod?.wodScoreType === "TIME") return "FOR TIME";

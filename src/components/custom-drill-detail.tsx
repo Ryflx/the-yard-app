@@ -85,7 +85,7 @@ export function CustomDrillDetail({ workout, sections, session, drill, course, u
           rel="noreferrer"
           className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hover:text-on-surface"
         >
-          Open on WODprep →
+          Open source →
         </a>
       </div>
     </div>
