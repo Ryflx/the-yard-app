@@ -2254,6 +2254,8 @@ export async function markTourSeen(tourId: "onboarding-v1" | "custom-programming
   revalidatePath("/schedule");
 }
 
+// Scoped to the user's own plans (prevents reading other users' plan-session metadata
+// by iterating workout IDs). Matches the pattern in swapDrillSession.
 export async function getPlanSessionByWorkoutId(workoutId: number) {
   const { userId } = await auth();
   if (!userId) return null;
@@ -2267,7 +2269,9 @@ export async function getPlanSessionByWorkoutId(workoutId: number) {
     .from(customPlanSessions)
     .innerJoin(skillDrills, eq(customPlanSessions.drillId, skillDrills.id))
     .innerJoin(skillCourses, eq(skillDrills.courseId, skillCourses.id))
-    .where(eq(customPlanSessions.workoutId, workoutId))
+    .innerJoin(customPlans, eq(customPlanSessions.planId, customPlans.id))
+    .where(and(eq(customPlanSessions.workoutId, workoutId), eq(customPlans.userId, userId)))
+    // Invariant: createPlan inserts exactly one customPlanSessions row per CUSTOM workout it creates.
     .limit(1);
 
   return rows[0] ?? null;
