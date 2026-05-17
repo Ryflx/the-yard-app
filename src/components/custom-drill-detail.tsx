@@ -1,5 +1,6 @@
-import type { workouts, workoutSections, customPlanSessions, skillDrills, skillCourses } from "@/db/schema";
+import type { workouts, workoutSections, customPlanSessions, skillDrills, skillCourses, wodResults } from "@/db/schema";
 import type { WodScoreType } from "@/db/schema";
+import type { Sex } from "@/lib/strength-standards";
 import { WodScoreEntry } from "@/components/wod-score-entry";
 import { SwapDrillSheet } from "@/components/programming/swap-drill-sheet";
 import Link from "next/link";
@@ -9,6 +10,7 @@ type Section = typeof workoutSections.$inferSelect;
 type Session = typeof customPlanSessions.$inferSelect;
 type Drill = typeof skillDrills.$inferSelect;
 type Course = typeof skillCourses.$inferSelect;
+type WodResult = typeof wodResults.$inferSelect;
 
 interface Props {
   workout: Workout;
@@ -16,9 +18,11 @@ interface Props {
   session: Session;
   drill: Drill;
   course: Course;
+  userSex?: Sex;
+  existingScoreBySectionId?: Map<number, WodResult>;
 }
 
-export function CustomDrillDetail({ workout, sections, session, drill, course }: Props) {
+export function CustomDrillDetail({ workout, sections, session, drill, course, userSex, existingScoreBySectionId }: Props) {
   return (
     <div className="space-y-6">
       <div>
@@ -32,8 +36,8 @@ export function CustomDrillDetail({ workout, sections, session, drill, course }:
       </div>
 
       {session.llmRationale && (
-        <div className="border-l-2 border-[#cafd00] bg-surface-container px-4 py-3">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-[#cafd00]">Why this session</p>
+        <div className="border-l-2 border-primary-container bg-surface-container px-4 py-3">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-primary-container">Why this session</p>
           <p className="mt-1 text-sm text-on-surface-variant">{session.llmRationale}</p>
         </div>
       )}
@@ -68,6 +72,8 @@ export function CustomDrillDetail({ workout, sections, session, drill, course }:
             rxWeights={s.rxWeights}
             wodName={s.wodName}
             wodSets={s.sets}
+            userSex={userSex}
+            existingScore={existingScoreBySectionId?.get(s.id)}
           />
         ))}
 

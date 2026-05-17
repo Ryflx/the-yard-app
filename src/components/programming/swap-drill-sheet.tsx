@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 import { swapDrillSession } from "@/app/actions";
 import { useRouter } from "next/navigation";
 
@@ -13,6 +13,15 @@ export function SwapDrillSheet({ sessionId }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
   const router = useRouter();
+
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape" && !pending) setOpen(false);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, pending]);
 
   function handleSwap() {
     setError(null);
@@ -36,8 +45,14 @@ export function SwapDrillSheet({ sessionId }: Props) {
         Swap this session
       </button>
       {open && (
-        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 p-4">
-          <div className="w-full max-w-md bg-surface-container p-6">
+        <div
+          className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 p-4"
+          onClick={() => !pending && setOpen(false)}
+        >
+          <div
+            className="w-full max-w-md bg-surface-container p-6"
+            onClick={(e) => e.stopPropagation()}
+          >
             <h3 className="font-headline text-sm font-black uppercase tracking-widest">Swap drill</h3>
             <p className="mt-2 text-sm text-on-surface-variant">
               We&apos;ll replace this session with the next available drill from the same course.
@@ -54,7 +69,7 @@ export function SwapDrillSheet({ sessionId }: Props) {
               <button
                 onClick={handleSwap}
                 disabled={pending}
-                className="flex-1 bg-[#cafd00] py-3 font-headline text-xs font-black uppercase tracking-widest text-black disabled:opacity-50"
+                className="flex-1 bg-primary-container py-3 font-headline text-xs font-black uppercase tracking-widest text-on-primary-fixed disabled:opacity-50"
               >
                 {pending ? "Swapping…" : "Swap"}
               </button>
