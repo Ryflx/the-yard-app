@@ -9,14 +9,15 @@ interface Props {
 }
 
 function Slider({
-  label, value, onChange,
-}: { label: string; value: number; onChange: (n: number) => void }) {
+  label, hint, value, onChange,
+}: { label: string; hint: string; value: number; onChange: (n: number) => void }) {
   return (
     <div>
       <div className="flex items-baseline justify-between">
         <label className="text-sm">{label}</label>
         <span className="font-headline text-sm font-black text-primary-container">{value}/5</span>
       </div>
+      <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">{hint}</p>
       <input
         type="range"
         min={1}
@@ -35,12 +36,16 @@ export function StartingPointStep({ state, onChange, onNext }: Props) {
       <div>
         <h2 className="font-headline text-2xl font-black uppercase tracking-tight">WHERE ARE YOU AT?</h2>
         <p className="mt-2 text-sm text-on-surface-variant">
-          Rate yourself honestly — we&apos;ll use this to pace the plan.
+          A quick check on your training volume and current skills. We use this
+          to pre-tick the most useful skills on the next step.
         </p>
       </div>
 
       <div>
         <label className="text-sm">WODs per week</label>
+        <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">
+          Roughly how many CrossFit / Barbell sessions you do
+        </p>
         <input
           type="number"
           min={1}
@@ -51,12 +56,28 @@ export function StartingPointStep({ state, onChange, onNext }: Props) {
         />
       </div>
 
-      <Slider label="Rope work" value={state.ropeConfidence} onChange={(v) => onChange("ropeConfidence", v)} />
-      <Slider label="Handstands" value={state.handstandConfidence} onChange={(v) => onChange("handstandConfidence", v)} />
-      <Slider label="Pull gymnastics" value={state.pullGymConfidence} onChange={(v) => onChange("pullGymConfidence", v)} />
+      <Slider
+        label="Rope work"
+        hint="Double-unders, rope climbs"
+        value={state.ropeConfidence}
+        onChange={(v) => onChange("ropeConfidence", v)}
+      />
+      <Slider
+        label="Handstands"
+        hint="HSPU, handstand walks, kick-ups"
+        value={state.handstandConfidence}
+        onChange={(v) => onChange("handstandConfidence", v)}
+      />
+      <Slider
+        label="Pull gymnastics"
+        hint="Pull-ups, T2B, muscle-ups"
+        value={state.pullGymConfidence}
+        onChange={(v) => onChange("pullGymConfidence", v)}
+      />
 
       <button
         onClick={onNext}
+        type="button"
         className="w-full bg-primary-container py-3.5 font-headline text-sm font-black uppercase tracking-widest text-on-primary-fixed"
       >
         NEXT

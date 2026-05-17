@@ -1922,7 +1922,7 @@ export async function createPlan(
   answers: CreatePlanAnswers,
   slots: WeeklyDrillSlot[],
   skillIds: number[]
-): Promise<{ planId: number }> {
+): Promise<{ planId: number; sessionCount: number; unplaceableCount: number }> {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
   if (skillIds.length === 0) throw new Error("Pick at least one skill");
@@ -1976,12 +1976,12 @@ export async function createPlan(
   }));
 
   // Pass 1: rules scheduler
-  const { placements, unplaceable: _unplaceable } = placeDrills({
+  const { placements, unplaceable } = placeDrills({
     startsOn, weeks: PLAN_LENGTH_WEEKS, slots, candidates, existingWorkouts,
   });
   if (placements.length === 0) throw new Error("No sessions could be placed — add more slots or trim skills");
-  // TODO(v0.1): surface unplaceable count to the wizard step 5 ("we couldn't fit X of Y sessions").
-  // Currently silently swallowed — see _unplaceable destructure above.
+  // unplaceableCount is returned to the success screen so the user knows if some
+  // drills couldn't fit and might want to add more slots.
 
   // Build validator env for pass 2
   const allowedDrillsBySkill = new Map<number, number[]>();
@@ -2099,7 +2099,7 @@ export async function createPlan(
 
   revalidatePath("/schedule");
   revalidatePath("/programming");
-  return { planId };
+  return { planId, sessionCount: finalPlacements.length, unplaceableCount: unplaceable.length };
 }
 
 // ── Plan management ──
