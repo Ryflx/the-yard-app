@@ -11,7 +11,10 @@ import {
   getUserProfile,
   getLoggedSetsForDate,
   getExerciseSubstitutionsForDate,
+  getPlanSessionByWorkoutId,
+  getWodResultsBySectionIds,
 } from "@/app/actions";
+import { CustomDrillDetail } from "@/components/custom-drill-detail";
 import { SectionDisplay } from "@/components/section-display";
 import { Barbell1RMSection } from "@/components/barbell-1rm-section";
 import { EstimatedOneRMBanner } from "@/components/estimated-1rm-banner";
@@ -45,10 +48,11 @@ export default async function WorkoutDetailPage({ params, searchParams }: Props)
   if (weekParam) backParams.set("week", weekParam);
   const backHref = `/schedule?${backParams.toString()}`;
 
-  const isBarbell = classType === "BARBELL";
-
-  if (isBarbell) {
+  if (classType === "BARBELL") {
     return <BarbellDetail workout={workout} date={date} classType={classType} backHref={backHref} />;
+  }
+  if (classType === "CUSTOM") {
+    return <CustomDetail workout={workout} date={date} classType={classType} backHref={backHref} />;
   }
   return <CrossFitDetail workout={workout} date={date} classType={classType} backHref={backHref} />;
 }
@@ -390,6 +394,66 @@ async function CrossFitDetail({
           );
         })}
       </div>
+    </div>
+  );
+}
+
+async function CustomDetail({
+  workout,
+  date: _date,
+  classType: _classType,
+  backHref,
+}: {
+  workout: Awaited<ReturnType<typeof getWorkoutByDate>> & {};
+  date: string;
+  classType: ClassType;
+  backHref: string;
+}) {
+  const [planSession, profile, wodResultRows] = await Promise.all([
+    getPlanSessionByWorkoutId(workout.id),
+    getUserProfile(),
+    getWodResultsBySectionIds(
+      workout.sections.filter((s) => s.wodScoreType != null).map((s) => s.id)
+    ),
+  ]);
+
+  if (!planSession) {
+    // Shouldn't happen for a well-formed CUSTOM workout, but handle gracefully.
+    return (
+      <div className="flex flex-col gap-8">
+        <Link
+          href={backHref}
+          className="flex items-center gap-1 font-label text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant hover:text-white"
+        >
+          <span className="material-symbols-outlined text-sm">arrow_back</span>
+          SCHEDULE
+        </Link>
+        <p className="text-sm text-on-surface-variant">No drill session found for this workout.</p>
+      </div>
+    );
+  }
+
+  const existingScoreBySectionId = new Map(wodResultRows.map((r) => [r.sectionId, r]));
+
+  return (
+    <div className="flex flex-col gap-8">
+      <Link
+        href={backHref}
+        className="flex items-center gap-1 font-label text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant hover:text-white"
+      >
+        <span className="material-symbols-outlined text-sm">arrow_back</span>
+        SCHEDULE
+      </Link>
+
+      <CustomDrillDetail
+        workout={workout}
+        sections={workout.sections}
+        session={planSession.session}
+        drill={planSession.drill}
+        course={planSession.course}
+        userSex={profile?.sex ?? undefined}
+        existingScoreBySectionId={existingScoreBySectionId}
+      />
     </div>
   );
 }

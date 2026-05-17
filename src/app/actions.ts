@@ -2254,6 +2254,50 @@ export async function markTourSeen(tourId: "onboarding-v1" | "custom-programming
   revalidatePath("/schedule");
 }
 
+export async function getPlanSessionByWorkoutId(workoutId: number) {
+  const { userId } = await auth();
+  if (!userId) return null;
+
+  const rows = await db
+    .select({
+      session: customPlanSessions,
+      drill: skillDrills,
+      course: skillCourses,
+    })
+    .from(customPlanSessions)
+    .innerJoin(skillDrills, eq(customPlanSessions.drillId, skillDrills.id))
+    .innerJoin(skillCourses, eq(skillDrills.courseId, skillCourses.id))
+    .where(eq(customPlanSessions.workoutId, workoutId))
+    .limit(1);
+
+  return rows[0] ?? null;
+}
+
+export async function getWodResultsBySectionIds(sectionIds: number[]) {
+  type WodRow = typeof wodResults.$inferSelect;
+
+  const { userId } = await auth();
+  if (!userId) return [] as WodRow[];
+
+  if (sectionIds.length === 0) return [] as WodRow[];
+
+  const rows = await db
+    .select()
+    .from(wodResults)
+    .where(and(eq(wodResults.userId, userId), inArray(wodResults.sectionId, sectionIds)))
+    .orderBy(desc(wodResults.createdAt));
+
+  // For each sectionId, keep only the most-recent result (rows are already newest-first).
+  const seen = new Set<number>();
+  const deduped = rows.filter((r) => {
+    if (seen.has(r.sectionId)) return false;
+    seen.add(r.sectionId);
+    return true;
+  });
+
+  return deduped;
+}
+
 // Helpers
 
 function todayISO(): string {
