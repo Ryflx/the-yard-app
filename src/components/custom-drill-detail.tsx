@@ -57,13 +57,6 @@ export function CustomDrillDetail({
         <h2 className="mt-1 font-headline text-2xl font-black uppercase tracking-tight">{formatDrillTitle(drill.title)}</h2>
       </div>
 
-      {session.llmRationale && (
-        <div className="border-l-2 border-primary-container bg-surface-container px-4 py-3">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-primary-container">Why this session</p>
-          <p className="mt-1 text-sm text-on-surface-variant">{session.llmRationale}</p>
-        </div>
-      )}
-
       {drill.sections.map((s, i) => (
         <div key={i}>
           <h3 className="font-headline text-xs font-black uppercase tracking-widest text-on-surface-variant">

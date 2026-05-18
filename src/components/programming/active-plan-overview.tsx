@@ -43,8 +43,6 @@ export function ActivePlanOverview({ plan, sessions }: Props) {
     });
   }
 
-  const fallbackBanner = (plan.generationMeta as { llmFallbackUsed?: boolean })?.llmFallbackUsed;
-
   return (
     <div className="space-y-6 px-4 py-6">
       <div>
@@ -56,12 +54,6 @@ export function ActivePlanOverview({ plan, sessions }: Props) {
           {plan.startsOn} → {plan.endsOn} · {plan.status.toUpperCase()}
         </p>
       </div>
-
-      {fallbackBanner && (
-        <div className="border border-yellow-500/40 bg-yellow-500/10 px-3 py-2 text-xs text-yellow-200">
-          AI personalisation wasn&apos;t available when this plan was generated — you can regenerate to retry.
-        </div>
-      )}
 
       <section>
         <h2 className="font-headline text-xs font-black uppercase tracking-widest text-on-surface-variant">

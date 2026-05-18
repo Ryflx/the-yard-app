@@ -21,9 +21,7 @@ import {
 import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, WodScoreType, WodFormat, WodMovement, WeeklyDrillSlot, GenerationMeta, SkillDrillSection } from "@/db/schema";
 import { classifyMovements } from "@/lib/programming/movement-patterns";
 import { placeDrills, RULES_VERSION, type SchedulerSkillCandidate, type ExistingWorkout } from "@/lib/programming/scheduler";
-import { personalisePlan } from "@/lib/programming/personalise";
 import { getWeaknessSignalsForUser } from "@/lib/programming/weakness";
-import type { ValidationEnv } from "@/lib/programming/validator";
 import { eq, and, gte, lte, lt, desc, isNotNull, isNull, or, count, sql, asc, inArray, ne } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
 import { normalizeLiftName, estimateOneRepMax } from "@/lib/percentage";
@@ -1975,58 +1973,21 @@ export async function createPlan(
     primaryPatterns: classifyMovements(r.patterns ?? []),
   }));
 
-  // Pass 1: rules scheduler
+  // Rules scheduler — deterministic, no LLM. unplaceableCount is returned to
+  // the success screen so the user knows if some drills couldn't fit.
   const { placements, unplaceable } = placeDrills({
     startsOn, weeks: PLAN_LENGTH_WEEKS, slots, candidates, existingWorkouts,
   });
   if (placements.length === 0) throw new Error("No sessions could be placed — add more slots or trim skills");
-  // unplaceableCount is returned to the success screen so the user knows if some
-  // drills couldn't fit and might want to add more slots.
 
-  // Build validator env for pass 2
-  const allowedDrillsBySkill = new Map<number, number[]>();
-  const drillMinutes = new Map<number, number>();
-  const drillSkill = new Map<number, number>();
-  for (const c of selectedCourses) {
-    const drillIds = allDrills.filter((d) => d.courseId === c.id).map((d) => d.id);
-    allowedDrillsBySkill.set(c.id, drillIds);
-    for (const did of drillIds) {
-      drillMinutes.set(did, c.estimatedSessionMinutes);
-      drillSkill.set(did, c.id);
-    }
-  }
-  const env: ValidationEnv = { allowedDrillsBySkill, drillMinutes, drillSkill };
-
-  // Activity digest (compact, no PII)
-  const last14 = addDaysISO(todayISO(), -14);
-  const digestRows = await db
-    .select({
-      classType: workouts.classType,
-      cnt: sql<number>`count(*)`,
-    })
-    .from(workouts)
-    .where(and(gte(workouts.date, last14), lte(workouts.date, todayISO())))
-    .groupBy(workouts.classType);
-  const activityDigest = digestRows.map((r) => `${r.classType}: ${r.cnt}`).join(", ") || "(no logged activity)";
-
-  // Pass 2: LLM personalisation
   const goalSummary = buildGoalSummary(answers, selectedCourses.map((c) => c.name));
-  const weaknessSignals = await getWeaknessSignalsForUser(userId);
-  const { personalisation, llmFallbackUsed, modelUsed } = await personalisePlan({
-    goalSummary, weaknessSignals, draft: placements, activityDigest, env,
-  });
 
-  // Apply swaps to the placements
-  const finalPlacements = placements.map((p) => {
-    const swap = personalisation.swaps.find((s) => s.sessionIndex === p.sessionIndex);
-    if (swap) return { ...p, drillId: swap.newDrillId, originalDrillId: p.drillId };
-    return { ...p, originalDrillId: null as number | null };
-  });
-  const rationaleBySession = new Map(personalisation.sessionRationales.map((r) => [r.sessionIndex, r.rationale]));
+  const finalPlacements = placements.map((p) => ({ ...p, originalDrillId: null as number | null }));
 
   // Persist
   const generationMeta: GenerationMeta = {
-    rulesVersion: RULES_VERSION, llmModel: modelUsed, generatedAt: new Date().toISOString(), llmFallbackUsed,
+    rulesVersion: RULES_VERSION,
+    generatedAt: new Date().toISOString(),
   };
 
   // NOTE: Neon's HTTP driver doesn't support db.transaction() at runtime
@@ -2079,7 +2040,7 @@ export async function createPlan(
         originalDrillId: p.originalDrillId,
         plannedDate: p.plannedDate,
         plannedSlotMinutes: p.plannedSlotMinutes,
-        llmRationale: rationaleBySession.get(p.sessionIndex) ?? null,
+        llmRationale: null,
       });
     }
 

@@ -280,9 +280,7 @@ export interface WeeklyDrillSlot {
 
 export interface GenerationMeta {
   rulesVersion: string;
-  llmModel: string | null;
   generatedAt: string; // ISO
-  llmFallbackUsed: boolean;
 }
 
 export const customPlans = pgTable(

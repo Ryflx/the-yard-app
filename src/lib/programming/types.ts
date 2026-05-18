@@ -19,10 +19,4 @@ export interface DraftSession {
   primaryMovementPatterns: MovementPattern[];
 }
 
-export interface LLMPersonalisation {
-  intro: string;
-  sessionRationales: Array<{ sessionIndex: number; rationale: string }>;
-  swaps: Array<{ sessionIndex: number; newDrillId: number; reason: string }>;
-}
-
 export type { WeeklyDrillSlot };
