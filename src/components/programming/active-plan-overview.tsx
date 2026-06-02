@@ -1,8 +1,8 @@
 "use client";
 
-import { useTransition } from "react";
+import { useState, useTransition } from "react";
 import Link from "next/link";
-import { regeneratePlan, pausePlan, markPlanCompleted } from "@/app/actions";
+import { regeneratePlan, pausePlan, endPlan } from "@/app/actions";
 import { useRouter } from "next/navigation";
 import type { customPlans, customPlanSessions, skillDrills, skillCourses, workouts } from "@/db/schema";
 
@@ -19,13 +19,68 @@ interface Props {
   sessions: SessionRow[];
 }
 
+type SessionStatus = "pending" | "completed" | "skipped" | "swapped";
+
+const STATUS_STYLES: Record<SessionStatus, string> = {
+  completed: "text-primary-container",
+  pending: "text-on-surface-variant",
+  skipped: "text-on-surface-variant opacity-40",
+  swapped: "text-on-surface-variant",
+};
+
+const STATUS_LABELS: Record<SessionStatus, string> = {
+  completed: "DONE",
+  pending: "UPCOMING",
+  skipped: "SKIPPED",
+  swapped: "SWAPPED",
+};
+
+function isoWeekLabel(dateStr: string): string {
+  const d = new Date(dateStr + "T00:00:00");
+  // Get Monday of that week
+  const day = d.getDay(); // 0=Sun
+  const diff = day === 0 ? -6 : 1 - day;
+  const mon = new Date(d);
+  mon.setDate(d.getDate() + diff);
+  const sun = new Date(mon);
+  sun.setDate(mon.getDate() + 6);
+  const fmt = (dt: Date) =>
+    dt.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+  return `${fmt(mon)} – ${fmt(sun)}`;
+}
+
+function groupByWeek(sessions: SessionRow[]): { weekKey: string; label: string; rows: SessionRow[] }[] {
+  const map = new Map<string, SessionRow[]>();
+  for (const s of sessions) {
+    const date = s.session.plannedDate ?? s.workout?.date ?? "";
+    if (!date) continue;
+    // Week key = Monday date
+    const d = new Date(date + "T00:00:00");
+    const day = d.getDay();
+    const diff = day === 0 ? -6 : 1 - day;
+    const mon = new Date(d);
+    mon.setDate(d.getDate() + diff);
+    const key = mon.toISOString().slice(0, 10);
+    const list = map.get(key) ?? [];
+    list.push(s);
+    map.set(key, list);
+  }
+  return Array.from(map.entries())
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([key, rows]) => ({ weekKey: key, label: isoWeekLabel(rows[0].session.plannedDate ?? rows[0].workout?.date ?? key), rows }));
+}
+
 export function ActivePlanOverview({ plan, sessions }: Props) {
   const [pending, startTransition] = useTransition();
+  const [showAll, setShowAll] = useState(false);
   const router = useRouter();
 
   const today = new Date().toISOString().slice(0, 10);
   const upcoming = sessions
-    .filter((s) => s.workout?.date != null && s.workout.date >= today)
+    .filter((s) => {
+      const date = s.session.plannedDate ?? s.workout?.date;
+      return date != null && date >= today;
+    })
     .slice(0, 7);
 
   const progressByCourse = new Map<number, { name: string; done: number; total: number }>();
@@ -35,6 +90,8 @@ export function ActivePlanOverview({ plan, sessions }: Props) {
     if (s.session.status === "completed") m.done += 1;
     progressByCourse.set(s.course.id, m);
   }
+
+  const weekGroups = groupByWeek(sessions);
 
   function handle(action: () => Promise<unknown>) {
     startTransition(async () => {
@@ -55,6 +112,7 @@ export function ActivePlanOverview({ plan, sessions }: Props) {
         </p>
       </div>
 
+      {/* Next 7 days */}
       <section>
         <h2 className="font-headline text-xs font-black uppercase tracking-widest text-on-surface-variant">
           Next 7 days
@@ -63,30 +121,34 @@ export function ActivePlanOverview({ plan, sessions }: Props) {
           {upcoming.length === 0 && (
             <li className="text-sm text-on-surface-variant">No upcoming sessions</li>
           )}
-          {upcoming.map((s) => (
-            <li
-              key={s.session.id}
-              className="flex items-center justify-between border-b border-outline-variant py-2"
-            >
-              <div>
-                <p className="text-sm">{s.drill.title}</p>
-                <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">
-                  {s.workout?.date} · {s.course.name}
-                </p>
-              </div>
-              {s.workout && (
-                <Link
-                  href={`/workout/${s.workout.date}?class=CUSTOM`}
-                  className="text-[10px] font-bold uppercase tracking-widest text-primary-container"
-                >
-                  Open
-                </Link>
-              )}
-            </li>
-          ))}
+          {upcoming.map((s) => {
+            const date = s.session.plannedDate ?? s.workout?.date;
+            return (
+              <li
+                key={s.session.id}
+                className="flex items-center justify-between border-b border-outline-variant py-2"
+              >
+                <div>
+                  <p className="text-sm">{s.drill.title}</p>
+                  <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">
+                    {date} · {s.course.name}
+                  </p>
+                </div>
+                {s.workout && (
+                  <Link
+                    href={`/workout/${s.workout.date}?class=CUSTOM`}
+                    className="text-[10px] font-bold uppercase tracking-widest text-primary-container"
+                  >
+                    Open
+                  </Link>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </section>
 
+      {/* Progress by course */}
       <section>
         <h2 className="font-headline text-xs font-black uppercase tracking-widest text-on-surface-variant">
           Progress
@@ -103,6 +165,68 @@ export function ActivePlanOverview({ plan, sessions }: Props) {
         </ul>
       </section>
 
+      {/* All sessions collapsible */}
+      <section>
+        <button
+          onClick={() => setShowAll((v) => !v)}
+          className="flex w-full items-center justify-between border-b border-outline-variant pb-2"
+        >
+          <h2 className="font-headline text-xs font-black uppercase tracking-widest text-on-surface-variant">
+            All Sessions
+          </h2>
+          <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+            {showAll ? "Hide" : `Show ${sessions.length}`}
+          </span>
+        </button>
+
+        {showAll && (
+          <div className="mt-2 space-y-4">
+            {weekGroups.map(({ weekKey, label, rows }) => (
+              <div key={weekKey}>
+                <p className="mb-1 text-[10px] font-black uppercase tracking-widest text-on-surface-variant">
+                  {label}
+                </p>
+                <ul className="space-y-0">
+                  {rows.map((s) => {
+                    const status = s.session.status as SessionStatus;
+                    const date = s.session.plannedDate ?? s.workout?.date;
+                    return (
+                      <li
+                        key={s.session.id}
+                        className="flex items-center justify-between border-b border-outline-variant py-2"
+                      >
+                        <div className="min-w-0">
+                          <p className="truncate text-sm">{s.drill.title}</p>
+                          <p className="text-[10px] uppercase tracking-widest text-on-surface-variant">
+                            {date} · {s.course.name}
+                          </p>
+                        </div>
+                        <div className="ml-2 flex shrink-0 items-center gap-2">
+                          <span
+                            className={`text-[9px] font-black uppercase tracking-widest ${STATUS_STYLES[status]}`}
+                          >
+                            {STATUS_LABELS[status]}
+                          </span>
+                          {s.workout && status !== "completed" && (
+                            <Link
+                              href={`/workout/${s.workout.date}?class=CUSTOM`}
+                              className="text-[10px] font-bold uppercase tracking-widest text-primary-container"
+                            >
+                              Open
+                            </Link>
+                          )}
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+
+      {/* Actions */}
       <section className="flex flex-col gap-2 border-t border-outline-variant pt-4">
         <button
           onClick={() => {
@@ -122,11 +246,14 @@ export function ActivePlanOverview({ plan, sessions }: Props) {
           Pause
         </button>
         <button
-          onClick={() => handle(() => markPlanCompleted(plan.id))}
+          onClick={() => {
+            if (!confirm("End this track? Upcoming sessions will be removed — completed ones stay in your history.")) return;
+            handle(() => endPlan(plan.id));
+          }}
           disabled={pending}
           className="py-2 text-xs font-bold uppercase tracking-widest text-on-surface-variant disabled:opacity-50"
         >
-          Mark as completed
+          End track
         </button>
       </section>
     </div>

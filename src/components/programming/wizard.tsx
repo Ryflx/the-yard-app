@@ -8,8 +8,11 @@ import type { WeaknessSignal } from "@/lib/programming/types";
 import { StartingPointStep } from "./wizard-step-1-starting-point";
 import { SkillsStep } from "./wizard-step-2-skills";
 import { SlotsStep } from "./wizard-step-3-slots";
+import { LevelStep } from "./wizard-step-4-level";
 import { ReviewStep } from "./wizard-step-5-review";
 import { SuccessStep } from "./wizard-step-success";
+import { getAssessmentsForCourses } from "../../../data/skill-library/assessments";
+import type { LevelAnswers } from "../../../data/skill-library/assessments";
 
 type Course = typeof skillCourses.$inferSelect;
 
@@ -19,20 +22,22 @@ interface Props {
 }
 
 export interface WizardState {
-  // 1-4 are the input steps; 5 is the post-create success screen.
-  step: 1 | 2 | 3 | 4 | 5;
+  // 1-5 are the input steps; 6 is the post-create success screen.
+  // Step 4 (level) is skipped when none of the selected skills have an assessment.
+  step: 1 | 2 | 3 | 4 | 5 | 6;
   wodsPerWeek: number;
   ropeConfidence: number;
   handstandConfidence: number;
   pullGymConfidence: number;
   selectedSkillIds: number[];
   slots: WeeklyDrillSlot[];
+  levelAnswers: LevelAnswers;
   createdPlanId: number | null;
   createdSessionCount: number;
   createdUnplaceableCount: number;
 }
 
-const TOTAL_INPUT_STEPS = 4;
+const TOTAL_INPUT_STEPS = 5;
 
 export function Wizard({ initialSignals, courses }: Props) {
   const [state, setState] = useState<WizardState>({
@@ -43,6 +48,7 @@ export function Wizard({ initialSignals, courses }: Props) {
     pullGymConfidence: 3,
     selectedSkillIds: initialSignals.slice(0, 3).map((s) => s.skillId),
     slots: [],
+    levelAnswers: {},
     createdPlanId: null,
     createdSessionCount: 0,
     createdUnplaceableCount: 0,
@@ -67,11 +73,12 @@ export function Wizard({ initialSignals, courses }: Props) {
             pullGymConfidence: state.pullGymConfidence,
           },
           state.slots,
-          state.selectedSkillIds
+          state.selectedSkillIds,
+          state.levelAnswers
         );
         setState((s) => ({
           ...s,
-          step: 5,
+          step: 6,
           createdPlanId: result.planId,
           createdSessionCount: result.sessionCount,
           createdUnplaceableCount: result.unplaceableCount,
@@ -80,6 +87,20 @@ export function Wizard({ initialSignals, courses }: Props) {
         setError(e instanceof Error ? e.message : "Failed to create plan");
       }
     });
+  }
+
+  // Compute whether the level step has any questions (skip it if not)
+  const selectedCourses = courses.filter((c) => state.selectedSkillIds.includes(c.id));
+  const hasLevelAssessments =
+    getAssessmentsForCourses(selectedCourses.map((c) => ({ id: c.id, slug: c.slug }))).length > 0;
+
+  // When no selected skills have assessments, the effective step count is 4 not 5.
+  const effectiveTotalSteps = hasLevelAssessments ? TOTAL_INPUT_STEPS : TOTAL_INPUT_STEPS - 1;
+
+  // Display step number accounts for the skipped step
+  function displayStep(rawStep: number): number {
+    if (!hasLevelAssessments && rawStep === 5) return 4;
+    return rawStep;
   }
 
   const showProgress = state.step <= TOTAL_INPUT_STEPS;
@@ -92,14 +113,15 @@ export function Wizard({ initialSignals, courses }: Props) {
             BUILD YOUR PLAN
           </p>
           <p className="mt-2 text-sm text-on-surface-variant">
-            Four quick questions, then we&apos;ll generate an 8-week skill plan and
+            A few quick questions, then we&apos;ll generate an 8-week skill plan and
             slot it into your schedule.
           </p>
           <div className="mt-4 flex gap-1.5">
-            {Array.from({ length: TOTAL_INPUT_STEPS }).map((_, i) => {
+            {Array.from({ length: effectiveTotalSteps }).map((_, i) => {
               const stepNum = i + 1;
-              const isActive = stepNum === state.step;
-              const isDone = stepNum < state.step;
+              const currentDisplay = displayStep(state.step);
+              const isActive = stepNum === currentDisplay;
+              const isDone = stepNum < currentDisplay;
               return (
                 <div
                   key={i}
@@ -113,7 +135,7 @@ export function Wizard({ initialSignals, courses }: Props) {
             })}
           </div>
           <p className="mt-2 text-[10px] font-bold uppercase tracking-[0.25em] text-on-surface-variant">
-            Step {state.step} of {TOTAL_INPUT_STEPS}
+            Step {displayStep(state.step)} of {effectiveTotalSteps}
           </p>
         </>
       )}
@@ -126,34 +148,55 @@ export function Wizard({ initialSignals, courses }: Props) {
             onNext={() => setState((s) => ({ ...s, step: 2 }))}
           />
         )}
+        {/* Step 2 is now Slots (file wizard-step-3-slots.tsx) */}
         {state.step === 2 && (
-          <SkillsStep
+          <SlotsStep
             state={state}
-            courses={courses}
-            signals={initialSignals}
             onChange={set}
             onBack={() => setState((s) => ({ ...s, step: 1 }))}
             onNext={() => setState((s) => ({ ...s, step: 3 }))}
           />
         )}
+        {/* Step 3 is Skills (file wizard-step-2-skills.tsx) */}
         {state.step === 3 && (
-          <SlotsStep
+          <SkillsStep
             state={state}
+            courses={courses}
             onChange={set}
             onBack={() => setState((s) => ({ ...s, step: 2 }))}
-            onNext={() => setState((s) => ({ ...s, step: 4 }))}
+            onNext={() => {
+              // Skip the level step if no selected skills have an assessment
+              const sel = courses.filter((c) => state.selectedSkillIds.includes(c.id));
+              const hasAssessments =
+                getAssessmentsForCourses(sel.map((c) => ({ id: c.id, slug: c.slug }))).length > 0;
+              setState((s) => ({ ...s, step: hasAssessments ? 4 : 5 }));
+            }}
           />
         )}
+        {/* Step 4 is Level/Calibration (file wizard-step-4-level.tsx) — may be skipped */}
         {state.step === 4 && (
+          <LevelStep
+            state={state}
+            courses={courses}
+            onChange={set}
+            onBack={() => setState((s) => ({ ...s, step: 3 }))}
+            onNext={() => setState((s) => ({ ...s, step: 5 }))}
+          />
+        )}
+        {/* Step 5 is Review (file wizard-step-5-review.tsx) */}
+        {state.step === 5 && (
           <ReviewStep
             state={state}
             courses={courses}
-            onBack={() => setState((s) => ({ ...s, step: 3 }))}
+            onBack={() => {
+              // Back from review goes to level if it was shown, otherwise skills
+              setState((s) => ({ ...s, step: hasLevelAssessments ? 4 : 3 }));
+            }}
             onCommit={commit}
             pending={pending}
           />
         )}
-        {state.step === 5 && state.createdPlanId != null && (
+        {state.step === 6 && state.createdPlanId != null && (
           <SuccessStep
             planId={state.createdPlanId}
             sessionCount={state.createdSessionCount}

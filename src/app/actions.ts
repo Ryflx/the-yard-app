@@ -19,6 +19,7 @@ import {
   skillDrills,
 } from "@/db/schema";
 import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, WodScoreType, WodFormat, WodMovement, WeeklyDrillSlot, GenerationMeta, SkillDrillSection } from "@/db/schema";
+import { computeStartWeeks, type LevelAnswers } from "../../data/skill-library/assessments";
 import { classifyMovements } from "@/lib/programming/movement-patterns";
 import { placeDrills, RULES_VERSION, type SchedulerSkillCandidate, type ExistingWorkout } from "@/lib/programming/scheduler";
 import { getWeaknessSignalsForUser } from "@/lib/programming/weakness";
@@ -1909,6 +1910,37 @@ export async function deleteExerciseSubstitution(
 
 // ── Custom Programming ──
 
+// Shared helper: create a CUSTOM workout + SKILL workoutSection from a drill,
+// and return the new workout id.  Used by createPlan and activatePlan's resume
+// step so both paths produce identical DB rows.
+async function materializeSessionWorkout(params: {
+  course: { name: string };
+  drill: { id: number; title: string; movementsSummary: string; sections: SkillDrillSection[] };
+  date: string;
+  slotMinutes: number;
+}): Promise<number> {
+  const { course, drill, date } = params;
+  const [workout] = await db.insert(workouts).values({
+    date,
+    classType: "CUSTOM",
+    title: `${course.name} — ${drill.title}`,
+  }).returning();
+  await db.insert(workoutSections).values({
+    workoutId: workout.id,
+    type: "SKILL",
+    sortOrder: 0,
+    exercises: [],
+    wodFormat: "EMOM", // sentinel — triggers isCompletionMode() in WodScoreEntry
+    wodScoreType: "INTERVAL", // ditto
+    wodName: drill.title,
+    wodDescription: drill.movementsSummary,
+    wodMovements: drill.sections.flatMap((s: SkillDrillSection) => s.items.map((it) => ({
+      name: it.movement, reps: String(it.reps ?? ""), weight: null, unit: null, note: it.notes ?? null,
+    }))),
+  });
+  return workout.id;
+}
+
 export interface CreatePlanAnswers {
   wodsPerWeek: number;
   ropeConfidence: number;       // 1-5
@@ -1919,7 +1951,8 @@ export interface CreatePlanAnswers {
 export async function createPlan(
   answers: CreatePlanAnswers,
   slots: WeeklyDrillSlot[],
-  skillIds: number[]
+  skillIds: number[],
+  levelAnswers?: LevelAnswers
 ): Promise<{ planId: number; sessionCount: number; unplaceableCount: number }> {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
@@ -1941,11 +1974,17 @@ export async function createPlan(
     .from(skillDrills)
     .where(inArray(skillDrills.courseId, skillIds));
 
+  // Compute per-course start weeks from level assessment answers
+  const startWeeks = computeStartWeeks(
+    selectedCourses.map((c) => ({ id: c.id, slug: c.slug, totalWeeks: c.totalWeeks })),
+    levelAnswers ?? {},
+  );
+
   const candidates: SchedulerSkillCandidate[] = selectedCourses.map((c) => ({
     skillId: c.id,
     drillsPerWeek: c.drillsPerWeek,
     drills: allDrills
-      .filter((d) => d.courseId === c.id)
+      .filter((d) => d.courseId === c.id && d.week >= (startWeeks[c.id] ?? 1))
       .sort((a, b) => a.week - b.week || a.orderInWeek - b.orderInWeek)
       .map((d) => ({
         id: d.id,
@@ -1985,10 +2024,11 @@ export async function createPlan(
   const finalPlacements = placements.map((p) => ({ ...p, originalDrillId: null as number | null }));
 
   // Persist
-  const generationMeta: GenerationMeta = {
+  const generationMeta = {
     rulesVersion: RULES_VERSION,
     generatedAt: new Date().toISOString(),
-  };
+    startWeeks,
+  } as GenerationMeta & { startWeeks: Record<number, number> };
 
   // NOTE: Neon's HTTP driver doesn't support db.transaction() at runtime
   // (it throws "No transactions support in neon-http driver"). We do sequential
@@ -2014,28 +2054,12 @@ export async function createPlan(
       const drill = allDrills.find((d) => d.id === p.drillId);
       const course = selectedCourses.find((c) => c.id === drill?.courseId);
       if (!drill || !course) continue;
-      const [workout] = await db.insert(workouts).values({
-        date: p.plannedDate,
-        classType: "CUSTOM",
-        title: `${course.name} — ${drill.title}`,
-      }).returning();
-      // One section holding the drill content
-      await db.insert(workoutSections).values({
-        workoutId: workout.id,
-        type: "SKILL",
-        sortOrder: 0,
-        exercises: [],
-        wodFormat: "EMOM", // sentinel — triggers isCompletionMode() in WodScoreEntry
-        wodScoreType: "INTERVAL", // ditto
-        wodName: drill.title,
-        wodDescription: drill.movementsSummary,
-        wodMovements: drill.sections.flatMap((s: SkillDrillSection) => s.items.map((it) => ({
-          name: it.movement, reps: String(it.reps ?? ""), weight: null, unit: null, note: it.notes ?? null,
-        }))),
+      const workoutId = await materializeSessionWorkout({
+        course, drill, date: p.plannedDate, slotMinutes: p.plannedSlotMinutes,
       });
       await db.insert(customPlanSessions).values({
         planId: plan.id,
-        workoutId: workout.id,
+        workoutId,
         drillId: p.drillId,
         originalDrillId: p.originalDrillId,
         plannedDate: p.plannedDate,
@@ -2045,7 +2069,7 @@ export async function createPlan(
     }
 
     await db.insert(goalQuestionnaires).values({
-      userId, planId: plan.id, answers,
+      userId, planId: plan.id, answers: { ...answers, levelAnswers: levelAnswers ?? {} },
     });
   } catch (e) {
     // Mid-write failure would leave an active customPlans row, which the
@@ -2216,6 +2240,225 @@ export async function markPlanCompleted(planId: number): Promise<void> {
     .set({ status: "completed", updatedAt: new Date() })
     .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
   revalidatePath("/programming");
+}
+
+// ── Track management ──
+
+export interface TrackProgress {
+  completed: number;
+  total: number;
+}
+
+export interface TrackSummary {
+  id: number;
+  name: string;
+  status: "active" | "paused" | "completed";
+  startsOn: string;
+  endsOn: string;
+  planLengthWeeks: number;
+  courseNames: string[];
+  progress: TrackProgress;
+}
+
+export async function listMyTracks(): Promise<TrackSummary[]> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  const plans = await db
+    .select()
+    .from(customPlans)
+    .where(eq(customPlans.userId, userId))
+    .orderBy(desc(customPlans.createdAt));
+
+  if (plans.length === 0) return [];
+
+  // Fetch all sessions for these plans in one query
+  const planIds = plans.map((p) => p.id);
+  const sessionRows = await db
+    .select({
+      planId: customPlanSessions.planId,
+      status: customPlanSessions.status,
+    })
+    .from(customPlanSessions)
+    .where(inArray(customPlanSessions.planId, planIds));
+
+  // Fetch course names for all selected skill ids across all plans
+  const allSkillIds = Array.from(new Set(plans.flatMap((p) => p.selectedSkillIds)));
+  const courseRows = allSkillIds.length > 0
+    ? await db
+        .select({ id: skillCourses.id, name: skillCourses.name })
+        .from(skillCourses)
+        .where(inArray(skillCourses.id, allSkillIds))
+    : [];
+  const courseNameById = new Map(courseRows.map((c) => [c.id, c.name]));
+
+  return plans.map((plan) => {
+    const planSessions = sessionRows.filter((s) => s.planId === plan.id);
+    const completed = planSessions.filter((s) => s.status === "completed").length;
+    const total = planSessions.length;
+    const courseNames = plan.selectedSkillIds
+      .map((id) => courseNameById.get(id))
+      .filter((n): n is string => n !== undefined);
+    return {
+      id: plan.id,
+      name: plan.name,
+      status: plan.status,
+      startsOn: plan.startsOn,
+      endsOn: plan.endsOn,
+      planLengthWeeks: plan.planLengthWeeks,
+      courseNames,
+      progress: { completed, total },
+    };
+  });
+}
+
+export async function activatePlan(planId: number): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  // Verify ownership
+  const [target] = await db
+    .select()
+    .from(customPlans)
+    .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
+  if (!target) throw new Error("Plan not found");
+  if (target.status === "completed") throw new Error("Cannot activate a completed plan");
+
+  const today = todayISO();
+
+  // Step 1: demote current active plan (if any and != target) BEFORE promoting
+  // target, so the unique partial index never sees two active rows simultaneously.
+  const [currentActive] = await db
+    .select()
+    .from(customPlans)
+    .where(and(eq(customPlans.userId, userId), eq(customPlans.status, "active")));
+
+  if (currentActive && currentActive.id !== planId) {
+    // Set to paused
+    await db
+      .update(customPlans)
+      .set({ status: "paused", updatedAt: new Date() })
+      .where(eq(customPlans.id, currentActive.id));
+
+    // Delete future non-completed workouts from the now-paused plan
+    const futureSessions = await db
+      .select({ workoutId: customPlanSessions.workoutId })
+      .from(customPlanSessions)
+      .where(and(
+        eq(customPlanSessions.planId, currentActive.id),
+        gte(customPlanSessions.plannedDate, today),
+        ne(customPlanSessions.status, "completed"),
+      ));
+    const wids = futureSessions.map((s) => s.workoutId).filter((x): x is number => x != null);
+    if (wids.length) await db.delete(workouts).where(inArray(workouts.id, wids));
+  }
+
+  // Step 2: activate target
+  await db
+    .update(customPlans)
+    .set({ status: "active", updatedAt: new Date() })
+    .where(eq(customPlans.id, planId));
+
+  // Step 3: resume — recreate workouts for pending/swapped sessions, shifting
+  // dates forward by whole weeks so each session still lands on its original weekday.
+  const incompleteSessions = await db
+    .select({ session: customPlanSessions, drill: skillDrills })
+    .from(customPlanSessions)
+    .innerJoin(skillDrills, eq(customPlanSessions.drillId, skillDrills.id))
+    .where(and(
+      eq(customPlanSessions.planId, planId),
+      inArray(customPlanSessions.status, ["pending", "swapped"]),
+    ));
+
+  if (incompleteSessions.length > 0) {
+    // Compute shift: how many whole weeks to add so the earliest pending date >= today
+    const earliestDate = incompleteSessions
+      .map((r) => r.session.plannedDate)
+      .sort()[0];
+
+    let shiftWeeks = 0;
+    if (earliestDate < today) {
+      const diffMs = new Date(today + "T00:00:00Z").getTime() - new Date(earliestDate + "T00:00:00Z").getTime();
+      const diffDays = diffMs / (1000 * 60 * 60 * 24);
+      shiftWeeks = Math.ceil(diffDays / 7);
+    }
+
+    // Load courses for name lookup
+    const courseIds = Array.from(new Set(incompleteSessions.map((r) => r.drill.courseId)));
+    const courses = await db
+      .select()
+      .from(skillCourses)
+      .where(inArray(skillCourses.id, courseIds));
+    const courseById = new Map(courses.map((c) => [c.id, c]));
+
+    for (const row of incompleteSessions) {
+      const { session, drill } = row;
+      const course = courseById.get(drill.courseId);
+      if (!course) continue;
+
+      const shiftedDate = addDaysISO(session.plannedDate, shiftWeeks * 7);
+      const newWorkoutId = await materializeSessionWorkout({
+        course,
+        drill,
+        date: shiftedDate,
+        slotMinutes: session.plannedSlotMinutes,
+      });
+
+      await db
+        .update(customPlanSessions)
+        .set({ workoutId: newWorkoutId, plannedDate: shiftedDate })
+        .where(eq(customPlanSessions.id, session.id));
+    }
+  }
+
+  revalidatePath("/programming");
+  revalidatePath("/schedule");
+}
+
+export async function endPlan(planId: number): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  // Verify ownership
+  const [plan] = await db
+    .select()
+    .from(customPlans)
+    .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
+  if (!plan) throw new Error("Plan not found");
+
+  const today = todayISO();
+
+  // Set plan to completed
+  await db
+    .update(customPlans)
+    .set({ status: "completed", updatedAt: new Date() })
+    .where(eq(customPlans.id, planId));
+
+  // Delete future non-completed workouts (same pattern as pausePlan)
+  const futureSessions = await db
+    .select({ workoutId: customPlanSessions.workoutId })
+    .from(customPlanSessions)
+    .where(and(
+      eq(customPlanSessions.planId, planId),
+      gte(customPlanSessions.plannedDate, today),
+      ne(customPlanSessions.status, "completed"),
+    ));
+  const wids = futureSessions.map((s) => s.workoutId).filter((x): x is number => x != null);
+  if (wids.length) await db.delete(workouts).where(inArray(workouts.id, wids));
+
+  // Mark remaining pending/swapped future sessions as skipped (workoutId becomes
+  // null via the onDelete:set null cascade once the workout row is deleted above)
+  await db
+    .update(customPlanSessions)
+    .set({ status: "skipped" })
+    .where(and(
+      eq(customPlanSessions.planId, planId),
+      gte(customPlanSessions.plannedDate, today),
+      inArray(customPlanSessions.status, ["pending", "swapped"]),
+    ));
+
+  revalidatePath("/programming");
+  revalidatePath("/schedule");
 }
 
 export async function markTourSeen(tourId: "onboarding-v1" | "custom-programming-v1"): Promise<void> {
