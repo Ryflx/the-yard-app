@@ -19,7 +19,6 @@ import {
   skillDrills,
 } from "@/db/schema";
 import type { SectionExercise, WorkoutSectionType, MovementCategory, ClassType, WodScoreType, WodFormat, WodMovement, WeeklyDrillSlot, GenerationMeta, SkillDrillSection } from "@/db/schema";
-import { computeStartWeeks, type LevelAnswers } from "../../data/skill-library/assessments";
 import { classifyMovements } from "@/lib/programming/movement-patterns";
 import { placeDrills, RULES_VERSION, type SchedulerSkillCandidate, type ExistingWorkout } from "@/lib/programming/scheduler";
 import { getWeaknessSignalsForUser } from "@/lib/programming/weakness";
@@ -1942,17 +1941,21 @@ async function materializeSessionWorkout(params: {
 }
 
 export interface CreatePlanAnswers {
-  wodsPerWeek: number;
-  ropeConfidence: number;       // 1-5
-  handstandConfidence: number;  // 1-5
-  pullGymConfidence: number;    // 1-5
+  // intentionally empty — kept for goalQuestionnaires backward-compatibility
+}
+
+/** Derive a concise plan name from the selected course names. */
+function derivePlanName(courseNames: string[]): string {
+  if (courseNames.length === 0) return "8-Week Skill Plan";
+  if (courseNames.length === 1) return courseNames[0];
+  if (courseNames.length === 2) return `${courseNames[0]} & ${courseNames[1]}`;
+  return `${courseNames[0]} +${courseNames.length - 1} more`;
 }
 
 export async function createPlan(
   answers: CreatePlanAnswers,
   slots: WeeklyDrillSlot[],
   skillIds: number[],
-  levelAnswers?: LevelAnswers
 ): Promise<{ planId: number; sessionCount: number; unplaceableCount: number }> {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
@@ -1974,17 +1977,12 @@ export async function createPlan(
     .from(skillDrills)
     .where(inArray(skillDrills.courseId, skillIds));
 
-  // Compute per-course start weeks from level assessment answers
-  const startWeeks = computeStartWeeks(
-    selectedCourses.map((c) => ({ id: c.id, slug: c.slug, totalWeeks: c.totalWeeks })),
-    levelAnswers ?? {},
-  );
-
+  // All drills start at week 1 — no level filtering
   const candidates: SchedulerSkillCandidate[] = selectedCourses.map((c) => ({
     skillId: c.id,
     drillsPerWeek: c.drillsPerWeek,
     drills: allDrills
-      .filter((d) => d.courseId === c.id && d.week >= (startWeeks[c.id] ?? 1))
+      .filter((d) => d.courseId === c.id)
       .sort((a, b) => a.week - b.week || a.orderInWeek - b.orderInWeek)
       .map((d) => ({
         id: d.id,
@@ -2019,7 +2017,8 @@ export async function createPlan(
   });
   if (placements.length === 0) throw new Error("No sessions could be placed — add more slots or trim skills");
 
-  const goalSummary = buildGoalSummary(answers, selectedCourses.map((c) => c.name));
+  const goalSummary = buildGoalSummary(selectedCourses.map((c) => c.name));
+  const planName = derivePlanName(selectedCourses.map((c) => c.name));
 
   const finalPlacements = placements.map((p) => ({ ...p, originalDrillId: null as number | null }));
 
@@ -2027,18 +2026,43 @@ export async function createPlan(
   const generationMeta = {
     rulesVersion: RULES_VERSION,
     generatedAt: new Date().toISOString(),
-    startWeeks,
-  } as GenerationMeta & { startWeeks: Record<number, number> };
+  } as GenerationMeta;
 
   // NOTE: Neon's HTTP driver doesn't support db.transaction() at runtime
   // (it throws "No transactions support in neon-http driver"). We do sequential
   // inserts and manually unwind if a post-plan insert fails — without that,
   // the custom_plans_one_active partial unique index would block the user's
   // retry after a mid-write failure (the orphan active plan owns the slot).
-  // Recovery on success failure: the user calls regeneratePlan (Task 14).
+
+  // If the user already has an active plan, demote it to paused and clear its
+  // future sessions — so the new plan can claim the active slot.
+  const today = todayISO();
+  const [existingActive] = await db
+    .select()
+    .from(customPlans)
+    .where(and(eq(customPlans.userId, userId), eq(customPlans.status, "active")));
+
+  if (existingActive) {
+    await db
+      .update(customPlans)
+      .set({ status: "paused", updatedAt: new Date() })
+      .where(eq(customPlans.id, existingActive.id));
+
+    const futureSessions = await db
+      .select({ workoutId: customPlanSessions.workoutId })
+      .from(customPlanSessions)
+      .where(and(
+        eq(customPlanSessions.planId, existingActive.id),
+        gte(customPlanSessions.plannedDate, today),
+        ne(customPlanSessions.status, "completed"),
+      ));
+    const existingWids = futureSessions.map((s) => s.workoutId).filter((x): x is number => x != null);
+    if (existingWids.length) await db.delete(workouts).where(inArray(workouts.id, existingWids));
+  }
+
   const [plan] = await db.insert(customPlans).values({
     userId,
-    name: "8-Week Skill Plan",
+    name: planName,
     goalSummary,
     weeklyDrillSlots: slots,
     selectedSkillIds: skillIds,
@@ -2069,7 +2093,7 @@ export async function createPlan(
     }
 
     await db.insert(goalQuestionnaires).values({
-      userId, planId: plan.id, answers: { ...answers, levelAnswers: levelAnswers ?? {} },
+      userId, planId: plan.id, answers,
     });
   } catch (e) {
     // Mid-write failure would leave an active customPlans row, which the
@@ -2172,21 +2196,6 @@ export async function regeneratePlan(planId: number): Promise<{ planId: number }
     .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
   if (!old) throw new Error("Plan not found");
 
-  // Reuse the user's original answers so the regenerated plan's goalSummary
-  // and LLM personalisation match their stated intent.
-  const [prior] = await db
-    .select()
-    .from(goalQuestionnaires)
-    .where(eq(goalQuestionnaires.planId, planId))
-    .orderBy(desc(goalQuestionnaires.createdAt))
-    .limit(1);
-  const answers = (prior?.answers as CreatePlanAnswers | undefined) ?? {
-    wodsPerWeek: 3,
-    ropeConfidence: 3,
-    handstandConfidence: 3,
-    pullGymConfidence: 3,
-  };
-
   await db.update(customPlans).set({ status: "completed", updatedAt: new Date() }).where(eq(customPlans.id, planId));
 
   // Clean up the old plan's future, non-completed workouts so they don't
@@ -2205,7 +2214,7 @@ export async function regeneratePlan(planId: number): Promise<{ planId: number }
   }
 
   revalidatePath("/programming");
-  return createPlan(answers, old.weeklyDrillSlots, old.selectedSkillIds);
+  return createPlan({}, old.weeklyDrillSlots, old.selectedSkillIds);
 }
 
 export async function pausePlan(planId: number): Promise<void> {
@@ -2461,6 +2470,33 @@ export async function endPlan(planId: number): Promise<void> {
   revalidatePath("/schedule");
 }
 
+export async function deletePlan(planId: number): Promise<void> {
+  const { userId } = await auth();
+  if (!userId) throw new Error("Not authenticated");
+
+  // Verify ownership
+  const [plan] = await db
+    .select()
+    .from(customPlans)
+    .where(and(eq(customPlans.id, planId), eq(customPlans.userId, userId)));
+  if (!plan) throw new Error("Plan not found");
+
+  // Gather all workout ids from this plan's sessions so we can delete them
+  const allSessions = await db
+    .select({ workoutId: customPlanSessions.workoutId })
+    .from(customPlanSessions)
+    .where(eq(customPlanSessions.planId, planId));
+
+  const allWids = allSessions.map((s) => s.workoutId).filter((x): x is number => x != null);
+  if (allWids.length) await db.delete(workouts).where(inArray(workouts.id, allWids));
+
+  // Delete the plan — cascades to customPlanSessions
+  await db.delete(customPlans).where(eq(customPlans.id, planId));
+
+  revalidatePath("/programming");
+  revalidatePath("/schedule");
+}
+
 export async function markTourSeen(tourId: "onboarding-v1" | "custom-programming-v1"): Promise<void> {
   const { userId } = await auth();
   if (!userId) throw new Error("Not authenticated");
@@ -2602,7 +2638,7 @@ function addDaysISO(iso: string, days: number): string {
   return d.toISOString().slice(0, 10);
 }
 
-function buildGoalSummary(a: CreatePlanAnswers, skillNames: string[]): string {
-  return `Improving ${skillNames.join(" and ")} over 8 weeks (${a.wodsPerWeek} WODs/wk). ` +
-         `Self-rated confidence: rope ${a.ropeConfidence}/5, handstand ${a.handstandConfidence}/5, pull gym ${a.pullGymConfidence}/5.`;
+function buildGoalSummary(skillNames: string[]): string {
+  if (skillNames.length === 0) return "8-week custom skill plan.";
+  return `Improving ${skillNames.join(" and ")} over 8 weeks.`;
 }

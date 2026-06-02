@@ -3,7 +3,7 @@
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { activatePlan, endPlan } from "@/app/actions";
+import { activatePlan, endPlan, deletePlan } from "@/app/actions";
 import type { TrackSummary } from "@/app/actions";
 
 interface Props {
@@ -53,6 +53,16 @@ export function TrackLibrary({ tracks }: Props) {
     )
       return;
     handle(() => endPlan(track.id));
+  }
+
+  function onDelete(track: TrackSummary) {
+    if (
+      !confirm(
+        `Delete "${track.name}"? This removes the track and its sessions for good.`
+      )
+    )
+      return;
+    handle(() => deletePlan(track.id));
   }
 
   if (tracks.length === 0) return null;
@@ -126,17 +136,17 @@ export function TrackLibrary({ tracks }: Props) {
               </div>
 
               {/* Actions */}
-              {track.status !== "completed" && (
-                <div className="mt-3 flex items-center gap-4">
-                  {track.status !== "active" && (
-                    <button
-                      onClick={() => onActivate(track)}
-                      disabled={pending}
-                      className="bg-primary-container px-4 py-2 font-headline text-[10px] font-black uppercase tracking-widest text-on-primary-fixed disabled:opacity-50"
-                    >
-                      {track.status === "paused" ? "Resume" : "Switch to this"}
-                    </button>
-                  )}
+              <div className="mt-3 flex items-center gap-4">
+                {track.status !== "completed" && track.status !== "active" && (
+                  <button
+                    onClick={() => onActivate(track)}
+                    disabled={pending}
+                    className="bg-primary-container px-4 py-2 font-headline text-[10px] font-black uppercase tracking-widest text-on-primary-fixed disabled:opacity-50"
+                  >
+                    {track.status === "paused" ? "Resume" : "Switch to this"}
+                  </button>
+                )}
+                {track.status !== "completed" && (
                   <button
                     onClick={() => onEnd(track)}
                     disabled={pending}
@@ -144,8 +154,15 @@ export function TrackLibrary({ tracks }: Props) {
                   >
                     End track
                   </button>
-                </div>
-              )}
+                )}
+                <button
+                  onClick={() => onDelete(track)}
+                  disabled={pending}
+                  className="py-2 text-[10px] font-bold uppercase tracking-widest text-red-400 disabled:opacity-50"
+                >
+                  Delete
+                </button>
+              </div>
             </li>
           );
         })}

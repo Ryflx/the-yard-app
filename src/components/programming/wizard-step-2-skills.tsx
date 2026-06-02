@@ -1,4 +1,4 @@
-// Note: this file is the Skills step, but it's now rendered at Wizard step 3.
+// Skills step — rendered at Wizard step 1.
 "use client";
 
 import type { WizardState } from "./wizard";
@@ -10,7 +10,7 @@ interface Props {
   state: WizardState;
   courses: Course[];
   onChange: <K extends keyof WizardState>(k: K, v: WizardState[K]) => void;
-  onBack: () => void;
+  onBack: (() => void) | null;
   onNext: () => void;
 }
 
@@ -39,7 +39,7 @@ export function SkillsStep({ state, courses, onChange, onBack, onNext }: Props) 
   const softWarn = !strongWarn && drillsPerWeek > slotsPerWeek;
 
   const capacityCaption = noSlots
-    ? "No slots set yet — go back to Step 2."
+    ? "No slots set yet — go back to set your training slots."
     : drillsPerWeek === 0
     ? "Tick a skill to see your weekly load."
     : strongWarn
@@ -122,16 +122,18 @@ export function SkillsStep({ state, courses, onChange, onBack, onNext }: Props) 
       ))}
 
       <div className="flex gap-2">
-        <button
-          onClick={onBack}
-          className="flex-1 py-3 text-xs font-bold uppercase tracking-widest text-on-surface-variant"
-        >
-          BACK
-        </button>
+        {onBack && (
+          <button
+            onClick={onBack}
+            className="flex-1 py-3 text-xs font-bold uppercase tracking-widest text-on-surface-variant"
+          >
+            BACK
+          </button>
+        )}
         <button
           onClick={onNext}
           disabled={state.selectedSkillIds.length === 0}
-          className="flex-[2] bg-primary-container py-3.5 font-headline text-sm font-black uppercase tracking-widest text-on-primary-fixed disabled:opacity-50"
+          className={`${onBack ? "flex-[2]" : "w-full"} bg-primary-container py-3.5 font-headline text-sm font-black uppercase tracking-widest text-on-primary-fixed disabled:opacity-50`}
         >
           NEXT ({state.selectedSkillIds.length})
         </button>

@@ -34,6 +34,10 @@ export default async function ProgrammingPage() {
 
   // Has tracks but none active — show no-active banner + library
   if (!data) {
+    const hasPaused = tracks.some((t) => t.status === "paused");
+    const subhead = hasPaused
+      ? "Resume a paused track below or start a new one."
+      : "Start a new track, or manage your past tracks below.";
     return (
       <div>
         <div className="px-4 py-10">
@@ -45,7 +49,7 @@ export default async function ProgrammingPage() {
               NO ACTIVE TRACK
             </h1>
             <p className="mt-4 text-sm text-on-surface-variant">
-              Resume a paused track below or start a new one.
+              {subhead}
             </p>
           </div>
         </div>
